@@ -1,0 +1,884 @@
+[
+  {
+    "unit": "1.1",
+    "word": "They are into",
+    "definition": "They like doing something or have an interest in it.",
+    "example": "They are into reading books.",
+    "vietnamese": "Họ thích. (Ví dụ: Họ thích đọc sách.)"
+  },
+  {
+    "unit": "1.1",
+    "word": "They are keen on",
+    "definition": "They are very interested in or enjoy doing something.",
+    "example": "They are keen on playing football.",
+    "vietnamese": "Họ say mê. (Ví dụ: Họ say mê chơi bóng đá.)"
+  },
+  {
+    "unit": "1.1",
+    "word": "My Neighbourhood",
+    "definition": "The area around where I live.",
+    "example": "There are many trees and parks in my neighbourhood.",
+    "vietnamese": "Khu phố của tôi. (Ví dụ: Có nhiều cây và công viên trong khu phố của tôi.)"
+  },
+  {
+    "unit": "1.1",
+    "word": "My block",
+    "definition": "The group of buildings or houses around my street.",
+    "example": "I live on the same block as my best friend.",
+    "vietnamese": "Khu nhà của tôi. (Ví dụ: Tôi sống cùng khu nhà với người bạn thân nhất của mình.)"
+  },
+  {
+    "unit": "1.1",
+    "word": "my sports club",
+    "definition": "A place where people go to play sports.",
+    "example": "I go to my sports club every Saturday to play basketball.",
+    "vietnamese": "câu lạc bộ thể thao của tôi. (Ví dụ: Tôi đến câu lạc bộ thể thao của mình vào mỗi thứ Bảy để chơi bóng rổ.)"
+  },
+  {
+    "unit": "1.1",
+    "word": "My country",
+    "definition": "The nation where I live.",
+    "example": "Vietnam is my country.",
+    "vietnamese": "Đất nước của tôi. (Ví dụ: Việt Nam là đất nước của tôi.)"
+  },
+  {
+    "unit": "1.1",
+    "word": "My Continent",
+    "definition": "The large area of land where my country is located.",
+    "example": "Vietnam is in the continent of Asia.",
+    "vietnamese": "Lục địa của tôi. (Ví dụ: Việt Nam ở lục địa Châu Á.)"
+  },
+  {
+    "unit": "1.2",
+    "word": "Long jump",
+    "definition": "A sport where you try to jump as far as possible from a starting point.",
+    "example": "",
+    "vietnamese": "Nhảy xa"
+  },
+  {
+    "unit": "1.2",
+    "word": "Football",
+    "definition": "A game where two teams try to score goals by kicking a ball into the other team’s net.",
+    "example": "",
+    "vietnamese": "Bóng đá"
+  },
+  {
+    "unit": "1.2",
+    "word": "Skateboarding",
+    "definition": "Riding on a skateboard, a type of board with wheels.",
+    "example": "",
+    "vietnamese": "Trượt ván"
+  },
+  {
+    "unit": "1.2",
+    "word": "Rugby",
+    "definition": "A team sport where players try to score by running with an oval ball.",
+    "example": "",
+    "vietnamese": "Bóng bầu dục"
+  },
+  {
+    "unit": "1.2",
+    "word": "Basketball",
+    "definition": "A game where teams try to score points by throwing a ball through a hoop.",
+    "example": "",
+    "vietnamese": "Bóng rổ"
+  },
+  {
+    "unit": "1.2",
+    "word": "snowboarding",
+    "definition": "A sport where you slide down snowy hills on a board.",
+    "example": "",
+    "vietnamese": "Trượt tuyết bằng ván"
+  },
+  {
+    "unit": "1.2",
+    "word": "karate",
+    "definition": "A martial art where you learn self-defense and physical skills.",
+    "example": "",
+    "vietnamese": "Võ ca-ra-tê"
+  },
+  {
+    "unit": "1.2",
+    "word": "Running",
+    "definition": "Moving quickly on foot in races or for exercise.",
+    "example": "",
+    "vietnamese": "Chạy bộ"
+  },
+  {
+    "unit": "1.2",
+    "word": "Surfing",
+    "definition": "Riding on waves in the ocean on a surfboard.",
+    "example": "",
+    "vietnamese": "Lướt sóng"
+  },
+  {
+    "unit": "1.2",
+    "word": "Hope",
+    "definition": "Wanting something to happen.",
+    "example": "I hope it will be sunny tomorrow.",
+    "vietnamese": "Hy vọng. (Ví dụ: Tôi hy vọng ngày mai trời sẽ nắng.)"
+  },
+  {
+    "unit": "1.2",
+    "word": "Love",
+    "definition": "A strong feeling of liking someone or something very much.",
+    "example": "I love my pet cat.",
+    "vietnamese": "Yêu. (Ví dụ: Tôi yêu con mèo cưng của mình.)"
+  },
+  {
+    "unit": "1.2",
+    "word": "Enjoy",
+    "definition": "To have fun or be happy doing something.",
+    "example": "I enjoy playing games with my friends.",
+    "vietnamese": "Thích thú. (Ví dụ: Tôi thích chơi game với bạn bè.)"
+  },
+  {
+    "unit": "1.2",
+    "word": "Want",
+    "definition": "To wish for or desire something.",
+    "example": "I want a new book to read.",
+    "vietnamese": "Muốn. (Ví dụ: Tôi muốn một cuốn sách mới để đọc.)"
+  },
+  {
+    "unit": "1.2",
+    "word": "Learn",
+    "definition": "To gain knowledge or skills.",
+    "example": "I help my mom cook dinner.",
+    "vietnamese": "Học. (Ví dụ: Tôi giúp mẹ nấu bữa tối.)"
+  },
+  {
+    "unit": "1.3",
+    "word": "Headmistress",
+    "definition": "The female principal or leader of a school.",
+    "example": "",
+    "vietnamese": "Bà hiệu trưởng"
+  },
+  {
+    "unit": "1.3",
+    "word": "A special activity or celebration.",
+    "definition": "The teacher in charge of a class of students.",
+    "example": "",
+    "vietnamese": "Một hoạt động đặc biệt hoặc lễ kỷ niệm."
+  },
+  {
+    "unit": "1.3",
+    "word": "Caretaker",
+    "definition": "The person who takes care of the school building and keeps it clean.",
+    "example": "",
+    "vietnamese": "Người trông coi"
+  },
+  {
+    "unit": "1.3",
+    "word": "School Nurse",
+    "definition": "The person who helps students if they feel sick or get hurt at school.",
+    "example": "",
+    "vietnamese": "Y tá trường học"
+  },
+  {
+    "unit": "1.3",
+    "word": "Librarian",
+    "definition": "The person who manages the library and helps students find books.",
+    "example": "",
+    "vietnamese": "Thủ thư"
+  },
+  {
+    "unit": "1.3",
+    "word": "P.E teacher",
+    "definition": "The teacher who helps students with sports and exercise.",
+    "example": "",
+    "vietnamese": "Giáo viên thể chất"
+  },
+  {
+    "unit": "1.4",
+    "word": "Leaflet",
+    "definition": "A small paper with information about something.",
+    "example": "",
+    "vietnamese": "Tờ rơi"
+  },
+  {
+    "unit": "1.4",
+    "word": "Event",
+    "definition": "A special activity or celebration.",
+    "example": "Our school event is happening on Friday.",
+    "vietnamese": "Sự kiện. (Ví dụ: Sự kiện của trường chúng tôi diễn ra vào thứ Sáu.)"
+  },
+  {
+    "unit": "1.4",
+    "word": "Raising money",
+    "definition": "Collecting money to help a cause or charity.",
+    "example": "We are raising money for the animal shelter.",
+    "vietnamese": "Quyên góp tiền. (Ví dụ: Chúng tôi đang quyên góp tiền cho trại cứu trợ động vật.)"
+  },
+  {
+    "unit": "1.4",
+    "word": "Craft activity",
+    "definition": "An activity where you make something with your hands.",
+    "example": "Our craft activity was making paper flowers.",
+    "vietnamese": "Hoạt động thủ công. (Ví dụ: Hoạt động thủ công của chúng tôi là làm hoa giấy.)"
+  },
+  {
+    "unit": "1.4",
+    "word": "Charity",
+    "definition": "An organization or event to help those in need.",
+    "example": "",
+    "vietnamese": "Từ thiện"
+  },
+  {
+    "unit": "1.4",
+    "word": "Slogan",
+    "definition": "A piece of playground equipment where you slide down a slope.",
+    "example": "Our school’s slogan is 'Learning for a Better Future.'",
+    "vietnamese": "Khẩu hiệu. (Ví dụ: Khẩu hiệu của trường chúng tôi là 'Học tập vì một tương lai tốt đẹp hơn.')"
+  },
+  {
+    "unit": "1.5",
+    "word": "Slide",
+    "definition": "A piece of playground equipment where you slide down a slope.",
+    "example": "",
+    "vietnamese": "Cầu trượt"
+  },
+  {
+    "unit": "1.5",
+    "word": "Swings",
+    "definition": "A seat attached to ropes or chains that you can swing back and forth on.",
+    "example": "",
+    "vietnamese": "Xích đu"
+  },
+  {
+    "unit": "1.5",
+    "word": "Sandpit",
+    "definition": "A small area filled with sand for children to play in.",
+    "example": "",
+    "vietnamese": "Hố cát"
+  },
+  {
+    "unit": "1.5",
+    "word": "Treasure hunt",
+    "definition": "A game where you search for hidden objects or “treasures.”",
+    "example": "",
+    "vietnamese": "Săn tìm kho báu"
+  },
+  {
+    "unit": "1.5",
+    "word": "Neighbourhood",
+    "definition": "The area or community where you live.",
+    "example": "",
+    "vietnamese": "Khu phố"
+  },
+  {
+    "unit": "1.5",
+    "word": "Surgery",
+    "definition": "A place where doctors help sick or injured people.",
+    "example": "",
+    "vietnamese": "Phòng khám"
+  },
+  {
+    "unit": "1.5",
+    "word": "HIdden",
+    "definition": "Something that is out of sight or hard to see.",
+    "example": "",
+    "vietnamese": "Bị giấu"
+  },
+  {
+    "unit": "1.5",
+    "word": "Follow",
+    "definition": "To go after or walk behind someone or something.",
+    "example": "",
+    "vietnamese": "Đi theo"
+  },
+  {
+    "unit": "2",
+    "word": "Freezing",
+    "definition": "Extremely cold, at or below 0°C, when water turns into ice.",
+    "example": "It was freezing outside, and the water turned to ice.",
+    "vietnamese": "Lạnh cóng. (Ví dụ: Bên ngoài trời lạnh cóng, và nước đã biến thành băng.)"
+  },
+  {
+    "unit": "2",
+    "word": "Icy",
+    "definition": "Covered with or made of ice, very cold",
+    "example": "The road was icy and slippery.",
+    "vietnamese": "Đóng băng. (Ví dụ: Con đường đóng băng và trơn trượt.)"
+  },
+  {
+    "unit": "2",
+    "word": "Dry",
+    "definition": "Without moisture, not wet or damp.",
+    "example": "The desert is very dry with little rain.",
+    "vietnamese": "Khô. (Ví dụ: Sa mạc rất khô với ít mưa.)"
+  },
+  {
+    "unit": "2",
+    "word": "Large",
+    "definition": "Extremely large in size or amount.",
+    "example": "Jupiter is a huge planet compared to Earth.",
+    "vietnamese": "Lớn. (Ví dụ: Sao Mộc là một hành tinh khổng lồ so với Trái Đất.)"
+  },
+  {
+    "unit": "2",
+    "word": "Wide",
+    "definition": "Having a large distance from one side to the other.",
+    "example": "The river was very wide, making it hard to cross.",
+    "vietnamese": "Rộng. (Ví dụ: Con sông rất rộng, khiến việc băng qua trở nên khó khăn.)"
+  },
+  {
+    "unit": "2",
+    "word": "Wet",
+    "definition": "Covered with water or another liquid.",
+    "example": "After the rain, the ground was wet and muddy.",
+    "vietnamese": "Ướt. (Ví dụ: Sau cơn mưa, mặt đất ướt và lầy lội.)"
+  },
+  {
+    "unit": "2",
+    "word": "Humid",
+    "definition": "Having a lot of moisture in the air, making it feel warm and damp.",
+    "example": "It was humid in the rainforest, making everything feel sticky.",
+    "vietnamese": "Ẩm. (Ví dụ: Trong rừng nhiệt đới trời ẩm ướt, khiến mọi thứ có cảm giác dính dính.)"
+  },
+  {
+    "unit": "2",
+    "word": "Cool",
+    "definition": "Slightly cold, but not too cold.",
+    "example": "The breeze was cool, perfect for a walk outside.",
+    "vietnamese": "Mát mẻ. (Ví dụ: Cơn gió thật mát mẻ, hoàn hảo để đi dạo bên ngoài.)"
+  },
+  {
+    "unit": "2",
+    "word": "Warm",
+    "definition": "Slightly hot, but comfortable.",
+    "example": "The sun made the sand feel warm under my feet.",
+    "vietnamese": "Ấm. (Ví dụ: Mặt trời làm cát dưới chân tôi cảm thấy ấm áp.)"
+  },
+  {
+    "unit": "2",
+    "word": "Explore",
+    "definition": "To travel through a place to discover or learn more about it.",
+    "example": "The astronauts went to explore the surface of the Moon.",
+    "vietnamese": "Khám phá. (Ví dụ: Các phi hành gia đã đi khám phá bề mặt Mặt Trăng.)"
+  },
+  {
+    "unit": "2",
+    "word": "Orbit",
+    "definition": "To move around a planet or star in a circular path.",
+    "example": "The Earth orbits the Sun once every year.",
+    "vietnamese": "Đi theo quỹ đạo. (Ví dụ: Trái Đất quay quanh Mặt Trời mỗi năm một lần.)"
+  },
+  {
+    "unit": "2",
+    "word": "Support",
+    "definition": "To hold up or give help to something.",
+    "example": "The bridge was strong enough to support the cars.",
+    "vietnamese": "Đỡ. (Ví dụ: Cây cầu đủ mạnh để đỡ những chiếc ô tô.)"
+  },
+  {
+    "unit": "2",
+    "word": "Discover",
+    "definition": "To find something new that was not known before.",
+    "example": "Scientists discovered a new species of fish.",
+    "vietnamese": "Phát hiện. (Ví dụ: Các nhà khoa học đã phát hiện ra một loài cá mới.)"
+  },
+  {
+    "unit": "2",
+    "word": "Poisonous",
+    "definition": "Something harmful or deadly if touched or eaten.",
+    "example": "Some snakes are poisonous and can be dangerous to humans.",
+    "vietnamese": "Có độc. (Ví dụ: Một số loài rắn có độc và có thể gây nguy hiểm cho con người.)"
+  },
+  {
+    "unit": "2",
+    "word": "Natural event",
+    "definition": "Something that happens in nature, like a storm or earthquake.",
+    "example": "A volcanic eruption is a natural event.",
+    "vietnamese": "Sự kiện tự nhiên. (Ví dụ: Phun trào núi lửa là một sự kiện tự nhiên.)"
+  },
+  {
+    "unit": "2",
+    "word": "Lightning",
+    "definition": "A flash of light in the sky during a storm, caused by electricity.",
+    "example": "We saw lightning strike the tree during the storm.",
+    "vietnamese": "Sét. (Ví dụ: Chúng tôi thấy sét đánh trúng cái cây trong cơn bão.)"
+  },
+  {
+    "unit": "2",
+    "word": "Sunset",
+    "definition": "The time in the evening when the sun goes below the horizon.",
+    "example": "We watched the beautiful colors of the sunset over the mountains.",
+    "vietnamese": "Hoàng hôn. (Ví dụ: Chúng tôi ngắm nhìn những sắc màu tuyệt đẹp của hoàng hôn trên những ngọn núi.)"
+  },
+  {
+    "unit": "2",
+    "word": "Northern Lights",
+    "definition": "Bright, colorful lights in the sky near the North Pole caused by the Earth's magnetic field.",
+    "example": "The northern lights lit up the sky with green and purple colors.",
+    "vietnamese": "Bắc Cực quang. (Ví dụ: Bắc Cực quang thắp sáng bầu trời với màu xanh lá cây và màu tím.)"
+  },
+  {
+    "unit": "2",
+    "word": "Constellation",
+    "definition": "A group of stars that form a pattern in the sky.",
+    "example": "Orion is a famous constellation that looks like a hunter.",
+    "vietnamese": "Chòm sao. (Ví dụ: Orion là một chòm sao nổi tiếng trông giống như một thợ săn.)"
+  },
+  {
+    "unit": "2",
+    "word": "Rainbow",
+    "definition": "A colorful arc in the sky caused by sunlight passing through rain.",
+    "example": "After the rain, we saw a rainbow stretching across the sky.",
+    "vietnamese": "Cầu vồng. (Ví dụ: Sau cơn mưa, chúng tôi thấy một chiếc cầu vồng trải dài trên bầu trời.)"
+  },
+  {
+    "unit": "2",
+    "word": "Satellite",
+    "definition": "A man-made object that is sent into space to orbit Earth or another planet.",
+    "example": "The satellite helps send television signals and weather information.",
+    "vietnamese": "Vệ tinh. (Ví dụ: Vệ tinh giúp gửi tín hiệu truyền hình và thông tin thời tiết.)"
+  },
+  {
+    "unit": "2",
+    "word": "Telescope",
+    "definition": "A tool used to see objects far away, like stars or planets.",
+    "example": "We used a telescope to look at the Moon and the planets.",
+    "vietnamese": "Kính thiên văn. (Ví dụ: Chúng tôi đã sử dụng kính thiên văn để ngắm Mặt Trăng và các hành tinh.)"
+  },
+  {
+    "unit": "2",
+    "word": "Space shuttle",
+    "definition": "A spacecraft that can carry astronauts and equipment into space and back to Earth.",
+    "example": "The space shuttle launched into space to deliver supplies to the space station.",
+    "vietnamese": "Tàu con thoi. (Ví dụ: Tàu con thoi phóng vào không gian để giao hàng cho trạm vũ trụ.)"
+  },
+  {
+    "unit": "2",
+    "word": "Rover",
+    "definition": "A robotic vehicle sent to explore the surface of another planet or moon.",
+    "example": "The Mars rover takes pictures and collects information about the planet.",
+    "vietnamese": "Xe tự hành. (Ví dụ: Xe tự hành sao Hỏa chụp ảnh và thu thập thông tin về hành tinh này.)"
+  },
+  {
+    "unit": "2",
+    "word": "Tiny",
+    "definition": "Very small in size.",
+    "example": "The ant was so tiny we could barely see it.",
+    "vietnamese": "Nhỏ xíu. (Ví dụ: Con kiến nhỏ đến mức chúng tôi hầu như không thể nhìn thấy nó.)"
+  },
+  {
+    "unit": "2",
+    "word": "Bold",
+    "definition": "Brave and willing to take risks or strong and noticeable.",
+    "example": "The astronaut made a bold decision to go on the spacewalk.",
+    "vietnamese": "Dũng cảm. (Ví dụ: Phi hành gia đã đưa ra quyết định dũng cảm khi đi bộ ngoài không gian.)"
+  },
+  {
+    "unit": "2",
+    "word": "Wondrous",
+    "definition": "Something that causes amazement or admiration.",
+    "example": "The view of the stars from space was wondrous.",
+    "vietnamese": "Kỳ diệu. (Ví dụ: Quang cảnh các vì sao từ không gian thật kỳ diệu.)"
+  },
+  {
+    "unit": "2",
+    "word": "Azure",
+    "definition": "A bright blue color, like the sky on a clear day.",
+    "example": "The sky was a beautiful shade of azure after the storm passed.",
+    "vietnamese": "Xanh da trời. (Ví dụ: Bầu trời có màu xanh da trời tuyệt đẹp sau khi cơn bão đi qua.)"
+  },
+  {
+    "unit": "3.1",
+    "word": "Balcony",
+    "definition": "A platform enclosed by a wall or railing, projecting from the outside of a building above the ground floor.",
+    "example": "We sat on the balcony to enjoy the view of the city skyline.",
+    "vietnamese": "Ban công. (Ví dụ: Chúng tôi ngồi trên ban công để ngắm nhìn quang cảnh đường chân trời của thành phố.)"
+  },
+  {
+    "unit": "3.1",
+    "word": "Floor",
+    "definition": "The lower surface of a room, on which one may walk.",
+    "example": "The wooden floor of the living room was polished and smooth.",
+    "vietnamese": "Sàn nhà. (Ví dụ: Sàn gỗ của phòng khách được đánh bóng và nhẵn mịn.)"
+  },
+  {
+    "unit": "3.1",
+    "word": "Roof",
+    "definition": "The structure forming the upper covering of a building.",
+    "example": "The rain was so heavy that it sounded like drums on the roof.",
+    "vietnamese": "Mái nhà. (Ví dụ: Mưa to đến nỗi nghe như tiếng trống trên mái nhà.)"
+  },
+  {
+    "unit": "3.1",
+    "word": "Bricks",
+    "definition": "Rectangular blocks of clay baked by the sun or in a kiln, used in building.",
+    "example": "The house was built using red bricks, giving it a classic look.",
+    "vietnamese": "Gạch. (Ví dụ: Ngôi nhà được xây bằng gạch đỏ, mang lại vẻ cổ điển.)"
+  },
+  {
+    "unit": "3.1",
+    "word": "Wood",
+    "definition": "The hard, fibrous material that forms the trunk and branches of trees and is used as a building material.",
+    "example": "The wood from the oak tree was used to make sturdy furniture.",
+    "vietnamese": "Gỗ. (Ví dụ: Gỗ từ cây sồi được dùng để làm đồ nội thất chắc chắn.)"
+  },
+  {
+    "unit": "3.1",
+    "word": "Wool",
+    "definition": "The fine, soft curly or wavy hair forming the coat of a sheep, goat, or similar animal, used to make textiles.",
+    "example": "She wore a scarf made of soft wool to keep warm during winter.",
+    "vietnamese": "Len. (Ví dụ: Cô ấy quàng một chiếc khăn làm bằng len mềm để giữ ấm trong mùa đông.)"
+  },
+  {
+    "unit": "3.1",
+    "word": "White canvas",
+    "definition": "A type of fabric often used for making sails, tents, and paintings, and here referring to a light, flexible material.",
+    "example": "The artist set up a white canvas on the easel, ready to begin painting.",
+    "vietnamese": "Vải toan trắng. (Ví dụ: Họa sĩ đặt một tấm toan trắng lên giá vẽ, sẵn sàng bắt đầu vẽ.)"
+  },
+  {
+    "unit": "3.1",
+    "word": "Chimney",
+    "definition": "A vertical channel or pipe that conducts smoke or combustion gases from a fireplace or furnace to the outside.",
+    "example": "Smoke was rising from the chimney, a sure sign that the fireplace was lit inside.",
+    "vietnamese": "Ống khói. (Ví dụ: Khói bốc lên từ ống khói, một dấu hiệu chắc chắn rằng lò sưởi bên trong đã được đốt.)"
+  },
+  {
+    "unit": "3.1",
+    "word": "Ecological home",
+    "definition": "A house designed to have minimal impact on the environment by being energy-efficient, using sustainable materials, and reducing waste.",
+    "example": "Their ecological home was powered by solar energy and built with recycled materials.",
+    "vietnamese": "Nhà sinh thái. (Ví dụ: Ngôi nhà sinh thái của họ được cung cấp năng lượng mặt trời và xây dựng bằng vật liệu tái chế.)"
+  },
+  {
+    "unit": "3.1",
+    "word": "Low impact on the environment",
+    "definition": "Refers to something that causes minimal harm or changes to the environment.",
+    "example": "Using bicycles instead of cars can have a low impact on the environment.",
+    "vietnamese": "Tác động thấp đến môi trường. (Ví dụ: Sử dụng xe đạp thay vì ô tô có thể có tác động thấp đến môi trường.)"
+  },
+  {
+    "unit": "3.1",
+    "word": "Solar panels",
+    "definition": "Devices composed of solar cells that convert sunlight into electricity.",
+    "example": "The house's solar panels provide enough energy to power the entire home.",
+    "vietnamese": "Tấm pin mặt trời. (Ví dụ: Các tấm pin mặt trời của ngôi nhà cung cấp đủ năng lượng để cung cấp điện cho toàn bộ ngôi nhà.)"
+  },
+  {
+    "unit": "3.1",
+    "word": "Eco-efficient",
+    "definition": "Using less energy and resources while still working well.",
+    "example": "The eco-efficient washing machine uses less water and electricity.",
+    "vietnamese": "Hiệu quả sinh thái. (Ví dụ: Máy giặt hiệu quả sinh thái sử dụng ít nước và điện hơn.)"
+  },
+  {
+    "unit": "3.1",
+    "word": "Detached house",
+    "definition": "A house that stands by itself and is not connected to another house.",
+    "example": "They live in a big detached house with a garden.",
+    "vietnamese": "Nhà riêng lẻ. (Ví dụ: Họ sống trong một ngôi nhà riêng lẻ lớn có vườn.)"
+  },
+  {
+    "unit": "3.1",
+    "word": "Stilt house",
+    "definition": "A house built on posts above the ground.",
+    "example": "The village had stilt houses to stay safe from floods.",
+    "vietnamese": "Nhà sàn. (Ví dụ: Ngôi làng có những ngôi nhà sàn để giữ an toàn khỏi lũ lụt.)"
+  },
+  {
+    "unit": "3.1",
+    "word": "Yurt",
+    "definition": "A round, portable tent traditionally used by people in Central Asia.",
+    "example": "We stayed in a yurt during our trip to Mongolia.",
+    "vietnamese": "Lều Yurt. (Ví dụ: Chúng tôi đã ở trong một chiếc lều yurt trong chuyến đi đến Mông Cổ.)"
+  },
+  {
+    "unit": "3.1",
+    "word": "Bungalow",
+    "definition": "A one-story house, usually with a large porch.",
+    "example": "They moved into a bungalow near the beach.",
+    "vietnamese": "Nhà gỗ một tầng. (Ví dụ: Họ chuyển đến một căn nhà gỗ một tầng gần bãi biển.)"
+  },
+  {
+    "unit": "3.2",
+    "word": "Mud",
+    "definition": "Wet dirt that is soft and sticky.",
+    "example": "After the rain, their shoes were covered in mud.",
+    "vietnamese": "Bùn. (Ví dụ: Sau cơn mưa, giày của họ dính đầy bùn.)"
+  },
+  {
+    "unit": "3.2",
+    "word": "Stone",
+    "definition": "A small, hard piece of rock.",
+    "example": "The path was made of flat stones.",
+    "vietnamese": "Đá. (Ví dụ: Con đường được làm bằng những viên đá phẳng.)"
+  },
+  {
+    "unit": "3.2",
+    "word": "Earth",
+    "definition": "The soil or ground.",
+    "example": "They dug into the earth to plant the tree.",
+    "vietnamese": "Đất. (Ví dụ: Họ đào đất để trồng cây.)"
+  },
+  {
+    "unit": "3.2",
+    "word": "rubbish tip",
+    "definition": "A place where garbage is dumped.",
+    "example": "They took the old furniture to the rubbish tip.",
+    "vietnamese": "Bãi rác. (Ví dụ: Họ mang đồ đạc cũ đến bãi rác.)"
+  },
+  {
+    "unit": "3.2",
+    "word": "water tank",
+    "definition": "A large container for storing water.",
+    "example": "They collect rainwater in a water tank to use in the garden.",
+    "vietnamese": "Bể nước. (Ví dụ: Họ hứng nước mưa vào bể nước để dùng trong vườn.)"
+  },
+  {
+    "unit": "3.2",
+    "word": "tubs",
+    "definition": "Large, round containers used for holding things, often liquids.",
+    "example": "They filled the tubs with water for the party.",
+    "vietnamese": "Bồn. (Ví dụ: Họ đổ đầy nước vào các bồn cho bữa tiệc.)"
+  },
+  {
+    "unit": "3.2",
+    "word": "recycling",
+    "definition": "The process of turning waste materials into reusable items.",
+    "example": "They separate paper and plastic for recycling.",
+    "vietnamese": "Tái chế. (Ví dụ: Họ phân loại giấy và nhựa để tái chế.)"
+  },
+  {
+    "unit": "3.2",
+    "word": "turn off lights",
+    "definition": "To switch off the lights to save electricity.",
+    "example": "Don’t forget to turn off the lights when you leave the room.",
+    "vietnamese": "Tắt đèn. (Ví dụ: Đừng quên tắt đèn khi bạn rời khỏi phòng.)"
+  },
+  {
+    "unit": "3.2",
+    "word": "appliances",
+    "definition": "Electrical devices used for household tasks, like a fridge or washing machine.",
+    "example": "Their kitchen is full of modern appliances like a dishwasher and microwave.",
+    "vietnamese": "Thiết bị. (Ví dụ: Nhà bếp của họ có đầy đủ các thiết bị hiện đại như máy rửa bát và lò vi sóng.)"
+  },
+  {
+    "unit": "3.2",
+    "word": "unplug charger",
+    "definition": "To disconnect a device charger from the power socket.",
+    "example": "Remember to unplug your charger when the phone is fully charged.",
+    "vietnamese": "Rút sạc. (Ví dụ: Hãy nhớ rút sạc khi điện thoại đã sạc đầy.)"
+  },
+  {
+    "unit": "3.2",
+    "word": "heat the house",
+    "definition": "To warm up the home using a heater or other methods.",
+    "example": "They use a fireplace to heat the house in winter.",
+    "vietnamese": "Sưởi ấm nhà. (Ví dụ: Họ dùng lò sưởi để sưởi ấm nhà vào mùa đông.)"
+  },
+  {
+    "unit": "3.2",
+    "word": "collect",
+    "definition": "To gather or bring things together.",
+    "example": "They collect rainwater in barrels for the garden.",
+    "vietnamese": "Thu gom. (Ví dụ: Họ hứng nước mưa vào thùng để tưới vườn.)"
+  },
+  {
+    "unit": "3.2",
+    "word": "water tank",
+    "definition": "A container used to store water for future use.",
+    "example": "The water tank supplies the house with drinking water.",
+    "vietnamese": "Bể nước. (Ví dụ: Bể nước cung cấp nước uống cho ngôi nhà.)"
+  },
+  {
+    "unit": "3.2",
+    "word": "provide energy",
+    "definition": "To supply power, like electricity or heat.",
+    "example": "Solar panels on the roof provide energy for the house.",
+    "vietnamese": "Cung cấp năng lượng. (Ví dụ: Các tấm pin mặt trời trên mái nhà cung cấp năng lượng cho ngôi nhà.)"
+  },
+  {
+    "unit": "3.2",
+    "word": "roof",
+    "definition": "The top covering of a building.",
+    "example": "The roof keeps the house dry during storms.",
+    "vietnamese": "Mái nhà. (Ví dụ: Mái nhà giữ cho ngôi nhà khô ráo trong các cơn bão.)"
+  },
+  {
+    "unit": "3.2",
+    "word": "water the plants",
+    "definition": "To give water to plants so they grow.",
+    "example": "She waters the plants every morning to keep them healthy.",
+    "vietnamese": "Tưới cây. (Ví dụ: Cô ấy tưới cây mỗi sáng để chúng khỏe mạnh.)"
+  },
+  {
+    "unit": "3.3",
+    "word": "Library",
+    "definition": "A place where books, magazines, and other materials like DVDs and computers are available for people to read, borrow, or study.",
+    "example": "I went to the library to borrow a book about dinosaurs.",
+    "vietnamese": "Thư viện. (Ví dụ: Tôi đến thư viện để mượn một cuốn sách về khủng long.)"
+  },
+  {
+    "unit": "3.3",
+    "word": "school",
+    "definition": "A place where children and young people go to learn subjects such as reading, writing, and math.",
+    "example": "My school has a big playground where we play at break time.",
+    "vietnamese": "Trường học. (Ví dụ: Trường của tôi có một sân chơi lớn nơi chúng tôi chơi vào giờ giải lao.)"
+  },
+  {
+    "unit": "3.3",
+    "word": "House",
+    "definition": "A building where people live, usually one family or a small group of people.",
+    "example": "Sarah's house has a beautiful garden full of flowers.",
+    "vietnamese": "Ngôi nhà. (Ví dụ: Nhà của Sarah có một khu vườn xinh đẹp đầy hoa.)"
+  },
+  {
+    "unit": "3.3",
+    "word": "hotel",
+    "definition": "A place where people pay to stay when they are traveling, usually offering rooms, meals, and other services.",
+    "example": "We stayed at a hotel near the beach during our holiday.",
+    "vietnamese": "Khách sạn. (Ví dụ: Chúng tôi ở một khách sạn gần bãi biển trong kỳ nghỉ của mình.)"
+  },
+  {
+    "unit": "3.3",
+    "word": "offices",
+    "definition": "Buildings or rooms where people work, usually doing business or administrative tasks.",
+    "example": "My father works in offices downtown, where he meets many clients.",
+    "vietnamese": "Văn phòng. (Ví dụ: Bố tôi làm việc tại các văn phòng ở trung tâm thành phố, nơi ông gặp gỡ nhiều khách hàng.)"
+  },
+  {
+    "unit": "3.3",
+    "word": "music academy",
+    "definition": "A place where people learn how to play musical instruments, sing, or study music.",
+    "example": "I take piano lessons every Saturday at the music academy.",
+    "vietnamese": "Học viện âm nhạc. (Ví dụ: Tôi học piano vào mỗi thứ Bảy tại học viện âm nhạc.)"
+  },
+  {
+    "unit": "3.3",
+    "word": "museum",
+    "definition": "A building where objects of historical, scientific, or artistic interest are displayed for people to see and learn about.",
+    "example": "We saw dinosaur skeletons at the museum yesterday.",
+    "vietnamese": "Viện bảo tàng. (Ví dụ: Hôm qua chúng tôi đã xem bộ xương khủng long ở viện bảo tàng.)"
+  },
+  {
+    "unit": "3.3",
+    "word": "amusement park",
+    "definition": "A large outdoor area with rides, games, and other fun activities for entertainment.",
+    "example": "I went on the rollercoaster at the amusement park, and it was really exciting!",
+    "vietnamese": "Công viên giải trí. (Ví dụ: Tôi đã chơi tàu lượn siêu tốc ở công viên giải trí, và nó thực sự thú vị!)"
+  },
+  {
+    "unit": "3.3",
+    "word": "sports centre",
+    "definition": "A building where people can play sports, exercise, or participate in physical activities like swimming or basketball.",
+    "example": "We go to the sports centre every week to play badminton.",
+    "vietnamese": "Trung tâm thể thao. (Ví dụ: Chúng tôi đến trung tâm thể thao hàng tuần để chơi cầu lông.)"
+  },
+  {
+    "unit": "3.3",
+    "word": "shop",
+    "definition": "A place where people buy things such as clothes, food, or toys.",
+    "example": "I went to the shop to buy a new pair of shoes.",
+    "vietnamese": "Cửa hàng. (Ví dụ: Tôi đã đến cửa hàng để mua một đôi giày mới.)"
+  },
+  {
+    "unit": "3.4",
+    "word": "Mountain",
+    "definition": "A large natural elevation of the Earth's surface, typically rising significantly above the surrounding area.",
+    "example": "We went hiking in the mountains and enjoyed the breathtaking views from the summit.",
+    "vietnamese": "Núi. (Ví dụ: Chúng tôi đi bộ đường dài trên núi và thưởng thức cảnh đẹp ngoạn mục từ đỉnh núi.)"
+  },
+  {
+    "unit": "3.4",
+    "word": "Peak",
+    "definition": "The pointed top of a mountain or hill.",
+    "example": "The climbers reached the peak just before sunset, providing them with a stunning view of the valley below.",
+    "vietnamese": "Đỉnh núi. (Ví dụ: Những người leo núi đã lên tới đỉnh ngay trước hoàng hôn, mang đến cho họ một khung cảnh tuyệt đẹp của thung lũng bên dưới.)"
+  },
+  {
+    "unit": "3.4",
+    "word": "Spectacular",
+    "definition": "Impressive or sensational in appearance or effect.",
+    "example": "The fireworks display on New Year's Eve was truly spectacular, lighting up the entire sky.",
+    "vietnamese": "Ngoạn mục. (Ví dụ: Màn trình diễn pháo hoa đêm giao thừa thực sự ngoạn mục, thắp sáng cả bầu trời.)"
+  },
+  {
+    "unit": "3.4",
+    "word": "Hidden",
+    "definition": "Kept out of sight; concealed.",
+    "example": "They discovered a hidden cave while exploring the forest.",
+    "vietnamese": "Ẩn. (Ví dụ: Họ đã phát hiện ra một hang động ẩn trong khi khám phá khu rừng.)"
+  },
+  {
+    "unit": "3.4",
+    "word": "Trek",
+    "definition": "A long, difficult journey, especially one made on foot.",
+    "example": "We planned a three-day trek through the national park, camping along the way.",
+    "vietnamese": "Chuyến đi bộ đường dài. (Ví dụ: Chúng tôi đã lên kế hoạch cho một chuyến đi bộ đường dài ba ngày xuyên qua công viên quốc gia, cắm trại dọc đường đi.)"
+  },
+  {
+    "unit": "3.5",
+    "word": "Brass knob",
+    "definition": "A round handle made of brass, often used on doors or drawers.",
+    "example": "She turned the brass knob and opened the antique wooden door.",
+    "vietnamese": "Tay nắm cửa bằng đồng. (Ví dụ: Cô ấy vặn tay nắm cửa bằng đồng và mở cánh cửa gỗ cổ.)"
+  },
+  {
+    "unit": "3.5",
+    "word": "Porthole",
+    "definition": "A small circular window on a ship or aircraft.",
+    "example": "The children excitedly looked out the porthole to see the ocean waves.",
+    "vietnamese": "Ô cửa sổ tròn. (Ví dụ: Bọn trẻ hào hứng nhìn ra ô cửa sổ tròn để ngắm sóng biển.)"
+  },
+  {
+    "unit": "3.5",
+    "word": "carpeted",
+    "definition": "Covered with carpet; having a carpet on the floor.",
+    "example": "The living room was carpeted in a soft, plush material that felt cozy underfoot.",
+    "vietnamese": "Trải thảm. (Ví dụ: Phòng khách được trải một lớp thảm mềm, sang trọng, tạo cảm giác ấm cúng dưới chân.)"
+  },
+  {
+    "unit": "3.5",
+    "word": "comfort",
+    "definition": "A state of physical ease and freedom from pain or constraint; to provide solace.",
+    "example": "After a long day, she found comfort in reading her favorite book.",
+    "vietnamese": "Sự thoải mái. (Ví dụ: Sau một ngày dài, cô tìm thấy sự thoải mái khi đọc cuốn sách yêu thích của mình.)"
+  },
+  {
+    "unit": "3.5",
+    "word": "tunnel",
+    "definition": "An underground passage or a long hole dug through the ground.",
+    "example": "The train passed through a dark tunnel before emerging into the bright sunlight.",
+    "vietnamese": "Đường hầm. (Ví dụ: Đoàn tàu đi qua một đường hầm tối tăm trước khi ra ngoài ánh sáng mặt trời rực rỡ.)"
+  },
+  {
+    "unit": "3.5",
+    "word": "fond of",
+    "definition": "Having a strong liking or affection for someone or something.",
+    "example": "He is very fond of dogs and has three of them at home.",
+    "vietnamese": "Thích. (Ví dụ: Anh ấy rất thích chó và nuôi ba con ở nhà.)"
+  },
+  {
+    "unit": "3.5",
+    "word": "meadows",
+    "definition": "Open areas of grassland, typically used for grazing animals or growing hay.",
+    "example": "The wildflowers bloomed beautifully in the meadows during spring.",
+    "vietnamese": "Đồng cỏ. (Ví dụ: Hoa dại nở rộ tuyệt đẹp trên đồng cỏ vào mùa xuân.)"
+  },
+  {
+    "unit": "3.5",
+    "word": "pegs",
+    "definition": "Small, pointed pieces of wood or metal used to fasten things in place.",
+    "example": "They used pegs to secure the tent to the ground during their camping trip.",
+    "vietnamese": "Cọc. (Ví dụ: Họ dùng cọc để cố định lều xuống đất trong chuyến cắm trại.)"
+  },
+  {
+    "unit": "3.5",
+    "word": "respectable",
+    "definition": "Regarded by society as good, proper, or correct.",
+    "example": "He came from a respectable family known for their charitable work in the community.",
+    "vietnamese": "Đáng kính. (Ví dụ: Anh ấy xuất thân từ một gia đình đáng kính, nổi tiếng với các hoạt động từ thiện trong cộng đồng.)"
+  },
+  {
+    "unit": "3.5",
+    "word": "tiled",
+    "definition": "Covered with tiles; a surface made of flat pieces of material, usually used for flooring or walls.",
+    "example": "The kitchen had a beautifully tiled floor that was easy to clean.",
+    "vietnamese": "Lát gạch. (Ví dụ: Nhà bếp có sàn lát gạch đẹp mắt, dễ lau chùi.)"
+  }
+]

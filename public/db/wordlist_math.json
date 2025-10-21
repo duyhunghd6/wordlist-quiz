@@ -1,0 +1,478 @@
+[
+  {
+    "unit": "1.1",
+    "word": "Negative",
+    "definition": "Less than zero",
+    "example": "",
+    "vietnamese": "Âm (Nhỏ hơn không)"
+  },
+  {
+    "unit": "1.1",
+    "word": "Minus",
+    "definition": "",
+    "example": "Eight minus 6 is two",
+    "vietnamese": "trừ"
+  },
+  {
+    "unit": "1.1",
+    "word": "Difference",
+    "definition": "the jump size between terms",
+    "example": "The difference between 20 and 25 is 5",
+    "vietnamese": "khoảng cách giữa các số (phép tính trừ)"
+  },
+  {
+    "unit": "1.1",
+    "word": "Linear sequence",
+    "definition": "a number pattern which increases (or decreases) by the same amount each time",
+    "example": "2,4,6,8,10",
+    "vietnamese": "dãy số cách đều (dãy số cùng tăng hoặc giảm theo một mức cố định)"
+  },
+  {
+    "unit": "1.1",
+    "word": "Negative number",
+    "definition": "a number less than zero",
+    "example": "-3",
+    "vietnamese": "số âm (những số <0)"
+  },
+  {
+    "unit": "1.1",
+    "word": "Non-linear sequence",
+    "definition": "a pattern where the numbers don't increase or decrease by the same numbers each time.",
+    "example": "2, 4, 8, 16, 32",
+    "vietnamese": "Dãy số không tuyến tính (một quy luật mà các số không tăng hoặc giảm theo cùng một lượng mỗi lần.)"
+  },
+  {
+    "unit": "1.1",
+    "word": "(term to term) Rule",
+    "definition": "A rule tells you how things or numbers are connected",
+    "example": "2,4,6,8,10. The term to term rule is +2",
+    "vietnamese": "Quy tắc (từ số hạng đến số hạng) (Một quy tắc cho bạn biết mọi thứ hoặc các con số được kết nối như thế nào)"
+  },
+  {
+    "unit": "1.1",
+    "word": "Sequence",
+    "definition": "an ordered set of numbers, shapes or other mathematical objects that follow a rule.",
+    "example": "",
+    "vietnamese": "Dãy số (một tập hợp có thứ tự gồm các số, hình dạng hoặc đối tượng toán học khác tuân theo một quy tắc.)"
+  },
+  {
+    "unit": "1.2",
+    "word": "Temperature",
+    "definition": "How cold or hot something is.",
+    "example": "",
+    "vietnamese": "Nhiệt độ"
+  },
+  {
+    "unit": "1.2",
+    "word": "Zero",
+    "definition": "another name for nothing",
+    "example": "0",
+    "vietnamese": "Số không (một tên gọi khác của 'không có gì')"
+  },
+  {
+    "unit": "1.2",
+    "word": "Thermometer",
+    "definition": "A device that measures temperature",
+    "example": "",
+    "vietnamese": "Nhiệt kế"
+  },
+  {
+    "unit": "1.3",
+    "word": "Compose",
+    "definition": "put together",
+    "example": "300 + 50 = 350",
+    "vietnamese": "Tổng hợp (gộp)"
+  },
+  {
+    "unit": "1.3",
+    "word": "Decompose",
+    "definition": "break down",
+    "example": "350 = 300 + 50",
+    "vietnamese": "Phân tích (tách)"
+  },
+  {
+    "unit": "1.3",
+    "word": "Regroup",
+    "definition": "Change the way a number is written",
+    "example": "",
+    "vietnamese": "nhóm"
+  },
+  {
+    "unit": "1.3",
+    "word": "Equivalent",
+    "definition": "Having the same value (equal)",
+    "example": "",
+    "vietnamese": "tương đương, bằng nhau"
+  },
+  {
+    "unit": "1.3",
+    "word": "Thousand",
+    "definition": "a 4-digit number that is 10 times larger than a hundred",
+    "example": "1,000",
+    "vietnamese": "Nghìn"
+  },
+  {
+    "unit": "1.3",
+    "word": "Ten thousand",
+    "definition": "a 5-digit number that is 10 times lager than a hundred",
+    "example": "10,000",
+    "vietnamese": "Chục nghìn"
+  },
+  {
+    "unit": "1.3",
+    "word": "Hundred thousand",
+    "definition": "",
+    "example": "100,000",
+    "vietnamese": "Trăm nghìn"
+  },
+  {
+    "unit": "1.3",
+    "word": "Million",
+    "definition": "",
+    "example": "1,000,000",
+    "vietnamese": "Triệu"
+  },
+  {
+    "unit": "1.3",
+    "word": "Place holder",
+    "definition": "Use of Zero to hold other digits in the correct position.",
+    "example": "In 804, the place holder is 0",
+    "vietnamese": "Chữ số giữ chỗ (Việc sử dụng số Không để giữ các chữ số khác ở đúng vị trí.)"
+  },
+  {
+    "unit": "1.3",
+    "word": "Place value",
+    "definition": "The value of a digit determined by it's position",
+    "example": "The 7 in 3,755 has a place value of 700",
+    "vietnamese": "Giá trị theo vị trí (Giá trị của một chữ số được xác định bởi vị trí của nó)"
+  },
+  {
+    "unit": "2.1",
+    "word": "Analogue clock",
+    "definition": "A clock with an hour hand and a minute hand",
+    "example": "",
+    "vietnamese": "Đồng hồ kim (Một chiếc đồng hồ có kim giờ và kim phút)"
+  },
+  {
+    "unit": "2.1",
+    "word": "Digital clock",
+    "definition": "a clcok that uses numbers to tell the time",
+    "example": "",
+    "vietnamese": "Đồng hồ điện tử (một chiếc đồng hồ sử dụng các con số để báo giờ)"
+  },
+  {
+    "unit": "2.1",
+    "word": "A.m",
+    "definition": "a time in the morning between midnight and midday",
+    "example": "",
+    "vietnamese": "A.m (sáng) (thời gian vào buổi sáng, từ nửa đêm đến giữa trưa)"
+  },
+  {
+    "unit": "2.1",
+    "word": "P.m",
+    "definition": "a time in the afternoon or evening between midday and midnight",
+    "example": "",
+    "vietnamese": "P.m (chiều/tối) (thời gian vào buổi chiều hoặc buổi tối, từ giữa trưa đến nửa đêm)"
+  },
+  {
+    "unit": "2.1",
+    "word": "Hour",
+    "definition": "",
+    "example": "",
+    "vietnamese": "Giờ"
+  },
+  {
+    "unit": "2.1",
+    "word": "Minute",
+    "definition": "",
+    "example": "",
+    "vietnamese": "Phút"
+  },
+  {
+    "unit": "2.1",
+    "word": "Second",
+    "definition": "",
+    "example": "",
+    "vietnamese": "Giây"
+  },
+  {
+    "unit": "2.2",
+    "word": "Calender",
+    "definition": "",
+    "example": "",
+    "vietnamese": "Lịch"
+  },
+  {
+    "unit": "2.2",
+    "word": "Leap year",
+    "definition": "a year with 366 days",
+    "example": "",
+    "vietnamese": "Năm nhuận (một năm có 366 ngày)"
+  },
+  {
+    "unit": "2.2",
+    "word": "Time interval",
+    "definition": "the lenght of time between two given times",
+    "example": "",
+    "vietnamese": "Khoảng thời gian (khoảng thời gian giữa hai thời điểm nhất định)"
+  },
+  {
+    "unit": "2.2",
+    "word": "Timetable",
+    "definition": "a table of information showing when things will happen",
+    "example": "",
+    "vietnamese": "Thời khóa biểu (một bảng thông tin cho thấy khi nào mọi việc sẽ xảy ra)"
+  },
+  {
+    "unit": "3.1",
+    "word": "Symbol",
+    "definition": "a thing that represents something esle",
+    "example": "",
+    "vietnamese": "Ký hiệu (một thứ đại diện cho một thứ gì đó khác)"
+  },
+  {
+    "unit": "3.1",
+    "word": "Write",
+    "definition": "",
+    "example": "",
+    "vietnamese": "Viết"
+  },
+  {
+    "unit": "3.1",
+    "word": "Use",
+    "definition": "",
+    "example": "",
+    "vietnamese": "Sử dụng"
+  },
+  {
+    "unit": "3.2",
+    "word": "Addition",
+    "definition": "Add, total, more, altogether, plus, count on, sum, increase",
+    "example": "",
+    "vietnamese": "Phép cộng (Các từ liên quan: Cộng, tổng, thêm, tất cả, cộng, đếm thêm, tổng, tăng)"
+  },
+  {
+    "unit": "3.2",
+    "word": "Subtraction",
+    "definition": "subtract, difference, take away, count back, minus, decrease, leave",
+    "example": "",
+    "vietnamese": "Phép trừ (Các từ liên quan: trừ, hiệu, lấy đi, đếm lùi, trừ, giảm, còn lại)"
+  },
+  {
+    "unit": "3.3",
+    "word": "Even",
+    "definition": "",
+    "example": "",
+    "vietnamese": "Chẵn (số chẵn)"
+  },
+  {
+    "unit": "3.3",
+    "word": "Odd",
+    "definition": "",
+    "example": "",
+    "vietnamese": "Lẻ (số lẻ)"
+  },
+  {
+    "unit": "3.3",
+    "word": "Generalisation (general statement)",
+    "definition": "A statement that works for all examples",
+    "example": "",
+    "vietnamese": "Khái quát hóa (phát biểu chung) (Một phát biểu đúng cho tất cả các ví dụ)"
+  },
+  {
+    "unit": "3.3",
+    "word": "Counter-example",
+    "definition": "an example which shows a general staement is wrong",
+    "example": "",
+    "vietnamese": "Phản ví dụ (một ví dụ cho thấy một phát biểu chung là sai)"
+  },
+  {
+    "unit": "4.1",
+    "word": "Probability",
+    "definition": "how likely something is to happen",
+    "example": "",
+    "vietnamese": "Xác suất (khả năng một điều gì đó xảy ra)"
+  },
+  {
+    "unit": "4.1",
+    "word": "No chance",
+    "definition": "an event that's impossible",
+    "example": "",
+    "vietnamese": "Không có cơ hội (một sự kiện không thể xảy ra)"
+  },
+  {
+    "unit": "4.1",
+    "word": "Poor chance",
+    "definition": "It is unlikely that an event will happen",
+    "example": "",
+    "vietnamese": "Cơ hội thấp (Một sự kiện không chắc sẽ xảy ra)"
+  },
+  {
+    "unit": "4.1",
+    "word": "Even chance",
+    "definition": "It is equally likely and unlikely that an event will happen",
+    "example": "",
+    "vietnamese": "Cơ hội ngang nhau (Khả năng xảy ra và không xảy ra của một sự kiện là như nhau)"
+  },
+  {
+    "unit": "4.1",
+    "word": "Good chance",
+    "definition": "It is likely that an event will happen",
+    "example": "",
+    "vietnamese": "Cơ hội cao (Một sự kiện có khả năng sẽ xảy ra)"
+  },
+  {
+    "unit": "4.1",
+    "word": "Certain",
+    "definition": "AN event will cdefinately happen",
+    "example": "",
+    "vietnamese": "Chắc chắn (Một sự kiện chắc chắn sẽ xảy ra)"
+  },
+  {
+    "unit": "4.1",
+    "word": "Outcome",
+    "definition": "The result of an event in a probability expiriment",
+    "example": "",
+    "vietnamese": "Kết quả (Kết quả của một sự kiện trong một thí nghiệm xác suất)"
+  },
+  {
+    "unit": "4.1",
+    "word": "Unlikely",
+    "definition": "Poor chance",
+    "example": "",
+    "vietnamese": "Không chắc xảy ra (Cơ hội thấp)"
+  },
+  {
+    "unit": "4.1",
+    "word": "Likely",
+    "definition": "Good chance",
+    "example": "",
+    "vietnamese": "Có khả năng xảy ra (Cơ hội cao)"
+  },
+  {
+    "unit": "4.1",
+    "word": "Impossible",
+    "definition": "no chance",
+    "example": "",
+    "vietnamese": "Không thể xảy ra (không có cơ hội)"
+  },
+  {
+    "unit": "4.1",
+    "word": "Maybe",
+    "definition": "About 50% chance of happening",
+    "example": "",
+    "vietnamese": "Có thể (Khoảng 50% cơ hội xảy ra)"
+  },
+  {
+    "unit": "5.1",
+    "word": "Array",
+    "definition": "objects or numbers arranged in rows and columns",
+    "example": "",
+    "vietnamese": "Mảng (các đối tượng hoặc số được sắp xếp theo hàng và cột)"
+  },
+  {
+    "unit": "5.1",
+    "word": "Factor",
+    "definition": "A whole number that divides exactly into another number.",
+    "example": "2 x 3 = 6, so 2 and 3 are factors of 6",
+    "vietnamese": "Ước số (Một số nguyên chia hết cho một số khác.)"
+  },
+  {
+    "unit": "5.1",
+    "word": "Inverse operations",
+    "definition": "OPerations that are the opposite of each other.",
+    "example": "The inverse of add 2 is subtract 2.",
+    "vietnamese": "Phép toán ngược (Các phép toán trái ngược nhau.)"
+  },
+  {
+    "unit": "5.1",
+    "word": "Multiple",
+    "definition": "Result of multiplying a number by a whole number.",
+    "example": "Multiples of 3 are: 3,6,9,12,15. 1 x 3 = 3. 3 is a multiple of 3 and 1",
+    "vietnamese": "Bội số (Kết quả của việc nhân một số với một số nguyên.)"
+  },
+  {
+    "unit": "5.1",
+    "word": "Product",
+    "definition": "The answer when 2 or more numbers are multiplied together",
+    "example": "The product of 3 and 5 is 15 because 3 x 5 = 15",
+    "vietnamese": "Tích (Kết quả khi 2 hoặc nhiều số được nhân với nhau)"
+  },
+  {
+    "unit": "5.2",
+    "word": "Associative law",
+    "definition": "when more than two numbers are added or multiplied you can do the calculations in any order",
+    "example": "8+3+4=8+3+4 = 11+4=8+7",
+    "vietnamese": "Tính chất kết hợp (khi cộng hoặc nhân nhiều hơn hai số, bạn có thể thực hiện các phép tính theo bất kỳ thứ tự nào)"
+  },
+  {
+    "unit": "5.2",
+    "word": "Multiplying Multiply Multiplied",
+    "definition": "is the same as repeated adding",
+    "example": "60+60+60+60=60 x 4",
+    "vietnamese": "Phép nhân (Nhân) (giống như phép cộng lặp lại)"
+  },
+  {
+    "unit": "5.2",
+    "word": "Product",
+    "definition": "the result when numbers are multiplied together.",
+    "example": "60 x 4 = 240. The product of 60 and 4 is 240",
+    "vietnamese": "Tích (kết quả khi các số được nhân với nhau.)"
+  },
+  {
+    "unit": "6.1",
+    "word": "2d Shape",
+    "definition": "A flat shape",
+    "example": "A circle is a 2D shape",
+    "vietnamese": "Hình 2D (Một hình phẳng)"
+  },
+  {
+    "unit": "6.1",
+    "word": "Polygon",
+    "definition": "A flat shape with 3 or more straight sides and no curved sides",
+    "example": "A triangle is a polygon",
+    "vietnamese": "Đa giác (Một hình phẳng có 3 cạnh thẳng trở lên và không có cạnh cong)"
+  },
+  {
+    "unit": "6.1",
+    "word": "Parallel",
+    "definition": "Lines that are the same distance apart all the way along their lenght",
+    "example": "",
+    "vietnamese": "Song song (Các đường thẳng cách đều nhau trên suốt chiều dài của chúng)"
+  },
+  {
+    "unit": "6.1",
+    "word": "Tessellation",
+    "definition": "Shapes fitting together without any gaps",
+    "example": "",
+    "vietnamese": "Phép lát hình (Các hình dạng khớp với nhau mà không có khoảng trống)"
+  },
+  {
+    "unit": "6.2",
+    "word": "Symmetry/symmetrical",
+    "definition": "One half of a shape is a mirror image of the other half",
+    "example": "",
+    "vietnamese": "Đối xứng (Một nửa của hình là hình ảnh phản chiếu của nửa còn lại)"
+  },
+  {
+    "unit": "6.2",
+    "word": "Line of symmetry",
+    "definition": "the line on a shape or pattern where the mirror could be placed to create the same image as the other half of the shape or pattern",
+    "example": "",
+    "vietnamese": "Trục đối xứng (đường trên một hình dạng hoặc hoa văn nơi có thể đặt gương để tạo ra hình ảnh giống như nửa còn lại)"
+  },
+  {
+    "unit": "6.2",
+    "word": "Horizontal",
+    "definition": "A straight line parallel to the horizon",
+    "example": "",
+    "vietnamese": "Ngang (Một đường thẳng song song với đường chân trời)"
+  },
+  {
+    "unit": "6.2",
+    "word": "Vertical",
+    "definition": "A straight line at a right angle to the horizon",
+    "example": "",
+    "vietnamese": "Dọc (Một đường thẳng tạo góc vuông với đường chân trời)"
+  }
+]
