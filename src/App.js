@@ -18,6 +18,7 @@ function App() {
   const [history, setHistory] = useState({});
   const [userAnswers, setUserAnswers] = useState([]);
   const [wordWeights, setWordWeights] = useState({});
+  const [playerName, setPlayerName] = useState('');
 
   const wordlists = ['wordlist_esl', 'wordlist_math'];
 
@@ -26,6 +27,8 @@ function App() {
     setHistory(loadedHistory);
     const loadedWeights = JSON.parse(localStorage.getItem('wordWeights')) || {};
     setWordWeights(loadedWeights);
+    const loadedName = localStorage.getItem('playerName') || '';
+    setPlayerName(loadedName);
   }, []);
 
   const handleWordlistChange = async selected => {
@@ -127,13 +130,17 @@ function App() {
       } else {
         setShowResults(true);
         setQuizStarted(false);
-        saveResult();
       }
     }, 3000);
   };
 
-  const saveResult = () => {
+  const saveResult = (name) => {
+    const finalName = name || 'Anonymous Panda';
+    setPlayerName(finalName);
+    localStorage.setItem('playerName', finalName);
+
     const newResult = {
+      name: finalName,
       score: (score / questions.length) * 100,
       date: new Date().toISOString(),
     };
@@ -162,6 +169,8 @@ function App() {
           questions={questions}
           userAnswers={userAnswers}
           playAgain={playAgain}
+          saveResult={saveResult}
+          playerName={playerName}
         />
       );
     }

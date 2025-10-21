@@ -34,7 +34,7 @@ const StartScreen = ({
           <ul>
             {history[selectedWordlist].map((res, i) => (
               <li key={i}>
-                {new Date(res.date).toLocaleString()} - Score: {res.score.toFixed(2)}%
+                {res.name || 'NoName'}: {new Date(res.date).toLocaleString()} - Score: {res.score.toFixed(2)}%
               </li>
             ))}
           </ul>
