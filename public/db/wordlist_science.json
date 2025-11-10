@@ -1,0 +1,653 @@
+[
+  {
+    "unit": "1. Living things",
+    "word": "bones",
+    "definition": "The hard parts inside your body that help you stand up and give you shape.",
+    "example": "You can feel the hard bones in your fingers and arms.",
+    "vietnamese": "Xương"
+  },
+  {
+    "unit": "1. Living things",
+    "word": "frame",
+    "definition": "A structure that holds something together and gives it shape.",
+    "example": "Your skeleton acts like a frame for your whole body.",
+    "vietnamese": "Khung, Cấu trúc"
+  },
+  {
+    "unit": "1. Living things",
+    "word": "hip",
+    "definition": "The large bone at the top of your leg that helps you walk and bend.",
+    "example": "When you put your hands on your waist, you are near your hips.",
+    "vietnamese": "Hông"
+  },
+  {
+    "unit": "1. Living things",
+    "word": "jaw",
+    "definition": "The bones in your face that hold your teeth and help you chew.",
+    "example": "You move your jaw up and down when you talk and eat.",
+    "vietnamese": "Xương hàm"
+  },
+  {
+    "unit": "1. Living things",
+    "word": "model",
+    "definition": "A small copy of something real that helps us learn about it.",
+    "example": "Our teacher showed us a plastic model of a human skeleton.",
+    "vietnamese": "Mô hình"
+  },
+  {
+    "unit": "1. Living things",
+    "word": "rib cage",
+    "definition": "The bones in your chest that curve around to keep your heart and lungs safe.",
+    "example": "Your rib cage is like a shield protecting your important organs.",
+    "vietnamese": "Lồng ngực"
+  },
+  {
+    "unit": "1. Living things",
+    "word": "skeleton",
+    "definition": "All the bones in a body joined together to form a frame.",
+    "example": "A human skeleton helps us stand tall and move.",
+    "vietnamese": "Bộ xương"
+  },
+  {
+    "unit": "1. Living things",
+    "word": "skull",
+    "definition": "The big, hard bone in your head that protects your brain.",
+    "example": "Your skull is like a strong helmet for your brain.",
+    "vietnamese": "Hộp sọ"
+  },
+  {
+    "unit": "1. Living things",
+    "word": "spine",
+    "definition": "The line of many small bones going all the way down your back.",
+    "example": "Your spine helps you bend and stand up straight.",
+    "vietnamese": "Cột sống"
+  },
+  {
+    "unit": "1. Living things",
+    "word": "function",
+    "definition": "The special job or work that something is made to do.",
+    "example": "The function of your heart is to pump blood around your body.",
+    "vietnamese": "Chức năng"
+  },
+  {
+    "unit": "1. Living things",
+    "word": "length",
+    "definition": "A measurement of how long something is from one end to the other.",
+    "example": "We used a ruler to measure the length of our arm bones.",
+    "vietnamese": "Chiều dài"
+  },
+  {
+    "unit": "1. Living things",
+    "word": "muscles",
+    "definition": "The soft parts in your body that pull on bones to make you move.",
+    "example": "You use muscles in your legs to run and jump.",
+    "vietnamese": "Cơ bắp"
+  },
+  {
+    "unit": "1. Living things",
+    "word": "organs",
+    "definition": "Special parts inside your body that do very important jobs.",
+    "example": "Your brain, heart, and lungs are all organs.",
+    "vietnamese": "Cơ quan, Nội tạng"
+  },
+  {
+    "unit": "1. Living things",
+    "word": "protect",
+    "definition": "To keep something safe so that it does not get hurt.",
+    "example": "Your skeleton helps to protect your soft organs inside.",
+    "vietnamese": "Bảo vệ"
+  },
+  {
+    "unit": "1. Living things",
+    "word": "support",
+    "definition": "To hold something up and stop it from falling down.",
+    "example": "Your spine gives support to your whole body.",
+    "vietnamese": "Nâng đỡ"
+  },
+  {
+    "unit": "1. Living things",
+    "word": "contract",
+    "definition": "To become shorter and tighter.",
+    "example": "When you bend your arm, your bicep muscle contracts.",
+    "vietnamese": "Co lại"
+  },
+  {
+    "unit": "1. Living things",
+    "word": "relax",
+    "definition": "To become loose or less tight.",
+    "example": "When you straighten your arm, your bicep muscle relaxes.",
+    "vietnamese": "Thả lỏng, dãn ra"
+  },
+  {
+    "unit": "1. Living things",
+    "word": "exoskeleton",
+    "definition": "A hard, protective shell on the *outside* of an animal's body.",
+    "example": "A beetle or a crab has a hard exoskeleton.",
+    "vietnamese": "Bộ xương ngoài"
+  },
+  {
+    "unit": "1. Living things",
+    "word": "identification key",
+    "definition": "A set of questions that helps you figure out the name of a living thing.",
+    "example": "We used an identification key to find out what kind of insect we found.",
+    "vietnamese": "Khóa nhận dạng"
+  },
+  {
+    "unit": "1. Living things",
+    "word": "invertebrate",
+    "definition": "An animal that does *not* have a spine or backbone.",
+    "example": "A jellyfish, a worm, and a spider are all invertebrates.",
+    "vietnamese": "Động vật không xương sống"
+  },
+  {
+    "unit": "1. Living things",
+    "word": "vertebrate",
+    "definition": "An animal that *has* a spine or backbone.",
+    "example": "Fish, birds, dogs, and humans are all vertebrates.",
+    "vietnamese": "Động vật có xương sống"
+  },
+  {
+    "unit": "1. Living things",
+    "word": "germs",
+    "definition": "Very tiny living things, like bacteria, that can get inside your body and make you sick.",
+    "example": "We wash our hands with soap to get rid of germs.",
+    "vietnamese": "Mầm bệnh, vi trùng"
+  },
+  {
+    "unit": "1. Living things",
+    "word": "infect",
+    "definition": "When germs get into your body and start to make you sick.",
+    "example": "A cough can spread germs that infect other people.",
+    "vietnamese": "Lây nhiễm, truyền nhiễm"
+  },
+  {
+    "unit": "1. Living things",
+    "word": "infectious disease",
+    "definition": "A sickness that can easily pass from one person to another person.",
+    "example": "The flu is an infectious disease that spreads quickly in winter.",
+    "vietnamese": "Bệnh truyền nhiễm"
+  },
+  {
+    "unit": "1. Living things",
+    "word": "instructions",
+    "definition": "A list of steps that tell you how to do something correctly and safely.",
+    "example": "You must always follow the instructions on the medicine bottle.",
+    "vietnamese": "Hướng dẫn"
+  },
+  {
+    "unit": "1. Living things",
+    "word": "medicines",
+    "definition": "Special substances, like pills or liquids, you take to help your body fight a sickness.",
+    "example": "The doctor gave me medicines to help my cough get better.",
+    "vietnamese": "Thuốc"
+  },
+  {
+    "unit": "1. Living things",
+    "word": "prevent",
+    "definition": "To stop something bad from happening *before* it starts.",
+    "example": "Washing your hands helps prevent getting sick.",
+    "vietnamese": "Ngăn ngừa, phòng chống"
+  },
+  {
+    "unit": "1. Living things",
+    "word": "vaccinations",
+    "definition": "A shot (injection) that teaches your body how to fight off a disease so you don't get sick.",
+    "example": "Babies get vaccinations to protect them from serious illnesses.",
+    "vietnamese": "Tiêm chủng, vắc-xin"
+  },
+  {
+    "unit": "2. Energy",
+    "word": "energy",
+    "definition": "The power that makes things move, grow, or change.",
+    "example": "You get energy from food so you can run and play.",
+    "vietnamese": "Năng lượng"
+  },
+  {
+    "unit": "2. Energy",
+    "word": "predict",
+    "definition": "To make a smart guess about what you think will happen next in an experiment.",
+    "example": "I predict the toy car will roll faster down the taller ramp.",
+    "vietnamese": "Dự đoán"
+  },
+  {
+    "unit": "2. Energy",
+    "word": "Conclusion",
+    "definition": "The final part of an experiment where you explain what you learned.",
+    "example": "Our conclusion was that the plant kept in the dark did not grow.",
+    "vietnamese": "Kết luận"
+  },
+  {
+    "unit": "2. Energy",
+    "word": "Energy transfer",
+    "definition": "The movement of energy from one object or place to another.",
+    "example": "When you eat an apple, energy transfers from the apple to you.",
+    "vietnamese": "Truyền năng lượng"
+  },
+  {
+    "unit": "2. Energy",
+    "word": "destroy",
+    "definition": "To break something completely so it is gone.",
+    "example": "Energy cannot be created or destroyed, it just changes form.",
+    "vietnamese": "Phá hủy"
+  },
+  {
+    "unit": "2. Energy",
+    "word": "electrical appliances",
+    "definition": "Machines that must be plugged in to use electricity for their job.",
+    "example": "A toaster, a fan, and a TV are all electrical appliances.",
+    "vietnamese": "Thiết bị điện"
+  },
+  {
+    "unit": "2. Energy",
+    "word": "electrical energy",
+    "definition": "The energy that flows through wires to power things like lights and fans.",
+    "example": "A lamp changes electrical energy into light energy.",
+    "vietnamese": "Năng lượng điện, điện năng"
+  },
+  {
+    "unit": "2. Energy",
+    "word": "Carnivore",
+    "definition": "An animal that eats only other animals (meat).",
+    "example": "A lion is a carnivore because it hunts and eats zebras.",
+    "vietnamese": "Động vật ăn thịt"
+  },
+  {
+    "unit": "2. Energy",
+    "word": "Omnivore",
+    "definition": "An animal that eats both plants and animals.",
+    "example": "A bear is an omnivore because it eats berries and fish.",
+    "vietnamese": "Động vật ăn tạp"
+  },
+  {
+    "unit": "2. Energy",
+    "word": "Consumer",
+    "definition": "A living thing that must eat other living things to get energy.",
+    "example": "A rabbit (eats plants) and a fox (eats rabbits) are both consumers.",
+    "vietnamese": "Động vật tiêu thụ"
+  },
+  {
+    "unit": "2. Energy",
+    "word": "Predator",
+    "definition": "An animal that hunts other animals for food.",
+    "example": "An owl is a predator that hunts mice at night.",
+    "vietnamese": "Động vật săn mồi"
+  },
+  {
+    "unit": "2. Energy",
+    "word": "Food chain",
+    "definition": "A drawing that shows how energy passes from plants to animals.",
+    "example": "A simple food chain is: Grass (Producer) -> Rabbit (Consumer) -> Fox (Consumer).",
+    "vietnamese": "Chuỗi thức ăn"
+  },
+  {
+    "unit": "2. Energy",
+    "word": "Prey",
+    "definition": "An animal that is hunted and eaten by another animal.",
+    "example": "A mouse is prey for a cat.",
+    "vietnamese": "Con mồi"
+  },
+  {
+    "unit": "2. Energy",
+    "word": "Herbivore",
+    "definition": "An animal that eats only plants.",
+    "example": "A cow is a herbivore because it only eats grass.",
+    "vietnamese": "Động vật ăn cỏ"
+  },
+  {
+    "unit": "2. Energy",
+    "word": "Producer",
+    "definition": "A living thing (usually a plant) that makes its own food using sunlight.",
+    "example": "A flower is a producer because it uses sunlight to make energy.",
+    "vietnamese": "Sinh vật sản xuất"
+  },
+  {
+    "unit": "1. Living things (Expansion)",
+    "word": "Photosynthesis",
+    "definition": "The special way plants use sunlight, water, and air to make their own food (sugar).",
+    "example": "Photosynthesis is how a green leaf turns sunlight into energy to grow.",
+    "vietnamese": "Quang hợp"
+  },
+  {
+    "unit": "1. Living things (Expansion)",
+    "word": "Roots",
+    "definition": "The part of a plant that grows underground to hold the plant still and drink water.",
+    "example": "A carrot is a large root that we can eat.",
+    "vietnamese": "Rễ cây"
+  },
+  {
+    "unit": "1. Living things (Expansion)",
+    "word": "Stem",
+    "definition": "The main body or stalk of a plant that holds up the leaves and flowers.",
+    "example": "The stem acts like a straw, carrying water from the roots to the leaves.",
+    "vietnamese": "Thân cây"
+  },
+  {
+    "unit": "1. Living things (Expansion)",
+    "word": "Leaves",
+    "definition": "The flat, usually green parts of a plant that grow from the stem and make food.",
+    "example": "Leaves soak up the sunshine to start photosynthesis.",
+    "vietnamese": "Lá cây"
+  },
+  {
+    "unit": "1. Living things (Expansion)",
+    "word": "Seeds",
+    "definition": "The small parts made by a plant that can grow into a new plant.",
+    "example": "An apple has seeds inside it that can grow into a new apple tree.",
+    "vietnamese": "Hạt giống"
+  },
+  {
+    "unit": "1. Living things (Expansion)",
+    "word": "Germination",
+    "definition": "The process when a seed breaks open and starts to grow into a small plant.",
+    "example": "We watched the bean seed's germination as a tiny root came out.",
+    "vietnamese": "Sự nảy mầm"
+  },
+  {
+    "unit": "1. Living things (Expansion)",
+    "word": "Habitat",
+    "definition": "The natural home or place where an animal or plant lives.",
+    "example": "A hot, sandy desert is the habitat for a camel.",
+    "vietnamese": "Môi trường sống"
+  },
+  {
+    "unit": "1. Living things (Expansion)",
+    "word": "Adaptation",
+    "definition": "A special body part or behavior that helps a living thing survive in its habitat.",
+    "example": "A polar bear's thick white fur is an adaptation for living in the cold Arctic.",
+    "vietnamese": "Sự thích nghi"
+  },
+  {
+    "unit": "1. Living things (Expansion)",
+    "word": "Environment",
+    "definition": "All the living and non-living things that surround an organism.",
+    "example": "We must keep our environment clean by not throwing trash on the ground.",
+    "vietnamese": "Môi trường"
+  },
+  {
+    "unit": "1. Living things (Expansion)",
+    "word": "Mammal",
+    "definition": "A warm-blooded vertebrate animal (like humans, dogs, whales) that has hair or fur and feeds milk to its babies.",
+    "example": "A dolphin is a mammal that lives in the ocean.",
+    "vietnamese": "Động vật có vú"
+  },
+  {
+    "unit": "1. Living things (Expansion)",
+    "word": "Reptile",
+    "definition": "A cold-blooded vertebrate animal (like snakes, lizards, crocodiles) that has dry, scaly skin and lays eggs.",
+    "example": "A turtle is a reptile with a hard shell to protect it.",
+    "vietnamese": "Động vật bò sát"
+  },
+  {
+    "unit": "1. Living things (Expansion)",
+    "word": "Amphibian",
+    "definition": "A cold-blooded vertebrate animal (like frogs, toads) that lives part of its life in water (with gills) and part on land (with lungs).",
+    "example": "A frog is an amphibian that changes from a tadpole to an adult.",
+    "vietnamese": "Động vật lưỡng cư"
+  },
+  {
+    "unit": "1. Living things (Expansion)",
+    "word": "Fish",
+    "definition": "A vertebrate animal that lives only in water, breathes with gills, and has fins for swimming.",
+    "example": "A clownfish is a small, colorful fish that lives in the sea.",
+    "vietnamese": "Con cá"
+  },
+  {
+    "unit": "1. Living things (Expansion)",
+    "word": "Bird",
+    "definition": "A warm-blooded vertebrate animal that has feathers, wings, and lays eggs.",
+    "example": "A penguin is a bird that cannot fly but is a great swimmer.",
+    "vietnamese": "Con chim"
+  },
+  {
+    "unit": "1. Living things (Expansion)",
+    "word": "Insect",
+    "definition": "A small invertebrate animal (like ants, beetles) with an exoskeleton, three body parts, and six legs.",
+    "example": "A butterfly is a beautiful insect with colorful wings.",
+    "vietnamese": "Côn trùng"
+  },
+  {
+    "unit": "1. Living things (Expansion)",
+    "word": "Life Cycle",
+    "definition": "All the changes a living thing goes through from when it is born until it is an adult.",
+    "example": "The life cycle of a butterfly includes an egg, larva (caterpillar), pupa, and adult.",
+    "vietnamese": "Vòng đời"
+  },
+  {
+    "unit": "1. Living things (Expansion)",
+    "word": "Metamorphosis",
+    "definition": "A big change in the body shape of some animals as they grow up.",
+    "example": "A tadpole turning into a frog is a type of metamorphosis.",
+    "vietnamese": "Sự biến thái"
+  },
+  {
+    "unit": "1. Living things (Expansion)",
+    "word": "Gills",
+    "definition": "The parts on the side of a fish's head that it uses to breathe underwater.",
+    "example": "A fish takes in oxygen from the water using its gills.",
+    "vietnamese": "Mang (cá)"
+  },
+  {
+    "unit": "1. Living things (Expansion)",
+    "word": "Lungs",
+    "definition": "The organs in your chest that fill with air when you breathe in.",
+    "example": "You use your lungs to get oxygen from the air.",
+    "vietnamese": "Phổi"
+  },
+  {
+    "unit": "1. Living things (Expansion)",
+    "word": "Brain",
+    "definition": "The organ inside your skull that controls everything in your body, like thinking and moving.",
+    "example": "Your brain is like the control center for your whole body.",
+    "vietnamese": "Não bộ"
+  },
+  {
+    "unit": "1. Living things (Expansion)",
+    "word": "Digest",
+    "definition": "To break down food in your body so you can use it for energy.",
+    "example": "Your stomach helps to digest the sandwich you ate for lunch.",
+    "vietnamese": "Tiêu hóa"
+  },
+  {
+    "unit": "1. Living things (Expansion)",
+    "word": "Nutrition",
+    "definition": "The process of getting the right food (like fruits and vegetables) that your body needs to grow and stay healthy.",
+    "example": "Good nutrition is important for having lots of energy.",
+    "vietnamese": "Dinh dưỡng"
+  },
+  {
+    "unit": "1. Living things (Expansion)",
+    "word": "Senses",
+    "definition": "The ways your body learns about the world around it (sight, hearing, smell, taste, and touch).",
+    "example": "You use your five senses to see, hear, and feel the world.",
+    "vietnamese": "Các giác quan"
+  },
+  {
+    "unit": "1. Living things (Expansion)",
+    "word": "Species",
+    "definition": "A group of very similar living things that can have babies together.",
+    "example": "A tiger is a different species from a lion.",
+    "vietnamese": "Loài"
+  },
+  {
+    "unit": "1. Living things (Expansion)",
+    "word": "Extinct",
+    "definition": "When a whole species, or type of animal, has died and is gone forever.",
+    "example": "Dinosaurs are extinct; there are none left alive today.",
+    "vietnamese": "Tuyệt chủng"
+  },
+  {
+    "unit": "2. Energy (Expansion)",
+    "word": "Source",
+    "definition": "The place or thing where energy comes from.",
+    "example": "The Sun is the main source of light and heat energy for Earth.",
+    "vietnamese": "Nguồn (năng lượng)"
+  },
+  {
+    "unit": "2. Energy (Expansion)",
+    "word": "Light energy",
+    "definition": "A form of energy that we can see, which travels in waves.",
+    "example": "A light bulb changes electrical energy into light energy so we can see in the dark.",
+    "vietnamese": "Năng lượng ánh sáng"
+  },
+  {
+    "unit": "2. Energy (Expansion)",
+    "word": "Heat energy",
+    "definition": "A form of energy that makes things warm; it moves from hotter things to cooler things.",
+    "example": "A fire gives off heat energy that keeps us warm.",
+    "vietnamese": "Năng lượng nhiệt (Nhiệt năng)"
+  },
+  {
+    "unit": "2. Energy (Expansion)",
+    "word": "Sound energy",
+    "definition": "A form of energy we can hear, which is made by vibrations.",
+    "example": "A drum makes sound energy when you hit it.",
+    "vietnamese": "Năng lượng âm thanh (Âm năng)"
+  },
+  {
+    "unit": "2. Energy (Expansion)",
+    "word": "Vibration",
+    "definition": "A very fast movement back and forth that creates sound.",
+    "example": "A guitar string makes a sound because of its vibration.",
+    "vietnamese": "Sự rung động (rung)"
+  },
+  {
+    "unit": "2. Energy (Expansion)",
+    "word": "Kinetic energy",
+    "definition": "The energy that something has *because* it is moving.",
+    "example": "A bicycle rolling down a hill has a lot of kinetic energy.",
+    "vietnamese": "Động năng"
+  },
+  {
+    "unit": "2. Energy (Expansion)",
+    "word": "Potential energy",
+    "definition": "Energy that is stored up and ready to be used.",
+    "example": "A stretched rubber band has potential energy before you let it go.",
+    "vietnamese": "Thế năng"
+  },
+  {
+    "unit": "2. Energy (Expansion)",
+    "word": "Force",
+    "definition": "A push or a pull on an object that can make it move, stop, or change shape.",
+    "example": "You use a force to push a swing or pull a wagon.",
+    "vietnamese": "Lực"
+  },
+  {
+    "unit": "2. Energy (Expansion)",
+    "word": "Gravity",
+    "definition": "The invisible force that pulls everything down towards the center of the Earth.",
+    "example": "Gravity is the force that makes an apple fall from a tree to the ground.",
+    "vietnamese": "Trọng lực (Lực hấp dẫn)"
+  },
+  {
+    "unit": "2. Energy (Expansion)",
+    "word": "Friction",
+    "definition": "A force that slows down moving objects when they rub against each other.",
+    "example": "Friction between your shoes and the floor stops you from slipping.",
+    "vietnamese": "Lực ma sát"
+  },
+  {
+    "unit": "2. Energy (Expansion)",
+    "word": "Magnet",
+    "definition": "An object that can pull on certain metals, like iron, using a special force.",
+    "example": "A magnet can pick up paperclips without touching them.",
+    "vietnamese": "Nam châm"
+  },
+  {
+    "unit": "2. Energy (Expansion)",
+    "word": "Reflect",
+    "definition": "When light bounces off a smooth, shiny surface.",
+    "example": "You can see yourself in a mirror because it reflects light.",
+    "vietnamese": "Phản chiếu"
+  },
+  {
+    "unit": "2. Energy (Expansion)",
+    "word": "Opaque",
+    "definition": "Describes an object that light cannot pass through at all.",
+    "example": "A wooden door is opaque because you cannot see through it.",
+    "vietnamese": "Mờ đục (không cho ánh sáng đi qua)"
+  },
+  {
+    "unit": "2. Energy (Expansion)",
+    "word": "Transparent",
+    "definition": "Describes an object that light can pass through clearly.",
+    "example": "A glass window is transparent, so you can see the outside.",
+    "vietnamese": "Trong suốt"
+  },
+  {
+    "unit": "2. Energy (Expansion)",
+    "word": "Translucent",
+    "definition": "Describes an object that lets *some* light pass through, but you cannot see clearly.",
+    "example": "Frosted glass is translucent; you can see light but not shapes.",
+    "vietnamese": "Mờ (cho một phần ánh sáng đi qua)"
+  },
+  {
+    "unit": "2. Energy (Expansion)",
+    "word": "Shadow",
+    "definition": "A dark area made when an opaque object blocks the path of light.",
+    "example": "You make a shadow on the ground when you stand in the sun.",
+    "vietnamese": "Cái bóng"
+  },
+  {
+    "unit": "2. Energy (Expansion)",
+    "word": "Circuit",
+    "definition": "A complete, closed path that electricity can flow around.",
+    "example": "The light bulb lit up when we finished the circuit.",
+    "vietnamese": "Mạch điện"
+  },
+  {
+    "unit": "2. Energy (Expansion)",
+    "word": "Battery",
+    "definition": "A source of stored electrical energy that can power things like toys and flashlights.",
+    "example": "We put a new battery in the remote control so it would work.",
+    "vietnamese": "Pin"
+  },
+  {
+    "unit": "2. Energy (Expansion)",
+    "word": "Wire",
+    "definition": "A thin piece of metal used to connect parts in an electrical circuit.",
+    "example": "Electricity flows through the wire from the battery to the bulb.",
+    "vietnamese": "Dây điện"
+  },
+  {
+    "unit": "2. Energy (Expansion)",
+    "word": "Bulb",
+    "definition": "A glass object that makes light when electricity passes through it.",
+    "example": "The bulb in the lamp helps us read at night.",
+    "vietnamese": "Bóng đèn"
+  },
+  {
+    "unit": "2. Energy (Expansion)",
+    "word": "Switch",
+    "definition": "A part of a circuit that opens or closes the path for electricity.",
+    "example": "You flip the light switch to turn the lights on or off.",
+    "vietnamese": "Công tắc"
+  },
+  {
+    "unit": "2. Energy (Expansion)",
+    "word": "Conductor",
+    "definition": "A material that lets electricity (or heat) pass through it easily.",
+    "example": "Metal is a good conductor, which is why wires are made of copper.",
+    "vietnamese": "Vật dẫn điện"
+  },
+  {
+    "unit": "2. Energy (Expansion)",
+    "word": "Insulator",
+    "definition": "A material that does *not* let electricity (or heat) pass through it easily.",
+    "example": "Rubber is a good insulator, which is why it covers wires to keep us safe.",
+    "vietnamese": "Vật cách điện"
+  },
+  {
+    "unit": "2. Energy (Expansion)",
+    "word": "Mains (electricity)",
+    "definition": "The electricity that comes from the power sockets (plugs) in the wall of your house.",
+    "example": "A refrigerator is a big appliance that plugs into the mains.",
+    "vietnamese": "Điện lưới"
+  },
+  {
+    "unit": "2. Energy (Expansion)",
+    "word": "Decomposer",
+    "definition": "A living thing, like fungi or bacteria, that breaks down dead plants and animals.",
+    "example": "Mushrooms are decomposers that help clean the forest floor.",
+    "vietnamese": "Sinh vật phân hủy"
+  }
+]
