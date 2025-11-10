@@ -474,5 +474,89 @@
     "definition": "A straight line at a right angle to the horizon",
     "example": "",
     "vietnamese": "Dọc (Một đường thẳng tạo góc vuông với đường chân trời)"
+  },
+  {
+    "unit": "7.1",
+    "word": "Numerator",
+    "definition": "The numerator is the top number of a fraction. It tells you how many parts are needed.",
+    "example": "1/2\n1 is numerator. You have 1 piece of the pizza, but there are two pieces.",
+    "vietnamese": "Tử số là số ở trên cùng của một phân số. Nó cho bạn biết cần bao nhiêu phần."
+  },
+  {
+    "unit": "7.1",
+    "word": "Denominator",
+    "definition": "the bottom number of the fraction. It tells you how many equal parts a shape has been divided into.",
+    "example": "1/2\n2 is the demoniator. The pizza is divided into 2 parts",
+    "vietnamese": "Mẫu số là số ở dưới cùng của phân số. Nó cho bạn biết một hình đã được chia thành bao nhiêu phần bằng nhau."
+  },
+  {
+    "unit": "7.1",
+    "word": "Fraction",
+    "definition": "Any part of a group number or whole",
+    "example": "1/2 and 3/4 are examples of fractions.",
+    "vietnamese": "Bất kỳ phần nào của một nhóm, một số, hoặc một tổng thể."
+  },
+  {
+    "unit": "7.2",
+    "word": "Operator",
+    "definition": "To find the fraction of an amount you use the fraction as an operator on the amount.\nThe fraction acts like a division",
+    "example": "1/4 of a pizza means a whole pizza divided by 4.",
+    "vietnamese": "Để tìm phân số của một lượng, bạn sử dụng phân số như một toán tử trên lượng đó. Phân số hoạt động giống như một phép chia."
+  },
+  {
+    "unit": "7.2",
+    "word": "Unit fraction",
+    "definition": "A fraction with a numerator of 1",
+    "example": "1/2 or 1/5",
+    "vietnamese": "Một phân số có tử số là 1."
+  },
+  {
+    "unit": "8.1",
+    "word": "Angle",
+    "definition": "The size of turn from one line to the other line where two lines meet",
+    "example": "A square has four 90-degree angles.",
+    "vietnamese": "Kích thước của độ xoay từ một đường này sang một đường khác tại điểm hai đường gặp nhau."
+  },
+  {
+    "unit": "8.1",
+    "word": "Degrees",
+    "definition": "The Unit of measurement for angles.",
+    "example": "A right angle is 90 degrees.",
+    "vietnamese": "Đơn vị đo lường cho các góc."
+  },
+  {
+    "unit": "8.1",
+    "word": "Compare",
+    "definition": "To say what is the same and what is different, or to say which is greater or smaller.",
+    "example": "Let's compare the two triangles to see which is bigger.",
+    "vietnamese": "Để nói ra điều gì giống nhau và điều gì khác nhau, hoặc để nói cái nào lớn hơn hay nhỏ hơn."
+  },
+  {
+    "unit": "8.2",
+    "word": "Right angle",
+    "definition": "An angle of 90 degrees",
+    "example": "The corner of a book forms a right angle.",
+    "vietnamese": "Một góc 90 độ."
+  },
+  {
+    "unit": "8.2",
+    "word": "Acute",
+    "definition": "An angle less than 90 degrees",
+    "example": "An angle of 30 degrees is an acute angle.",
+    "vietnamese": "Một góc nhỏ hơn 90 độ."
+  },
+  {
+    "unit": "8.2",
+    "word": "Obtuse angle",
+    "definition": "An angle greater than 90 degrees and less than 180 degrees",
+    "example": "An angle of 110 degrees is an obtuse angle.",
+    "vietnamese": "Một góc lớn hơn 90 độ và nhỏ hơn 180 độ."
+  },
+  {
+    "unit": "8.3",
+    "word": "Estimate",
+    "definition": "Think carefully and guess based on what you already know",
+    "example": "Estimate the number of candies in the jar.",
+    "vietnamese": "Suy nghĩ cẩn thận và đoán dựa trên những gì bạn đã biết."
   }
 ]
