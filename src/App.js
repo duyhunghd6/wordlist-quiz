@@ -20,7 +20,7 @@ function App() {
   const [wordWeights, setWordWeights] = useState({});
   const [playerName, setPlayerName] = useState('');
 
-  const wordlists = ['wordlist_esl', 'wordlist_math'];
+  const wordlists = ['wordlist_esl', 'wordlist_math', 'wordlist_science'];
 
   useEffect(() => {
     const loadedHistory = JSON.parse(localStorage.getItem('quizHistory')) || {};
