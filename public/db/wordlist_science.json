@@ -418,5 +418,138 @@
     "definition": "A glass or plastic container used in science to measure and mix liquids.",
     "example": "",
     "vietnamese": "Một dụng cụ chứa bằng thủy tinh hoặc nhựa dùng trong khoa học để đo và trộn chất lỏng."
+  },
+  {
+    "unit": "3",
+    "word": "Matter",
+    "definition": "The stuff that all materials and objects are made of[cite: 2, 16].",
+    "example": "Everything around us, like water, wood, and air, is matter.",
+    "vietnamese": "Vật chất: Những thứ cấu tạo nên mọi vật liệu và đồ vật."
+  },
+  {
+    "unit": "3",
+    "word": "Particle",
+    "definition": "The tiny pieces that make up all matter[cite: 2, 16].",
+    "example": "If you zoom in on a piece of gold, you would see tiny gold particles.",
+    "vietnamese": "Hạt: Những mảnh nhỏ xíu cấu tạo nên mọi vật chất."
+  },
+  {
+    "unit": "3",
+    "word": "Particle Model",
+    "definition": "A scientific way to describe solids, liquids, and gases by showing how their particles are arranged[cite: 2, 7, 17].",
+    "example": "Drawing circles close together to show what a solid looks like inside.",
+    "vietnamese": "Mô hình hạt: Một cách khoa học để mô tả chất rắn, lỏng và khí bằng cách thể hiện sự sắp xếp các hạt của chúng."
+  },
+  {
+    "unit": "3",
+    "word": "Solid",
+    "definition": "A state of matter where particles are held together strongly and have hardly any space between them so they cannot easily move[cite: 2, 21].",
+    "example": "A wooden door or a metal lock.",
+    "vietnamese": "Chất rắn: Một trạng thái vật chất mà các hạt liên kết chặt chẽ với nhau và hầu như không có khoảng trống giữa chúng nên không thể di chuyển dễ dàng."
+  },
+  {
+    "unit": "3",
+    "word": "Liquid",
+    "definition": "A state of matter where particles are separated by larger spaces, allowing them to move and slide past each other[cite: 2, 21].",
+    "example": "Water in a vase or melted chocolate.",
+    "vietnamese": "Chất lỏng: Một trạng thái vật chất mà các hạt được ngăn cách bởi khoảng trống lớn hơn, cho phép chúng di chuyển và trượt qua nhau."
+  },
+  {
+    "unit": "3",
+    "word": "Gas",
+    "definition": "A state of matter where particles move fast and are far apart (implied by context of states)[cite: 18, 23].",
+    "example": "Oxygen in the air.",
+    "vietnamese": "Chất khí: Một trạng thái vật chất mà các hạt di chuyển nhanh và cách xa nhau."
+  },
+  {
+    "unit": "3",
+    "word": "Substance",
+    "definition": "The specific material something is made of; substances can change state[cite: 2, 8, 16].",
+    "example": "Water and salt are substances.",
+    "vietnamese": "Chất: Vật liệu cụ thể tạo nên một vật gì đó; các chất có thể thay đổi trạng thái."
+  },
+  {
+    "unit": "3",
+    "word": "Change of State",
+    "definition": "A physical process where a substance changes from one form (like solid) to another (like liquid)[cite: 7, 8, 23].",
+    "example": "Ice turning into water.",
+    "vietnamese": "Sự chuyển thể (chuyển đổi trạng thái): Một quá trình vật lý trong đó một chất chuyển từ dạng này (như rắn) sang dạng khác (như lỏng)."
+  },
+  {
+    "unit": "3",
+    "word": "Physical Process",
+    "definition": "A change, such as a change of state, where the substance remains the same kind of matter[cite: 8].",
+    "example": "Melting chocolate is a physical process because it is still chocolate.",
+    "vietnamese": "Quá trình vật lý: Sự thay đổi, chẳng hạn như thay đổi trạng thái, trong đó chất vẫn giữ nguyên là loại vật chất đó."
+  },
+  {
+    "unit": "3",
+    "word": "Melting",
+    "definition": "The change of state from solid to liquid, usually caused by heating[cite: 7, 23].",
+    "example": "Heating a bar of chocolate until it becomes liquid.",
+    "vietnamese": "Nóng chảy: Sự chuyển đổi trạng thái từ rắn sang lỏng, thường là do đun nóng."
+  },
+  {
+    "unit": "3",
+    "word": "Freezing (Solidification)",
+    "definition": "The change of state from liquid to solid, usually caused by cooling[cite: 7, 23].",
+    "example": "Putting water in the freezer to make ice cubes.",
+    "vietnamese": "Đông đặc (Hóa rắn): Sự chuyển đổi trạng thái từ lỏng sang rắn, thường là do làm lạnh."
+  },
+  {
+    "unit": "3",
+    "word": "Chemical Reaction",
+    "definition": "A process where materials interact to form new substances (unlike physical processes)[cite: 23, 32, 33].",
+    "example": "Burning wood creates ash and gas; these are new materials.",
+    "vietnamese": "Phản ứng hóa học: Một quá trình mà các vật liệu tương tác để tạo thành các chất mới (khác với các quá trình vật lý)."
+  },
+  {
+    "unit": "3",
+    "word": "Heating",
+    "definition": "Adding heat energy to a substance, causing particles to move faster[cite: 23, 27, 31].",
+    "example": "Putting a pot on a hot stove.",
+    "vietnamese": "Gia nhiệt (Đun nóng): Thêm năng lượng nhiệt vào một chất, làm cho các hạt di chuyển nhanh hơn."
+  },
+  {
+    "unit": "3",
+    "word": "Cooling",
+    "definition": "Removing heat energy from a substance, causing particles to slow down and move closer together[cite: 27, 30].",
+    "example": "Putting juice in the fridge.",
+    "vietnamese": "Làm lạnh (Làm nguội): Loại bỏ năng lượng nhiệt khỏi một chất, làm cho các hạt di chuyển chậm lại và xích lại gần nhau hơn."
+  },
+  {
+    "unit": "3",
+    "word": "Rust",
+    "definition": "A new material formed by a chemical reaction between metal, water, and air[cite: 37].",
+    "example": "An old bike chain turning orange/red.",
+    "vietnamese": "Gỉ sét: Một vật liệu mới được hình thành do phản ứng hóa học giữa kim loại, nước và không khí."
+  },
+  {
+    "unit": "3",
+    "word": "Concrete",
+    "definition": "A hard material formed by a chemical reaction between cement powder, sand, and water (and usually metal/air context in table)[cite: 37].",
+    "example": "The material used to make sidewalks and buildings.",
+    "vietnamese": "Bê tông: Một vật liệu cứng được hình thành do phản ứng hóa học giữa bột xi măng, cát và nước."
+  },
+  {
+    "unit": "3",
+    "word": "Prediction",
+    "definition": "A statement describing possible outcomes of an enquiry[cite: 9].",
+    "example": "\"I predict the ice will melt faster in the sun.\"",
+    "vietnamese": "Dự đoán: Một tuyên bố mô tả các kết quả có thể xảy ra của một cuộc điều tra/thí nghiệm."
+  },
+  {
+    "unit": "3",
+    "word": "Fair Test",
+    "definition": "An enquiry where variables are identified and controlled to ensure accuracy[cite: 10].",
+    "example": "Using the same amount of water when testing different cups.",
+    "vietnamese": "Thử nghiệm công bằng: Một cuộc điều tra trong đó các biến số được xác định và kiểm soát để đảm bảo tính chính xác."
+  },
+  {
+    "unit": "3",
+    "word": "Observation",
+    "definition": "The act of collecting and recording information or measurements in tables and diagrams[cite: 5].",
+    "example": "\"I observed that the liquid turned blue.\"",
+    "vietnamese": "Quan sát: Hành động thu thập và ghi lại thông tin hoặc các phép đo trong các bảng và sơ đồ."
   }
 ]
