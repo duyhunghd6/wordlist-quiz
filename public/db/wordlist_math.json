@@ -558,5 +558,355 @@
     "definition": "Think carefully and guess based on what you already know",
     "example": "Estimate the number of candies in the jar.",
     "vietnamese": "Suy nghĩ cẩn thận và đoán dựa trên những gì bạn đã biết."
+  },
+  {
+    "unit": "9.1",
+    "word": "Compare",
+    "definition": "to compare two numbers you say which is bigger and which is smaller.",
+    "example": "5 > 2 (5 is bigger than 2)",
+    "vietnamese": "Để so sánh hai số, bạn xác định số nào lớn hơn và số nào nhỏ hơn."
+  },
+  {
+    "unit": "9.1",
+    "word": "Order",
+    "definition": "arrange according to size, amount or value",
+    "example": "1, 2, 3, 4",
+    "vietnamese": "Sắp xếp theo kích thước, số lượng hoặc giá trị."
+  },
+  {
+    "unit": "9.1",
+    "word": "Round",
+    "definition": "Change a number to a simpler value when an accurate answer isn't needed",
+    "example": "19 rounded to the nearest 10 is 20",
+    "vietnamese": "Thay đổi một số thành một giá trị đơn giản hơn khi không cần câu trả lời chính xác tuyệt đối."
+  },
+  {
+    "unit": "9.1",
+    "word": "Round to the nearest",
+    "definition": "You can round a number to the nearest 10, 100 or 1,000...",
+    "example": "658 rounded to the nearest 10 = 660",
+    "vietnamese": "Bạn có thể làm tròn một số đến hàng chục, hàng trăm hoặc hàng nghìn gần nhất..."
+  },
+  {
+    "unit": "9.2",
+    "word": "Division",
+    "definition": "sharing or grouping a number into equal parts",
+    "example": "20 ÷ 4 = 5",
+    "vietnamese": "Chia hoặc nhóm một số thành các phần bằng nhau."
+  },
+  {
+    "unit": "9.2",
+    "word": "Remainder",
+    "definition": "the amount left over after dividing a number.",
+    "example": "9 divided by 4 = 2 remainder 1 (r 1)",
+    "vietnamese": "Số lượng còn lại sau khi chia một số (số dư)."
+  },
+  {
+    "unit": "9.2",
+    "word": "Divisor",
+    "definition": "A number that divides another",
+    "example": "in 30 divided by 3, 3 is the divisor.",
+    "vietnamese": "Một số dùng để chia số khác (số chia)."
+  },
+  {
+    "unit": "10.1",
+    "word": "Data",
+    "definition": "a collection of information.",
+    "example": "A list of students' heights: 140cm, 142cm, 138cm",
+    "vietnamese": "Một tập hợp các thông tin."
+  },
+  {
+    "unit": "10.1",
+    "word": "Dot plot",
+    "definition": "a way of recording data.",
+    "example": "A chart showing dots above a number line to represent frequency",
+    "vietnamese": "Một cách ghi lại dữ liệu (biểu đồ dấu chấm)."
+  },
+  {
+    "unit": "10.1",
+    "word": "Statistical question",
+    "definition": "you need to collect data for this question.",
+    "example": "How many pets does each student in the class have?",
+    "vietnamese": "Bạn cần thu thập dữ liệu cho câu hỏi này (câu hỏi thống kê)."
+  },
+  {
+    "unit": "11.1",
+    "word": "Equivalent (fraction)",
+    "definition": "Fractions that are equal in vlaue, but look different.",
+    "example": "2/4 and 1/2 are equivalent.",
+    "vietnamese": "Các phân số có giá trị bằng nhau nhưng trông khác nhau."
+  },
+  {
+    "unit": "11.1",
+    "word": "Proper Fraction",
+    "definition": "A fraction that's smaller than a whole",
+    "example": "1/2",
+    "vietnamese": "Phân số nhỏ hơn một đơn vị (tử số nhỏ hơn mẫu số)."
+  },
+  {
+    "unit": "11.2",
+    "word": "Percent",
+    "definition": "The number of parts in a hundred",
+    "example": "50 percent means 50 parts per 100",
+    "vietnamese": "Số phần trong một trăm (phần trăm)."
+  },
+  {
+    "unit": "11.2",
+    "word": "Percentage",
+    "definition": "Number of parts out of a hundred. The symbol is %.",
+    "example": "25/100 = 25%",
+    "vietnamese": "Số phần trên một trăm. Ký hiệu là %."
+  },
+  {
+    "unit": "12.1",
+    "word": "Face",
+    "definition": "A flat surface of a 3D shape",
+    "example": "A cube has 6 faces",
+    "vietnamese": "Bề mặt phẳng của một hình 3D (mặt)."
+  },
+  {
+    "unit": "12.1",
+    "word": "Edge/edges",
+    "definition": "A line on a 3D shape where 2 or more faces meet",
+    "example": "A cube has 12 edges",
+    "vietnamese": "Đường trên hình 3D nơi 2 hoặc nhiều mặt gặp nhau (cạnh)."
+  },
+  {
+    "unit": "12.1",
+    "word": "Vertex/vertices",
+    "definition": "The point where two or more edges meet (like a corner)",
+    "example": "A cube has 8 vertices",
+    "vietnamese": "Điểm nơi hai hoặc nhiều cạnh gặp nhau (đỉnh)."
+  },
+  {
+    "unit": "12.1",
+    "word": "Pyramid",
+    "definition": "A 3D shape with any 2D shape as a base. All the other faces are triangles. The triangular faces all meet at a vertx.",
+    "example": "A square-based pyramid like the ones in Egypt",
+    "vietnamese": "Hình 3D có đáy là bất kỳ hình 2D nào. Tất cả các mặt khác là hình tam giác. Các mặt tam giác đều gặp nhau tại một đỉnh (hình chóp)."
+  },
+  {
+    "unit": "12.1",
+    "word": "Cone",
+    "definition": "A 3D shape with a circular base and a curved surface that goes to a vertex",
+    "example": "An ice cream cone shape",
+    "vietnamese": "Hình 3D có đáy hình tròn và bề mặt cong đi đến một đỉnh (hình nón)."
+  },
+  {
+    "unit": "12.1",
+    "word": "Prism",
+    "definition": "A 3D shape with two identical faces at opposite ends of the shape. All of the other faces are rectangles.",
+    "example": "A cereal box is a rectangular prism",
+    "vietnamese": "Hình 3D có hai mặt giống hệt nhau ở hai đầu đối diện. Tất cả các mặt còn lại là hình chữ nhật (hình lăng trụ)."
+  },
+  {
+    "unit": "12.2",
+    "word": "Net",
+    "definition": "A 2D flat shape that can be folded up into 3D solid shape.",
+    "example": "A cross shape on paper that folds into a cube",
+    "vietnamese": "Hình phẳng 2D có thể gấp lại thành hình khối 3D (hình trải phẳng/lưới)."
+  },
+  {
+    "unit": "13.1",
+    "word": "Carry",
+    "definition": "Lift a number and take it to another place, for example you carry numbers when you do column addition",
+    "example": "In 18 + 5, you write 3 and carry the 1 to the tens column",
+    "vietnamese": "Nhấc một số và đưa nó đến một vị trí khác, ví dụ bạn nhớ số khi thực hiện phép cộng theo cột (nhớ)."
+  },
+  {
+    "unit": "13.1",
+    "word": "Compose",
+    "definition": "Put together",
+    "example": "600+30+2 = 632",
+    "vietnamese": "Gộp lại (tổng hợp)."
+  },
+  {
+    "unit": "13.1",
+    "word": "Decompose",
+    "definition": "Split",
+    "example": "456 = 400+50+6",
+    "vietnamese": "Tách ra (phân tích)."
+  },
+  {
+    "unit": "13.2",
+    "word": "Proper fraction",
+    "definition": "A fraction smaller than a whole. The numerator is smaller than the denominator.",
+    "example": "1/5",
+    "vietnamese": "Phân số nhỏ hơn một đơn vị. Tử số nhỏ hơn mẫu số."
+  },
+  {
+    "unit": "13.2",
+    "word": "Improper fraction",
+    "definition": "A fraction where the numerator is greater than or equal to the denominator.",
+    "example": "5/3",
+    "vietnamese": "Phân số mà tử số lớn hơn hoặc bằng mẫu số (phân số không thực sự)."
+  },
+  {
+    "unit": "13.2",
+    "word": "Numerator",
+    "definition": "The numerator is the top number of a fraction. It tells you how many parts are needed.",
+    "example": "1/2\n1 is numerator. You have 1 piece of the pizza, but there are two pieces.",
+    "vietnamese": "Tử số là số ở trên của phân số. Nó cho biết có bao nhiêu phần được lấy."
+  },
+  {
+    "unit": "13.2",
+    "word": "Denominator",
+    "definition": "the bottom number of the fraction. It tells you how many equal parts a shape has been divided into.",
+    "example": "1/2\n2 is the demoniator. The pizza is divided into 2 parts",
+    "vietnamese": "Mẫu số là số ở dưới của phân số. Nó cho biết hình đã được chia thành bao nhiêu phần bằng nhau."
+  },
+  {
+    "unit": "14.1",
+    "word": "Area",
+    "definition": "the size a surface covers. It is measured in square units such as square centimeters and square metres.",
+    "example": "The area of a 2m by 3m rug is 6 square metres",
+    "vietnamese": "Kích thước mà một bề mặt bao phủ. Nó được đo bằng các đơn vị vuông như cm vuông và m vuông (diện tích)."
+  },
+  {
+    "unit": "14.2",
+    "word": "Perimeter",
+    "definition": "the distance around the outside of a shape. It is measured in units of lenght such sa centimeters and metres.",
+    "example": "The perimeter of a square with side 2cm is 2+2+2+2 = 8cm",
+    "vietnamese": "Khoảng cách xung quanh bên ngoài của một hình. Nó được đo bằng các đơn vị chiều dài như cm và m (chu vi)."
+  },
+  {
+    "unit": "15.1",
+    "word": "Negative number",
+    "definition": "A number less than zero",
+    "example": "-7",
+    "vietnamese": "Một số nhỏ hơn không (số âm)."
+  },
+  {
+    "unit": "15.1",
+    "word": "Compare",
+    "definition": "to compare two numbers you say which is bigger or smaller.",
+    "example": "2 < 3",
+    "vietnamese": "Để so sánh hai số, bạn xác định số nào lớn hơn hoặc nhỏ hơn."
+  },
+  {
+    "unit": "15.1",
+    "word": "Order",
+    "definition": "Arrange according to size amount or value.",
+    "example": "-3, -1, 0, 2, 5",
+    "vietnamese": "Sắp xếp theo kích thước, số lượng hoặc giá trị."
+  },
+  {
+    "unit": "15.2",
+    "word": "Square number:",
+    "definition": "The number you get when you multiply a whole number by itself.",
+    "example": "4 x 4 = 16\n16 is a square number",
+    "vietnamese": "Số bạn nhận được khi nhân một số nguyên với chính nó (số chính phương)."
+  },
+  {
+    "unit": "15.2",
+    "word": "Multiple",
+    "definition": "The result of multiplying a number by a whole number.",
+    "example": "The first few multiples of 3 are: 3,6,9,12",
+    "vietnamese": "Kết quả của việc nhân một số với một số nguyên (bội số)."
+  },
+  {
+    "unit": "15.2",
+    "word": "Factor",
+    "definition": "a whole number that divides exactly into another number",
+    "example": "2 x 3 = 6, so 2 and 3 are factors of 6.",
+    "vietnamese": "Một số nguyên chia hết cho một số khác (ước số)."
+  },
+  {
+    "unit": "15.3",
+    "word": "Divisible",
+    "definition": "can be divided without a remainer.",
+    "example": "14 is divisible by 2",
+    "vietnamese": "Có thể chia hết mà không có số dư."
+  },
+  {
+    "unit": "15.3",
+    "word": "Divisibility rule",
+    "definition": "a rule for finding whether one whole number is divisible by another.",
+    "example": "A number can be divided by:2 if the last digit is divisible by 2",
+    "vietnamese": "Quy tắc để tìm xem một số nguyên có chia hết cho số khác hay không (dấu hiệu chia hết)."
+  },
+  {
+    "unit": "16.1",
+    "word": "Carrol diagram",
+    "definition": "a two-way table used for sorting items such as objects, shapes or numbers.",
+    "example": "A box sorting numbers into 'Even'/'Odd' and 'Less than 10'/'More than 10'",
+    "vietnamese": "Bảng hai chiều được sử dụng để phân loại các mục như đồ vật, hình dạng hoặc con số (biểu đồ Carroll)."
+  },
+  {
+    "unit": "16.1",
+    "word": "Venn diagram",
+    "definition": "a diagram using circles to sort items such as objects, shapes or numbers. It can show the relationship between up to three sets of items.",
+    "example": "Two overlapping circles sorting animals into 'Can fly' and 'Can swim'",
+    "vietnamese": "Biểu đồ sử dụng các vòng tròn để phân loại các mục như đồ vật, hình dạng hoặc con số. Nó có thể hiển thị mối quan hệ giữa tối đa ba tập hợp (biểu đồ Venn)."
+  },
+  {
+    "unit": "16.1",
+    "word": "Pictogram",
+    "definition": "A graph using bars to show quantities or numbers",
+    "example": "Using apple symbols where 1 apple picture = 5 real apples",
+    "vietnamese": "Biểu đồ sử dụng các thanh để hiển thị số lượng hoặc con số (biểu đồ tranh)."
+  },
+  {
+    "unit": "17.1",
+    "word": "Product",
+    "definition": "The answer when two or more numbers are multiplied together.",
+    "example": "3 x 4 = 12 (12 is the product)",
+    "vietnamese": "Kết quả khi nhân hai hoặc nhiều số với nhau (tích)."
+  },
+  {
+    "unit": "17.2",
+    "word": "Dividend",
+    "definition": "The number being divided",
+    "example": "In 12 ÷ 3, 12 is the dividend",
+    "vietnamese": "Số bị chia."
+  },
+  {
+    "unit": "17.2",
+    "word": "Divisor",
+    "definition": "THe number you are dividing by",
+    "example": "In 12 ÷ 3, 3 is the divisor",
+    "vietnamese": "Số chia."
+  },
+  {
+    "unit": "17.2",
+    "word": "Quotient",
+    "definition": "The result of a division.",
+    "example": "In 12 ÷ 3 = 4, 4 is the quotient",
+    "vietnamese": "Kết quả của phép chia (thương)."
+  },
+  {
+    "unit": "17.2",
+    "word": "Remainder",
+    "definition": "The amount left over after dividing a number.",
+    "example": "13 ÷ 4 = 3 remainder 1",
+    "vietnamese": "Số lượng còn lại sau khi chia một số (số dư)."
+  },
+  {
+    "unit": "17.2",
+    "word": "Estimate",
+    "definition": "A rough calculation based on rounding",
+    "example": "Estimate 49 + 51 as 50 + 50 = 100",
+    "vietnamese": "Tính toán sơ bộ dựa trên việc làm tròn (ước lượng)."
+  },
+  {
+    "unit": "18.1",
+    "word": "Compass",
+    "definition": "An instrument that shows direction",
+    "example": "A tool pointing North, South, East, West",
+    "vietnamese": "Dụng cụ chỉ phương hướng (la bàn)."
+  },
+  {
+    "unit": "18.1",
+    "word": "Coordinates",
+    "definition": "Pairs of numbers inside brackets, for example (2, 5). They are used to show a position on a grid.",
+    "example": "(3, 4) shows a point 3 right and 4 up",
+    "vietnamese": "Các cặp số trong ngoặc đơn, ví dụ (2, 5). Chúng được sử dụng để chỉ vị trí trên lưới (tọa độ)."
+  },
+  {
+    "unit": "18.1",
+    "word": "Quadrant",
+    "definition": "An area on a grid between two axes",
+    "example": "The top-right section of a grid where x and y are positive",
+    "vietnamese": "Một vùng trên lưới nằm giữa hai trục (góc phần tư)."
   }
 ]
