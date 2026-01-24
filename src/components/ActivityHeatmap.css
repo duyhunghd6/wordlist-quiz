@@ -1,0 +1,173 @@
+/* ActivityHeatmap - GitHub-style contribution grid */
+
+.activity-heatmap-section h2 {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.heatmap-container {
+  background: var(--color-bg);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  overflow-x: auto;
+}
+
+/* Week header row */
+.heatmap-weeks-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--space-xs);
+  padding-left: 0;
+}
+
+.heatmap-subject-label-spacer {
+  width: 60px;
+  min-width: 60px;
+}
+
+.heatmap-week-label {
+  width: 28px;
+  min-width: 28px;
+  font-size: 0.5rem;
+  color: var(--color-text-muted);
+  text-align: center;
+  margin: 0 2px;
+}
+
+/* Subject rows */
+.heatmap-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.heatmap-subject-label {
+  width: 60px;
+  min-width: 60px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-text);
+  padding-right: var(--space-sm);
+  text-align: right;
+}
+
+.heatmap-cells {
+  display: flex;
+  gap: 4px;
+}
+
+/* Individual cells */
+.heatmap-cell {
+  width: 28px;
+  height: 28px;
+  border-radius: var(--radius-sm);
+  background: #ebedf0;
+  transition: all 0.15s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.heatmap-cell:hover {
+  transform: scale(1.15);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Activity levels - GitHub green palette */
+.heatmap-cell.level-0 {
+  background: #ebedf0;
+}
+
+.heatmap-cell.level-1 {
+  background: #9be9a8;
+}
+
+.heatmap-cell.level-2 {
+  background: #40c463;
+}
+
+.heatmap-cell.level-3 {
+  background: #30a14e;
+}
+
+.heatmap-cell.level-4 {
+  background: #216e39;
+}
+
+/* Legend */
+.heatmap-legend {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--space-xs);
+  margin-top: var(--space-md);
+  padding-right: var(--space-sm);
+}
+
+.legend-label {
+  font-size: 0.625rem;
+  color: var(--color-text-muted);
+}
+
+.legend-cells {
+  display: flex;
+  gap: 3px;
+}
+
+.legend-cells .heatmap-cell {
+  width: 12px;
+  height: 12px;
+}
+
+.legend-cells .heatmap-cell:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+/* Empty state hint */
+.heatmap-empty-hint {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xs);
+  padding: var(--space-sm);
+  margin-top: var(--space-sm);
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  background: rgba(59, 130, 246, 0.1);
+  border-radius: var(--radius-sm);
+}
+
+.heatmap-empty-hint svg {
+  color: var(--color-primary);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .heatmap-cell {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .heatmap-week-label {
+    width: 20px;
+    min-width: 20px;
+    font-size: 0.4rem;
+  }
+  
+  .heatmap-subject-label {
+    width: 48px;
+    min-width: 48px;
+    font-size: 0.625rem;
+  }
+  
+  .heatmap-subject-label-spacer {
+    width: 48px;
+    min-width: 48px;
+  }
+  
+  .heatmap-cells {
+    gap: 2px;
+  }
+}

@@ -3,6 +3,7 @@ import "./App.css";
 import ProfileSetup from "./components/ProfileSetup";
 import StartScreen from "./components/StartScreen";
 import Quiz from "./components/Quiz";
+import TypingQuiz from "./components/TypingQuiz";
 import SwipeCards from "./components/SwipeCards";
 import BubblePop from "./components/BubblePop";
 import WordSearch from "./components/WordSearch";
@@ -21,6 +22,7 @@ import {
   useGameStats,
   useLocalStorage,
   useProfiles,
+  useActivityLog,
 } from "./hooks/useLocalStorage";
 import { getAvatarById } from "./constants/gameConfig";
 
@@ -39,6 +41,7 @@ function App() {
   // Legacy profile hook (for migration)
   const { profile: legacyProfile, updateProfile, isProfileComplete: legacyProfileComplete } = useKidProfile();
   const { preferences, updatePreference } = usePreferences();
+  const { activityLog, recordActivity } = useActivityLog();
   const { stats: gameStats, recordGameResult } = useGameStats();
 
   // Profile switcher modal state
@@ -279,6 +282,10 @@ function App() {
     // Record game result for stats
     const finalScore = Math.round((score / questions.length) * 100);
     recordGameResult(selectedGame, finalScore);
+    
+    // Record activity for heatmap
+    const correctCount = userAnswers.filter(a => a.isCorrect).length;
+    recordActivity(selectedWordlist, finalScore, questions.length, correctCount);
 
     const newResult = {
       name: finalName,
@@ -375,6 +382,8 @@ function App() {
       };
 
       switch (selectedGame) {
+        case 'typing':
+          return <TypingQuiz {...gameProps} learningData={learningData} />;
         case 'swipe':
           return <SwipeCards {...gameProps} />;
         case 'bubble':
@@ -434,6 +443,7 @@ function App() {
           learningData={learningData}
           gameStats={gameStats}
           gameHistory={gameHistory}
+          activityLog={activityLog}
           onClose={() => setShowParentReport(false)}
         />
       )}

@@ -1,10 +1,11 @@
 import React from 'react';
-import { ClipboardList, Search, Layers, Circle, Check, Lock } from 'lucide-react';
+import { ClipboardList, Search, Layers, Circle, Check, Lock, Keyboard } from 'lucide-react';
 import { GAMES } from '../constants/gameConfig';
 import './GameSelector.css';
 
 const GAME_ICONS = {
   quiz: ClipboardList,
+  typing: Keyboard,
   wordSearch: Search,
   swipe: Layers,
   bubble: Circle,

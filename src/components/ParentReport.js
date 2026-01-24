@@ -6,6 +6,7 @@ import {
 } from 'lucide-react';
 import { getLearningStats } from '../learningAlgorithm';
 import { GAMES } from '../constants/gameConfig';
+import ActivityHeatmap from './ActivityHeatmap';
 import './ParentReport.css';
 
 const GAME_ICONS = {
@@ -21,6 +22,7 @@ const ParentReport = ({
   learningData, 
   gameStats, 
   gameHistory, 
+  activityLog,
   onClose 
 }) => {
   const stats = getLearningStats(learningData);
@@ -125,6 +127,9 @@ const ParentReport = ({
             </div>
             <p className="total-sessions">{totalGamesPlayed} total sessions</p>
           </section>
+
+          {/* Activity Heatmap */}
+          <ActivityHeatmap activityLog={activityLog} />
 
           {/* Word Cards - Replace boring table */}
           <section className="report-section">

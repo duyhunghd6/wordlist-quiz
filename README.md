@@ -540,6 +540,56 @@ const handleTimeout = () => {
 
 ---
 
+#### 4. Typing Quiz (Active Recall)
+
+**Concept:** Type the word based on definition hints. Progressive difficulty from partial hints to full recall.
+
+```
+┌───────────────────────────────────────────────────────────────┐
+│   Definition: "Extremely cold, at or below 0°C"               │
+├───────────────────────────────────────────────────────────────┤
+│                                                               │
+│   ┌───┐ ┌───┐ ┌───┐ ┌───┐ ┌───┐ ┌───┐ ┌───┐ ┌───┐           │
+│   │ F │ │ R │ │ ▌ │ │   │ │ Z │ │ I │ │   │ │ G │           │
+│   └───┘ └───┘ └─┬─┘ └───┘ └───┘ └───┘ └───┘ └───┘           │
+│                 ↑                                             │
+│           AUTO-FOCUSED (pulsing cyan glow)                    │
+│                                                               │
+│             ← Clear │ ✓ Submit                                │
+└───────────────────────────────────────────────────────────────┘
+```
+
+**Difficulty Levels:**
+
+| Level      | Visual Hint              | Input Required           |
+| ---------- | ------------------------ | ------------------------ |
+| **Easy**   | ~67% letters shown       | Fill 1/3 missing letters |
+| **Medium** | 50% shown (start OR end) | Type full word           |
+| **Hard**   | Word length only         | Type entire word         |
+
+**UX Features:**
+
+- **Zero-click start**: First empty box auto-focuses on question load
+- **Special characters**: Apostrophes/hyphens pre-filled and auto-skipped
+- **Typing time tracking**: Fast+correct → word shown less; Slow/backspaces → more practice
+- **Retry mechanism**: Wrong answers can be retried for 50% points
+
+**Typing Time → Learning Algorithm:**
+
+| Behavior              | Weight Effect  | Result                 |
+| --------------------- | -------------- | ---------------------- |
+| Fast + Correct (< 3s) | `weight × 0.6` | Word appears much less |
+| Slow + Correct (≥ 3s) | `weight × 0.8` | Word appears less      |
+| Many backspaces       | Smaller bonus  | Needs more practice    |
+| Wrong answer          | `weight × 2.0` | Word appears often     |
+
+**Files:**
+
+- `src/components/TypingQuiz.js`
+- `src/components/TypingQuiz.css`
+
+---
+
 ### 📋 Backlog Games
 
 | Game              | Description                                  | Complexity | Notes                   |

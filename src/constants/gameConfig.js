@@ -17,6 +17,7 @@ export const AVATARS = [
 
 export const GAMES = [
   { id: 'quiz', emoji: '📝', name: 'Quiz', available: true },
+  { id: 'typing', emoji: '⌨️', name: 'Typing', available: true },
   { id: 'wordSearch', emoji: '🔤', name: 'Word Search', available: true },
   { id: 'swipe', emoji: '👆', name: 'Swipe Cards', available: true },
   { id: 'bubble', emoji: '🫧', name: 'Bubble Pop', available: true }

@@ -185,6 +185,35 @@ export function useProfiles() {
 }
 
 /**
+ * Hook for tracking daily learning activity by subject
+ * Used to generate GitHub-style activity heatmap
+ */
+export function useActivityLog() {
+  const [activityLog, setActivityLog] = useLocalStorage('activityLog', {});
+
+  const recordActivity = useCallback((subject, score, questionsAnswered, correctAnswers) => {
+    const today = new Date().toISOString().split('T')[0]; // YYYY-MM-DD
+    setActivityLog(prev => {
+      const dayData = prev[today] || {};
+      const subjectData = dayData[subject] || { points: 0, questions: 0, correct: 0 };
+      return {
+        ...prev,
+        [today]: {
+          ...dayData,
+          [subject]: {
+            points: subjectData.points + score,
+            questions: subjectData.questions + questionsAnswered,
+            correct: subjectData.correct + correctAnswers
+          }
+        }
+      };
+    });
+  }, [setActivityLog]);
+
+  return { activityLog, recordActivity };
+}
+
+/**
  * Hook for profile-scoped data storage
  * Stores data in kidData_{profileId} namespace
  */
