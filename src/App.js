@@ -65,7 +65,7 @@ function App() {
   const [userAnswers, setUserAnswers] = useState([]);
   const [learningData, setLearningData] = useState({});
   const [showParentReport, setShowParentReport] = useState(false);
-  const [gameHistory, setGameHistory] = useLocalStorage('gameHistory', []);
+  const [gameHistory] = useLocalStorage('gameHistory', []);
 
   const wordlists = ["wordlist_esl", "wordlist_math", "wordlist_science"];
 
