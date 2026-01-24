@@ -5,6 +5,8 @@
 /.pnp
 .pnp.js
 
+.agent
+
 # testing
 /coverage
 
@@ -23,3 +25,5 @@ yarn-debug.log*
 yarn-error.log*
 
 deploy_to_42.sh
+.agent/skills/vercel-react-best-practices
+.gitignore

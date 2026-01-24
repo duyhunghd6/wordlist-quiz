@@ -1,0 +1,403 @@
+/* ParentReport - Modern Visual Design */
+
+.report-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(30, 27, 75, 0.7);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-md);
+  z-index: 1000;
+  animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.report-modal {
+  width: 100%;
+  max-width: 480px;
+  max-height: 90vh;
+  background: white;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: slideUp 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes slideUp {
+  from { 
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to { 
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Header */
+.report-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-lg);
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+  color: white;
+}
+
+.header-profile {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.report-avatar {
+  font-size: 2.5rem;
+  background: white;
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-text h1 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.header-text p {
+  font-size: 0.875rem;
+  opacity: 0.9;
+  margin: 0;
+}
+
+.close-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Content */
+.report-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--space-lg);
+}
+
+/* Progress Ring Hero */
+.progress-hero {
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--space-lg);
+}
+
+.progress-ring-container {
+  position: relative;
+  width: 140px;
+  height: 140px;
+}
+
+.progress-ring {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+.progress-ring-bg {
+  fill: none;
+  stroke: var(--color-bg-alt);
+  stroke-width: 8;
+}
+
+.progress-ring-fill {
+  fill: none;
+  stroke: var(--color-success);
+  stroke-width: 8;
+  stroke-linecap: round;
+  transition: stroke-dasharray 0.5s ease;
+}
+
+.progress-ring-text {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-percent {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--color-text);
+}
+
+.progress-label {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Stats Grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-sm);
+  margin-bottom: var(--space-xl);
+}
+
+.stat-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  text-align: center;
+}
+
+.stat-card svg {
+  opacity: 0.9;
+}
+
+.stat-value {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.stat-label {
+  font-size: 0.625rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  opacity: 0.8;
+}
+
+.stat-card.mastered {
+  background: linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%);
+  color: #92400E;
+}
+
+.stat-card.learning {
+  background: linear-gradient(135deg, #DBEAFE 0%, #BFDBFE 100%);
+  color: #1E40AF;
+}
+
+.stat-card.struggling {
+  background: linear-gradient(135deg, #FFE4E6 0%, #FECACA 100%);
+  color: #B91C1C;
+}
+
+.stat-card.total {
+  background: linear-gradient(135deg, #E0E7FF 0%, #C7D2FE 100%);
+  color: #3730A3;
+}
+
+/* Report Sections */
+.report-section {
+  margin-bottom: var(--space-xl);
+}
+
+.report-section h2 {
+  font-size: 1rem;
+  color: var(--color-text);
+  margin-bottom: var(--space-md);
+}
+
+/* Games Strip */
+.games-strip {
+  display: flex;
+  gap: var(--space-sm);
+  overflow-x: auto;
+  padding-bottom: var(--space-sm);
+}
+
+.game-mini-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: var(--space-sm) var(--space-md);
+  background: var(--color-bg);
+  border-radius: var(--radius-md);
+  min-width: 80px;
+}
+
+.game-mini-icon {
+  width: 36px;
+  height: 36px;
+  background: white;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+}
+
+.game-mini-name {
+  font-size: 0.625rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.game-mini-played {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--color-success);
+}
+
+.total-sessions {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  text-align: center;
+  margin-top: var(--space-sm);
+}
+
+/* Word Cards Grid */
+.word-cards-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.word-card {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-md);
+  border-left: 4px solid;
+  background: white;
+  box-shadow: var(--shadow-sm);
+}
+
+.word-card.status-mastered {
+  border-color: var(--color-success);
+  background: linear-gradient(135deg, #F0FDF4 0%, #DCFCE7 100%);
+}
+
+.word-card.status-learning {
+  border-color: var(--color-primary);
+  background: linear-gradient(135deg, #EEF2FF 0%, #E0E7FF 100%);
+}
+
+.word-card.status-struggling {
+  border-color: var(--color-warning);
+  background: linear-gradient(135deg, #FFFBEB 0%, #FEF3C7 100%);
+}
+
+.word-text {
+  font-family: var(--font-display);
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.word-meta {
+  display: flex;
+  gap: var(--space-sm);
+}
+
+.word-streak,
+.word-time {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  font-size: 0.625rem;
+  color: var(--color-text-muted);
+}
+
+.word-streak svg {
+  color: var(--color-warning);
+}
+
+.more-words {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  text-align: center;
+  margin-top: var(--space-md);
+}
+
+.empty-state {
+  text-align: center;
+  padding: var(--space-xl);
+  color: var(--color-text-muted);
+}
+
+/* Footer */
+.report-footer {
+  padding: var(--space-md) var(--space-lg);
+  border-top: 1px solid var(--color-bg-alt);
+}
+
+.back-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  width: 100%;
+  padding: var(--space-md);
+  background: var(--color-bg);
+  color: var(--color-text);
+  border-radius: var(--radius-md);
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.back-btn:hover {
+  background: var(--color-bg-alt);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .report-modal {
+    max-height: 100vh;
+    border-radius: 0;
+  }
+  
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .stat-value {
+    font-size: 1.25rem;
+  }
+  
+  .progress-ring-container {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .progress-percent {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .report-modal {
+    max-width: 560px;
+  }
+}

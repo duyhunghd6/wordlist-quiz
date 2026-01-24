@@ -1,0 +1,450 @@
+/* BubblePop - Floating Word Bubbles Game */
+
+.bubble-container {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: var(--space-md);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+/* Home Button */
+.home-btn-small {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: none;
+  background: var(--color-bg-alt);
+  border-radius: var(--radius-md);
+  color: var(--color-primary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.home-btn-small:hover {
+  background: var(--color-primary);
+  color: white;
+}
+
+.home-btn-small svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Progress Bar */
+.bubble-progress {
+  width: 100%;
+}
+
+.bubble-progress .progress-bar {
+  height: 8px;
+  background: var(--color-bg-alt);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  display: flex;
+}
+
+.bubble-progress .progress-segment {
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+.bubble-progress .progress-segment.correct {
+  background: linear-gradient(90deg, var(--color-success) 0%, #16A34A 100%);
+}
+
+.bubble-progress .progress-segment.wrong {
+  background: linear-gradient(90deg, var(--color-error) 0%, #DC2626 100%);
+}
+
+.bubble-progress .progress-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 6px;
+}
+
+.bubble-progress .question-counter {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-display);
+  font-weight: 700;
+}
+
+.bubble-progress .question-counter .current {
+  font-size: 2rem;
+  color: var(--color-primary);
+}
+
+.bubble-progress .question-counter .separator,
+.bubble-progress .question-counter .total {
+  font-size: 1.5rem;
+  color: var(--color-text-muted);
+}
+
+.bubble-progress .score-mini {
+  display: flex;
+  gap: 10px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.bubble-progress .correct-count { color: var(--color-success); }
+.bubble-progress .wrong-count { color: var(--color-error); }
+
+/* Timer Bar */
+.timer-bar {
+  height: 6px;
+  background: var(--color-bg-alt);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.timer-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  border-radius: var(--radius-full);
+  transition: width 0.1s linear;
+}
+
+.timer-bar.urgent .timer-fill {
+  background: linear-gradient(90deg, #F59E0B 0%, #EAB308 100%);
+}
+
+.timer-bar.critical .timer-fill {
+  background: linear-gradient(90deg, var(--color-error) 0%, #DC2626 100%);
+  animation: timerPulse 0.5s infinite;
+}
+
+@keyframes timerPulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+/* Definition Card */
+.definition-card {
+  background: white;
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  box-shadow: var(--shadow-md);
+  text-align: center;
+}
+
+.question-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  margin-bottom: var(--space-sm);
+}
+
+.question-label svg {
+  width: 16px;
+  height: 16px;
+}
+
+.definition-text {
+  font-family: var(--font-display);
+  font-size: clamp(1.1rem, 4vw, 1.4rem);
+  font-weight: 700;
+  color: var(--color-text);
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* Bubble Arena */
+.bubble-arena {
+  flex: 1;
+  position: relative;
+  min-height: 300px;
+  overflow: hidden;
+  background: linear-gradient(180deg, 
+    rgba(99, 102, 241, 0.05) 0%, 
+    rgba(236, 72, 153, 0.05) 50%,
+    rgba(34, 197, 94, 0.05) 100%
+  );
+  border-radius: var(--radius-lg);
+}
+
+/* Bubble */
+.bubble {
+  position: absolute;
+  bottom: -120px;
+  left: calc(var(--bubble-x) - 63px);
+  width: 126px;
+  height: 126px;
+  border-radius: 50%;
+  background: var(--bubble-bg);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 
+    0 4px 20px var(--bubble-glow),
+    inset 0 -4px 12px rgba(0, 0, 0, 0.1),
+    inset 0 4px 12px rgba(255, 255, 255, 0.3);
+  animation: 
+    floatUp var(--bubble-speed) linear var(--bubble-delay) forwards,
+    wobble 2s ease-in-out infinite;
+  transition: box-shadow 0.15s ease;
+  z-index: 1;
+}
+
+.bubble:hover:not(:disabled) {
+  box-shadow: 
+    0 8px 30px var(--bubble-glow),
+    inset 0 -4px 12px rgba(0, 0, 0, 0.1),
+    inset 0 4px 12px rgba(255, 255, 255, 0.3);
+  z-index: 10;
+}
+
+.bubble:active:not(:disabled) {
+  box-shadow: 
+    0 2px 10px var(--bubble-glow),
+    inset 0 -4px 12px rgba(0, 0, 0, 0.1),
+    inset 0 4px 12px rgba(255, 255, 255, 0.3);
+}
+
+.bubble-word {
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 4px 8px;
+  white-space: nowrap;
+}
+
+/* Bubble Float Animation */
+@keyframes floatUp {
+  0% {
+    bottom: -80px;
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    bottom: 100%;
+    opacity: 0.5;
+  }
+}
+
+/* Wobble Animation */
+@keyframes wobble {
+  0%, 100% {
+    transform: translateX(0) rotate(0deg);
+  }
+  25% {
+    transform: translateX(8px) rotate(3deg);
+  }
+  50% {
+    transform: translateX(0) rotate(0deg);
+  }
+  75% {
+    transform: translateX(-8px) rotate(-3deg);
+  }
+}
+
+/* Popped Bubble */
+.bubble.popped {
+  animation: pop 0.3s ease forwards;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.3);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+/* Fade out wrong bubbles */
+.bubble.fade {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+/* Correct Answer Indicator */
+.correct-indicator {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  background: var(--color-success);
+  color: white;
+  border-radius: var(--radius-full);
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  box-shadow: var(--shadow-lg);
+  animation: bounceIn 0.3s ease;
+  z-index: 20;
+}
+
+.correct-indicator svg {
+  width: 18px;
+  height: 18px;
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+  }
+  60% {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+/* Feedback Card */
+.bubble-container .feedback-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  font-weight: 600;
+  animation: slideIn 0.25s ease;
+  overflow: hidden;
+}
+
+.bubble-container .feedback-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+}
+
+.bubble-container .feedback-card svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.bubble-container .feedback-card.correct {
+  background: linear-gradient(135deg, var(--color-success) 0%, #16A34A 100%);
+  color: white;
+}
+
+.bubble-container .feedback-card.incorrect {
+  background: linear-gradient(135deg, var(--color-error) 0%, #DC2626 100%);
+  color: white;
+}
+
+.bubble-container .next-icon {
+  margin-left: auto;
+  opacity: 0.7;
+  animation: bounce 1s infinite;
+  width: 18px;
+  height: 18px;
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(3px); }
+}
+
+/* Learning Context */
+.bubble-container .learning-context {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 10px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.bubble-container .learning-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+
+.bubble-container .learning-header svg {
+  width: 14px;
+  height: 14px;
+}
+
+.bubble-container .learning-example,
+.bubble-container .learning-vietnamese {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.bubble-container .learning-example {
+  font-family: var(--font-body);
+  font-style: italic;
+  font-size: 0.85rem;
+  opacity: 0.95;
+}
+
+.bubble-container .learning-vietnamese {
+  font-family: 'Roboto', 'Segoe UI', 'Arial', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+/* Responsive - Mobile */
+@media (max-width: 400px) {
+  .bubble-container {
+    padding: var(--space-sm);
+  }
+  
+  .definition-card {
+    padding: var(--space-md);
+  }
+  
+  .bubble {
+    width: 80px;
+    height: 80px;
+    left: calc(var(--bubble-x) - 32px);
+  }
+  
+  .bubble-word {
+    font-size: 0.75rem;
+  }
+  
+  .bubble-arena {
+    min-height: 260px;
+  }
+}

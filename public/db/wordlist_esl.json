@@ -798,804 +798,6 @@
     "vietnamese": "Ngoạn mục. (Ví dụ: Màn trình diễn pháo hoa đêm giao thừa thực sự ngoạn mục, thắp sáng cả bầu trời.)"
   },
   {
-    "unit": "3.4",
-    "word": "Hidden",
-    "definition": "Kept out of sight; concealed.",
-    "example": "They discovered a hidden cave while exploring the forest.",
-    "vietnamese": "Ẩn. (Ví dụ: Họ đã phát hiện ra một hang động ẩn trong khi khám phá khu rừng.)"
-  },
-  {
-    "unit": "3.4",
-    "word": "Trek",
-    "definition": "A long, difficult journey, especially one made on foot.",
-    "example": "We planned a three-day trek through the national park, camping along the way.",
-    "vietnamese": "Chuyến đi bộ đường dài. (Ví dụ: Chúng tôi đã lên kế hoạch cho một chuyến đi bộ đường dài ba ngày xuyên qua công viên quốc gia, cắm trại dọc đường đi.)"
-  },
-  {
-    "unit": "3.5",
-    "word": "Brass knob",
-    "definition": "A round handle made of brass, often used on doors or drawers.",
-    "example": "She turned the brass knob and opened the antique wooden door.",
-    "vietnamese": "Tay nắm cửa bằng đồng. (Ví dụ: Cô ấy vặn tay nắm cửa bằng đồng và mở cánh cửa gỗ cổ.)"
-  },
-  {
-    "unit": "3.5",
-    "word": "Porthole",
-    "definition": "A small circular window on a ship or aircraft.",
-    "example": "The children excitedly looked out the porthole to see the ocean waves.",
-    "vietnamese": "Ô cửa sổ tròn. (Ví dụ: Bọn trẻ hào hứng nhìn ra ô cửa sổ tròn để ngắm sóng biển.)"
-  },
-  {
-    "unit": "3.5",
-    "word": "carpeted",
-    "definition": "Covered with carpet; having a carpet on the floor.",
-    "example": "The living room was carpeted in a soft, plush material that felt cozy underfoot.",
-    "vietnamese": "Trải thảm. (Ví dụ: Phòng khách được trải một lớp thảm mềm, sang trọng, tạo cảm giác ấm cúng dưới chân.)"
-  },
-  {
-    "unit": "3.5",
-    "word": "comfort",
-    "definition": "A state of physical ease and freedom from pain or constraint; to provide solace.",
-    "example": "After a long day, she found comfort in reading her favorite book.",
-    "vietnamese": "Sự thoải mái. (Ví dụ: Sau một ngày dài, cô tìm thấy sự thoải mái khi đọc cuốn sách yêu thích của mình.)"
-  },
-  {
-    "unit": "3.5",
-    "word": "tunnel",
-    "definition": "An underground passage or a long hole dug through the ground.",
-    "example": "The train passed through a dark tunnel before emerging into the bright sunlight.",
-    "vietnamese": "Đường hầm. (Ví dụ: Đoàn tàu đi qua một đường hầm tối tăm trước khi ra ngoài ánh sáng mặt trời rực rỡ.)"
-  },
-  {
-    "unit": "3.5",
-    "word": "fond of",
-    "definition": "Having a strong liking or affection for someone or something.",
-    "example": "He is very fond of dogs and has three of them at home.",
-    "vietnamese": "Thích. (Ví dụ: Anh ấy rất thích chó và nuôi ba con ở nhà.)"
-  },
-  {
-    "unit": "3.5",
-    "word": "meadows",
-    "definition": "Open areas of grassland, typically used for grazing animals or growing hay.",
-    "example": "The wildflowers bloomed beautifully in the meadows during spring.",
-    "vietnamese": "Đồng cỏ. (Ví dụ: Hoa dại nở rộ tuyệt đẹp trên đồng cỏ vào mùa xuân.)"
-  },
-  {
-    "unit": "3.5",
-    "word": "pegs",
-    "definition": "Small, pointed pieces of wood or metal used to fasten things in place.",
-    "example": "They used pegs to secure the tent to the ground during their camping trip.",
-    "vietnamese": "Cọc. (Ví dụ: Họ dùng cọc để cố định lều xuống đất trong chuyến cắm trại.)"
-  },
-  {
-    "unit": "3.5",
-    "word": "respectable",
-    "definition": "Regarded by society as good, proper, or correct.",
-    "example": "He came from a respectable family known for their charitable work in the community.",
-    "vietnamese": "Đáng kính. (Ví dụ: Anh ấy xuất thân từ một gia đình đáng kính, nổi tiếng với các hoạt động từ thiện trong cộng đồng.)"
-  },
-  {
-    "unit": "3.5",
-    "word": "tiled",
-    "definition": "Covered with tiles; a surface made of flat pieces of material, usually used for flooring or walls.",
-    "example": "The kitchen had a beautifully tiled floor that was easy to clean.",
-    "vietnamese": "Lát gạch. (Ví dụ: Nhà bếp có sàn lát gạch đẹp mắt, dễ lau chùi.)"
-  },
-  {
-    "unit": "7.1",
-    "word": "Numerator",
-    "definition": "The numerator is the top number of a fraction. It tells you how many parts are needed.",
-    "example": "1/2\n1 is numerator. You have 1 piece of the pizza, but there are two pieces.",
-    "vietnamese": "Tử số là số ở trên cùng của một phân số. Nó cho bạn biết cần bao nhiêu phần."
-  },
-  {
-    "unit": "7.1",
-    "word": "Denominator",
-    "definition": "the bottom number of the fraction. It tells you how many equal parts a shape has been divided into.",
-    "example": "1/2\n2 is the demoniator. The pizza is divided into 2 parts",
-    "vietnamese": "Mẫu số là số ở dưới cùng của phân số. Nó cho bạn biết một hình đã được chia thành bao nhiêu phần bằng nhau."
-  },
-  {
-    "unit": "7.1",
-    "word": "Fraction",
-    "definition": "Any part of a group number or whole",
-    "example": "1/2 and 3/4 are examples of fractions.",
-    "vietnamese": "Bất kỳ phần nào của một nhóm, một số, hoặc một tổng thể."
-  },
-  {
-    "unit": "7.2",
-    "word": "Operator",
-    "definition": "To find the fraction of an amount you use the fraction as an operator on the amount.\nThe fraction acts like a division",
-    "example": "1/4 of a pizza means a whole pizza divided by 4.",
-    "vietnamese": "Để tìm phân số của một lượng, bạn sử dụng phân số như một toán tử trên lượng đó. Phân số hoạt động giống như một phép chia."
-  },
-  {
-    "unit": "7.2",
-    "word": "Unit fraction",
-    "definition": "A fraction with a numerator of 1",
-    "example": "1/2 or 1/5",
-    "vietnamese": "Một phân số có tử số là 1."
-  },
-  {
-    "unit": "8.1",
-    "word": "Angle",
-    "definition": "The size of turn from one line to the other line where two lines meet",
-    "example": "A square has four 90-degree angles.",
-    "vietnamese": "Kích thước của độ xoay từ một đường này sang một đường khác tại điểm hai đường gặp nhau."
-  },
-  {
-    "unit": "8.1",
-    "word": "Degrees",
-    "definition": "The Unit of measurement for angles.",
-    "example": "A right angle is 90 degrees.",
-    "vietnamese": "Đơn vị đo lường cho các góc."
-  },
-  {
-    "unit": "8.1",
-    "word": "Compare",
-    "definition": "To say what is the same and what is different, or to say which is greater or smaller.",
-    "example": "Let's compare the two triangles to see which is bigger.",
-    "vietnamese": "Để nói ra điều gì giống nhau và điều gì khác nhau, hoặc để nói cái nào lớn hơn hay nhỏ hơn."
-  },
-  {
-    "unit": "8.2",
-    "word": "Right angle",
-    "definition": "An angle of 90 degrees",
-    "example": "The corner of a book forms a right angle.",
-    "vietnamese": "Một góc 90 độ."
-  },
-  {
-    "unit": "8.2",
-    "word": "Acute",
-    "definition": "An angle less than 90 degrees",
-    "example": "An angle of 30 degrees is an acute angle.",
-    "vietnamese": "Một góc nhỏ hơn 90 độ."
-  },
-  {
-    "unit": "8.2",
-    "word": "Obtuse angle",
-    "definition": "An angle greater than 90 degrees and less than 180 degrees",
-    "example": "An angle of 110 degrees is an obtuse angle.",
-    "vietnamese": "Một góc lớn hơn 90 độ và nhỏ hơn 180 độ."
-  },
-  {
-    "unit": "8.3",
-    "word": "Estimate",
-    "definition": "Think carefully and guess based on what you already know",
-    "example": "Estimate the number of candies in the jar.",
-    "vietnamese": "Suy nghĩ cẩn thận và đoán dựa trên những gì bạn đã biết."
-  },
-  {
-    "unit": "4.1",
-    "word": "papaya",
-    "definition": "A tropical fruit with yellowish-green skin, sweet orange flesh, and small black seeds inside.",
-    "example": "The papaya is rich in vitamins and can be eaten fresh or added to fruit salads.",
-    "vietnamese": "Một loại trái cây nhiệt đới có vỏ màu xanh vàng, thịt quả màu cam ngọt và có hạt đen nhỏ bên trong."
-  },
-  {
-    "unit": "4.1",
-    "word": "Nutritious",
-    "definition": "Containing substances that help you grow and stay healthy; good for your health.",
-    "example": "Eating a nutritious breakfast helps you stay focused throughout the day.",
-    "vietnamese": "Chứa các chất giúp bạn phát triển và khỏe mạnh; tốt cho sức khỏe của bạn."
-  },
-  {
-    "unit": "4.1",
-    "word": "To grow food",
-    "definition": "To cultivate or produce plants and crops that can be eaten.",
-    "example": "Many farmers in the area grow food such as rice, vegetables, and fruits.",
-    "vietnamese": "Trồng trọt hoặc sản xuất thực vật và cây trồng có thể ăn được."
-  },
-  {
-    "unit": "4.2",
-    "word": "Roast",
-    "definition": "To cook food, especially meat, or vegetables, in an oven or over a fire.",
-    "example": "She roasted the chicken with vegetables for dinner.",
-    "vietnamese": "Nấu chín thức ăn, đặc biệt là thịt hoặc rau, trong lò nướng hoặc trên lửa."
-  },
-  {
-    "unit": "4.2",
-    "word": "crush",
-    "definition": "To press something very hard so that it is broken or its shape is destroyed.",
-    "example": "The chef crushed the garlic to release its flavor before adding it to the dish.",
-    "vietnamese": "Ấn một thứ gì đó rất mạnh để nó bị vỡ hoặc bị phá hủy hình dạng."
-  },
-  {
-    "unit": "4.2",
-    "word": "pods",
-    "definition": "Long, thin cases that contain seeds and split open when they are ripe.",
-    "example": "Vanilla is harvested from the pods of the vanilla orchid.",
-    "vietnamese": "Những vỏ dài, mỏng chứa hạt và tách ra khi chúng chín."
-  },
-  {
-    "unit": "4.2",
-    "word": "machetes",
-    "definition": "Large, heavy knives used for cutting through thick vegetation, especially in tropical regions.",
-    "example": "Workers used machetes to clear the dense jungle for farming.",
-    "vietnamese": "Những con dao lớn, nặng dùng để cắt xuyên qua thảm thực vật dày, đặc biệt là ở các vùng nhiệt đới."
-  },
-  {
-    "unit": "4.2",
-    "word": "containers",
-    "definition": "Objects used to hold or transport things, such as boxes, bottles, or jars.",
-    "example": "She stored the leftover food in plastic containers to keep it fresh.",
-    "vietnamese": "Các vật dụng dùng để chứa hoặc vận chuyển mọi thứ, chẳng hạn như hộp, chai hoặc lọ."
-  },
-  {
-    "unit": "4.2",
-    "word": "paste",
-    "definition": "A thick, soft, smooth substance made by crushing or mixing ingredients.",
-    "example": "The chef made a paste from tomatoes, garlic, and herbs to use as a base for the sauce.",
-    "vietnamese": "Một chất đặc, mềm, mịn được tạo ra bằng cách nghiền hoặc trộn các thành phần."
-  },
-  {
-    "unit": "4.2",
-    "word": "vanilla",
-    "definition": "A flavoring made from the seeds of an orchid plant, commonly used in sweets and desserts.",
-    "example": "She added vanilla extract to the cake batter for extra flavor.",
-    "vietnamese": "Một hương liệu được làm từ hạt của một loại cây lan, thường được sử dụng trong đồ ngọt và món tráng miệng."
-  },
-  {
-    "unit": "4.2",
-    "word": "cacao beans",
-    "definition": "Seeds from the cacao tree that are used to make cocoa and chocolate products.",
-    "example": "After harvesting, the cacao beans are dried and processed to make chocolate.",
-    "vietnamese": "Hạt từ cây ca cao được dùng để làm các sản phẩm ca cao và sô cô la."
-  },
-  {
-    "unit": "4.2",
-    "word": "cocoa butter",
-    "definition": "A pale yellow fat obtained from cacao beans, used in making chocolate and cosmetics.",
-    "example": "Cocoa butter is a key ingredient in high-quality chocolates and many lotions.",
-    "vietnamese": "Một chất béo màu vàng nhạt thu được từ hạt ca cao, được sử dụng để làm sô cô la và mỹ phẩm."
-  },
-  {
-    "unit": "4.3",
-    "word": "Soil",
-    "definition": "The dirt or earth that plants grow in.",
-    "example": "We plant seeds in the soil to grow flowers.",
-    "vietnamese": "Đất hoặc bùn mà thực vật phát triển trong đó."
-  },
-  {
-    "unit": "4.3",
-    "word": "Seeds",
-    "definition": "Small parts of a plant that grow into new plants.",
-    "example": "We plant seeds to grow tomatoes",
-    "vietnamese": "Những bộ phận nhỏ của cây phát triển thành cây mới."
-  },
-  {
-    "unit": "4.3",
-    "word": "ground",
-    "definition": "The solid surface of the earth.",
-    "example": "We sit on the ground during our picnic.",
-    "vietnamese": "Bề mặt rắn của trái đất."
-  },
-  {
-    "unit": "4.3",
-    "word": "Okra",
-    "definition": "A green vegetable that is long and has tiny seeds inside.",
-    "example": "Okra is tasty when cooked in soup.",
-    "vietnamese": "Một loại rau màu xanh lá cây, dài và có hạt nhỏ bên trong."
-  },
-  {
-    "unit": "4.3",
-    "word": "Bok choy",
-    "definition": "A type of leafy green vegetable often used in salads and stir-fry.",
-    "example": "Bok choy is a popular vegetable in Chinese food.",
-    "vietnamese": "Một loại rau lá xanh thường dùng trong món salad và món xào."
-  },
-  {
-    "unit": "4.3",
-    "word": "Mango",
-    "definition": "A sweet, juicy tropical fruit with yellow-orange flesh.",
-    "example": "I love the sweet taste of mango.",
-    "vietnamese": "Một loại trái cây nhiệt đới ngọt, mọng nước có thịt màu vàng cam."
-  },
-  {
-    "unit": "4.3",
-    "word": "Cress",
-    "definition": "A small plant with green leaves often used in salads.",
-    "example": "We grew cress in small pots in the classroom",
-    "vietnamese": "Một loại cây nhỏ có lá xanh thường dùng trong món salad."
-  },
-  {
-    "unit": "4.3",
-    "word": "Yoghurt pot",
-    "definition": "A container that holds yoghurt, sometimes used for planting.",
-    "example": "We used an empty yoghurt pot to plant our seeds.",
-    "vietnamese": "Một hộp đựng sữa chua, đôi khi được dùng để trồng cây."
-  },
-  {
-    "unit": "4.3",
-    "word": "cotton wool",
-    "definition": "Soft, fluffy material made from cotton, often used for cleaning or growing seeds.",
-    "example": "We put seeds on cotton wool to help them grow",
-    "vietnamese": "Vật liệu mềm, xốp làm từ bông, thường dùng để lau chùi hoặc ươm hạt."
-  },
-  {
-    "unit": "4.3",
-    "word": "Grow",
-    "definition": "To develop or get bigger, especially plants or animals.",
-    "example": "The plant will grow taller each day.",
-    "vietnamese": "Phát triển hoặc trở nên lớn hơn, đặc biệt là thực vật hoặc động vật."
-  },
-  {
-    "unit": "4.3",
-    "word": "rinse",
-    "definition": "To wash lightly, usually with water.",
-    "example": "Rinse your hands after playing in the dirt.",
-    "vietnamese": "Rửa nhẹ, thường là bằng nước."
-  },
-  {
-    "unit": "4.3",
-    "word": "press",
-    "definition": "To push down firmly.",
-    "example": "Press the soil down to help the seed stay in place.",
-    "vietnamese": "Ấn mạnh xuống."
-  },
-  {
-    "unit": "4.3",
-    "word": "fold",
-    "definition": "To bend something so that one part covers another part.",
-    "example": "Fold the paper to make a card.",
-    "vietnamese": "Gấp một cái gì đó lại để một phần che một phần khác."
-  },
-  {
-    "unit": "4.3",
-    "word": "cut-off",
-    "definition": "To remove a part by cutting.",
-    "example": "Cut off the top of the yoghurt pot before planting.",
-    "vietnamese": "Loại bỏ một phần bằng cách cắt."
-  },
-  {
-    "unit": "4.4",
-    "word": "Spiky",
-    "definition": "Having sharp points or edges.",
-    "example": "A pineapple has spiky skin.",
-    "vietnamese": "Có các điểm hoặc cạnh sắc nhọn."
-  },
-  {
-    "unit": "4.4",
-    "word": "Smooth",
-    "definition": "Not rough;\nflat and soft to touch.",
-    "example": "The mango skin feels smooth",
-    "vietnamese": "Không thô ráp; phẳng và mềm khi chạm vào."
-  },
-  {
-    "unit": "4.4",
-    "word": "sweet",
-    "definition": "A sugary taste, often found in fruits or candy.",
-    "example": "Mangoes taste sweet and juicy.",
-    "vietnamese": "Một vị ngọt như đường, thường thấy trong trái cây hoặc kẹo."
-  },
-  {
-    "unit": "4.4",
-    "word": "salty",
-    "definition": "Tasting of salt, like potato chips.",
-    "example": "French fries are salty.",
-    "vietnamese": "Có vị mặn, giống như khoai tây chiên."
-  },
-  {
-    "unit": "4.4",
-    "word": "juicy",
-    "definition": "Full of juice, usually refers to fruits.",
-    "example": "Oranges are very juicy.",
-    "vietnamese": "Đầy nước, thường dùng để chỉ trái cây."
-  },
-  {
-    "unit": "4.4",
-    "word": "smell like",
-    "definition": "To have a similar scent to something.",
-    "example": "The flowers smell like roses.",
-    "vietnamese": "Có mùi hương tương tự như một cái gì đó."
-  },
-  {
-    "unit": "4.4",
-    "word": "taste like",
-    "definition": "To have a similar flavor to something.",
-    "example": "The soup tastes like chicken.",
-    "vietnamese": "Có hương vị tương tự như một cái gì đó."
-  },
-  {
-    "unit": "4.4",
-    "word": "feel like",
-    "definition": "To have a similar texture or touch as something.",
-    "example": "The rock feels like sandpaper.",
-    "vietnamese": "Có kết cấu hoặc cảm giác khi chạm vào tương tự như một cái gì đó."
-  },
-  {
-    "unit": "4.4",
-    "word": "sound",
-    "definition": "A noise made by something.",
-    "example": "The rain makes a soft sound.",
-    "vietnamese": "Một tiếng động được tạo ra bởi một cái gì đó."
-  },
-  {
-    "unit": "4.4",
-    "word": "hold on tight",
-    "definition": "To grip something firm",
-    "example": "Hold on tight to the rope so you don’t fall.",
-    "vietnamese": "Giữ chặt một cái gì đó."
-  },
-  {
-    "unit": "4.5",
-    "word": "Landscapes",
-    "definition": "Large areas of land with various physical features, like mountains, rivers, forests, or fields.",
-    "example": "The painter loved to capture beautiful landscapes with mountains and lakes.",
-    "vietnamese": "Các khu vực đất đai rộng lớn với nhiều đặc điểm địa lý khác nhau, như núi, sông, rừng hoặc cánh đồng."
-  },
-  {
-    "unit": "4.5",
-    "word": "Meadow",
-    "definition": "A large, open area of grassland, often filled with wildflowers.",
-    "example": "We had a picnic in a sunny meadow surrounded by flowers.",
-    "vietnamese": "Một khu vực đồng cỏ rộng, thoáng đãng, thường mọc đầy hoa dại."
-  },
-  {
-    "unit": "4.5",
-    "word": "Valley",
-    "definition": "A low area of land between hills or mountains, often with a river flowing through it.",
-    "example": "The valley was surrounded by tall mountains and lush green trees.",
-    "vietnamese": "Một vùng đất thấp giữa các ngọn đồi hoặc ngọn núi, thường có một con sông chảy qua."
-  },
-  {
-    "unit": "4.5",
-    "word": "River",
-    "definition": "A large natural stream of water that flows across the land into a sea, lake, or another river.",
-    "example": "They went fishing by the river on a sunny afternoon.",
-    "vietnamese": "Một dòng nước tự nhiên lớn chảy qua đất liền ra biển, hồ hoặc một con sông khác."
-  },
-  {
-    "unit": "4.5",
-    "word": "steep cliffs",
-    "definition": "High, sharp rock faces that rise \nalmost vertically.",
-    "example": "The hiking trail led us to steep cliffs with a view of the ocean below.",
-    "vietnamese": "Những vách đá cao, sắc nhọn nhô lên gần như thẳng đứng."
-  },
-  {
-    "unit": "4.5",
-    "word": "Waterfall",
-    "definition": "Water that falls from a high place, usually a river or stream falling over a cliff.",
-    "example": "We could hear the roaring waterfall from far away.",
-    "vietnamese": "Nước rơi từ một nơi cao, thường là một con sông hoặc dòng suối chảy qua một vách đá."
-  },
-  {
-    "unit": "4.5",
-    "word": "Whirlpool",
-    "definition": "A fast-spinning, circular movement of water, often created when currents meet.",
-    "example": "The river formed a whirlpool near the rocks.",
-    "vietnamese": "Một chuyển động xoáy tròn, nhanh của nước, thường được tạo ra khi các dòng chảy gặp nhau."
-  },
-  {
-    "unit": "4.5",
-    "word": "Muddy",
-    "definition": "Covered with or full of mud, a mix of dirt and water.",
-    "example": "After the rain, the path through the forest was very muddy.",
-    "vietnamese": "Bị bao phủ bởi hoặc đầy bùn, một hỗn hợp của đất và nước."
-  },
-  {
-    "unit": "4.5",
-    "word": "trees",
-    "definition": "Tall plants with trunks, branches, and leaves, which grow in forests or alone.",
-    "example": "The park has many trees that provide shade in the summer.",
-    "vietnamese": "Những cây cao có thân, cành và lá, mọc trong rừng hoặc đứng một mình."
-  },
-  {
-    "unit": "4.5",
-    "word": "Bushes",
-    "definition": "Low, thick \nplants with many branches that grow close to the ground.",
-    "example": "Birds often build their nests in the bushes near our house.",
-    "vietnamese": "Những cây thấp, rậm rạp có nhiều cành mọc sát mặt đất."
-  },
-  {
-    "unit": "4.5",
-    "word": "grass",
-    "definition": "Short, green plants that grow in fields, gardens, and lawns.",
-    "example": "They played soccer on the fresh green grass.",
-    "vietnamese": "Những cây ngắn, màu xanh lá cây mọc trên đồng, trong vườn và bãi cỏ."
-  },
-  {
-    "unit": "4.5",
-    "word": "buttercups",
-    "definition": "Small, bright yellow wildflowers often found in meadows and fields.",
-    "example": "The meadow was filled with yellow buttercups swaying in the breeze.",
-    "vietnamese": "Những bông hoa dại nhỏ, màu vàng tươi thường thấy ở đồng cỏ và cánh đồng."
-  },
-  {
-    "unit": "4.5",
-    "word": "Generous",
-    "definition": "Willing to give more than is usual or expected, especially with money, time, or help.",
-    "example": "He is very generous with his time, always helping his friends.",
-    "vietnamese": "Sẵn sàng cho đi nhiều hơn mức bình thường hoặc mong đợi, đặc biệt là về tiền bạc, thời gian hoặc sự giúp đỡ."
-  },
-  {
-    "unit": "4.5",
-    "word": "Helpful",
-    "definition": "Ready to assist others, offering support and assistance.",
-    "example": "The children were helpful, tidying up their classroom after art time.",
-    "vietnamese": "Sẵn sàng hỗ trợ người khác, cung cấp sự hỗ trợ và giúp đỡ."
-  },
-  {
-    "unit": "4.5",
-    "word": "Greedy",
-    "definition": "Wanting more than is \nneeded, often with food, money, or possessions.",
-    "example": "He was greedy and didn’t want to share his toys with anyone.",
-    "vietnamese": "Muốn nhiều hơn mức cần thiết, thường là với thức ăn, tiền bạc hoặc của cải."
-  },
-  {
-    "unit": "4.5",
-    "word": "Selfish",
-    "definition": "Caring only about oneself and not thinking about others.",
-    "example": "She acted selfishly by taking all the candy for herself.",
-    "vietnamese": "Chỉ quan tâm đến bản thân mà không nghĩ đến người khác."
-  },
-  {
-    "unit": "4.5",
-    "word": "Mean",
-    "definition": "Unkind or hurtful to others, often in words or actions.",
-    "example": "The bully was mean to the younger kids at school.",
-    "vietnamese": "Không tốt bụng hoặc gây tổn thương cho người khác, thường bằng lời nói hoặc hành động."
-  },
-  {
-    "unit": "5.1",
-    "word": "Character",
-    "definition": "A person, animal, or being in a story.",
-    "example": "Harry Potter is the main character in his series of books.",
-    "vietnamese": "Một người, động vật, hoặc sinh vật trong một câu chuyện."
-  },
-  {
-    "unit": "5.1",
-    "word": "Dilemma",
-    "definition": "A difficult situation or problem where a choice must be made between two or more options.",
-    "example": "Lily faced a dilemma: should she go to her friend's party or stay home to study?",
-    "vietnamese": "Một tình huống hoặc vấn đề khó khăn khi phải lựa chọn giữa hai hoặc nhiều phương án."
-  },
-  {
-    "unit": "5.1",
-    "word": "Title",
-    "definition": "The name of a book, movie, article, or other work.",
-    "example": "The title of the book is Charlotte's Web.",
-    "vietnamese": "Tên của một cuốn sách, bộ phim, bài báo hoặc tác phẩm khác."
-  },
-  {
-    "unit": "5.1",
-    "word": "setting",
-    "definition": "The time and place where a story takes place.",
-    "example": "The setting of the story is a small village during the winter.",
-    "vietnamese": "Thời gian và địa điểm mà một câu chuyện diễn ra."
-  },
-  {
-    "unit": "5.1",
-    "word": "detective",
-    "definition": "A person, often in the police force, who investigates crimes",
-    "example": "Sherlock Holmes is a famous detective known for \nsolving tricky cases.",
-    "vietnamese": "Một người, thường thuộc lực lượng cảnh sát, chuyên điều tra tội phạm."
-  },
-  {
-    "unit": "5.1",
-    "word": "solve a crime",
-    "definition": "To figure out who committed a crime and how they did it.",
-    "example": "The detective worked hard to solve the crime and find the thief.",
-    "vietnamese": "Tìm ra ai đã phạm tội và họ đã làm điều đó như thế nào."
-  },
-  {
-    "unit": "5.1",
-    "word": "catch bad guys",
-    "definition": "To capture or arrest people who are breaking the law.",
-    "example": "The police catch bad guys to keep the city safe.",
-    "vietnamese": "Bắt giữ hoặc bắt giam những người vi phạm pháp luật."
-  },
-  {
-    "unit": "5.1",
-    "word": "come back",
-    "definition": "To return to a place or situation.",
-    "example": "After a long vacation, they were happy to come back home.",
-    "vietnamese": "Trở lại một địa điểm hoặc tình huống."
-  },
-  {
-    "unit": "5.1",
-    "word": "possesion",
-    "definition": "Something that someone owns or has.",
-    "example": "His favorite possession is a signed baseball from his grandfather.",
-    "vietnamese": "Thứ gì đó mà ai đó sở hữu hoặc có."
-  },
-  {
-    "unit": "5.1",
-    "word": "science kit",
-    "definition": "A set of tools and materials used for conducting science experiments.",
-    "example": "She used her science kit to create a volcano that erupts with \nbaking soda and vinegar.",
-    "vietnamese": "Một bộ công cụ và vật liệu được sử dụng để tiến hành các thí nghiệm khoa học."
-  },
-  {
-    "unit": "5.1",
-    "word": "big trouble",
-    "definition": "A serious or difficult problem.",
-    "example": "When he broke the vase, he knew he was in big trouble.",
-    "vietnamese": "Một vấn đề nghiêm trọng hoặc khó khăn."
-  },
-  {
-    "unit": "5.1",
-    "word": "on fire",
-    "definition": "Burning or in flames.",
-    "example": "The campfire was on fire, warming everyone sitting around it.",
-    "vietnamese": "Đang cháy hoặc trong ngọn lửa."
-  },
-  {
-    "unit": "5.1",
-    "word": "are lost",
-    "definition": "Unable to find the way or not knowing where something is.",
-    "example": "The hikers are lost in the woods.",
-    "vietnamese": "Không thể tìm thấy đường hoặc không biết một cái gì đó ở đâu."
-  },
-  {
-    "unit": "5.1",
-    "word": "danger",
-    "definition": "The possibility of harm or something harmful happening.",
-    "example": "Climbing without a harness can be a real danger.",
-    "vietnamese": "Khả năng bị tổn hại hoặc điều gì đó có hại xảy ra."
-  },
-  {
-    "unit": "5.2",
-    "word": "add",
-    "definition": "To include something else, or to combine things together.",
-    "example": "Please add your name to the top of the worksheet.",
-    "vietnamese": "Bao gồm một cái gì đó khác, hoặc kết hợp mọi thứ lại với nhau."
-  },
-  {
-    "unit": "5.2",
-    "word": "create",
-    "definition": "To make something new, often by combining ideas or materials.",
-    "example": "He used clay to create a small \nmodel of a car.",
-    "vietnamese": "Tạo ra một cái gì đó mới, thường bằng cách kết hợp các ý tưởng hoặc vật liệu."
-  },
-  {
-    "unit": "5.2",
-    "word": "describe",
-    "definition": "To explain what something or someone is like, using details.",
-    "example": "Describe the character by talking about how they look and act.",
-    "vietnamese": "Giải thích một cái gì đó hoặc ai đó như thế nào, sử dụng các chi tiết."
-  },
-  {
-    "unit": "5.2",
-    "word": "draw",
-    "definition": "To make a picture or design using a pen, pencil, or other tool.",
-    "example": "Can you draw a picture of your favorite animal?",
-    "vietnamese": "Tạo một bức tranh hoặc thiết kế bằng bút mực, bút chì hoặc công cụ khác."
-  },
-  {
-    "unit": "5.2",
-    "word": "guidelines",
-    "definition": "Rules or advice that help people know what to do.",
-    "example": "The teacher gave us guidelines for our project to make sure we stay on track.",
-    "vietnamese": "Các quy tắc hoặc lời khuyên giúp mọi người biết phải làm gì."
-  },
-  {
-    "unit": "5.2",
-    "word": "rub out",
-    "definition": "To erase or remove something, usually using an eraser.",
-    "example": "If you make a mistake, you can rub it out with your eraser.",
-    "vietnamese": "Tẩy hoặc loại bỏ một cái gì đó, thường bằng cục tẩy."
-  },
-  {
-    "unit": "5.2",
-    "word": "think about",
-    "definition": "To consider or focus on something in your mind.",
-    "example": "Think about what you \nwant to write before starting your story.",
-    "vietnamese": "Cân nhắc hoặc tập trung vào một cái gì đó trong tâm trí của bạn."
-  },
-  {
-    "unit": "5.3",
-    "word": "bush",
-    "definition": "A plant with many branches that is smaller than a tree.",
-    "example": "They hid behind the bush while playing hide-and-seek.",
-    "vietnamese": "Một loại cây có nhiều cành, nhỏ hơn cây thân gỗ."
-  },
-  {
-    "unit": "5.3",
-    "word": "campsite",
-    "definition": "A place where people set up tents or park their caravans for camping.",
-    "example": "We stayed at a campsite near the lake last weekend.",
-    "vietnamese": "Nơi mọi người dựng lều hoặc đỗ xe lưu động để cắm trại."
-  },
-  {
-    "unit": "5.3",
-    "word": "hide",
-    "definition": "To go to a place where you cannot be seen;\nto conceal yourself or something.",
-    "example": "The children hide under the table when playing games.",
-    "vietnamese": "Đi đến một nơi mà bạn không thể bị nhìn thấy; để che giấu bản thân hoặc một cái gì đó."
-  },
-  {
-    "unit": "5.3",
-    "word": "stare",
-    "definition": "To look at something or someone for a long time without blinking.",
-    "example": "He couldn’t help but stare at the beautiful sunset.",
-    "vietnamese": "Nhìn chằm chằm vào một cái gì đó hoặc ai đó trong một thời gian dài mà không chớp mắt."
-  },
-  {
-    "unit": "5.3",
-    "word": "black bear",
-    "definition": "A large wild animal with black fur that lives in forests.",
-    "example": "We saw a black bear while hiking in the mountains.",
-    "vietnamese": "Một loài động vật hoang dã lớn có bộ lông đen sống trong rừng."
-  },
-  {
-    "unit": "5.3",
-    "word": "sniff",
-    "definition": "To breathe in air through your nose to smell something.",
-    "example": "The dog sniffed the ground to find the missing toy.",
-    "vietnamese": "Hít không khí bằng mũi để ngửi thứ gì đó."
-  },
-  {
-    "unit": "5.3",
-    "word": "exciting",
-    "definition": "Something that makes you feel very happy or enthusiastic.",
-    "example": "The trip to the amusement park was so exciting!",
-    "vietnamese": "Điều gì đó khiến bạn cảm thấy rất vui vẻ hoặc nhiệt tình."
-  },
-  {
-    "unit": "5.4",
-    "word": "Skyscraper",
-    "definition": "A very tall building with many floors.",
-    "example": "The skyscraper stood tall in the middle of the city.",
-    "vietnamese": "Một tòa nhà rất cao có nhiều tầng."
-  },
-  {
-    "unit": "5.4",
-    "word": "Jungle",
-    "definition": "A thick forest with lots of plants, trees, and wild animals.",
-    "example": "The explorers made their way through the jungle to find the hidden temple.",
-    "vietnamese": "Một khu rừng rậm rạp với nhiều thực vật, cây cối và động vật hoang dã."
-  },
-  {
-    "unit": "5.4",
-    "word": "Experiment",
-    "definition": "A test done to discover or prove something.",
-    "example": "We did an experiment to see how plants grow with different amounts of sunlight.",
-    "vietnamese": "Một thử nghiệm được thực hiện để khám phá hoặc chứng minh điều gì đó."
-  },
-  {
-    "unit": "5.4",
-    "word": "twin brother",
-    "definition": "A brother born on the same day as you, sharing the same mother.",
-    "example": "Jack and his twin brother always wear matching clothes.",
-    "vietnamese": "Một người anh/em trai sinh cùng ngày với bạn, cùng một mẹ."
-  },
-  {
-    "unit": "5.5",
-    "word": "wicked tribe",
-    "definition": "A group of people who are cruel or evil.",
-    "example": "The wicked tribe stole the treasure from the villagers.",
-    "vietnamese": "Một nhóm người độc ác hoặc xấu xa."
-  },
-  {
-    "unit": "5.5",
-    "word": "captured",
-    "definition": "To be caught and kept as a prisoner.",
-    "example": "The hero was captured by the enemy but managed to escape.",
-    "vietnamese": "Bị bắt và bị giữ làm tù nhân."
-  },
-  {
-    "unit": "5.5",
-    "word": "peaceful",
-    "definition": "Calm and free from disturbance or conflict.",
-    "example": "The village was a peaceful place surrounded by mountains.",
-    "vietnamese": "Yên tĩnh và không bị xáo trộn hoặc xung đột."
-  },
-  {
-    "unit": "5.5",
-    "word": "kingdom",
-    "definition": "A country or land ruled by a king or queen.",
-    "example": "The kingdom was famous for its beautiful castles.",
-    "vietnamese": "Một quốc gia hoặc vùng đất được cai trị bởi một vị vua hoặc nữ hoàng."
-  },
-  {
-    "unit": "5.5",
-    "word": "brave",
-    "definition": "Showing courage and facing danger without fear.",
-    "example": "The brave knight fought to save the princess.",
-    "vietnamese": "Thể hiện lòng dũng cảm và đối mặt với nguy hiểm mà không sợ hãi."
-  },
-  {
     "unit": "5.5",
     "word": "guardians",
     "definition": "People or beings that protect something or someone.",
@@ -1671,5 +873,341 @@
     "definition": "Very strong or having great strength or influence.",
     "example": "The king was a powerful ruler respected by all.",
     "vietnamese": "Rất mạnh mẽ hoặc có sức mạnh hoặc ảnh hưởng lớn."
+  },
+  {
+    "unit": "Unit 6.1",
+    "word": "Ferry",
+    "definition": "A boat or ship that regularly carries passengers and sometimes vehicles across a body of water.",
+    "example": "We took a ferry from England to France.",
+    "vietnamese": "Một chiếc thuyền hoặc tàu thường xuyên chở hành khách và đôi khi là phương tiện qua một vùng nước."
+  },
+  {
+    "unit": "Unit 6.1",
+    "word": "Tuk-tuk",
+    "definition": "A small, three-wheeled motorized vehicle used as a taxi in some countries.",
+    "example": "In Thailand, we traveled around the city in a tuk-tuk.",
+    "vietnamese": "Một loại xe cơ giới ba bánh nhỏ được sử dụng như taxi ở một số quốc gia."
+  },
+  {
+    "unit": "Unit 6.1",
+    "word": "Tram",
+    "definition": "A public transportation vehicle that runs on rails along streets.",
+    "example": "The tram stopped right outside the museum.",
+    "vietnamese": "Một phương tiện giao thông công cộng chạy trên đường ray dọc theo các con phố."
+  },
+  {
+    "unit": "Unit 6.1",
+    "word": "Hike",
+    "definition": "To walk for a long distance, especially in the countryside or mountains.",
+    "example": "We went for a hike in the mountains and saw beautiful views.",
+    "vietnamese": "Đi bộ một quãng đường dài, đặc biệt là ở vùng nông thôn hoặc miền núi."
+  },
+  {
+    "unit": "Unit 6.1",
+    "word": "Zipwire",
+    "definition": "A cable high above the ground that you slide down using a harness.",
+    "example": "The zipwire took us across the canyon at high speed.",
+    "vietnamese": "Một sợi cáp treo cao trên mặt đất mà bạn trượt xuống bằng dây đai an toàn."
+  },
+  {
+    "unit": "Unit 6.1",
+    "word": "Canyon",
+    "definition": "A deep valley with steep sides, often with a river flowing through it.",
+    "example": "The Grand Canyon in the USA is a very famous canyon.",
+    "vietnamese": "Một thung lũng sâu với các sườn dốc, thường có một dòng sông chảy qua."
+  },
+  {
+    "unit": "Unit 6.1",
+    "word": "Cable",
+    "definition": "A thick rope made of wires, used for support or pulling.",
+    "example": "The cable car took us up the steep mountain.",
+    "vietnamese": "Một sợi dây thừng dày làm bằng các sợi kim loại, dùng để đỡ hoặc kéo."
+  },
+  {
+    "unit": "Unit 6.1",
+    "word": "Harness",
+    "definition": "A set of straps that you fasten around your body, used for safety when climbing or doing other activities.",
+    "example": "We wore a harness when we went rock climbing.",
+    "vietnamese": "Một bộ dây đai mà bạn thắt quanh người, dùng để đảm bảo an toàn khi leo núi hoặc thực hiện các hoạt động khác."
+  },
+  {
+    "unit": "Unit 6.2",
+    "word": "Lorries",
+    "definition": "(British English) Large trucks used for transporting goods.",
+    "example": "Many lorries use the highway to deliver products to stores.",
+    "vietnamese": "(Tiếng Anh-Anh) Những chiếc xe tải lớn dùng để vận chuyển hàng hóa."
+  },
+  {
+    "unit": "Unit 6.2",
+    "word": "Helmet",
+    "definition": "A hard hat that you wear to protect your head.",
+    "example": "It's important to wear a helmet when you ride a bicycle.",
+    "vietnamese": "Một chiếc mũ cứng mà bạn đội để bảo vệ đầu."
+  },
+  {
+    "unit": "Unit 6.2",
+    "word": "Reflective armbands",
+    "definition": "Bands worn on the arms that reflect light, making you more visible in the dark.",
+    "example": "Children wear reflective armbands when walking to school in the winter.",
+    "vietnamese": "Những chiếc băng đeo tay phản quang, giúp bạn dễ được nhìn thấy hơn trong bóng tối."
+  },
+  {
+    "unit": "Unit 6.2",
+    "word": "Reverse",
+    "definition": "To go backwards.",
+    "example": "The driver had to reverse the car to park it.",
+    "vietnamese": "Đi lùi."
+  },
+  {
+    "unit": "Unit 6.2",
+    "word": "Pedestrian crossing",
+    "definition": "A place where people can walk across a road safely.",
+    "example": "Use the pedestrian crossing to cross the road.",
+    "vietnamese": "Nơi dành cho người đi bộ qua đường an toàn."
+  },
+  {
+    "unit": "Unit 6.2",
+    "word": "Seatbelt",
+    "definition": "A safety belt used in a car or other vehicle.",
+    "example": "Always wear your seatbelt when you are in a car.",
+    "vietnamese": "Dây đai an toàn được sử dụng trong ô tô hoặc các phương tiện khác."
+  },
+  {
+    "unit": "Unit 6.3",
+    "word": "Across",
+    "definition": "From one side to the other.",
+    "example": "We walked across the bridge.",
+    "vietnamese": "Từ bên này sang bên kia."
+  },
+  {
+    "unit": "Unit 6.3",
+    "word": "Towards",
+    "definition": "In the direction of.",
+    "example": "We drove towards the mountains.",
+    "vietnamese": "Về phía, theo hướng của."
+  },
+  {
+    "unit": "Unit 6.3",
+    "word": "Pier",
+    "definition": "A structure built out into the sea or a lake, used for boats to dock or for people to walk along.",
+    "example": "We walked along the pier and watched the boats.",
+    "vietnamese": "Một cấu trúc được xây dựng vươn ra biển hoặc hồ, dùng cho tàu thuyền neo đậu hoặc cho mọi người đi dạo."
+  },
+  {
+    "unit": "Unit 6.3",
+    "word": "Metro stations",
+    "definition": "Underground train stations.",
+    "example": "The metro station is just around the corner.",
+    "vietnamese": "Các ga tàu điện ngầm."
+  },
+  {
+    "unit": "Unit 6.3",
+    "word": "Main roads",
+    "definition": "Important roads that connect cities or towns.",
+    "example": "There is often a lot of traffic on the main roads during rush hour.",
+    "vietnamese": "Những con đường chính nối các thành phố hoặc thị trấn."
+  },
+  {
+    "unit": "Unit 6.3",
+    "word": "Entertainment",
+    "definition": "Things that provide amusement or enjoyment.",
+    "example": "The city has a lot of entertainment, such as cinemas and theaters.",
+    "vietnamese": "Những thứ mang lại sự giải trí hoặc thích thú."
+  },
+  {
+    "unit": "Unit 6.4",
+    "word": "Giggle",
+    "definition": "To laugh in a quiet and silly way.",
+    "example": "The children started to giggle when the clown made a funny face.",
+    "vietnamese": "Cười khúc khích (cười nhỏ và ngớ ngẩn)."
+  },
+  {
+    "unit": "Unit 6.4",
+    "word": "Sparkle",
+    "definition": "To shine brightly with small flashes of light.",
+    "example": "The stars sparkle in the night sky.",
+    "vietnamese": "Lấp lánh (tỏa sáng rực rỡ với những tia sáng nhỏ)."
+  },
+  {
+    "unit": "Unit 6.4",
+    "word": "Stare",
+    "definition": "To look at something or someone for a long time without blinking.",
+    "example": "She stared at the painting because it was so beautiful.",
+    "vietnamese": "Nhìn chằm chằm (nhìn ai đó hoặc vật gì đó trong thời gian dài mà không chớp mắt)."
+  },
+  {
+    "unit": "Unit 6.4",
+    "word": "Rise",
+    "definition": "To move upwards or go to a higher position.",
+    "example": "The sun rises in the morning.",
+    "vietnamese": "Mọc lên, dâng lên (di chuyển lên trên hoặc đến vị trí cao hơn)."
+  },
+  {
+    "unit": "Unit 6.4",
+    "word": "Huge",
+    "definition": "Very big.",
+    "example": "They live in a huge house with a big garden.",
+    "vietnamese": "Rất lớn."
+  },
+  {
+    "unit": "Unit 6.4",
+    "word": "Enormous",
+    "definition": "Very, very big (even bigger than \"huge\").",
+    "example": "The elephant is an enormous animal.",
+    "vietnamese": "Khổng lồ (rất, rất lớn, thậm chí lớn hơn cả \"huge\")."
+  },
+  {
+    "unit": "Unit 6.4",
+    "word": "Tiny",
+    "definition": "Very small.",
+    "example": "The baby bird was tiny and could fit in my hand.",
+    "vietnamese": "Rất nhỏ (tí hon)."
+  },
+  {
+    "unit": "Unit 6.4",
+    "word": "Amazing",
+    "definition": "Very surprising or wonderful.",
+    "example": "The fireworks were amazing to watch.",
+    "vietnamese": "Tuyệt vời, đáng kinh ngạc."
+  },
+  {
+    "unit": "Unit 6.4",
+    "word": "Skyscraper",
+    "definition": "A very tall building with many floors.",
+    "example": "New York City is famous for its tall skyscrapers.",
+    "vietnamese": "Tòa nhà chọc trời (một tòa nhà rất cao với nhiều tầng)."
+  },
+  {
+    "unit": "Unit 6.4",
+    "word": "Thousand",
+    "definition": "The number 1,000.",
+    "example": "There were over a thousand people at the concert.",
+    "vietnamese": "Một nghìn (số 1.000)."
+  },
+  {
+    "unit": "Unit 6.5",
+    "word": "Dropped",
+    "definition": "Let something fall.",
+    "example": "She dropped her pen on the floor.",
+    "vietnamese": "Đã làm rơi (để thứ gì đó rơi xuống)."
+  },
+  {
+    "unit": "Unit 6.5",
+    "word": "Arid",
+    "definition": "Very dry, with little or no rain.",
+    "example": "The desert is an arid place.",
+    "vietnamese": "Khô cằn (rất khô, có ít hoặc không có mưa)."
+  },
+  {
+    "unit": "Unit 6.5",
+    "word": "Sprout up",
+    "definition": "To grow quickly or suddenly.",
+    "example": "Flowers started to sprout up after the rain.",
+    "vietnamese": "Nảy mầm, mọc lên nhanh chóng hoặc đột ngột."
+  },
+  {
+    "unit": "Unit 6.5",
+    "word": "Parched",
+    "definition": "Very dry, especially because of hot weather.",
+    "example": "After walking in the sun, my throat was parched.",
+    "vietnamese": "Khô khốc (rất khô, đặc biệt là do thời tiết nóng)."
+  },
+  {
+    "unit": "Unit 6.5",
+    "word": "Shade",
+    "definition": "An area where the sun doesn’t shine because something is blocking it.",
+    "example": "We sat under the tree in the shade to stay cool.",
+    "vietnamese": "Bóng râm (vùng mà ánh nắng không chiếu tới do bị vật gì đó che khuất)."
+  },
+  {
+    "unit": "Unit 6.5",
+    "word": "Hide",
+    "definition": "To go somewhere or put something where it cannot be seen.",
+    "example": "The cat tried to hide under the bed.",
+    "vietnamese": "Trốn, giấu (đi đến nơi nào đó hoặc đặt vật gì đó ở nơi không thể nhìn thấy)."
+  },
+  {
+    "unit": "Unit 6.5",
+    "word": "Back and forth",
+    "definition": "Moving in one direction and then in the opposite direction, repeatedly.",
+    "example": "The swing moved back and forth in the wind.",
+    "vietnamese": "Qua lại (di chuyển theo một hướng rồi theo hướng ngược lại, lặp đi lặp lại)."
+  },
+  {
+    "unit": "Unit 6.5",
+    "word": "Reddish",
+    "definition": "A little bit red.",
+    "example": "Her hair was brown with a reddish tint.",
+    "vietnamese": "Hơi đỏ."
+  },
+  {
+    "unit": "Unit 6.5",
+    "word": "Bushy tail",
+    "definition": "A thick and fluffy tail, like a squirrel’s.",
+    "example": "The fox ran into the forest, its bushy tail waving behind it.",
+    "vietnamese": "Đuôi rậm (cái đuôi dày và xù, giống như đuôi sóc)."
+  },
+  {
+    "unit": "Unit 6.5",
+    "word": "Scurry off",
+    "definition": "To move quickly with small, fast steps.",
+    "example": "The mouse scurried off when it saw the cat.",
+    "vietnamese": "Chạy vụt đi (di chuyển nhanh với những bước nhỏ, nhanh)."
+  },
+  {
+    "unit": "Unit 6.5",
+    "word": "Hung her head",
+    "definition": "To lower her head, often because of sadness or shame.",
+    "example": "She hung her head when she realized she had made a mistake.",
+    "vietnamese": "Cúi đầu (hạ thấp đầu, thường là do buồn bã hoặc xấu hổ)."
+  },
+  {
+    "unit": "Unit 6.5",
+    "word": "Skipped",
+    "definition": "To move by jumping lightly from one foot to the other.",
+    "example": "The little girl skipped down the street, humming a song.",
+    "vietnamese": "Nhảy chân sáo (di chuyển bằng cách nhảy nhẹ từ chân này sang chân kia)."
+  },
+  {
+    "unit": "Unit 6.5",
+    "word": "Leapt",
+    "definition": "To jump high or far.",
+    "example": "The deer leapt over the stream.",
+    "vietnamese": "Đã nhảy vọt (nhảy cao hoặc xa)."
+  },
+  {
+    "unit": "Unit 6.5",
+    "word": "Jumped",
+    "definition": "To push yourself into the air using your legs.",
+    "example": "He jumped to catch the ball.",
+    "vietnamese": "Đã nhảy (đẩy mình lên không trung bằng chân)."
+  },
+  {
+    "unit": "Unit 6.5",
+    "word": "Hopped",
+    "definition": "To jump on one foot or with small jumps.",
+    "example": "The rabbit hopped across the garden.",
+    "vietnamese": "Đã nhảy lò cò (nhảy bằng một chân hoặc nhảy những bước nhỏ)."
+  },
+  {
+    "unit": "Unit 6.5",
+    "word": "Plodded",
+    "definition": "To walk slowly and heavily, often because you’re tired.",
+    "example": "He plodded home after a long day at work.",
+    "vietnamese": "Lê bước (đi chậm chạp và nặng nề, thường là do mệt mỏi)."
+  },
+  {
+    "unit": "Unit 6.5",
+    "word": "Run away",
+    "definition": "To leave quickly because you’re scared or don’t want to be caught.",
+    "example": "The dog ran away when it heard the loud noise.",
+    "vietnamese": "Chạy trốn (rời đi nhanh chóng vì sợ hãi hoặc không muốn bị bắt)."
+  },
+  {
+    "unit": "Unit 6.5",
+    "word": "Advice",
+    "definition": "Suggestions about what you should do in a situation.",
+    "example": "My teacher gave me good advice on how to study for the test.",
+    "vietnamese": "Lời khuyên (gợi ý về những gì bạn nên làm trong một tình huống)."
   }
 ]

@@ -1,0 +1,442 @@
+/* SwipeCards - Tinder-style Vocabulary Game */
+
+.swipe-container {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: var(--space-md);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+/* Home Button */
+.home-btn-small {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: none;
+  background: var(--color-bg-alt);
+  border-radius: var(--radius-md);
+  color: var(--color-primary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.home-btn-small:hover {
+  background: var(--color-primary);
+  color: white;
+}
+
+.home-btn-small svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Progress Bar (reuse Quiz styles) */
+.swipe-progress {
+  width: 100%;
+}
+
+.swipe-progress .progress-bar {
+  height: 8px;
+  background: var(--color-bg-alt);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  display: flex;
+}
+
+.swipe-progress .progress-segment {
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+.swipe-progress .progress-segment.correct {
+  background: linear-gradient(90deg, var(--color-success) 0%, #16A34A 100%);
+}
+
+.swipe-progress .progress-segment.wrong {
+  background: linear-gradient(90deg, var(--color-error) 0%, #DC2626 100%);
+}
+
+.swipe-progress .progress-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 6px;
+}
+
+.swipe-progress .question-counter {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-display);
+  font-weight: 700;
+}
+
+.swipe-progress .question-counter .current {
+  font-size: 2rem;
+  color: var(--color-primary);
+}
+
+.swipe-progress .question-counter .separator,
+.swipe-progress .question-counter .total {
+  font-size: 1.5rem;
+  color: var(--color-text-muted);
+}
+
+.swipe-progress .score-mini {
+  display: flex;
+  gap: 10px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.swipe-progress .correct-count { color: var(--color-success); }
+.swipe-progress .wrong-count { color: var(--color-error); }
+
+/* Swipe Instructions */
+.swipe-instructions {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 var(--space-lg);
+}
+
+.instruction {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: var(--radius-full);
+}
+
+.instruction.left {
+  background: rgba(239, 68, 68, 0.1);
+  color: var(--color-error);
+}
+
+.instruction.right {
+  background: rgba(34, 197, 94, 0.1);
+  color: var(--color-success);
+}
+
+/* Card Stack */
+.card-stack {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 280px;
+}
+
+/* Swipe Card */
+.swipe-card {
+  position: absolute;
+  width: 100%;
+  max-width: 340px;
+  background: white;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  cursor: grab;
+  user-select: none;
+  touch-action: none;
+}
+
+.swipe-card.dragging {
+  cursor: grabbing;
+}
+
+.swipe-card.next-card {
+  transform: scale(0.95);
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.swipe-card:not(.next-card) {
+  z-index: 1;
+}
+
+/* Swipe Animation */
+.swipe-card.swiped-left {
+  animation: swipeLeft 0.4s ease forwards;
+}
+
+.swipe-card.swiped-right {
+  animation: swipeRight 0.4s ease forwards;
+}
+
+@keyframes swipeLeft {
+  0% { transform: translateX(0) rotate(0deg); opacity: 1; }
+  100% { transform: translateX(-150%) rotate(-30deg); opacity: 0; }
+}
+
+@keyframes swipeRight {
+  0% { transform: translateX(0) rotate(0deg); opacity: 1; }
+  100% { transform: translateX(150%) rotate(30deg); opacity: 0; }
+}
+
+/* Swipe Direction Overlays */
+.swipe-overlay {
+  position: absolute;
+  top: 20px;
+  padding: 10px 20px;
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  z-index: 10;
+}
+
+.swipe-overlay.left {
+  left: 20px;
+  background: rgba(239, 68, 68, 0.9);
+  color: white;
+  transform: rotate(-15deg);
+}
+
+.swipe-overlay.right {
+  right: 20px;
+  background: rgba(34, 197, 94, 0.9);
+  color: white;
+  transform: rotate(15deg);
+}
+
+.swipe-overlay.active {
+  opacity: 1;
+}
+
+/* Card Content */
+.card-content {
+  padding: var(--space-xl);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.card-word {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 6vw, 2.4rem);
+  font-weight: 800;
+  color: var(--color-primary);
+  text-transform: capitalize;
+}
+
+.card-divider {
+  height: 3px;
+  width: 60px;
+  background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  border-radius: var(--radius-full);
+  margin: 0 auto;
+}
+
+.card-definition {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  color: var(--color-text);
+  line-height: 1.5;
+}
+
+.card-question {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-text-muted);
+  margin-top: var(--space-sm);
+}
+
+/* Swipe Buttons */
+.swipe-buttons {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-xl);
+  padding: var(--space-md);
+}
+
+.swipe-btn {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  transition: all 0.2s ease;
+  box-shadow: var(--shadow-md);
+}
+
+.swipe-btn svg {
+  width: 48px;
+  height: 48px;
+}
+
+.swipe-btn.wrong {
+  background: white;
+  color: var(--color-error);
+  border: 3px solid var(--color-error);
+}
+
+.swipe-btn.wrong:hover {
+  background: var(--color-error);
+  color: white;
+  transform: scale(1.1);
+}
+
+.swipe-btn.correct {
+  background: white;
+  color: var(--color-success);
+  border: 3px solid var(--color-success);
+}
+
+.swipe-btn.correct:hover {
+  background: var(--color-success);
+  color: white;
+  transform: scale(1.1);
+}
+
+.swipe-btn:active {
+  transform: scale(0.95);
+}
+
+/* Feedback Card (reuse Quiz styles) */
+.swipe-container .feedback-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  font-weight: 600;
+  animation: slideIn 0.25s ease;
+  overflow: hidden;
+}
+
+.swipe-container .feedback-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+}
+
+.swipe-container .feedback-card svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.swipe-container .feedback-card.correct {
+  background: linear-gradient(135deg, var(--color-success) 0%, #16A34A 100%);
+  color: white;
+}
+
+.swipe-container .feedback-card.incorrect {
+  background: linear-gradient(135deg, var(--color-error) 0%, #DC2626 100%);
+  color: white;
+}
+
+.swipe-container .next-icon {
+  margin-left: auto;
+  opacity: 0.7;
+  animation: bounce 1s infinite;
+  width: 18px;
+  height: 18px;
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(3px); }
+}
+
+/* Learning Context */
+.swipe-container .learning-context {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 10px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.swipe-container .learning-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+
+.swipe-container .learning-header svg {
+  width: 14px;
+  height: 14px;
+}
+
+.swipe-container .learning-definition,
+.swipe-container .learning-example,
+.swipe-container .learning-vietnamese {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.swipe-container .learning-definition {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+}
+
+.swipe-container .learning-example {
+  font-family: var(--font-body);
+  font-style: italic;
+  font-size: 0.85rem;
+  opacity: 0.95;
+}
+
+.swipe-container .learning-vietnamese {
+  font-family: 'Roboto', 'Segoe UI', 'Arial', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+/* Responsive - Mobile */
+@media (max-width: 400px) {
+  .swipe-container {
+    padding: var(--space-sm);
+    gap: var(--space-sm);
+  }
+  
+  .card-content {
+    padding: var(--space-lg);
+  }
+  
+  .card-word {
+    font-size: 1.6rem;
+  }
+  
+  .swipe-btn {
+    width: 56px;
+    height: 56px;
+  }
+  
+  .swipe-instructions {
+    padding: 0 var(--space-sm);
+  }
+}

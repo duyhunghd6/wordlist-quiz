@@ -1,0 +1,227 @@
+/* Shared Game UI Components */
+/* These styles are shared across all game components: SwipeCards, BubblePop, WordSearch */
+
+/* Home Button */
+.home-btn-small {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: none;
+  background: var(--color-bg-alt);
+  border-radius: var(--radius-md);
+  color: var(--color-primary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.home-btn-small:hover {
+  background: var(--color-primary);
+  color: white;
+}
+
+.home-btn-small svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Progress Bar - Shared Layout */
+.game-progress {
+  width: 100%;
+}
+
+.game-progress .progress-bar {
+  height: 8px;
+  background: var(--color-bg-alt);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  display: flex;
+}
+
+.game-progress .progress-segment {
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+.game-progress .progress-segment.correct {
+  background: linear-gradient(90deg, var(--color-success) 0%, #16A34A 100%);
+}
+
+.game-progress .progress-segment.wrong {
+  background: linear-gradient(90deg, var(--color-error) 0%, #DC2626 100%);
+}
+
+.game-progress .progress-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 6px;
+}
+
+.game-progress .question-counter {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-display);
+  font-weight: 700;
+}
+
+.game-progress .question-counter .current {
+  font-size: 2rem;
+  color: var(--color-primary);
+}
+
+.game-progress .question-counter .separator,
+.game-progress .question-counter .total {
+  font-size: 1.5rem;
+  color: var(--color-text-muted);
+}
+
+.game-progress .score-mini {
+  display: flex;
+  gap: 10px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.game-progress .correct-count { 
+  color: var(--color-success); 
+}
+
+.game-progress .wrong-count { 
+  color: var(--color-error); 
+}
+
+/* Timer Bar */
+.timer-bar {
+  height: 6px;
+  background: var(--color-bg-alt);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.timer-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  transition: width 0.1s linear;
+}
+
+.timer-bar.urgent .timer-fill {
+  background: linear-gradient(90deg, #F59E0B 0%, #EAB308 100%);
+}
+
+.timer-bar.critical .timer-fill {
+  background: linear-gradient(90deg, var(--color-error) 0%, #DC2626 100%);
+  animation: pulse-timer 0.5s infinite;
+}
+
+@keyframes pulse-timer {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+/* Feedback Card */
+.feedback-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  font-weight: 600;
+  animation: slideIn 0.25s ease;
+  overflow: hidden;
+}
+
+.feedback-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+}
+
+.feedback-card svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.feedback-card.correct {
+  background: linear-gradient(135deg, var(--color-success) 0%, #16A34A 100%);
+  color: white;
+}
+
+.feedback-card.incorrect {
+  background: linear-gradient(135deg, var(--color-error) 0%, #DC2626 100%);
+  color: white;
+}
+
+.next-icon {
+  margin-left: auto;
+  opacity: 0.7;
+  animation: bounce 1s infinite;
+  width: 18px;
+  height: 18px;
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(3px); }
+}
+
+/* Learning Context */
+.learning-context {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 10px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.learning-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+
+.learning-header svg {
+  width: 14px;
+  height: 14px;
+}
+
+.learning-definition,
+.learning-example,
+.learning-vietnamese {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.learning-definition {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+}
+
+.learning-example {
+  font-family: var(--font-body);
+  font-style: italic;
+  font-size: 0.85rem;
+  opacity: 0.95;
+}
+
+.learning-vietnamese {
+  font-family: 'Roboto', 'Segoe UI', 'Arial', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+}

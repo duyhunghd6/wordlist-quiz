@@ -1,0 +1,319 @@
+/* WordSearch - Grid-based Word Finding Game */
+
+.wordsearch-container {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: var(--space-md);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+/* Home Button */
+.home-btn-small {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: none;
+  background: var(--color-bg-alt);
+  border-radius: var(--radius-md);
+  color: var(--color-primary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.home-btn-small:hover {
+  background: var(--color-primary);
+  color: white;
+}
+
+.home-btn-small svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Header */
+.wordsearch-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.header-left svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Timer */
+.wordsearch-container .timer {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background: var(--color-bg);
+  border-radius: var(--radius-full);
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.wordsearch-container .timer svg {
+  width: 16px;
+  height: 16px;
+}
+
+.wordsearch-container .timer.urgent {
+  background: var(--color-warning-light);
+  color: #92400E;
+}
+
+.wordsearch-container .timer.critical {
+  background: var(--color-error-light);
+  color: #B91C1C;
+  animation: pulse 0.5s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+/* Progress */
+.wordsearch-progress {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.progress-text {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-text-muted);
+}
+
+.progress-text strong {
+  color: var(--color-success);
+  font-size: 2rem;
+}
+
+.wordsearch-progress .progress-bar {
+  height: 6px;
+  background: var(--color-bg-alt);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--color-success) 0%, #16A34A 100%);
+  border-radius: var(--radius-full);
+  transition: width 0.3s ease;
+}
+
+/* Word List */
+.word-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: var(--space-md);
+  background: white;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.word-chip {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  background: var(--color-bg);
+  border-radius: var(--radius-full);
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-text);
+  text-transform: capitalize;
+  transition: all 0.2s ease;
+}
+
+.word-chip.found {
+  background: linear-gradient(135deg, #DCFCE7 0%, #BBF7D0 100%);
+  color: var(--color-success);
+  text-decoration: line-through;
+}
+
+.word-chip svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* Grid */
+.wordsearch-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 2px;
+  background: white;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: var(--space-md);
+  user-select: none;
+  touch-action: none;
+  cursor: crosshair;
+  aspect-ratio: 1;
+  max-width: 100%;
+}
+
+.grid-row {
+  display: contents;
+}
+
+.grid-cell {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: clamp(1rem, 4vw, 1.4rem);
+  font-weight: 700;
+  color: var(--color-text);
+  border-radius: 6px;
+  background: var(--color-bg);
+  transition: all 0.1s ease;
+}
+
+.grid-cell.selected {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  color: white;
+  transform: scale(1.05);
+  z-index: 1;
+}
+
+.grid-cell.highlighted {
+  background: linear-gradient(135deg, #DCFCE7 0%, #BBF7D0 100%);
+  color: var(--color-success);
+}
+
+/* Found Word Popup */
+.found-popup {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  background: linear-gradient(135deg, var(--color-success) 0%, #16A34A 100%);
+  color: white;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  animation: popIn 0.3s ease;
+}
+
+.found-popup svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.found-popup strong {
+  font-family: var(--font-display);
+  text-transform: capitalize;
+}
+
+@keyframes popIn {
+  0% { transform: scale(0.8); opacity: 0; }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* Game Complete Overlay */
+.game-complete-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.complete-card {
+  background: white;
+  padding: var(--space-xl);
+  border-radius: var(--radius-lg);
+  text-align: center;
+  box-shadow: var(--shadow-lg);
+  animation: slideUp 0.3s ease;
+  max-width: 320px;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.complete-card h2 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  margin: var(--space-md) 0 var(--space-sm);
+}
+
+.complete-card p {
+  font-family: var(--font-body);
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+.success-icon {
+  color: var(--color-success);
+}
+
+.timeout-icon {
+  color: var(--color-error);
+}
+
+.loading-text {
+  font-size: 0.85rem;
+  margin-top: var(--space-md) !important;
+  color: var(--color-text-muted);
+}
+
+/* Responsive - Mobile */
+@media (max-width: 400px) {
+  .wordsearch-container {
+    padding: var(--space-sm);
+  }
+  
+  .grid-cell {
+    font-size: 0.9rem;
+  }
+  
+  .word-chip {
+    font-size: 0.8rem;
+    padding: 4px 10px;
+  }
+  
+  .wordsearch-grid {
+    padding: 6px;
+  }
+}
