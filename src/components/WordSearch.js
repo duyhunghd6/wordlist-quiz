@@ -10,7 +10,7 @@ import './WordSearch.css';
  * User drags to select letters. Find all words before time runs out.
  */
 
-const GAME_TIME_LIMIT = 120000; // 2 minutes total
+const GAME_TIME_LIMIT = 600000; // 10 minutes total
 const GRID_SIZE = 10;
 const DIRECTIONS = [
   { dx: 1, dy: 0 },   // right
@@ -39,7 +39,7 @@ const WordSearch = ({ words, onAnswer, onComplete, onHome, gameId = 'wordSearch'
   const filterWords = useCallback((allWords) => {
     return allWords
       .filter(w => !w.word.includes(' ') && w.word.length <= GRID_SIZE)
-      .slice(0, Math.min(6, allWords.length)); // Max 6 words per puzzle
+      .slice(0, Math.min(10, allWords.length)); // Max 10 words per puzzle
   }, []);
 
   // Generate word search grid

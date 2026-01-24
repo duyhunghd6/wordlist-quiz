@@ -4,6 +4,7 @@ import ProfileSetup from "./components/ProfileSetup";
 import StartScreen from "./components/StartScreen";
 import Quiz from "./components/Quiz";
 import TypingQuiz from "./components/TypingQuiz";
+import WordScramble from "./components/WordScramble";
 import SwipeCards from "./components/SwipeCards";
 import BubblePop from "./components/BubblePop";
 import WordSearch from "./components/WordSearch";
@@ -384,6 +385,8 @@ function App() {
       switch (selectedGame) {
         case 'typing':
           return <TypingQuiz {...gameProps} learningData={learningData} />;
+        case 'scramble':
+          return <WordScramble {...gameProps} />;
         case 'swipe':
           return <SwipeCards {...gameProps} />;
         case 'bubble':

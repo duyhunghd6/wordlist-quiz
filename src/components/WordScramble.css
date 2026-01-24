@@ -1,0 +1,174 @@
+/* WordScramble Game Styles */
+
+.scramble-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #EEF2FF 0%, #E0E7FF 50%, #C7D2FE 100%);
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.scramble-question {
+  text-align: center;
+  padding: var(--space-lg);
+}
+
+.scramble-question .definition {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin: 0 0 var(--space-sm) 0;
+  line-height: 1.4;
+}
+
+.scramble-question .hint-text {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+/* Letters Row - Single row for rearrangement */
+.letters-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-sm);
+  padding: var(--space-lg);
+  background: white;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  min-height: 100px;
+}
+
+/* Letter Tiles */
+.letter-tile {
+  width: 52px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  font-weight: 700;
+  border-radius: var(--radius-md);
+  cursor: grab;
+  user-select: none;
+  transition: all 0.2s ease;
+  background: linear-gradient(135deg, #FBBF24 0%, #F59E0B 100%);
+  color: white;
+  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.4);
+}
+
+.letter-tile:active {
+  cursor: grabbing;
+}
+
+.letter-tile:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(245, 158, 11, 0.5);
+}
+
+.letter-tile.selected {
+  background: linear-gradient(135deg, var(--color-primary) 0%, #7C3AED 100%);
+  transform: scale(1.1);
+  box-shadow: 0 8px 24px rgba(79, 70, 229, 0.5);
+  animation: pulse 0.8s ease infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1.1); }
+  50% { transform: scale(1.15); }
+}
+
+.letter-tile.drag-over {
+  background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+  transform: scale(1.1);
+}
+
+.letter-tile.dragging {
+  opacity: 0.5;
+  transform: scale(0.95);
+}
+
+.letter-tile.correct {
+  background: linear-gradient(135deg, var(--color-success) 0%, #059669 100%);
+  animation: successPulse 0.5s ease;
+}
+
+.letter-tile.incorrect {
+  background: linear-gradient(135deg, #EF4444 0%, #DC2626 100%);
+  animation: shake 0.5s ease;
+}
+
+@keyframes successPulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-8px); }
+  75% { transform: translateX(8px); }
+}
+
+/* Submit Button */
+.submit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  padding: var(--space-md) var(--space-xl);
+  margin: 0 auto;
+  background: linear-gradient(135deg, var(--color-success) 0%, #059669 100%);
+  color: white;
+  border-radius: var(--radius-lg);
+  font-family: var(--font-display);
+  font-size: 1.125rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(16, 185, 129, 0.5);
+}
+
+.submit-btn:active {
+  transform: translateY(0);
+}
+
+/* Mobile touch optimization */
+@media (max-width: 480px) {
+  .letter-tile {
+    width: 44px;
+    height: 52px;
+    font-size: 1.5rem;
+  }
+  
+  .scramble-question .definition {
+    font-size: 1.25rem;
+  }
+  
+  .letters-row {
+    gap: 8px;
+    padding: var(--space-md);
+  }
+}
+
+/* Larger screens */
+@media (min-width: 768px) {
+  .letter-tile {
+    width: 60px;
+    height: 70px;
+    font-size: 2rem;
+  }
+  
+  .letters-row {
+    gap: var(--space-md);
+  }
+}

@@ -3,7 +3,7 @@ import { XCircle, CheckCircle, RotateCcw, Home, Zap } from 'lucide-react';
 import './Results.css';
 
 const Results = ({ score, questions, userAnswers, playAgain, saveResult, playerName }) => {
-  const percentage = Math.round((score / questions.length) * 100);
+  const percentage = Math.min(100, Math.round((score / questions.length) * 100));
   const correctCount = userAnswers.filter(a => a.isCorrect).length;
   const wrongCount = userAnswers.filter(a => !a.isCorrect).length;
   

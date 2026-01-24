@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { 
   Trophy, BookOpen, Target, FileText, 
   ClipboardList, Search, Layers, Circle, 
@@ -44,6 +44,9 @@ const ParentReport = ({
   const progressPercent = stats.totalWords > 0 
     ? Math.round((stats.mastered / stats.totalWords) * 100) 
     : 0;
+
+  // State for showing all words
+  const [showAllWords, setShowAllWords] = useState(false);
 
   return (
     <div className="report-overlay" onClick={onClose}>
@@ -136,7 +139,7 @@ const ParentReport = ({
             <h2>Word Progress</h2>
             {wordDetails.length > 0 ? (
               <div className="word-cards-grid">
-                {wordDetails.slice(0, 20).map(word => (
+                {(showAllWords ? wordDetails : wordDetails.slice(0, 20)).map(word => (
                   <div key={word.word} className={`word-card status-${word.status}`}>
                     <span className="word-text">{word.word}</span>
                     <div className="word-meta">
@@ -160,7 +163,15 @@ const ParentReport = ({
               </div>
             )}
             {wordDetails.length > 20 && (
-              <p className="more-words">+ {wordDetails.length - 20} more words</p>
+              <button 
+                className="more-words-btn" 
+                onClick={() => setShowAllWords(!showAllWords)}
+              >
+                {showAllWords 
+                  ? 'Show Less' 
+                  : `Show ${wordDetails.length - 20} More Words`
+                }
+              </button>
             )}
           </section>
         </div>

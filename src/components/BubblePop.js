@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-import { Check, X, ChevronRight, BookOpen, Sparkles, Home } from 'lucide-react';
+import { Check, X, ChevronRight, BookOpen, Sparkles, RotateCcw } from 'lucide-react';
 import './GameUI.css';
 import './BubblePop.css';
 
@@ -32,6 +32,8 @@ const BubblePop = ({ words, onAnswer, onComplete, onHome, gameId = 'bubble' }) =
   const [lastAnswer, setLastAnswer] = useState(null);
   const [timeLeft, setTimeLeft] = useState(GAME_TIME_LIMIT);
   const [poppedBubble, setPoppedBubble] = useState(null);
+  const [isRetryMode, setIsRetryMode] = useState(false);
+  const [showRetryPrompt, setShowRetryPrompt] = useState(false);
   
   const timerRef = useRef(null);
 
@@ -101,6 +103,28 @@ const BubblePop = ({ words, onAnswer, onComplete, onHome, gameId = 'bubble' }) =
     resultsRef.current = results;
   }, [results]);
 
+  // Finish the game - called when truly complete
+  const finishGame = useCallback(() => {
+    const currentResults = resultsRef.current;
+    onComplete({
+      gameId,
+      totalQuestions: words.length,
+      correctAnswers: Math.round(currentResults.correct),
+      wrongAnswers: currentResults.wrong,
+      averageResponseTime: currentResults.times.length > 0 
+        ? currentResults.times.reduce((a, b) => a + b, 0) / currentResults.times.length 
+        : 0
+    });
+  }, [gameId, words.length, onComplete]);
+
+  // Start retry mode
+  const handleRetry = useCallback(() => {
+    setShowRetryPrompt(false);
+    setIsRetryMode(true);
+    setCurrentIndex(0);
+    setResults(prev => ({ ...prev, wrong: [] })); // Keep correct count but clear wrong list
+  }, []);
+
   const proceedToNext = useCallback((isCorrect, currentWord, responseTimeMs) => {
     clearInterval(timerRef.current);
     
@@ -109,23 +133,20 @@ const BubblePop = ({ words, onAnswer, onComplete, onHome, gameId = 'bubble' }) =
       setShowFeedback(false);
       
       if (currentIndex + 1 >= words.length) {
+        // Check for wrong answers - offer retry if not already in retry mode
         const currentResults = resultsRef.current;
-        const finalCorrect = currentResults.correct + (isCorrect ? 1 : 0);
-        const finalWrong = isCorrect ? currentResults.wrong : [...currentResults.wrong, currentWord];
-        const finalTimes = [...currentResults.times, responseTimeMs];
+        const wrongCount = currentResults.wrong.length + (isCorrect ? 0 : 1);
         
-        onComplete({
-          gameId,
-          totalQuestions: words.length,
-          correctAnswers: finalCorrect,
-          wrongAnswers: finalWrong,
-          averageResponseTime: finalTimes.reduce((a, b) => a + b, 0) / finalTimes.length
-        });
+        if (wrongCount > 0 && !isRetryMode) {
+          setShowRetryPrompt(true);
+        } else {
+          finishGame();
+        }
       } else {
         setCurrentIndex(prev => prev + 1);
       }
     }, delay);
-  }, [currentIndex, words.length, gameId, onComplete]);
+  }, [currentIndex, words.length, isRetryMode, finishGame]);
 
   // Handle timeout in separate effect
   useEffect(() => {
@@ -176,14 +197,16 @@ const BubblePop = ({ words, onAnswer, onComplete, onHome, gameId = 'bubble' }) =
     });
     setShowFeedback(true);
     
+    // Give partial credit (0.5) in retry mode
+    const pointsEarned = isCorrect ? (isRetryMode ? 0.5 : 1) : 0;
     setResults(prev => ({
-      correct: prev.correct + (isCorrect ? 1 : 0),
+      correct: prev.correct + pointsEarned,
       wrong: isCorrect ? prev.wrong : [...prev.wrong, currentWord],
       times: [...prev.times, responseTimeMs]
     }));
     
     proceedToNext(isCorrect, currentWord, responseTimeMs);
-  }, [currentIndex, words, onAnswer, questionStartTime, showFeedback, proceedToNext]);
+  }, [currentIndex, words, onAnswer, questionStartTime, showFeedback, isRetryMode, proceedToNext]);
 
   if (words.length === 0) {
     return <div className="bubble-container">Loading...</div>;
@@ -199,7 +222,7 @@ const BubblePop = ({ words, onAnswer, onComplete, onHome, gameId = 'bubble' }) =
       {/* Progress */}
       <div className="game-progress">
         <button className="home-btn-small" onClick={onHome} aria-label="Go home">
-          <Home size={24} />
+          <span style={{ fontSize: '20px' }}>🏠</span>
         </button>
         <div className="progress-bar">
           {words.map((_, idx) => (
@@ -301,6 +324,25 @@ const BubblePop = ({ words, onAnswer, onComplete, onHome, gameId = 'bubble' }) =
               )}
             </div>
           )}
+        </div>
+      )}
+
+      {/* Retry Prompt Modal */}
+      {showRetryPrompt && (
+        <div className="retry-prompt-overlay">
+          <div className="retry-prompt-modal">
+            <h3>🎯 Retry Wrong Answers?</h3>
+            <p>You got {results.wrong.length} word{results.wrong.length > 1 ? 's' : ''} wrong. Want to practice them again?</p>
+            <div className="retry-prompt-buttons">
+              <button className="retry-btn primary" onClick={handleRetry}>
+                <RotateCcw size={18} />
+                Try Again
+              </button>
+              <button className="retry-btn secondary" onClick={finishGame}>
+                Finish
+              </button>
+            </div>
+          </div>
         </div>
       )}
     </div>
