@@ -551,5 +551,201 @@
     "definition": "The act of collecting and recording information or measurements in tables and diagrams[cite: 5].",
     "example": "\"I observed that the liquid turned blue.\"",
     "vietnamese": "Quan sát: Hành động thu thập và ghi lại thông tin hoặc các phép đo trong các bảng và sơ đồ."
+  },
+  {
+    "unit": "4",
+    "word": "Crust",
+    "definition": "The hard outer layer of the Earth.",
+    "example": "Earthquakes happen because of sudden movements of rocks in the Earth's crust.",
+    "vietnamese": "Lớp vỏ cứng bên ngoài của Trái đất."
+  },
+  {
+    "unit": "4",
+    "word": "Mantle",
+    "definition": "The layer of the Earth between the crust and the core.",
+    "example": "The mantle is thicker than the crust.",
+    "vietnamese": "Lớp giữa vỏ và lõi của Trái đất."
+  },
+  {
+    "unit": "4",
+    "word": "Core",
+    "definition": "The very hot center of the Earth.",
+    "example": "The core is hotter than the mantle.",
+    "vietnamese": "Phần trung tâm rất nóng của Trái đất."
+  },
+  {
+    "unit": "4",
+    "word": "Inner Core",
+    "definition": "The solid metal ball at the center of the Earth.",
+    "example": "The metals iron and nickel are in a solid state.",
+    "vietnamese": "Khối cầu kim loại rắn ở trung tâm Trái đất."
+  },
+  {
+    "unit": "4",
+    "word": "Outer Core",
+    "definition": "The liquid metal layer surrounding the solid center of the Earth.",
+    "example": "The metals iron and nickel are in a liquid state.",
+    "vietnamese": "Lớp kim loại lỏng bao quanh lõi trong."
+  },
+  {
+    "unit": "4",
+    "word": "Internal Structure",
+    "definition": "The parts inside something and how they are arranged.",
+    "example": "The internal structure of the Earth consists of the crust, mantle, and core.",
+    "vietnamese": "Các bộ phận bên trong và cách sắp xếp của chúng."
+  },
+  {
+    "unit": "4",
+    "word": "External Structure",
+    "definition": "The parts on the outside of something.",
+    "example": "The external structure of the Earth includes land, oceans, and the atmosphere.",
+    "vietnamese": "Các bộ phận bên ngoài."
+  },
+  {
+    "unit": "4",
+    "word": "Magma",
+    "definition": "Hot liquid rock found below the Earth's surface.",
+    "example": "Magma is molten rock found beneath the Earth's surface.",
+    "vietnamese": "Đá nóng chảy được tìm thấy bên dưới bề mặt Trái đất."
+  },
+  {
+    "unit": "4",
+    "word": "Lava",
+    "definition": "Hot liquid rock that flows out of a volcano.",
+    "example": "Lava is magma that reaches the surface through a volcanic eruption.",
+    "vietnamese": "Đá nóng chảy chảy ra từ núi lửa."
+  },
+  {
+    "unit": "4",
+    "word": "Composite Volcano",
+    "definition": "A tall, cone-shaped mountain made of layers of ash and lava.",
+    "example": "The volcano in the diagram is a composite volcano because it has repeating layers of ash and lava.",
+    "vietnamese": "Một ngọn núi lửa cao, hình nón được tạo thành từ các lớp tro và dung nham."
+  },
+  {
+    "unit": "4",
+    "word": "Crater",
+    "definition": "The bowl-shaped opening at the top of a volcano.",
+    "example": "The volcano ejects material from the crater.",
+    "vietnamese": "Miệng hình bát ở đỉnh núi lửa."
+  },
+  {
+    "unit": "4",
+    "word": "Vent",
+    "definition": "An opening in a volcano where lava and gas escape.",
+    "example": "Name the parts of the volcano... Main Vent... Secondary Vent.",
+    "vietnamese": "Một lỗ hổng trên núi lửa nơi dung nham và khí thoát ra."
+  },
+  {
+    "unit": "4",
+    "word": "Magma Chamber",
+    "definition": "A large pool of liquid rock beneath the Earth's surface.",
+    "example": "A: Magma Chamber.",
+    "vietnamese": "Một hồ chứa lớn đá lỏng bên dưới bề mặt Trái đất."
+  },
+  {
+    "unit": "4",
+    "word": "Erupted",
+    "definition": "To explode or shoot out lava, ash, and gas.",
+    "example": "When the magma shoots out of the volcano we say that it has erupted.",
+    "vietnamese": "Phun trào hoặc bắn ra dung nham, tro và khí."
+  },
+  {
+    "unit": "4",
+    "word": "Volcanic Plateau",
+    "definition": "A flat, high area of land formed by lava.",
+    "example": "When the magma cools it hardens into rock and forms a flat surface called a volcanic plateau.",
+    "vietnamese": "Một vùng đất cao, bằng phẳng được hình thành từ dung nham."
+  },
+  {
+    "unit": "4",
+    "word": "Pacific Ring of Fire",
+    "definition": "An area around the Pacific Ocean where many volcanoes and earthquakes occur.",
+    "example": "Volcanoes and earthquakes are common around the Pacific Ocean. This area is called the Pacific Ring of Fire.",
+    "vietnamese": "Một khu vực xung quanh Thái Bình Dương nơi thường xảy ra nhiều núi lửa và động đất."
+  },
+  {
+    "unit": "4",
+    "word": "Earthquake",
+    "definition": "A sudden shaking of the ground.",
+    "example": "An earthquake is the shaking of the Earth's surface caused by sudden movements in the Earth's crust.",
+    "vietnamese": "Sự rung chuyển đột ngột của mặt đất."
+  },
+  {
+    "unit": "4",
+    "word": "Tsunami",
+    "definition": "A giant ocean wave caused by an earthquake under the sea.",
+    "example": "When an earthquake starts under the sea, it causes a giant wave called a tsunami.",
+    "vietnamese": "Một con sóng biển khổng lồ gây ra bởi động đất dưới đáy biển."
+  },
+  {
+    "unit": "4",
+    "word": "Epicentre",
+    "definition": "The point on the Earth's surface directly above where an earthquake starts.",
+    "example": "The worst damage is experienced on the surface directly above the focus point, and this is called the epicentre.",
+    "vietnamese": "Điểm trên bề mặt Trái đất nằm ngay phía trên nơi bắt đầu trận động đất."
+  },
+  {
+    "unit": "4",
+    "word": "Landslide",
+    "definition": "The downward movement of a mass of earth or rock from a mountain or cliff.",
+    "example": "Earthquakes... are strong enough to cause damage and create landslide.",
+    "vietnamese": "Sự trượt xuống của một khối đất hoặc đá từ núi hoặc vách đá."
+  },
+  {
+    "unit": "4",
+    "word": "Waves",
+    "definition": "Movements that carry energy without carrying matter.",
+    "example": "The energy transfers into waves.",
+    "vietnamese": "Những chuyển động mang năng lượng mà không mang vật chất."
+  },
+  {
+    "unit": "4",
+    "word": "Habitat",
+    "definition": "The natural home or environment of an animal, plant, or other organism.",
+    "example": "Draw lines to link each animal with a characteristic that suits its habitat.",
+    "vietnamese": "Môi trường sống tự nhiên của động vật, thực vật hoặc sinh vật khác."
+  },
+  {
+    "unit": "4",
+    "word": "Enclosure",
+    "definition": "An area that is surrounded by a barrier.",
+    "example": "A large enclosure with trees and climbing structures to mimic their natural habitat.",
+    "vietnamese": "Một khu vực được bao quanh bởi rào chắn."
+  },
+  {
+    "unit": "4",
+    "word": "Adaptations",
+    "definition": "Special features that help a living thing survive in its habitat.",
+    "example": "Match the animal adaptations with their function.",
+    "vietnamese": "Những đặc điểm đặc biệt giúp sinh vật tồn tại trong môi trường sống của nó."
+  },
+  {
+    "unit": "4",
+    "word": "Gills",
+    "definition": "Organs in fish that allow them to breathe underwater.",
+    "example": "Fish have an organ called gills... These are used to breathe underwater.",
+    "vietnamese": "Cơ quan ở cá giúp chúng thở dưới nước."
+  },
+  {
+    "unit": "4",
+    "word": "Strain",
+    "definition": "To separate solids from a liquid.",
+    "example": "A flamingo has a long, flat beak that can strain... This is to separate small plants and animals from water.",
+    "vietnamese": "Lọc chất rắn ra khỏi chất lỏng."
+  },
+  {
+    "unit": "4",
+    "word": "Webbed Feet",
+    "definition": "Feet with skin connecting the toes, used for swimming.",
+    "example": "A duck has webbed feet.",
+    "vietnamese": "Chân có màng da nối các ngón, dùng để bơi."
+  },
+  {
+    "unit": "4",
+    "word": "Trunk",
+    "definition": "The long, flexible nose of an elephant.",
+    "example": "Elephants have long trunks that help them drink water and grab food from trees.",
+    "vietnamese": "Cái mũi dài, linh hoạt của voi."
   }
 ]
