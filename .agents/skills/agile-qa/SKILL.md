@@ -48,7 +48,9 @@ When reviewing code and system quality, strictly follow this step-by-step proces
 - **Test Design & Traceability:** Use `/gsafe:test-design` and `/gsafe:trace-requirements`.
 - **NFR & Risk Profiling:** Use `/gsafe:nfr-assess` and `/gsafe:risk-profile` as needed.
 
-**Step 3: Close Task & Sync (Beads CLI)**
+**Step 3: Track Iterations, Close Task & Sync (Beads CLI)**
 
-- Close your QA task: `bd close <id> --reason "Gate decision rendered" --json`.
+- QA reviews take time and multiple passes. Log your intermediate findings, concerns, or test results into the issue description after each pass:
+  `bd update <id> --description "$(bd show <id> --json | jq -r .description)\n\n### Iteration $(date +%Y-%m-%d %H:%M)\n- [QA Notes, test run results, failures discovered]" --json`
+- Once the final gate decision is made, close your QA task: `bd close <id> --reason "Gate decision rendered" --json`.
 - Sync changes: `bd sync && git pull --rebase && git push`.

@@ -43,8 +43,11 @@ When implementing code, you must strictly follow this step-by-step process utili
 - **Run Tests:** Execute standard terminal linting and testing commands.
 - **Validate Next Story:** Use `/gsafe:validate-next-story` (if applicable) to prepare for the upcoming work.
 
-**Step 3: Land the Plane (Beads CLI)**
+**Step 3: Reflect, Track Iterations & Land the Plane (Beads CLI)**
 
-- Once validations pass, close the issue: `bd close <id> --reason "Implemented and tests pass" --json`.
+- Employ the **Reflection Pattern**: Before finalizing your code, pause and evaluate its quality. Does it meet the acceptance criteria? Are there any edge cases you missed?
+- Coding tasks often take 5-10 iterations to get right. After each implementation attempt, test run, bug fix, or reflection critique, append your notes to the task description to maintain a persistent log:
+  `bd update <id> --description "$(bd show <id> --json | jq -r .description)\n\n### Iteration $(date +%Y-%m-%d %H:%M)\n- [Summary of attempt, reflection critique, test results, or next steps]" --json`
+- Once ALL validations pass completely, close the issue: `bd close <id> --reason "Implemented and tests pass" --json`.
 - Sync everything to git: `bd sync && git pull --rebase && git push`.
 - Run `bd ready --json` again to hand off state.

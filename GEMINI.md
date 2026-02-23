@@ -61,14 +61,34 @@ For this type of project, the Agentic SE workflow utilizes four core skills/pers
 - Zero context switching required from the user
 - Go fix failing CI tests without being told how
 
-## Task Management
+## Task Management (Beads CLI Workflows)
 
-1. **Plan First**: Use the `beads` CLI to create issues with checkable items. Do not use `tasks/todo.md`.
-2. **Verify Plan**: Check in before starting implementation.
-3. **Iterative Progress**: One `beads` item can be finished through multiple iterations or self-improvement rounds. Mark items complete within the issue as you go.
-4. **Explain & Document Changes**: Update the `beads` issue description with what was tried in previous iterations and provide a high-level summary at each step.
-5. **Document Results**: Add a review section or comment to the `beads` issue.
-6. **Capture Lessons**: Update `tasks/lessons.md` after corrections.
+All four personas (Analyst, Architect, Engineer, QA) must strictly follow this `beads` CLI task management workflow. Do NOT use `tasks/todo.md`.
+
+### 1. Check & Claim (All Personas)
+
+- NEVER start work blindly. Run `bd ready --json` to find unblocked work.
+- Review task context: `bd show <id> --json`.
+- Claim atomically: `bd update <id> --claim --json`.
+
+### 2. Persona-Specific Execution
+
+- **`agile-analyst`**: Create epics/tasks (`bd create ... -t feature -p 2`), execute research templates (`/gsafe:create-doc`, `/gsafe:facilitate-brainstorming-session`, etc).
+- **`agile-architect`**: Break down epics into technical stories (`bd create ... -t story --deps parent:<epic_id>`), execute design workflows (`/gsafe:risk-profile`, etc).
+- **`agile-engineer`**: Execute implementation sequentially (`/gsafe:execute-checklist`). Track discovered bugs immediately (`bd create "Found X" -t bug --deps discovered-from:<id>`).
+- **`agile-qa`**: Review implementations (`/gsafe:qa-gate`), address feedback (`/gsafe:apply-qa-fixes`), or reject/fail items with clear reasons (`bd update <id> --fail "Reason"`).
+
+### 3. Iterative Progress & Documentation
+
+- **Explain Changes**: One `beads` item can be finished through multiple iterations. Update the issue description with what was tried in previous iterations and provide a high-level summary at each step.
+- **Document Results**: Add a review section or comment to the `beads` issue upon completion.
+- **Capture Lessons**: Update `tasks/lessons.md` after any self-correction or user correction.
+
+### 4. Close & Sync (All Personas)
+
+- Once validations pass or the document/session is complete, close the issue: `bd close <id> --reason "..." --json`.
+- Always sync state: `bd sync && git pull --rebase && git push`.
+- Run `bd ready --json` again to hand off state.
 
 ## Core Principles
 
