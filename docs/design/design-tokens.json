@@ -1,0 +1,51 @@
+{
+  "semantic": {
+    "color": {
+      "accent": "#F59E0B",
+      "accent-hover": "#D97706",
+      "danger": "#EF4444",
+      "danger-hover": "#DC2626",
+      "success": "#10B981",
+      "success-hover": "#059669",
+      "info": "#3B82F6",
+      "warning": "#FCD34D",
+      "background-default": "#F0FDF4",
+      "background-surface": "#FFFFFF",
+      "text-primary": "#1E293B",
+      "text-secondary": "#64748B",
+      "border-default": "#E2E8F0",
+      "decoration-pink": "#EC4899",
+      "decoration-purple": "#8B5CF6"
+    },
+    "typography": {
+      "font-family": "'Baloo 2', 'Nunito', sans-serif"
+    }
+  },
+  "core": {
+    "space": {
+      "xs": "6px",
+      "sm": "12px",
+      "md": "18px",
+      "lg": "24px",
+      "xl": "36px",
+      "2xl": "48px",
+      "3xl": "64px",
+      "4xl": "96px"
+    },
+    "shadow": {
+      "sm": "0 2px 4px rgba(0,0,0,0.06), 0 -2px 0 rgba(0,0,0,0.05) inset",
+      "md": "0 4px 8px rgba(0,0,0,0.08), 0 -4px 0 rgba(0,0,0,0.08) inset",
+      "lg": "0 8px 16px rgba(0,0,0,0.1), 0 -6px 0 rgba(0,0,0,0.1) inset",
+      "bouncy": "0 12px 24px rgba(245, 158, 11, 0.4), 0 -8px 0 rgba(0,0,0,0.15) inset",
+      "drag": "0 24px 48px rgba(0,0,0,0.2), 0 0 0 4px rgba(245, 158, 11, 0.5)"
+    },
+    "radius": {
+      "sm": "8px",
+      "md": "16px",
+      "lg": "24px",
+      "xl": "32px",
+      "full": "9999px"
+    }
+  }
+}
+

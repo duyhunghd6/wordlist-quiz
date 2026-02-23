@@ -1,0 +1,295 @@
+<div class="section-header">
+    <h2 class="section-title">Cards & Containers</h2>
+    <p class="section-description">Surface elevation constraints mapping exactly to token tiers.</p>
+</div>
+
+<div class="component-showcase">
+    <div class="component-block">
+        <h3>1. Cards</h3>
+        <p class="text-sm">Playful, bouncy layers with large radii.</p>
+        
+        <div class="flex-row">
+            <div class="card shadow-sm">
+                <h4>Base Card (shadow-sm)</h4>
+                <p>Standard data display surface.</p>
+            </div>
+            
+            <div class="card shadow-md">
+                <h4>Elevated Card (shadow-bouncy)</h4>
+                <p>Fixed panels or focused content.</p>
+            </div>
+            
+            <div class="card shadow-drag draggable">
+                <div class="drag-handle">⋮⋮</div>
+                <div>
+                    <h4>Active Drag (shadow-drag)</h4>
+                    <p>Active item being moved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="component-block">
+        <h3>2. Swipe Card (Tinder-style)</h3>
+        <p class="text-sm">Stackable card with left/right contextual hint zones.</p>
+        <div class="flex-row">
+            <div class="swipe-card-container">
+                <div class="swipe-card">
+                    <div class="swipe-hint left">Nope</div>
+                    <div class="swipe-hint right">Got It!</div>
+                    <div class="card-content">
+                        <h2>Vocabulary</h2>
+                        <p>Meaning of the word goes here.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="component-block">
+        <h3>3. Game Selector Card</h3>
+        <p class="text-sm">Entry point for games with status badges.</p>
+        <div class="flex-row">
+            <div class="game-selector-card">
+                <div class="game-icon-bg bg-purple">
+                    <i class="ph-fill ph-cards"></i>
+                </div>
+                <div class="game-info">
+                    <h4>Swipe Cards</h4>
+                    <p>Master new words quickly</p>
+                </div>
+                <div class="game-meta">
+                    <span class="badge badge-success">Top Score: 1200</span>
+                    <i class="ph-bold ph-caret-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="component-block">
+        <h3>4. Score Summary Card</h3>
+        <p class="text-sm">End of session summary with stat blocks.</p>
+        <div class="flex-row">
+            <div class="score-summary-card">
+                <div class="summary-header">
+                    <h3>Great Job!</h3>
+                    <div class="big-score">85%</div>
+                </div>
+                <div class="summary-stats">
+                    <div class="stat-box">
+                        <i class="ph-fill ph-check-circle" style="color:var(--color-success)"></i>
+                        <span class="stat-num">17</span>
+                        <span class="stat-label">Correct</span>
+                    </div>
+                    <div class="stat-box">
+                        <i class="ph-fill ph-x-circle" style="color:var(--color-danger)"></i>
+                        <span class="stat-num">3</span>
+                        <span class="stat-label">Review</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="component-block">
+        <h3>5. Accordion Item</h3>
+        <p class="text-sm">Collapsible row for FAQs or hints, saving vertical space.</p>
+        <div class="flex-row">
+            <div class="accordion-container" style="width: 100%; max-width: 400px;">
+                <!-- Open Item -->
+                <div class="accordion-item open">
+                    <button class="accordion-header cursor-pointer" tabindex="0">
+                        <span>How do I get more coins?</span>
+                        <i class="ph-bold ph-caret-up"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Complete daily streaks and finish quizzes with 100% accuracy to earn bonus coins!</p>
+                    </div>
+                </div>
+                <!-- Closed Item -->
+                <div class="accordion-item">
+                    <button class="accordion-header cursor-pointer" tabindex="0">
+                        <span>Can I change my avatar?</span>
+                        <i class="ph-bold ph-caret-down"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    <div class="component-block">
+        <h3>6. Character Select Card</h3>
+        <p class="text-sm">Portrait + Key Stats + Select button.</p>
+        <div class="flex-row">
+            <div class="character-card cursor-pointer">
+                <div class="char-portrait bg-info">
+                    <i class="ph-fill ph-cat"></i>
+                </div>
+                <div class="char-details">
+                    <h4>Speedy Cat</h4>
+                    <p>Bonus points on timers</p>
+                </div>
+                <button class="btn btn-primary char-select-btn">Select</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="component-block">
+        <h3>7. Quest / Mission Card</h3>
+        <p class="text-sm">Title + Objective + Reward.</p>
+        <div class="flex-row">
+            <div class="quest-card">
+                <div class="quest-icon bg-warning">
+                    <i class="ph-fill ph-star"></i>
+                </div>
+                <div class="quest-content">
+                    <h4>Daily Challenge</h4>
+                    <p>Play 3 Word Searches</p>
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 33%; background-color: var(--color-success);"></div>
+                    </div>
+                </div>
+                <div class="quest-reward">
+                    <i class="ph-fill ph-coin"></i>
+                    <span>50</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="component-block">
+        <h3>8. Daily Login Reward Card</h3>
+        <p class="text-sm">Day X + Item + Claimed state.</p>
+        <div class="flex-row horizontal-stack">
+            <div class="login-card claimed">
+                <div class="lc-day">Day 1</div>
+                <div class="lc-item"><i class="ph-fill ph-coin"></i></div>
+                <i class="ph-bold ph-check-circle lc-status"></i>
+            </div>
+            <div class="login-card active cursor-pointer">
+                <div class="lc-day">Day 2</div>
+                <div class="lc-item"><i class="ph-fill ph-gift"></i></div>
+                <div class="lc-status">Claim</div>
+            </div>
+            <div class="login-card locked">
+                <div class="lc-day">Day 3</div>
+                <div class="lc-item"><i class="ph-fill ph-lock"></i></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="component-block">
+        <h3>9. Stats Overview Tile</h3>
+        <p class="text-sm">Mini-graph placeholder + big number.</p>
+        <div class="flex-row">
+            <div class="stat-tile">
+                <div class="stat-header">
+                    <span class="stat-title">Words Learned</span>
+                    <i class="ph-bold ph-trend-up stat-trend"></i>
+                </div>
+                <div class="stat-value">342</div>
+                <div class="stat-graph-placeholder"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="component-block">
+        <h3>10. Tech Tree / Upgrade Card</h3>
+        <p class="text-sm">Level + Cost + "Upgrade" branch.</p>
+        <div class="flex-row">
+            <div class="upgrade-card">
+                <div class="upgrade-icon bg-success">
+                    <i class="ph-fill ph-lightning"></i>
+                </div>
+                <div class="upgrade-info">
+                    <h4>Extra Energy</h4>
+                    <span class="u-level">Lvl 2 &rarr; 3</span>
+                </div>
+                <button class="upgrade-btn cursor-pointer">
+                    <i class="ph-fill ph-coin"></i> 200
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="component-block">
+        <h3>11. Social / Friend List Card</h3>
+        <p class="text-sm">Avatar + Name + Status circle.</p>
+        <div class="flex-row vertical-stack">
+            <div class="friend-card cursor-pointer">
+                <div class="avatar avatar-md bg-warning" style="position:relative;">
+                    <i class="ph-fill ph-dog" style="color:white; font-size:24px;"></i>
+                    <div class="status-dot online"></div>
+                </div>
+                <div class="friend-info">
+                    <h4>Alex P.</h4>
+                    <p>Playing Quiz...</p>
+                </div>
+                <button class="btn btn-secondary btn-sm">Invite</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="component-block">
+        <h3>12. Notification Event Card</h3>
+        <p class="text-sm">Icon + Message + Time elapsed.</p>
+        <div class="flex-row vertical-stack">
+            <div class="notification-card unread cursor-pointer">
+                <div class="notif-icon bg-info">
+                    <i class="ph-fill ph-envelope-simple"></i>
+                </div>
+                <div class="notif-content">
+                    <p><strong>Emma</strong> sent you a life!</p>
+                    <span class="notif-time">2m ago</span>
+                </div>
+                <div class="notif-dot"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="component-block">
+        <h3>13. Store Bundle Product Card</h3>
+        <p class="text-sm">Hot item banner + multiple items + Price.</p>
+        <div class="flex-row">
+            <div class="bundle-card">
+                <div class="bundle-banner bg-danger">HOT DEAL</div>
+                <div class="bundle-items">
+                    <div class="b-item"><i class="ph-fill ph-coin"></i> x500</div>
+                    <div class="b-item"><i class="ph-fill ph-heart"></i> x5</div>
+                </div>
+                <div class="bundle-title">Starter Kit</div>
+                <button class="btn btn-primary w-100">$1.99</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="component-block">
+        <h3>14. Event/Tournament Banner Card</h3>
+        <p class="text-sm">Date + Join Event.</p>
+        <div class="flex-row">
+            <div class="event-banner-card bg-purple cursor-pointer">
+                <div class="event-content">
+                    <span class="event-date">Oct 24 - Oct 31</span>
+                    <h3>Halloween Spelling Bee!</h3>
+                    <p>Win exclusive spooky avatars.</p>
+                    <button class="btn btn-secondary mt-sm">Join Now</button>
+                </div>
+                <div class="event-graphic"><i class="ph-fill ph-ghost"></i></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="component-block">
+        <h3>15. Flippable Flashcard Container</h3>
+        <p class="text-sm">Front/Back concept for learning.</p>
+        <div class="flex-row" style="perspective: 1000px;">
+            <div class="flashcard-container cursor-pointer" tabindex="0">
+                <div class="flashcard-inner">
+                    <div class="flashcard-front">
+                        <h3>G _ A _ T R E</h3>
+                    </div>
+                    <div class="flashcard-back">
+                        <h3>GRANITE</h3>
+                        <p>A very hard, granular, crystalline, igneous rock.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,163 @@
+<div class="section-header">
+    <h2 class="section-title">Game Shells</h2>
+    <p class="section-description">High-level boundary containers for active gameplay.</p>
+</div>
+
+<div class="layout-grid">
+    <!-- Kids Game Layouts -->
+    <div class="layout-card">
+        <div class="layout-preview landscape-preview game-overlay">
+            <div class="g-top-hud">
+                <div class="g-pill"></div>
+                <div class="g-pill"></div>
+            </div>
+            <div class="g-center-action"></div>
+            <div class="g-bottom-controls">
+                <div class="g-btn"></div>
+                <div class="g-btn"></div>
+            </div>
+        </div>
+        <h4>Game: Fullscreen Overlay (Landscape)</h4>
+        <p>Standard play state. Clear center focus with chunky HUD elements pinned to the safe areas.</p>
+    </div>
+
+    <!-- Additional Game Shells -->
+    <div class="layout-card">
+        <div class="layout-preview mobile-preview swipe-cards">
+            <div class="m-safe-top"></div>
+            <div class="sc-progress"></div>
+            <div class="sc-card"></div>
+        </div>
+        <h4>Game: Swipe Cards</h4>
+        <p>Large card centered on screen with top progression bar.</p>
+    </div>
+
+    <div class="layout-card">
+        <div class="layout-preview mobile-preview bubble-pop">
+            <div class="m-safe-top"></div>
+            <div class="bp-target"></div>
+            <div class="bp-bubbles">
+                <div class="b-bubble" style="bottom: 10px; left: 10px;"></div>
+                <div class="b-bubble" style="bottom: 40px; right: 20px;"></div>
+                <div class="b-bubble" style="bottom: 60px; left: 30px;"></div>
+            </div>
+        </div>
+        <h4>Game: Bubble Pop</h4>
+        <p>Fixed target header with bubbles floating up from the bottom.</p>
+    </div>
+
+    <div class="layout-card">
+        <div class="layout-preview mobile-preview typing-quiz">
+            <div class="m-safe-top"></div>
+            <div class="tq-target"></div>
+            <div class="tq-input-row">
+                <div class="tq-cell"></div><div class="tq-cell"></div><div class="tq-cell"></div>
+            </div>
+            <div class="tq-keyboard"></div>
+        </div>
+        <h4>Game: Typing Quiz</h4>
+        <p>Dictionary definition on top, specific input cell row, and custom keyboard area below.</p>
+    </div>
+
+    <div class="layout-card">
+        <div class="layout-preview mobile-preview standard-quiz">
+            <div class="m-safe-top"></div>
+            <div class="sq-question"></div>
+            <div class="sq-grid">
+                <div class="sq-opt"></div><div class="sq-opt"></div>
+                <div class="sq-opt"></div><div class="sq-opt"></div>
+            </div>
+        </div>
+        <h4>Game: Standard Quiz</h4>
+        <p>Large media/text area and a 2x2 grid of options below.</p>
+    </div>
+
+    <div class="layout-card">
+        <div class="layout-preview mobile-preview session-end">
+            <div class="m-safe-top"></div>
+            <div class="se-header"></div>
+            <div class="se-list">
+                <div class="se-item"></div><div class="se-item"></div>
+            </div>
+            <div class="m-safe-bottom" style="background:none;">
+               <div class="se-btn"></div>
+            </div>
+        </div>
+        <h4>Screen: Session End Summary</h4>
+        <p>Top score banner with scrollable 'Words to Review' list and sticky continue action.</p>
+    </div>
+
+    <div class="layout-card">
+        <div class="layout-preview mobile-preview settings-modal">
+            <div class="sm-overlay">
+                <div class="sm-dialog">
+                    <div class="sm-header"></div>
+                    <div class="sm-row"></div>
+                    <div class="sm-row"></div>
+                    <div class="sm-btn"></div>
+                </div>
+            </div>
+        </div>
+        <h4>Screen: Settings Modal</h4>
+        <p>Centered floating dialog over a dimmed background.</p>
+    <div class="layout-card">
+        <div class="layout-preview mobile-preview pause-menu">
+            <div class="pm-overlay">
+                <div class="pm-title"></div>
+                <div class="pm-buttons">
+                    <div class="pm-btn primary"></div>
+                    <div class="pm-btn"></div>
+                    <div class="pm-btn empty"></div>
+                </div>
+            </div>
+        </div>
+        <h4>Screen: Pause Menu Overlay</h4>
+        <p>Full screen translucent blur with a vertical stack of primary actions.</p>
+    </div>
+
+    <div class="layout-card">
+        <div class="layout-preview mobile-preview daily-rewards">
+            <div class="m-safe-top"></div>
+            <div class="dr-header"></div>
+            <div class="dr-box"></div>
+            <div class="dr-days">
+                <div class="dr-day"></div><div class="dr-day current"></div><div class="dr-day"></div>
+            </div>
+            <div class="dr-btn"></div>
+        </div>
+        <h4>Screen: Daily Rewards Modal</h4>
+        <p>Central reveal graphic (chest) over a contextual progress timeline.</p>
+    </div>
+
+    <div class="layout-card">
+        <div class="layout-preview mobile-preview level-complete">
+            <div class="m-safe-top"></div>
+            <div class="lc-stars">
+                <div class="lc-star filled"></div><div class="lc-star filled"></div><div class="lc-star empty"></div>
+            </div>
+            <div class="lc-banner"></div>
+            <div class="lc-stats">
+                <div class="lc-row"></div><div class="lc-row"></div>
+            </div>
+            <div class="m-safe-bottom" style="background:none;">
+                <div class="lc-btn"></div>
+            </div>
+        </div>
+        <h4>Screen: Level Complete (3-Star)</h4>
+        <p>Classic arcade completion flow emphasizing large star achievements.</p>
+    </div>
+
+    <div class="layout-card">
+        <div class="layout-preview mobile-preview empty-state">
+            <div class="es-container">
+                <div class="es-image"></div>
+                <div class="es-title"></div>
+                <div class="es-text"></div>
+                <div class="es-btn"></div>
+            </div>
+        </div>
+        <h4>Screen: Empty State Hub</h4>
+        <p>Friendly fallback ensuring empty list views provide a clear Call to Action.</p>
+    </div>
+
+</div>

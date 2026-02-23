@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AgenticSE Design System Hub</title>
+    <link rel="stylesheet" href="css/hub.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/layouts.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  </head>
+  <body>
+    <div class="hub-layout">
+      <nav class="hub-sidebar" id="sidebar">
+        <div class="hub-logo">
+          <h2>Design System</h2>
+          <span class="badge">v3.0.0 (Split)</span>
+        </div>
+        <ul class="nav-links">
+          <!-- Foundation -->
+          <li class="nav-category">Foundation</li>
+          <li><button class="nav-btn active" data-target="sections/tokens.html"><i class="ph ph-palette"></i> Token Library</button></li>
+          <li><button class="nav-btn" data-target="sections/icons.html"><i class="ph ph-smiley"></i> Iconography</button></li>
+          <li><button class="nav-btn" data-target="sections/animations.html"><i class="ph ph-magic-wand"></i> SVG Animations</button></li>
+          
+          <!-- Components -->
+          <li class="nav-category">Components</li>
+          <li><button class="nav-btn" data-target="sections/components/forms.html"><i class="ph ph-textbox"></i> Forms & Inputs</button></li>
+          <li><button class="nav-btn" data-target="sections/components/cards.html"><i class="ph ph-cards"></i> Cards & Containers</button></li>
+          <li><button class="nav-btn" data-target="sections/components/feedback.html"><i class="ph ph-chat-centered"></i> Feedback & Avatars</button></li>
+          <li><button class="nav-btn" data-target="sections/components/game-ui.html"><i class="ph ph-game-controller"></i> Game UI Elements</button></li>
+          
+          <!-- Layouts -->
+          <li class="nav-category">Layouts</li>
+          <li><button class="nav-btn" data-target="sections/layouts/core.html"><i class="ph ph-layout"></i> Core App Shells</button></li>
+          <li><button class="nav-btn" data-target="sections/layouts/game-shells.html"><i class="ph ph-device-mobile-camera"></i> Game Overlays</button></li>
+          <li><button class="nav-btn" data-target="sections/layouts/game-boards.html"><i class="ph ph-grid-four"></i> Game Boards</button></li>
+          
+          <!-- Systems -->
+          <li class="nav-category">Systems</li>
+          <li><button class="nav-btn" data-target="sections/state-matrix.html"><i class="ph ph-table"></i> State Matrix</button></li>
+        </ul>
+      </nav>
+
+      <main class="hub-content" id="main-content">
+        <div class="loader" id="content-loader">Loading...</div>
+        <div id="content-container">
+          <!-- Dynamic content injected here -->
+        </div>
+      </main>
+    </div>
+
+    <script src="js/hub.js"></script>
+  </body>
+</html>

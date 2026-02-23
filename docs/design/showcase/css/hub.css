@@ -1,0 +1,172 @@
+/* Dynamic tokens parsed from design-tokens.json injected here via JS */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-background-default, #f8fafc);
+  color: var(--color-text-primary, #0f172a);
+  font-family: var(--font-family, "Inter", sans-serif);
+}
+
+.hub-layout {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hub-sidebar {
+  width: 280px;
+  background-color: var(--color-background-surface, #ffffff);
+  border-right: 1px solid var(--color-border-default, #e2e8f0);
+  display: flex;
+  flex-direction: column;
+}
+
+.hub-logo {
+  padding: var(--space-xl, 24px);
+  border-bottom: 1px solid var(--color-border-default, #e2e8f0);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hub-logo h2 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.badge {
+  background: #e0e7ff;
+  color: #3730a3;
+  padding: 2px 8px;
+  border-radius: var(--radius-full, 9999px);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.nav-links {
+  list-style: none;
+  padding: var(--space-md, 12px);
+  margin: 0;
+}
+
+.nav-btn {
+  width: 100%;
+  text-align: left;
+  padding: var(--space-sm, 8px) var(--space-md, 12px);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-text-secondary, #475569);
+  border-radius: var(--radius-md, 8px);
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.nav-category {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+  letter-spacing: 0.05em;
+  padding: var(--space-md) var(--space-md) var(--space-xs);
+  margin-top: var(--space-sm);
+}
+.nav-category:first-child { margin-top: 0; }
+
+.nav-btn:hover {
+  background-color: #f1f5f9;
+  color: var(--color-text-primary, #0f172a);
+}
+
+.nav-btn.active {
+  background-color: var(--color-accent, #2563eb);
+  color: white;
+}
+
+.hub-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--space-2xl, 32px) var(--space-3xl, 48px);
+  position: relative;
+}
+
+.loader {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--color-text-secondary);
+}
+
+/* Sections Base Styling */
+.section-header {
+  margin-bottom: var(--space-xl, 24px);
+  padding-bottom: var(--space-md, 12px);
+  border-bottom: 1px solid var(--color-border-default);
+}
+
+.section-title {
+  margin: 0 0 inset-sm;
+  font-size: 1.875rem;
+}
+
+.section-description {
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+/* Animations for Kids App */
+@keyframes bounce-elastic {
+  0% { transform: translateY(0) scale(1, 1); }
+  10% { transform: translateY(0) scale(1.1, 0.9); }
+  30% { transform: translateY(-30px) scale(0.95, 1.05); }
+  50% { transform: translateY(0) scale(1.05, 0.95); }
+  60% { transform: translateY(-10px) scale(0.98, 1.02); }
+  70% { transform: translateY(0) scale(1, 1); }
+  100% { transform: translateY(0) scale(1, 1); }
+}
+
+@keyframes pulse-heartbeat {
+  0% { transform: scale(1); }
+  15% { transform: scale(1.2); }
+  30% { transform: scale(1); }
+  45% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+@keyframes spin-coin {
+  0% { transform: rotateY(0deg); }
+  100% { transform: rotateY(360deg); }
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-10deg); }
+  50% { transform: rotate(10deg); }
+  75% { transform: rotate(-5deg); }
+}
+
+@keyframes float-hover {
+    0% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-12px) rotate(2deg); }
+    100% { transform: translateY(0px) rotate(0deg); }
+}
+
+@keyframes error-shake {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-6px); }
+    20%, 40%, 60%, 80% { transform: translateX(6px); }
+}
+
+@keyframes success-pop {
+    0% { transform: scale(0); opacity: 0; }
+    60% { transform: scale(1.2); opacity: 1; }
+    80% { transform: scale(0.9); opacity: 1; }
+    100% { transform: scale(1); opacity: 1; }
+}

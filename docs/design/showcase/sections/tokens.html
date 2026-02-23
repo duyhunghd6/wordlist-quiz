@@ -1,0 +1,88 @@
+<div class="section-header">
+    <h2 class="section-title">Token Library</h2>
+    <p class="section-description">Interactive rendering of the active <code style="background:#E2E8F0; padding:2px 4px; border-radius:4px;">design-tokens.json</code> configuration.</p>
+</div>
+
+<div class="token-section">
+    <h3>Semantic Colors</h3>
+    <div id="color-swatches" class="swatch-grid"></div>
+</div>
+
+<div class="token-section" style="margin-top: var(--space-2xl);">
+    <h3>Typography</h3>
+    <div class="typography-card" style="font-family: var(--font-family);">
+        <p style="font-size: 2rem; font-weight: 800; margin: 0 0 8px;">Aa Bb Cc (Kids Font)</p>
+        <p style="font-size: 1rem; color: var(--color-text-secondary); margin: 0;">The quick brown fox jumps over the lazy dog.</p>
+    </div>
+</div>
+
+<div class="token-section" style="margin-top: var(--space-2xl);">
+    <h3>Core Spacing</h3>
+    <div id="space-swatches" class="space-list"></div>
+</div>
+
+<style>
+/* Scoped styles that only load when this section is active */
+.swatch-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: var(--space-lg);
+}
+
+.swatch-card {
+    border: 1px solid var(--color-border-default);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    background: var(--color-background-surface);
+    box-shadow: var(--shadow-sm);
+}
+
+.swatch-color {
+    height: 100px;
+}
+
+.swatch-details {
+    padding: var(--space-md);
+}
+
+.swatch-name {
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: var(--color-text-primary);
+}
+
+.swatch-val {
+    font-size: 0.75rem;
+    color: var(--color-text-secondary);
+    font-family: monospace;
+}
+
+.space-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    max-width: 600px;
+}
+
+.space-row {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    border-bottom: 1px dashed var(--color-border-default);
+    padding: var(--space-xs) 0;
+}
+
+.space-label {
+    font-weight: 500;
+    font-size: 0.875rem;
+}
+
+.space-val {
+    color: var(--color-text-secondary);
+}
+
+.space-bar {
+    height: 16px;
+    border-radius: var(--radius-sm);
+}
+</style>

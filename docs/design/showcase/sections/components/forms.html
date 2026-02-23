@@ -1,0 +1,276 @@
+<div class="section-header">
+    <h2 class="section-title">Forms & Inputs</h2>
+    <p class="section-description">Interactive elements like buttons, toggles, and text inputs.</p>
+</div>
+
+<div class="component-showcase">
+    <div class="component-block">
+        <h3>1. Buttons</h3>
+        <p class="text-sm">Must support Default, Hover, Active, and Disabled states.</p>
+        
+        <div class="flex-row">
+            <button class="btn btn-primary">Primary Action</button>
+            <button class="btn btn-secondary">Secondary Action</button>
+            <button class="btn btn-danger">Danger Action</button>
+            <button class="btn btn-primary" disabled>Disabled</button>
+        </div>
+    </div>
+
+    <div class="component-block">
+        <h3>2. Inputs & Toggles</h3>
+        <p class="text-sm">Thick, friendly form elements suitable for smaller fingers.</p>
+        
+        <div class="flex-row">
+            <input type="text" class="input-text" placeholder="Enter your name...">
+            
+            <label class="toggle">
+                <input type="checkbox" checked>
+                <span class="slider"></span>
+                <span class="toggle-text">Sound On</span>
+            </label>
+            
+            <label class="toggle">
+                <input type="checkbox">
+                <span class="slider"></span>
+                <span class="toggle-text">Music</span>
+            </label>
+        </div>
+    </div>
+    
+    <div class="component-block">
+        <h3>3. Typing Quiz Input Cells</h3>
+        <p class="text-sm">Individual letter cells for typing challenges with active pulsing focus.</p>
+        <div class="flex-row">
+            <div class="typing-cell filled">C</div>
+            <div class="typing-cell filled">A</div>
+            <div class="typing-cell active"></div>
+            <div class="typing-cell empty"></div>
+        </div>
+    </div>
+
+    <div class="component-block">
+        <h3>4. Quiz Option Buttons</h3>
+        <p class="text-sm">Standard multiple choice buttons with stateful coloring.</p>
+        <div class="flex-row vertical-stack">
+            <button class="quiz-option default">
+                <span class="option-letter">A</span>
+                <span class="option-text">Apple</span>
+            </button>
+            <button class="quiz-option selected">
+                <span class="option-letter">B</span>
+                <span class="option-text">Banana</span>
+            </button>
+            <button class="quiz-option correct">
+                <span class="option-letter">C</span>
+                <span class="option-text">Cherry</span>
+                <i class="ph-bold ph-check-circle outcome-icon"></i>
+            </button>
+            <button class="quiz-option wrong">
+                <span class="option-letter">D</span>
+                <span class="option-text">Dog</span>
+                <i class="ph-bold ph-x-circle outcome-icon"></i>
+            </button>
+        </div>
+    <div class="component-block">
+        <h3>5. Toggle Switch (4-State Matrix)</h3>
+        <p class="text-sm">Accessible switch with 44x44px hit area and focus states.</p>
+        <div class="flex-row horizontal-stack">
+            <div class="toggle-switch-wrapper cursor-pointer" tabindex="0">
+                <div class="toggle-switch default"></div>
+                <span>Default</span>
+            </div>
+            <div class="toggle-switch-wrapper cursor-pointer" tabindex="0">
+                <div class="toggle-switch active">
+                    <div class="toggle-thumb"></div>
+                </div>
+                <span>Active</span>
+            </div>
+            <div class="toggle-switch-wrapper disabled">
+                <div class="toggle-switch default"></div>
+                <span>Disabled</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="component-block">
+        <h3>6. Playful Slider (Volume/Value)</h3>
+        <p class="text-sm">Chunky slider track with oversized thumb handle.</p>
+        <div class="flex-row">
+            <div class="kids-slider-container">
+                <i class="ph-bold ph-speaker-low" style="color:var(--color-text-secondary)"></i>
+                <div class="kids-slider-track">
+                    <div class="kids-slider-fill" style="width: 60%"></div>
+                    <div class="kids-slider-thumb cursor-pointer" style="left: 60%" tabindex="0"></div>
+                </div>
+                <i class="ph-bold ph-speaker-high" style="color:var(--color-text-primary)"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="component-block">
+        <h3>7. Oversized Checkbox/Radio</h3>
+        <p class="text-sm">High-contrast, large target area for confident selection.</p>
+        <div class="flex-row horizontal-stack">
+            <!-- Checkbox Default -->
+            <label class="kids-checkbox cursor-pointer">
+                <div class="k-box default"></div>
+                <span>Option A</span>
+            </label>
+            <!-- Checkbox Selected -->
+            <label class="kids-checkbox cursor-pointer">
+                <div class="k-box selected">
+                    <i class="ph-bold ph-check"></i>
+                </div>
+                <span>Option B</span>
+            </label>
+            <!-- Checkbox Disabled -->
+             <label class="kids-checkbox disabled">
+                <div class="k-box default"></div>
+                <span>Option C</span>
+            </label>
+        </div>
+    </div>
+
+    <div class="component-block">
+        <h3>8. Segmented Control / Tab Pill</h3>
+        <p class="text-sm">Sliding selection interface with distinct inactive states.</p>
+        <div class="flex-row">
+            <div class="segmented-control">
+                <button class="seg-btn cursor-pointer active" tabindex="0">Words</button>
+                <button class="seg-btn cursor-pointer" tabindex="0">Phrases</button>
+                <button class="seg-btn cursor-pointer" tabindex="0">Sentences</button>
+            </div>
+        </div>
+    <div class="component-block">
+        <h3>9. Number Input Stepper</h3>
+        <p class="text-sm">Quantity controls with large +/- hit areas.</p>
+        <div class="flex-row">
+            <div class="stepper-wrapper">
+                <button class="stepper-btn minus cursor-pointer"><i class="ph-bold ph-minus"></i></button>
+                <input type="number" class="stepper-input" value="3" readonly>
+                <button class="stepper-btn plus cursor-pointer"><i class="ph-bold ph-plus"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="component-block">
+        <h3>10. Double-Handle Range Slider</h3>
+        <p class="text-sm">Min/Max selection for filters (e.g., Level 2-5).</p>
+        <div class="flex-row" style="padding-top: 30px; width: 350px;">
+            <div class="range-slider-container">
+                <div class="range-track"></div>
+                <div class="range-fill" style="left: 20%; right: 30%;"></div>
+                <div class="range-thumb cursor-pointer" style="left: 20%;" tabindex="0"></div>
+                <div class="range-thumb cursor-pointer" style="left: 70%;" tabindex="0"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="component-block">
+        <h3>11. Custom Radio Group</h3>
+        <p class="text-sm">Stacked visual cards acting as mutually exclusive choices.</p>
+        <div class="flex-row vertical-stack">
+            <label class="radio-card selected cursor-pointer">
+                <input type="radio" name="difficulty" checked>
+                <div class="rc-content">
+                    <strong>Easy</strong>
+                    <span>No timer, hints allowed.</span>
+                </div>
+                <i class="ph-fill ph-check-circle"></i>
+            </label>
+            <label class="radio-card cursor-pointer">
+                <input type="radio" name="difficulty">
+                <div class="rc-content">
+                    <strong>Hard</strong>
+                    <span>Strict timer, no hints.</span>
+                </div>
+                <div class="rc-circle"></div>
+            </label>
+        </div>
+    </div>
+
+    <div class="component-block">
+        <h3>12. Dropdown Select Menu</h3>
+        <p class="text-sm">Custom styled dropdown trigger and expandable list.</p>
+        <div class="flex-row" style="position: relative; z-index: 10;">
+            <div class="dropdown-wrapper">
+                <button class="dropdown-trigger cursor-pointer">
+                    <span>Select Topic...</span>
+                    <i class="ph-bold ph-caret-down"></i>
+                </button>
+                <div class="dropdown-list open">
+                    <div class="dropdown-item cursor-pointer">Animals</div>
+                    <div class="dropdown-item selected cursor-pointer">Colors <i class="ph-bold ph-check"></i></div>
+                    <div class="dropdown-item cursor-pointer">Numbers</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="component-block">
+        <h3>13. Search Input Bar</h3>
+        <p class="text-sm">Input field with prepended icon and clear button.</p>
+        <div class="flex-row">
+            <div class="search-bar-wrapper">
+                <i class="ph-bold ph-magnifying-glass search-icon"></i>
+                <input type="text" class="search-input" placeholder="Find a word...">
+                <button class="search-clear cursor-pointer"><i class="ph-fill ph-x-circle"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="component-block">
+        <h3>14. Autocomplete Suggestion Item</h3>
+        <p class="text-sm">Dropdown list row matching search queries.</p>
+        <div class="flex-row vertical-stack" style="background: white; padding: 0;">
+            <div class="autocomplete-dropdown">
+                <div class="ac-item cursor-pointer">
+                    <i class="ph-bold ph-clock ac-icon"></i>
+                    <span><strong>App</strong>le</span>
+                </div>
+                <div class="ac-item cursor-pointer">
+                    <i class="ph-bold ph-clock ac-icon"></i>
+                    <span><strong>App</strong>etite</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="component-block">
+        <h3>15. File Dropzone Mini</h3>
+        <p class="text-sm">Dashed box for uploading custom avatars or audio.</p>
+        <div class="flex-row">
+            <div class="file-dropzone cursor-pointer">
+                <i class="ph-bold ph-upload-simple"></i>
+                <span>Tap or drop photo here</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="component-block">
+        <h3>16. Date Picker Node & Time Pill</h3>
+        <p class="text-sm">Compact inputs for scheduling practice sessions.</p>
+        <div class="flex-row">
+            <div class="date-picker-node cursor-pointer">
+                <span class="dp-month">OCT</span>
+                <span class="dp-day">24</span>
+            </div>
+            <div class="time-pill cursor-pointer">
+                <i class="ph-bold ph-clock"></i>
+                <span>14:30</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="component-block">
+        <h3>17. Virtual Keypad Number</h3>
+        <p class="text-sm">Large tactile keys for PIN or age gate entry.</p>
+        <div class="flex-row" style="background: #E2E8F0;">
+            <div class="keypad-grid">
+                <button class="keypad-btn cursor-pointer">1</button>
+                <button class="keypad-btn cursor-pointer">2</button>
+                <button class="keypad-btn cursor-pointer">3</button>
+            </div>
+        </div>
+    </div>
+</div>

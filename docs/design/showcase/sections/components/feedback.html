@@ -1,0 +1,248 @@
+<div class="section-header">
+    <h2 class="section-title">Feedback & Avatars</h2>
+    <p class="section-description">Semantic tags and playful character portraits.</p>
+</div>
+
+<div class="component-showcase">
+    <div class="component-block">
+        <h3>1. Badges</h3>
+        <p class="text-sm">Semantic tagging for state and density.</p>
+        
+        <div class="flex-row">
+            <span class="badge badge-success">🟢 Active</span>
+            <span class="badge badge-neutral">Gray Badge</span>
+            <span class="badge badge-danger">Failed</span>
+        </div>
+    </div>
+
+    <div class="component-block">
+        <h3>2. Avatars & Profiles</h3>
+        <p class="text-sm">Playful circular frames for kids characters.</p>
+        
+        <div class="flex-row">
+            <div class="avatar avatar-lg" style="background-color: var(--color-warning); color: white;">
+                <i class="ph-fill ph-smiley" style="font-size: 32px;"></i>
+            </div>
+            <div class="avatar avatar-md" style="background-color: var(--color-info); color: white;">
+                <i class="ph-fill ph-cat" style="font-size: 24px;"></i>
+            </div>
+            <div class="avatar avatar-sm" style="background-color: var(--color-success); color: white;">
+                <i class="ph-fill ph-dog" style="font-size: 16px;"></i>
+            </div>
+        </div>
+    </div>
+    
+    <div class="component-block">
+        <h3>3. Streak Counters</h3>
+        <p class="text-sm">Gamified continuous engagement markers.</p>
+        <div class="flex-row">
+            <div class="streak-counter active">
+                <i class="ph-fill ph-fire"></i>
+                <span class="streak-num">7</span>
+                <span class="streak-label">Day Streak!</span>
+            </div>
+            <div class="streak-counter default">
+                <i class="ph ph-fire"></i>
+                <span class="streak-num">0</span>
+                <span class="streak-label">Days</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="component-block">
+        <h3>4. Playful Game Entities</h3>
+        <p class="text-sm">Interactive units for specific game modes.</p>
+        <div class="flex-row">
+            <!-- Word Search Tile -->
+            <div class="vertical-stack" style="width: auto; margin-right: 32px;">
+                <h4 style="margin-top:0;">Word Search Tiles</h4>
+                <div style="display:flex; gap:8px;">
+                    <div class="letter-tile">A</div>
+                    <div class="letter-tile selected">B</div>
+                    <div class="letter-tile found">C</div>
+                </div>
+            </div>
+
+            <!-- Floating Bubble -->
+            <div class="vertical-stack" style="width: auto;">
+                <h4 style="margin-top:0;">Floating Bubble</h4>
+                <div class="floating-bubble">
+                    <span class="bubble-word">Cat</span>
+                    <i class="ph-fill ph-sparkle bubble-shine"></i>
+                </div>
+            </div>
+        </div>
+    <div class="component-block">
+        <h3>5. Loading Skeleton</h3>
+        <p class="text-sm">Content placeholder preserving layout while fetching data.</p>
+        <div class="flex-row">
+            <div class="skeleton-card">
+                <div class="skeleton-avatar"></div>
+                <div class="skeleton-lines">
+                    <div class="skeleton-line title"></div>
+                    <div class="skeleton-line"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="component-block">
+        <h3>6. Activity Spinner</h3>
+        <p class="text-sm">Playful, non-blocking rotating loader for async operations.</p>
+        <div class="flex-row horizontal-stack">
+            <div class="activity-spinner primary"></div>
+            <div class="activity-spinner success"></div>
+            <div class="activity-spinner warning"></div>
+        </div>
+    </div>
+
+    <div class="component-block">
+        <h3>7. Snackbar / Toast Notification</h3>
+        <p class="text-sm">Floating bottom-centered alert for non-disruptive feedback.</p>
+        <div class="flex-row" style="position: relative; height: 150px; background: #e2e8f0;">
+            <div class="snackbar-toast success">
+                <i class="ph-fill ph-check-circle"></i>
+                <div class="toast-content">
+                    <strong>Level Unlocked!</strong>
+                    <span>You can now play Word Search.</span>
+                </div>
+                <button class="toast-close"><i class="ph-bold ph-x"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="component-block">
+        <h3>8. Tooltip / Popover Bubble</h3>
+        <p class="text-sm">Contextual help appearing on hover/focus.</p>
+        <div class="flex-row" style="padding-top: 60px;">
+            <div class="tooltip-wrapper">
+                <button class="btn btn-secondary tooltip-trigger cursor-pointer">Hover Me</button>
+                <div class="tooltip-bubble top">
+                    This is a helpful hint!
+                    <div class="tooltip-arrow"></div>
+                </div>
+            </div>
+        </div>
+    <div class="component-block">
+        <h3>9. Interactive Star Rating</h3>
+        <p class="text-sm">1-5 star selection for post-game feedback.</p>
+        <div class="flex-row horizontal-stack">
+            <div class="star-rating">
+                <i class="ph-fill ph-star active cursor-pointer"></i>
+                <i class="ph-fill ph-star active cursor-pointer"></i>
+                <i class="ph-fill ph-star active cursor-pointer"></i>
+                <i class="ph-fill ph-star cursor-pointer"></i>
+                <i class="ph-fill ph-star cursor-pointer"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="component-block">
+        <h3>10. Color Picker Swatch</h3>
+        <p class="text-sm">Grid of selectable colors for avatar customization.</p>
+        <div class="flex-row horizontal-stack">
+            <div class="color-swatch cursor-pointer selected" style="background: var(--color-warning);"></div>
+            <div class="color-swatch cursor-pointer" style="background: var(--color-success);"></div>
+            <div class="color-swatch cursor-pointer" style="background: var(--color-info);"></div>
+            <div class="color-swatch cursor-pointer" style="background: var(--color-danger);"></div>
+        </div>
+    </div>
+
+    <div class="component-block">
+        <h3>11. Circular Progress Ring</h3>
+        <p class="text-sm">Percentage fill indicating completion.</p>
+        <div class="flex-row">
+            <div class="progress-ring-container">
+                <svg class="progress-ring" width="80" height="80">
+                    <circle class="ring-bg" cx="40" cy="40" r="34" />
+                    <circle class="ring-fill" cx="40" cy="40" r="34" stroke-dasharray="213" stroke-dashoffset="53" />
+                </svg>
+                <span class="ring-text">75%</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="component-block">
+        <h3>12. Step Wizard Indicator</h3>
+        <p class="text-sm">Nodes connected by lines for multi-step processes.</p>
+        <div class="flex-row">
+            <div class="step-wizard">
+                <div class="wizard-node completed"><i class="ph-bold ph-check"></i></div>
+                <div class="wizard-line completed"></div>
+                <div class="wizard-node active">2</div>
+                <div class="wizard-line"></div>
+                <div class="wizard-node">3</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="component-block">
+        <h3>13. Notification Dot Badge</h3>
+        <p class="text-sm">Red dot on corner indicating new events.</p>
+        <div class="flex-row horizontal-stack" style="gap: 32px;">
+            <div class="icon-with-badge">
+                <i class="ph-bold ph-bell" style="font-size: 32px; color: var(--color-text-secondary);"></i>
+                <div class="dot-badge"></div>
+            </div>
+            <div class="avatar avatar-md" style="background-color: var(--color-info); color: white; position: relative;">
+                <i class="ph-fill ph-cat" style="font-size: 24px;"></i>
+                <div class="dot-badge numbered">3</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="component-block">
+        <h3>14. Live Action Pulse Indicator</h3>
+        <p class="text-sm">Rippling dot for live multiplayer or active events.</p>
+        <div class="flex-row">
+            <div class="live-pulse-wrapper">
+                <div class="pulse-dot"></div>
+                <div class="pulse-ring"></div>
+                <span style="font-family: var(--font-family); font-weight: 700; color: var(--color-danger);">Live Match</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="component-block">
+        <h3>15. Breadcrumb Trail</h3>
+        <p class="text-sm">Hierarchical navigation for deep menus.</p>
+        <div class="flex-row">
+            <div class="breadcrumb-trail">
+                <a href="#" class="bc-link">Home</a>
+                <i class="ph-bold ph-caret-right bc-sep"></i>
+                <a href="#" class="bc-link">World 1</a>
+                <i class="ph-bold ph-caret-right bc-sep"></i>
+                <span class="bc-current">Level 3</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="component-block">
+        <h3>16. Indeterminate Loading Bar</h3>
+        <p class="text-sm">Shimmering line for unknown background tasks.</p>
+        <div class="flex-row">
+            <div class="indeterminate-bar-container">
+                <div class="indeterminate-bar-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="component-block">
+        <h3>17. Action Bottom Sheet Handle</h3>
+        <p class="text-sm">Draggable indicator for modal sheets.</p>
+        <div class="flex-row" style="background: #F1F5F9; border-radius: 12px 12px 0 0; align-items: flex-start; padding-top: 12px;">
+            <div class="sheet-handle cursor-pointer"></div>
+        </div>
+    </div>
+
+    <div class="component-block">
+        <h3>18. Inline Error Text / Validation Hint</h3>
+        <p class="text-sm">Red text with warning icon for forms.</p>
+        <div class="flex-row">
+            <div class="inline-error">
+                <i class="ph-bold ph-warning-circle"></i>
+                <span>Password must be at least 4 characters.</span>
+            </div>
+        </div>
+    </div>
+</div>
