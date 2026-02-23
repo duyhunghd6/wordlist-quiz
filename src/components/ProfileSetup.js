@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { AVATARS, getAvatarById } from '../constants/gameConfig';
-import './ProfileSetup.css';
 
 const ProfileSetup = ({ onComplete, initialProfile }) => {
   const [name, setName] = useState(initialProfile?.name || '');
@@ -36,53 +35,70 @@ const ProfileSetup = ({ onComplete, initialProfile }) => {
   const currentAvatar = getAvatarById(selectedAvatar);
 
   return (
-    <div className="profile-setup">
-      <div className="profile-header">
-        <span className="welcome-emoji">{currentAvatar.emoji}</span>
-        <h1>Welcome to Wordlist Quiz!</h1>
-        <p>Let's set up your profile</p>
-      </div>
-
-      <form onSubmit={handleSubmit}>
-        <div className="input-group">
-          <label htmlFor="name">What's your name?</label>
-          <input
-            id="name"
-            type="text"
-            value={name}
-            onChange={(e) => {
-              setName(e.target.value);
-              setError('');
-            }}
-            placeholder="Enter your name..."
-            maxLength={20}
-            autoComplete="off"
-            autoFocus
-          />
-          {error && <span className="error-message">{error}</span>}
-        </div>
-
-        <div className="avatar-section">
-          <label>Choose your avatar:</label>
-          <div className="avatar-grid">
-            {AVATARS.map((avatar) => (
-              <button
-                key={avatar.id}
-                type="button"
-                className={`avatar-button ${selectedAvatar === avatar.id ? 'selected' : ''}`}
-                onClick={() => setSelectedAvatar(avatar.id)}
-                title={avatar.name}
-              >
-                <span className="avatar-emoji">{avatar.emoji}</span>
-              </button>
-            ))}
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh', padding: 'var(--space-md)' }}>
+      <div className="card shadow-md" style={{ width: '100%', maxWidth: '400px', display: 'flex', flexDirection: 'column', gap: 'var(--space-lg)' }}>
+        <div style={{ textAlign: 'center' }}>
+          <div style={{ fontSize: '64px', marginBottom: 'var(--space-sm)' }}>
+            {currentAvatar.emoji}
           </div>
+          <h1 style={{ color: 'var(--color-text-primary)' }}>Welcome to Wordlist Quiz!</h1>
+          <p style={{ color: 'var(--color-text-secondary)' }}>Let's set up your profile</p>
         </div>
 
-        <button type="submit" className="submit-button">
-          Let's Go! 🚀
-        </button>
-      </form>
+        <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-lg)' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-xs)' }}>
+            <label htmlFor="name" style={{ fontWeight: 700, color: 'var(--color-text-primary)' }}>What's your name?</label>
+            <input
+              id="name"
+              type="text"
+              className="input-text"
+              value={name}
+              onChange={(e) => {
+                setName(e.target.value);
+                setError('');
+              }}
+              placeholder="Enter your name..."
+              maxLength={20}
+              autoComplete="off"
+              autoFocus
+              style={{ width: '100%' }}
+            />
+            {error && <span style={{ color: 'var(--color-danger)', fontSize: '0.875rem', fontWeight: 600 }}>{error}</span>}
+          </div>
+
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-xs)' }}>
+            <label style={{ fontWeight: 700, color: 'var(--color-text-primary)' }}>Choose your avatar:</label>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: 'var(--space-sm)' }}>
+              {AVATARS.map((avatar) => {
+                const isSelected = selectedAvatar === avatar.id;
+                return (
+                  <button
+                    key={avatar.id}
+                    type="button"
+                    className={`avatar avatar-md ${isSelected ? 'shadow-md' : 'shadow-sm'}`}
+                    style={{ 
+                      width: '100%', 
+                      height: 'auto', 
+                      aspectRatio: '1', 
+                      cursor: 'pointer',
+                      borderColor: isSelected ? 'var(--color-accent)' : 'var(--color-border-default)',
+                      background: isSelected ? 'var(--color-background-default)' : 'white'
+                    }}
+                    onClick={() => setSelectedAvatar(avatar.id)}
+                    title={avatar.name}
+                  >
+                    <span style={{ fontSize: '24px' }}>{avatar.emoji}</span>
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+
+          <button type="submit" className="btn btn-primary" style={{ width: '100%', fontSize: '1.2rem', padding: 'var(--space-md)' }}>
+            Let's Go! 🚀
+          </button>
+        </form>
+      </div>
     </div>
   );
 };

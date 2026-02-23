@@ -2,19 +2,16 @@ import React, { useMemo } from 'react';
 import { Calendar, TrendingUp } from 'lucide-react';
 import './ActivityHeatmap.css';
 
-// Subject display config
 const SUBJECTS = [
   { id: 'wordlist_esl', name: 'ESL', color: '#22c55e' },
   { id: 'wordlist_math', name: 'Math', color: '#3b82f6' },
   { id: 'wordlist_science', name: 'Science', color: '#a855f7' }
 ];
 
-// Generate array of weeks (Monday-based) for last N weeks
 const getWeekRanges = (numWeeks = 12) => {
   const weeks = [];
   const today = new Date();
   
-  // Find the current week's Monday
   const currentDay = today.getDay();
   const mondayOffset = currentDay === 0 ? -6 : 1 - currentDay;
   const thisMonday = new Date(today);
@@ -38,7 +35,6 @@ const getWeekRanges = (numWeeks = 12) => {
   return weeks;
 };
 
-// Get all dates in a week
 const getWeekDates = (weekStart) => {
   const dates = [];
   for (let i = 0; i < 7; i++) {
@@ -49,7 +45,6 @@ const getWeekDates = (weekStart) => {
   return dates;
 };
 
-// Calculate activity level (0-4) for color intensity
 const getActivityLevel = (data) => {
   if (!data) return 0;
   const total = data.questions || 0;
@@ -60,7 +55,6 @@ const getActivityLevel = (data) => {
   return 4;
 };
 
-// Get week stats for a subject
 const getWeekStats = (activityLog, weekDates, subjectId) => {
   let totalQuestions = 0;
   let totalCorrect = 0;
@@ -81,7 +75,6 @@ const getWeekStats = (activityLog, weekDates, subjectId) => {
 const ActivityHeatmap = ({ activityLog = {} }) => {
   const weeks = useMemo(() => getWeekRanges(12), []);
   
-  // Calculate stats for each cell
   const cellData = useMemo(() => {
     const data = {};
     
@@ -104,31 +97,28 @@ const ActivityHeatmap = ({ activityLog = {} }) => {
     return data;
   }, [weeks, activityLog]);
   
-  // Check if any activity exists
   const hasActivity = Object.values(cellData).some(cell => cell.level > 0);
 
   return (
-    <section className="report-section activity-heatmap-section">
-      <h2>
-        <Calendar size={18} />
+    <div className="card shadow-sm" style={{ padding: 'var(--space-xl)', overflow: 'hidden' }}>
+      <h2 style={{ fontSize: '1.2rem', margin: '0 0 var(--space-md) 0', display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--color-text-primary)' }}>
+        <Calendar size={20} color="var(--color-info)" />
         Learning Activity
       </h2>
       
-      <div className="heatmap-container">
-        {/* Week headers */}
+      <div className="heatmap-container" style={{ margin: '0 -var(--space-md)', padding: '0 var(--space-md)', background: 'transparent' }}>
         <div className="heatmap-weeks-header">
           <div className="heatmap-subject-label-spacer"></div>
           {weeks.map((week, i) => (
-            <div key={i} className="heatmap-week-label">
+            <div key={i} className="heatmap-week-label" style={{ color: 'var(--color-text-secondary)', fontWeight: 600 }}>
               {i % 2 === 0 ? week.label : ''}
             </div>
           ))}
         </div>
         
-        {/* Subject rows */}
         {SUBJECTS.map(subject => (
           <div key={subject.id} className="heatmap-row">
-            <div className="heatmap-subject-label">{subject.name}</div>
+            <div className="heatmap-subject-label" style={{ color: 'var(--color-text-secondary)' }}>{subject.name}</div>
             <div className="heatmap-cells">
               {weeks.map((week, weekIndex) => {
                 const cell = cellData[`${weekIndex}-${subject.id}`];
@@ -140,20 +130,15 @@ const ActivityHeatmap = ({ activityLog = {} }) => {
                       ? `${cell.subjectName} - ${cell.weekLabel}\n${cell.totalQuestions} questions\n${cell.totalCorrect} correct\n${cell.totalPoints} points`
                       : `${subject.name} - ${week.label}\nNo activity`
                     }
-                  >
-                    {cell?.level > 0 && (
-                      <span className="cell-indicator"></span>
-                    )}
-                  </div>
+                  />
                 );
               })}
             </div>
           </div>
         ))}
         
-        {/* Legend */}
-        <div className="heatmap-legend">
-          <span className="legend-label">Less</span>
+        <div className="heatmap-legend" style={{ marginTop: 'var(--space-lg)' }}>
+          <span className="legend-label" style={{ fontWeight: 600 }}>Less</span>
           <div className="legend-cells">
             <div className="heatmap-cell level-0"></div>
             <div className="heatmap-cell level-1"></div>
@@ -161,17 +146,17 @@ const ActivityHeatmap = ({ activityLog = {} }) => {
             <div className="heatmap-cell level-3"></div>
             <div className="heatmap-cell level-4"></div>
           </div>
-          <span className="legend-label">More</span>
+          <span className="legend-label" style={{ fontWeight: 600 }}>More</span>
         </div>
       </div>
       
       {!hasActivity && (
-        <div className="heatmap-empty-hint">
-          <TrendingUp size={16} />
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', padding: 'var(--space-md)', marginTop: 'var(--space-md)', backgroundColor: '#EFF6FF', color: 'var(--color-info)', borderRadius: 'var(--radius-md)', fontWeight: 600, fontSize: '0.9rem' }}>
+          <TrendingUp size={18} />
           <span>Complete quizzes to see your activity here!</span>
         </div>
       )}
-    </section>
+    </div>
   );
 };
 

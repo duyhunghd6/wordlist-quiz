@@ -5,6 +5,7 @@
 - **Project Structure**: This project enforces a maximum depth of 2 levels for nested project directories.
 - **Task & Dependency Management**: We are using the `beads` CLI to manage tasks and dependencies.
 - **Product Requirements**: The `README.md` file serves exactly as the Product Requirements Document (PRD).
+- **Design System**: Elements and components must follow the Design System located at `docs/design`. This is the "document" for all designs to follow, reducing the gap between the PRD and the real product.
 
 ## Agile Dev Agentic Coding Skills
 
@@ -60,6 +61,11 @@ For this type of project, the Agentic SE workflow utilizes four core skills/pers
 - Point at logs, errors, failing tests - then resolve them
 - Zero context switching required from the user
 - Go fix failing CI tests without being told how
+
+### 7. Port Conflicts
+
+- The local development server (Vite) MUST run on port **9997**.
+- If `npm run dev` fails due to the port already being in use, you MUST autonomously kill the existing process on port 9997 (e.g., `lsof -ti:9997 | xargs kill -9`) before retrying. Do not ask the user to free the port.
 
 ## Task Management (Beads CLI Workflows)
 

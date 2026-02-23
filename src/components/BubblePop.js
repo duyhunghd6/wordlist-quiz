@@ -1,15 +1,5 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-import { Check, X, ChevronRight, BookOpen, Sparkles, RotateCcw } from 'lucide-react';
-import './GameUI.css';
-import './BubblePop.css';
-
-/**
- * BubblePop Game Component
- * 
- * Definition is shown at top. Word bubbles float up from the bottom.
- * User taps the correct word bubble before it escapes off the top.
- * Wrong tap or timeout = incorrect answer.
- */
+import { Check, X, ChevronRight, BookOpen, Sparkles, RotateCcw, Home, Clock } from 'lucide-react';
 
 const BUBBLE_COLORS = [
   { bg: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', glow: 'rgba(102, 126, 234, 0.5)' },
@@ -20,8 +10,8 @@ const BUBBLE_COLORS = [
   { bg: 'linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)', glow: 'rgba(168, 237, 234, 0.5)' },
 ];
 
-const GAME_TIME_LIMIT = 10000; // 10 seconds per question
-const BUBBLE_ESCAPE_TIME = 8000; // Time for bubble to float up
+const GAME_TIME_LIMIT = 10000; 
+const BUBBLE_ESCAPE_TIME = 8000; 
 
 const BubblePop = ({ words, onAnswer, onComplete, onHome, gameId = 'bubble' }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -37,32 +27,27 @@ const BubblePop = ({ words, onAnswer, onComplete, onHome, gameId = 'bubble' }) =
   
   const timerRef = useRef(null);
 
-  // Generate bubbles for current question
   const generateBubbles = useCallback((currentWord, allWords) => {
-    // Get 3 random wrong options
     const wrongWords = allWords
       .filter(w => w.word !== currentWord.word)
       .sort(() => Math.random() - 0.5)
       .slice(0, 3);
     
-    // Mix correct and wrong words
     const options = [currentWord, ...wrongWords].sort(() => Math.random() - 0.5);
+    const positions = [15, 38, 62, 85];
     
-    // Create bubbles with evenly distributed positions
-    const positions = [15, 38, 62, 85]; // Evenly spaced positions
     return options.map((word, idx) => ({
       id: idx,
       word: word.word,
       isCorrect: word.word === currentWord.word,
       color: BUBBLE_COLORS[idx % BUBBLE_COLORS.length],
-      x: positions[idx], // Evenly distributed horizontal positions
-      speed: 0.9 + Math.random() * 0.2, // Less speed variation
-      wobbleOffset: Math.random() * Math.PI * 2, // Phase offset for wobble
-      startDelay: idx * 400, // More staggered start to separate bubbles
+      x: positions[idx],
+      speed: 0.9 + Math.random() * 0.2,
+      wobbleOffset: Math.random() * Math.PI * 2,
+      startDelay: idx * 400,
     }));
   }, []);
 
-  // Initialize question
   useEffect(() => {
     if (words.length === 0 || currentIndex >= words.length) return;
     
@@ -74,10 +59,8 @@ const BubblePop = ({ words, onAnswer, onComplete, onHome, gameId = 'bubble' }) =
     setPoppedBubble(null);
   }, [words, currentIndex, generateBubbles]);
 
-  // Track if timeout occurred
   const timeoutTriggeredRef = useRef(false);
 
-  // Timer countdown
   useEffect(() => {
     if (showFeedback) return;
     
@@ -97,13 +80,11 @@ const BubblePop = ({ words, onAnswer, onComplete, onHome, gameId = 'bubble' }) =
     return () => clearInterval(timerRef.current);
   }, [currentIndex, showFeedback]);
 
-  // Use ref to track results for proceedToNext to avoid stale closure
   const resultsRef = useRef(results);
   useEffect(() => {
     resultsRef.current = results;
   }, [results]);
 
-  // Finish the game - called when truly complete
   const finishGame = useCallback(() => {
     const currentResults = resultsRef.current;
     onComplete({
@@ -117,12 +98,11 @@ const BubblePop = ({ words, onAnswer, onComplete, onHome, gameId = 'bubble' }) =
     });
   }, [gameId, words.length, onComplete]);
 
-  // Start retry mode
   const handleRetry = useCallback(() => {
     setShowRetryPrompt(false);
     setIsRetryMode(true);
     setCurrentIndex(0);
-    setResults(prev => ({ ...prev, wrong: [] })); // Keep correct count but clear wrong list
+    setResults(prev => ({ ...prev, wrong: [] }));
   }, []);
 
   const proceedToNext = useCallback((isCorrect, currentWord, responseTimeMs) => {
@@ -133,7 +113,6 @@ const BubblePop = ({ words, onAnswer, onComplete, onHome, gameId = 'bubble' }) =
       setShowFeedback(false);
       
       if (currentIndex + 1 >= words.length) {
-        // Check for wrong answers - offer retry if not already in retry mode
         const currentResults = resultsRef.current;
         const wrongCount = currentResults.wrong.length + (isCorrect ? 0 : 1);
         
@@ -148,7 +127,6 @@ const BubblePop = ({ words, onAnswer, onComplete, onHome, gameId = 'bubble' }) =
     }, delay);
   }, [currentIndex, words.length, isRetryMode, finishGame]);
 
-  // Handle timeout in separate effect
   useEffect(() => {
     if (timeLeft === 0 && timeoutTriggeredRef.current && !showFeedback) {
       timeoutTriggeredRef.current = false;
@@ -158,7 +136,6 @@ const BubblePop = ({ words, onAnswer, onComplete, onHome, gameId = 'bubble' }) =
       
       const responseTimeMs = GAME_TIME_LIMIT;
       
-      // Timeout = wrong answer
       onAnswer(currentWord.word, false, responseTimeMs);
       
       setLastAnswer({ 
@@ -185,7 +162,6 @@ const BubblePop = ({ words, onAnswer, onComplete, onHome, gameId = 'bubble' }) =
     const responseTimeMs = Date.now() - questionStartTime;
     const isCorrect = bubble.isCorrect;
     
-    // Report to learning algorithm
     onAnswer(currentWord.word, isCorrect, responseTimeMs);
     
     setPoppedBubble(bubble.id);
@@ -197,7 +173,6 @@ const BubblePop = ({ words, onAnswer, onComplete, onHome, gameId = 'bubble' }) =
     });
     setShowFeedback(true);
     
-    // Give partial credit (0.5) in retry mode
     const pointsEarned = isCorrect ? (isRetryMode ? 0.5 : 1) : 0;
     setResults(prev => ({
       correct: prev.correct + pointsEarned,
@@ -208,143 +183,179 @@ const BubblePop = ({ words, onAnswer, onComplete, onHome, gameId = 'bubble' }) =
     proceedToNext(isCorrect, currentWord, responseTimeMs);
   }, [currentIndex, words, onAnswer, questionStartTime, showFeedback, isRetryMode, proceedToNext]);
 
-  if (words.length === 0) {
-    return <div className="bubble-container">Loading...</div>;
-  }
+  if (words.length === 0) return <div>Loading...</div>;
 
   const currentWord = words[currentIndex];
   const timerPercent = (timeLeft / GAME_TIME_LIMIT) * 100;
   const isUrgent = timeLeft < 4000;
   const isCritical = timeLeft < 2000;
+  const correctCount = Math.round(results.correct);
+
+  if (showRetryPrompt) {
+    return (
+      <div style={{ display: 'flex', justifyContent: 'center', padding: 'var(--space-xl)' }}>
+        <div className="card shadow-md" style={{ textAlign: 'center', width: '100%', maxWidth: '400px' }}>
+          <div style={{ fontSize: '48px', marginBottom: 'var(--space-md)' }}>🔄</div>
+          <h2>Quiz Complete!</h2>
+          <p style={{ fontSize: '1.2rem', margin: 'var(--space-sm) 0' }}>You got <strong>{correctCount}</strong> out of <strong>{words.length}</strong> correct</p>
+          <p style={{ color: 'var(--color-danger)', fontWeight: 600 }}>❌ {results.wrong.length} words wrong. Want to try again?</p>
+          <p style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', marginBottom: 'var(--space-lg)' }}>⚠️ Retry answers count for 50% points</p>
+          <div style={{ display: 'flex', gap: 'var(--space-sm)' }}>
+            <button className="btn btn-primary" style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }} onClick={handleRetry}>
+              <RotateCcw size={18} /> Try Again
+            </button>
+            <button className="btn btn-secondary" style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }} onClick={finishGame}>
+              <Check size={18} /> Finish
+            </button>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
-    <div className="bubble-container">
-      {/* Progress */}
-      <div className="game-progress">
-        <button className="home-btn-small" onClick={onHome} aria-label="Go home">
-          <span style={{ fontSize: '20px' }}>🏠</span>
+    <div style={{ maxWidth: '800px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: 'var(--space-lg)' }}>
+      <style>{`
+        @keyframes floatUp {
+          0% { bottom: -120px; transform: translateX(0) scale(0.9); opacity: 0; }
+          10% { opacity: 1; transform: translateX(10px) scale(1); }
+          50% { transform: translateX(-15px) scale(1.05); }
+          90% { opacity: 1; transform: translateX(10px) scale(1); }
+          100% { bottom: 100%; transform: translateX(-5px) scale(0.9); opacity: 0; }
+        }
+        .bubble {
+          position: absolute;
+          width: 90px;
+          height: 90px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+          font-weight: 800;
+          font-size: 1.1rem;
+          border: none;
+          cursor: pointer;
+          background: var(--bubble-bg);
+          box-shadow: inset -5px -5px 15px rgba(0,0,0,0.2), inset 5px 5px 15px rgba(255,255,255,0.4), 0 5px 15px var(--bubble-glow);
+          left: var(--bubble-x);
+          animation: floatUp var(--bubble-speed) ease-in forwards;
+          animation-delay: var(--bubble-delay);
+          transition: transform 0.1s;
+        }
+        .bubble:active {
+          transform: scale(0.9) !important;
+        }
+        .bubble.popped {
+          animation: none;
+          transform: scale(1.5) !important;
+          opacity: 0 !important;
+          transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+        }
+        .bubble.fade {
+          opacity: 0.3;
+        }
+      `}</style>
+
+      {/* HUD Header */}
+      <div className="game-hud" style={{ width: '100%', maxWidth: '100%' }}>
+        <button className="hud-btn" onClick={onHome} aria-label="Go home">
+          <Home size={20} />
         </button>
-        <div className="progress-bar">
-          {words.map((_, idx) => (
-            <div 
-              key={idx} 
-              className={`progress-segment ${
-                idx < currentIndex 
-                  ? (results.wrong.some(w => w.word === words[idx].word) ? 'wrong' : 'correct')
-                  : ''
-              }`}
-              style={{ width: `${100 / words.length}%` }}
-            />
-          ))}
-        </div>
-        <div className="progress-info">
-          <span className="question-counter">
-            <span className="current">{currentIndex + 1}</span>
-            <span className="separator">/</span>
-            <span className="total">{words.length}</span>
-          </span>
-          <div className="score-mini">
-            <span className="correct-count">✓ {results.correct}</span>
-            <span className="wrong-count">✗ {results.wrong.length}</span>
-          </div>
-        </div>
-      </div>
-
-      {/* Timer Bar */}
-      <div className={`timer-bar ${isUrgent ? 'urgent' : ''} ${isCritical ? 'critical' : ''}`}>
-        <div className="timer-fill" style={{ width: `${timerPercent}%` }} />
-      </div>
-
-      {/* Definition Card */}
-      <div className="definition-card">
-        <div className="question-label">
-          <Sparkles size={16} />
-          <span>Tap the matching word!</span>
-        </div>
-        <p className="definition-text">{currentWord.definition}</p>
-      </div>
-
-      {/* Bubble Arena */}
-      <div className="bubble-arena">
-        {bubbles.map((bubble) => (
-          <button
-            key={`${currentIndex}-${bubble.id}`}
-            className={`bubble ${poppedBubble === bubble.id ? 'popped' : ''} ${showFeedback && !bubble.isCorrect && poppedBubble !== bubble.id ? 'fade' : ''}`}
-            style={{
-              '--bubble-x': `${bubble.x}%`,
-              '--bubble-bg': bubble.color.bg,
-              '--bubble-glow': bubble.color.glow,
-              '--bubble-speed': `${BUBBLE_ESCAPE_TIME * bubble.speed}ms`,
-              '--bubble-delay': `${bubble.startDelay}ms`,
-              '--wobble-offset': bubble.wobbleOffset,
-            }}
-            onClick={() => handleBubbleTap(bubble)}
-            disabled={showFeedback}
-          >
-            <span className="bubble-word">{bubble.word}</span>
-          </button>
-        ))}
         
-        {/* Show correct answer indicator */}
-        {showFeedback && lastAnswer && !lastAnswer.isCorrect && (
-          <div className="correct-indicator">
-            <Check size={16} />
-            <span>{currentWord.word}</span>
+        <div style={{ flex: 1, margin: '0 var(--space-md)' }}>
+          <div className={`timer-container ${isUrgent ? 'urgent' : ''}`}>
+            <div 
+              className={`timer-bar ${isCritical ? 'danger pulse' : isUrgent ? 'warning' : 'safe'}`} 
+              style={{ width: `${timerPercent}%` }}
+            />
+            <div className="timer-icon"><Clock size={16} /></div>
           </div>
-        )}
+        </div>
+
+        <div className="score-pill">
+          <span style={{ fontSize: '18px' }}>⭐</span>
+          <span className="score-text">{correctCount}</span>
+        </div>
       </div>
 
-      {/* Feedback */}
-      {showFeedback && lastAnswer && (
-        <div className={`feedback-card ${lastAnswer.isCorrect ? 'correct' : 'incorrect'}`}>
-          <div className="feedback-header">
-            {lastAnswer.isCorrect ? <Check size={20} /> : <X size={20} />}
-            <span>
-              {lastAnswer.isCorrect 
-                ? 'Correct!' 
-                : lastAnswer.wasTimeout 
-                  ? `Time's up! The answer was "${currentWord.word}"`
-                  : `Wrong! The answer was "${currentWord.word}"`
-              }
-            </span>
-            <ChevronRight className="next-icon" size={18} />
-          </div>
+      <div style={{ textAlign: 'center', marginBottom: '-10px' }}>
+        <span className="badge badge-neutral">Word {currentIndex + 1} of {words.length}</span>
+      </div>
+
+      {/* Main Game Area */}
+      <div className="card shadow-md" style={{ width: '100%', padding: 'var(--space-xl)', textAlign: 'center', position: 'relative', overflow: 'hidden' }}>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', color: 'var(--color-info)', fontWeight: 700, marginBottom: 'var(--space-sm)' }}>
+          <Sparkles size={20} /> Tap the matching word!
+        </div>
+        
+        <h2 style={{ fontSize: '1.8rem', margin: '0 0 var(--space-xl) 0', color: 'var(--color-text-primary)' }}>
+          {currentWord?.definition || currentWord?.vietnamese}
+        </h2>
+        
+        {/* Arena */}
+        <div style={{ position: 'relative', width: '100%', height: '400px', background: '#F8FAFC', borderRadius: 'var(--radius-xl)', border: '2px dashed var(--color-border-default)', overflow: 'hidden' }}>
+          {bubbles.map((bubble) => (
+            <button
+              key={`${currentIndex}-${bubble.id}`}
+              className={`bubble ${poppedBubble === bubble.id ? 'popped' : ''} ${showFeedback && !bubble.isCorrect && poppedBubble !== bubble.id ? 'fade' : ''}`}
+              style={{
+                '--bubble-x': `${bubble.x}%`,
+                '--bubble-bg': bubble.color.bg,
+                '--bubble-glow': bubble.color.glow,
+                '--bubble-speed': `${BUBBLE_ESCAPE_TIME * bubble.speed}ms`,
+                '--bubble-delay': `${bubble.startDelay}ms`,
+                '--wobble-offset': bubble.wobbleOffset,
+              }}
+              onClick={() => handleBubbleTap(bubble)}
+              disabled={showFeedback}
+            >
+              <span style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.5)' }}>{bubble.word}</span>
+            </button>
+          ))}
           
-          {!lastAnswer.isCorrect && (
-            <div className="learning-context">
-              <div className="learning-header">
-                <BookOpen size={14} />
-                <span>Learn: {currentWord.word}</span>
-              </div>
-              {currentWord.example && (
-                <p className="learning-example">"{currentWord.example}"</p>
-              )}
-              {currentWord.vietnamese && (
-                <p className="learning-vietnamese">{currentWord.vietnamese}</p>
-              )}
+          {showFeedback && lastAnswer && !lastAnswer.isCorrect && (
+            <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', background: 'rgba(255,255,255,0.9)', padding: 'var(--space-md)', borderRadius: 'var(--radius-lg)', boxShadow: 'var(--shadow-lg)', border: '2px solid var(--color-success)', color: 'var(--color-success)', fontWeight: 800, fontSize: '1.5rem', display: 'flex', alignItems: 'center', gap: '8px', zIndex: 10 }}>
+              <Check size={28} /> {currentWord.word}
             </div>
           )}
         </div>
-      )}
-
-      {/* Retry Prompt Modal */}
-      {showRetryPrompt && (
-        <div className="retry-prompt-overlay">
-          <div className="retry-prompt-modal">
-            <h3>🎯 Retry Wrong Answers?</h3>
-            <p>You got {results.wrong.length} word{results.wrong.length > 1 ? 's' : ''} wrong. Want to practice them again?</p>
-            <div className="retry-prompt-buttons">
-              <button className="retry-btn primary" onClick={handleRetry}>
-                <RotateCcw size={18} />
-                Try Again
-              </button>
-              <button className="retry-btn secondary" onClick={finishGame}>
-                Finish
-              </button>
+        
+        {/* Feedback */}
+        {showFeedback && lastAnswer && (
+          <div style={{ 
+            marginTop: 'var(--space-lg)', 
+            padding: 'var(--space-md)', 
+            borderRadius: 'var(--radius-lg)',
+            background: lastAnswer.isCorrect ? '#F0FDF4' : '#FEF2F2',
+            border: `3px solid ${lastAnswer.isCorrect ? 'var(--color-success)' : 'var(--color-danger)'}`,
+            textAlign: 'left',
+            animation: 'fadeIn 0.3s'
+          }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: lastAnswer.isCorrect ? 'var(--color-success-hover)' : 'var(--color-danger-hover)' }}>
+              {lastAnswer.wasTimeout ? <Clock size={24} /> : lastAnswer.isCorrect ? <Check size={24} /> : <X size={24} />}
+              <span style={{ fontSize: '1.2rem', fontWeight: 700 }}>
+                {lastAnswer.isCorrect ? 'Correct! Well done!' : lastAnswer.wasTimeout ? `Time's up! The answer was "${currentWord.word}"` : `Wrong! The answer was "${currentWord.word}"`}
+              </span>
+            </div>
+            
+            {!lastAnswer.isCorrect && currentWord && (
+              <div style={{ marginTop: 'var(--space-sm)' }}>
+                <div style={{ marginTop: 'var(--space-md)', padding: 'var(--space-sm)', background: 'white', borderRadius: 'var(--radius-md)' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '6px', color: 'var(--color-info)', marginBottom: '4px', fontWeight: 700 }}>
+                    <BookOpen size={16} /> Learn this word:
+                  </div>
+                  {currentWord.example && <p style={{ margin: '0 0 4px', fontSize: '0.9rem' }}>"{currentWord.example}"</p>}
+                  {currentWord.vietnamese && <p style={{ margin: 0, fontSize: '0.9rem', color: 'var(--color-text-secondary)', fontWeight: 600 }}>{currentWord.vietnamese}</p>}
+                </div>
+              </div>
+            )}
+            <div style={{ marginTop: 'var(--space-sm)', textAlign: 'center', opacity: 0.6, fontSize: '0.9rem', fontWeight: 600 }}>
+              Loading next word <ChevronRight size={16} style={{ display: 'inline', verticalAlign: 'middle' }} />
             </div>
           </div>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 };

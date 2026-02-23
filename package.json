@@ -17,6 +17,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "dev": "vite",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -41,6 +42,8 @@
     ]
   },
   "devDependencies": {
-    "baseline-browser-mapping": "^2.9.17"
+    "@vitejs/plugin-react": "^5.1.4",
+    "baseline-browser-mapping": "^2.9.17",
+    "vite": "^7.3.1"
   }
 }

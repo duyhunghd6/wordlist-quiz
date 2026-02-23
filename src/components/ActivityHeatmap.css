@@ -1,16 +1,12 @@
 /* ActivityHeatmap - GitHub-style contribution grid */
 
-.activity-heatmap-section h2 {
-  display: flex;
-  align-items: center;
-  gap: var(--space-sm);
+.heatmap-container {
+  overflow-x: auto;
+  scrollbar-width: none; /* Firefox */
 }
 
-.heatmap-container {
-  background: var(--color-bg);
-  border-radius: var(--radius-md);
-  padding: var(--space-md);
-  overflow-x: auto;
+.heatmap-container::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
 }
 
 /* Week header row */
@@ -29,8 +25,8 @@
 .heatmap-week-label {
   width: 28px;
   min-width: 28px;
-  font-size: 0.5rem;
-  color: var(--color-text-muted);
+  font-size: 0.6rem;
+  color: var(--color-text-secondary);
   text-align: center;
   margin: 0 2px;
 }
@@ -46,8 +42,7 @@
   width: 60px;
   min-width: 60px;
   font-size: 0.75rem;
-  font-weight: 600;
-  color: var(--color-text);
+  font-weight: 700;
   padding-right: var(--space-sm);
   text-align: right;
 }
@@ -62,52 +57,41 @@
   width: 28px;
   height: 28px;
   border-radius: var(--radius-sm);
-  background: #ebedf0;
+  background: var(--color-bg-base); /* Empty base */
+  border: 1px solid var(--color-border-default);
   transition: all 0.15s ease;
   cursor: pointer;
-  position: relative;
 }
 
 .heatmap-cell:hover {
   transform: scale(1.15);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--shadow-sm);
   z-index: 1;
 }
 
-/* Activity levels - GitHub green palette */
+/* Activity levels - Indigo palette leaning */
 .heatmap-cell.level-0 {
-  background: #ebedf0;
+  background: var(--color-bg-alt);
+  border-color: var(--color-border-default);
 }
 
-.heatmap-cell.level-1 {
-  background: #9be9a8;
-}
-
-.heatmap-cell.level-2 {
-  background: #40c463;
-}
-
-.heatmap-cell.level-3 {
-  background: #30a14e;
-}
-
-.heatmap-cell.level-4 {
-  background: #216e39;
-}
+.heatmap-cell.level-1 { background: #C7D2FE; border-color: #818CF8; } /* Indigo 200 */
+.heatmap-cell.level-2 { background: #818CF8; border-color: #6366F1; } /* Indigo 400 */
+.heatmap-cell.level-3 { background: #4F46E5; border-color: #4338CA; } /* Indigo 600 */
+.heatmap-cell.level-4 { background: #312E81; border-color: #312E81; } /* Indigo 900 */
 
 /* Legend */
 .heatmap-legend {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: var(--space-xs);
-  margin-top: var(--space-md);
-  padding-right: var(--space-sm);
+  gap: var(--space-sm);
+  padding-right: var(--space-xs);
 }
 
 .legend-label {
-  font-size: 0.625rem;
-  color: var(--color-text-muted);
+  font-size: 0.7rem;
+  color: var(--color-text-secondary);
 }
 
 .legend-cells {
@@ -116,31 +100,14 @@
 }
 
 .legend-cells .heatmap-cell {
-  width: 12px;
-  height: 12px;
+  width: 14px;
+  height: 14px;
+  border-radius: 2px;
 }
 
 .legend-cells .heatmap-cell:hover {
   transform: none;
   box-shadow: none;
-}
-
-/* Empty state hint */
-.heatmap-empty-hint {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: var(--space-xs);
-  padding: var(--space-sm);
-  margin-top: var(--space-sm);
-  font-size: 0.75rem;
-  color: var(--color-text-muted);
-  background: rgba(59, 130, 246, 0.1);
-  border-radius: var(--radius-sm);
-}
-
-.heatmap-empty-hint svg {
-  color: var(--color-primary);
 }
 
 /* Responsive */
@@ -153,13 +120,13 @@
   .heatmap-week-label {
     width: 20px;
     min-width: 20px;
-    font-size: 0.4rem;
+    font-size: 0.5rem;
   }
   
   .heatmap-subject-label {
     width: 48px;
     min-width: 48px;
-    font-size: 0.625rem;
+    font-size: 0.65rem;
   }
   
   .heatmap-subject-label-spacer {
@@ -168,6 +135,6 @@
   }
   
   .heatmap-cells {
-    gap: 2px;
+    gap: 3px;
   }
 }

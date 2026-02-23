@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Plus, Pencil, Check, X, Trash2 } from 'lucide-react';
 import { AVATARS, getAvatarById } from '../constants/gameConfig';
-import './ProfileSwitcher.css';
 
 const ProfileSwitcher = ({
   isOpen,
@@ -65,37 +64,43 @@ const ProfileSwitcher = ({
   };
 
   return (
-    <div className="profile-modal-overlay" onClick={onClose}>
-      <div className="profile-modal" onClick={e => e.stopPropagation()}>
-        <div className="modal-header">
-          <h2>{mode === 'create' ? 'New Profile' : mode === 'edit' ? 'Edit Profile' : 'Switch Profile'}</h2>
-          <button className="close-btn" onClick={onClose}>
+    <div style={{ position: 'fixed', inset: 0, backgroundColor: 'rgba(30, 41, 59, 0.7)', zIndex: 50, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 'var(--space-md)' }} onClick={onClose}>
+      <div className="card shadow-drag" style={{ width: '100%', maxWidth: '400px', display: 'flex', flexDirection: 'column', gap: 'var(--space-md)', borderColor: 'transparent', cursor: 'default' }} onClick={(e) => e.stopPropagation()}>
+        
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+          <h2 style={{ fontSize: '1.25rem', color: 'var(--color-text-primary)', margin: 0 }}>
+            {mode === 'create' ? 'New Profile' : mode === 'edit' ? 'Edit Profile' : 'Switch Profile'}
+          </h2>
+          <button 
+            style={{ background: '#F1F5F9', border: 'none', borderRadius: '50%', width: '32px', height: '32px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--color-text-secondary)', cursor: 'pointer' }}
+            onClick={onClose}
+          >
             <X size={20} />
           </button>
         </div>
 
         {mode === 'list' ? (
-          <>
-            <div className="profile-list">
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-md)' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-sm)' }}>
               {profiles.map(profile => {
                 const avatar = getAvatarById(profile.avatar);
                 const isActive = profile.id === activeId;
+                
                 return (
-                  <div 
-                    key={profile.id} 
-                    className={`profile-item ${isActive ? 'active' : ''}`}
-                  >
+                  <div key={profile.id} style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-sm)', padding: 'var(--space-sm)', borderRadius: 'var(--radius-md)', background: isActive ? '#F0FDF4' : 'white', border: `2px solid ${isActive ? 'var(--color-success)' : 'var(--color-border-default)'}` }}>
+                    
                     <button 
-                      className="profile-select"
+                      style={{ flex: 1, display: 'flex', alignItems: 'center', gap: 'var(--space-md)', background: 'none', border: 'none', cursor: 'pointer', textAlign: 'left', padding: 0 }}
                       onClick={() => { onSwitch(profile.id); onClose(); }}
                     >
-                      <span className="profile-avatar-lg">{avatar?.emoji || '🐼'}</span>
-                      <span className="profile-name">{profile.name}</span>
-                      {isActive && <Check size={18} className="active-check" />}
+                      <span className="avatar avatar-md" style={{ background: 'white' }}>{avatar?.emoji || '🐼'}</span>
+                      <span style={{ fontSize: '1.1rem', fontWeight: 700, color: 'var(--color-text-primary)' }}>{profile.name}</span>
+                      {isActive && <Check size={20} color="var(--color-success)" style={{ marginLeft: 'auto' }} />}
                     </button>
-                    <div className="profile-actions">
+                    
+                    <div style={{ display: 'flex', gap: '8px' }}>
                       <button 
-                        className="action-btn edit"
+                        style={{ background: '#F1F5F9', border: 'none', borderRadius: '50%', width: '32px', height: '32px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--color-info)', cursor: 'pointer' }}
                         onClick={() => startEdit(profile)}
                         aria-label="Edit profile"
                       >
@@ -103,7 +108,7 @@ const ProfileSwitcher = ({
                       </button>
                       {profiles.length > 1 && (
                         <button 
-                          className="action-btn delete"
+                          style={{ background: '#FEF2F2', border: 'none', borderRadius: '50%', width: '32px', height: '32px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--color-danger)', cursor: 'pointer' }}
                           onClick={() => handleDelete(profile.id)}
                           aria-label="Delete profile"
                         >
@@ -115,16 +120,19 @@ const ProfileSwitcher = ({
                 );
               })}
             </div>
-            <button className="add-profile-btn" onClick={startCreate}>
+            
+            <button className="btn btn-secondary" style={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }} onClick={startCreate}>
               <Plus size={20} />
               <span>Add New Profile</span>
             </button>
-          </>
+          </div>
         ) : (
-          <div className="profile-form">
-            <div className="form-group">
-              <label>Name</label>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-md)' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+              <label style={{ fontWeight: 700, color: 'var(--color-text-primary)' }}>Name</label>
               <input
+                className="input-text"
+                style={{ width: '100%' }}
                 type="text"
                 value={newName}
                 onChange={e => setNewName(e.target.value)}
@@ -133,27 +141,38 @@ const ProfileSwitcher = ({
                 maxLength={20}
               />
             </div>
-            <div className="form-group">
-              <label>Avatar</label>
-              <div className="avatar-grid">
-                {AVATARS.map(av => (
-                  <button
-                    key={av.id}
-                    type="button"
-                    className={`avatar-option ${selectedAvatar === av.id ? 'selected' : ''}`}
-                    onClick={() => setSelectedAvatar(av.id)}
-                  >
-                    <span className="avatar-emoji">{av.emoji}</span>
-                  </button>
-                ))}
+            
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+              <label style={{ fontWeight: 700, color: 'var(--color-text-primary)' }}>Avatar</label>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
+                {AVATARS.map(av => {
+                  const isSelected = selectedAvatar === av.id;
+                  return (
+                    <button
+                      key={av.id}
+                      type="button"
+                      className={`avatar avatar-md ${isSelected ? 'shadow-md' : 'shadow-sm'}`}
+                      style={{ 
+                        cursor: 'pointer',
+                        borderColor: isSelected ? 'var(--color-accent)' : 'var(--color-border-default)',
+                        background: isSelected ? 'var(--color-background-default)' : 'white'
+                      }}
+                      onClick={() => setSelectedAvatar(av.id)}
+                    >
+                      <span style={{ fontSize: '20px' }}>{av.emoji}</span>
+                    </button>
+                  );
+                })}
               </div>
             </div>
-            <div className="form-actions">
-              <button className="cancel-btn" onClick={cancelAction}>
+            
+            <div style={{ display: 'flex', gap: 'var(--space-md)', marginTop: '8px' }}>
+              <button className="btn btn-secondary" style={{ flex: 1 }} onClick={cancelAction}>
                 Cancel
               </button>
               <button 
-                className="save-btn" 
+                className="btn btn-primary" 
+                style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}
                 onClick={mode === 'create' ? handleCreate : handleUpdate}
                 disabled={!newName.trim()}
               >

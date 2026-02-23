@@ -1,32 +1,22 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { 
   Clock, Lightbulb, CheckCircle, XCircle, 
-  ChevronRight, AlertTriangle, BookOpen, Delete, RotateCcw 
+  ChevronRight, AlertTriangle, BookOpen, Delete, RotateCcw, Home 
 } from 'lucide-react';
-import './TypingQuiz.css';
-import './GameUI.css';
 
 const QUESTION_TIME_LIMIT = 30;
 
-// Difficulty levels
 const DIFFICULTY = {
-  EASY: 'easy',     // 1/3 characters hidden
-  MEDIUM: 'medium', // 1/2 characters hidden (beginning or end)
-  HARD: 'hard'      // All characters hidden
+  EASY: 'easy',     
+  MEDIUM: 'medium', 
+  HARD: 'hard'     
 };
 
-/**
- * Generate letter boxes for a word based on difficulty
- * @param {string} word - The word to display
- * @param {string} difficulty - EASY, MEDIUM, or HARD
- * @returns {Array} Array of letter box objects
- */
 function generateLetterBoxes(word, difficulty) {
   const upperWord = word.toUpperCase();
   const letters = upperWord.split('');
   const specialChars = [' ', "'", '-', '.', ','];
   
-  // Count only letter positions (not special chars)
   const letterPositions = letters.map((char, i) => ({ char, index: i, isSpecial: specialChars.includes(char) }));
   const editablePositions = letterPositions.filter(p => !p.isSpecial);
   const totalEditable = editablePositions.length;
@@ -34,12 +24,10 @@ function generateLetterBoxes(word, difficulty) {
   let hiddenIndices = new Set();
   
   if (difficulty === DIFFICULTY.EASY) {
-    // Hide ~1/3 of letters (scattered)
     const numToHide = Math.max(1, Math.ceil(totalEditable / 3));
     const shuffled = [...editablePositions].sort(() => Math.random() - 0.5);
     shuffled.slice(0, numToHide).forEach(p => hiddenIndices.add(p.index));
   } else if (difficulty === DIFFICULTY.MEDIUM) {
-    // Hide first half OR last half
     const numToHide = Math.ceil(totalEditable / 2);
     const hideFromStart = Math.random() > 0.5;
     const toHide = hideFromStart 
@@ -47,7 +35,6 @@ function generateLetterBoxes(word, difficulty) {
       : editablePositions.slice(-numToHide);
     toHide.forEach(p => hiddenIndices.add(p.index));
   } else {
-    // HARD: hide all letters
     editablePositions.forEach(p => hiddenIndices.add(p.index));
   }
   
@@ -65,12 +52,8 @@ function generateLetterBoxes(word, difficulty) {
   });
 }
 
-/**
- * Get adaptive difficulty based on word's learning data
- */
 function getAdaptiveDifficulty(wordData) {
   if (!wordData) return DIFFICULTY.EASY;
-  
   if (wordData.correctStreak >= 5 && wordData.weight <= 0.7) {
     return DIFFICULTY.HARD;
   } else if (wordData.correctStreak >= 2) {
@@ -96,14 +79,13 @@ const TypingQuiz = ({ words, onAnswer, onComplete, onHome, gameId, learningData 
   
   const inputRefs = useRef([]);
   const containerRef = useRef(null);
+  const [activeIndex, setActiveIndex] = useState(-1);
   
   const currentWord = words[currentIndex];
   
-  // Initialize letter boxes for current word - only when question changes
   useEffect(() => {
     if (!currentWord) return;
     
-    // Get adaptive difficulty based on learning data (read once at question start)
     const wordData = learningData[currentWord.word];
     const adaptiveDifficulty = getAdaptiveDifficulty(wordData);
     setDifficulty(adaptiveDifficulty);
@@ -117,18 +99,18 @@ const TypingQuiz = ({ words, onAnswer, onComplete, onHome, gameId, learningData 
     setFeedback(null);
     setIsAnswered(false);
     setTimeRemaining(QUESTION_TIME_LIMIT);
+    setActiveIndex(-1);
     
-    // Focus first hidden box after render
     setTimeout(() => {
       const firstHiddenIndex = boxes.findIndex(b => b.isHidden && !b.isSpecial);
       if (firstHiddenIndex >= 0 && inputRefs.current[firstHiddenIndex]) {
         inputRefs.current[firstHiddenIndex].focus();
+        setActiveIndex(firstHiddenIndex);
       }
     }, 100);
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [currentIndex]); // Only re-run when question index changes, not when learningData updates
+  }, [currentIndex]);
   
-  // Countdown timer
   useEffect(() => {
     if (isAnswered) return;
     
@@ -148,8 +130,8 @@ const TypingQuiz = ({ words, onAnswer, onComplete, onHome, gameId, learningData 
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const handleTimeUp = useCallback(() => {
     if (!isAnswered) {
-      // Direct call - safe because this is triggered from timer interval
       setIsAnswered(true);
+      setActiveIndex(-1);
       setFeedback({
         isCorrect: false,
         correctAnswer: currentWord?.word || '',
@@ -160,17 +142,14 @@ const TypingQuiz = ({ words, onAnswer, onComplete, onHome, gameId, learningData 
         onAnswer(currentWord.word, false, QUESTION_TIME_LIMIT * 1000);
       }
       
-      // Update results for timeout
       setResults(prev => ({
         ...prev,
         wrong: [...prev.wrong, currentWord],
         times: [...prev.times, QUESTION_TIME_LIMIT * 1000]
       }));
       
-      // Auto-advance after delay (6s for wrong/timeout)
       setTimeout(() => {
         if (currentIndex + 1 >= words.length) {
-          // Check if we should offer retry
           setShowRetryPrompt(true);
         } else {
           setCurrentIndex(prev => prev + 1);
@@ -179,7 +158,6 @@ const TypingQuiz = ({ words, onAnswer, onComplete, onHome, gameId, learningData 
     }
   }, [isAnswered, currentWord, currentIndex, words.length, onAnswer]);
   
-  // Find next/previous editable (hidden) box
   const findNextEditableIndex = (fromIndex, direction = 1) => {
     let i = fromIndex + direction;
     while (i >= 0 && i < letterBoxes.length) {
@@ -191,12 +169,11 @@ const TypingQuiz = ({ words, onAnswer, onComplete, onHome, gameId, learningData 
     return -1;
   };
   
-  // Handle input change in a letter box
   const handleInputChange = (index, value) => {
     if (isAnswered) return;
     
     const char = value.slice(-1).toUpperCase();
-    if (!char) return;
+    if (!char) return; // Ignore clear, handled by Backspace
     
     setKeystrokeCount(prev => prev + 1);
     
@@ -206,14 +183,16 @@ const TypingQuiz = ({ words, onAnswer, onComplete, onHome, gameId, learningData 
       return updated;
     });
     
-    // Auto-advance to next hidden box
     const nextIndex = findNextEditableIndex(index, 1);
     if (nextIndex >= 0 && inputRefs.current[nextIndex]) {
       inputRefs.current[nextIndex].focus();
+      setActiveIndex(nextIndex);
+    } else {
+      inputRefs.current[index].blur();
+      setActiveIndex(-1);
     }
   };
   
-  // Handle keydown for special keys
   const handleKeyDown = (index, e) => {
     if (isAnswered) return;
     
@@ -221,19 +200,18 @@ const TypingQuiz = ({ words, onAnswer, onComplete, onHome, gameId, learningData 
       e.preventDefault();
       setBackspaceCount(prev => prev + 1);
       
-      // Clear current box
       setLetterBoxes(prev => {
         const updated = [...prev];
         updated[index] = { ...updated[index], userInput: '' };
         return updated;
       });
       
-      // Move to previous editable box if current is empty
+      // If already empty, move back
       if (!letterBoxes[index].userInput) {
         const prevIndex = findNextEditableIndex(index, -1);
         if (prevIndex >= 0 && inputRefs.current[prevIndex]) {
           inputRefs.current[prevIndex].focus();
-          // Also clear that box
+          setActiveIndex(prevIndex);
           setLetterBoxes(prev => {
             const updated = [...prev];
             updated[prevIndex] = { ...updated[prevIndex], userInput: '' };
@@ -249,34 +227,27 @@ const TypingQuiz = ({ words, onAnswer, onComplete, onHome, gameId, learningData 
       const prevIndex = findNextEditableIndex(index, -1);
       if (prevIndex >= 0 && inputRefs.current[prevIndex]) {
         inputRefs.current[prevIndex].focus();
+        setActiveIndex(prevIndex);
       }
     } else if (e.key === 'ArrowRight') {
       e.preventDefault();
       const nextIndex = findNextEditableIndex(index, 1);
       if (nextIndex >= 0 && inputRefs.current[nextIndex]) {
         inputRefs.current[nextIndex].focus();
+        setActiveIndex(nextIndex);
       }
     }
   };
   
-  // Submit the answer
   const submitAnswer = (timedOut = false) => {
     if (isAnswered) return;
+    setActiveIndex(-1);
     
     const responseTimeMs = Date.now() - questionStartTime;
-    
-    // Build the user's answer
-    const userAnswer = letterBoxes.map(box => {
-      if (box.isHidden) {
-        return box.userInput || '';
-      }
-      return box.char;
-    }).join('');
-    
+    const userAnswer = letterBoxes.map(box => box.isHidden ? (box.userInput || '') : box.char).join('');
     const correctAnswer = currentWord.word.toUpperCase();
     const isCorrect = userAnswer === correctAnswer;
     
-    // Mark boxes as correct/incorrect
     setLetterBoxes(prev => prev.map(box => {
       if (box.isHidden) {
         const expectedChar = correctAnswer[box.index];
@@ -296,26 +267,21 @@ const TypingQuiz = ({ words, onAnswer, onComplete, onHome, gameId, learningData 
       userAnswer
     });
     
-    // Calculate hesitation penalty for learning algorithm
     const hesitationScore = keystrokeCount > 0 ? backspaceCount / keystrokeCount : 0;
     const adjustedResponseTime = responseTimeMs * (1 + hesitationScore * 0.5);
-    
-    // Report to learning algorithm (with retry modifier)
     const effectiveResponseTime = isRetryMode ? adjustedResponseTime * 1.5 : adjustedResponseTime;
+    
     onAnswer(currentWord.word, isCorrect, effectiveResponseTime);
     
-    // Update local results
     setResults(prev => ({
       correct: prev.correct + (isCorrect ? (isRetryMode ? 0.5 : 1) : 0),
       wrong: isCorrect ? prev.wrong : [...prev.wrong, currentWord],
       times: [...prev.times, responseTimeMs]
     }));
     
-    // Auto-advance after delay
     const delay = isCorrect ? 1500 : 6000;
     setTimeout(() => {
       if (currentIndex + 1 >= words.length) {
-        // Check if we should offer retry
         const wrongCount = results.wrong.length + (isCorrect ? 0 : 1);
         if (wrongCount > 0 && !isRetryMode) {
           setShowRetryPrompt(true);
@@ -328,7 +294,6 @@ const TypingQuiz = ({ words, onAnswer, onComplete, onHome, gameId, learningData 
     }, delay);
   };
   
-  // Finish the game
   const finishGame = () => {
     onComplete({
       gameId,
@@ -341,61 +306,48 @@ const TypingQuiz = ({ words, onAnswer, onComplete, onHome, gameId, learningData 
     });
   };
   
-  // Start retry mode
   const handleRetry = () => {
     setShowRetryPrompt(false);
     setIsRetryMode(true);
     setCurrentIndex(0);
-    // Reset to only retry wrong words - but for simplicity, we retry all with wrong words prioritized
-    // In a more complete implementation, we'd filter to only wrong words
   };
   
-  // Clear all inputs
   const handleClear = () => {
     if (isAnswered) return;
-    
     setLetterBoxes(prev => prev.map(box => ({
       ...box,
       userInput: box.isHidden ? '' : box.userInput
     })));
     
-    // Focus first hidden box
     const firstHiddenIndex = letterBoxes.findIndex(b => b.isHidden && !b.isSpecial);
     if (firstHiddenIndex >= 0 && inputRefs.current[firstHiddenIndex]) {
       inputRefs.current[firstHiddenIndex].focus();
+      setActiveIndex(firstHiddenIndex);
     }
   };
   
-  // Progress calculation
   const correctCount = Math.round(results.correct);
-  const wrongCount = results.wrong.length;
-  const correctPercent = (correctCount / words.length) * 100;
-  const wrongPercent = (wrongCount / words.length) * 100;
-  
-  // Timer urgency
   const isUrgent = timeRemaining <= 10;
   const isCritical = timeRemaining <= 5;
+  const timerPercent = (timeRemaining / QUESTION_TIME_LIMIT) * 100;
   
   if (!currentWord) return null;
   
-  // Retry prompt modal
   if (showRetryPrompt) {
     return (
-      <div className="typing-quiz-container">
-        <div className="retry-prompt-card">
-          <div className="retry-icon">🔄</div>
+      <div style={{ display: 'flex', justifyContent: 'center', padding: 'var(--space-xl)' }}>
+        <div className="card shadow-md" style={{ textAlign: 'center', width: '100%', maxWidth: '400px' }}>
+          <div style={{ fontSize: '48px', marginBottom: 'var(--space-md)' }}>🔄</div>
           <h2>Quiz Complete!</h2>
-          <p className="retry-score">You got <strong>{correctCount}</strong> out of <strong>{words.length}</strong> correct</p>
-          <p className="retry-wrong">❌ {results.wrong.length} words wrong. Want to try again?</p>
-          <p className="retry-note">⚠️ Retry answers count for 50% points</p>
-          <div className="retry-buttons">
-            <button className="retry-btn primary" onClick={handleRetry}>
-              <RotateCcw size={18} />
-              Retry Wrong Words
+          <p style={{ fontSize: '1.2rem', margin: 'var(--space-sm) 0' }}>You got <strong>{correctCount}</strong> out of <strong>{words.length}</strong> correct</p>
+          <p style={{ color: 'var(--color-danger)', fontWeight: 600 }}>❌ {results.wrong.length} words wrong. Want to try again?</p>
+          <p style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', marginBottom: 'var(--space-lg)' }}>⚠️ Retry answers count for 50% points</p>
+          <div style={{ display: 'flex', gap: 'var(--space-sm)' }}>
+            <button className="btn btn-primary" style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }} onClick={handleRetry}>
+              <RotateCcw size={18} /> Retry Wrong
             </button>
-            <button className="retry-btn secondary" onClick={finishGame}>
-              <CheckCircle size={18} />
-              Done
+            <button className="btn btn-secondary" style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }} onClick={finishGame}>
+              <CheckCircle size={18} /> Done
             </button>
           </div>
         </div>
@@ -404,47 +356,49 @@ const TypingQuiz = ({ words, onAnswer, onComplete, onHome, gameId, learningData 
   }
   
   return (
-    <div className="typing-quiz-container" ref={containerRef}>
-      {/* Header */}
-      <div className="typing-header">
-        <button className="home-btn-small" onClick={onHome} aria-label="Go home">
-          <span style={{ fontSize: '20px' }}>🏠</span>
+    <div style={{ maxWidth: '800px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: 'var(--space-lg)' }} ref={containerRef}>
+      
+      {/* HUD Header */}
+      <div className="game-hud" style={{ width: '100%', maxWidth: '100%' }}>
+        <button className="hud-btn" onClick={onHome} aria-label="Go home">
+          <Home size={20} />
         </button>
         
-        <div className="game-progress">
-          <div className="progress-bar segmented">
-            <div className="progress-segment correct" style={{ width: `${correctPercent}%` }} />
-            <div className="progress-segment wrong" style={{ width: `${wrongPercent}%` }} />
-          </div>
-          <div className="progress-info">
-            <span className="question-counter">
-              <span className="current">{currentIndex + 1}</span>
-              <span className="separator">/</span>
-              <span className="total">{words.length}</span>
-              {isRetryMode && <span className="retry-badge">RETRY</span>}
-            </span>
-            <span className={`timer ${isUrgent ? 'urgent' : ''} ${isCritical ? 'critical' : ''}`}>
-              <Clock size={16} />
-              <span className="time-value">{timeRemaining}s</span>
-            </span>
+        <div style={{ flex: 1, margin: '0 var(--space-md)' }}>
+          <div className={`timer-container ${isUrgent ? 'urgent' : ''}`}>
+            <div 
+              className={`timer-bar ${isCritical ? 'danger pulse' : isUrgent ? 'warning' : 'safe'}`} 
+              style={{ width: `${timerPercent}%` }}
+            />
+            <div className="timer-icon"><Clock size={16} /></div>
           </div>
         </div>
+
+        <div className="score-pill">
+          <span style={{ fontSize: '18px' }}>⭐</span>
+          <span className="score-text">{correctCount}</span>
+        </div>
+      </div>
+
+      <div style={{ textAlign: 'center', marginBottom: '-10px' }}>
+        <span className="badge badge-neutral">
+          Word {currentIndex + 1} of {words.length} {isRetryMode ? '(Retry)' : ''}
+        </span>
       </div>
       
       {/* Question Card */}
-      <div className="typing-question-card">
-        <div className="difficulty-badge" data-difficulty={difficulty}>
+      <div className="card shadow-md" style={{ width: '100%', padding: 'var(--space-xl)', textAlign: 'center', position: 'relative' }}>
+        <div className={`badge ${difficulty === DIFFICULTY.HARD ? 'badge-danger' : difficulty === DIFFICULTY.MEDIUM ? 'badge-neutral' : 'badge-success'}`} style={{ position: 'absolute', top: '16px', right: '16px' }}>
           {difficulty.toUpperCase()}
         </div>
         
-        <h2 className="definition">
+        <h2 style={{ fontSize: '1.5rem', margin: 'var(--space-lg) 0 var(--space-2xl) 0', color: 'var(--color-text-primary)' }}>
           {currentWord.definition || currentWord.vietnamese}
         </h2>
         
-        {/* Letter Box Grid - Group by words */}
-        <div className="letter-box-container">
+        {/* Letter Boxes */}
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 'var(--space-sm)', justifyContent: 'center', marginBottom: 'var(--space-2xl)' }}>
           {(() => {
-            // Split letterBoxes into word groups (at spaces)
             const wordGroups = [];
             let currentGroup = [];
             
@@ -458,64 +412,62 @@ const TypingQuiz = ({ words, onAnswer, onComplete, onHome, gameId, learningData 
                 currentGroup.push({ ...box, originalIndex: index });
               }
             });
-            
-            // Add last group
             if (currentGroup.length > 0) {
               wordGroups.push({ boxes: currentGroup, spaceAfter: false });
             }
             
             return wordGroups.map((group, groupIndex) => (
-              <div key={groupIndex} className="letter-box-row">
+              <div key={groupIndex} style={{ display: 'flex', gap: '4px', marginRight: group.spaceAfter ? 'var(--space-xl)' : '0' }}>
                 {group.boxes.map((box) => {
                   const index = box.originalIndex;
+                  const isActive = activeIndex === index;
                   
                   if (box.isSpecial) {
-                    // Special character (apostrophe, hyphen)
                     return (
-                      <div 
-                        key={index} 
-                        className="letter-box special"
-                        aria-label={box.char}
-                      >
+                      <div key={index} className="typing-cell" style={{ border: 'none', background: 'transparent', boxShadow: 'none' }}>
                         {box.char}
                       </div>
                     );
                   }
                   
                   if (!box.isHidden) {
-                    // Pre-filled letter (hint)
                     return (
-                      <div 
-                        key={index} 
-                        className="letter-box filled"
-                        aria-label={`Letter ${index + 1}: ${box.char}`}
-                      >
+                      <div key={index} className="typing-cell filled">
                         {box.char}
                       </div>
                     );
                   }
                   
-                  // Editable input box
-                  const boxClass = `letter-box input ${
-                    box.isCorrect === true ? 'correct' : 
-                    box.isCorrect === false ? 'incorrect' : ''
-                  }`;
+                  let cellClasses = 'typing-cell';
+                  let cellStyles = {};
+                  
+                  if (isActive) cellClasses += ' active';
+                  
+                  if (isAnswered) {
+                    if (box.isCorrect === true) {
+                       cellStyles = { borderColor: 'var(--color-success)', background: '#F0FDF4', color: 'var(--color-success)' };
+                    } else if (box.isCorrect === false) {
+                       cellStyles = { borderColor: 'var(--color-danger)', background: '#FEF2F2', color: 'var(--color-danger)' };
+                    }
+                  }
                   
                   return (
                     <input
                       key={index}
                       ref={el => inputRefs.current[index] = el}
                       type="text"
-                      className={boxClass}
+                      className={cellClasses}
+                      style={{ ...(isAnswered && box.isCorrect !== null ? cellStyles : {}), textAlign: 'center', textTransform: 'uppercase' }}
                       value={box.userInput}
                       onChange={(e) => handleInputChange(index, e.target.value)}
                       onKeyDown={(e) => handleKeyDown(index, e)}
+                      onFocus={() => setActiveIndex(index)}
+                      onBlur={() => { if (activeIndex === index) setActiveIndex(-1) }}
                       maxLength={1}
                       disabled={isAnswered}
                       autoComplete="off"
                       autoCapitalize="off"
                       autoCorrect="off"
-                      aria-label={`Letter ${index + 1} of ${letterBoxes.length}, empty`}
                     />
                   );
                 })}
@@ -525,90 +477,69 @@ const TypingQuiz = ({ words, onAnswer, onComplete, onHome, gameId, learningData 
         </div>
         
         {/* Action Buttons */}
-        <div className="action-buttons">
-          <button 
-            className="action-btn clear" 
-            onClick={handleClear}
-            disabled={isAnswered}
-          >
-            <Delete size={18} />
-            Clear
+        <div style={{ display: 'flex', gap: 'var(--space-md)', justifyContent: 'center', marginBottom: 'var(--space-lg)' }}>
+          <button className="btn btn-secondary" style={{ display: 'flex', alignItems: 'center', gap: '8px' }} onClick={handleClear} disabled={isAnswered}>
+            <Delete size={18} /> Clear
           </button>
-          <button 
-            className="action-btn submit" 
-            onClick={() => submitAnswer(false)}
-            disabled={isAnswered}
-          >
-            <CheckCircle size={18} />
-            Submit
+          <button className="btn btn-primary" style={{ display: 'flex', alignItems: 'center', gap: '8px' }} onClick={() => submitAnswer(false)} disabled={isAnswered}>
+            <CheckCircle size={18} /> Submit
           </button>
         </div>
         
-        {/* Hint Button */}
+        {/* Hint System */}
         {currentWord.definition && !isAnswered && !showHint && (
-          <button className="hint-btn" onClick={() => setShowHint(true)}>
-            <Lightbulb size={18} />
-            <span>Show Hint</span>
+          <button className="btn btn-secondary" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', margin: '0 auto' }} onClick={() => setShowHint(true)}>
+            <Lightbulb size={18} /> Show Hint
           </button>
         )}
         
-        {/* Hint Display */}
         {showHint && !isAnswered && (
-          <div className="hint-bubble">
-            <Lightbulb size={16} />
-            <div className="hint-content">
-              {currentWord.example && (
-                <p className="hint-example">"{currentWord.example}"</p>
-              )}
-              {currentWord.vietnamese && (
-                <p className="hint-vietnamese">{currentWord.vietnamese}</p>
-              )}
+          <div style={{ marginTop: 'var(--space-md)', padding: 'var(--space-md)', background: '#FEF3C7', borderRadius: 'var(--radius-lg)', border: '2px solid #FCD34D', textAlign: 'left' }}>
+            <div style={{ display: 'flex', gap: '8px', alignItems: 'flex-start' }}>
+              <Lightbulb size={20} color="#D97706" style={{ marginTop: '2px' }} />
+              <div>
+                {currentWord.example && <p style={{ margin: '0 0 4px', fontStyle: 'italic', color: '#92400E' }}>"{currentWord.example}"</p>}
+                {currentWord.vietnamese && <p style={{ margin: 0, fontWeight: 600, color: '#B45309' }}>{currentWord.vietnamese}</p>}
+              </div>
             </div>
           </div>
         )}
         
         {/* Feedback */}
         {feedback && (
-          <div className={`feedback-card ${feedback.isCorrect ? 'correct' : 'incorrect'}`}>
-            <div className="feedback-header">
-              {feedback.timedOut ? (
-                <>
-                  <AlertTriangle size={24} />
-                  <span>Time's up! Answer: <strong>{feedback.correctAnswer}</strong></span>
-                </>
-              ) : feedback.isCorrect ? (
-                <>
-                  <CheckCircle size={24} />
-                  <span>Correct! Well done!</span>
-                </>
-              ) : (
-                <>
-                  <XCircle size={24} />
-                  <span>The answer is <strong>{feedback.correctAnswer}</strong></span>
-                </>
-              )}
-              <ChevronRight size={20} className="next-icon" />
+          <div style={{ 
+            marginTop: 'var(--space-lg)', 
+            padding: 'var(--space-md)', 
+            borderRadius: 'var(--radius-lg)',
+            background: feedback.isCorrect ? '#F0FDF4' : '#FEF2F2',
+            border: `3px solid ${feedback.isCorrect ? 'var(--color-success)' : 'var(--color-danger)'}`,
+            textAlign: 'left'
+          }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: feedback.isCorrect ? 'var(--color-success-hover)' : 'var(--color-danger-hover)' }}>
+              {feedback.timedOut ? <AlertTriangle size={24} /> : feedback.isCorrect ? <CheckCircle size={24} /> : <XCircle size={24} />}
+              <span style={{ fontSize: '1.2rem', fontWeight: 700 }}>
+                {feedback.timedOut ? 'Time\'s up!' : feedback.isCorrect ? 'Correct! Well done!' : 'Oops!'}
+              </span>
             </div>
             
-            {/* Learning Context - Only show on wrong answer */}
             {!feedback.isCorrect && (
-              <div className="learning-context">
-                <div className="learning-header">
-                  <BookOpen size={16} />
-                  <span>Let's learn this word!</span>
+              <div style={{ marginTop: 'var(--space-sm)' }}>
+                <p style={{ margin: 0, fontSize: '1.1rem', color: 'var(--color-text-primary)' }}>
+                  The answer is <strong style={{ color: 'var(--color-danger)' }}>{feedback.correctAnswer}</strong>
+                </p>
+                
+                <div style={{ marginTop: 'var(--space-md)', padding: 'var(--space-sm)', background: 'white', borderRadius: 'var(--radius-md)' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '6px', color: 'var(--color-info)', marginBottom: '4px', fontWeight: 700 }}>
+                    <BookOpen size={16} /> Let's review:
+                  </div>
+                  {currentWord.example && <p style={{ margin: '0 0 4px', fontSize: '0.9rem' }}>"{currentWord.example}"</p>}
+                  {currentWord.vietnamese && <p style={{ margin: 0, fontSize: '0.9rem', color: 'var(--color-text-secondary)', fontWeight: 600 }}>{currentWord.vietnamese}</p>}
                 </div>
-                {currentWord.example && (
-                  <p className="learning-example">
-                    <strong>Example:</strong> "{currentWord.example}"
-                  </p>
-                )}
-                {currentWord.vietnamese && (
-                  <p className="learning-vietnamese">
-                    <strong>Meaning:</strong> {currentWord.vietnamese}
-                  </p>
-                )}
               </div>
             )}
+            <div style={{ marginTop: 'var(--space-sm)', textAlign: 'center', opacity: 0.6, fontSize: '0.9rem', fontWeight: 600 }}>
+              Loading next word <ChevronRight size={16} style={{ display: 'inline', verticalAlign: 'middle' }} />
+            </div>
           </div>
         )}
       </div>

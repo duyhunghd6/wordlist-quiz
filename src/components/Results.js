@@ -7,24 +7,27 @@ const Results = ({ score, questions, userAnswers, playAgain, saveResult, playerN
   const correctCount = userAnswers.filter(a => a.isCorrect).length;
   const wrongCount = userAnswers.filter(a => !a.isCorrect).length;
   
-  // Determine performance level
-  let performanceEmoji, performanceText, performanceClass;
+  let performanceEmoji, performanceText, performanceColor, performanceBg;
   if (percentage >= 90) {
     performanceEmoji = '🏆';
     performanceText = 'Amazing!';
-    performanceClass = 'excellent';
+    performanceColor = 'var(--color-success)';
+    performanceBg = '#F0FDF4'; // emerald-50
   } else if (percentage >= 70) {
     performanceEmoji = '⭐';
     performanceText = 'Great job!';
-    performanceClass = 'good';
+    performanceColor = 'var(--color-success)';
+    performanceBg = '#F0FDF4'; 
   } else if (percentage >= 50) {
     performanceEmoji = '👍';
     performanceText = 'Keep practicing!';
-    performanceClass = 'okay';
+    performanceColor = '#F59E0B'; // amber
+    performanceBg = '#FFFBEB';
   } else {
     performanceEmoji = '💪';
     performanceText = 'Try again!';
-    performanceClass = 'needs-work';
+    performanceColor = 'var(--color-danger)';
+    performanceBg = '#FEF2F2';
   }
 
   const handlePlayAgain = () => {
@@ -33,84 +36,84 @@ const Results = ({ score, questions, userAnswers, playAgain, saveResult, playerN
   };
 
   return (
-    <div className="results-container">
+    <div style={{ maxWidth: '600px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: 'var(--space-lg)', padding: 'var(--space-md)' }}>
       {/* Hero Score */}
-      <div className={`score-hero ${performanceClass}`}>
-        <span className="performance-emoji">{performanceEmoji}</span>
-        <h1 className="score-value">{percentage}%</h1>
-        <p className="performance-text">{performanceText}</p>
+      <div className="card shadow-lg" style={{ textAlign: 'center', padding: 'var(--space-2xl) var(--space-xl)', backgroundColor: performanceBg, border: `2px solid ${performanceColor}` }}>
+        <div style={{ fontSize: '4rem', lineHeight: 1, marginBottom: 'var(--space-sm)' }}>{performanceEmoji}</div>
+        <h1 style={{ fontSize: '3.5rem', fontWeight: 800, margin: '0 0 var(--space-xs) 0', color: performanceColor }}>{percentage}%</h1>
+        <p style={{ fontSize: '1.2rem', fontWeight: 700, margin: '0 0 var(--space-xl) 0', color: 'var(--color-text-primary)' }}>{performanceText}</p>
         
-        <div className="score-breakdown">
-          <span className="stat correct">
-            <CheckCircle size={18} />
-            {correctCount} correct
-          </span>
-          <span className="stat wrong">
-            <XCircle size={18} />
-            {wrongCount} wrong
-          </span>
+        <div style={{ display: 'flex', justifyContent: 'center', gap: 'var(--space-xl)' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--color-success)' }}>
+            <CheckCircle size={24} />
+            <span style={{ fontSize: '1.2rem', fontWeight: 800 }}>{correctCount} correct</span>
+          </div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--color-danger)' }}>
+            <XCircle size={24} />
+            <span style={{ fontSize: '1.2rem', fontWeight: 800 }}>{wrongCount} wrong</span>
+          </div>
         </div>
       </div>
 
       {/* Action Buttons */}
-      <div className="action-buttons">
-        <button className="play-again-btn" onClick={handlePlayAgain}>
+      <div style={{ display: 'flex', gap: 'var(--space-md)' }}>
+        <button className="btn btn-primary" style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', padding: 'var(--space-md)' }} onClick={handlePlayAgain}>
           <RotateCcw size={20} />
           <span>Play Again</span>
         </button>
-        <button className="home-btn" onClick={playAgain}>
+        <button className="btn btn-secondary" style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', padding: 'var(--space-md)' }} onClick={playAgain}>
           <Home size={20} />
           <span>Home</span>
         </button>
       </div>
 
       {/* Answer Review */}
-      <div className="answers-review">
-        <h2>Review Answers</h2>
-        <div className="answers-list">
-            {userAnswers.map((answer, index) => (
+      <div className="card shadow-sm" style={{ padding: 'var(--space-xl)' }}>
+        <h2 style={{ fontSize: '1.5rem', margin: '0 0 var(--space-lg) 0', color: 'var(--color-text-primary)' }}>Review Answers</h2>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-md)' }}>
+          {userAnswers.map((answer, index) => (
             <div 
               key={index} 
-              className={`answer-card ${answer.isCorrect ? 'correct' : 'incorrect'}`}
+              style={{ padding: 'var(--space-md)', borderRadius: 'var(--radius-lg)', backgroundColor: answer.isCorrect ? '#F0FDF4' : '#FEF2F2', border: `1px solid ${answer.isCorrect ? '#BBF7D0' : '#FECACA'}` }}
             >
-              <div className="answer-header">
-                <span className="question-number">Q{index + 1}</span>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 'var(--space-xs)' }}>
+                <span className="badge badge-neutral" style={{ padding: '2px 8px' }}>Q{index + 1}</span>
                 {answer.isCorrect ? (
-                  <CheckCircle size={20} className="status-icon" />
+                  <CheckCircle size={20} color="var(--color-success)" />
                 ) : (
-                  <XCircle size={20} className="status-icon" />
+                  <XCircle size={20} color="var(--color-danger)" />
                 )}
               </div>
               
-              <p className="question-text">{answer.question.definition}</p>
+              <p style={{ fontSize: '1.1rem', fontWeight: 600, color: 'var(--color-text-primary)', margin: '0 0 var(--space-sm) 0' }}>{answer.question.definition}</p>
               
-              <div className="answer-details">
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
                 {answer.isCorrect ? (
-                  <div className="correct-answer-display">
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--color-success)' }}>
                     <CheckCircle size={16} />
-                    <span><strong>{answer.question.word}</strong></span>
+                    <span style={{ fontWeight: 800 }}>{answer.question.word}</span>
                   </div>
                 ) : (
                   <>
-                    <div className="your-answer">
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--color-danger)' }}>
                       <XCircle size={16} />
-                      <span>{answer.selected || 'No answer'}</span>
+                      <span style={{ fontWeight: 600, textDecoration: 'line-through' }}>{answer.selected || 'No answer'}</span>
                     </div>
-                    <div className="correct-answer-display">
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--color-success)' }}>
                       <CheckCircle size={16} />
-                      <span><strong>{answer.question.word}</strong></span>
+                      <span style={{ fontWeight: 800 }}>{answer.question.word}</span>
                     </div>
                     
-                    {/* Learning context for wrong answers */}
-                    <div className="learning-review">
+                    {/* Learning context */}
+                    <div style={{ marginTop: 'var(--space-sm)', padding: 'var(--space-sm)', backgroundColor: 'white', borderRadius: 'var(--radius-md)' }}>
                       {answer.question.example && (
-                        <p className="review-example">
-                          <strong>Example:</strong> "{answer.question.example}"
+                        <p style={{ fontSize: '0.9rem', color: 'var(--color-text-secondary)', margin: '0 0 4px 0' }}>
+                          <strong style={{ color: 'var(--color-info)' }}>Example:</strong> "{answer.question.example}"
                         </p>
                       )}
                       {answer.question.vietnamese && (
-                        <p className="review-vietnamese">
-                          <strong>Meaning:</strong> {answer.question.vietnamese}
+                        <p style={{ fontSize: '0.9rem', color: 'var(--color-text-secondary)', margin: '0' }}>
+                          <strong style={{ color: 'var(--color-info)' }}>Meaning:</strong> {answer.question.vietnamese}
                         </p>
                       )}
                     </div>
@@ -118,9 +121,8 @@ const Results = ({ score, questions, userAnswers, playAgain, saveResult, playerN
                 )}
               </div>
 
-              {/* Response time indicator */}
               {answer.responseTime && (
-                <div className="response-time">
+                <div style={{ display: 'flex', alignItems: 'center', gap: '4px', fontSize: '0.8rem', color: 'var(--color-text-secondary)', fontWeight: 600, marginTop: 'var(--space-sm)' }}>
                   <Zap size={12} />
                   <span>{(answer.responseTime / 1000).toFixed(1)}s</span>
                 </div>

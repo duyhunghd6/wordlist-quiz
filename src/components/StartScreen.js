@@ -1,7 +1,6 @@
 import React from 'react';
-import { BookOpen, Calculator, Microscope, BarChart3, Play, CheckSquare, Square, Pencil } from 'lucide-react';
+import { BookOpen, Calculator, Microscope, BarChart3, Play, Check, CheckSquare, Square, Pencil } from 'lucide-react';
 import GameSelector from './GameSelector';
-import './StartScreen.css';
 
 const SUBJECTS = {
   wordlist_esl: {
@@ -53,49 +52,52 @@ const StartScreen = ({
       setSelectedUnits([...units]);
     }
   };
+  
   return (
-    <div className="start-screen">
+    <div style={{ maxWidth: '600px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: 'var(--space-xl)', paddingBottom: 'var(--space-2xl)' }}>
       {/* Profile Header */}
-      <header className="profile-header">
-        <div className="profile-info">
+      <div className="flex-row shadow-sm" style={{ padding: 'var(--space-sm) var(--space-md)', justifyContent: 'space-between', alignItems: 'center', background: 'white', border: '3px solid var(--color-border-default)', borderRadius: 'var(--radius-xl)' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-sm)' }}>
           <button 
-            className="profile-avatar-btn"
             onClick={onProfileClick}
+            className="avatar avatar-md"
+            style={{ cursor: 'pointer', background: 'var(--color-background-default)', border: '2px solid var(--color-border-default)' }}
             aria-label="Switch profile"
           >
-            <span className="profile-avatar">{avatar?.emoji || '🐼'}</span>
+            <span style={{ fontSize: '24px' }}>{avatar?.emoji || '🐼'}</span>
           </button>
-          <span className="profile-greeting">
-            Hi, <strong>{profile?.name || 'Student'}</strong>!
-          </span>
-          <button 
-            className="edit-name-btn"
-            onClick={onEditName}
-            aria-label="Edit profile name"
-          >
-            <Pencil size={14} />
-          </button>
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
+            <span style={{ fontSize: '1rem', fontWeight: 700, color: 'var(--color-text-primary)' }}>
+              Hi, {profile?.name || 'Student'}!
+            </span>
+            <button 
+              onClick={onEditName}
+              style={{ background: 'none', border: 'none', padding: 0, color: 'var(--color-text-secondary)', fontSize: '0.8rem', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '4px' }}
+            >
+              <Pencil size={12} /> Edit Name
+            </button>
+          </div>
         </div>
+        
         <button 
-          className="report-btn"
+          className="badge badge-neutral"
           onClick={onOpenParentReport}
-          aria-label="View Parent Report"
+          style={{ display: 'flex', alignItems: 'center', gap: '4px', cursor: 'pointer', height: 'fit-content' }}
         >
-          <BarChart3 size={20} />
-          <span>Report</span>
+          <BarChart3 size={14} /> Report
         </button>
-      </header>
+      </div>
 
       {/* Hero Title */}
-      <div className="hero">
-        <h1>Wordlist Quiz</h1>
-        <p className="tagline">Learn new words through fun games!</p>
+      <div style={{ textAlign: 'center' }}>
+        <h1 style={{ color: 'var(--color-info)', fontSize: '2.5rem', marginBottom: '8px' }}>Wordlist Quiz</h1>
+        <p style={{ color: 'var(--color-text-secondary)', margin: 0, fontSize: '1.1rem', fontWeight: 600 }}>Learn new words through fun games!</p>
       </div>
       
       {/* Subject Selection */}
-      <section className="section">
-        <h2>Pick a Subject</h2>
-        <div className="subject-grid">
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-sm)' }}>
+        <h2 style={{ fontSize: '1.2rem', color: 'var(--color-text-primary)' }}>Pick a Subject</h2>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 'var(--space-sm)' }}>
           {wordlists.map(wl => {
             const subject = SUBJECTS[wl] || { name: wl, icon: BookOpen, color: 'esl' };
             const Icon = subject.icon;
@@ -103,106 +105,129 @@ const StartScreen = ({
             return (
               <button 
                 key={wl} 
+                className="card"
+                style={{ 
+                  width: '100%', 
+                  cursor: 'pointer', 
+                  display: 'flex', 
+                  flexDirection: 'column', 
+                  alignItems: 'center', 
+                  gap: 'var(--space-sm)',
+                  borderColor: isSelected ? 'var(--color-info)' : 'var(--color-border-default)',
+                  background: isSelected ? '#EFF6FF' : 'white',
+                  boxShadow: isSelected ? '0 8px 0 var(--color-info)' : '0 4px 0 var(--color-border-default)',
+                  transform: isSelected ? 'translateY(-4px)' : 'none',
+                  transition: 'all 0.2s'
+                }}
                 onClick={() => handleWordlistChange(wl)}
-                className={`subject-card subject-${subject.color} ${isSelected ? 'selected' : ''}`}
-                aria-pressed={isSelected}
               >
-                <div className="subject-icon">
-                  <Icon size={40} strokeWidth={2} />
+                <div style={{ 
+                  width: '48px', height: '48px', borderRadius: 'var(--radius-md)', 
+                  background: isSelected ? 'var(--color-info)' : 'var(--color-background-default)', 
+                  color: isSelected ? 'white' : 'var(--color-info)',
+                  display: 'flex', alignItems: 'center', justifyContent: 'center'
+                }}>
+                  <Icon size={24} strokeWidth={2.5} />
                 </div>
-                <span className="subject-name">{subject.name}</span>
+                <span style={{ fontWeight: 700, fontSize: '0.9rem', color: 'var(--color-text-primary)' }}>{subject.name}</span>
               </button>
             );
           })}
         </div>
-      </section>
+      </div>
 
       {/* Recent History */}
       {selectedWordlist && history[selectedWordlist]?.length > 0 && (
-        <section className="history-card">
-          <h3>Recent Plays</h3>
-          <div className="history-list">
+        <div className="card" style={{ width: '100%', borderColor: 'var(--color-success)', background: '#F0FDF4' }}>
+          <h4 style={{ color: 'var(--color-success-hover)' }}>Recent Plays</h4>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
             {history[selectedWordlist].slice(0, 3).map((res, i) => (
-              <div key={i} className="history-item">
-                <span className="history-date">{new Date(res.date).toLocaleDateString()}</span>
-                <span className="history-score">{res.score}%</span>
+              <div key={i} style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.9rem', fontWeight: 600 }}>
+                <span style={{ color: 'var(--color-text-secondary)' }}>{new Date(res.date).toLocaleDateString()}</span>
+                <span style={{ color: 'var(--color-success)' }}>{res.score}%</span>
               </div>
             ))}
           </div>
-        </section>
+        </div>
       )}
 
-      {/* Game Options - Only show after subject selected */}
+      {/* Game Options */}
       {wordlist && (
         <>
           {/* Game Selector */}
-          <GameSelector
-            selectedGame={selectedGame}
-            onSelectGame={onSelectGame}
-            gameStats={gameStats}
-          />
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-sm)' }}>
+            <h2 style={{ fontSize: '1.2rem', color: 'var(--color-text-primary)' }}>Choose Game</h2>
+            <GameSelector
+              selectedGame={selectedGame}
+              onSelectGame={onSelectGame}
+              gameStats={gameStats}
+            />
+          </div>
 
           {/* Unit Selection */}
-          <section className="section">
-            <div className="section-header">
-              <h2>Choose Units</h2>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-sm)' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+              <h2 style={{ fontSize: '1.2rem', color: 'var(--color-text-primary)', margin: 0 }}>Choose Units</h2>
               <button 
-                className="select-all-btn"
+                className="badge badge-neutral"
+                style={{ cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '4px' }}
                 onClick={handleSelectAll}
-                aria-label={allSelected ? 'Unselect all units' : 'Select all units'}
               >
-                {allSelected ? (
-                  <><Square size={14} /> <span>Clear</span></>
-                ) : (
-                  <><CheckSquare size={14} /> <span>All</span></>
-                )}
+                {allSelected ? <Square size={14} /> : <CheckSquare size={14} />}
+                {allSelected ? 'Clear' : 'Select All'}
               </button>
             </div>
-            <div className="unit-grid">
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: 'var(--space-sm)' }}>
               {units.map(unit => {
                 const isChecked = selectedUnits.includes(unit);
                 return (
                   <label 
                     key={unit} 
-                    className={`unit-chip ${isChecked ? 'checked' : ''}`}
+                    className={`kids-checkbox ${isChecked ? '' : 'default'}`}
+                    style={{ background: 'white', padding: 'var(--space-sm)', borderRadius: 'var(--radius-md)', border: '2px solid var(--color-border-default)', cursor: 'pointer' }}
                   >
                     <input
                       type="checkbox"
                       value={unit}
                       checked={isChecked}
                       onChange={handleUnitChange}
+                      style={{ display: 'none' }}
                     />
+                    <div className={`k-box ${isChecked ? 'selected' : 'default'}`} style={{ width: '24px', height: '24px' }}>
+                      {isChecked && <i><Check size={16} strokeWidth={4} /></i>}
+                    </div>
                     <span>Unit {unit}</span>
                   </label>
                 );
               })}
             </div>
-          </section>
+          </div>
 
-          {/* Question Count */}
-          <section className="section">
-            <h2>How Many Questions?</h2>
-            <div className="question-pills">
+          {/* Question Count using Segmented Control strategy */}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-sm)' }}>
+            <h2 style={{ fontSize: '1.2rem', color: 'var(--color-text-primary)' }}>How Many Words?</h2>
+            <div className="segmented-control" style={{ maxWidth: '300px' }}>
               {[5, 10, 20].map(num => (
                 <button
                   key={num}
-                  className={`question-pill ${numQuestions === num ? 'selected' : ''}`}
+                  className={`seg-btn ${numQuestions === num ? 'active' : ''}`}
+                  style={{ flex: 1 }}
                   onClick={() => setNumQuestions(num)}
-                  aria-pressed={numQuestions === num}
                 >
                   {num}
                 </button>
               ))}
             </div>
-          </section>
+          </div>
 
           {/* Start Button */}
           <button 
-            className="start-button"
+            className="btn btn-primary"
+            style={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', fontSize: '1.5rem', padding: 'var(--space-lg)' }}
             onClick={startQuiz} 
             disabled={selectedUnits.length === 0}
           >
-            <Play size={24} fill="currentColor" />
+            <Play size={28} fill="currentColor" />
             <span>Start {selectedGame === 'quiz' ? 'Quiz' : 'Game'}!</span>
           </button>
         </>

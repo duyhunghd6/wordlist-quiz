@@ -1,21 +1,11 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-import { Clock, CheckCircle, XCircle, ChevronRight, BookOpen, RotateCcw } from 'lucide-react';
-import './GameUI.css';
-import './WordScramble.css';
-
-/**
- * WordScramble Game Component
- * 
- * Kids drag and drop to REARRANGE scrambled letters in a single row.
- * Time: 5 seconds per character.
- * Single difficulty level with retry feature.
- */
+import { Clock, CheckCircle, XCircle, ChevronRight, BookOpen, RotateCcw, Home } from 'lucide-react';
 
 const SECONDS_PER_CHAR = 5;
 
 const WordScramble = ({ words, onAnswer, onComplete, onHome, gameId = 'scramble' }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [letters, setLetters] = useState([]); // Single array of letters to rearrange
+  const [letters, setLetters] = useState([]);
   const [feedback, setFeedback] = useState(null);
   const [isAnswered, setIsAnswered] = useState(false);
   const [timeRemaining, setTimeRemaining] = useState(0);
@@ -25,29 +15,26 @@ const WordScramble = ({ words, onAnswer, onComplete, onHome, gameId = 'scramble'
   const [showRetryPrompt, setShowRetryPrompt] = useState(false);
   const [draggedIndex, setDraggedIndex] = useState(null);
   const [dragOverIndex, setDragOverIndex] = useState(null);
+  const [selectedIndex, setSelectedIndex] = useState(null);
   
   const resultsRef = useRef(results);
   const timerRef = useRef(null);
   
   const currentWord = words[currentIndex];
   
-  // Keep results ref updated
   useEffect(() => {
     resultsRef.current = results;
   }, [results]);
   
-  // Scramble word letters - returns shuffled array
   const scrambleWord = useCallback((word) => {
     const chars = word.toUpperCase().split('');
     const letters = chars.map((letter, idx) => ({ id: idx, letter, originalIndex: idx }));
     
-    // Shuffle using Fisher-Yates
     for (let i = letters.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [letters[i], letters[j]] = [letters[j], letters[i]];
     }
     
-    // Ensure it's actually scrambled (not same as original)
     const isOriginalOrder = letters.every((l, i) => l.originalIndex === i);
     if (isOriginalOrder && letters.length > 1) {
       [letters[0], letters[1]] = [letters[1], letters[0]];
@@ -56,11 +43,10 @@ const WordScramble = ({ words, onAnswer, onComplete, onHome, gameId = 'scramble'
     return letters;
   }, []);
   
-  // Initialize question
   useEffect(() => {
     if (!currentWord) return;
     
-    const wordText = currentWord.word.replace(/\s+/g, ''); // Remove spaces
+    const wordText = currentWord.word.replace(/\s+/g, '');
     const timeLimit = wordText.length * SECONDS_PER_CHAR;
     
     setLetters(scrambleWord(wordText));
@@ -68,8 +54,8 @@ const WordScramble = ({ words, onAnswer, onComplete, onHome, gameId = 'scramble'
     setQuestionStartTime(Date.now());
     setFeedback(null);
     setIsAnswered(false);
+    setSelectedIndex(null);
     
-    // Start timer
     if (timerRef.current) clearInterval(timerRef.current);
     timerRef.current = setInterval(() => {
       setTimeRemaining(prev => {
@@ -87,7 +73,6 @@ const WordScramble = ({ words, onAnswer, onComplete, onHome, gameId = 'scramble'
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentIndex, scrambleWord]);
   
-  // Handle timeout
   const handleTimeUp = useCallback(() => {
     if (isAnswered) return;
     clearInterval(timerRef.current);
@@ -115,7 +100,6 @@ const WordScramble = ({ words, onAnswer, onComplete, onHome, gameId = 'scramble'
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isAnswered, currentWord, onAnswer, timeRemaining]);
   
-  // Finish game
   const finishGame = useCallback(() => {
     const currentResults = resultsRef.current;
     onComplete({
@@ -129,7 +113,6 @@ const WordScramble = ({ words, onAnswer, onComplete, onHome, gameId = 'scramble'
     });
   }, [gameId, words.length, onComplete]);
   
-  // Start retry
   const handleRetry = useCallback(() => {
     setShowRetryPrompt(false);
     setIsRetryMode(true);
@@ -137,7 +120,6 @@ const WordScramble = ({ words, onAnswer, onComplete, onHome, gameId = 'scramble'
     setResults(prev => ({ ...prev, wrong: [] }));
   }, []);
   
-  // Proceed to next question
   const proceedToNext = useCallback((wasCorrect) => {
     if (currentIndex + 1 >= words.length) {
       const currentResults = resultsRef.current;
@@ -153,7 +135,6 @@ const WordScramble = ({ words, onAnswer, onComplete, onHome, gameId = 'scramble'
     }
   }, [currentIndex, words.length, isRetryMode, finishGame]);
   
-  // Check if current arrangement is correct
   const checkAnswer = useCallback(() => {
     if (isAnswered) return;
     
@@ -163,6 +144,7 @@ const WordScramble = ({ words, onAnswer, onComplete, onHome, gameId = 'scramble'
     
     clearInterval(timerRef.current);
     setIsAnswered(true);
+    setSelectedIndex(null);
     
     const responseTimeMs = Date.now() - questionStartTime;
     onAnswer(currentWord.word, isCorrect, responseTimeMs);
@@ -184,7 +166,7 @@ const WordScramble = ({ words, onAnswer, onComplete, onHome, gameId = 'scramble'
     }, isCorrect ? 1500 : 4000);
   }, [isAnswered, letters, currentWord, questionStartTime, onAnswer, isRetryMode, proceedToNext]);
   
-  // Drag handlers - for reordering within the single row
+  // Drag handlers
   const handleDragStart = (e, index) => {
     if (isAnswered) return;
     setDraggedIndex(index);
@@ -206,7 +188,6 @@ const WordScramble = ({ words, onAnswer, onComplete, onHome, gameId = 'scramble'
     e.preventDefault();
     if (draggedIndex === null || draggedIndex === targetIndex) return;
     
-    // Swap the two letters
     setLetters(prev => {
       const newLetters = [...prev];
       [newLetters[draggedIndex], newLetters[targetIndex]] = [newLetters[targetIndex], newLetters[draggedIndex]];
@@ -222,20 +203,15 @@ const WordScramble = ({ words, onAnswer, onComplete, onHome, gameId = 'scramble'
     setDragOverIndex(null);
   };
   
-  // Touch-friendly: tap to select, tap another to swap
-  const [selectedIndex, setSelectedIndex] = useState(null);
-  
+  // Touch
   const handleLetterTap = (index) => {
     if (isAnswered) return;
     
     if (selectedIndex === null) {
-      // First tap - select this letter
       setSelectedIndex(index);
     } else if (selectedIndex === index) {
-      // Tap same letter - deselect
       setSelectedIndex(null);
     } else {
-      // Second tap - swap with selected
       setLetters(prev => {
         const newLetters = [...prev];
         [newLetters[selectedIndex], newLetters[index]] = [newLetters[index], newLetters[selectedIndex]];
@@ -245,142 +221,159 @@ const WordScramble = ({ words, onAnswer, onComplete, onHome, gameId = 'scramble'
     }
   };
   
-  if (words.length === 0) {
-    return <div className="scramble-container">Loading...</div>;
-  }
+  if (words.length === 0) return <div>Loading...</div>;
   
   const wordLength = currentWord?.word.replace(/\s+/g, '').length || 0;
   const isUrgent = timeRemaining <= 10;
   const isCritical = timeRemaining <= 5;
+  const maxTime = wordLength * SECONDS_PER_CHAR;
+  const timerPercent = (timeRemaining / maxTime) * 100;
+  const correctCount = Math.round(results.correct);
+  
+  if (showRetryPrompt) {
+    return (
+      <div style={{ display: 'flex', justifyContent: 'center', padding: 'var(--space-xl)' }}>
+        <div className="card shadow-md" style={{ textAlign: 'center', width: '100%', maxWidth: '400px' }}>
+          <div style={{ fontSize: '48px', marginBottom: 'var(--space-md)' }}>🔄</div>
+          <h2>Quiz Complete!</h2>
+          <p style={{ fontSize: '1.2rem', margin: 'var(--space-sm) 0' }}>You got <strong>{correctCount}</strong> out of <strong>{words.length}</strong> correct</p>
+          <p style={{ color: 'var(--color-danger)', fontWeight: 600 }}>❌ {results.wrong.length} words wrong. Want to try again?</p>
+          <p style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', marginBottom: 'var(--space-lg)' }}>⚠️ Retry answers count for 50% points</p>
+          <div style={{ display: 'flex', gap: 'var(--space-sm)' }}>
+            <button className="btn btn-primary" style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }} onClick={handleRetry}>
+              <RotateCcw size={18} /> Try Again
+            </button>
+            <button className="btn btn-secondary" style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }} onClick={finishGame}>
+              <CheckCircle size={18} /> Finish
+            </button>
+          </div>
+        </div>
+      </div>
+    );
+  }
   
   return (
-    <div className="scramble-container">
-      {/* Header */}
-      <div className="game-progress">
-        <button className="home-btn-small" onClick={onHome} aria-label="Go home">
-          <span style={{ fontSize: '20px' }}>🏠</span>
+    <div style={{ maxWidth: '800px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: 'var(--space-lg)' }}>
+      {/* HUD Header */}
+      <div className="game-hud" style={{ width: '100%', maxWidth: '100%' }}>
+        <button className="hud-btn" onClick={onHome} aria-label="Go home">
+          <Home size={20} />
         </button>
-        <div className="progress-bar">
-          {words.map((_, idx) => (
+        
+        <div style={{ flex: 1, margin: '0 var(--space-md)' }}>
+          <div className={`timer-container ${isUrgent ? 'urgent' : ''}`}>
             <div 
-              key={idx} 
-              className={`progress-segment ${
-                idx < currentIndex 
-                  ? (results.wrong.some(w => w?.word === words[idx]?.word) ? 'wrong' : 'correct')
-                  : idx === currentIndex ? 'current' : ''
-              }`}
-              style={{ width: `${100 / words.length}%` }}
+              className={`timer-bar ${isCritical ? 'danger pulse' : isUrgent ? 'warning' : 'safe'}`} 
+              style={{ width: `${timerPercent}%` }}
             />
-          ))}
-        </div>
-        <div className="progress-text">
-          <span className="current">{currentIndex + 1}</span>
-          <span className="separator">/</span>
-          <span className="total">{words.length}</span>
-        </div>
-        <div className={`timer ${isUrgent ? 'urgent' : ''} ${isCritical ? 'critical' : ''}`}>
-          <Clock size={16} />
-          <span>{timeRemaining}s</span>
-        </div>
-      </div>
-      
-      {/* Question */}
-      <div className="scramble-question">
-        <h2 className="definition">{currentWord?.definition}</h2>
-        <p className="hint-text">Tap two letters to swap them ({wordLength} letters)</p>
-      </div>
-      
-      {/* Letters Row - Single row to rearrange */}
-      <div className="letters-row">
-        {letters.map((letter, idx) => (
-          <div
-            key={`letter-${letter.id}`}
-            className={`letter-tile 
-              ${selectedIndex === idx ? 'selected' : ''} 
-              ${dragOverIndex === idx ? 'drag-over' : ''}
-              ${draggedIndex === idx ? 'dragging' : ''}
-              ${feedback?.isCorrect === true ? 'correct' : ''} 
-              ${feedback?.isCorrect === false ? 'incorrect' : ''}
-            `}
-            draggable={!isAnswered}
-            onDragStart={(e) => handleDragStart(e, idx)}
-            onDragOver={(e) => handleDragOver(e, idx)}
-            onDragLeave={handleDragLeave}
-            onDrop={(e) => handleDrop(e, idx)}
-            onDragEnd={handleDragEnd}
-            onClick={() => handleLetterTap(idx)}
-          >
-            {letter.letter}
+            <div className="timer-icon"><Clock size={16} /></div>
           </div>
-        ))}
+        </div>
+
+        <div className="score-pill">
+          <span style={{ fontSize: '18px' }}>⭐</span>
+          <span className="score-text">{correctCount}</span>
+        </div>
       </div>
-      
-      {/* Submit Button */}
-      {!isAnswered && (
-        <button className="submit-btn" onClick={checkAnswer}>
-          <CheckCircle size={20} />
-          Check Answer
-        </button>
-      )}
-      
-      {/* Feedback */}
-      {feedback && (
-        <div className={`feedback-card ${feedback.isCorrect ? 'correct' : 'incorrect'}`}>
-          <div className="feedback-header">
-            {feedback.timedOut ? (
-              <>
-                <Clock size={24} />
-                <span>Time's up! The word was <strong>{feedback.correctAnswer}</strong></span>
-              </>
-            ) : feedback.isCorrect ? (
-              <>
-                <CheckCircle size={24} />
-                <span>Correct! Well done!</span>
-              </>
-            ) : (
-              <>
-                <XCircle size={24} />
-                <span>The word is <strong>{feedback.correctAnswer}</strong></span>
-              </>
-            )}
-            <ChevronRight size={20} className="next-icon" />
-          </div>
-          
-          {!feedback.isCorrect && currentWord && (
-            <div className="learning-context">
-              <div className="learning-header">
-                <BookOpen size={14} />
-                <span>Learn this word!</span>
+
+      <div style={{ textAlign: 'center', marginBottom: '-10px' }}>
+        <span className="badge badge-neutral">Word {currentIndex + 1} of {words.length}</span>
+      </div>
+
+      {/* Main Card */}
+      <div className="card shadow-md" style={{ width: '100%', padding: 'var(--space-xl)', textAlign: 'center' }}>
+        <h2 style={{ fontSize: '1.5rem', margin: '0 0 var(--space-sm) 0', color: 'var(--color-text-primary)' }}>
+          {currentWord?.definition || currentWord?.vietnamese}
+        </h2>
+        <p style={{ color: 'var(--color-text-secondary)', margin: '0 0 var(--space-xl) 0', fontSize: '0.9rem' }}>
+          Tap two letters to swap them ({wordLength} letters)
+        </p>
+        
+        {/* Letters Row */}
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 'var(--space-sm)', justifyContent: 'center', marginBottom: 'var(--space-2xl)' }}>
+          {letters.map((letter, idx) => {
+            const isSelected = selectedIndex === idx;
+            const isDragOver = dragOverIndex === idx;
+            const isDragging = draggedIndex === idx;
+            
+            let bgStyles = { background: 'white', borderColor: 'var(--color-border-default)', color: 'var(--color-text-primary)' };
+            if (isSelected) bgStyles = { background: '#EFF6FF', borderColor: 'var(--color-info)', color: 'var(--color-info)' };
+            if (isDragOver) bgStyles = { background: '#FEF3C7', borderColor: 'var(--color-accent)' };
+            if (isDragging) bgStyles = { opacity: 0.5 };
+            
+            if (isAnswered) {
+              if (feedback?.isCorrect === true) {
+                bgStyles = { background: '#F0FDF4', borderColor: 'var(--color-success)', color: 'var(--color-success-hover)' };
+              } else if (feedback?.isCorrect === false) {
+                bgStyles = { background: '#FEF2F2', borderColor: 'var(--color-danger)', color: 'var(--color-danger-hover)' };
+              }
+            }
+            
+            return (
+              <div
+                key={`letter-${letter.id}`}
+                style={{
+                  width: '56px', height: '64px', display: 'flex', alignItems: 'center', justifyContent: 'center',
+                  fontSize: '2rem', fontWeight: 800, borderRadius: 'var(--radius-lg)', border: '3px solid',
+                  cursor: isAnswered ? 'default' : 'pointer', transition: 'all 0.2s', userSelect: 'none',
+                  boxShadow: isSelected || isDragging ? 'var(--shadow-md)' : 'var(--shadow-sm)',
+                  ...bgStyles
+                }}
+                draggable={!isAnswered}
+                onDragStart={(e) => handleDragStart(e, idx)}
+                onDragOver={(e) => handleDragOver(e, idx)}
+                onDragLeave={handleDragLeave}
+                onDrop={(e) => handleDrop(e, idx)}
+                onDragEnd={handleDragEnd}
+                onClick={() => handleLetterTap(idx)}
+              >
+                {letter.letter}
               </div>
-              {currentWord.example && (
-                <p className="learning-example">"{currentWord.example}"</p>
-              )}
-              {currentWord.vietnamese && (
-                <p className="learning-vietnamese">{currentWord.vietnamese}</p>
-              )}
-            </div>
-          )}
+            );
+          })}
         </div>
-      )}
-      
-      {/* Retry Prompt */}
-      {showRetryPrompt && (
-        <div className="retry-prompt-overlay">
-          <div className="retry-prompt-modal">
-            <h3>🎯 Retry Wrong Answers?</h3>
-            <p>You got {results.wrong.length} word{results.wrong.length > 1 ? 's' : ''} wrong. Want to practice them again?</p>
-            <div className="retry-prompt-buttons">
-              <button className="retry-btn primary" onClick={handleRetry}>
-                <RotateCcw size={18} />
-                Try Again
-              </button>
-              <button className="retry-btn secondary" onClick={finishGame}>
-                Finish
-              </button>
+        
+        {/* Submit */}
+        {!isAnswered && (
+          <button className="btn btn-primary" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', margin: '0 auto', fontSize: '1.2rem', padding: 'var(--space-md) var(--space-xl)' }} onClick={checkAnswer}>
+            <CheckCircle size={24} /> Check Answer
+          </button>
+        )}
+        
+        {/* Feedback */}
+        {feedback && (
+          <div style={{ 
+            marginTop: 'var(--space-lg)', 
+            padding: 'var(--space-md)', 
+            borderRadius: 'var(--radius-lg)',
+            background: feedback.isCorrect ? '#F0FDF4' : '#FEF2F2',
+            border: `3px solid ${feedback.isCorrect ? 'var(--color-success)' : 'var(--color-danger)'}`,
+            textAlign: 'left'
+          }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: feedback.isCorrect ? 'var(--color-success-hover)' : 'var(--color-danger-hover)' }}>
+              {feedback.timedOut ? <Clock size={24} /> : feedback.isCorrect ? <CheckCircle size={24} /> : <XCircle size={24} />}
+              <span style={{ fontSize: '1.2rem', fontWeight: 700 }}>
+                {feedback.timedOut ? `Time's up! The word was ${feedback.correctAnswer}` : feedback.isCorrect ? 'Correct! Well done!' : `The word is ${feedback.correctAnswer}`}
+              </span>
+            </div>
+            
+            {!feedback.isCorrect && currentWord && (
+              <div style={{ marginTop: 'var(--space-sm)' }}>
+                <div style={{ marginTop: 'var(--space-md)', padding: 'var(--space-sm)', background: 'white', borderRadius: 'var(--radius-md)' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '6px', color: 'var(--color-info)', marginBottom: '4px', fontWeight: 700 }}>
+                    <BookOpen size={16} /> Learn this word:
+                  </div>
+                  {currentWord.example && <p style={{ margin: '0 0 4px', fontSize: '0.9rem' }}>"{currentWord.example}"</p>}
+                  {currentWord.vietnamese && <p style={{ margin: 0, fontSize: '0.9rem', color: 'var(--color-text-secondary)', fontWeight: 600 }}>{currentWord.vietnamese}</p>}
+                </div>
+              </div>
+            )}
+            <div style={{ marginTop: 'var(--space-sm)', textAlign: 'center', opacity: 0.6, fontSize: '0.9rem', fontWeight: 600 }}>
+              Loading next word <ChevronRight size={16} style={{ display: 'inline', verticalAlign: 'middle' }} />
             </div>
           </div>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 };
