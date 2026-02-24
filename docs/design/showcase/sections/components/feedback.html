@@ -245,4 +245,62 @@
             </div>
         </div>
     </div>
+
+    <div class="component-block">
+        <h3>19. Error Toast / Failure Notification</h3>
+        <p class="text-sm">Floating bottom alert for connection or data errors.</p>
+        <div class="flex-row" style="position: relative; height: 150px; background: #e2e8f0;">
+            <div class="snackbar-toast error">
+                <i class="ph-fill ph-warning-circle"></i>
+                <div class="toast-content">
+                    <strong>Oops! Something went wrong</strong>
+                    <span>Could not load data. Please try again.</span>
+                </div>
+                <button class="toast-close"><i class="ph-bold ph-arrow-clockwise"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="component-block">
+        <h3>20. Offline Banner</h3>
+        <p class="text-sm">Persistent top banner indicating no internet connection.</p>
+        <div class="flex-row" style="flex-direction: column; gap: 0; background: white; border-radius: 12px; overflow: hidden;">
+            <div class="offline-banner">
+                <i class="ph-bold ph-wifi-slash"></i>
+                <span>You're offline — scores will sync when you reconnect</span>
+            </div>
+            <div style="height: 60px; background: #F8FAFC;"></div>
+        </div>
+    </div>
+
+    <div class="component-block">
+        <h3>21. Empty State View (Reusable)</h3>
+        <p class="text-sm">Friendly fallback for lists/grids with zero items. Customizable icon + message + CTA.</p>
+        <div class="flex-row">
+            <div class="empty-state-view">
+                <div class="esv-icon">
+                    <i class="ph ph-clipboard-text" style="font-size: 32px; color: var(--color-text-secondary);"></i>
+                </div>
+                <h4 style="margin: 0; font-family: var(--font-family); color: var(--color-text-primary);">No words yet!</h4>
+                <p style="margin: 4px 0 12px; font-size: 0.85rem; color: var(--color-text-secondary); text-align: center;">Pick a subject and play a game to start learning new words.</p>
+                <button class="btn btn-primary" style="font-size: 0.85rem; padding: 6px 16px;">Start Playing</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="component-block">
+        <h3>22. Error Boundary Card</h3>
+        <p class="text-sm">Full card fallback for a section that failed to load.</p>
+        <div class="flex-row">
+            <div class="error-boundary-card">
+                <i class="ph ph-smiley-sad" style="font-size: 36px; color: var(--color-danger);"></i>
+                <h4 style="margin: 8px 0 4px; font-family: var(--font-family); color: var(--color-text-primary);">Something broke!</h4>
+                <p style="margin: 0 0 12px; font-size: 0.85rem; color: var(--color-text-secondary); text-align: center;">We couldn't load this section. Try refreshing.</p>
+                <button class="btn btn-danger" style="font-size: 0.85rem; padding: 6px 16px; display: flex; align-items: center; gap: 6px;">
+                    <i class="ph-bold ph-arrow-clockwise"></i> Retry
+                </button>
+            </div>
+        </div>
+    </div>
+
 </div>

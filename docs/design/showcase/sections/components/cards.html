@@ -333,5 +333,50 @@
                 </div>
             </div>
         </div>
+        </div>
+
+    <div class="component-block">
+        <h3>16. Sentence Display Card</h3>
+        <p class="text-sm">Full sentence with inline word tokens. Signal words are highlighted for tense recognition games.</p>
+        <div class="flex-row vertical-stack">
+            <!-- Default state: sentence with neutral word tokens -->
+            <div class="sentence-card">
+                <div class="sentence-tokens">
+                    <span class="word-token">She</span>
+                    <span class="word-token signal">has been</span>
+                    <span class="word-token">cooking</span>
+                    <span class="word-token">all</span>
+                    <span class="word-token">morning.</span>
+                </div>
+            </div>
+            <!-- Revealed state: correct signal word glows green -->
+            <div class="sentence-card revealed">
+                <div class="sentence-tokens">
+                    <span class="word-token">She</span>
+                    <span class="word-token signal correct">has been</span>
+                    <span class="word-token">cooking</span>
+                    <span class="word-token">all</span>
+                    <span class="word-token">morning.</span>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <div class="component-block">
+        <h3>17. Tense Badge / Label</h3>
+        <p class="text-sm">Color-coded pill identifying which tense a sentence uses. Grouped by category.</p>
+        <div class="flex-row horizontal-stack" style="flex-wrap: wrap; gap: 8px;">
+            <span class="tense-badge present">Present Simple</span>
+            <span class="tense-badge present">Present Continuous</span>
+            <span class="tense-badge present">Present Perfect</span>
+            <span class="tense-badge past">Past Simple</span>
+            <span class="tense-badge past">Past Continuous</span>
+            <span class="tense-badge past">Past Perfect</span>
+            <span class="tense-badge future">Future Simple</span>
+            <span class="tense-badge future">Future Continuous</span>
+            <span class="tense-badge future">Future Perfect</span>
+            <span class="tense-badge correct">✓ Correct!</span>
+        </div>
+    </div>
+
 </div>

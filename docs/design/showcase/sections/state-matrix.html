@@ -1,6 +1,6 @@
 <div class="section-header">
     <h2 class="section-title">State Matrix Coverage</h2>
-    <p class="section-description">Enforcing the UI Edge Case Matrix: Default, Loading, Empty, Error, Offline.</p>
+    <p class="section-description">Enforcing the UI Edge Case Matrix: Default, Loading, Empty, Error, Offline — for every screen, layout, and key interactive component.</p>
 </div>
 
 <div class="state-container">
@@ -17,23 +17,396 @@
             </tr>
         </thead>
         <tbody>
+            <!-- ════════════════════════════════════════ -->
+            <!-- FULL SCREENS                            -->
+            <!-- ════════════════════════════════════════ -->
+            <tr class="group-header"><td colspan="6">📱 Full Screens</td></tr>
+
             <tr>
-                <td><em>Example: Dashboard Core</em></td>
+                <td>Screen: Game Selection</td>
                 <td><span class="badge badge-success">Done</span></td>
-                <td><span class="badge badge-success">Skeleton UI Done</span></td>
-                <td><span class="badge badge-success">Empty State SVG</span></td>
-                <td><span class="badge badge-danger">Needs 'Try Again' Modal</span></td>
+                <td><span class="badge badge-neutral">N/A (local)</span></td>
+                <td><span class="badge badge-success">Empty State View</span></td>
+                <td><span class="badge badge-success">Error Boundary</span></td>
+                <td><span class="badge badge-success">Works (IndexedDB)</span></td>
+            </tr>
+            <tr>
+                <td>Screen: Onboarding</td>
+                <td><span class="badge badge-success">Done</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-neutral">N/A (static)</span></td>
+                <td><span class="badge badge-success">Works (static)</span></td>
+            </tr>
+            <tr>
+                <td>Screen: Parental Progress</td>
+                <td><span class="badge badge-success">Done</span></td>
+                <td><span class="badge badge-success">Skeleton (#16)</span></td>
+                <td><span class="badge badge-success">Empty State View</span></td>
+                <td><span class="badge badge-success">Error Boundary</span></td>
+                <td><span class="badge badge-success">Works (local data)</span></td>
+            </tr>
+
+            <!-- ════════════════════════════════════════ -->
+            <!-- GAME SHELLS (Overlays & Modals)         -->
+            <!-- ════════════════════════════════════════ -->
+            <tr class="group-header"><td colspan="6">🎮 Game Shells & Overlays</td></tr>
+
+            <tr>
+                <td>Game: Fullscreen Overlay (Landscape)</td>
+                <td><span class="badge badge-success">Done</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
                 <td><span class="badge badge-neutral">N/A</span></td>
             </tr>
             <tr>
-                <td><em>Example: Form Widget</em></td>
+                <td>Game: Standard Quiz</td>
                 <td><span class="badge badge-success">Done</span></td>
-                <td><span class="badge badge-success">Spinner Done</span></td>
                 <td><span class="badge badge-neutral">N/A</span></td>
-                <td><span class="badge badge-success">Inline Validation Done</span></td>
-                <td><span class="badge badge-danger">Needs Notification Banner</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-success">Feedback: Oops!</span></td>
+                <td><span class="badge badge-success">Works (local)</span></td>
             </tr>
-            <!-- Agent can dynamically insert rows here during workflow W1/W2/W3 based on screen creation -->
+            <tr>
+                <td>Game: Swipe Cards</td>
+                <td><span class="badge badge-success">Done</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-success">Works (local)</span></td>
+            </tr>
+            <tr>
+                <td>Game: Bubble Pop</td>
+                <td><span class="badge badge-success">Done</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-success">Works (local)</span></td>
+            </tr>
+            <tr>
+                <td>Game: Typing Quiz</td>
+                <td><span class="badge badge-success">Done</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-success">Feedback: Oops!</span></td>
+                <td><span class="badge badge-success">Works (local)</span></td>
+            </tr>
+            <tr>
+                <td>Screen: Session End Summary</td>
+                <td><span class="badge badge-success">Done</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-success">Works (local)</span></td>
+            </tr>
+            <tr>
+                <td>Screen: Review Plays</td>
+                <td><span class="badge badge-success">Done</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-success">Empty State View</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-success">Works (local)</span></td>
+            </tr>
+            <tr>
+                <td>Screen: Answer Incorrect (Overlay)</td>
+                <td><span class="badge badge-success">Done</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-success">Works (local)</span></td>
+            </tr>
+            <tr>
+                <td>Screen: Settings Modal</td>
+                <td><span class="badge badge-success">Done</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-success">Works (local)</span></td>
+            </tr>
+            <tr>
+                <td>Screen: Pause Menu Overlay</td>
+                <td><span class="badge badge-success">Done</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-success">Works (local)</span></td>
+            </tr>
+            <tr>
+                <td>Screen: Daily Rewards Modal</td>
+                <td><span class="badge badge-success">Done</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+            </tr>
+            <tr>
+                <td>Screen: Level Complete (3-Star)</td>
+                <td><span class="badge badge-success">Done</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-success">Works (local)</span></td>
+            </tr>
+            <tr>
+                <td>Screen: Empty State Hub</td>
+                <td><span class="badge badge-success">Done</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-success">Self (empty CTA)</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-success">Works (static)</span></td>
+            </tr>
+            <tr>
+                <td>Screen: Progress Dashboard</td>
+                <td><span class="badge badge-success">Done</span></td>
+                <td><span class="badge badge-success">Skeleton (#16)</span></td>
+                <td><span class="badge badge-success">Empty State View</span></td>
+                <td><span class="badge badge-success">Error Boundary</span></td>
+                <td><span class="badge badge-success">Works (local)</span></td>
+            </tr>
+
+            <!-- ════════════════════════════════════════ -->
+            <!-- GAME BOARDS & MAPS                      -->
+            <!-- ════════════════════════════════════════ -->
+            <tr class="group-header"><td colspan="6">🗺️ Game Boards & Maps</td></tr>
+
+            <tr>
+                <td>Game: Level Select Map</td>
+                <td><span class="badge badge-success">Done</span></td>
+                <td><span class="badge badge-success">Skeleton (#16)</span></td>
+                <td><span class="badge badge-success">Empty State View</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-success">Works (local)</span></td>
+            </tr>
+            <tr>
+                <td>Game: Word Search Grid</td>
+                <td><span class="badge badge-success">Done</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-success">Works (local)</span></td>
+            </tr>
+            <tr>
+                <td>Screen: Leaderboard</td>
+                <td><span class="badge badge-success">Done</span></td>
+                <td><span class="badge badge-success">Skeleton (#16)</span></td>
+                <td><span class="badge badge-success">Empty State View</span></td>
+                <td><span class="badge badge-success">Error Boundary</span></td>
+                <td><span class="badge badge-success">Offline Banner</span></td>
+            </tr>
+            <tr>
+                <td>Screen: Achievement Showcase</td>
+                <td><span class="badge badge-success">Done</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-success">Empty State View</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-success">Works (local)</span></td>
+            </tr>
+            <tr>
+                <td>Screen: Coin Store / Shop</td>
+                <td><span class="badge badge-success">Done</span></td>
+                <td><span class="badge badge-success">Skeleton (#16)</span></td>
+                <td><span class="badge badge-success">Empty State View</span></td>
+                <td><span class="badge badge-success">Error Toast</span></td>
+                <td><span class="badge badge-success">Offline Banner</span></td>
+            </tr>
+
+            <!-- ════════════════════════════════════════ -->
+            <!-- CORE APP LAYOUTS                        -->
+            <!-- ════════════════════════════════════════ -->
+            <tr class="group-header"><td colspan="6">📐 Core App Layouts</td></tr>
+
+            <tr>
+                <td>Web: LMR Three-Column</td>
+                <td><span class="badge badge-success">Done</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+            </tr>
+            <tr>
+                <td>Web: Dashboard Bento</td>
+                <td><span class="badge badge-success">Done</span></td>
+                <td><span class="badge badge-success">Skeleton (#16)</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+            </tr>
+            <tr>
+                <td>Mobile: Bottom Tab Nav</td>
+                <td><span class="badge badge-success">Done</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+            </tr>
+            <tr>
+                <td>Mobile: Bottom Sheet Modal</td>
+                <td><span class="badge badge-success">Done</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+            </tr>
+            <tr>
+                <td>Screen: Quick Start & Welcome</td>
+                <td><span class="badge badge-success">Done</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-success">Works (local)</span></td>
+            </tr>
+            <tr>
+                <td>Screen: Onboarding Carousel</td>
+                <td><span class="badge badge-success">Done</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-success">Works (static)</span></td>
+            </tr>
+            <tr>
+                <td>Screen: Settings / Preferences</td>
+                <td><span class="badge badge-success">Done</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-success">Works (local)</span></td>
+            </tr>
+            <tr>
+                <td>Screen: Profile/Avatar Selection</td>
+                <td><span class="badge badge-success">Done</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-success">Works (local)</span></td>
+            </tr>
+
+            <!-- ════════════════════════════════════════ -->
+            <!-- KEY INTERACTIVE COMPONENTS              -->
+            <!-- ════════════════════════════════════════ -->
+            <tr class="group-header"><td colspan="6">🧩 Key Interactive Components</td></tr>
+
+            <tr>
+                <td>Buttons (Primary/Secondary/Danger)</td>
+                <td><span class="badge badge-success">Done</span></td>
+                <td><span class="badge badge-success">Spinner variant</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-success">Disabled State</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+            </tr>
+            <tr>
+                <td>Quiz Option Buttons (4-state)</td>
+                <td><span class="badge badge-success">Done</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-success">Wrong + Correct</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+            </tr>
+            <tr>
+                <td>Toggle Switch (4-State)</td>
+                <td><span class="badge badge-success">Done</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-success">Disabled State</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+            </tr>
+            <tr>
+                <td>Typing Quiz Input Cells</td>
+                <td><span class="badge badge-success">Done</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-success">Empty Cell</span></td>
+                <td><span class="badge badge-success">Active Pulse</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+            </tr>
+            <tr>
+                <td>Timer Bars (Safe/Warning/Danger)</td>
+                <td><span class="badge badge-success">Done</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-success">Urgent Pulse</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+            </tr>
+            <tr>
+                <td>Compact Game Selector (4-state)</td>
+                <td><span class="badge badge-success">Done</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-success">Disabled / Lock</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+            </tr>
+            <tr>
+                <td>Swipe Card (Tinder-style)</td>
+                <td><span class="badge badge-success">Done</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-success">Nope / Got It</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+            </tr>
+            <tr>
+                <td>Score Summary Card</td>
+                <td><span class="badge badge-success">Done</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+            </tr>
+            <tr>
+                <td>Loading Skeleton</td>
+                <td><span class="badge badge-success">Done</span></td>
+                <td><span class="badge badge-success">Self (shimmer)</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+            </tr>
+            <tr>
+                <td>Snackbar / Toast Notification</td>
+                <td><span class="badge badge-success">Done</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-success">Error Toast (#19)</span></td>
+                <td><span class="badge badge-success">Offline Banner (#20)</span></td>
+            </tr>
+            <tr>
+                <td>Inline Error / Validation Hint</td>
+                <td><span class="badge badge-success">Done</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-success">Self (error text)</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+            </tr>
+            <tr>
+                <td>Flippable Flashcard</td>
+                <td><span class="badge badge-success">Done</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+            </tr>
+            <tr>
+                <td>Daily Login Reward Card (3-state)</td>
+                <td><span class="badge badge-success">Done</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-success">Claimed/Active/Locked</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+            </tr>
+            <tr>
+                <td>Word Search Tiles (3-state)</td>
+                <td><span class="badge badge-success">Done</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-success">Selected / Found</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+            </tr>
+            <tr>
+                <td>Floating Bubble</td>
+                <td><span class="badge badge-success">Done</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+                <td><span class="badge badge-neutral">N/A</span></td>
+            </tr>
+
         </tbody>
     </table>
 
@@ -55,7 +428,7 @@
 }
 
 .state-table th, .state-table td {
-    padding: var(--space-md) var(--space-lg);
+    padding: var(--space-sm) var(--space-md);
     text-align: left;
     border-bottom: 1px solid var(--color-border-default);
 }
@@ -65,10 +438,13 @@
     color: var(--color-text-secondary);
     font-weight: 500;
     font-size: 0.875rem;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 .state-table td {
-    font-size: 0.875rem;
+    font-size: 0.8rem;
     color: var(--color-text-primary);
 }
 
@@ -76,12 +452,23 @@
     border-bottom: none;
 }
 
+.state-table .group-header td {
+    background: #F1F5F9;
+    font-weight: 800;
+    font-size: 0.9rem;
+    color: var(--color-text-primary);
+    font-family: var(--font-family);
+    padding: var(--space-sm) var(--space-md);
+    border-bottom: 2px solid #CBD5E1;
+}
+
 .badge {
     padding: 2px 8px;
     border-radius: var(--radius-full);
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     font-weight: 600;
     display: inline-block;
+    white-space: nowrap;
 }
 
 .badge-success { background: #DCFCE7; color: #16A34A; }

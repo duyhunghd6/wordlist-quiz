@@ -934,6 +934,63 @@
     100% { bottom: 20px; opacity: 1; }
 }
 
+/* Error Toast variant */
+.snackbar-toast.error { border-color: var(--color-danger); }
+.snackbar-toast.error i { color: var(--color-danger); }
+
+/* 19b. Offline Banner */
+.offline-banner {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    background: #FEF3C7;
+    border-bottom: 2px solid #FCD34D;
+    padding: var(--space-sm) var(--space-md);
+    font-family: var(--font-family);
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #92400E;
+    width: 100%;
+}
+.offline-banner i { font-size: 16px; color: #D97706; flex-shrink: 0; }
+
+/* 20. Empty State View */
+.empty-state-view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--space-2xl) var(--space-xl);
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+.esv-icon {
+    width: 72px;
+    height: 72px;
+    background: #F1F5F9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--space-md);
+    border: 3px dashed #CBD5E1;
+}
+
+/* 21. Error Boundary Card */
+.error-boundary-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--space-2xl) var(--space-xl);
+    background: #FEF2F2;
+    border: 2px dashed var(--color-danger);
+    border-radius: var(--radius-xl);
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+
 /* 12. Tooltip / Popover Bubble */
 .tooltip-wrapper {
     position: relative;
@@ -2175,3 +2232,133 @@
 }
 .flashcard-back h3 { font-size: 1.5rem; font-weight: 900; margin: 0 0 8px; }
 .flashcard-back p { font-size: 1rem; font-weight: 600; margin: 0; color: var(--color-text-secondary); }
+
+/* ═══════════════════════════════════════════════════════════ */
+/* Tense Signal Spotter — Component Styles                   */
+/* ═══════════════════════════════════════════════════════════ */
+
+/* 53. Sentence Display Card */
+.sentence-card {
+    background: white;
+    border: 3px solid var(--color-border-default);
+    border-radius: var(--radius-xl);
+    padding: var(--space-lg) var(--space-xl);
+    box-shadow: 0 4px 0 var(--color-border-default);
+    width: 100%;
+    max-width: 500px;
+    transition: border-color 0.3s;
+}
+.sentence-card.revealed {
+    border-color: var(--color-success);
+    box-shadow: 0 4px 0 var(--color-success);
+}
+.sentence-tokens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: center;
+    font-family: var(--font-family);
+    line-height: 1.6;
+}
+.word-token {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--color-text-primary);
+    padding: 4px 8px;
+    border-radius: var(--radius-md);
+    transition: all 0.2s;
+}
+.word-token.signal {
+    background: #EDE9FE;
+    color: #7C3AED;
+    border: 2px solid #C4B5FD;
+    font-weight: 800;
+}
+.word-token.signal.correct {
+    background: #DCFCE7;
+    color: #166534;
+    border-color: var(--color-success);
+    box-shadow: 0 0 12px rgba(34, 197, 94, 0.3);
+}
+
+/* 54. Tense Badge / Label */
+.tense-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 16px;
+    border-radius: var(--radius-full);
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 0.85rem;
+    border: 2px solid transparent;
+    transition: transform 0.2s;
+}
+.tense-badge:hover { transform: scale(1.05); }
+.tense-badge.present {
+    background: #DCFCE7;
+    color: #166534;
+    border-color: #BBF7D0;
+}
+.tense-badge.past {
+    background: #DBEAFE;
+    color: #1E40AF;
+    border-color: #BFDBFE;
+}
+.tense-badge.future {
+    background: #FEF3C7;
+    color: #92400E;
+    border-color: #FDE68A;
+}
+.tense-badge.correct {
+    background: var(--color-success);
+    color: white;
+    border-color: #166534;
+    box-shadow: 0 2px 0 #166534;
+}
+
+/* 55. Signal Word Option Button */
+.signal-option {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 24px;
+    border-radius: var(--radius-xl);
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: 3px solid var(--color-border-default);
+    background: white;
+    color: var(--color-text-primary);
+    box-shadow: 0 4px 0 var(--color-border-default);
+}
+.signal-option:active {
+    transform: translateY(4px);
+    box-shadow: 0 0 0 var(--color-border-default);
+}
+.signal-option.default {
+    background: white;
+    border-color: var(--color-border-default);
+}
+.signal-option.hover {
+    background: #EFF6FF;
+    border-color: var(--color-info);
+    box-shadow: 0 4px 0 var(--color-info);
+    transform: translateY(-2px);
+}
+.signal-option.correct {
+    background: #DCFCE7;
+    border-color: var(--color-success);
+    color: #166534;
+    box-shadow: 0 4px 0 var(--color-success);
+}
+.signal-option.correct .signal-icon { color: var(--color-success); font-size: 20px; }
+.signal-option.wrong {
+    background: #FEF2F2;
+    border-color: var(--color-danger);
+    color: #991B1B;
+    box-shadow: 0 4px 0 var(--color-danger);
+}
+.signal-option.wrong .signal-icon { color: var(--color-danger); font-size: 20px; }
+.signal-text { white-space: nowrap; }

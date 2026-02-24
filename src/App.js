@@ -14,6 +14,7 @@ import PhotobombGame from "./components/games/PhotobombGame";
 import ShapeBuilderGame from "./components/games/ShapeBuilderGame";
 import TimelineDetectiveGame from "./components/games/TimelineDetectiveGame";
 import MarioTenseRunner from "./components/games/MarioTenseRunner";
+import TenseSignalGame from "./components/games/TenseSignalGame";
 import ProfileSwitcher from "./components/ProfileSwitcher";
 import {
   updateWordLearning,
@@ -439,6 +440,8 @@ function App() {
           return <PhotobombGame {...gameProps} />;
         case 'marioTense':
           return <MarioTenseRunner {...gameProps} />;
+        case 'tenseSignal':
+          return <TenseSignalGame {...gameProps} />;
         case 'quiz':
         default:
           return (

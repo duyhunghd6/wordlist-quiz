@@ -264,3 +264,61 @@
 .es-title { height: 12px; width: 80%; background: var(--color-text-primary); margin-bottom: 8px; border-radius: 4px; }
 .es-text { height: 8px; width: 60%; background: var(--color-text-secondary); margin-bottom: 24px; border-radius: 4px; }
 .es-btn { height: 24px; width: 100%; background: var(--color-accent); border-radius: 12px; }
+
+/* 11. Review Plays (Post-Game Results) */
+.review-plays { background: #F0FDF4; display: flex; flex-direction: column; overflow: hidden; }
+.rp-hero { background: #FEF2F2; border: 2px solid var(--color-danger); margin: 6px 8px; border-radius: 8px; padding: 6px; display: flex; flex-direction: column; align-items: center; gap: 2px; }
+.rp-emoji { width: 16px; height: 16px; background: #FBBF24; border-radius: 50%; }
+.rp-percent { width: 24px; height: 10px; background: var(--color-danger); border-radius: 4px; }
+.rp-stats-row { display: flex; gap: 8px; }
+.rp-stat { width: 20px; height: 8px; border-radius: 4px; }
+.rp-stat.correct { background: var(--color-success); }
+.rp-stat.wrong { background: var(--color-danger); }
+.rp-actions { display: flex; gap: 4px; margin: 0 8px; }
+.rp-btn { flex: 1; height: 14px; border-radius: 6px; border: 2px solid var(--color-border-default); }
+.rp-btn.primary { background: var(--color-accent); border-color: white; box-shadow: 0 2px 0 #B45309; }
+.rp-btn.secondary { background: white; }
+.rp-list { flex: 1; display: flex; flex-direction: column; gap: 3px; margin: 4px 8px; overflow: hidden; }
+.rp-item { height: 12px; border-radius: 4px; border: 1px solid; }
+.rp-item.correct { background: #F0FDF4; border-color: #BBF7D0; }
+.rp-item.wrong { background: #FEF2F2; border-color: #FECACA; }
+
+/* 12. Answer Incorrect (Overlay) */
+.answer-incorrect { position: relative; background: #F1F5F9; }
+.ai-quiz-bg { position: absolute; inset: 0; display: flex; flex-direction: column; gap: 4px; padding: 20px 8px 8px; opacity: 0.3; }
+.ai-opt { height: 16px; background: white; border-radius: 6px; border: 2px solid #CBD5E1; }
+.ai-opt.wrong { border-color: var(--color-danger); background: #FEF2F2; }
+.ai-opt.correct { border-color: var(--color-success); background: #F0FDF4; }
+.ai-overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.5); backdrop-filter: blur(2px); border-radius: 12px; display: flex; align-items: center; justify-content: center; z-index: 1; }
+.ai-dialog { width: 80%; background: white; border-radius: 12px; padding: 8px; display: flex; flex-direction: column; align-items: center; gap: 4px; border: 2px solid var(--color-danger); }
+.ai-icon { width: 16px; height: 16px; background: var(--color-danger); border-radius: 50%; }
+.ai-title { width: 30px; height: 8px; background: var(--color-danger); border-radius: 4px; }
+.ai-answer { width: 50px; height: 8px; background: var(--color-text-primary); border-radius: 4px; }
+.ai-context { width: 100%; background: #F8FAFC; border-radius: 6px; padding: 4px; display: flex; flex-direction: column; gap: 2px; }
+.ai-ctx-label { width: 40%; height: 6px; background: var(--color-info); border-radius: 2px; }
+.ai-ctx-text { width: 80%; height: 6px; background: var(--color-text-secondary); border-radius: 2px; }
+.ai-advance { width: 60%; height: 6px; background: #CBD5E1; border-radius: 2px; }
+
+/* 13. Tense Signal Spotter — Identify signal words in a sentence */
+.tense-signal-game, .tense-signal-correct { background: linear-gradient(180deg, #EDE9FE 0%, #FEF3C7 100%); display: flex; flex-direction: column; overflow: hidden; }
+.ts-hud { display: flex; justify-content: space-between; align-items: center; padding: 4px 6px; }
+.ts-back { width: 12px; height: 12px; background: white; border-radius: 50%; border: 2px solid #94A3B8; }
+.ts-progress { width: 30px; height: 4px; background: #CBD5E1; border-radius: 4px; position: relative; }
+.ts-progress::after { content: ""; position: absolute; left: 0; top: 0; width: 50%; height: 100%; background: var(--color-info); border-radius: 4px; }
+.ts-score { width: 16px; height: 10px; background: var(--color-warning); border-radius: 4px; }
+.ts-sentence-area { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 4px 8px; gap: 6px; }
+.ts-sentence { display: flex; flex-wrap: wrap; gap: 3px; justify-content: center; background: white; padding: 6px 8px; border-radius: 8px; border: 2px solid #CBD5E1; box-shadow: 0 2px 0 #E2E8F0; }
+.ts-word { width: 14px; height: 8px; background: #94A3B8; border-radius: 2px; }
+.ts-word.highlight { background: var(--color-info); width: 18px; }
+.ts-word.correct-word { background: var(--color-success); width: 18px; box-shadow: 0 0 0 2px rgba(34,197,94,0.3); }
+.ts-tense-label { width: 40px; height: 10px; background: #C084FC; border-radius: 10px; }
+.ts-tense-label.correct-label { background: var(--color-success); }
+.ts-question-prompt { width: 50px; height: 8px; background: var(--color-text-secondary); border-radius: 4px; margin: 0 auto; }
+.ts-feedback-banner { height: 12px; margin: 0 8px; border-radius: 6px; }
+.ts-feedback-banner.correct { background: var(--color-success); box-shadow: 0 2px 0 rgba(34,197,94,0.4); }
+.ts-options { display: flex; gap: 4px; padding: 6px 8px 8px; }
+.ts-option { flex: 1; height: 20px; background: white; border-radius: 8px; border: 2px solid #CBD5E1; box-shadow: 0 2px 0 #E2E8F0; }
+.ts-option.active { border-color: var(--color-info); box-shadow: 0 2px 0 var(--color-info); }
+.ts-option.correct { border-color: var(--color-success); background: #DCFCE7; box-shadow: 0 2px 0 var(--color-success); }
+.ts-option.dimmed { opacity: 0.4; }
+

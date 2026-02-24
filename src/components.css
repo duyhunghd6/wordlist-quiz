@@ -584,6 +584,8 @@
 .border-blue { border-color: #3B82F6; }
 .border-yellow { border-color: #FBBF24; color: #B45309; }
 .border-pink { border-color: #EC4899; }
+.border-green { border-color: #22C55E; }
+.border-purple { border-color: #A855F7; }
 
 /* Score Summary Card */
 .score-summary-card {

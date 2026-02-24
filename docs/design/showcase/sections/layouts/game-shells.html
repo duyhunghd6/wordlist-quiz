@@ -179,4 +179,117 @@
         <p>Friendly fallback ensuring empty list views provide a clear Call to Action.</p>
     </div>
 
+    <!-- Review Plays: Post-game results screen -->
+    <div class="layout-card">
+        <div class="layout-preview mobile-preview review-plays">
+            <div class="m-safe-top"></div>
+            <div class="rp-hero">
+                <div class="rp-emoji"></div>
+                <div class="rp-percent"></div>
+                <div class="rp-stats-row">
+                    <div class="rp-stat correct"></div>
+                    <div class="rp-stat wrong"></div>
+                </div>
+            </div>
+            <div class="rp-actions">
+                <div class="rp-btn primary"></div>
+                <div class="rp-btn secondary"></div>
+            </div>
+            <div class="rp-list">
+                <div class="rp-item correct"></div>
+                <div class="rp-item wrong"></div>
+                <div class="rp-item correct"></div>
+            </div>
+        </div>
+        <h4>Screen: Review Plays</h4>
+        <p>Post-game score hero with correct/wrong stats, action buttons, and scrollable answer review list.</p>
+    </div>
+
+    <!-- Tense Signal Spotter: Identify the signal word in a sentence -->
+    <div class="layout-card">
+        <div class="layout-preview mobile-preview tense-signal-game">
+            <div class="m-safe-top"></div>
+            <div class="ts-hud">
+                <div class="ts-back"></div>
+                <div class="ts-progress"></div>
+                <div class="ts-score"></div>
+            </div>
+            <div class="ts-sentence-area">
+                <div class="ts-sentence">
+                    <div class="ts-word"></div>
+                    <div class="ts-word highlight"></div>
+                    <div class="ts-word"></div>
+                    <div class="ts-word"></div>
+                    <div class="ts-word"></div>
+                </div>
+                <div class="ts-tense-label"></div>
+            </div>
+            <div class="ts-question-prompt"></div>
+            <div class="ts-options">
+                <div class="ts-option"></div>
+                <div class="ts-option active"></div>
+                <div class="ts-option"></div>
+            </div>
+        </div>
+        <h4>Game: Tense Signal Spotter</h4>
+        <p>Full sentence displayed with 3 signal-word options. Kid taps the word that reveals the tense.</p>
+    </div>
+
+    <!-- Tense Signal Spotter: Correct answer feedback state -->
+    <div class="layout-card">
+        <div class="layout-preview mobile-preview tense-signal-correct">
+            <div class="m-safe-top"></div>
+            <div class="ts-hud">
+                <div class="ts-back"></div>
+                <div class="ts-progress"></div>
+                <div class="ts-score"></div>
+            </div>
+            <div class="ts-sentence-area">
+                <div class="ts-sentence">
+                    <div class="ts-word"></div>
+                    <div class="ts-word correct-word"></div>
+                    <div class="ts-word"></div>
+                    <div class="ts-word"></div>
+                    <div class="ts-word"></div>
+                </div>
+                <div class="ts-tense-label correct-label"></div>
+            </div>
+            <div class="ts-feedback-banner correct"></div>
+            <div class="ts-options">
+                <div class="ts-option dimmed"></div>
+                <div class="ts-option correct"></div>
+                <div class="ts-option dimmed"></div>
+            </div>
+        </div>
+        <h4>Game: Tense Signal Spotter (Correct)</h4>
+        <p>Feedback state: correct signal word highlighted green, others dimmed, success banner shown.</p>
+    </div>
+
+    <!-- Answer Incorrect: In-game overlay for wrong answers -->
+    <div class="layout-card">
+        <div class="layout-preview mobile-preview answer-incorrect">
+            <div class="m-safe-top"></div>
+            <div class="ai-quiz-bg">
+                <div class="ai-opt"></div>
+                <div class="ai-opt wrong"></div>
+                <div class="ai-opt"></div>
+                <div class="ai-opt correct"></div>
+            </div>
+            <div class="ai-overlay">
+                <div class="ai-dialog">
+                    <div class="ai-icon"></div>
+                    <div class="ai-title"></div>
+                    <div class="ai-answer"></div>
+                    <div class="ai-context">
+                        <div class="ai-ctx-label"></div>
+                        <div class="ai-ctx-text"></div>
+                    </div>
+                    <div class="ai-advance"></div>
+                </div>
+            </div>
+        </div>
+        <h4>Screen: Answer Incorrect (Overlay)</h4>
+        <p>Translucent overlay showing correct answer, learning context, and auto-advance indicator.</p>
+    </div>
+
 </div>
