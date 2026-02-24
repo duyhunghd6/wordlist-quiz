@@ -27,3 +27,4 @@ yarn-error.log*
 deploy_to_42.sh
 .agent/skills/vercel-react-best-practices
 .gitignore
+.vercel
