@@ -1,0 +1,957 @@
+/* ═══════════════════════════════════════════════════════════
+   Mario Tense Runner — Proper Endless Side-Scroller
+   Ground scrolls, player runs, platforms slide in from right
+   ═══════════════════════════════════════════════════════════ */
+
+.mtr-game {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
+  font-family: var(--font-family-base, 'Inter', sans-serif);
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* ─────────────────────────────────────────────
+   World Backgrounds (sky gradients)
+   ───────────────────────────────────────────── */
+.mtr-game.world-present_simple       { background: linear-gradient(180deg, #60a5fa 0%, #93c5fd 50%, #bfdbfe 100%); }
+.mtr-game.world-present_continuous   { background: linear-gradient(180deg, #38bdf8 0%, #7dd3fc 50%, #fde68a 100%); }
+.mtr-game.world-past_simple          { background: linear-gradient(180deg, #a78bfa 0%, #c4b5fd 50%, #e9d5ff 100%); }
+.mtr-game.world-past_continuous      { background: linear-gradient(180deg, #1e1b4b 0%, #312e81 50%, #4f46e5 100%); }
+.mtr-game.world-future_simple        { background: linear-gradient(180deg, #0f172a 0%, #1e293b 50%, #475569 100%); }
+.mtr-game.world-future_continuous    { background: linear-gradient(180deg, #e0f2fe 0%, #bae6fd 50%, #7dd3fc 100%); }
+.mtr-game.world-present_perfect      { background: linear-gradient(180deg, #7c3aed 0%, #a78bfa 50%, #c4b5fd 100%); }
+.mtr-game.world-present_perfect_cont { background: linear-gradient(180deg, #06b6d4 0%, #67e8f9 50%, #a5f3fc 100%); }
+.mtr-game.world-past_perfect         { background: linear-gradient(180deg, #312e81 0%, #4338ca 50%, #818cf8 100%); }
+.mtr-game.world-past_perfect_cont    { background: linear-gradient(180deg, #9a3412 0%, #ea580c 50%, #fdba74 100%); }
+.mtr-game.world-future_perfect       { background: linear-gradient(180deg, #be185d 0%, #ec4899 50%, #fbcfe8 100%); }
+.mtr-game.world-future_perfect_cont  { background: linear-gradient(180deg, #0f172a 0%, #1e1b4b 40%, #5b21b6 100%); }
+.mtr-game.world-mix_all              { background: linear-gradient(180deg, #60a5fa 0%, #c084fc 30%, #f9a8d4 60%, #fde68a 100%); }
+
+/* ─────────────────────────────────────────────
+   SCROLLING LAYERS — Infinite parallax scroll
+   ───────────────────────────────────────────── */
+
+/* Cloud layer — slowest */
+.mtr-cloud-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250%;
+  height: 45%;
+  z-index: 1;
+  pointer-events: none;
+  animation: scrollClouds 18s linear infinite;
+}
+
+.mtr-cl-cloud {
+  position: absolute;
+  font-size: 2.5rem;
+  opacity: 0.7;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+}
+
+/* Hills layer — medium speed */
+.mtr-hills-layer {
+  position: absolute;
+  bottom: 85px;
+  left: 0;
+  width: 200%;
+  height: 120px;
+  z-index: 2;
+  pointer-events: none;
+  animation: scrollHills 8s linear infinite;
+  background: linear-gradient(0deg, #166534 0%, #16a34a 40%, transparent 100%);
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 120'%3E%3Cpath d='M0,120 C50,40 100,80 150,50 C200,20 250,70 300,30 C350,0 400,60 450,40 C500,20 550,80 600,50 C650,20 700,70 750,30 C800,0 850,60 900,40 C950,20 1000,70 1000,120 Z' fill='white'/%3E%3C/svg%3E");
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 120'%3E%3Cpath d='M0,120 C50,40 100,80 150,50 C200,20 250,70 300,30 C350,0 400,60 450,40 C500,20 550,80 600,50 C650,20 700,70 750,30 C800,0 850,60 900,40 C950,20 1000,70 1000,120 Z' fill='white'/%3E%3C/svg%3E");
+  mask-size: 50% 100%;
+  -webkit-mask-size: 50% 100%;
+  mask-repeat: repeat-x;
+  -webkit-mask-repeat: repeat-x;
+}
+
+/* Scenery layer — scrolls with ground (pipes, bushes, blocks) */
+.mtr-scenery-layer {
+  position: absolute;
+  bottom: 85px;
+  left: 0;
+  width: 200%;
+  height: 200px;
+  z-index: 4;
+  pointer-events: none;
+  animation: scrollGround 2.5s linear infinite;
+}
+
+/* Mario pipe */
+.mtr-pipe {
+  position: absolute;
+  bottom: 0;
+  width: 44px;
+  height: 64px;
+  background: #16a34a;
+  border: 3px solid #15803d;
+  border-radius: 3px 3px 0 0;
+}
+.mtr-pipe::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -5px;
+  width: 54px;
+  height: 18px;
+  background: #22c55e;
+  border: 3px solid #15803d;
+  border-radius: 4px 4px 0 0;
+}
+/* Short variant */
+.mtr-pipe.short { height: 40px; }
+
+/* Bush */
+.mtr-bush {
+  position: absolute;
+  bottom: 0;
+  width: 70px;
+  height: 28px;
+  background: #22c55e;
+  border-radius: 40px 40px 0 0;
+  border: 2px solid #15803d;
+  border-bottom: none;
+}
+
+/* Question Block */
+.mtr-qblock {
+  position: absolute;
+  bottom: 70px;
+  width: 36px;
+  height: 36px;
+  background: #fbbf24;
+  border: 3px solid #d97706;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 -3px 0 rgba(0,0,0,0.15);
+  animation: qblockBob 1.5s ease-in-out infinite;
+}
+.mtr-qblock::after {
+  content: '?';
+  color: #92400e;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+@keyframes qblockBob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+/* Ground layer — fastest scroll */
+.mtr-ground-layer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200%;
+  height: 85px;
+  z-index: 5;
+  animation: scrollGround 2.5s linear infinite;
+}
+
+.mtr-ground-stone {
+  height: 22px;
+  border-top: 4px solid #374151;
+  background: repeating-linear-gradient(90deg,
+    #6b7280 0px, #6b7280 46px,
+    #4b5563 46px, #4b5563 50px
+  );
+}
+.mtr-ground-dirt {
+  height: 63px;
+  background: repeating-linear-gradient(90deg,
+    #92400e 0px, #92400e 46px,
+    #78350f 46px, #78350f 50px
+  );
+}
+
+/* Scroll keyframes */
+@keyframes scrollGround {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+@keyframes scrollHills {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+@keyframes scrollClouds {
+  from { transform: translateX(0); }
+  to { transform: translateX(-40%); }
+}
+
+/* ─── Scroll Speed Modifiers ─── */
+.mtr-game.scroll-slow .mtr-ground-layer { animation-duration: 8s; }
+.mtr-game.scroll-slow .mtr-scenery-layer { animation-duration: 8s; }
+.mtr-game.scroll-slow .mtr-hills-layer { animation-duration: 24s; }
+.mtr-game.scroll-slow .mtr-cloud-layer { animation-duration: 50s; }
+
+.mtr-game.scroll-paused .mtr-ground-layer,
+.mtr-game.scroll-paused .mtr-scenery-layer,
+.mtr-game.scroll-paused .mtr-hills-layer,
+.mtr-game.scroll-paused .mtr-cloud-layer {
+  animation-play-state: paused;
+}
+
+.mtr-game.scroll-fast .mtr-ground-layer { animation-duration: 1.2s; }
+.mtr-game.scroll-fast .mtr-scenery-layer { animation-duration: 1.2s; }
+.mtr-game.scroll-fast .mtr-hills-layer { animation-duration: 4s; }
+.mtr-game.scroll-fast .mtr-cloud-layer { animation-duration: 10s; }
+
+/* ─────────────────────────────────────────────
+   PLAYER CHARACTER — CSS-drawn Mario-style
+   ───────────────────────────────────────────── */
+
+.mtr-runner {
+  position: absolute;
+  left: 12%;
+  bottom: 85px;
+  z-index: 10;
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.35));
+  will-change: bottom, left;
+}
+
+/* Character container */
+.mtr-character {
+  width: 44px;
+  height: 72px;
+  position: relative;
+}
+
+/* ─── Cap (Mario red) ─── */
+.mtr-char-cap {
+  position: absolute;
+  top: 0;
+  left: 4px;
+  width: 34px;
+  height: 14px;
+  background: #dc2626;
+  border-radius: 14px 14px 0 0;
+  z-index: 3;
+  border: 2px solid #b91c1c;
+  border-bottom: none;
+}
+.mtr-char-cap::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: -4px;
+  width: 42px;
+  height: 8px;
+  background: #dc2626;
+  border-radius: 4px;
+  border: 2px solid #b91c1c;
+}
+
+/* ─── Head ─── */
+.mtr-char-head {
+  position: absolute;
+  top: 14px;
+  left: 6px;
+  width: 30px;
+  height: 26px;
+  background: #fcd34d;
+  border-radius: 50%;
+  z-index: 2;
+  border: 2px solid #f59e0b;
+}
+/* Eyes */
+.mtr-char-head::before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 6px;
+  width: 5px;
+  height: 6px;
+  background: #1e293b;
+  border-radius: 50%;
+  box-shadow: 11px 0 0 #1e293b;
+}
+/* Smile */
+.mtr-char-head::after {
+  content: '';
+  position: absolute;
+  bottom: 4px;
+  left: 9px;
+  width: 10px;
+  height: 5px;
+  border-bottom: 3px solid #92400e;
+  border-radius: 0 0 10px 10px;
+}
+
+/* ─── Body (red shirt) ─── */
+.mtr-char-body {
+  position: absolute;
+  top: 36px;
+  left: 7px;
+  width: 28px;
+  height: 16px;
+  background: #ef4444;
+  border-radius: 4px;
+  border: 2px solid #dc2626;
+  z-index: 1;
+}
+
+/* ─── Arms ─── */
+.mtr-char-arm-l,
+.mtr-char-arm-r {
+  position: absolute;
+  top: 37px;
+  width: 9px;
+  height: 18px;
+  background: #fcd34d;
+  border-radius: 5px;
+  border: 2px solid #f59e0b;
+  z-index: 0;
+  transform-origin: top center;
+}
+.mtr-char-arm-l { left: -1px; }
+.mtr-char-arm-r { right: -1px; }
+
+/* ─── Legs (blue overalls) ─── */
+.mtr-char-leg-l,
+.mtr-char-leg-r {
+  position: absolute;
+  top: 50px;
+  width: 12px;
+  height: 16px;
+  background: #3b82f6;
+  border-radius: 3px 3px 0 0;
+  border: 2px solid #2563eb;
+  z-index: 0;
+  transform-origin: top center;
+}
+.mtr-char-leg-l { left: 7px; }
+.mtr-char-leg-r { right: 7px; }
+
+/* ─── Shoes (brown) ─── */
+.mtr-char-leg-l::after,
+.mtr-char-leg-r::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: -2px;
+  width: 14px;
+  height: 8px;
+  background: #92400e;
+  border-radius: 4px;
+  border: 2px solid #78350f;
+}
+
+/* ═══════════════════════════════════════════
+   CHARACTER RUNNING ANIMATION
+   ═══════════════════════════════════════════ */
+
+/* Whole body bounces */
+.mtr-runner.state-running .mtr-character {
+  animation: charBounce 0.35s ease-in-out infinite;
+}
+
+@keyframes charBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+/* Arms swing opposite to legs */
+.mtr-runner.state-running .mtr-char-arm-l {
+  animation: armForward 0.35s ease-in-out infinite alternate;
+}
+.mtr-runner.state-running .mtr-char-arm-r {
+  animation: armBack 0.35s ease-in-out infinite alternate;
+}
+@keyframes armForward {
+  from { transform: rotate(-35deg); }
+  to { transform: rotate(35deg); }
+}
+@keyframes armBack {
+  from { transform: rotate(35deg); }
+  to { transform: rotate(-35deg); }
+}
+
+/* Legs stride */
+.mtr-runner.state-running .mtr-char-leg-l {
+  animation: legForward 0.35s ease-in-out infinite alternate;
+}
+.mtr-runner.state-running .mtr-char-leg-r {
+  animation: legBack 0.35s ease-in-out infinite alternate;
+}
+@keyframes legForward {
+  from { transform: rotate(-30deg); }
+  to { transform: rotate(30deg); }
+}
+@keyframes legBack {
+  from { transform: rotate(30deg); }
+  to { transform: rotate(-30deg); }
+}
+
+/* ═══════════════════════════════════════════
+   CHARACTER STATE ANIMATIONS
+   ═══════════════════════════════════════════ */
+
+/* Jumping to platform — arc via cubic-bezier overshoot */
+.mtr-runner.state-jumping {
+  transition:
+    bottom 0.45s cubic-bezier(0.3, 1.4, 0.6, 1),
+    left 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mtr-runner.state-jumping .mtr-character {
+  animation: none;
+}
+/* Arms up during jump */
+.mtr-runner.state-jumping .mtr-char-arm-l {
+  transform: rotate(-80deg);
+  animation: none;
+}
+.mtr-runner.state-jumping .mtr-char-arm-r {
+  transform: rotate(-80deg);
+  animation: none;
+}
+/* Legs tucked during jump */
+.mtr-runner.state-jumping .mtr-char-leg-l {
+  transform: rotate(20deg);
+  animation: none;
+}
+.mtr-runner.state-jumping .mtr-char-leg-r {
+  transform: rotate(-20deg);
+  animation: none;
+}
+
+/* Celebrating on correct platform */
+.mtr-runner.state-celebrating .mtr-character {
+  animation: celebrateJump 0.5s ease-out;
+}
+@keyframes celebrateJump {
+  0% { transform: scale(1) rotate(0deg); }
+  30% { transform: scale(1.2) rotate(-10deg) translateY(-25px); }
+  60% { transform: scale(1.15) translateY(-12px); }
+  100% { transform: scale(1) rotate(0deg); }
+}
+.mtr-runner.state-celebrating .mtr-char-arm-l,
+.mtr-runner.state-celebrating .mtr-char-arm-r {
+  transform: rotate(-90deg);
+  animation: none;
+  transition: transform 0.2s;
+}
+
+/* Falling on wrong answer */
+.mtr-runner.state-falling {
+  transition: bottom 0.4s ease-in, left 0.3s ease-out;
+}
+.mtr-runner.state-falling .mtr-character {
+  animation: none;
+}
+.mtr-runner.state-falling .mtr-char-arm-l,
+.mtr-runner.state-falling .mtr-char-arm-r {
+  transform: rotate(-60deg);
+  animation: none;
+}
+
+/* Recovering back to ground — stumble shake */
+.mtr-runner.state-recovering {
+  transition: bottom 0.3s ease-out, left 0.3s ease-out;
+}
+.mtr-runner.state-recovering .mtr-character {
+  animation: stumbleShake 0.4s ease-out;
+}
+@keyframes stumbleShake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-8px) rotate(-5deg); }
+  40% { transform: translateX(8px) rotate(5deg); }
+  60% { transform: translateX(-5px) rotate(-3deg); }
+  80% { transform: translateX(5px) rotate(3deg); }
+}
+.mtr-runner.state-recovering .mtr-char-arm-l,
+.mtr-runner.state-recovering .mtr-char-arm-r,
+.mtr-runner.state-recovering .mtr-char-leg-l,
+.mtr-runner.state-recovering .mtr-char-leg-r {
+  animation: none;
+}
+
+/* Idle — no animation */
+.mtr-runner.state-idle .mtr-character { animation: none; }
+.mtr-runner.state-idle .mtr-char-arm-l,
+.mtr-runner.state-idle .mtr-char-arm-r,
+.mtr-runner.state-idle .mtr-char-leg-l,
+.mtr-runner.state-idle .mtr-char-leg-r {
+  animation: none;
+}
+
+/* ─────────────────────────────────────────────
+   QUESTION BANNER (top of screen)
+   ───────────────────────────────────────────── */
+
+.mtr-q-banner {
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 15;
+  background: rgba(0,0,0,0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 14px 22px;
+  max-width: 92%;
+  width: 420px;
+  text-align: center;
+  border: 3px solid rgba(255,255,255,0.15);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+  animation: bannerSlideIn 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes bannerSlideIn {
+  from { opacity: 0; transform: translateX(-50%) translateY(-30px); }
+  to { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+
+.mtr-q-banner.exiting {
+  animation: bannerSlideOut 0.3s ease-in forwards;
+}
+@keyframes bannerSlideOut {
+  to { opacity: 0; transform: translateX(-50%) translateY(-30px); }
+}
+
+.mtr-q-sentence {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.mtr-blank {
+  display: inline-block;
+  border-bottom: 3px dashed #fbbf24;
+  min-width: 70px;
+  color: #fbbf24;
+  font-weight: 800;
+  padding: 0 4px;
+}
+
+.mtr-tense-tag {
+  display: inline-block;
+  margin-top: 6px;
+  color: rgba(255,255,255,0.5);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* ─────────────────────────────────────────────
+   ANSWER PLATFORMS (float in game world)
+   ───────────────────────────────────────────── */
+
+.mtr-platforms-container {
+  position: absolute;
+  inset: 0;
+  z-index: 8;
+  pointer-events: none;
+}
+
+.mtr-platforms-container.entering {
+  animation: platformsEnter 0.5s cubic-bezier(0.2, 0.8, 0.4, 1) forwards;
+}
+
+@keyframes platformsEnter {
+  from { transform: translateX(110%); }
+  to { transform: translateX(0); }
+}
+
+.mtr-platforms-container.visible {
+  transform: translateX(0);
+}
+
+.mtr-platforms-container.exiting {
+  animation: platformsExit 0.4s ease-in forwards;
+}
+@keyframes platformsExit {
+  from { transform: translateX(0); }
+  to { transform: translateX(-120%); }
+}
+
+.mtr-platform {
+  position: absolute;
+  pointer-events: auto;
+  min-width: 120px;
+  padding: 12px 18px;
+  border: 4px solid;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 800;
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+  box-shadow: 0 6px 0 rgba(0,0,0,0.2);
+  transition: transform 0.1s;
+}
+
+.mtr-platform:active {
+  transform: scale(0.93) !important;
+}
+
+/* Color by tense category */
+.mtr-platform.cat-present {
+  background: #dcfce7;
+  border-color: #22c55e;
+  color: #166534;
+  box-shadow: 0 6px 0 #16a34a;
+}
+.mtr-platform.cat-past {
+  background: #dbeafe;
+  border-color: #3b82f6;
+  color: #1e40af;
+  box-shadow: 0 6px 0 #2563eb;
+}
+.mtr-platform.cat-future {
+  background: #fef3c7;
+  border-color: #f59e0b;
+  color: #92400e;
+  box-shadow: 0 6px 0 #d97706;
+}
+
+/* Platform legs / supports */
+.mtr-platform::after {
+  content: '';
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 8px;
+  height: 20px;
+  background: #78716c;
+  border-radius: 0 0 4px 4px;
+}
+
+/* Correct platform highlight */
+.mtr-platform.correct-platform {
+  border-color: #22c55e !important;
+  background: #bbf7d0 !important;
+  box-shadow: 0 0 20px rgba(34,197,94,0.6), 0 6px 0 #16a34a !important;
+  transform: scale(1.05);
+}
+
+/* Wrong platform shake + red */
+.mtr-platform.wrong-platform {
+  border-color: #ef4444 !important;
+  background: #fecaca !important;
+  box-shadow: 0 0 20px rgba(239,68,68,0.6), 0 6px 0 #dc2626 !important;
+  animation: platformShake 0.4s ease-out;
+}
+
+.mtr-platform.dimmed {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+@keyframes platformShake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-8px); }
+  40% { transform: translateX(8px); }
+  60% { transform: translateX(-5px); }
+  80% { transform: translateX(5px); }
+}
+
+/* ─────────────────────────────────────────────
+   HUD (top bar overlay)
+   ───────────────────────────────────────────── */
+
+.mtr-hud {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  z-index: 20;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 14px;
+  padding-top: max(10px, env(safe-area-inset-top));
+  background: rgba(0,0,0,0.45);
+  backdrop-filter: blur(6px);
+  color: white;
+}
+.mtr-hud-left, .mtr-hud-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.mtr-coins-display {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: #fbbf24;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+.mtr-hearts-display {
+  display: flex;
+  gap: 3px;
+}
+.mtr-heart {
+  font-size: 1.2rem;
+  transition: transform 0.3s, opacity 0.3s;
+}
+.mtr-heart.lost {
+  transform: scale(0);
+  opacity: 0;
+}
+.mtr-level-pill {
+  background: rgba(255,255,255,0.2);
+  border: 2px solid rgba(255,255,255,0.3);
+  border-radius: 20px;
+  padding: 3px 12px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.mtr-progress-text {
+  font-weight: 700;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+.mtr-back-btn {
+  background: rgba(255,255,255,0.2);
+  border: 2px solid rgba(255,255,255,0.3);
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: white;
+  font-size: 1.1rem;
+}
+.mtr-back-btn:active { background: rgba(255,255,255,0.4); }
+
+/* ─────────────────────────────────────────────
+   COIN BURST EFFECT
+   ───────────────────────────────────────────── */
+
+.mtr-coin-burst {
+  position: absolute;
+  z-index: 25;
+  pointer-events: none;
+}
+
+.mtr-coin-p {
+  position: absolute;
+  font-size: 1.4rem;
+  animation: coinFly 0.7s ease-out forwards;
+}
+.mtr-coin-p:nth-child(1) { --dx: -40px; --dy: -70px; }
+.mtr-coin-p:nth-child(2) { --dx: 35px; --dy: -60px; }
+.mtr-coin-p:nth-child(3) { --dx: -15px; --dy: -90px; }
+.mtr-coin-p:nth-child(4) { --dx: 25px; --dy: -80px; }
+.mtr-coin-p:nth-child(5) { --dx: 5px; --dy: -100px; }
+
+@keyframes coinFly {
+  0% { transform: translate(0, 0) scale(0.5); opacity: 1; }
+  100% { transform: translate(var(--dx), var(--dy)) scale(1.1); opacity: 0; }
+}
+
+/* "+1" text that floats up */
+.mtr-plus-one {
+  position: absolute;
+  z-index: 26;
+  color: #fbbf24;
+  font-size: 2rem;
+  font-weight: 900;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+  animation: plusOneUp 0.8s ease-out forwards;
+  pointer-events: none;
+}
+@keyframes plusOneUp {
+  0% { transform: translateY(0) scale(0.5); opacity: 1; }
+  100% { transform: translateY(-60px) scale(1.2); opacity: 0; }
+}
+
+/* ─────────────────────────────────────────────
+   STARS for dark/space worlds
+   ───────────────────────────────────────────── */
+
+.mtr-stars-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+.mtr-star-dot {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background: white;
+  border-radius: 50%;
+  animation: starTwinkle 2s ease-in-out infinite alternate;
+}
+@keyframes starTwinkle {
+  from { opacity: 0.2; }
+  to { opacity: 1; }
+}
+
+/* ─────────────────────────────────────────────
+   WORLD SELECTOR
+   ───────────────────────────────────────────── */
+
+.mtr-world-select {
+  position: absolute;
+  inset: 0;
+  z-index: 30;
+  background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 14px;
+  padding-top: max(14px, env(safe-area-inset-top));
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.mtr-ws-title {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 900;
+  margin: 0 0 2px 0;
+}
+.mtr-ws-sub {
+  color: rgba(255,255,255,0.5);
+  font-size: 0.9rem;
+  margin: 0 0 16px 0;
+  font-weight: 600;
+}
+.mtr-ws-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  max-width: 400px;
+  width: 100%;
+  padding-bottom: 60px;
+}
+.mtr-ws-card {
+  aspect-ratio: 1;
+  border-radius: 14px;
+  border: 3px solid rgba(255,255,255,0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  cursor: pointer;
+  padding: 6px;
+  position: relative;
+  transition: transform 0.15s;
+}
+.mtr-ws-card:active { transform: scale(0.94); }
+.mtr-ws-card .ws-emoji {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  font-size: 1.4rem;
+  opacity: 0.7;
+}
+.mtr-ws-card .ws-num {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+.mtr-ws-card .ws-label {
+  font-size: 0.6rem;
+  font-weight: 700;
+  color: rgba(255,255,255,0.85);
+  text-align: center;
+  line-height: 1.2;
+}
+.mtr-ws-card .ws-star {
+  position: absolute;
+  bottom: 3px;
+  right: 3px;
+  font-size: 0.8rem;
+}
+
+/* ─────────────────────────────────────────────
+   OVERLAY (Game Over / World Complete)
+   ───────────────────────────────────────────── */
+
+.mtr-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 30;
+  background: rgba(0,0,0,0.85);
+  backdrop-filter: blur(12px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 24px;
+  animation: overlayFadeIn 0.3s ease-out;
+}
+@keyframes overlayFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.mtr-overlay-icon {
+  font-size: 3.5rem;
+  animation: overlayBounce 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+@keyframes overlayBounce {
+  from { transform: scale(0); }
+  to { transform: scale(1); }
+}
+.mtr-overlay h2 {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 900;
+  margin: 0;
+  text-align: center;
+}
+.mtr-overlay p {
+  color: rgba(255,255,255,0.8);
+  font-size: 1rem;
+  margin: 0;
+  text-align: center;
+  line-height: 1.6;
+}
+.mtr-overlay-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 4px;
+}
+.mtr-o-btn {
+  padding: 12px 24px;
+  border-radius: 12px;
+  border: 3px solid;
+  font-size: 1rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+.mtr-o-btn:active { transform: scale(0.94); }
+.mtr-o-btn.primary {
+  background: #22c55e;
+  border-color: #16a34a;
+  color: white;
+  box-shadow: 0 5px 0 #16a34a;
+}
+.mtr-o-btn.secondary {
+  background: rgba(255,255,255,0.12);
+  border-color: rgba(255,255,255,0.25);
+  color: white;
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 400px) {
+  .mtr-q-sentence { font-size: 1.05rem; }
+  .mtr-platform { min-width: 90px; font-size: 0.85rem; padding: 10px 12px; }
+  .mtr-runner { font-size: 44px; left: 8%; }
+  .mtr-ws-title { font-size: 1.4rem; }
+  .mtr-ws-grid { gap: 8px; }
+}

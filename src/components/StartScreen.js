@@ -1,5 +1,5 @@
 import React from 'react';
-import { BookOpen, Calculator, Microscope, BarChart3, Play, CheckSquare, Square, Pencil, Camera, History, Blocks } from 'lucide-react';
+import { BookOpen, Calculator, Microscope, BarChart3, Play, CheckSquare, Square, Pencil, Camera, History, Blocks, Gamepad2 } from 'lucide-react';
 import GameSelector from './GameSelector';
 
 const SUBJECTS = {
@@ -168,6 +168,10 @@ const StartScreen = ({
             <button className="gs-tense-btn border-pink" onClick={() => startGrammarGame('photobomb')}>
               <div className="gs-tense-icon"><Camera size={16} color="#EC4899" /></div>
               Photobomb
+            </button>
+            <button className="gs-tense-btn border-green" onClick={() => startGrammarGame('marioTense')}>
+              <div className="gs-tense-icon"><Gamepad2 size={16} color="#22C55E" /></div>
+              Tense Runner
             </button>
           </div>
         </div>
