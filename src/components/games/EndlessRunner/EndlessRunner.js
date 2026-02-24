@@ -9,12 +9,16 @@ const EndlessRunner = ({ onComplete, words = [], tenseSentences = [] }) => {
     const [feedback, setFeedback] = useState(null); // 'correct' or 'wrong'
     const [actionText, setActionText] = useState(null);
     
-    // Timer state tied to individual questions
-    const [timeLeft, setTimeLeft] = useState(20); 
-    const [maxTimeLeft, setMaxTimeLeft] = useState(20);
+    // Global Timer state based on selected questions (5 -> 2 mins, 10 -> 4 mins, 20 -> 5 mins)
+    const initialTime = words.length >= 20 ? 300 : (words.length >= 10 ? 240 : 120);
+    const [timeLeft, setTimeLeft] = useState(initialTime); 
+    const [maxTimeLeft] = useState(initialTime);
     
     // Performance Review Logger
     const sessionLogs = React.useRef([]);
+    
+    // For calculating time taken per individual question
+    const questionStartTime = React.useRef(Date.now());
 
     // Initialize the Pedagogical Engine
     const { 
@@ -26,30 +30,24 @@ const EndlessRunner = ({ onComplete, words = [], tenseSentences = [] }) => {
         generateNext 
     } = useRunnerEngine(words, tenseSentences);
 
-    // Reset Timer on New Question
     useEffect(() => {
-        if (currentQuestion && currentQuestion.timeLimit) {
-            setTimeLeft(currentQuestion.timeLimit);
-            setMaxTimeLeft(currentQuestion.timeLimit);
+        if (currentQuestion) {
+            questionStartTime.current = Date.now();
         }
     }, [currentQuestion]);
 
-    const formatTime = (seconds) => {
-        return Math.max(0, seconds);
-    };
-
-    const handleOptionClick = useCallback((option, isTimeout = false) => {
+    const handleOptionClick = useCallback((option) => {
         if (!gameActive || selectedId !== null || !currentQuestion) return;
         
-        setSelectedId(option.id || -1); // -1 if timeout
+        setSelectedId(option.id || -1);
         const isCorrect = option.isCorrect;
         const timeRemainingPercentage = timeLeft / maxTimeLeft;
         
-        // Notify the engine to adjust difficulty internally based on speed!
+        // Notify the engine to adjust difficulty internally based on speed
         processAnswer(isCorrect, timeRemainingPercentage);
         
         // Log for Review Dashboard
-        const timeTaken = maxTimeLeft - timeLeft;
+        const timeTaken = Math.round((Date.now() - questionStartTime.current) / 1000);
         const correctAnswerObj = currentQuestion.options.find(o => o.isCorrect);
         sessionLogs.current.push({
             question: currentQuestion.sentence || 'Spelling check',
@@ -57,43 +55,40 @@ const EndlessRunner = ({ onComplete, words = [], tenseSentences = [] }) => {
             correctAnswer: correctAnswerObj ? correctAnswerObj.text : '?',
             isCorrect: isCorrect,
             timeTaken: timeTaken,
-            timeLimit: maxTimeLeft
+            timeLimit: currentQuestion.timeLimit || 20
         });
 
         if (isCorrect) {
             setFeedback('correct');
-            // Harder questions yield higher base scores, plus a speed bonus multiplier (up to 1.5x)
+            // Harder questions yield higher base scores, plus a speed bonus multiplier
             const speedMultiplier = 1.0 + (timeRemainingPercentage * 0.5);
             const rawScore = 10 * (level / 2);
             const finalPoints = Math.round(rawScore * speedMultiplier);
             setScore(prev => prev + finalPoints);
-            
             setActionText(`+${finalPoints}`);
-            
-            setTimeout(() => {
-                setSelectedId(null);
-                setFeedback(null);
-                setActionText(null);
-                generateNext();
-            }, 800);
-            
         } else {
             setFeedback('wrong');
-            setActionText(isTimeout ? "Time's up!" : "Miss!");
-            setGameActive(false); // Die strictly on first miss currently
+            setActionText("Miss!");
         }
+
+        setTimeout(() => {
+            setSelectedId(null);
+            setFeedback(null);
+            setActionText(null);
+            generateNext();
+        }, 800);
     }, [gameActive, selectedId, currentQuestion, timeLeft, maxTimeLeft, level, processAnswer, generateNext]);
 
-    // Timer Logic - drains every second
+    // Global Timer Logic - drains every second
     useEffect(() => {
-        if (!gameActive || selectedId !== null) return;
+        if (!gameActive) return; // Note: We want the global timer to keep ticking down even if selectedId is not null
         
         const timer = setInterval(() => {
             setTimeLeft(prev => {
                 if (prev <= 1) {
                     clearInterval(timer);
-                    // Time's up for this question - mark wrong automatically
-                    handleOptionClick({ text: "Time Out", isCorrect: false }, true);
+                    // Global Time is up!
+                    setGameActive(false);
                     return 0;
                 }
                 return prev - 1;
@@ -101,7 +96,7 @@ const EndlessRunner = ({ onComplete, words = [], tenseSentences = [] }) => {
         }, 1000);
         
         return () => clearInterval(timer);
-    }, [gameActive, selectedId, handleOptionClick]);
+    }, [gameActive]);
 
     const handleGameOverComplete = () => {
         if (onComplete) {
@@ -130,20 +125,8 @@ const EndlessRunner = ({ onComplete, words = [], tenseSentences = [] }) => {
                     <span style={{ color: '#FCD34D' }}>LVL {level}</span>
                     <span>SCORE: {score}</span>
                 </div>
-                {/* Visual Timer Progress Bar */}
-                <div className="er-timer" style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                    <div style={{ color: timeLeft <= 5 ? '#EF4444' : '#F8FAFC', fontWeight: 'bold', fontSize: '18px', width: '30px' }}>
-                        {formatTime(timeLeft)}s
-                    </div>
-                    <div style={{ width: '150px', height: '12px', background: 'rgba(0,0,0,0.5)', borderRadius: '6px', overflow: 'hidden' }}>
-                        <div style={{ 
-                            height: '100%', 
-                            width: `${(timeLeft / maxTimeLeft) * 100}%`,
-                            background: timeLeft <= 5 ? '#EF4444' : '#4ADE80',
-                            transition: 'width 1s linear, background 0.3s'
-                        }} />
-                    </div>
-                </div>
+                {/* Visual Timer Progress Bar Hidden */}
+                <div className="er-timer" style={{ display: 'none' }}></div>
             </div>
 
             {/* Render sentence if a contextual/definition question */}
@@ -184,14 +167,27 @@ const EndlessRunner = ({ onComplete, words = [], tenseSentences = [] }) => {
                 })}
             </div>
 
-            <div className="er-character-area">
-                <div className="er-character" style={{ 
-                    animationPlayState: gameActive && selectedId===null ? 'running' : 'paused',
-                    // The character runs to the right as time drains!
-                    transform: `translateX(${(1 - (timeLeft / maxTimeLeft)) * 300}px)`,
-                    transition: 'transform 1s linear'
-                }}>
-                    {gameActive && selectedId === null && <div className="er-dust"></div>}
+            <div className="er-character-area" style={{ left: 0, width: '100vw', padding: '0 5vw', boxSizing: 'border-box' }}>
+                <div style={{ position: 'relative', width: '100%', height: '80px' }}>
+                    <div className="er-character" style={{ 
+                        animationPlayState: gameActive && selectedId===null ? 'running' : 'paused',
+                        position: 'absolute',
+                        left: `max(0px, calc(${(1 - (timeLeft / maxTimeLeft)) * 100}% - 70px))`,
+                        bottom: '0',
+                        transition: 'left 1s linear'
+                    }}>
+                        {gameActive && selectedId === null && <div className="er-dust"></div>}
+                    </div>
+                    <div style={{ 
+                        position: 'absolute', 
+                        right: '-10px', 
+                        bottom: '0', 
+                        fontSize: '3rem', 
+                        filter: 'drop-shadow(0 4px 6px rgba(0,0,0,0.3))',
+                        paddingBottom: '10px'
+                    }}>
+                        🏅
+                    </div>
                 </div>
             </div>
             

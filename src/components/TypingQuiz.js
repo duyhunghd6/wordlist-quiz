@@ -368,7 +368,7 @@ const TypingQuiz = ({ words, onAnswer, onComplete, onHome, gameId, learningData 
   }
   
   return (
-    <div style={{ maxWidth: '800px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: 'var(--space-lg)' }} ref={containerRef}>
+    <div style={{ maxWidth: '800px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: 'var(--space-lg)', position: 'relative' }} ref={containerRef}>
       
       {/* HUD Header */}
       <div className="game-hud" style={{ width: '100%', maxWidth: '100%' }}>

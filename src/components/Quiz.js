@@ -92,7 +92,7 @@ const Quiz = ({ selectedWordlist, questions, currentQuestionIndex, handleAnswer,
   const timerPercent = (timeRemaining / QUESTION_TIME_LIMIT) * 100;
 
   return (
-    <div style={{ maxWidth: '600px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: 'var(--space-lg)' }}>
+    <div style={{ maxWidth: '600px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: 'var(--space-lg)', position: 'relative' }}>
       {/* HUD Header */}
       <div className="game-hud" style={{ width: '100%', maxWidth: '100%' }}>
         <button className="hud-btn" onClick={onHome} aria-label="Go home">
