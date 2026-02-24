@@ -1,5 +1,5 @@
 import React from 'react';
-import { BookOpen, Calculator, Microscope, BarChart3, Play, Check, CheckSquare, Square, Pencil } from 'lucide-react';
+import { BookOpen, Calculator, Microscope, BarChart3, Play, CheckSquare, Square, Pencil, Camera, History, Blocks } from 'lucide-react';
 import GameSelector from './GameSelector';
 
 const SUBJECTS = {
@@ -42,6 +42,7 @@ const StartScreen = ({
   onOpenParentReport,
   onProfileClick,
   onEditName,
+  startGrammarGame,
 }) => {
   const allSelected = units.length > 0 && units.length === selectedUnits.length;
   
@@ -54,7 +55,7 @@ const StartScreen = ({
   };
   
   return (
-    <div style={{ maxWidth: '600px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: 'var(--space-xl)', paddingBottom: 'var(--space-2xl)' }}>
+    <div style={{ maxWidth: '600px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: 'var(--space-md)', paddingBottom: 'var(--space-2xl)' }}>
       {/* Profile Header */}
       <div className="flex-row shadow-sm" style={{ padding: 'var(--space-sm) var(--space-md)', justifyContent: 'space-between', alignItems: 'center', background: 'white', border: '3px solid var(--color-border-default)', borderRadius: 'var(--radius-xl)' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-sm)' }}>
@@ -96,7 +97,7 @@ const StartScreen = ({
       
       {/* Subject Selection */}
       <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-sm)' }}>
-        <h2 style={{ fontSize: '1.2rem', color: 'var(--color-text-primary)' }}>Pick a Subject</h2>
+        <h2 className="gs-section-title">Pick a Subject</h2>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 'var(--space-sm)' }}>
           {wordlists.map(wl => {
             const subject = SUBJECTS[wl] || { name: wl, icon: BookOpen, color: 'esl' };
@@ -151,12 +152,33 @@ const StartScreen = ({
         </div>
       )}
 
+      {/* Grammar Games (ESL Only) */}
+      {selectedWordlist === 'wordlist_esl' && (
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-xs)' }}>
+          <h2 className="gs-section-title">Tense & Grammar Games</h2>
+          <div className="gs-tense-games">
+            <button className="gs-tense-btn border-blue" onClick={() => startGrammarGame('shapeBuilder')}>
+              <div className="gs-tense-icon"><Blocks size={16} color="#3B82F6" /></div>
+              Shape Builder
+            </button>
+            <button className="gs-tense-btn border-yellow" onClick={() => startGrammarGame('timelineDetective')}>
+              <div className="gs-tense-icon"><History size={16} color="#FBBF24" /></div>
+              Timeline Detective
+            </button>
+            <button className="gs-tense-btn border-pink" onClick={() => startGrammarGame('photobomb')}>
+              <div className="gs-tense-icon"><Camera size={16} color="#EC4899" /></div>
+              Photobomb
+            </button>
+          </div>
+        </div>
+      )}
+
       {/* Game Options */}
       {wordlist && (
         <>
           {/* Game Selector */}
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-sm)' }}>
-            <h2 style={{ fontSize: '1.2rem', color: 'var(--color-text-primary)' }}>Choose Game</h2>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-xs)' }}>
+            <h2 className="gs-section-title">Choose Game</h2>
             <GameSelector
               selectedGame={selectedGame}
               onSelectGame={onSelectGame}
@@ -165,48 +187,40 @@ const StartScreen = ({
           </div>
 
           {/* Unit Selection */}
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-sm)' }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-              <h2 style={{ fontSize: '1.2rem', color: 'var(--color-text-primary)', margin: 0 }}>Choose Units</h2>
-              <button 
-                className="badge badge-neutral"
-                style={{ cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '4px' }}
-                onClick={handleSelectAll}
-              >
-                {allSelected ? <Square size={14} /> : <CheckSquare size={14} />}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-xs)' }}>
+            <div className="gs-units-header">
+              <h2 className="gs-section-title" style={{ margin: 0 }}>Choose Units</h2>
+              <button className="gs-select-all" onClick={handleSelectAll}>
+                {allSelected ? <Square size={12} /> : <CheckSquare size={12} />}
                 {allSelected ? 'Clear' : 'Select All'}
               </button>
             </div>
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: 'var(--space-sm)' }}>
+            <div className="gs-units-grid">
               {units.map(unit => {
                 const isChecked = selectedUnits.includes(unit);
                 return (
-                  <label 
-                    key={unit} 
-                    className={`kids-checkbox ${isChecked ? '' : 'default'}`}
-                    style={{ background: 'white', padding: 'var(--space-sm)', borderRadius: 'var(--radius-md)', border: '2px solid var(--color-border-default)', cursor: 'pointer' }}
+                  <button
+                    key={unit}
+                    className={`gs-unit-pill ${isChecked ? 'active' : ''}`}
+                    onClick={() => {
+                      if (isChecked) {
+                        setSelectedUnits(selectedUnits.filter(u => u !== unit));
+                      } else {
+                        setSelectedUnits([...selectedUnits, unit]);
+                      }
+                    }}
                   >
-                    <input
-                      type="checkbox"
-                      value={unit}
-                      checked={isChecked}
-                      onChange={handleUnitChange}
-                      style={{ display: 'none' }}
-                    />
-                    <div className={`k-box ${isChecked ? 'selected' : 'default'}`} style={{ width: '24px', height: '24px' }}>
-                      {isChecked && <i><Check size={16} strokeWidth={4} /></i>}
-                    </div>
-                    <span>Unit {unit}</span>
-                  </label>
+                    {unit}
+                  </button>
                 );
               })}
             </div>
           </div>
 
           {/* Question Count using Segmented Control strategy */}
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-sm)' }}>
-            <h2 style={{ fontSize: '1.2rem', color: 'var(--color-text-primary)' }}>How Many Words?</h2>
-            <div className="segmented-control" style={{ maxWidth: '300px' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-xs)' }}>
+            <h2 className="gs-section-title">How Many Words?</h2>
+            <div className="segmented-control" style={{ maxWidth: '220px' }}>
               {[5, 10, 20].map(num => (
                 <button
                   key={num}

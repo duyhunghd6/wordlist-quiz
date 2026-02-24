@@ -238,7 +238,7 @@ const BubblePop = ({ words, onAnswer, onComplete, onHome, gameId = 'bubble' }) =
           cursor: pointer;
           background: var(--bubble-bg);
           box-shadow: inset -5px -5px 15px rgba(0,0,0,0.2), inset 5px 5px 15px rgba(255,255,255,0.4), 0 5px 15px var(--bubble-glow);
-          left: var(--bubble-x);
+          left: calc(var(--bubble-x) - 45px);
           animation: floatUp var(--bubble-speed) ease-in forwards;
           animation-delay: var(--bubble-delay);
           transition: transform 0.1s;

@@ -69,7 +69,12 @@ For this type of project, the Agentic SE workflow utilizes four core skills/pers
 
 ## Task Management (Beads CLI Workflows)
 
-All four personas (Analyst, Architect, Engineer, QA) must strictly follow this `beads` CLI task management workflow. Do NOT use `tasks/todo.md`.
+### 0. When to use Beads CLI & Git (CRITICAL)
+
+- **Hotfixes & Small Tasks (DEFAULT):** Just implement the fix directly. **DO NOT** create beads issues, and **DO NOT** commit or push to GitHub.
+- **New Planned Tasks:** Only commit and create beads issues if it is a new task that needs to be planned, or if the user explicitly asks you to use the beads CLI.
+
+All four personas (Analyst, Architect, Engineer, QA) must strictly follow this `beads` CLI task management workflow for planned work. Do NOT use `tasks/todo.md`.
 
 ### 1. Check & Claim (All Personas)
 

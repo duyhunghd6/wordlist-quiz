@@ -47,7 +47,7 @@
     </div>
 
     <div class="component-block">
-        <h3>3. Game Selector Card</h3>
+        <h3>3. Game Selector Card (Legacy)</h3>
         <p class="text-sm">Entry point for games with status badges.</p>
         <div class="flex-row">
             <div class="game-selector-card">
@@ -66,6 +66,48 @@
         </div>
     </div>
 
+    <div class="component-block">
+        <h3>3.1 Compact Game Selector (New)</h3>
+        <p class="text-sm">Space-efficient squircle icons with labels below, ideal for horizontal scrolling lists of 10-20 games.</p>
+        <div class="flex-row">
+            <div style="display: flex; gap: var(--space-md); overflow-x: auto; padding-bottom: var(--space-sm);">
+                <!-- Active/Selected State -->
+                <button class="game-selector-compact active">
+                    <div class="compact-icon-bg" style="background-color: var(--color-info);">
+                        <i class="ph-bold ph-check" style="position: absolute; top: -5px; right: -5px; background: white; color: var(--color-success); border-radius: 50%; padding: 2px; font-size: 14px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);"></i>
+                        <i class="ph-bold ph-clipboard-text" style="color: white; font-size: 28px;"></i>
+                    </div>
+                    <span class="compact-label">Quiz</span>
+                </button>
+                
+                <!-- Normal State -->
+                <button class="game-selector-compact">
+                    <div class="compact-icon-bg" style="background-color: var(--color-accent);">
+                        <i class="ph-bold ph-magnifying-glass" style="color: white; font-size: 28px;"></i>
+                    </div>
+                    <span class="compact-label">Search</span>
+                </button>
+
+                <!-- Normal State with Badge (e.g. New Game or High Score) -->
+                <button class="game-selector-compact">
+                    <div class="compact-icon-bg" style="background-color: var(--color-purple, #A855F7);">
+                        <div style="position: absolute; top: -5px; right: -5px; background: var(--color-danger); color: white; font-size: 10px; font-weight: bold; border-radius: var(--radius-full); padding: 2px 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">NEW</div>
+                        <i class="ph-bold ph-keyboard" style="color: white; font-size: 28px;"></i>
+                    </div>
+                    <span class="compact-label">Typing</span>
+                </button>
+
+                <!-- Disabled State (Coming Soon) -->
+                <button class="game-selector-compact disabled" disabled>
+                    <div class="compact-icon-bg" style="background-color: var(--color-text-secondary);">
+                        <i class="ph-bold ph-lock" style="position: absolute; top: -5px; right: -5px; background: white; color: var(--color-text-secondary); border-radius: 50%; padding: 2px; font-size: 14px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);"></i>
+                        <i class="ph-bold ph-star" style="color: white; font-size: 28px;"></i>
+                    </div>
+                    <span class="compact-label opacity-75">Bonus</span>
+                </button>
+            </div>
+        </div>
+    </div>
     <div class="component-block">
         <h3>4. Score Summary Card</h3>
         <p class="text-sm">End of session summary with stat blocks.</p>

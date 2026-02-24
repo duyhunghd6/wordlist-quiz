@@ -1,5 +1,5 @@
 import React from 'react';
-import { ClipboardList, Search, Layers, Circle, Check, Lock, Keyboard, ChevronRight } from 'lucide-react';
+import { ClipboardList, Search, Layers, Circle, Check, Lock, Keyboard } from 'lucide-react';
 import { GAMES } from '../constants/gameConfig';
 
 const GAME_ICONS = {
@@ -20,7 +20,7 @@ const GAME_COLORS = {
 
 const GameSelector = ({ selectedGame, onSelectGame, gameStats }) => {
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-sm)' }}>
+    <div style={{ display: 'flex', justifyContent: 'space-between', gap: '6px' }}>
       {GAMES.map((game) => {
         const stats = gameStats?.[game.id] || { played: 0, bestScore: 0 };
         const isSelected = selectedGame === game.id;
@@ -31,40 +31,34 @@ const GameSelector = ({ selectedGame, onSelectGame, gameStats }) => {
         return (
           <button
             key={game.id}
-            className="game-selector-card"
-            style={{ 
-              width: '100%', 
-              maxWidth: '100%', 
-              opacity: game.available ? 1 : 0.6,
-              cursor: game.available ? 'pointer' : 'not-allowed',
-              borderColor: isSelected ? 'var(--color-info)' : 'var(--color-border-default)',
-              boxShadow: isSelected ? 'var(--shadow-bouncy)' : 'var(--shadow-sm)'
-            }}
+            className={`game-selector-compact ${isSelected ? 'active' : ''} ${!game.available ? 'disabled' : ''}`}
             onClick={() => game.available && onSelectGame(game.id)}
             disabled={!game.available}
             aria-label={game.available ? game.name : `${game.name} - Coming Soon`}
             aria-pressed={isSelected}
+            style={{ flex: '1 1 0', minWidth: 0 }}
           >
-            <div className="game-icon-bg" style={{ background: color }}>
-              <Icon size={28} color="white" strokeWidth={2.5} />
-            </div>
-            
-            <div className="game-info">
-              <h4>{game.name}</h4>
-              <p>{!game.available ? 'Coming Soon' : isNew ? '✨ New Game!' : `Best Score: ${stats.bestScore}%`}</p>
-            </div>
-            
-            <div className="game-meta">
-              {isSelected ? (
-                <div style={{ background: 'var(--color-info)', color: 'white', borderRadius: '50%', padding: '4px' }}>
-                  <Check size={16} strokeWidth={4} />
+            <div className="compact-icon-bg compact-icon-sm" style={{ backgroundColor: !game.available ? 'var(--color-text-secondary)' : color }}>
+              {isSelected && (
+                <div style={{ position: 'absolute', top: -4, right: -4, background: 'white', color: 'var(--color-success)', borderRadius: '50%', padding: '1px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)', display: 'flex' }}>
+                  <Check size={12} strokeWidth={4} />
                 </div>
-              ) : !game.available ? (
-                <Lock size={20} color="var(--color-text-secondary)" />
-              ) : (
-                <ChevronRight size={24} color="var(--color-text-secondary)" />
               )}
+              {isNew && game.available && !isSelected && (
+                <div style={{ position: 'absolute', top: -4, right: -6, background: 'var(--color-danger)', color: 'white', fontSize: '8px', fontWeight: 'bold', borderRadius: 'var(--radius-full)', padding: '1px 4px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }}>
+                  NEW
+                </div>
+              )}
+              {!game.available && (
+                <div style={{ position: 'absolute', top: -4, right: -4, background: 'white', color: 'var(--color-text-secondary)', borderRadius: '50%', padding: '1px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)', display: 'flex' }}>
+                  <Lock size={12} strokeWidth={3} />
+                </div>
+              )}
+              <Icon size={18} color="white" strokeWidth={2.5} />
             </div>
+            <span className="compact-label compact-label-sm" style={{ opacity: game.available ? 1 : 0.75 }}>
+              {game.name.replace('Game', '').trim()}
+            </span>
           </button>
         );
       })}

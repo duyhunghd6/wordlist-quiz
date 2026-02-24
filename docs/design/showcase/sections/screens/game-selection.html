@@ -1,0 +1,448 @@
+<style>
+.screen-mockup {
+    width: 375px; 
+    height: 667px; /* Strict fixed height to enforce 1-screen rule */
+    border: 12px solid #1E293B;
+    border-radius: 36px;
+    background: #F0FDF4; /* Light mint background from screenshot */
+    position: relative;
+    overflow: hidden; /* Prevent scrolling */
+    margin: 0 auto;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    padding: 8px 12px 12px; /* Compressed padding */
+    font-family: var(--font-family);
+}
+
+/* 1. Header Profile Box */
+.gs-header {
+    background: white;
+    border-radius: 100px; /* specific pill shape */
+    display: flex;
+    align-items: center;
+    padding: 4px 12px;
+    margin-bottom: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+.gs-avatar {
+    width: 32px;
+    height: 32px;
+    background: #F1F5F9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    font-size: 18px;
+}
+.gs-user-info {
+    flex: 1;
+}
+.gs-name {
+    font-weight: 800;
+    font-size: 0.9rem;
+    color: var(--color-text-primary);
+    line-height: 1.1;
+}
+.gs-edit {
+    font-size: 0.65rem;
+    color: var(--color-text-secondary);
+}
+.gs-report-btn {
+    background: white;
+    border: 1px solid #CBD5E1;
+    border-radius: 20px;
+    padding: 4px 12px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--color-text-primary);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+/* 2. Main Title Area */
+.gs-title-area {
+    text-align: center;
+    margin-bottom: 8px;
+}
+.gs-title {
+    color: #3B82F6; /* Info Blue */
+    font-size: 1.6rem;
+    font-weight: 800;
+    margin: 0 0 4px;
+    line-height: 1;
+}
+.gs-subtitle {
+    color: #475569;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* Section Headers */
+.gs-section-title {
+    font-size: 0.85rem;
+    font-weight: 800;
+    color: var(--color-text-primary);
+    margin: 0 0 4px;
+}
+
+/* 3. Pick a Subject */
+.gs-subjects {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+.gs-sub-btn {
+    flex: 1;
+    background: white;
+    border: 2px solid #E2E8F0;
+    border-radius: 16px;
+    padding: 6px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    color: var(--color-text-primary);
+    font-weight: 700;
+    font-size: 0.75rem;
+}
+.gs-sub-btn.active {
+    border: 3px solid #3B82F6;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
+    padding: 5px 0; /* offset border change */
+}
+.gs-sub-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+.bg-blue-light { background: #DBEAFE; color: #3B82F6;}
+.active .bg-blue-light { background: #3B82F6; color: white;}
+.bg-teal-light { background: #CCFBF1; color: #0D9488;}
+.bg-green-light { background: #DCFCE7; color: #16A34A;}
+
+/* 4. Tense & Grammar Games */
+.gs-tense-games {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+.gs-tense-btn {
+    flex: 1;
+    background: white;
+    border: 2px solid;
+    border-radius: 20px; /* specific pill shape for these */
+    padding: 8px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    font-weight: 800;
+    font-size: 0.65rem;
+    color: var(--color-text-primary);
+}
+.border-blue { border-color: #3B82F6; }
+.border-yellow { border-color: #FBBF24; color: #B45309; }
+.border-pink { border-color: #EC4899; }
+.gs-tense-icon {
+    font-size: 16px;
+}
+.border-blue .gs-tense-icon { color: #3B82F6; }
+.border-yellow .gs-tense-icon { color: #FBBF24; }
+.border-pink .gs-tense-icon { color: #EC4899; }
+
+/* 5. Choose Game Grid */
+.gs-game-grid {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.gs-game-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    position: relative;
+    width: 50px;
+}
+.gs-game-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 16px; /* Squircle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.gs-game-label {
+    font-size: 0.6rem;
+    font-weight: 800;
+    color: var(--color-text-secondary);
+    text-align: center;
+    line-height: 1.1;
+}
+/* Game Icon Colors */
+.bg-quiz { background: #3B82F6; }
+.bg-typing { background: #A855F7; }
+.bg-scramble { background: #D946EF; }
+.bg-search { background: #F59E0B; }
+.bg-swipe { background: #EC4899; }
+.bg-bubble { background: #10B981; }
+
+.gs-tag-new {
+    position: absolute;
+    top: -6px;
+    right: -4px;
+    background: #EF4444;
+    color: white;
+    font-size: 0.5rem;
+    font-weight: 800;
+    padding: 2px 4px;
+    border-radius: 4px;
+    border: 1px solid white;
+}
+.gs-tag-check {
+    position: absolute;
+    top: -6px;
+    right: -2px;
+    background: white;
+    color: #10B981;
+    font-size: 0.7rem;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.gs-game-item.active .gs-game-label { color: var(--color-text-primary); }
+
+/* 6. Choose Units */
+.gs-units-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.gs-select-all {
+    background: white;
+    border: 1px solid #CBD5E1;
+    border-radius: 12px;
+    padding: 2px 8px;
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: var(--color-text-secondary);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.gs-units-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 10px;
+}
+.gs-unit-pill {
+    background: white;
+    border: 2px solid #E2E8F0;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: var(--color-text-secondary);
+}
+.gs-unit-pill.active {
+    background: #10B981;
+    border-color: #10B981;
+    color: white;
+}
+
+/* 7. How Many Words & Start Button container */
+.gs-bottom-section {
+    margin-top: auto; /* Pushes everything below down */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.gs-words-toggle {
+    background: #E2E8F0;
+    border-radius: 20px;
+    padding: 4px;
+    display: flex;
+    width: 200px;
+}
+.gs-word-opt {
+    flex: 1;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: #64748B;
+    padding: 6px 0;
+    border-radius: 16px;
+}
+.gs-word-opt.active {
+    background: white;
+    color: var(--color-text-primary);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.gs-start-btn {
+    background: #F59E0B;
+    color: white;
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 1.25rem;
+    border: none;
+    border-radius: 16px;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    box-shadow: 0 4px 0 #D97706;
+}
+</style>
+
+<div class="section-header">
+    <h2 class="section-title">Screen: Compressed Game Selection</h2>
+    <p class="section-description">A highly dense, non-scrollable configuration screen mapping exact constraints of the Home/Setup mobile view.</p>
+</div>
+
+<div class="component-showcase" style="align-items: center; padding: 40px 0;">
+    <div class="screen-mockup">
+        
+        <!-- 1. Header -->
+        <div class="gs-header">
+            <div class="gs-avatar">🐼</div>
+            <div class="gs-user-info">
+                <div class="gs-name">Hi, Jetski QA!</div>
+                <div class="gs-edit"><i class="ph ph-pencil-simple"></i> Edit Name</div>
+            </div>
+            <div class="gs-report-btn"><i class="ph ph-chart-bar"></i> Report</div>
+        </div>
+
+        <!-- 2. Title -->
+        <div class="gs-title-area">
+            <h1 class="gs-title">Wordlist Quiz</h1>
+            <p class="gs-subtitle">Learn new words through fun games!</p>
+        </div>
+
+        <!-- 3. Pick a Subject -->
+        <div class="gs-section-title">Pick a Subject</div>
+        <div class="gs-subjects">
+            <div class="gs-sub-btn active">
+                <div class="gs-sub-icon bg-blue-light"><i class="ph ph-book-open"></i></div>
+                English
+            </div>
+            <div class="gs-sub-btn">
+                <div class="gs-sub-icon bg-teal-light"><i class="ph ph-calculator"></i></div>
+                Math
+            </div>
+            <div class="gs-sub-btn">
+                <div class="gs-sub-icon bg-green-light"><i class="ph ph-microscope"></i></div>
+                Science
+            </div>
+        </div>
+
+        <!-- 4. Tense & Grammar Games -->
+        <div class="gs-section-title">Tense & Grammar Games</div>
+        <div class="gs-tense-games">
+            <div class="gs-tense-btn border-blue">
+                <div class="gs-tense-icon"><i class="ph ph-squares-four"></i></div>
+                Shape Builder
+            </div>
+            <div class="gs-tense-btn border-yellow">
+                <div class="gs-tense-icon"><i class="ph ph-clock-counter-clockwise"></i></div>
+                Timeline Detective
+            </div>
+            <div class="gs-tense-btn border-pink">
+                <div class="gs-tense-icon"><i class="ph ph-camera"></i></div>
+                Photobomb
+            </div>
+        </div>
+
+        <!-- 5. Choose Game Grid -->
+        <div class="gs-section-title">Choose Game</div>
+        <div class="gs-game-grid">
+            <div class="gs-game-item active">
+                <div class="gs-game-icon bg-quiz"><i class="ph ph-clipboard-text"></i></div>
+                <div class="gs-tag-check">✓</div>
+                <div class="gs-game-label">Quiz</div>
+            </div>
+            <div class="gs-game-item">
+                <div class="gs-game-icon bg-typing"><i class="ph ph-keyboard"></i></div>
+                <div class="gs-tag-new">NEW</div>
+                <div class="gs-game-label">Typing</div>
+            </div>
+            <div class="gs-game-item">
+                <div class="gs-game-icon bg-scramble"><i class="ph ph-list-dashes"></i></div>
+                <div class="gs-tag-new">NEW</div>
+                <div class="gs-game-label">Word<br>Scramble</div>
+            </div>
+            <div class="gs-game-item">
+                <div class="gs-game-icon bg-search"><i class="ph ph-magnifying-glass"></i></div>
+                <div class="gs-tag-new">NEW</div>
+                <div class="gs-game-label">Word<br>Search</div>
+            </div>
+            <div class="gs-game-item">
+                <div class="gs-game-icon bg-swipe"><i class="ph ph-stack"></i></div>
+                <div class="gs-tag-new">NEW</div>
+                <div class="gs-game-label">Swipe<br>Cards</div>
+            </div>
+            <div class="gs-game-item">
+                <div class="gs-game-icon bg-bubble"><i class="ph ph-circle"></i></div>
+                <div class="gs-tag-new">NEW</div>
+                <div class="gs-game-label">Bubble<br>Pop</div>
+            </div>
+        </div>
+
+        <!-- 6. Choose Units -->
+        <div class="gs-units-header">
+            <div class="gs-section-title" style="margin:0;">Choose Units</div>
+            <div class="gs-select-all"><i class="ph ph-check-square"></i> Select All</div>
+        </div>
+        <div class="gs-units-grid">
+            <div class="gs-unit-pill">1</div>
+            <div class="gs-unit-pill">2</div>
+            <div class="gs-unit-pill">3</div>
+            <div class="gs-unit-pill">5</div>
+            <div class="gs-unit-pill">6</div>
+            <div class="gs-unit-pill active">7</div>
+            <div class="gs-unit-pill">8</div>
+            <div class="gs-unit-pill active">9</div>
+        </div>
+
+        <!-- 7 Bottom Section -->
+        <div class="gs-bottom-section">
+            <div>
+                <div class="gs-section-title">How Many Words?</div>
+                <div class="gs-words-toggle">
+                    <div class="gs-word-opt active">5</div>
+                    <div class="gs-word-opt">10</div>
+                    <div class="gs-word-opt">20</div>
+                </div>
+            </div>
+
+            <button class="gs-start-btn">
+                <i class="ph-fill ph-play"></i> Start Quiz!
+            </button>
+        </div>
+
+    </div>
+</div>

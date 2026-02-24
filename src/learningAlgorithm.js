@@ -30,7 +30,9 @@ export function createDefaultLearning(word) {
     lastReviewed: null,    // Timestamp (ms)
     reviewCount: 0,        // Total reviews
     correctStreak: 0,      // Consecutive correct answers
-    avgResponseTime: 0     // Rolling average in ms
+    avgResponseTime: 0,    // Rolling average in ms
+    correctCount: 0,       // Total correct answers
+    wrongCount: 0          // Total wrong answers
   };
 }
 
@@ -47,6 +49,7 @@ export function updateWordLearning(wordData, isCorrect, responseTimeMs) {
   
   if (isCorrect) {
     updated.correctStreak++;
+    updated.correctCount = (updated.correctCount || 0) + 1;
     
     if (responseTimeMs < QUICK_THRESHOLD_MS) {
       // Quick correct = strong mastery signal
@@ -66,6 +69,7 @@ export function updateWordLearning(wordData, isCorrect, responseTimeMs) {
   } else {
     // Wrong answer = reset progress
     updated.correctStreak = 0;
+    updated.wrongCount = (updated.wrongCount || 0) + 1;
     updated.weight = Math.min(MAX_WEIGHT, updated.weight * 2);
     updated.interval = 1;
     updated.easeFactor = Math.max(MIN_EASE_FACTOR, updated.easeFactor - 0.2);

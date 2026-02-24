@@ -10,6 +10,9 @@ import BubblePop from "./components/BubblePop";
 import WordSearch from "./components/WordSearch";
 import Results from "./components/Results";
 import ParentReport from "./components/ParentReport";
+import PhotobombGame from "./components/games/PhotobombGame";
+import ShapeBuilderGame from "./components/games/ShapeBuilderGame";
+import TimelineDetectiveGame from "./components/games/TimelineDetectiveGame";
 import ProfileSwitcher from "./components/ProfileSwitcher";
 import {
   updateWordLearning,
@@ -193,6 +196,25 @@ function App() {
     });
 
     setQuestions(selectedQuestions);
+    setQuizStarted(true);
+    setShowResults(false);
+    setCurrentQuestionIndex(0);
+    setScore(0);
+    setUserAnswers([]);
+  };
+
+  const startGrammarGame = (gameId) => {
+    setSelectedGame(gameId);
+    
+    // Pick words for the grammar game (we still use words array for scoring context)
+    const filteredWords = wordlist ? wordlist.filter((word) =>
+      selectedUnits.length > 0 ? selectedUnits.includes(word.unit.split(".")[0]) : true
+    ) : [];
+    
+    const selectedWords = getWordsForReview(filteredWords.length > 0 ? filteredWords : [{word: 'example'}], learningData, numQuestions);
+    const grammarQuestions = selectedWords.map(w => ({ ...w }));
+
+    setQuestions(grammarQuestions);
     setQuizStarted(true);
     setShowResults(false);
     setCurrentQuestionIndex(0);
@@ -393,6 +415,12 @@ function App() {
           return <BubblePop {...gameProps} />;
         case 'wordSearch':
           return <WordSearch {...gameProps} />;
+        case 'shapeBuilder':
+          return <ShapeBuilderGame {...gameProps} />;
+        case 'timelineDetective':
+          return <TimelineDetectiveGame {...gameProps} />;
+        case 'photobomb':
+          return <PhotobombGame {...gameProps} />;
         case 'quiz':
         default:
           return (
@@ -427,6 +455,7 @@ function App() {
         avatar={currentAvatar}
         selectedGame={selectedGame}
         onSelectGame={handleGameChange}
+        startGrammarGame={startGrammarGame}
         gameStats={gameStats}
         hasPreferences={!!preferences.lastSubject}
         onOpenParentReport={() => setShowParentReport(true)}

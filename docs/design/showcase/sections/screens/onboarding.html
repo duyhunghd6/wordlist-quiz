@@ -1,0 +1,157 @@
+<style>
+.screen-mockup {
+    width: 375px; /* Standard mobile width */
+    height: 667px; /* Standard mobile height */
+    border: 12px solid #1E293B;
+    border-radius: 36px;
+    background: #F8FAFC;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+}
+.screen-mockup.scrollable {
+    overflow-y: auto;
+}
+.screen-mockup.scrollable::-webkit-scrollbar {
+    width: 6px;
+}
+.screen-mockup.scrollable::-webkit-scrollbar-thumb {
+    background: #CBD5E1;
+    border-radius: 10px;
+}
+
+/* Onboarding specific */
+.ob-hero {
+    height: 300px;
+    background: #E0F2FE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: var(--space-xl);
+    text-align: center;
+    flex-shrink: 0;
+}
+.ob-hero .hero-icon {
+    font-size: 64px;
+    background: white;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 4px solid var(--color-info);
+    box-shadow: var(--shadow-bouncy);
+    margin-bottom: var(--space-lg);
+}
+.ob-content {
+    padding: var(--space-xl);
+    background: white;
+    flex: 1;
+}
+.ob-feature {
+    display: flex;
+    gap: var(--space-md);
+    margin-bottom: var(--space-xl);
+}
+.ob-feature-icon {
+    width: 48px;
+    height: 48px;
+    background: #FEF3C7;
+    color: #D97706;
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    flex-shrink: 0;
+}
+.ob-feature-text h4 {
+    margin: 0 0 4px 0;
+    font-family: var(--font-family);
+    font-size: 1.1rem;
+    color: var(--color-text-primary);
+}
+.ob-feature-text p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+}
+.ob-sticky-footer {
+    position: sticky;
+    bottom: 0;
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(8px);
+    padding: var(--space-lg);
+    border-top: 1px solid var(--color-border-default);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+</style>
+
+<div class="section-header">
+    <h2 class="section-title">Screen: Onboarding</h2>
+    <p class="section-description">A vertically scrollable onboarding flow explaining features, demonstrating content that extends beyond a single viewport.</p>
+</div>
+
+<div class="component-showcase" style="align-items: center; padding: 40px 0;">
+    <div class="screen-mockup scrollable">
+        <div class="ob-hero">
+            <div class="hero-icon">🐼</div>
+            <h2 style="font-family: var(--font-family); margin: 0; font-size: 1.8rem; color: var(--color-text-primary);">Welcome to Wordlist!</h2>
+            <p style="color: var(--color-text-secondary); margin-top: 8px;">Learn new words through fun games and track your progress daily.</p>
+        </div>
+        
+        <div class="ob-content">
+            <div class="ob-feature">
+                <div class="ob-feature-icon"><i class="ph ph-game-controller"></i></div>
+                <div class="ob-feature-text">
+                    <h4>Fun Minigames</h4>
+                    <p>Play 5 unique game modes including Bubble Pop, Swipe Cards, and Word Scramble to master vocabulary.</p>
+                </div>
+            </div>
+            
+            <div class="ob-feature">
+                <div class="ob-feature-icon" style="background: #DCFCE7; color: #15803D;"><i class="ph ph-trend-up"></i></div>
+                <div class="ob-feature-text">
+                    <h4>Smart Learning</h4>
+                    <p>Our algorithm adapts to what you know, showing you the exact words you need to practice.</p>
+                </div>
+            </div>
+            
+            <div class="ob-feature">
+                <div class="ob-feature-icon" style="background: #E0F2FE; color: #1D4ED8;"><i class="ph ph-medal"></i></div>
+                <div class="ob-feature-text">
+                    <h4>Daily Streaks</h4>
+                    <p>Build healthy learning habits by completing your goals every single day.</p>
+                </div>
+            </div>
+            
+            <!-- Extra content to force scroll -->
+            <div class="ob-feature">
+                <div class="ob-feature-icon" style="background: #F3E8FF; color: #7E22CE;"><i class="ph ph-users"></i></div>
+                <div class="ob-feature-text">
+                    <h4>Parental Progress</h4>
+                    <p>Parents can easily track daily activity and see exactly which words are mastered.</p>
+                </div>
+            </div>
+             <div class="ob-feature">
+                <div class="ob-feature-icon" style="background: #FFE4E6; color: #BE123C;"><i class="ph ph-trophy"></i></div>
+                <div class="ob-feature-text">
+                    <h4>Achievements</h4>
+                    <p>Unlock special badges and collect coins as you conquer different subject units.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="ob-sticky-footer">
+            <button class="btn btn-primary" style="width: 100%;">Get Started</button>
+            <p style="text-align: center; margin: 0; font-size: 14px; color: var(--color-text-secondary); cursor: pointer;">Already have an account? <b>Log In</b></p>
+        </div>
+    </div>
+</div>

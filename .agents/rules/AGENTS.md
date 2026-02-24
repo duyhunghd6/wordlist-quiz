@@ -2,6 +2,11 @@
 
 This project uses **bd** (beads) for issue tracking. Run `bd onboard` to get started.
 
+**CRITICAL RULE ON BEADS & GIT USAGE:**
+
+- **Hotfixes & Small Tasks (DEFAULT):** Just implement the fix directly. **DO NOT** create beads issues, and **DO NOT** commit or push to GitHub.
+- **New Planned Tasks:** Only commit and create beads issues if it is a new task that needs to be planned, or if the user explicitly asks you to use the beads CLI.
+
 ## Quick Reference
 
 ```bash
@@ -32,9 +37,9 @@ bd sync               # Sync with git
 6. **Verify** - All changes committed AND pushed
 7. **Hand off** - Provide context for next session
 
-**CRITICAL RULES:**
+**CRITICAL RULES (For Planned Tasks):**
+
 - Work is NOT complete until `git push` succeeds
 - NEVER stop before pushing - that leaves work stranded locally
 - NEVER say "ready to push when you are" - YOU must push
 - If push fails, resolve and retry until it succeeds
-

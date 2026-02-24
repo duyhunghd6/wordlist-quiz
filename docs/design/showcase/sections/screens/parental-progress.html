@@ -1,0 +1,182 @@
+<style>
+.screen-mockup {
+    width: 375px;
+    height: 667px;
+    border: 12px solid #1E293B;
+    border-radius: 36px;
+    background: #F8FAFC;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+}
+.screen-mockup.scrollable { overflow-y: auto; }
+.screen-mockup.scrollable::-webkit-scrollbar { width: 6px; }
+.screen-mockup.scrollable::-webkit-scrollbar-thumb { background: #CBD5E1; border-radius: 10px; }
+
+/* Dashboard UI */
+.dash-header {
+    background: white;
+    padding: var(--space-xl) var(--space-md) var(--space-md);
+    border-bottom: 1px solid var(--color-border-default);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.dash-header h3 { margin: 0; font-family: var(--font-family); font-size: 1.2rem; color: var(--color-text-primary);}
+.btn-close {
+    width: 32px; height: 32px;
+    border-radius: 50%;
+    background: #F1F5F9;
+    display: flex; align-items: center; justify-content: center;
+    border: none; color: var(--color-text-secondary); cursor: pointer;
+}
+
+.dash-content { padding: var(--space-md); display: flex; flex-direction: column; gap: var(--space-md); }
+
+/* Quick Stats Bento */
+.stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-sm); }
+.stat-card {
+    background: white; border: 2px solid var(--color-border-default);
+    border-radius: var(--radius-lg); padding: var(--space-md);
+}
+.stat-icon { font-size: 24px; margin-bottom: 8px; color: var(--color-accent); }
+.stat-val { font-size: 1.5rem; font-weight: 800; font-family: var(--font-family); line-height: 1; margin-bottom: 4px; color: var(--color-text-primary);}
+.stat-label { font-size: 0.75rem; color: var(--color-text-secondary); text-transform: uppercase; font-weight: 700; }
+
+/* Activity Heatmap */
+.dash-section {
+    background: white; border: 2px solid var(--color-border-default);
+    border-radius: var(--radius-xl); padding: var(--space-md);
+}
+.dash-section-title { margin: 0 0 var(--space-md); font-family: var(--font-family); font-size: 1.1rem; color: var(--color-text-primary);}
+.heatmap-grid {
+    display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px;
+}
+.hm-day { aspect-ratio: 1; border-radius: 4px; background: #F1F5F9;}
+.hm-day.lvl-1 { background: #BBF7D0; }
+.hm-day.lvl-2 { background: #4ADE80; }
+.hm-day.lvl-3 { background: #16A34A; }
+.hm-day.lvl-4 { background: #15803D; }
+
+/* Word Lists */
+.word-row {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: var(--space-sm) 0; border-bottom: 1px dashed var(--color-border-default);
+}
+.word-row:last-child { border-bottom: none; padding-bottom: 0; }
+.word-term { font-weight: 600; font-size: 1rem; color: var(--color-text-primary); }
+.word-score { display: flex; gap: 4px; }
+.w-dot { width: 10px; height: 10px; border-radius: 50%; background: #E2E8F0; }
+.w-dot.filled { background: var(--color-success); box-shadow: 0 0 0 1px #15803D inset; }
+.w-dot.struggle { background: var(--color-danger); box-shadow: 0 0 0 1px #B91C1C inset; }
+
+</style>
+
+<div class="section-header">
+    <h2 class="section-title">Screen: Parental Progress Dashboard</h2>
+    <p class="section-description">Detailed analytics and learning insights intended for parents/teachers.</p>
+</div>
+
+<div class="component-showcase" style="align-items: center; padding: 40px 0;">
+    <div class="screen-mockup scrollable">
+        <div class="dash-header">
+             <h3>Parental Controls</h3>
+             <button class="btn-close"><i class="ph ph-x"></i></button>
+        </div>
+        
+        <div class="dash-content">
+            <div class="stat-grid">
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="ph ph-fire"></i></div>
+                    <div class="stat-val">12</div>
+                    <div class="stat-label">Day Streak</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon" style="color:var(--color-info);"><i class="ph ph-clock"></i></div>
+                    <div class="stat-val">4.5h</div>
+                    <div class="stat-label">Total Time</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon" style="color:var(--color-success);"><i class="ph ph-check-circle"></i></div>
+                    <div class="stat-val">84</div>
+                    <div class="stat-label">Words Mastered</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon" style="color:var(--color-danger);"><i class="ph ph-warning-circle"></i></div>
+                    <div class="stat-val">12</div>
+                    <div class="stat-label">Need Practice</div>
+                </div>
+            </div>
+            
+            <div class="dash-section">
+                <h4 class="dash-section-title">Last 14 Days Activity</h4>
+                <div class="heatmap-grid">
+                    <div class="hm-day lvl-2"></div><div class="hm-day lvl-3"></div><div class="hm-day lvl-1"></div>
+                    <div class="hm-day"></div><div class="hm-day lvl-4"></div><div class="hm-day lvl-2"></div>
+                    <div class="hm-day lvl-2"></div><div class="hm-day lvl-3"></div><div class="hm-day lvl-3"></div>
+                    <div class="hm-day lvl-1"></div><div class="hm-day"></div><div class="hm-day lvl-2"></div>
+                    <div class="hm-day lvl-1"></div><div class="hm-day lvl-4"></div>
+                </div>
+                <div style="display:flex; justify-content:space-between; margin-top:12px; font-size:12px; color:var(--color-text-secondary); align-items: center; font-weight: 600;">
+                    <span>Less</span>
+                    <div style="display:flex; gap:6px; align-items:center;">
+                        <div class="hm-day" style="width:12px;height:12px;"></div>
+                        <div class="hm-day lvl-1" style="width:12px;height:12px;"></div>
+                        <div class="hm-day lvl-2" style="width:12px;height:12px;"></div>
+                        <div class="hm-day lvl-3" style="width:12px;height:12px;"></div>
+                        <div class="hm-day lvl-4" style="width:12px;height:12px;"></div>
+                    </div>
+                    <span>More</span>
+                </div>
+            </div>
+            
+            <div class="dash-section">
+                <h4 class="dash-section-title">Struggling Words (Review)</h4>
+                <div class="word-row">
+                    <span class="word-term">Photosynthesis</span>
+                    <div class="word-score">
+                        <div class="w-dot struggle"></div><div class="w-dot struggle"></div><div class="w-dot"></div><div class="w-dot"></div>
+                    </div>
+                </div>
+                <div class="word-row">
+                    <span class="word-term">Environment</span>
+                    <div class="word-score">
+                        <div class="w-dot struggle"></div><div class="w-dot"></div><div class="w-dot"></div><div class="w-dot"></div>
+                    </div>
+                </div>
+                 <div class="word-row">
+                    <span class="word-term">Atmosphere</span>
+                    <div class="word-score">
+                        <div class="w-dot struggle"></div><div class="w-dot filled"></div><div class="w-dot"></div><div class="w-dot"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dash-section">
+                <h4 class="dash-section-title">Recently Mastered</h4>
+                <div class="word-row">
+                    <span class="word-term">Ecosystem</span>
+                    <div class="word-score">
+                        <div class="w-dot filled"></div><div class="w-dot filled"></div><div class="w-dot filled"></div><div class="w-dot filled"></div>
+                    </div>
+                </div>
+                <div class="word-row">
+                    <span class="word-term">Habitat</span>
+                    <div class="word-score">
+                        <div class="w-dot filled"></div><div class="w-dot filled"></div><div class="w-dot filled"></div><div class="w-dot filled"></div>
+                    </div>
+                </div>
+                <div class="word-row" style="justify-content: center; border-bottom: none; margin-top: 8px;">
+                     <button class="btn btn-secondary" style="font-size: 0.9rem; padding: 6px 12px;">View Full History</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>

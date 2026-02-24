@@ -409,6 +409,61 @@
 .game-meta { display: flex; flex-direction: column; align-items: flex-end; gap: var(--space-sm); }
 .game-meta .ph-caret-right { color: var(--color-text-secondary); font-size: 20px; }
 
+/* Compact Game Selector */
+.game-selector-compact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-xs);
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    font-family: var(--font-family);
+    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    min-width: 72px;
+}
+.game-selector-compact:hover:not(.disabled) {
+    transform: translateY(-4px) scale(1.05);
+}
+.game-selector-compact:active:not(.disabled) {
+    transform: translateY(0) scale(0.95);
+}
+.compact-icon-bg {
+    width: 64px;
+    height: 64px;
+    border-radius: 20px; /* Squircle appearance */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    border: 3px solid transparent;
+    transition: all 0.2s;
+}
+.game-selector-compact.active .compact-icon-bg {
+    box-shadow: 0 8px 16px rgba(59, 130, 246, 0.3);
+    border-color: var(--color-info);
+    transform: translateY(-4px);
+}
+.compact-label {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--color-text-secondary);
+    text-align: center;
+    transition: color 0.2s;
+}
+.game-selector-compact.active .compact-label {
+    color: var(--color-text-primary);
+}
+.game-selector-compact.disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+.game-selector-compact.disabled .compact-icon-bg {
+    box-shadow: none;
+}
+
 /* Score Summary Card */
 .score-summary-card {
     background: white;
