@@ -156,8 +156,8 @@ const SwipeCards = ({ words, onAnswer, onComplete, onHome, gameId = 'swipe' }) =
       <div style={{ position: 'relative', width: '100%', height: '400px', margin: '0 auto' }}>
         {/* Next Card */}
         {currentIndex + 1 < cards.length && (
-          <div className="card shadow-md" style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, padding: 'var(--space-xl)', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', opacity: 0.6, transform: 'scale(0.95) translateY(20px)', zIndex: 1 }}>
-            <div style={{ fontSize: '2.5rem', fontWeight: 800 }}>{cards[currentIndex + 1].word}</div>
+          <div className="card shadow-md" style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, padding: 'var(--space-lg)', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', opacity: 0.6, transform: 'scale(0.95) translateY(20px)', zIndex: 1, overflow: 'hidden' }}>
+            <div style={{ fontSize: '1.8rem', fontWeight: 800 }}>{cards[currentIndex + 1].word}</div>
           </div>
         )}
 
@@ -166,9 +166,10 @@ const SwipeCards = ({ words, onAnswer, onComplete, onHome, gameId = 'swipe' }) =
           ref={cardRef}
           className="card shadow-drag"
           style={{
-            position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, padding: 'var(--space-xl)',
+            position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, padding: 'var(--space-lg)',
             textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
             backgroundColor: 'white', zIndex: 10, cursor: isDragging ? 'grabbing' : 'grab',
+            overflow: 'hidden',
             transform: `translate(${dragOffset.x}px, ${dragOffset.y}px) rotate(${rotation}deg)`,
             transition: isDragging ? 'none' : 'transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275)'
           }}
@@ -203,14 +204,14 @@ const SwipeCards = ({ words, onAnswer, onComplete, onHome, gameId = 'swipe' }) =
             </div>
           </div>
 
-          <div style={{ fontSize: '3rem', fontWeight: 800, color: 'var(--color-info)', marginBottom: 'var(--space-xl)' }}>
+          <div style={{ fontSize: '2rem', fontWeight: 800, color: 'var(--color-info)', marginBottom: 'var(--space-md)', wordBreak: 'break-word', maxWidth: '90%' }}>
             {currentCard?.word}
           </div>
-          <div style={{ width: '80%', height: '4px', background: 'var(--color-border-default)', marginBottom: 'var(--space-xl)', borderRadius: '2px' }} />
-          <div style={{ fontSize: '1.8rem', fontWeight: 600, color: 'var(--color-text-primary)' }}>
+          <div style={{ width: '80%', height: '4px', background: 'var(--color-border-default)', marginBottom: 'var(--space-md)', borderRadius: '2px', flexShrink: 0 }} />
+          <div style={{ fontSize: '1.2rem', fontWeight: 600, color: 'var(--color-text-primary)', maxWidth: '90%', overflow: 'hidden', display: '-webkit-box', WebkitLineClamp: 4, WebkitBoxOrient: 'vertical' }}>
             {currentCard?.shownDefinition}
           </div>
-          <div style={{ marginTop: 'auto', color: 'var(--color-text-secondary)', fontWeight: 600, paddingTop: 'var(--space-xl)' }}>
+          <div style={{ marginTop: 'auto', color: 'var(--color-text-secondary)', fontWeight: 600, paddingTop: 'var(--space-sm)', fontSize: '0.9rem', flexShrink: 0 }}>
             Does this definition match?
           </div>
         </div>

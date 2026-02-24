@@ -34,17 +34,17 @@ const BubblePop = ({ words, onAnswer, onComplete, onHome, gameId = 'bubble' }) =
       .slice(0, 3);
     
     const options = [currentWord, ...wrongWords].sort(() => Math.random() - 0.5);
-    const positions = [15, 38, 62, 85];
+    const xPositions = [10, 35, 60, 85];
     
     return options.map((word, idx) => ({
       id: idx,
       word: word.word,
       isCorrect: word.word === currentWord.word,
       color: BUBBLE_COLORS[idx % BUBBLE_COLORS.length],
-      x: positions[idx],
-      speed: 0.9 + Math.random() * 0.2,
+      x: xPositions[idx] + (Math.random() * 8 - 4),
+      speed: 12 + Math.random() * 4,
       wobbleOffset: Math.random() * Math.PI * 2,
-      startDelay: idx * 400,
+      startDelay: idx * 300,
     }));
   }, []);
 
@@ -217,11 +217,15 @@ const BubblePop = ({ words, onAnswer, onComplete, onHome, gameId = 'bubble' }) =
     <div style={{ maxWidth: '800px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: 'var(--space-lg)' }}>
       <style>{`
         @keyframes floatUp {
-          0% { bottom: -120px; transform: translateX(0) scale(0.9); opacity: 0; }
-          10% { opacity: 1; transform: translateX(10px) scale(1); }
-          50% { transform: translateX(-15px) scale(1.05); }
-          90% { opacity: 1; transform: translateX(10px) scale(1); }
-          100% { bottom: 100%; transform: translateX(-5px) scale(0.9); opacity: 0; }
+          0% { bottom: -100px; opacity: 0; transform: translateX(0) scale(0.8); }
+          5% { opacity: 1; transform: translateX(0) scale(1); }
+          15% { transform: translateX(12px) scale(1.02); }
+          30% { transform: translateX(-10px) scale(0.98); }
+          45% { transform: translateX(8px) scale(1.01); }
+          60% { transform: translateX(-6px) scale(0.99); }
+          75% { transform: translateX(4px) scale(1); }
+          90% { opacity: 1; transform: translateX(-2px) scale(1); }
+          100% { bottom: calc(100% + 50px); opacity: 0; transform: translateX(0) scale(0.7); }
         }
         .bubble {
           position: absolute;
@@ -233,13 +237,18 @@ const BubblePop = ({ words, onAnswer, onComplete, onHome, gameId = 'bubble' }) =
           justify-content: center;
           color: white;
           font-weight: 800;
-          font-size: 1.1rem;
+          font-size: 0.85rem;
+          padding: 8px;
+          word-break: break-word;
+          text-align: center;
+          line-height: 1.1;
           border: none;
           cursor: pointer;
           background: var(--bubble-bg);
           box-shadow: inset -5px -5px 15px rgba(0,0,0,0.2), inset 5px 5px 15px rgba(255,255,255,0.4), 0 5px 15px var(--bubble-glow);
           left: calc(var(--bubble-x) - 45px);
-          animation: floatUp var(--bubble-speed) ease-in forwards;
+          bottom: -100px;
+          animation: floatUp var(--bubble-speed) ease-in-out forwards;
           animation-delay: var(--bubble-delay);
           transition: transform 0.1s;
         }
@@ -303,9 +312,8 @@ const BubblePop = ({ words, onAnswer, onComplete, onHome, gameId = 'bubble' }) =
                 '--bubble-x': `${bubble.x}%`,
                 '--bubble-bg': bubble.color.bg,
                 '--bubble-glow': bubble.color.glow,
-                '--bubble-speed': `${BUBBLE_ESCAPE_TIME * bubble.speed}ms`,
+                '--bubble-speed': `${bubble.speed}s`,
                 '--bubble-delay': `${bubble.startDelay}ms`,
-                '--wobble-offset': bubble.wobbleOffset,
               }}
               onClick={() => handleBubbleTap(bubble)}
               disabled={showFeedback}

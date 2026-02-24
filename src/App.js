@@ -13,6 +13,7 @@ import ParentReport from "./components/ParentReport";
 import PhotobombGame from "./components/games/PhotobombGame";
 import ShapeBuilderGame from "./components/games/ShapeBuilderGame";
 import TimelineDetectiveGame from "./components/games/TimelineDetectiveGame";
+import MarioTenseRunner from "./components/games/MarioTenseRunner";
 import ProfileSwitcher from "./components/ProfileSwitcher";
 import {
   updateWordLearning,
@@ -293,8 +294,23 @@ function App() {
     }
   };
 
-  // Go back to home/start screen
+  // Go back to home/start screen — unanswered questions count as wrong (quit penalty)
   const goHome = () => {
+    if (quizStarted && questions.length > 0) {
+      // Count how many questions were answered
+      const answeredCount = userAnswers.length;
+      const unansweredCount = questions.length - answeredCount;
+      
+      if (answeredCount > 0 || unansweredCount > 0) {
+        // Score = only correct answers out of ALL questions (unanswered = wrong)
+        const correctCount = userAnswers.filter(a => a.isCorrect).length;
+        const finalScore = Math.round((correctCount / questions.length) * 100);
+        
+        // Record the partial game result with penalty
+        recordGameResult(selectedGame, finalScore);
+        recordActivity(selectedWordlist, finalScore, questions.length, correctCount);
+      }
+    }
     setQuizStarted(false);
     setShowResults(false);
   };
@@ -421,6 +437,8 @@ function App() {
           return <TimelineDetectiveGame {...gameProps} />;
         case 'photobomb':
           return <PhotobombGame {...gameProps} />;
+        case 'marioTense':
+          return <MarioTenseRunner {...gameProps} />;
         case 'quiz':
         default:
           return (

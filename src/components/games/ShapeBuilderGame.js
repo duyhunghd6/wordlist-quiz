@@ -23,6 +23,8 @@ const ShapeBuilderGame = ({ words, onAnswer, onComplete, onHome }) => {
   const [selectedWord, setSelectedWord] = useState(null);
   const [isCorrect, setIsCorrect] = useState(null);
   const [startTime, setStartTime] = useState(Date.now());
+  const [correctCount, setCorrectCount] = useState(0);
+  const [wrongWords, setWrongWords] = useState([]);
 
   useEffect(() => {
     // Generate questions based on the number of words in the round
@@ -53,6 +55,12 @@ const ShapeBuilderGame = ({ words, onAnswer, onComplete, onHome }) => {
     
     setSelectedWord(choice);
     setIsCorrect(correct);
+    
+    if (correct) {
+      setCorrectCount(prev => prev + 1);
+    } else {
+      setWrongWords(prev => [...prev, { word: currentQ.targetWord }]);
+    }
 
     // Provide haptic feedback if possible
     if (window.navigator && window.navigator.vibrate) {
@@ -91,7 +99,15 @@ const ShapeBuilderGame = ({ words, onAnswer, onComplete, onHome }) => {
         setCurrentIndex(prev => prev + 1);
         setStartTime(Date.now());
       } else {
-        if (onComplete) onComplete();
+        const finalCorrect = correctCount + (correct ? 1 : 0);
+        const finalWrong = correct ? wrongWords : [...wrongWords, { word: currentQ.targetWord }];
+        if (onComplete) onComplete({
+          gameId: 'shapeBuilder',
+          totalQuestions: questions.length,
+          correctAnswers: finalCorrect,
+          wrongAnswers: finalWrong,
+          averageResponseTime: responseTime
+        });
       }
     }, correct ? 1200 : 2000);
   };

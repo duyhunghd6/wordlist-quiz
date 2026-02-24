@@ -36,6 +36,8 @@ const PhotobombGame = ({ words, onAnswer, onComplete, onHome }) => {
   const [activeSlot, setActiveSlot] = useState('background'); // 'background' or 'interruption'
   const [isCorrect, setIsCorrect] = useState(null);
   const [startTime, setStartTime] = useState(Date.now());
+  const [correctCount, setCorrectCount] = useState(0);
+  const [wrongWords, setWrongWords] = useState([]);
 
   useEffect(() => {
     // Generate questions
@@ -83,6 +85,12 @@ const PhotobombGame = ({ words, onAnswer, onComplete, onHome }) => {
     setIsCorrect(correct);
     const responseTime = Date.now() - startTime;
 
+    if (correct) {
+      setCorrectCount(prev => prev + 1);
+    } else {
+      setWrongWords(prev => [...prev, { word: currentQ.targetWord }]);
+    }
+
     if (window.navigator && window.navigator.vibrate) {
       window.navigator.vibrate(correct ? [50, 50, 50] : [200]);
     }
@@ -125,7 +133,14 @@ const PhotobombGame = ({ words, onAnswer, onComplete, onHome }) => {
           setIsCorrect(null);
           setStartTime(Date.now());
         } else {
-          if (onComplete) onComplete();
+          const finalCorrect = correctCount + 1;
+          if (onComplete) onComplete({
+            gameId: 'photobomb',
+            totalQuestions: questions.length,
+            correctAnswers: finalCorrect,
+            wrongAnswers: wrongWords,
+            averageResponseTime: responseTime
+          });
         }
       } else {
         // Reset so they can try again

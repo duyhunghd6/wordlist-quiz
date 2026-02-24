@@ -25,6 +25,8 @@ const TimelineDetectiveGame = ({ words, onAnswer, onComplete, onHome }) => {
   const [selectedZone, setSelectedZone] = useState(null);
   const [isCorrect, setIsCorrect] = useState(null);
   const [startTime, setStartTime] = useState(Date.now());
+  const [correctCount, setCorrectCount] = useState(0);
+  const [wrongWords, setWrongWords] = useState([]);
 
   useEffect(() => {
     // Generate subset of questions
@@ -46,6 +48,12 @@ const TimelineDetectiveGame = ({ words, onAnswer, onComplete, onHome }) => {
 
     setSelectedZone(zoneId);
     setIsCorrect(correct);
+
+    if (correct) {
+      setCorrectCount(prev => prev + 1);
+    } else {
+      setWrongWords(prev => [...prev, { word: currentQ.targetWord }]);
+    }
 
     if (window.navigator && window.navigator.vibrate) {
       window.navigator.vibrate(correct ? [50, 50, 50] : [200]);
@@ -79,7 +87,15 @@ const TimelineDetectiveGame = ({ words, onAnswer, onComplete, onHome }) => {
         setCurrentIndex(prev => prev + 1);
         setStartTime(Date.now());
       } else {
-        if (onComplete) onComplete();
+        const finalCorrect = correctCount + (correct ? 1 : 0);
+        const finalWrong = correct ? wrongWords : [...wrongWords, { word: currentQ.targetWord }];
+        if (onComplete) onComplete({
+          gameId: 'timelineDetective',
+          totalQuestions: questions.length,
+          correctAnswers: finalCorrect,
+          wrongAnswers: finalWrong,
+          averageResponseTime: responseTime
+        });
       }
     }, correct ? 1500 : 2500);
   };

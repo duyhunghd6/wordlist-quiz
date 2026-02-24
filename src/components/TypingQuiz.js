@@ -397,7 +397,7 @@ const TypingQuiz = ({ words, onAnswer, onComplete, onHome, gameId, learningData 
         </h2>
         
         {/* Letter Boxes */}
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 'var(--space-sm)', justifyContent: 'center', marginBottom: 'var(--space-2xl)' }}>
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 'var(--space-sm)', justifyContent: 'center', marginBottom: 'var(--space-2xl)', maxWidth: '100%' }}>
           {(() => {
             const wordGroups = [];
             let currentGroup = [];
