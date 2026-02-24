@@ -86,7 +86,8 @@ const mockWrongTense = (sentence) => {
  */
 export const useRunnerEngine = (words = [], tenseSentences = []) => {
     const [currentQuestion, setCurrentQuestion] = useState(null);
-    const [streak, setStreak] = useState(0);
+    const [speedScore, setSpeedScore] = useState(0); // Aggregate speed percentage
+    const [totalAnswers, setTotalAnswers] = useState(0); 
     const [level, setLevel] = useState(1);
     const [maxLevel, setMaxLevel] = useState(1);
     
@@ -95,8 +96,20 @@ export const useRunnerEngine = (words = [], tenseSentences = []) => {
     const recentWords = useRef([]);  // Array to prevent repetition
     const lastTargetWord = useRef(null); // Track last word to update its error weight
 
-    // Determine level purely based on consecutive correct streak to maintain flow state.
-    const currentLevel = Math.min(6, Math.floor(streak / 5) + 1);
+    // Determine level purely based on average answer speed to maintain flow state.
+    // >80% avg speed = Boss Tier.  <40% = Basic Tier.
+    const averageSpeedPercent = totalAnswers === 0 ? 0 : (speedScore / totalAnswers);
+    let currentLevel = 1;
+    if (totalAnswers > 2) {
+        if (averageSpeedPercent > 0.85) currentLevel = 6;
+        else if (averageSpeedPercent > 0.75) currentLevel = 5;
+        else if (averageSpeedPercent > 0.6) currentLevel = 4;
+        else if (averageSpeedPercent > 0.45) currentLevel = 3;
+        else if (averageSpeedPercent > 3.0) currentLevel = 2; // Floor to 2 if they are trying
+    } else {
+        // First few questions ramp up nicely based on raw count
+        currentLevel = Math.min(3, totalAnswers + 1);
+    }
 
     // Update level state if it changes
     useEffect(() => {
@@ -225,8 +238,17 @@ export const useRunnerEngine = (words = [], tenseSentences = []) => {
             }
         }
 
-        let newQuestion = { id: Date.now(), type: qType, options: [] };
+        let newQuestion = { id: Date.now(), type: qType, options: [], timeLimit: 20 };
         let target = null;
+        
+        // Define dynamic timeouts based on expected cognitive load
+        if (['SPELLING_EASY', 'SPELLING_HARD'].includes(qType)) {
+            newQuestion.timeLimit = 20; // Fast recall
+        } else if (['DEFINITION', 'CONTEXT'].includes(qType)) {
+            newQuestion.timeLimit = 40; // Reading comprehension required
+        } else if (qType === 'TENSE_TF') {
+            newQuestion.timeLimit = 60; // Enterprise sentence analysis
+        }
 
         if (qType === 'SPELLING_EASY') {
             target = pickRandomWord(w => w.word.length <= 5);
@@ -295,12 +317,18 @@ export const useRunnerEngine = (words = [], tenseSentences = []) => {
         setCurrentQuestion(newQuestion);
     }, [words, tenseSentences, currentLevel]);
 
-    const processAnswer = useCallback((isCorrect) => {
+    // processAnswer now expects the percentage of time remaining when they clicked (0.0 to 1.0)
+    const processAnswer = useCallback((isCorrect, timeRemainingPercentage = 0) => {
+        setTotalAnswers(prev => prev + 1);
+        
         if (isCorrect) {
-            setStreak(prev => prev + 1);
+            // Reward fast answers heavily
+            // Add a base flat 0.2 so even slow correct answers keep them moving forward
+            const speedGain = Math.min(1.0, 0.2 + timeRemainingPercentage);
+            setSpeedScore(prev => prev + speedGain);
         } else {
-            // Drop them down slightly to maintain Flow State without crushing them fully
-            setStreak(prev => Math.max(0, prev - 2)); 
+            // Drop them down to pull them into an easier flow state if they struggle
+            setSpeedScore(prev => Math.max(0, prev - 1.0)); 
             
             // Log the error in the SRS weighting table
             if (lastTargetWord.current) {
@@ -325,7 +353,8 @@ export const useRunnerEngine = (words = [], tenseSentences = []) => {
         currentQuestion,
         level,
         maxLevel,
-        streak,
+        averageSpeedPercent,
+        totalAnswers,
         processAnswer,
         generateNext: generateQuestion
     };

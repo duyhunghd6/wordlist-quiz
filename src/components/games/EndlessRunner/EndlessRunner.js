@@ -1,66 +1,74 @@
-import React, { useState, useEffect } from 'react';
-import './EndlessRunner.css';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useRunnerEngine } from './RunnerQuestionEngine';
+import './EndlessRunner.css';
 
 const EndlessRunner = ({ onComplete, words = [], tenseSentences = [] }) => {
     const [score, setScore] = useState(0);
-    const [timeLeft, setTimeLeft] = useState(180); // 3-minute timer (180 seconds)
     const [gameActive, setGameActive] = useState(true);
     const [selectedId, setSelectedId] = useState(null);
     const [feedback, setFeedback] = useState(null); // 'correct' or 'wrong'
     const [actionText, setActionText] = useState(null);
+    
+    // Timer state tied to individual questions
+    const [timeLeft, setTimeLeft] = useState(20); 
+    const [maxTimeLeft, setMaxTimeLeft] = useState(20);
+    
+    // Performance Review Logger
+    const sessionLogs = React.useRef([]);
 
     // Initialize the Pedagogical Engine
     const { 
         currentQuestion, 
         level,
         maxLevel, 
-        streak, 
+        averageSpeedPercent,
         processAnswer, 
         generateNext 
     } = useRunnerEngine(words, tenseSentences);
 
-    // Timer Logic
+    // Reset Timer on New Question
     useEffect(() => {
-        if (!gameActive) return;
-        const timer = setInterval(() => {
-            setTimeLeft(prev => {
-                if (prev <= 1) {
-                    clearInterval(timer);
-                    setGameActive(false);
-                    return 0;
-                }
-                return prev - 1;
-            });
-        }, 1000);
-        return () => clearInterval(timer);
-    }, [gameActive]);
+        if (currentQuestion && currentQuestion.timeLimit) {
+            setTimeLeft(currentQuestion.timeLimit);
+            setMaxTimeLeft(currentQuestion.timeLimit);
+        }
+    }, [currentQuestion]);
 
     const formatTime = (seconds) => {
-        const m = Math.floor(seconds / 60);
-        const s = seconds % 60;
-        return `${m}:${s < 10 ? '0' : ''}${s}`;
+        return Math.max(0, seconds);
     };
 
-    const handleOptionClick = (option) => {
+    const handleOptionClick = useCallback((option, isTimeout = false) => {
         if (!gameActive || selectedId !== null || !currentQuestion) return;
         
-        setSelectedId(option.id);
+        setSelectedId(option.id || -1); // -1 if timeout
         const isCorrect = option.isCorrect;
+        const timeRemainingPercentage = timeLeft / maxTimeLeft;
         
-        // Notify the engine to adjust difficulty internally
-        processAnswer(isCorrect);
+        // Notify the engine to adjust difficulty internally based on speed!
+        processAnswer(isCorrect, timeRemainingPercentage);
+        
+        // Log for Review Dashboard
+        const timeTaken = maxTimeLeft - timeLeft;
+        const correctAnswerObj = currentQuestion.options.find(o => o.isCorrect);
+        sessionLogs.current.push({
+            question: currentQuestion.sentence || 'Spelling check',
+            userAnswer: option.text,
+            correctAnswer: correctAnswerObj ? correctAnswerObj.text : '?',
+            isCorrect: isCorrect,
+            timeTaken: timeTaken,
+            timeLimit: maxTimeLeft
+        });
 
         if (isCorrect) {
             setFeedback('correct');
-            setScore(prev => prev + 10);
+            // Harder questions yield higher base scores, plus a speed bonus multiplier (up to 1.5x)
+            const speedMultiplier = 1.0 + (timeRemainingPercentage * 0.5);
+            const rawScore = 10 * (level / 2);
+            const finalPoints = Math.round(rawScore * speedMultiplier);
+            setScore(prev => prev + finalPoints);
             
-            // Show Level Up animation if they hit a multiple of 5
-            if ((streak + 1) % 5 === 0 && level < 6) {
-                setActionText("LEVEL UP!");
-            } else {
-                setActionText("+10");
-            }
+            setActionText(`+${finalPoints}`);
             
             setTimeout(() => {
                 setSelectedId(null);
@@ -71,20 +79,42 @@ const EndlessRunner = ({ onComplete, words = [], tenseSentences = [] }) => {
             
         } else {
             setFeedback('wrong');
-            setActionText("Miss!");
-            
-            setTimeout(() => {
-                setSelectedId(null);
-                setFeedback(null);
-                setActionText(null);
-                generateNext(); 
-            }, 800);
+            setActionText(isTimeout ? "Time's up!" : "Miss!");
+            setGameActive(false); // Die strictly on first miss currently
         }
-    };
+    }, [gameActive, selectedId, currentQuestion, timeLeft, maxTimeLeft, level, processAnswer, generateNext]);
+
+    // Timer Logic - drains every second
+    useEffect(() => {
+        if (!gameActive || selectedId !== null) return;
+        
+        const timer = setInterval(() => {
+            setTimeLeft(prev => {
+                if (prev <= 1) {
+                    clearInterval(timer);
+                    // Time's up for this question - mark wrong automatically
+                    handleOptionClick({ text: "Time Out", isCorrect: false }, true);
+                    return 0;
+                }
+                return prev - 1;
+            });
+        }, 1000);
+        
+        return () => clearInterval(timer);
+    }, [gameActive, selectedId, handleOptionClick]);
 
     const handleGameOverComplete = () => {
         if (onComplete) {
-            onComplete(score);
+            const correctAnswers = sessionLogs.current.filter(l => l.isCorrect).length;
+            const totalQuestions = sessionLogs.current.length;
+            const totalSecondsSpent = sessionLogs.current.reduce((acc, log) => acc + log.timeTaken, 0);
+            
+            onComplete({
+                score,
+                correctCount: correctAnswers,
+                totalQuestions: totalQuestions,
+                totalTimeTaken: totalSecondsSpent
+            });
         }
     };
 
@@ -100,9 +130,19 @@ const EndlessRunner = ({ onComplete, words = [], tenseSentences = [] }) => {
                     <span style={{ color: '#FCD34D' }}>LVL {level}</span>
                     <span>SCORE: {score}</span>
                 </div>
-                {/* Replaced Health with Timer */}
-                <div className="er-timer" style={{ color: timeLeft <= 30 ? '#EF4444' : '#F8FAFC', fontWeight: 'bold', fontSize: '18px' }}>
-                    🕒 {formatTime(timeLeft)}
+                {/* Visual Timer Progress Bar */}
+                <div className="er-timer" style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                    <div style={{ color: timeLeft <= 5 ? '#EF4444' : '#F8FAFC', fontWeight: 'bold', fontSize: '18px', width: '30px' }}>
+                        {formatTime(timeLeft)}s
+                    </div>
+                    <div style={{ width: '150px', height: '12px', background: 'rgba(0,0,0,0.5)', borderRadius: '6px', overflow: 'hidden' }}>
+                        <div style={{ 
+                            height: '100%', 
+                            width: `${(timeLeft / maxTimeLeft) * 100}%`,
+                            background: timeLeft <= 5 ? '#EF4444' : '#4ADE80',
+                            transition: 'width 1s linear, background 0.3s'
+                        }} />
+                    </div>
                 </div>
             </div>
 
@@ -145,18 +185,72 @@ const EndlessRunner = ({ onComplete, words = [], tenseSentences = [] }) => {
             </div>
 
             <div className="er-character-area">
-                <div className="er-character" style={{ animationPlayState: gameActive && selectedId===null ? 'running' : 'paused' }}>
+                <div className="er-character" style={{ 
+                    animationPlayState: gameActive && selectedId===null ? 'running' : 'paused',
+                    // The character runs to the right as time drains!
+                    transform: `translateX(${(1 - (timeLeft / maxTimeLeft)) * 300}px)`,
+                    transition: 'transform 1s linear'
+                }}>
                     {gameActive && selectedId === null && <div className="er-dust"></div>}
                 </div>
             </div>
             
-            {!gameActive && timeLeft <= 0 && (
-                <div className="er-feedback-overlay">
-                    <div className="er-game-over">
-                        <h2>Time's Up!</h2>
-                        <p>Total Score: {score}</p>
-                        <p style={{ color: '#FCD34D', fontWeight: 'bold', marginTop: '10px' }}>Max Level Reached: {maxLevel}</p>
-                        <button onClick={handleGameOverComplete} style={{ marginTop: '20px' }}>Keep Learning</button>
+            {!gameActive && (
+                <div className="er-feedback-overlay" style={{ overflowY: 'auto', alignItems: 'flex-start', padding: '40px 20px' }}>
+                    <div className="er-game-over" style={{ maxWidth: '600px', width: '100%', margin: '0 auto', background: '#F8FAFC', padding: '0', overflow: 'hidden' }}>
+                        
+                        <div style={{ background: 'linear-gradient(135deg, #1E3A8A 0%, #3B82F6 100%)', padding: '30px', color: 'white' }}>
+                            <h2 style={{ color: 'white', margin: 0, fontSize: '2rem' }}>Run Complete!</h2>
+                            <p style={{ color: '#93C5FD', margin: '5px 0 0', fontSize: '1.2rem' }}>Max Level: {maxLevel} • Avg Speed: {Math.round(averageSpeedPercent * 100)}%</p>
+                        </div>
+
+                        <div style={{ padding: '30px', textAlign: 'left' }}>
+                            <div style={{ display: 'flex', gap: '20px', marginBottom: '30px' }}>
+                                <div style={{ flex: 1, background: 'white', padding: '15px', borderRadius: '12px', textAlign: 'center', boxShadow: '0 4px 6px rgba(0,0,0,0.05)', border: '1px solid #E2E8F0' }}>
+                                    <h3 style={{ fontSize: '2rem', color: '#0369A1', margin: '0' }}>{score}</h3>
+                                    <span style={{ fontSize: '0.9rem', color: '#64748B', fontWeight: 'bold' }}>FINAL SCORE</span>
+                                </div>
+                                <div style={{ flex: 1, background: 'white', padding: '15px', borderRadius: '12px', textAlign: 'center', boxShadow: '0 4px 6px rgba(0,0,0,0.05)', border: '1px solid #E2E8F0' }}>
+                                    <h3 style={{ fontSize: '2rem', color: '#16A34A', margin: '0' }}>{sessionLogs.current.filter(l => l.isCorrect).length}/{sessionLogs.current.length}</h3>
+                                    <span style={{ fontSize: '0.9rem', color: '#64748B', fontWeight: 'bold' }}>CORRECT ANSWERS</span>
+                                </div>
+                            </div>
+
+                            <h4 style={{ margin: '0 0 15px', color: '#0F172A', fontSize: '1.2rem' }}>Performance Review</h4>
+                            <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', maxHeight: '300px', overflowY: 'auto', paddingRight: '5px' }}>
+                                {sessionLogs.current.map((log, idx) => (
+                                    <div key={idx} style={{ 
+                                        padding: '12px 16px', 
+                                        background: 'white', 
+                                        borderRadius: '8px', 
+                                        borderLeft: `4px solid ${log.isCorrect ? '#22C55E' : '#EF4444'}`,
+                                        boxShadow: '0 2px 4px rgba(0,0,0,0.02)',
+                                        display: 'flex',
+                                        flexDirection: 'column',
+                                        gap: '6px'
+                                    }}>
+                                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                                            <strong style={{ color: '#334155', fontSize: '1.1rem' }}>{log.question === "" ? 'Spelling Verification' : log.question}</strong>
+                                            <span style={{ fontSize: '0.85rem', color: '#94A3B8', fontWeight: 'bold', background: '#F1F5F9', padding: '2px 8px', borderRadius: '10px' }}>
+                                                {log.timeTaken}s / {log.timeLimit}s
+                                            </span>
+                                        </div>
+                                        <div style={{ display: 'flex', gap: '15px', fontSize: '0.9rem' }}>
+                                            <span style={{ color: log.isCorrect ? '#16A34A' : '#DC2626', fontWeight: '500' }}>
+                                                You chose: {log.userAnswer}
+                                            </span>
+                                            {!log.isCorrect && (
+                                                <span style={{ color: '#64748B' }}>
+                                                    Correct: {log.correctAnswer}
+                                                </span>
+                                            )}
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+
+                            <button onClick={handleGameOverComplete} style={{ marginTop: '30px' }}>Keep Learning</button>
+                        </div>
                     </div>
                 </div>
             )}

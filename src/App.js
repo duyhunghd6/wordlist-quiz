@@ -370,16 +370,25 @@ function App() {
     setShowResults(false);
   };
 
-  const saveResult = (name) => {
+  const saveResult = (name, runnerData = null) => {
     const finalName = name || profile.name || "Anonymous Panda";
     
-    // Record game result for stats
-    const finalScore = Math.round((score / questions.length) * 100);
-    recordGameResult(selectedGame, finalScore);
+    let finalScore = 0;
     
-    // Record activity for heatmap
-    const correctCount = userAnswers.filter(a => a.isCorrect).length;
-    recordActivity(selectedWordlist, finalScore, questions.length, correctCount);
+    // Handle standard quizzes vs Runner analytics 
+    if (runnerData) {
+        finalScore = runnerData.score;
+        recordGameResult(selectedGame, finalScore);
+        // The Heatmap counts total questions & correct answers
+        recordActivity(selectedWordlist, finalScore, runnerData.totalQuestions, runnerData.correctCount);
+    } else {
+        // Legacy Game / Quiz logic
+        finalScore = Math.round((score / questions.length) * 100);
+        recordGameResult(selectedGame, finalScore);
+        
+        const correctCount = userAnswers.filter(a => a.isCorrect).length;
+        recordActivity(selectedWordlist, finalScore, questions.length, correctCount);
+    }
 
     const newResult = {
       name: finalName,
@@ -498,7 +507,17 @@ function App() {
         case 'tenseSignal':
           return <TenseSignalGame {...gameProps} />;
         case 'endlessRunner':
-          return <EndlessRunner {...gameProps} />;
+          const runnerProps = {
+            ...gameProps,
+            onComplete: (runnerData) => {
+              // runnerData = { score, correctCount, totalQuestions, totalTimeTaken }
+              setScore(runnerData.score);
+              setShowResults(true);
+              setQuizStarted(false);
+              saveResult(profile.name, runnerData);
+            }
+          };
+          return <EndlessRunner {...runnerProps} />;
         case 'quiz':
         default:
           return (
