@@ -7,6 +7,7 @@ import {
 import { getLearningStats } from '../learningAlgorithm';
 import { GAMES } from '../constants/gameConfig';
 import ActivityHeatmap from './ActivityHeatmap';
+import EmptyState from './EmptyState';
 import './ParentReport.css';
 
 const GAME_ICONS = {
@@ -27,8 +28,9 @@ const ParentReport = ({
   onClose 
 }) => {
   const stats = getLearningStats(learningData);
-  const [showAllStruggling, setShowAllStruggling] = useState(false);
-  const [showAllMastered, setShowAllMastered] = useState(false);
+  const [showAllBest, setShowAllBest] = useState(false);
+  const [showAllWorst, setShowAllWorst] = useState(false);
+  const [showAllImproved, setShowAllImproved] = useState(false);
   
   const wordDetails = Object.entries(learningData)
     .filter(([key]) => key !== 'version')
@@ -36,8 +38,7 @@ const ParentReport = ({
       word,
       ...data,
       status: data.weight <= 0.7 ? 'mastered' : data.weight >= 4 ? 'struggling' : 'learning'
-    }))
-    .sort((a, b) => b.weight - a.weight);
+    }));
 
   const totalGamesPlayed = Object.values(gameStats || {})
     .reduce((sum, g) => sum + (g.played || 0), 0);
@@ -69,8 +70,9 @@ const ParentReport = ({
     : `${totalMinutes}m`;
 
   // Word lists
-  const strugglingWords = wordDetails.filter(w => w.status === 'struggling');
-  const masteredWords = wordDetails.filter(w => w.status === 'mastered');
+  const worstWords = [...wordDetails].filter(w => w.weight >= 2.5).sort((a, b) => b.weight - a.weight);
+  const bestWords = [...wordDetails].filter(w => w.weight <= 1.0).sort((a, b) => a.weight - b.weight);
+  const improvedWords = [...wordDetails].filter(w => (w.reviewCount || 0) > 0).sort((a, b) => (b.reviewCount || 0) - (a.reviewCount || 0));
 
   const renderDots = (word) => {
     const total = 4;
@@ -99,8 +101,9 @@ const ParentReport = ({
     </div>
   );
 
-  const displayStruggling = showAllStruggling ? strugglingWords : strugglingWords.slice(0, 5);
-  const displayMastered = showAllMastered ? masteredWords : masteredWords.slice(0, 5);
+  const displayWorst = showAllWorst ? worstWords : worstWords.slice(0, 5);
+  const displayBest = showAllBest ? bestWords : bestWords.slice(0, 5);
+  const displayImproved = showAllImproved ? improvedWords : improvedWords.slice(0, 5);
 
   return (
     <div className="pr-overlay" onClick={onClose}>
@@ -140,35 +143,53 @@ const ParentReport = ({
           </div>
 
           {/* Activity Heatmap */}
-          <ActivityHeatmap activityLog={activityLog} />
+          <div className="dash-section" style={{ padding: 0, overflow: 'hidden', flexShrink: 0 }}>
+            <ActivityHeatmap activityLog={activityLog} />
+          </div>
 
-          {/* Struggling Words */}
-          {strugglingWords.length > 0 && (
+          {/* Worst Words */}
+          {worstWords.length > 0 && (
             <div className="dash-section">
-              <h4 className="dash-section-title">Struggling Words (Review)</h4>
-              {displayStruggling.map(renderWordRow)}
-              {strugglingWords.length > 5 && (
+              <h4 className="dash-section-title">Worst Words Result</h4>
+              {displayWorst.map(renderWordRow)}
+              {worstWords.length > 5 && (
                 <button 
                   className="view-more-btn" 
-                  onClick={() => setShowAllStruggling(!showAllStruggling)}
+                  onClick={() => setShowAllWorst(!showAllWorst)}
                 >
-                  {showAllStruggling ? 'Show Less' : `View ${strugglingWords.length - 5} More`}
+                  {showAllWorst ? 'Show Less' : `View ${worstWords.length - 5} More`}
                 </button>
               )}
             </div>
           )}
 
-          {/* Mastered Words */}
-          {masteredWords.length > 0 && (
+          {/* Best Words */}
+          {bestWords.length > 0 && (
             <div className="dash-section">
-              <h4 className="dash-section-title">Recently Mastered</h4>
-              {displayMastered.map(renderWordRow)}
-              {masteredWords.length > 5 && (
+              <h4 className="dash-section-title">Best Words</h4>
+              {displayBest.map(renderWordRow)}
+              {bestWords.length > 5 && (
                 <button 
                   className="view-more-btn" 
-                  onClick={() => setShowAllMastered(!showAllMastered)}
+                  onClick={() => setShowAllBest(!showAllBest)}
                 >
-                  {showAllMastered ? 'Show Less' : `View ${masteredWords.length - 5} More`}
+                  {showAllBest ? 'Show Less' : `View ${bestWords.length - 5} More`}
+                </button>
+              )}
+            </div>
+          )}
+
+          {/* Improved Words */}
+          {improvedWords.length > 0 && (
+            <div className="dash-section">
+              <h4 className="dash-section-title">Words That Improved (Times Solved)</h4>
+              {displayImproved.map(renderWordRow)}
+              {improvedWords.length > 5 && (
+                <button 
+                  className="view-more-btn" 
+                  onClick={() => setShowAllImproved(!showAllImproved)}
+                >
+                  {showAllImproved ? 'Show Less' : `View ${improvedWords.length - 5} More`}
                 </button>
               )}
             </div>
@@ -197,8 +218,12 @@ const ParentReport = ({
 
           {/* Empty state */}
           {wordDetails.length === 0 && (
-            <div className="dash-section" style={{ textAlign: 'center', padding: 'var(--space-xl)' }}>
-              <p style={{ color: 'var(--color-text-secondary)', margin: 0 }}>Start playing to track progress!</p>
+            <div className="dash-section" style={{ padding: 'var(--space-md) 0' }}>
+              <EmptyState 
+                icon={Search} 
+                title="No Data Yet" 
+                message="Start playing games to track your vocabulary progress!" 
+              />
             </div>
           )}
         </div>

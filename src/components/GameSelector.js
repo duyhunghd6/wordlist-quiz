@@ -1,5 +1,5 @@
 import React from 'react';
-import { ClipboardList, Search, Layers, Circle, Check, Lock, Keyboard } from 'lucide-react';
+import { ClipboardList, Search, Layers, Circle, Check, Lock, Keyboard, Blocks, History, Camera, Gamepad2, FastForward } from 'lucide-react';
 import { GAMES } from '../constants/gameConfig';
 
 const GAME_ICONS = {
@@ -8,6 +8,12 @@ const GAME_ICONS = {
   wordSearch: Search,
   swipe: Layers,
   bubble: Circle,
+  shapeBuilder: Blocks,
+  timelineDetective: History,
+  photobomb: Camera,
+  marioTense: Gamepad2,
+  tenseSignal: Search,
+  endlessRunner: FastForward
 };
 
 const GAME_COLORS = {
@@ -16,12 +22,20 @@ const GAME_COLORS = {
   wordSearch: '#F59E0B', // accent
   swipe: '#EC4899', // pink
   bubble: '#10B981', // success
+  shapeBuilder: '#3B82F6',
+  timelineDetective: '#FBBF24',
+  photobomb: '#EC4899',
+  marioTense: '#22C55E',
+  tenseSignal: '#A855F7',
+  endlessRunner: '#14B8A6'
 };
 
-const GameSelector = ({ selectedGame, onSelectGame, gameStats }) => {
+const GameSelector = ({ selectedGame, onSelectGame, gameStats, selectedWordlist }) => {
+  const visibleGames = GAMES.filter(g => !g.isGrammar || (g.isGrammar && selectedWordlist === 'wordlist_esl'));
+
   return (
-    <div style={{ display: 'flex', justifyContent: 'space-between', gap: '6px' }}>
-      {GAMES.map((game) => {
+    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
+      {visibleGames.map((game) => {
         const stats = gameStats?.[game.id] || { played: 0, bestScore: 0 };
         const isSelected = selectedGame === game.id;
         const isNew = stats.played === 0;
@@ -36,7 +50,7 @@ const GameSelector = ({ selectedGame, onSelectGame, gameStats }) => {
             disabled={!game.available}
             aria-label={game.available ? game.name : `${game.name} - Coming Soon`}
             aria-pressed={isSelected}
-            style={{ flex: '1 1 0', minWidth: 0 }}
+            style={{ flex: '1 1 calc(33.333% - 8px)', minWidth: '90px', maxWidth: '140px' }}
           >
             <div className="compact-icon-bg compact-icon-sm" style={{ backgroundColor: !game.available ? 'var(--color-text-secondary)' : color }}>
               {isSelected && (

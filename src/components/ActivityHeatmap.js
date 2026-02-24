@@ -100,7 +100,7 @@ const ActivityHeatmap = ({ activityLog = {} }) => {
   const hasActivity = Object.values(cellData).some(cell => cell.level > 0);
 
   return (
-    <div className="card shadow-sm" style={{ padding: 'var(--space-xl)', overflow: 'hidden' }}>
+    <div style={{ padding: 'var(--space-xl)', overflow: 'hidden', flexShrink: 0, width: '100%', boxSizing: 'border-box' }}>
       <h2 style={{ fontSize: '1.2rem', margin: '0 0 var(--space-md) 0', display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--color-text-primary)' }}>
         <Calendar size={20} color="var(--color-info)" />
         Learning Activity

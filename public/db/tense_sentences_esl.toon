@@ -1,0 +1,251 @@
+[250]{id,tense,level,correct_sentence,wrong_sentence,pedagogical_focus,vietnamese_translation}:
+  pc1,Present Continuous,Beginner,She is playing football with her friends.,She are playing football with her friends.,Subject-verb agreement (is vs are),Cô ấy đang chơi bóng đá với bạn bè.
+  pc2,Present Continuous,Beginner,They are watching a movie in the living room.,They is watching a movie in the living room.,Subject-verb agreement (are vs is),Họ đang xem phim trong phòng khách.
+  pc3,Present Continuous,Beginner,I am reading an interesting book right now.,I are reading an interesting book right now.,Subject-verb agreement (am vs are),Tôi đang đọc một cuốn sách thú vị ngay bây giờ.
+  pc4,Present Continuous,Beginner,The dog is sleeping under the table.,The dog am sleeping under the table.,Subject-verb agreement (am vs is),Con chó đang ngủ dưới gầm bàn.
+  pc5,Present Continuous,Beginner,We are swimming in the ocean today.,We is swimming in the ocean today.,Subject-verb agreement (are vs is),Hôm nay chúng tôi đang bơi ở biển.
+  pc6,Present Continuous,Beginner,The baby is crying because he is hungry.,The baby are crying because he is hungry.,Subject-verb agreement,Đứa bé đang khóc vì đói.
+  pc7,Present Continuous,Beginner,Look! The birds are flying very high.,Look! The birds is flying very high.,Plural subject with are,Nhìn kìa! Những con chim đang bay rất cao.
+  pc8,Present Continuous,Beginner,My brother is doing his homework in his room.,My brother am doing his homework in his room.,He/is pairing,Anh trai tôi đang làm bài tập trong phòng.
+  pc9,Present Continuous,Beginner,I am learning English on my computer.,I is learning English on my computer.,I/am pairing,Tôi đang học tiếng Anh trên máy tính.
+  pc10,Present Continuous,Beginner,The sun is shining brightly today.,The sun are shining brightly today.,Singular noun with is,Hôm nay mặt trời rọi sáng chói chang.
+  pc11,Present Continuous,Beginner,Are you listening to the teacher?,Is you listening to the teacher?,Question formation auxiliary,Bạn có đang nghe giáo viên nói không?
+  pc12,Present Continuous,Beginner,What is she cooking in the kitchen?,What are she cooking in the kitchen?,WH-question auxiliary,Cô ấy đang nấu gì trong bếp vậy?
+  pc13,Present Continuous,Beginner,The cars are moving fast on the highway.,The cars is moving fast on the highway.,Plural cars with are,Những chiếc ô tô đang di chuyển nhanh trên đường cao tốc.
+  pc14,Present Continuous,Beginner,My parents are talking in the garden.,My parents is talking in the garden.,Plural parents with are,Bố mẹ tôi đang nói chuyện trong vườn.
+  pc15,Present Continuous,Beginner,She is wearing a beautiful red dress.,She are wearing a beautiful red dress.,She/is pairing,Cô ấy đang mặc một chiếc váy đỏ tuyệt đẹp.
+  pc16,Present Continuous,Intermediate,The students are writing their test right now.,The students is writing their test right now.,Plural students with are,Các học sinh đang làm bài kiểm tra ngay bây giờ.
+  pc17,Present Continuous,Intermediate,He is drinking water because it's hot.,He am drinking water because it's hot.,He/is pairing,Anh ấy đang uống nước vì trời nóng.
+  pc18,Present Continuous,Intermediate,We are planning a trip to the beach.,We am planning a trip to the beach.,We/are pairing,Chúng tôi đang lên kế hoạch cho một chuyến đi biển.
+  pc19,Present Continuous,Intermediate,They aren't playing video games anymore.,They isn't playing video games anymore.,Negative plural auxiliary,Họ không chơi trò chơi điện tử nữa.
+  pc20,Present Continuous,Intermediate,Isn't he coming to the party tonight?,Aren't he coming to the party tonight?,Negative question auxiliary,Anh ấy sẽ không đến bữa tiệc tối nay sao?
+  pc21,Present Continuous,Intermediate,My sister is painting a picture.,My sister are painting a picture.,Subject-verb agreement,Chị gái tôi đang vẽ một bức tranh.
+  pc22,Present Continuous,Intermediate,My friends are running in the park.,My friends is running in the park.,Plural subject agreement,Bạn bè tôi đang chạy trong công viên.
+  pc23,Present Continuous,Intermediate,My sister is eating lunch.,My sister are eating lunch.,Subject-verb agreement,Chị gái tôi đang ăn trưa.
+  pc24,Present Continuous,Intermediate,The children are listening to music.,The children is listening to music.,Plural subject agreement,Bọn trẻ đang nghe nhạc.
+  pc25,Present Continuous,Intermediate,The cat is painting a picture.,The cat are painting a picture.,Subject-verb agreement,Con mèo đang vẽ một bức tranh.
+  pc26,Present Continuous,Intermediate,The players are listening to music.,The players is listening to music.,Plural subject agreement,Các cầu thủ đang nghe nhạc.
+  pc27,Present Continuous,Intermediate,The cat is eating lunch.,The cat are eating lunch.,Subject-verb agreement,Con mèo đang ăn trưa.
+  pc28,Present Continuous,Intermediate,The children are eating lunch.,The children is eating lunch.,Plural subject agreement,Bọn trẻ đang ăn trưa.
+  pc29,Present Continuous,Intermediate,The cat is listening to music.,The cat are listening to music.,Subject-verb agreement,Con mèo đang nghe nhạc.
+  pc30,Present Continuous,Intermediate,My friends are running in the park.,My friends is running in the park.,Plural subject agreement,Bạn bè tôi đang chạy trong công viên.
+  pc31,Present Continuous,Intermediate,He is listening to music.,He am listening to music.,Subject-verb agreement,Anh ấy đang nghe nhạc.
+  pc32,Present Continuous,Intermediate,The children are listening to music.,The children is listening to music.,Plural subject agreement,Bọn trẻ đang nghe nhạc.
+  pc33,Present Continuous,Intermediate,He is running in the park.,He am running in the park.,Subject-verb agreement,Anh ấy đang chạy trong công viên.
+  pc34,Present Continuous,Intermediate,My friends are painting a picture.,My friends is painting a picture.,Plural subject agreement,Bạn bè tôi đang vẽ một bức tranh.
+  pc35,Present Continuous,Intermediate,He is running in the park.,He am running in the park.,Subject-verb agreement,Anh ấy đang chạy trong công viên.
+  pc36,Present Continuous,Advanced,My friends are painting a picture.,My friends is painting a picture.,Plural subject agreement,Bạn bè tôi đang vẽ một bức tranh.
+  pc37,Present Continuous,Advanced,The machine is painting a picture.,The machine are painting a picture.,Subject-verb agreement,Cái máy đang vẽ một bức tranh.
+  pc38,Present Continuous,Advanced,The players are running in the park.,The players is running in the park.,Plural subject agreement,Các cầu thủ đang chạy trong công viên.
+  pc39,Present Continuous,Advanced,The machine is listening to music.,The machine are listening to music.,Subject-verb agreement,Cái máy đang nghe nhạc.
+  pc40,Present Continuous,Advanced,The players are listening to music.,The players is listening to music.,Plural subject agreement,Các cầu thủ đang nghe nhạc.
+  pc41,Present Continuous,Advanced,The cat is listening to music.,The cat are listening to music.,Subject-verb agreement,Con mèo đang nghe nhạc.
+  pc42,Present Continuous,Advanced,The children are painting a picture.,The children is painting a picture.,Plural subject agreement,Bọn trẻ đang vẽ một bức tranh.
+  pc43,Present Continuous,Advanced,My sister is listening to music.,My sister are listening to music.,Subject-verb agreement,Chị gái tôi đang nghe nhạc.
+  pc44,Present Continuous,Advanced,The children are listening to music.,The children is listening to music.,Plural subject agreement,Bọn trẻ đang nghe nhạc.
+  pc45,Present Continuous,Advanced,The cat is eating lunch.,The cat are eating lunch.,Subject-verb agreement,Con mèo đang ăn trưa.
+  pc46,Present Continuous,Advanced,My friends are eating lunch.,My friends is eating lunch.,Plural subject agreement,Bạn bè tôi đang ăn trưa.
+  pc47,Present Continuous,Advanced,He is running in the park.,He am running in the park.,Subject-verb agreement,Anh ấy đang chạy trong công viên.
+  pc48,Present Continuous,Advanced,The players are eating lunch.,The players is eating lunch.,Plural subject agreement,Các cầu thủ đang ăn trưa.
+  pc49,Present Continuous,Advanced,My sister is eating lunch.,My sister are eating lunch.,Subject-verb agreement,Chị gái tôi đang ăn trưa.
+  pc50,Present Continuous,Advanced,The players are listening to music.,The players is listening to music.,Plural subject agreement,Các cầu thủ đang nghe nhạc.
+  ps1,Past Simple,Beginner,They walked to the school yesterday.,They walk to the school yesterday.,Past tense verb suffix (-ed) missing with time signal,Họ đã đi bộ đến trường ngày hôm qua.
+  ps2,Past Simple,Beginner,She visited her grandmother last week.,She visits her grandmother last week.,Present Simple vs Past Simple with past time signal,Cô ấy đã đến thăm bà của mình vào tuần trước.
+  ps3,Past Simple,Beginner,I ate a delicious pizza for dinner.,I eated a delicious pizza for dinner.,Irregular verb past form (ate vs eated),Tôi đã ăn một chiếc bánh pizza ngon cho bữa tối.
+  ps4,Past Simple,Beginner,He bought a new bike on his birthday.,He buyed a new bike on his birthday.,Irregular verb past form (bought vs buyed),Anh ấy đã mua một chiếc xe đạp mới vào ngày sinh nhật của mình.
+  ps5,Past Simple,Beginner,We saw a shooting star in the sky.,We seen a shooting star in the sky.,Past simple (saw) vs Past participle (seen),Chúng tôi đã nhìn thấy một ngôi sao băng trên bầu trời.
+  ps6,Past Simple,Beginner,I played soccer with my friends on Sunday.,I play soccer with my friends on Sunday.,Missing -ed past tense suffix,Tôi đã chơi bóng đá với bạn bè vào Chủ Nhật.
+  ps7,Past Simple,Beginner,She jumped over the puddle.,She jump over the puddle.,Missing -ed past tense suffix,Cô ấy đã nhảy qua vũng nước.
+  ps8,Past Simple,Beginner,The bird flew away when I got close.,The bird flied away when I got close.,Irregular verb past form (flew vs flied),Con chim bay đi khi tôi đến gần.
+  ps9,Past Simple,Beginner,They drank all the orange juice.,They drinked all the orange juice.,Irregular verb past form (drank vs drinked),Họ đã uống hết nước cam.
+  ps10,Past Simple,Beginner,We watched a funny movie last night.,We watchs a funny movie last night.,Present tense distractor on past time signal,Tối qua chúng tôi đã xem một bộ phim hài.
+  ps11,Past Simple,Beginner,She didn't know the answer to the question.,She didn't knew the answer to the question.,Did not + bare infinitive rule,Cô ấy không biết câu trả lời cho câu hỏi đó.
+  ps12,Past Simple,Beginner,Did you go to the store earlier?,Did you went to the store earlier?,Did + bare infinitive rule in questions,Bạn đã đến cửa hàng lúc nãy à?
+  ps13,Past Simple,Beginner,The phone rang while I was sleeping.,The phone ringed while I was sleeping.,Irregular verb past form (rang vs ringed),Điện thoại đã reo trong khi tôi đang ngủ.
+  ps14,Past Simple,Beginner,He ran very fast to catch the bus.,He runned very fast to catch the bus.,Irregular verb past form (ran vs runned),Anh ấy đã chạy rất nhanh để bắt xe buýt.
+  ps15,Past Simple,Beginner,I found a shiny coin on the sidewalk.,I finded a shiny coin on the sidewalk.,Irregular verb past form (found vs finded),Tôi đã tìm thấy một đồng xu sáng bóng trên vỉa hè.
+  ps16,Past Simple,Intermediate,The teacher smiled at the class.,The teacher smile at the class.,Missing past tense suffix (-ed),Giáo viên đã mỉm cười với cả lớp.
+  ps17,Past Simple,Intermediate,They didn't finish their lunch.,They didn't finished their lunch.,Did not + bare infinitive,Họ đã không ăn hết bữa trưa của mình.
+  ps18,Past Simple,Intermediate,She took her dog for a long walk.,She taked her dog for a long walk.,Irregular verb past form (took vs taked),Cô ấy đã đưa chó đi dạo một đoạn dài.
+  ps19,Past Simple,Intermediate,We painted a picture in art class.,We painting a picture in art class.,Past simple vs continuous participle mix,Chúng tôi đã vẽ một bức tranh trong giờ mỹ thuật.
+  ps20,Past Simple,Intermediate,What did you do during the summer break?,What did you did during the summer break?,Did + bare infinitive in WH-questions,Bạn đã làm gì trong kỳ nghỉ hè?
+  ps21,Past Simple,Intermediate,They slept all day.,They sleeped all day.,Past tense of sleep,Họ đã ngủ cả ngày.
+  ps22,Past Simple,Intermediate,We studied hard.,We study hard.,Missing -ed suffix,Chúng tôi đã học chăm chỉ.
+  ps23,Past Simple,Intermediate,She went to the zoo.,She goed to the zoo.,Past tense of go,Cô ấy đã đi sở thú.
+  ps24,Past Simple,Intermediate,He studied hard.,He study hard.,Missing -ed suffix,Anh ấy đã học chăm chỉ.
+  ps25,Past Simple,Intermediate,He went to the zoo.,He goed to the zoo.,Past tense of go,Anh ấy đã đi sở thú.
+  ps26,Past Simple,Intermediate,They washed the car.,They washes the car.,Present distractor,Họ đã rửa ô tô.
+  ps27,Past Simple,Intermediate,She slept all day.,She sleeped all day.,Past tense of sleep,Cô ấy đã ngủ cả ngày.
+  ps28,Past Simple,Intermediate,He cleaned the room.,He clean the room.,Missing -ed suffix,Anh ấy đã dọn dẹp phòng.
+  ps29,Past Simple,Intermediate,They taught a lesson.,They teached a lesson.,Past tense of teach,Họ đã dạy một bài học.
+  ps30,Past Simple,Intermediate,We washed the car.,We washes the car.,Present distractor,Chúng tôi đã rửa ô tô.
+  ps31,Past Simple,Intermediate,We slept all day.,We sleeped all day.,Past tense of sleep,Chúng tôi đã ngủ cả ngày.
+  ps32,Past Simple,Intermediate,She washed the car.,She washes the car.,Present distractor,Cô ấy đã rửa ô tô.
+  ps33,Past Simple,Intermediate,He caught a fish.,He catched a fish.,Past tense of catch,Anh ấy đã bắt được một con cá.
+  ps34,Past Simple,Intermediate,They cleaned the room.,They clean the room.,Missing -ed suffix,Họ đã dọn dẹp phòng.
+  ps35,Past Simple,Intermediate,They caught a fish.,They catched a fish.,Past tense of catch,Họ đã bắt được một con cá.
+  ps36,Past Simple,Advanced,She washed the car.,She washes the car.,Present distractor,Cô ấy đã rửa ô tô.
+  ps37,Past Simple,Advanced,They taught a lesson.,They teached a lesson.,Past tense of teach,Họ đã dạy một bài học.
+  ps38,Past Simple,Advanced,He washed the car.,He washes the car.,Present distractor,Anh ấy đã rửa ô tô.
+  ps39,Past Simple,Advanced,He slept all day.,He sleeped all day.,Past tense of sleep,Anh ấy đã ngủ cả ngày.
+  ps40,Past Simple,Advanced,We washed the car.,We washes the car.,Present distractor,Chúng tôi đã rửa ô tô.
+  ps41,Past Simple,Advanced,She taught a lesson.,She teached a lesson.,Past tense of teach,Cô ấy đã dạy một bài học.
+  ps42,Past Simple,Advanced,He washed the car.,He washes the car.,Present distractor,Anh ấy đã rửa ô tô.
+  ps43,Past Simple,Advanced,We went to the zoo.,We goed to the zoo.,Past tense of go,Chúng tôi đã đi sở thú.
+  ps44,Past Simple,Advanced,She cleaned the room.,She clean the room.,Missing -ed suffix,Cô ấy đã dọn dẹp phòng.
+  ps45,Past Simple,Advanced,They taught a lesson.,They teached a lesson.,Past tense of teach,Họ đã dạy một bài học.
+  ps46,Past Simple,Advanced,They washed the car.,They washes the car.,Present distractor,Họ đã rửa ô tô.
+  ps47,Past Simple,Advanced,He went to the zoo.,He goed to the zoo.,Past tense of go,Anh ấy đã đi sở thú.
+  ps48,Past Simple,Advanced,We washed the car.,We washes the car.,Present distractor,Chúng tôi đã rửa ô tô.
+  ps49,Past Simple,Advanced,She taught a lesson.,She teached a lesson.,Past tense of teach,Cô ấy đã dạy một bài học.
+  ps50,Past Simple,Advanced,We studied hard.,We study hard.,Missing -ed suffix,Chúng tôi đã học chăm chỉ.
+  rps1,Present Simple,Beginner,He plays basketball every Saturday.,He play basketball every Saturday.,Third-person singular 's' missing,Anh ấy chơi bóng rổ vào mỗi thứ Bảy.
+  rps2,Present Simple,Beginner,They eat breakfast at seven o'clock.,They eats breakfast at seven o'clock.,Incorrect third-person singular 's' on plural subject,Họ ăn sáng lúc bảy giờ.
+  rps3,Present Simple,Beginner,The earth goes around the sun.,The earth go around the sun.,Third-person singular 'es' missing,Trái đất quay quanh mặt trời.
+  rps4,Present Simple,Beginner,My cat sleeps on the sofa.,My cat sleep on the sofa.,Third-person singular 's' missing,Con mèo của tôi ngủ trên ghế sofa.
+  rps5,Present Simple,Beginner,I like to read books before bed.,I likes to read books before bed.,Incorrect 's' on first-person singular,Tôi thích đọc sách trước khi đi ngủ.
+  rps6,Present Simple,Beginner,We drink milk every morning.,We drinks milk every morning.,Incorrect 's' on plural subject,Chúng tôi uống sữa mỗi sáng.
+  rps7,Present Simple,Beginner,She watches cartoons after school.,She watch cartoons after school.,Third-person singular 'es' missing,Cô ấy xem phim hoạt hình sau giờ học.
+  rps8,Present Simple,Beginner,My dad drives a red car.,My dad drive a red car.,Third-person singular 's' missing,Bố tôi lái một chiếc ô tô màu đỏ.
+  rps9,Present Simple,Beginner,The birds sing beautiful songs.,The birds sings beautiful songs.,Incorrect 's' on plural subject,Những con chim hát những bài hát tuyệt đẹp.
+  rps10,Present Simple,Beginner,He rarely washes his hands.,He rarely wash his hands.,Third-person singular 'es' missing with adverb of frequency,Anh ấy hiếm khi rửa tay.
+  rps11,Present Simple,Beginner,She doesn't like spicy food.,She don't like spicy food.,Doesn't vs don't with third-person singular,Cô ấy không thích đồ ăn cay.
+  rps12,Present Simple,Beginner,They don't understand the homework.,They doesn't understand the homework.,Don't vs doesn't with plural subject,Họ không hiểu bài tập về nhà.
+  rps13,Present Simple,Beginner,Sarah rides her bike to the park.,Sarah ride her bike to the park.,Third-person singular 's' missing,Sarah đạp xe đến công viên.
+  rps14,Present Simple,Beginner,The train leaves at 8 PM tonight.,The train leave at 8 PM tonight.,Present continuous schedule meaning uses simple present,Chuyến tàu rời đi lúc 8 giờ tối nay.
+  rps15,Present Simple,Beginner,Does he always wake up early?,Do he always wake up early?,Does vs Do auxiliary in questions,Anh ấy có luôn thức dậy sớm không?
+  rps16,Present Simple,Intermediate,Do you want some ice cream?,Does you want some ice cream?,Do vs Does auxiliary in questions,Bạn có muốn một ít kem không?
+  rps17,Present Simple,Intermediate,It snows heavily in winter.,It snow heavily in winter.,Third-person singular 's' missing for 'It',Tuyết rơi dày vào mùa đông.
+  rps18,Present Simple,Intermediate,The boys love playing video games.,The boys loves playing video games.,Incorrect 's' on plural subject,Những cậu bé thích chơi trò chơi điện tử.
+  rps19,Present Simple,Intermediate,Water boils at 100 degrees.,Water boil at 100 degrees.,Third-person singular 's' missing for uncountable noun,Nước sôi ở 100 độ.
+  rps20,Present Simple,Intermediate,Why does she study so hard?,Why do she study so hard?,Does vs Do in WH-questions,Tại sao cô ấy học chăm chỉ như vậy?
+  rps21,Present Simple,Intermediate,He enjoys the sunshine.,He enjoy the sunshine.,Third person singular 's',Anh ấy tận hưởng ánh nắng.
+  rps22,Present Simple,Intermediate,We walk to work.,We walks to work.,Plural subject no 's',Chúng tôi đi bộ đi làm.
+  rps23,Present Simple,Intermediate,He reads a book.,He read a book.,Third person singular 's',Anh ấy đọc sách.
+  rps24,Present Simple,Intermediate,They listen carefully.,They listens carefully.,Plural subject no 's',Họ lắng nghe cẩn thận.
+  rps25,Present Simple,Intermediate,She reads a book.,She read a book.,Third person singular 's',Cô ấy đọc sách.
+  rps26,Present Simple,Intermediate,The cats walk to work.,The cats walks to work.,Plural subject no 's',Những con mèo đi bộ đi làm.
+  rps27,Present Simple,Intermediate,The dog enjoys the sunshine.,The dog enjoy the sunshine.,Third person singular 's',Con chó tận hưởng ánh nắng.
+  rps28,Present Simple,Intermediate,They walk to work.,They walks to work.,Plural subject no 's',Họ đi bộ đi làm.
+  rps29,Present Simple,Intermediate,She reads a book.,She read a book.,Third person singular 's',Cô ấy đọc sách.
+  rps30,Present Simple,Intermediate,They walk to work.,They walks to work.,Plural subject no 's',Họ đi bộ đi làm.
+  rps31,Present Simple,Intermediate,He makes a cake.,He make a cake.,Third person singular 's',Anh ấy làm một cái bánh.
+  rps32,Present Simple,Intermediate,We listen carefully.,We listens carefully.,Plural subject no 's',Chúng tôi lắng nghe cẩn thận.
+  rps33,Present Simple,Intermediate,The dog enjoys the sunshine.,The dog enjoy the sunshine.,Third person singular 's',Con chó tận hưởng ánh nắng.
+  rps34,Present Simple,Intermediate,They walk to work.,They walks to work.,Plural subject no 's',Họ đi bộ đi làm.
+  rps35,Present Simple,Intermediate,He reads a book.,He read a book.,Third person singular 's',Anh ấy đọc sách.
+  rps36,Present Simple,Advanced,The cats listen carefully.,The cats listens carefully.,Plural subject no 's',Những con mèo lắng nghe cẩn thận.
+  rps37,Present Simple,Advanced,She enjoys the sunshine.,She enjoy the sunshine.,Third person singular 's',Cô ấy tận hưởng ánh nắng.
+  rps38,Present Simple,Advanced,The cats listen carefully.,The cats listens carefully.,Plural subject no 's',Những con mèo lắng nghe cẩn thận.
+  rps39,Present Simple,Advanced,The dog reads a book.,The dog read a book.,Third person singular 's',Con chó đọc sách.
+  rps40,Present Simple,Advanced,We listen carefully.,We listens carefully.,Plural subject no 's',Chúng tôi lắng nghe cẩn thận.
+  rps41,Present Simple,Advanced,He reads a book.,He read a book.,Third person singular 's',Anh ấy đọc sách.
+  rps42,Present Simple,Advanced,The cats walk to work.,The cats walks to work.,Plural subject no 's',Những con mèo đi bộ đi làm.
+  rps43,Present Simple,Advanced,The dog reads a book.,The dog read a book.,Third person singular 's',Con chó đọc sách.
+  rps44,Present Simple,Advanced,The cats listen carefully.,The cats listens carefully.,Plural subject no 's',Những con mèo lắng nghe cẩn thận.
+  rps45,Present Simple,Advanced,The dog makes a cake.,The dog make a cake.,Third person singular 's',Con chó làm một cái bánh.
+  rps46,Present Simple,Advanced,They listen carefully.,They listens carefully.,Plural subject no 's',Họ lắng nghe cẩn thận.
+  rps47,Present Simple,Advanced,She reads a book.,She read a book.,Third person singular 's',Cô ấy đọc sách.
+  rps48,Present Simple,Advanced,The cats walk to work.,The cats walks to work.,Plural subject no 's',Những con mèo đi bộ đi làm.
+  rps49,Present Simple,Advanced,He reads a book.,He read a book.,Third person singular 's',Anh ấy đọc sách.
+  rps50,Present Simple,Advanced,The cats listen carefully.,The cats listens carefully.,Plural subject no 's',Những con mèo lắng nghe cẩn thận.
+  fs1,Future Simple,Beginner,I will go to the park tomorrow.,I will goes to the park tomorrow.,Modal auxiliary 'will' followed by bare infinitive,Tôi sẽ đi công viên vào ngày mai.
+  fs2,Future Simple,Beginner,She will finish her homework soon.,She will finishing her homework soon.,Modal auxiliary 'will' followed by bare infinitive,Cô ấy sẽ hoàn thành bài tập về nhà sớm thôi.
+  fs3,Future Simple,Beginner,We are going to travel to Japan next year.,We is going to travel to Japan next year.,'Going to' future subject-verb agreement,Chúng tôi dự định sẽ đi du lịch Nhật Bản vào năm sau.
+  fs4,Future Simple,Beginner,They will win the game if they try.,They will won the game if they try.,Will + plural past tense error,Họ sẽ thắng trò chơi nếu họ cố gắng.
+  fs5,Future Simple,Beginner,He will call you later tonight.,He will calls you later tonight.,Will + third-person singular error,Anh ấy sẽ gọi cho bạn tối nay.
+  fs6,Future Simple,Beginner,It is going to rain this afternoon.,It are going to rain this afternoon.,'Going to' future subject-verb agreement with 'it',Trời dự định sẽ mưa vào chiều nay.
+  fs7,Future Simple,Beginner,The sun will rise at 6 AM.,The sun will rising at 6 AM.,Will + continuous participle error,Mặt trời sẽ mọc lúc 6 giờ sáng.
+  fs8,Future Simple,Beginner,I am going to buy a new computer.,I is going to buy a new computer.,'Going to' future subject-verb agreement (I am),Tôi dự định mua một máy tính mới.
+  fs9,Future Simple,Beginner,We will be very happy to see you.,We will are very happy to see you.,Will + be vs Will + are,Chúng tôi sẽ rất vui khi gặp bạn.
+  fs10,Future Simple,Beginner,Tom isn't going to play with us.,Tom aren't going to play with us.,Negative 'Going to' subject-verb agreement,Tom sẽ không chơi cùng chúng ta đâu.
+  fs11,Future Simple,Beginner,Will you help me with this box?,Will you helps me with this box?,Will + bare infinitive in questions,Bạn sẽ giúp tôi với chiếc hộp này chứ?
+  fs12,Future Simple,Beginner,What will she wear to the party?,What she will wear to the party?,WH-question syntax inversion missing,Cô ấy sẽ mặc gì đến bữa tiệc?
+  fs13,Future Simple,Beginner,My students will write a test on Monday.,My students will wrote a test on Monday.,Will + past tense error,Học sinh của tôi sẽ làm bài kiểm tra vào thứ Hai.
+  fs14,Future Simple,Beginner,They are going to build a new bridge here.,They is going to build a new bridge here.,Plural subject 'going to' agreement,Họ dự định xây một cây cầu mới ở đây.
+  fs15,Future Simple,Beginner,I won't tell anyone your secret.,I willn't tell anyone your secret.,Negative structure of will (won't vs willn't),Tôi sẽ không nói cho ai biết bí mật của bạn.
+  fs16,Future Simple,Intermediate,Where are you going to stay?,Where is you going to stay?,WH-question with going-to agreement,Bạn dự định sẽ ở đâu?
+  fs17,Future Simple,Intermediate,She won't be happy about this.,She don't will be happy about this.,Double negative / modal auxiliary structure,Cô ấy sẽ không vui về điều này.
+  fs18,Future Simple,Intermediate,The dog is going to catch the ball.,The dog am going to catch the ball.,'Going to' subject-verb agreement,Con chó chuẩn bị bắt được quả bóng kìa.
+  fs19,Future Simple,Intermediate,We will eat pizza for dinner tonight.,We will eating pizza for dinner tonight.,Will + continuous participle error,Chúng tôi sẽ ăn pizza cho bữa tối nay.
+  fs20,Future Simple,Intermediate,Are they going to join the club?,Is they going to join the club?,Question formation with going-to,Họ có dự định tham gia câu lạc bộ không?
+  fs21,Future Simple,Intermediate,She will clean the house.,She will cleans the house.,Will + bare infinitive,Cô ấy sẽ lau nhà.
+  fs22,Future Simple,Intermediate,You will visit the museum.,You will visited the museum.,Will + bare infinitive,Bạn sẽ thăm bảo tàng.
+  fs23,Future Simple,Intermediate,She will clean the house.,She will cleans the house.,Will + bare infinitive,Cô ấy sẽ lau nhà.
+  fs24,Future Simple,Intermediate,It will draw a picture.,It will drawed a picture.,Will + bare infinitive,Nó sẽ vẽ một bức tranh.
+  fs25,Future Simple,Intermediate,You will clean the house.,You will cleans the house.,Will + bare infinitive,Bạn sẽ lau nhà.
+  fs26,Future Simple,Intermediate,It will draw a picture.,It will drawed a picture.,Will + bare infinitive,Nó sẽ vẽ một bức tranh.
+  fs27,Future Simple,Intermediate,You will draw a picture.,You will draws a picture.,Will + bare infinitive,Bạn sẽ vẽ một bức tranh.
+  fs28,Future Simple,Intermediate,We will visit the museum.,We will visited the museum.,Will + bare infinitive,Chúng tôi sẽ thăm bảo tàng.
+  fs29,Future Simple,Intermediate,It will clean the house.,It will cleans the house.,Will + bare infinitive,Nó sẽ lau nhà.
+  fs30,Future Simple,Intermediate,They will visit the museum.,They will visited the museum.,Will + bare infinitive,Họ sẽ thăm bảo tàng.
+  fs31,Future Simple,Intermediate,I will clean the house.,I will cleans the house.,Will + bare infinitive,Tôi sẽ lau nhà.
+  fs32,Future Simple,Intermediate,They will clean the house.,They will cleaned the house.,Will + bare infinitive,Họ sẽ lau nhà.
+  fs33,Future Simple,Intermediate,He will clean the house.,He will cleans the house.,Will + bare infinitive,Anh ấy sẽ lau nhà.
+  fs34,Future Simple,Intermediate,They will clean the house.,They will cleaned the house.,Will + bare infinitive,Họ sẽ lau nhà.
+  fs35,Future Simple,Intermediate,We will visit the museum.,We will visits the museum.,Will + bare infinitive,Chúng tôi sẽ thăm bảo tàng.
+  fs36,Future Simple,Advanced,They will draw a picture.,They will drawed a picture.,Will + bare infinitive,Họ sẽ vẽ một bức tranh.
+  fs37,Future Simple,Advanced,It will clean the house.,It will cleans the house.,Will + bare infinitive,Nó sẽ lau nhà.
+  fs38,Future Simple,Advanced,It will draw a picture.,It will drawed a picture.,Will + bare infinitive,Nó sẽ vẽ một bức tranh.
+  fs39,Future Simple,Advanced,I will draw a picture.,I will draws a picture.,Will + bare infinitive,Tôi sẽ vẽ một bức tranh.
+  fs40,Future Simple,Advanced,She will draw a picture.,She will drawed a picture.,Will + bare infinitive,Cô ấy sẽ vẽ một bức tranh.
+  fs41,Future Simple,Advanced,We will visit the museum.,We will visits the museum.,Will + bare infinitive,Chúng tôi sẽ thăm bảo tàng.
+  fs42,Future Simple,Advanced,He will clean the house.,He will cleaned the house.,Will + bare infinitive,Anh ấy sẽ lau nhà.
+  fs43,Future Simple,Advanced,She will clean the house.,She will cleans the house.,Will + bare infinitive,Cô ấy sẽ lau nhà.
+  fs44,Future Simple,Advanced,It will draw a picture.,It will drawed a picture.,Will + bare infinitive,Nó sẽ vẽ một bức tranh.
+  fs45,Future Simple,Advanced,I will clean the house.,I will cleans the house.,Will + bare infinitive,Tôi sẽ lau nhà.
+  fs46,Future Simple,Advanced,I will clean the house.,I will cleaned the house.,Will + bare infinitive,Tôi sẽ lau nhà.
+  fs47,Future Simple,Advanced,She will visit the museum.,She will visits the museum.,Will + bare infinitive,Cô ấy sẽ thăm bảo tàng.
+  fs48,Future Simple,Advanced,They will draw a picture.,They will drawed a picture.,Will + bare infinitive,Họ sẽ vẽ một bức tranh.
+  fs49,Future Simple,Advanced,I will draw a picture.,I will draws a picture.,Will + bare infinitive,Tôi sẽ vẽ một bức tranh.
+  fs50,Future Simple,Advanced,It will clean the house.,It will cleaned the house.,Will + bare infinitive,Nó sẽ lau nhà.
+  pp1,Present Perfect,Beginner,She has eaten all her vegetables.,She have eaten all her vegetables.,Present perfect auxiliary agreement (has vs have),Cô ấy đã ăn hết rau của mình.
+  pp2,Present Perfect,Beginner,They have visited London three times.,They has visited London three times.,Present perfect auxiliary agreement (have vs has),Họ đã đến thăm London ba lần.
+  pp3,Present Perfect,Beginner,I have finished my homework already.,I has finished my homework already.,Present perfect auxiliary agreement (have vs has),Tôi đã hoàn thành xong bài tập về nhà.
+  pp4,Present Perfect,Beginner,He has lost his keys again.,He have lost his keys again.,Present perfect auxiliary agreement (has vs have),Anh ấy lại làm mất chìa khóa.
+  pp5,Present Perfect,Beginner,We haven't seen that movie yet.,We hasn't seen that movie yet.,Negative auxiliary agreement (haven't vs hasn't),Chúng tôi chưa xem bộ phim đó.
+  pp6,Present Perfect,Beginner,My mom has cooked dinner.,My mom have cooked dinner.,Present perfect auxiliary agreement (has vs have),Mẹ tôi nấu xong bữa tối rồi.
+  pp7,Present Perfect,Beginner,I have been to Paris before.,I have went to Paris before.,Past participle 'been' vs Past simple 'went',Tôi đã từng đến Paris trước đây.
+  pp8,Present Perfect,Beginner,She has broken her arm.,She has broke her arm.,Past participle 'broken' vs Past simple 'broke',Cô ấy bị gãy tay.
+  pp9,Present Perfect,Beginner,They have written a new song.,They have wrote a new song.,Past participle 'written' vs Past simple 'wrote',Họ đã viết xong một bài hát mới.
+  pp10,Present Perfect,Beginner,Has he ever flown in a helicopter?,Have he ever flown in a helicopter?,Question auxiliary agreement (Has vs Have),Anh ấy đã từng bay bằng trực thăng chưa?
+  pp11,Present Perfect,Beginner,Have you seen my dog?,Has you seen my dog?,Question auxiliary agreement (Have vs Has),Bạn có thấy con chó của tôi không?
+  pp12,Present Perfect,Beginner,The train has just arrived.,The train have just arrived.,Present perfect auxiliary agreement for singular noun,Chuyến tàu vừa mới đến.
+  pp13,Present Perfect,Beginner,We have painted the whole house.,We has painted the whole house.,Present perfect auxiliary agreement (have vs has),Chúng tôi đã sơn xong toàn bộ ngôi nhà.
+  pp14,Present Perfect,Beginner,My sister has taken my jacket.,My sister has took my jacket.,Past participle 'taken' vs Past simple 'took',Chị gái tôi đã lấy áo khoác của tôi.
+  pp15,Present Perfect,Beginner,I haven't slept well lately.,I hasn't slept well lately.,Negative auxiliary agreement with I,Gần đây tôi ngủ không ngon giấc.
+  pp16,Present Perfect,Intermediate,They have sung that song twice.,They have sang that song twice.,Past participle 'sung' vs Past simple 'sang',Họ đã hát bài đó hai lần rồi.
+  pp17,Present Perfect,Intermediate,She hasn't spoken to him today.,She haven't spoken to him today.,Negative auxiliary agreement (hasn't vs haven't),Hôm nay cô ấy chưa nói chuyện với anh ấy.
+  pp18,Present Perfect,Intermediate,You have grown so much!,You has grown so much!,Present perfect auxiliary agreement with You,Cháu đã lớn quá nhiều rồi!
+  pp19,Present Perfect,Intermediate,He has forgotten my name.,He has forgot my name.,Past participle 'forgotten' vs Past simple 'forgot',Anh ấy đã quên tên tôi rồi.
+  pp20,Present Perfect,Intermediate,How long have you lived here?,How long has you lived here?,WH-question auxiliary agreement,Bạn đã sống ở đây bao lâu rồi?
+  pp21,Present Perfect,Intermediate,She has found a new job.,She have found a new job.,has vs have,Cô ấy đã tìm được công việc mới.
+  pp22,Present Perfect,Intermediate,We have learned a lot.,We has learned a lot.,have vs has,Chúng tôi đã học được rất nhiều.
+  pp23,Present Perfect,Intermediate,She has found a new job.,She have found a new job.,has vs have,Cô ấy đã tìm được công việc mới.
+  pp24,Present Perfect,Intermediate,We have learned a lot.,We has learned a lot.,have vs has,Chúng tôi đã học được rất nhiều.
+  pp25,Present Perfect,Intermediate,She has found a new job.,She have found a new job.,has vs have,Cô ấy đã tìm được công việc mới.
+  pp26,Present Perfect,Intermediate,We have learned a lot.,We has learned a lot.,have vs has,Chúng tôi đã học được rất nhiều.
+  pp27,Present Perfect,Intermediate,She has found a new job.,She have found a new job.,has vs have,Cô ấy đã tìm được công việc mới.
+  pp28,Present Perfect,Intermediate,We have learned a lot.,We has learned a lot.,have vs has,Chúng tôi đã học được rất nhiều.
+  pp29,Present Perfect,Intermediate,She has found a new job.,She have found a new job.,has vs have,Cô ấy đã tìm được công việc mới.
+  pp30,Present Perfect,Intermediate,We have learned a lot.,We has learned a lot.,have vs has,Chúng tôi đã học được rất nhiều.
+  pp31,Present Perfect,Intermediate,She has found a new job.,She have found a new job.,has vs have,Cô ấy đã tìm được công việc mới.
+  pp32,Present Perfect,Intermediate,We have learned a lot.,We has learned a lot.,have vs has,Chúng tôi đã học được rất nhiều.
+  pp33,Present Perfect,Intermediate,She has found a new job.,She have found a new job.,has vs have,Cô ấy đã tìm được công việc mới.
+  pp34,Present Perfect,Intermediate,We have learned a lot.,We has learned a lot.,have vs has,Chúng tôi đã học được rất nhiều.
+  pp35,Present Perfect,Intermediate,She has found a new job.,She have found a new job.,has vs have,Cô ấy đã tìm được công việc mới.
+  pp36,Present Perfect,Advanced,We have learned a lot.,We has learned a lot.,have vs has,Chúng tôi đã học được rất nhiều.
+  pp37,Present Perfect,Advanced,She has found a new job.,She have found a new job.,has vs have,Cô ấy đã tìm được công việc mới.
+  pp38,Present Perfect,Advanced,We have learned a lot.,We has learned a lot.,have vs has,Chúng tôi đã học được rất nhiều.
+  pp39,Present Perfect,Advanced,She has found a new job.,She have found a new job.,has vs have,Cô ấy đã tìm được công việc mới.
+  pp40,Present Perfect,Advanced,We have learned a lot.,We has learned a lot.,have vs has,Chúng tôi đã học được rất nhiều.
+  pp41,Present Perfect,Advanced,She has found a new job.,She have found a new job.,has vs have,Cô ấy đã tìm được công việc mới.
+  pp42,Present Perfect,Advanced,We have learned a lot.,We has learned a lot.,have vs has,Chúng tôi đã học được rất nhiều.
+  pp43,Present Perfect,Advanced,She has found a new job.,She have found a new job.,has vs have,Cô ấy đã tìm được công việc mới.
+  pp44,Present Perfect,Advanced,We have learned a lot.,We has learned a lot.,have vs has,Chúng tôi đã học được rất nhiều.
+  pp45,Present Perfect,Advanced,She has found a new job.,She have found a new job.,has vs have,Cô ấy đã tìm được công việc mới.
+  pp46,Present Perfect,Advanced,We have learned a lot.,We has learned a lot.,have vs has,Chúng tôi đã học được rất nhiều.
+  pp47,Present Perfect,Advanced,She has found a new job.,She have found a new job.,has vs have,Cô ấy đã tìm được công việc mới.
+  pp48,Present Perfect,Advanced,We have learned a lot.,We has learned a lot.,have vs has,Chúng tôi đã học được rất nhiều.
+  pp49,Present Perfect,Advanced,She has found a new job.,She have found a new job.,has vs have,Cô ấy đã tìm được công việc mới.
+  pp50,Present Perfect,Advanced,We have learned a lot.,We has learned a lot.,have vs has,Chúng tôi đã học được rất nhiều.

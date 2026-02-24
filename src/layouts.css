@@ -143,6 +143,15 @@
 .se-item { height: 16px; background: white; border-radius: 4px; border: 1px solid #CBD5E1; }
 .se-btn { height: 24px; background: var(--color-info); margin: 0 16px; border-radius: 12px; }
 
+.parent-report { background: #F8FAFC; overflow-y: hidden; }
+.pr-header { height: 24px; background: white; margin-bottom: 8px; border-bottom: 1px solid #E2E8F0; }
+.pr-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; padding: 0 8px; }
+.pr-stat-box { height: 24px; background: white; border-radius: 4px; border: 1px solid #CBD5E1; }
+.pr-heatmap { height: 30px; background: white; margin: 8px; border-radius: 4px; border: 1px solid #CBD5E1; background-image: repeating-linear-gradient(45deg, transparent, transparent 4px, #E2E8F0 4px, #E2E8F0 8px); }
+.pr-list-header { height: 12px; background: #CBD5E1; margin: 0 8px 4px; border-radius: 2px; width: 60%; }
+.pr-list { padding: 0 8px; display: flex; flex-direction: column; gap: 4px; }
+.pr-list-item { height: 12px; background: white; border-radius: 2px; border: 1px solid #E2E8F0; }
+
 .settings-modal { position: relative; }
 .sm-overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.4); border-radius: 12px; display: flex; align-items: center; justify-content: center; }
 .sm-dialog { width: 80%; background: white; border-radius: 12px; padding: 8px; display: flex; flex-direction: column; gap: 8px; }
@@ -255,3 +264,168 @@
 .es-title { height: 12px; width: 80%; background: var(--color-text-primary); margin-bottom: 8px; border-radius: 4px; }
 .es-text { height: 8px; width: 60%; background: var(--color-text-secondary); margin-bottom: 24px; border-radius: 4px; }
 .es-btn { height: 24px; width: 100%; background: var(--color-accent); border-radius: 12px; }
+
+/* 11. Review Plays (Post-Game Results) */
+.review-plays { background: #F0FDF4; display: flex; flex-direction: column; overflow: hidden; }
+.rp-hero { background: #FEF2F2; border: 2px solid var(--color-danger); margin: 6px 8px; border-radius: 8px; padding: 6px; display: flex; flex-direction: column; align-items: center; gap: 2px; }
+.rp-emoji { width: 16px; height: 16px; background: #FBBF24; border-radius: 50%; }
+.rp-percent { width: 24px; height: 10px; background: var(--color-danger); border-radius: 4px; }
+.rp-stats-row { display: flex; gap: 8px; }
+.rp-stat { width: 20px; height: 8px; border-radius: 4px; }
+.rp-stat.correct { background: var(--color-success); }
+.rp-stat.wrong { background: var(--color-danger); }
+.rp-actions { display: flex; gap: 4px; margin: 0 8px; }
+.rp-btn { flex: 1; height: 14px; border-radius: 6px; border: 2px solid var(--color-border-default); }
+.rp-btn.primary { background: var(--color-accent); border-color: white; box-shadow: 0 2px 0 #B45309; }
+.rp-btn.secondary { background: white; }
+.rp-list { flex: 1; display: flex; flex-direction: column; gap: 3px; margin: 4px 8px; overflow: hidden; }
+.rp-item { height: 12px; border-radius: 4px; border: 1px solid; }
+.rp-item.correct { background: #F0FDF4; border-color: #BBF7D0; }
+.rp-item.wrong { background: #FEF2F2; border-color: #FECACA; }
+
+/* 12. Answer Incorrect (Overlay) */
+.answer-incorrect { position: relative; background: #F1F5F9; }
+.ai-quiz-bg { position: absolute; inset: 0; display: flex; flex-direction: column; gap: 4px; padding: 20px 8px 8px; opacity: 0.3; }
+.ai-opt { height: 16px; background: white; border-radius: 6px; border: 2px solid #CBD5E1; }
+.ai-opt.wrong { border-color: var(--color-danger); background: #FEF2F2; }
+.ai-opt.correct { border-color: var(--color-success); background: #F0FDF4; }
+.ai-overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.5); backdrop-filter: blur(2px); border-radius: 12px; display: flex; align-items: center; justify-content: center; z-index: 1; }
+.ai-dialog { width: 80%; background: white; border-radius: 12px; padding: 8px; display: flex; flex-direction: column; align-items: center; gap: 4px; border: 2px solid var(--color-danger); }
+.ai-icon { width: 16px; height: 16px; background: var(--color-danger); border-radius: 50%; }
+.ai-title { width: 30px; height: 8px; background: var(--color-danger); border-radius: 4px; }
+.ai-answer { width: 50px; height: 8px; background: var(--color-text-primary); border-radius: 4px; }
+.ai-context { width: 100%; background: #F8FAFC; border-radius: 6px; padding: 4px; display: flex; flex-direction: column; gap: 2px; }
+.ai-ctx-label { width: 40%; height: 6px; background: var(--color-info); border-radius: 2px; }
+.ai-ctx-text { width: 80%; height: 6px; background: var(--color-text-secondary); border-radius: 2px; }
+.ai-advance { width: 60%; height: 6px; background: #CBD5E1; border-radius: 2px; }
+
+/* 13. Tense Signal Spotter — Identify signal words in a sentence */
+.tense-signal-game, .tense-signal-correct { background: linear-gradient(180deg, #EDE9FE 0%, #FEF3C7 100%); display: flex; flex-direction: column; overflow: hidden; }
+.ts-hud { display: flex; justify-content: space-between; align-items: center; padding: 4px 6px; }
+.ts-back { width: 12px; height: 12px; background: white; border-radius: 50%; border: 2px solid #94A3B8; }
+.ts-progress { width: 30px; height: 4px; background: #CBD5E1; border-radius: 4px; position: relative; }
+.ts-progress::after { content: ""; position: absolute; left: 0; top: 0; width: 50%; height: 100%; background: var(--color-info); border-radius: 4px; }
+.ts-score { width: 16px; height: 10px; background: var(--color-warning); border-radius: 4px; }
+.ts-sentence-area { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 4px 8px; gap: 6px; }
+.ts-sentence { display: flex; flex-wrap: wrap; gap: 3px; justify-content: center; background: white; padding: 6px 8px; border-radius: 8px; border: 2px solid #CBD5E1; box-shadow: 0 2px 0 #E2E8F0; }
+.ts-word { width: 14px; height: 8px; background: #94A3B8; border-radius: 2px; }
+.ts-word.highlight { background: var(--color-info); width: 18px; }
+.ts-word.correct-word { background: var(--color-success); width: 18px; box-shadow: 0 0 0 2px rgba(34,197,94,0.3); }
+.ts-tense-label { width: 40px; height: 10px; background: #C084FC; border-radius: 10px; }
+.ts-tense-label.correct-label { background: var(--color-success); }
+.ts-question-prompt { width: 50px; height: 8px; background: var(--color-text-secondary); border-radius: 4px; margin: 0 auto; }
+.ts-feedback-banner { height: 12px; margin: 0 8px; border-radius: 6px; }
+.ts-feedback-banner.correct { background: var(--color-success); box-shadow: 0 2px 0 rgba(34,197,94,0.4); }
+.ts-options { display: flex; gap: 4px; padding: 6px 8px 8px; }
+.ts-option { flex: 1; height: 20px; background: white; border-radius: 8px; border: 2px solid #CBD5E1; box-shadow: 0 2px 0 #E2E8F0; }
+.ts-option.active { border-color: var(--color-info); box-shadow: 0 2px 0 var(--color-info); }
+.ts-option.correct { border-color: var(--color-success); background: #DCFCE7; box-shadow: 0 2px 0 var(--color-success); }
+.ts-option.dimmed { opacity: 0.4; }
+
+/* 14. Endless Runner Game (Landscape) */
+.endless-runner { background: linear-gradient(180deg, #BAE6FD 0%, #E0F2FE 100%); position: relative; overflow: hidden; display: flex; flex-direction: column; }
+.er-hud { display: flex; justify-content: space-between; padding: 8px 16px; z-index: 10; font-family: sans-serif; font-weight: bold; color: #1E293B; }
+
+.er-health { display: flex; gap: 4px; }
+.er-heart { width: 14px; height: 14px; background: #EF4444; border-radius: 50%; position: relative;}
+.er-background { position: absolute; inset: 0; z-index: 1; pointer-events: none; }
+.er-layer-bg { position: absolute; bottom: 0; width: 200%; height: 50px; background: linear-gradient(90deg, #FDE047 0%, #FBBF24 50%, #FDE047 100%); animation: scrollBg 2s linear infinite; }
+@keyframes scrollBg { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.er-options { position: absolute; top: 40px; left: 0; right: 0; display: flex; justify-content: center; gap: 12px; z-index: 5; }
+.er-option { padding: 4px 12px; background: rgba(255,255,255,0.9); border: 2px solid #38BDF8; border-radius: 12px; font-size: 10px; font-weight: bold; color: #0284C7; box-shadow: 0 2px 0 #0284C7; }
+.er-option:nth-child(1)::before { content: "APPEL"; }
+.er-option:nth-child(2)::before { content: "APPLE"; }
+.er-option:nth-child(3)::before { content: "ALPPE"; }
+.er-option:nth-child(2) { border-color: #22C55E; color: #16A34A; box-shadow: 0 2px 0 #15803D; }
+.er-character-area { position: absolute; bottom: 10px; left: 20px; z-index: 5; }
+.er-character { width: 30px; height: 40px; background: #FB923C; border-radius: 8px 8px 4px 4px; position: relative; } /* Simple player repr */
+.er-character::after { content: ""; position: absolute; top: 6px; right: 4px; width: 6px; height: 6px; background: white; border-radius: 50%; }
+
+/* ========================================= */
+/* ARCADE GAME SCENES (Phase 1)              */
+/* ========================================= */
+
+/* Standard Quiz */
+.quiz-board { background: #F8FAFC; display: flex; flex-direction: column; justify-content: space-between; padding: 16px; }
+.qb-hud { height: 20px; background: white; border-radius: 8px; border: 2px solid #E2E8F0; }
+.qb-question { height: 80px; background: white; border-radius: 12px; border: 2px dashed #94A3B8; margin: auto 0; }
+.qb-options { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.qo { height: 40px; background: white; border-radius: 8px; border: 2px solid var(--color-border-default); }
+
+/* Typing Quiz */
+.typing-board { background: #FEF3C7; display: flex; flex-direction: column; gap: 16px; padding: 16px; }
+.tb-hud { height: 20px; background: white; border-radius: 8px; border: 2px solid #FCD34D; }
+.tb-word { height: 30px; width: 60%; background: white; border-radius: 8px; align-self: center; }
+.tb-input { display: flex; justify-content: center; gap: 4px; margin: auto 0; }
+.ti { width: 30px; height: 30px; background: white; border: 2px solid #F59E0B; border-radius: 4px; }
+.tb-keyboard { height: 80px; background: #E2E8F0; border-radius: 8px; margin-top: auto; }
+
+/* Word Scramble */
+.scramble-board { background: #F0FDF4; display: flex; flex-direction: column; justify-content: space-between; padding: 16px; }
+.sc-hud { height: 20px; background: white; border-radius: 8px; border: 2px solid #BBF7D0; }
+.sc-slots { display: flex; justify-content: center; gap: 4px; margin-top: 40px; }
+.ss { width: 24px; height: 24px; border: 2px dashed #86EFAC; border-radius: 4px; }
+.sc-letters { display: flex; justify-content: center; gap: 4px; padding: 16px; background: white; border-radius: 12px; border: 2px solid var(--color-border-default); }
+.sl { width: 24px; height: 24px; background: var(--color-success); border-radius: 4px; }
+
+/* Swipe Cards */
+.swipe-board { background: #FDE68A; display: flex; flex-direction: column; align-items: center; padding: 16px; }
+.sw-hud { height: 20px; width: 100%; background: white; border-radius: 8px; border: 2px solid #F59E0B; margin-bottom: 24px; }
+.sw-card { width: 80%; height: 120px; background: white; border-radius: 12px; border: 2px solid var(--color-border-default); transform: rotate(-5deg); flex-shrink: 0; }
+.sw-actions { display: flex; gap: 24px; margin-top: auto; }
+.sa { width: 40px; height: 40px; border-radius: 50%; box-shadow: 0 4px 0 rgba(0,0,0,0.1); }
+.sa.no { background: var(--color-danger); }
+.sa.yes { background: var(--color-success); }
+
+/* Bubble Pop */
+.bubble-board { background: linear-gradient(to bottom, #DBEAFE, #EFF6FF); display: flex; flex-direction: column; padding: 16px; position: relative; overflow: hidden; }
+.bb-hud { height: 20px; background: white; border-radius: 8px; z-index: 2; margin-bottom: 12px; }
+.bb-target { height: 24px; width: 60%; background: #1E40AF; border-radius: 12px; align-self: center; z-index: 2; }
+.bb-area { flex: 1; position: relative; }
+.bub { border-radius: 50%; border: 2px solid white; position: absolute; background: rgba(255,255,255,0.8); }
+.b1 { width: 40px; height: 40px; bottom: 20px; left: 10px; }
+.b2 { width: 30px; height: 30px; top: 40px; right: 20px; }
+.b3 { width: 50px; height: 50px; top: 80px; left: 40px; }
+
+/* Photobomb */
+.photobomb-board { background: #FDF4FF; display: flex; flex-direction: column; padding: 16px; justify-content: space-between; }
+.pb-hud { height: 20px; background: white; border-radius: 8px; border: 2px solid #F5D0FE; }
+.pb-photo { width: 80%; height: 100px; background: white; border: 4px solid white; border-bottom-width: 20px; margin: 0 auto; box-shadow: 0 4px 8px rgba(0,0,0,0.1); position: relative; }
+.p-bomb { width: 30px; height: 30px; background: var(--color-danger); border-radius: 50%; position: absolute; bottom: -15px; right: -15px; border: 2px solid white; }
+.pb-film { height: 40px; background: #334155; border-radius: 8px; display: flex; gap: 4px; padding: 4px; }
+
+/* Shape Builder */
+.shape-board { background: #ECFEFF; display: flex; flex-direction: column; padding: 16px; justify-content: space-between; }
+.sh-hud { height: 20px; background: white; border-radius: 8px; border: 2px solid #A5F3FC; }
+.sh-sentence { height: 40px; background: white; border-radius: 8px; border: 2px dashed #0891B2; margin: 24px 0; }
+.sh-parts { display: flex; justify-content: space-around; }
+.sp { height: 30px; border-radius: 4px; }
+.part1 { width: 30px; background: #FCD34D; }
+.part2 { width: 40px; background: #F87171; }
+.part3 { width: 50px; background: #60A5FA; }
+
+/* Timeline Detective */
+.timeline-board { background: #F1F5F9; display: flex; flex-direction: column; padding: 16px; justify-content: space-between; }
+.tl-hud { height: 20px; background: white; border-radius: 8px; border: 2px solid #CBD5E1; }
+.tl-clue { height: 30px; background: white; border-radius: 8px; border: 2px solid #94A3B8; margin: 16px 0; }
+.tl-line { height: 4px; background: #94A3B8; position: relative; margin: 30px 0; display: flex; justify-content: space-between; }
+.tl-point { width: 12px; height: 12px; border-radius: 50%; background: white; border: 2px solid #64748B; margin-top: -4px; }
+.tl-options { display: flex; gap: 8px; height: 40px; background: white; border-radius: 8px; padding: 4px; }
+
+/* Mario Tense Runner */
+.mario-board { background: #86EFAC; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; padding: 16px 0 0 0; }
+.mr-hud { height: 20px; background: rgba(255,255,255,0.8); border-radius: 8px; margin: 0 16px; }
+.mr-scroll { flex: 1; position: relative; border-bottom: 20px solid #B45309; margin-top: 20px; }
+.mr-char { width: 24px; height: 30px; background: #EF4444; position: absolute; bottom: 0; left: 20px; border-radius: 4px 4px 0 0; }
+.mr-pipe { width: 30px; height: 40px; background: #22C55E; position: absolute; bottom: 0; right: 40px; border: 2px solid #14532D; }
+.mr-block { width: 20px; height: 20px; background: #F59E0B; position: absolute; top: 20px; right: 60px; border: 2px solid #92400E; }
+.mr-controls { height: 60px; background: white; display: flex; justify-content: space-between; padding: 10px 20px; }
+.mc { width: 40px; height: 40px; background: #E2E8F0; border-radius: 50%; }
+
+/* Tense Signal Spotter */
+.tense-signal-board { background: #FEF2F2; display: flex; flex-direction: column; padding: 16px; }
+.ts-hud { height: 20px; background: white; border-radius: 8px; border: 2px solid #FECACA; margin-bottom: 24px; }
+.ts-sentence { height: 60px; background: white; border-radius: 8px; display: flex; align-items: center; justify-content: center; border: 2px solid #FCA5A5; }
+.ts-gap { width: 40px; height: 20px; border-bottom: 2px solid #EF4444; }
+.ts-signals { display: flex; gap: 8px; margin-top: auto; }
+.tsik { flex: 1; height: 40px; background: white; border-radius: 8px; border: 2px solid var(--color-danger); }

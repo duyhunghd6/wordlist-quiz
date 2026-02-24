@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { Clock, CheckCircle, XCircle, Home, Lightbulb, BookOpen, AlertTriangle, ChevronRight } from 'lucide-react';
+import { Clock, CheckCircle, XCircle, Home, Lightbulb, AlertTriangle, ChevronRight } from 'lucide-react';
 
 const QUESTION_TIME_LIMIT = 30; // 30 seconds per question
 
@@ -179,39 +179,80 @@ const Quiz = ({ selectedWordlist, questions, currentQuestionIndex, handleAnswer,
           </div>
         )}
 
-        {/* Feedback Area */}
+        {/* Feedback Overlay */}
         {feedback && (
-          <div style={{ 
-            marginTop: 'var(--space-lg)', 
-            padding: 'var(--space-md)', 
-            borderRadius: 'var(--radius-lg)',
-            background: feedback.isCorrect ? '#F0FDF4' : '#FEF2F2',
-            border: `3px solid ${feedback.isCorrect ? 'var(--color-success)' : 'var(--color-danger)'}`
-          }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: feedback.isCorrect ? 'var(--color-success-hover)' : 'var(--color-danger-hover)' }}>
-              {feedback.timedOut ? <AlertTriangle size={24} /> : feedback.isCorrect ? <CheckCircle size={24} /> : <XCircle size={24} />}
-              <span style={{ fontSize: '1.2rem', fontWeight: 700 }}>
-                {feedback.timedOut ? 'Time\'s up!' : feedback.isCorrect ? 'Correct!' : 'Oops!'}
-              </span>
-            </div>
-            {!feedback.isCorrect && (
-              <div style={{ marginTop: 'var(--space-sm)' }}>
-                <p style={{ margin: 0, fontSize: '1.1rem', color: 'var(--color-text-primary)' }}>
-                  The answer is <strong style={{ color: 'var(--color-danger)' }}>{feedback.correctAnswer}</strong>
-                </p>
-                
-                <div style={{ marginTop: 'var(--space-md)', padding: 'var(--space-sm)', background: 'white', borderRadius: 'var(--radius-md)' }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '6px', color: 'var(--color-info)', marginBottom: '4px', fontWeight: 700 }}>
-                    <BookOpen size={16} /> Let's review:
-                  </div>
-                  {currentQuestion.example && <p style={{ margin: '0 0 4px', fontSize: '0.9rem' }}>"{currentQuestion.example}"</p>}
-                  {currentQuestion.vietnamese && <p style={{ margin: 0, fontSize: '0.9rem', color: 'var(--color-text-secondary)', fontWeight: 600 }}>{currentQuestion.vietnamese}</p>}
-                </div>
+          <div className="ai-overlay">
+            <div className="ai-dialog">
+              <div
+                className="ai-icon"
+                style={{
+                  backgroundColor: feedback.isCorrect ? 'var(--color-success)' : 'var(--color-danger)',
+                }}
+              >
+                {feedback.timedOut ? (
+                  <AlertTriangle color="white" size={24} style={{ marginTop: 4 }} />
+                ) : feedback.isCorrect ? (
+                  <CheckCircle color="white" size={24} style={{ marginTop: 4 }} />
+                ) : (
+                  <XCircle color="white" size={24} style={{ marginTop: 4 }} />
+                )}
               </div>
-            )}
-            <div style={{ marginTop: 'var(--space-sm)', textAlign: 'center', opacity: 0.6, fontSize: '0.9rem', fontWeight: 600 }}>
-              Loading next question <ChevronRight size={16} style={{ display: 'inline', verticalAlign: 'middle' }} />
+              <h3 style={{ margin: '0', fontSize: '1.5rem', color: feedback.isCorrect ? 'var(--color-success)' : 'var(--color-danger)' }}>
+                {feedback.timedOut ? 'Time\'s up!' : feedback.isCorrect ? 'Excellent!' : 'Oops!'}
+              </h3>
+              
+              {!feedback.isCorrect && (
+                <>
+                  <div className="ai-answer" style={{ 
+                    display: 'flex', alignItems: 'center', justifyContent: 'center', 
+                    color: 'white', fontWeight: 800, fontSize: '1.2rem', padding: '8px 20px', 
+                    height: 'auto', minHeight: '36px', width: 'auto', maxWidth: '100%', textAlign: 'center'
+                  }}>
+                    {feedback.correctAnswer}
+                  </div>
+                  
+                  {(currentQuestion.example || currentQuestion.vietnamese) && (
+                    <div className="ai-context" style={{ height: 'auto' }}>
+                      {currentQuestion.example && (
+                        <>
+                          <div className="ai-ctx-label" style={{ 
+                            background: 'transparent', color: 'var(--color-info)', 
+                            fontWeight: 800, fontSize: '0.8rem', height: 'auto', width: 'auto' 
+                          }}>
+                            EXAMPLE
+                          </div>
+                          <div className="ai-ctx-text" style={{ 
+                            background: 'transparent', fontStyle: 'italic', 
+                            color: 'var(--color-text-primary)', height: 'auto' 
+                          }}>
+                            "{currentQuestion.example}"
+                          </div>
+                        </>
+                      )}
+                      {currentQuestion.vietnamese && (
+                        <div className="ai-ctx-text" style={{ 
+                          background: 'transparent', fontWeight: 600, 
+                          color: 'var(--color-text-secondary)', height: 'auto', marginTop: currentQuestion.example ? '4px' : '0'
+                        }}>
+                          {currentQuestion.vietnamese}
+                        </div>
+                      )}
+                    </div>
+                  )}
+                </>
+              )}
+              
+              <div style={{ width: '100%', marginTop: '16px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '8px' }}>
+                <div style={{ fontSize: '0.9rem', color: 'var(--color-text-secondary)', fontWeight: 600 }}>
+                  <ChevronRight size={16} style={{ display: 'inline', verticalAlign: 'middle' }} /> Loading next question
+                </div>
+                <div className="ai-advance" style={{ animation: `shrink ${feedback.isCorrect ? 1.5 : 6}s linear forwards` }}></div>
+              </div>
             </div>
+            <style>{`
+              @keyframes shrink { from { width: 100%; } to { width: 0%; } }
+              .ai-icon::after { display: none; } /* Override CSS pseudo element since we use Lucide icons */
+            `}</style>
           </div>
         )}
       </div>

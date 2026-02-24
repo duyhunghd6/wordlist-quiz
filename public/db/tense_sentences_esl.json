@@ -1,0 +1,2252 @@
+[
+  {
+    "id": "pc1",
+    "tense": "Present Continuous",
+    "level": "Beginner",
+    "correct_sentence": "She is playing football with her friends.",
+    "wrong_sentence": "She are playing football with her friends.",
+    "pedagogical_focus": "Subject-verb agreement (is vs are)",
+    "vietnamese_translation": "Cô ấy đang chơi bóng đá với bạn bè."
+  },
+  {
+    "id": "pc2",
+    "tense": "Present Continuous",
+    "level": "Beginner",
+    "correct_sentence": "They are watching a movie in the living room.",
+    "wrong_sentence": "They is watching a movie in the living room.",
+    "pedagogical_focus": "Subject-verb agreement (are vs is)",
+    "vietnamese_translation": "Họ đang xem phim trong phòng khách."
+  },
+  {
+    "id": "pc3",
+    "tense": "Present Continuous",
+    "level": "Beginner",
+    "correct_sentence": "I am reading an interesting book right now.",
+    "wrong_sentence": "I are reading an interesting book right now.",
+    "pedagogical_focus": "Subject-verb agreement (am vs are)",
+    "vietnamese_translation": "Tôi đang đọc một cuốn sách thú vị ngay bây giờ."
+  },
+  {
+    "id": "pc4",
+    "tense": "Present Continuous",
+    "level": "Beginner",
+    "correct_sentence": "The dog is sleeping under the table.",
+    "wrong_sentence": "The dog am sleeping under the table.",
+    "pedagogical_focus": "Subject-verb agreement (am vs is)",
+    "vietnamese_translation": "Con chó đang ngủ dưới gầm bàn."
+  },
+  {
+    "id": "pc5",
+    "tense": "Present Continuous",
+    "level": "Beginner",
+    "correct_sentence": "We are swimming in the ocean today.",
+    "wrong_sentence": "We is swimming in the ocean today.",
+    "pedagogical_focus": "Subject-verb agreement (are vs is)",
+    "vietnamese_translation": "Hôm nay chúng tôi đang bơi ở biển."
+  },
+  {
+    "id": "pc6",
+    "tense": "Present Continuous",
+    "level": "Beginner",
+    "correct_sentence": "The baby is crying because he is hungry.",
+    "wrong_sentence": "The baby are crying because he is hungry.",
+    "pedagogical_focus": "Subject-verb agreement",
+    "vietnamese_translation": "Đứa bé đang khóc vì đói."
+  },
+  {
+    "id": "pc7",
+    "tense": "Present Continuous",
+    "level": "Beginner",
+    "correct_sentence": "Look! The birds are flying very high.",
+    "wrong_sentence": "Look! The birds is flying very high.",
+    "pedagogical_focus": "Plural subject with are",
+    "vietnamese_translation": "Nhìn kìa! Những con chim đang bay rất cao."
+  },
+  {
+    "id": "pc8",
+    "tense": "Present Continuous",
+    "level": "Beginner",
+    "correct_sentence": "My brother is doing his homework in his room.",
+    "wrong_sentence": "My brother am doing his homework in his room.",
+    "pedagogical_focus": "He/is pairing",
+    "vietnamese_translation": "Anh trai tôi đang làm bài tập trong phòng."
+  },
+  {
+    "id": "pc9",
+    "tense": "Present Continuous",
+    "level": "Beginner",
+    "correct_sentence": "I am learning English on my computer.",
+    "wrong_sentence": "I is learning English on my computer.",
+    "pedagogical_focus": "I/am pairing",
+    "vietnamese_translation": "Tôi đang học tiếng Anh trên máy tính."
+  },
+  {
+    "id": "pc10",
+    "tense": "Present Continuous",
+    "level": "Beginner",
+    "correct_sentence": "The sun is shining brightly today.",
+    "wrong_sentence": "The sun are shining brightly today.",
+    "pedagogical_focus": "Singular noun with is",
+    "vietnamese_translation": "Hôm nay mặt trời rọi sáng chói chang."
+  },
+  {
+    "id": "pc11",
+    "tense": "Present Continuous",
+    "level": "Beginner",
+    "correct_sentence": "Are you listening to the teacher?",
+    "wrong_sentence": "Is you listening to the teacher?",
+    "pedagogical_focus": "Question formation auxiliary",
+    "vietnamese_translation": "Bạn có đang nghe giáo viên nói không?"
+  },
+  {
+    "id": "pc12",
+    "tense": "Present Continuous",
+    "level": "Beginner",
+    "correct_sentence": "What is she cooking in the kitchen?",
+    "wrong_sentence": "What are she cooking in the kitchen?",
+    "pedagogical_focus": "WH-question auxiliary",
+    "vietnamese_translation": "Cô ấy đang nấu gì trong bếp vậy?"
+  },
+  {
+    "id": "pc13",
+    "tense": "Present Continuous",
+    "level": "Beginner",
+    "correct_sentence": "The cars are moving fast on the highway.",
+    "wrong_sentence": "The cars is moving fast on the highway.",
+    "pedagogical_focus": "Plural cars with are",
+    "vietnamese_translation": "Những chiếc ô tô đang di chuyển nhanh trên đường cao tốc."
+  },
+  {
+    "id": "pc14",
+    "tense": "Present Continuous",
+    "level": "Beginner",
+    "correct_sentence": "My parents are talking in the garden.",
+    "wrong_sentence": "My parents is talking in the garden.",
+    "pedagogical_focus": "Plural parents with are",
+    "vietnamese_translation": "Bố mẹ tôi đang nói chuyện trong vườn."
+  },
+  {
+    "id": "pc15",
+    "tense": "Present Continuous",
+    "level": "Beginner",
+    "correct_sentence": "She is wearing a beautiful red dress.",
+    "wrong_sentence": "She are wearing a beautiful red dress.",
+    "pedagogical_focus": "She/is pairing",
+    "vietnamese_translation": "Cô ấy đang mặc một chiếc váy đỏ tuyệt đẹp."
+  },
+  {
+    "id": "pc16",
+    "tense": "Present Continuous",
+    "level": "Intermediate",
+    "correct_sentence": "The students are writing their test right now.",
+    "wrong_sentence": "The students is writing their test right now.",
+    "pedagogical_focus": "Plural students with are",
+    "vietnamese_translation": "Các học sinh đang làm bài kiểm tra ngay bây giờ."
+  },
+  {
+    "id": "pc17",
+    "tense": "Present Continuous",
+    "level": "Intermediate",
+    "correct_sentence": "He is drinking water because it's hot.",
+    "wrong_sentence": "He am drinking water because it's hot.",
+    "pedagogical_focus": "He/is pairing",
+    "vietnamese_translation": "Anh ấy đang uống nước vì trời nóng."
+  },
+  {
+    "id": "pc18",
+    "tense": "Present Continuous",
+    "level": "Intermediate",
+    "correct_sentence": "We are planning a trip to the beach.",
+    "wrong_sentence": "We am planning a trip to the beach.",
+    "pedagogical_focus": "We/are pairing",
+    "vietnamese_translation": "Chúng tôi đang lên kế hoạch cho một chuyến đi biển."
+  },
+  {
+    "id": "pc19",
+    "tense": "Present Continuous",
+    "level": "Intermediate",
+    "correct_sentence": "They aren't playing video games anymore.",
+    "wrong_sentence": "They isn't playing video games anymore.",
+    "pedagogical_focus": "Negative plural auxiliary",
+    "vietnamese_translation": "Họ không chơi trò chơi điện tử nữa."
+  },
+  {
+    "id": "pc20",
+    "tense": "Present Continuous",
+    "level": "Intermediate",
+    "correct_sentence": "Isn't he coming to the party tonight?",
+    "wrong_sentence": "Aren't he coming to the party tonight?",
+    "pedagogical_focus": "Negative question auxiliary",
+    "vietnamese_translation": "Anh ấy sẽ không đến bữa tiệc tối nay sao?"
+  },
+  {
+    "id": "pc21",
+    "tense": "Present Continuous",
+    "level": "Intermediate",
+    "correct_sentence": "My sister is painting a picture.",
+    "wrong_sentence": "My sister are painting a picture.",
+    "pedagogical_focus": "Subject-verb agreement",
+    "vietnamese_translation": "Chị gái tôi đang vẽ một bức tranh."
+  },
+  {
+    "id": "pc22",
+    "tense": "Present Continuous",
+    "level": "Intermediate",
+    "correct_sentence": "My friends are running in the park.",
+    "wrong_sentence": "My friends is running in the park.",
+    "pedagogical_focus": "Plural subject agreement",
+    "vietnamese_translation": "Bạn bè tôi đang chạy trong công viên."
+  },
+  {
+    "id": "pc23",
+    "tense": "Present Continuous",
+    "level": "Intermediate",
+    "correct_sentence": "My sister is eating lunch.",
+    "wrong_sentence": "My sister are eating lunch.",
+    "pedagogical_focus": "Subject-verb agreement",
+    "vietnamese_translation": "Chị gái tôi đang ăn trưa."
+  },
+  {
+    "id": "pc24",
+    "tense": "Present Continuous",
+    "level": "Intermediate",
+    "correct_sentence": "The children are listening to music.",
+    "wrong_sentence": "The children is listening to music.",
+    "pedagogical_focus": "Plural subject agreement",
+    "vietnamese_translation": "Bọn trẻ đang nghe nhạc."
+  },
+  {
+    "id": "pc25",
+    "tense": "Present Continuous",
+    "level": "Intermediate",
+    "correct_sentence": "The cat is painting a picture.",
+    "wrong_sentence": "The cat are painting a picture.",
+    "pedagogical_focus": "Subject-verb agreement",
+    "vietnamese_translation": "Con mèo đang vẽ một bức tranh."
+  },
+  {
+    "id": "pc26",
+    "tense": "Present Continuous",
+    "level": "Intermediate",
+    "correct_sentence": "The players are listening to music.",
+    "wrong_sentence": "The players is listening to music.",
+    "pedagogical_focus": "Plural subject agreement",
+    "vietnamese_translation": "Các cầu thủ đang nghe nhạc."
+  },
+  {
+    "id": "pc27",
+    "tense": "Present Continuous",
+    "level": "Intermediate",
+    "correct_sentence": "The cat is eating lunch.",
+    "wrong_sentence": "The cat are eating lunch.",
+    "pedagogical_focus": "Subject-verb agreement",
+    "vietnamese_translation": "Con mèo đang ăn trưa."
+  },
+  {
+    "id": "pc28",
+    "tense": "Present Continuous",
+    "level": "Intermediate",
+    "correct_sentence": "The children are eating lunch.",
+    "wrong_sentence": "The children is eating lunch.",
+    "pedagogical_focus": "Plural subject agreement",
+    "vietnamese_translation": "Bọn trẻ đang ăn trưa."
+  },
+  {
+    "id": "pc29",
+    "tense": "Present Continuous",
+    "level": "Intermediate",
+    "correct_sentence": "The cat is listening to music.",
+    "wrong_sentence": "The cat are listening to music.",
+    "pedagogical_focus": "Subject-verb agreement",
+    "vietnamese_translation": "Con mèo đang nghe nhạc."
+  },
+  {
+    "id": "pc30",
+    "tense": "Present Continuous",
+    "level": "Intermediate",
+    "correct_sentence": "My friends are running in the park.",
+    "wrong_sentence": "My friends is running in the park.",
+    "pedagogical_focus": "Plural subject agreement",
+    "vietnamese_translation": "Bạn bè tôi đang chạy trong công viên."
+  },
+  {
+    "id": "pc31",
+    "tense": "Present Continuous",
+    "level": "Intermediate",
+    "correct_sentence": "He is listening to music.",
+    "wrong_sentence": "He am listening to music.",
+    "pedagogical_focus": "Subject-verb agreement",
+    "vietnamese_translation": "Anh ấy đang nghe nhạc."
+  },
+  {
+    "id": "pc32",
+    "tense": "Present Continuous",
+    "level": "Intermediate",
+    "correct_sentence": "The children are listening to music.",
+    "wrong_sentence": "The children is listening to music.",
+    "pedagogical_focus": "Plural subject agreement",
+    "vietnamese_translation": "Bọn trẻ đang nghe nhạc."
+  },
+  {
+    "id": "pc33",
+    "tense": "Present Continuous",
+    "level": "Intermediate",
+    "correct_sentence": "He is running in the park.",
+    "wrong_sentence": "He am running in the park.",
+    "pedagogical_focus": "Subject-verb agreement",
+    "vietnamese_translation": "Anh ấy đang chạy trong công viên."
+  },
+  {
+    "id": "pc34",
+    "tense": "Present Continuous",
+    "level": "Intermediate",
+    "correct_sentence": "My friends are painting a picture.",
+    "wrong_sentence": "My friends is painting a picture.",
+    "pedagogical_focus": "Plural subject agreement",
+    "vietnamese_translation": "Bạn bè tôi đang vẽ một bức tranh."
+  },
+  {
+    "id": "pc35",
+    "tense": "Present Continuous",
+    "level": "Intermediate",
+    "correct_sentence": "He is running in the park.",
+    "wrong_sentence": "He am running in the park.",
+    "pedagogical_focus": "Subject-verb agreement",
+    "vietnamese_translation": "Anh ấy đang chạy trong công viên."
+  },
+  {
+    "id": "pc36",
+    "tense": "Present Continuous",
+    "level": "Advanced",
+    "correct_sentence": "My friends are painting a picture.",
+    "wrong_sentence": "My friends is painting a picture.",
+    "pedagogical_focus": "Plural subject agreement",
+    "vietnamese_translation": "Bạn bè tôi đang vẽ một bức tranh."
+  },
+  {
+    "id": "pc37",
+    "tense": "Present Continuous",
+    "level": "Advanced",
+    "correct_sentence": "The machine is painting a picture.",
+    "wrong_sentence": "The machine are painting a picture.",
+    "pedagogical_focus": "Subject-verb agreement",
+    "vietnamese_translation": "Cái máy đang vẽ một bức tranh."
+  },
+  {
+    "id": "pc38",
+    "tense": "Present Continuous",
+    "level": "Advanced",
+    "correct_sentence": "The players are running in the park.",
+    "wrong_sentence": "The players is running in the park.",
+    "pedagogical_focus": "Plural subject agreement",
+    "vietnamese_translation": "Các cầu thủ đang chạy trong công viên."
+  },
+  {
+    "id": "pc39",
+    "tense": "Present Continuous",
+    "level": "Advanced",
+    "correct_sentence": "The machine is listening to music.",
+    "wrong_sentence": "The machine are listening to music.",
+    "pedagogical_focus": "Subject-verb agreement",
+    "vietnamese_translation": "Cái máy đang nghe nhạc."
+  },
+  {
+    "id": "pc40",
+    "tense": "Present Continuous",
+    "level": "Advanced",
+    "correct_sentence": "The players are listening to music.",
+    "wrong_sentence": "The players is listening to music.",
+    "pedagogical_focus": "Plural subject agreement",
+    "vietnamese_translation": "Các cầu thủ đang nghe nhạc."
+  },
+  {
+    "id": "pc41",
+    "tense": "Present Continuous",
+    "level": "Advanced",
+    "correct_sentence": "The cat is listening to music.",
+    "wrong_sentence": "The cat are listening to music.",
+    "pedagogical_focus": "Subject-verb agreement",
+    "vietnamese_translation": "Con mèo đang nghe nhạc."
+  },
+  {
+    "id": "pc42",
+    "tense": "Present Continuous",
+    "level": "Advanced",
+    "correct_sentence": "The children are painting a picture.",
+    "wrong_sentence": "The children is painting a picture.",
+    "pedagogical_focus": "Plural subject agreement",
+    "vietnamese_translation": "Bọn trẻ đang vẽ một bức tranh."
+  },
+  {
+    "id": "pc43",
+    "tense": "Present Continuous",
+    "level": "Advanced",
+    "correct_sentence": "My sister is listening to music.",
+    "wrong_sentence": "My sister are listening to music.",
+    "pedagogical_focus": "Subject-verb agreement",
+    "vietnamese_translation": "Chị gái tôi đang nghe nhạc."
+  },
+  {
+    "id": "pc44",
+    "tense": "Present Continuous",
+    "level": "Advanced",
+    "correct_sentence": "The children are listening to music.",
+    "wrong_sentence": "The children is listening to music.",
+    "pedagogical_focus": "Plural subject agreement",
+    "vietnamese_translation": "Bọn trẻ đang nghe nhạc."
+  },
+  {
+    "id": "pc45",
+    "tense": "Present Continuous",
+    "level": "Advanced",
+    "correct_sentence": "The cat is eating lunch.",
+    "wrong_sentence": "The cat are eating lunch.",
+    "pedagogical_focus": "Subject-verb agreement",
+    "vietnamese_translation": "Con mèo đang ăn trưa."
+  },
+  {
+    "id": "pc46",
+    "tense": "Present Continuous",
+    "level": "Advanced",
+    "correct_sentence": "My friends are eating lunch.",
+    "wrong_sentence": "My friends is eating lunch.",
+    "pedagogical_focus": "Plural subject agreement",
+    "vietnamese_translation": "Bạn bè tôi đang ăn trưa."
+  },
+  {
+    "id": "pc47",
+    "tense": "Present Continuous",
+    "level": "Advanced",
+    "correct_sentence": "He is running in the park.",
+    "wrong_sentence": "He am running in the park.",
+    "pedagogical_focus": "Subject-verb agreement",
+    "vietnamese_translation": "Anh ấy đang chạy trong công viên."
+  },
+  {
+    "id": "pc48",
+    "tense": "Present Continuous",
+    "level": "Advanced",
+    "correct_sentence": "The players are eating lunch.",
+    "wrong_sentence": "The players is eating lunch.",
+    "pedagogical_focus": "Plural subject agreement",
+    "vietnamese_translation": "Các cầu thủ đang ăn trưa."
+  },
+  {
+    "id": "pc49",
+    "tense": "Present Continuous",
+    "level": "Advanced",
+    "correct_sentence": "My sister is eating lunch.",
+    "wrong_sentence": "My sister are eating lunch.",
+    "pedagogical_focus": "Subject-verb agreement",
+    "vietnamese_translation": "Chị gái tôi đang ăn trưa."
+  },
+  {
+    "id": "pc50",
+    "tense": "Present Continuous",
+    "level": "Advanced",
+    "correct_sentence": "The players are listening to music.",
+    "wrong_sentence": "The players is listening to music.",
+    "pedagogical_focus": "Plural subject agreement",
+    "vietnamese_translation": "Các cầu thủ đang nghe nhạc."
+  },
+  {
+    "id": "ps1",
+    "tense": "Past Simple",
+    "level": "Beginner",
+    "correct_sentence": "They walked to the school yesterday.",
+    "wrong_sentence": "They walk to the school yesterday.",
+    "pedagogical_focus": "Past tense verb suffix (-ed) missing with time signal",
+    "vietnamese_translation": "Họ đã đi bộ đến trường ngày hôm qua."
+  },
+  {
+    "id": "ps2",
+    "tense": "Past Simple",
+    "level": "Beginner",
+    "correct_sentence": "She visited her grandmother last week.",
+    "wrong_sentence": "She visits her grandmother last week.",
+    "pedagogical_focus": "Present Simple vs Past Simple with past time signal",
+    "vietnamese_translation": "Cô ấy đã đến thăm bà của mình vào tuần trước."
+  },
+  {
+    "id": "ps3",
+    "tense": "Past Simple",
+    "level": "Beginner",
+    "correct_sentence": "I ate a delicious pizza for dinner.",
+    "wrong_sentence": "I eated a delicious pizza for dinner.",
+    "pedagogical_focus": "Irregular verb past form (ate vs eated)",
+    "vietnamese_translation": "Tôi đã ăn một chiếc bánh pizza ngon cho bữa tối."
+  },
+  {
+    "id": "ps4",
+    "tense": "Past Simple",
+    "level": "Beginner",
+    "correct_sentence": "He bought a new bike on his birthday.",
+    "wrong_sentence": "He buyed a new bike on his birthday.",
+    "pedagogical_focus": "Irregular verb past form (bought vs buyed)",
+    "vietnamese_translation": "Anh ấy đã mua một chiếc xe đạp mới vào ngày sinh nhật của mình."
+  },
+  {
+    "id": "ps5",
+    "tense": "Past Simple",
+    "level": "Beginner",
+    "correct_sentence": "We saw a shooting star in the sky.",
+    "wrong_sentence": "We seen a shooting star in the sky.",
+    "pedagogical_focus": "Past simple (saw) vs Past participle (seen)",
+    "vietnamese_translation": "Chúng tôi đã nhìn thấy một ngôi sao băng trên bầu trời."
+  },
+  {
+    "id": "ps6",
+    "tense": "Past Simple",
+    "level": "Beginner",
+    "correct_sentence": "I played soccer with my friends on Sunday.",
+    "wrong_sentence": "I play soccer with my friends on Sunday.",
+    "pedagogical_focus": "Missing -ed past tense suffix",
+    "vietnamese_translation": "Tôi đã chơi bóng đá với bạn bè vào Chủ Nhật."
+  },
+  {
+    "id": "ps7",
+    "tense": "Past Simple",
+    "level": "Beginner",
+    "correct_sentence": "She jumped over the puddle.",
+    "wrong_sentence": "She jump over the puddle.",
+    "pedagogical_focus": "Missing -ed past tense suffix",
+    "vietnamese_translation": "Cô ấy đã nhảy qua vũng nước."
+  },
+  {
+    "id": "ps8",
+    "tense": "Past Simple",
+    "level": "Beginner",
+    "correct_sentence": "The bird flew away when I got close.",
+    "wrong_sentence": "The bird flied away when I got close.",
+    "pedagogical_focus": "Irregular verb past form (flew vs flied)",
+    "vietnamese_translation": "Con chim bay đi khi tôi đến gần."
+  },
+  {
+    "id": "ps9",
+    "tense": "Past Simple",
+    "level": "Beginner",
+    "correct_sentence": "They drank all the orange juice.",
+    "wrong_sentence": "They drinked all the orange juice.",
+    "pedagogical_focus": "Irregular verb past form (drank vs drinked)",
+    "vietnamese_translation": "Họ đã uống hết nước cam."
+  },
+  {
+    "id": "ps10",
+    "tense": "Past Simple",
+    "level": "Beginner",
+    "correct_sentence": "We watched a funny movie last night.",
+    "wrong_sentence": "We watchs a funny movie last night.",
+    "pedagogical_focus": "Present tense distractor on past time signal",
+    "vietnamese_translation": "Tối qua chúng tôi đã xem một bộ phim hài."
+  },
+  {
+    "id": "ps11",
+    "tense": "Past Simple",
+    "level": "Beginner",
+    "correct_sentence": "She didn't know the answer to the question.",
+    "wrong_sentence": "She didn't knew the answer to the question.",
+    "pedagogical_focus": "Did not + bare infinitive rule",
+    "vietnamese_translation": "Cô ấy không biết câu trả lời cho câu hỏi đó."
+  },
+  {
+    "id": "ps12",
+    "tense": "Past Simple",
+    "level": "Beginner",
+    "correct_sentence": "Did you go to the store earlier?",
+    "wrong_sentence": "Did you went to the store earlier?",
+    "pedagogical_focus": "Did + bare infinitive rule in questions",
+    "vietnamese_translation": "Bạn đã đến cửa hàng lúc nãy à?"
+  },
+  {
+    "id": "ps13",
+    "tense": "Past Simple",
+    "level": "Beginner",
+    "correct_sentence": "The phone rang while I was sleeping.",
+    "wrong_sentence": "The phone ringed while I was sleeping.",
+    "pedagogical_focus": "Irregular verb past form (rang vs ringed)",
+    "vietnamese_translation": "Điện thoại đã reo trong khi tôi đang ngủ."
+  },
+  {
+    "id": "ps14",
+    "tense": "Past Simple",
+    "level": "Beginner",
+    "correct_sentence": "He ran very fast to catch the bus.",
+    "wrong_sentence": "He runned very fast to catch the bus.",
+    "pedagogical_focus": "Irregular verb past form (ran vs runned)",
+    "vietnamese_translation": "Anh ấy đã chạy rất nhanh để bắt xe buýt."
+  },
+  {
+    "id": "ps15",
+    "tense": "Past Simple",
+    "level": "Beginner",
+    "correct_sentence": "I found a shiny coin on the sidewalk.",
+    "wrong_sentence": "I finded a shiny coin on the sidewalk.",
+    "pedagogical_focus": "Irregular verb past form (found vs finded)",
+    "vietnamese_translation": "Tôi đã tìm thấy một đồng xu sáng bóng trên vỉa hè."
+  },
+  {
+    "id": "ps16",
+    "tense": "Past Simple",
+    "level": "Intermediate",
+    "correct_sentence": "The teacher smiled at the class.",
+    "wrong_sentence": "The teacher smile at the class.",
+    "pedagogical_focus": "Missing past tense suffix (-ed)",
+    "vietnamese_translation": "Giáo viên đã mỉm cười với cả lớp."
+  },
+  {
+    "id": "ps17",
+    "tense": "Past Simple",
+    "level": "Intermediate",
+    "correct_sentence": "They didn't finish their lunch.",
+    "wrong_sentence": "They didn't finished their lunch.",
+    "pedagogical_focus": "Did not + bare infinitive",
+    "vietnamese_translation": "Họ đã không ăn hết bữa trưa của mình."
+  },
+  {
+    "id": "ps18",
+    "tense": "Past Simple",
+    "level": "Intermediate",
+    "correct_sentence": "She took her dog for a long walk.",
+    "wrong_sentence": "She taked her dog for a long walk.",
+    "pedagogical_focus": "Irregular verb past form (took vs taked)",
+    "vietnamese_translation": "Cô ấy đã đưa chó đi dạo một đoạn dài."
+  },
+  {
+    "id": "ps19",
+    "tense": "Past Simple",
+    "level": "Intermediate",
+    "correct_sentence": "We painted a picture in art class.",
+    "wrong_sentence": "We painting a picture in art class.",
+    "pedagogical_focus": "Past simple vs continuous participle mix",
+    "vietnamese_translation": "Chúng tôi đã vẽ một bức tranh trong giờ mỹ thuật."
+  },
+  {
+    "id": "ps20",
+    "tense": "Past Simple",
+    "level": "Intermediate",
+    "correct_sentence": "What did you do during the summer break?",
+    "wrong_sentence": "What did you did during the summer break?",
+    "pedagogical_focus": "Did + bare infinitive in WH-questions",
+    "vietnamese_translation": "Bạn đã làm gì trong kỳ nghỉ hè?"
+  },
+  {
+    "id": "ps21",
+    "tense": "Past Simple",
+    "level": "Intermediate",
+    "correct_sentence": "They slept all day.",
+    "wrong_sentence": "They sleeped all day.",
+    "pedagogical_focus": "Past tense of sleep",
+    "vietnamese_translation": "Họ đã ngủ cả ngày."
+  },
+  {
+    "id": "ps22",
+    "tense": "Past Simple",
+    "level": "Intermediate",
+    "correct_sentence": "We studied hard.",
+    "wrong_sentence": "We study hard.",
+    "pedagogical_focus": "Missing -ed suffix",
+    "vietnamese_translation": "Chúng tôi đã học chăm chỉ."
+  },
+  {
+    "id": "ps23",
+    "tense": "Past Simple",
+    "level": "Intermediate",
+    "correct_sentence": "She went to the zoo.",
+    "wrong_sentence": "She goed to the zoo.",
+    "pedagogical_focus": "Past tense of go",
+    "vietnamese_translation": "Cô ấy đã đi sở thú."
+  },
+  {
+    "id": "ps24",
+    "tense": "Past Simple",
+    "level": "Intermediate",
+    "correct_sentence": "He studied hard.",
+    "wrong_sentence": "He study hard.",
+    "pedagogical_focus": "Missing -ed suffix",
+    "vietnamese_translation": "Anh ấy đã học chăm chỉ."
+  },
+  {
+    "id": "ps25",
+    "tense": "Past Simple",
+    "level": "Intermediate",
+    "correct_sentence": "He went to the zoo.",
+    "wrong_sentence": "He goed to the zoo.",
+    "pedagogical_focus": "Past tense of go",
+    "vietnamese_translation": "Anh ấy đã đi sở thú."
+  },
+  {
+    "id": "ps26",
+    "tense": "Past Simple",
+    "level": "Intermediate",
+    "correct_sentence": "They washed the car.",
+    "wrong_sentence": "They washes the car.",
+    "pedagogical_focus": "Present distractor",
+    "vietnamese_translation": "Họ đã rửa ô tô."
+  },
+  {
+    "id": "ps27",
+    "tense": "Past Simple",
+    "level": "Intermediate",
+    "correct_sentence": "She slept all day.",
+    "wrong_sentence": "She sleeped all day.",
+    "pedagogical_focus": "Past tense of sleep",
+    "vietnamese_translation": "Cô ấy đã ngủ cả ngày."
+  },
+  {
+    "id": "ps28",
+    "tense": "Past Simple",
+    "level": "Intermediate",
+    "correct_sentence": "He cleaned the room.",
+    "wrong_sentence": "He clean the room.",
+    "pedagogical_focus": "Missing -ed suffix",
+    "vietnamese_translation": "Anh ấy đã dọn dẹp phòng."
+  },
+  {
+    "id": "ps29",
+    "tense": "Past Simple",
+    "level": "Intermediate",
+    "correct_sentence": "They taught a lesson.",
+    "wrong_sentence": "They teached a lesson.",
+    "pedagogical_focus": "Past tense of teach",
+    "vietnamese_translation": "Họ đã dạy một bài học."
+  },
+  {
+    "id": "ps30",
+    "tense": "Past Simple",
+    "level": "Intermediate",
+    "correct_sentence": "We washed the car.",
+    "wrong_sentence": "We washes the car.",
+    "pedagogical_focus": "Present distractor",
+    "vietnamese_translation": "Chúng tôi đã rửa ô tô."
+  },
+  {
+    "id": "ps31",
+    "tense": "Past Simple",
+    "level": "Intermediate",
+    "correct_sentence": "We slept all day.",
+    "wrong_sentence": "We sleeped all day.",
+    "pedagogical_focus": "Past tense of sleep",
+    "vietnamese_translation": "Chúng tôi đã ngủ cả ngày."
+  },
+  {
+    "id": "ps32",
+    "tense": "Past Simple",
+    "level": "Intermediate",
+    "correct_sentence": "She washed the car.",
+    "wrong_sentence": "She washes the car.",
+    "pedagogical_focus": "Present distractor",
+    "vietnamese_translation": "Cô ấy đã rửa ô tô."
+  },
+  {
+    "id": "ps33",
+    "tense": "Past Simple",
+    "level": "Intermediate",
+    "correct_sentence": "He caught a fish.",
+    "wrong_sentence": "He catched a fish.",
+    "pedagogical_focus": "Past tense of catch",
+    "vietnamese_translation": "Anh ấy đã bắt được một con cá."
+  },
+  {
+    "id": "ps34",
+    "tense": "Past Simple",
+    "level": "Intermediate",
+    "correct_sentence": "They cleaned the room.",
+    "wrong_sentence": "They clean the room.",
+    "pedagogical_focus": "Missing -ed suffix",
+    "vietnamese_translation": "Họ đã dọn dẹp phòng."
+  },
+  {
+    "id": "ps35",
+    "tense": "Past Simple",
+    "level": "Intermediate",
+    "correct_sentence": "They caught a fish.",
+    "wrong_sentence": "They catched a fish.",
+    "pedagogical_focus": "Past tense of catch",
+    "vietnamese_translation": "Họ đã bắt được một con cá."
+  },
+  {
+    "id": "ps36",
+    "tense": "Past Simple",
+    "level": "Advanced",
+    "correct_sentence": "She washed the car.",
+    "wrong_sentence": "She washes the car.",
+    "pedagogical_focus": "Present distractor",
+    "vietnamese_translation": "Cô ấy đã rửa ô tô."
+  },
+  {
+    "id": "ps37",
+    "tense": "Past Simple",
+    "level": "Advanced",
+    "correct_sentence": "They taught a lesson.",
+    "wrong_sentence": "They teached a lesson.",
+    "pedagogical_focus": "Past tense of teach",
+    "vietnamese_translation": "Họ đã dạy một bài học."
+  },
+  {
+    "id": "ps38",
+    "tense": "Past Simple",
+    "level": "Advanced",
+    "correct_sentence": "He washed the car.",
+    "wrong_sentence": "He washes the car.",
+    "pedagogical_focus": "Present distractor",
+    "vietnamese_translation": "Anh ấy đã rửa ô tô."
+  },
+  {
+    "id": "ps39",
+    "tense": "Past Simple",
+    "level": "Advanced",
+    "correct_sentence": "He slept all day.",
+    "wrong_sentence": "He sleeped all day.",
+    "pedagogical_focus": "Past tense of sleep",
+    "vietnamese_translation": "Anh ấy đã ngủ cả ngày."
+  },
+  {
+    "id": "ps40",
+    "tense": "Past Simple",
+    "level": "Advanced",
+    "correct_sentence": "We washed the car.",
+    "wrong_sentence": "We washes the car.",
+    "pedagogical_focus": "Present distractor",
+    "vietnamese_translation": "Chúng tôi đã rửa ô tô."
+  },
+  {
+    "id": "ps41",
+    "tense": "Past Simple",
+    "level": "Advanced",
+    "correct_sentence": "She taught a lesson.",
+    "wrong_sentence": "She teached a lesson.",
+    "pedagogical_focus": "Past tense of teach",
+    "vietnamese_translation": "Cô ấy đã dạy một bài học."
+  },
+  {
+    "id": "ps42",
+    "tense": "Past Simple",
+    "level": "Advanced",
+    "correct_sentence": "He washed the car.",
+    "wrong_sentence": "He washes the car.",
+    "pedagogical_focus": "Present distractor",
+    "vietnamese_translation": "Anh ấy đã rửa ô tô."
+  },
+  {
+    "id": "ps43",
+    "tense": "Past Simple",
+    "level": "Advanced",
+    "correct_sentence": "We went to the zoo.",
+    "wrong_sentence": "We goed to the zoo.",
+    "pedagogical_focus": "Past tense of go",
+    "vietnamese_translation": "Chúng tôi đã đi sở thú."
+  },
+  {
+    "id": "ps44",
+    "tense": "Past Simple",
+    "level": "Advanced",
+    "correct_sentence": "She cleaned the room.",
+    "wrong_sentence": "She clean the room.",
+    "pedagogical_focus": "Missing -ed suffix",
+    "vietnamese_translation": "Cô ấy đã dọn dẹp phòng."
+  },
+  {
+    "id": "ps45",
+    "tense": "Past Simple",
+    "level": "Advanced",
+    "correct_sentence": "They taught a lesson.",
+    "wrong_sentence": "They teached a lesson.",
+    "pedagogical_focus": "Past tense of teach",
+    "vietnamese_translation": "Họ đã dạy một bài học."
+  },
+  {
+    "id": "ps46",
+    "tense": "Past Simple",
+    "level": "Advanced",
+    "correct_sentence": "They washed the car.",
+    "wrong_sentence": "They washes the car.",
+    "pedagogical_focus": "Present distractor",
+    "vietnamese_translation": "Họ đã rửa ô tô."
+  },
+  {
+    "id": "ps47",
+    "tense": "Past Simple",
+    "level": "Advanced",
+    "correct_sentence": "He went to the zoo.",
+    "wrong_sentence": "He goed to the zoo.",
+    "pedagogical_focus": "Past tense of go",
+    "vietnamese_translation": "Anh ấy đã đi sở thú."
+  },
+  {
+    "id": "ps48",
+    "tense": "Past Simple",
+    "level": "Advanced",
+    "correct_sentence": "We washed the car.",
+    "wrong_sentence": "We washes the car.",
+    "pedagogical_focus": "Present distractor",
+    "vietnamese_translation": "Chúng tôi đã rửa ô tô."
+  },
+  {
+    "id": "ps49",
+    "tense": "Past Simple",
+    "level": "Advanced",
+    "correct_sentence": "She taught a lesson.",
+    "wrong_sentence": "She teached a lesson.",
+    "pedagogical_focus": "Past tense of teach",
+    "vietnamese_translation": "Cô ấy đã dạy một bài học."
+  },
+  {
+    "id": "ps50",
+    "tense": "Past Simple",
+    "level": "Advanced",
+    "correct_sentence": "We studied hard.",
+    "wrong_sentence": "We study hard.",
+    "pedagogical_focus": "Missing -ed suffix",
+    "vietnamese_translation": "Chúng tôi đã học chăm chỉ."
+  },
+  {
+    "id": "rps1",
+    "tense": "Present Simple",
+    "level": "Beginner",
+    "correct_sentence": "He plays basketball every Saturday.",
+    "wrong_sentence": "He play basketball every Saturday.",
+    "pedagogical_focus": "Third-person singular 's' missing",
+    "vietnamese_translation": "Anh ấy chơi bóng rổ vào mỗi thứ Bảy."
+  },
+  {
+    "id": "rps2",
+    "tense": "Present Simple",
+    "level": "Beginner",
+    "correct_sentence": "They eat breakfast at seven o'clock.",
+    "wrong_sentence": "They eats breakfast at seven o'clock.",
+    "pedagogical_focus": "Incorrect third-person singular 's' on plural subject",
+    "vietnamese_translation": "Họ ăn sáng lúc bảy giờ."
+  },
+  {
+    "id": "rps3",
+    "tense": "Present Simple",
+    "level": "Beginner",
+    "correct_sentence": "The earth goes around the sun.",
+    "wrong_sentence": "The earth go around the sun.",
+    "pedagogical_focus": "Third-person singular 'es' missing",
+    "vietnamese_translation": "Trái đất quay quanh mặt trời."
+  },
+  {
+    "id": "rps4",
+    "tense": "Present Simple",
+    "level": "Beginner",
+    "correct_sentence": "My cat sleeps on the sofa.",
+    "wrong_sentence": "My cat sleep on the sofa.",
+    "pedagogical_focus": "Third-person singular 's' missing",
+    "vietnamese_translation": "Con mèo của tôi ngủ trên ghế sofa."
+  },
+  {
+    "id": "rps5",
+    "tense": "Present Simple",
+    "level": "Beginner",
+    "correct_sentence": "I like to read books before bed.",
+    "wrong_sentence": "I likes to read books before bed.",
+    "pedagogical_focus": "Incorrect 's' on first-person singular",
+    "vietnamese_translation": "Tôi thích đọc sách trước khi đi ngủ."
+  },
+  {
+    "id": "rps6",
+    "tense": "Present Simple",
+    "level": "Beginner",
+    "correct_sentence": "We drink milk every morning.",
+    "wrong_sentence": "We drinks milk every morning.",
+    "pedagogical_focus": "Incorrect 's' on plural subject",
+    "vietnamese_translation": "Chúng tôi uống sữa mỗi sáng."
+  },
+  {
+    "id": "rps7",
+    "tense": "Present Simple",
+    "level": "Beginner",
+    "correct_sentence": "She watches cartoons after school.",
+    "wrong_sentence": "She watch cartoons after school.",
+    "pedagogical_focus": "Third-person singular 'es' missing",
+    "vietnamese_translation": "Cô ấy xem phim hoạt hình sau giờ học."
+  },
+  {
+    "id": "rps8",
+    "tense": "Present Simple",
+    "level": "Beginner",
+    "correct_sentence": "My dad drives a red car.",
+    "wrong_sentence": "My dad drive a red car.",
+    "pedagogical_focus": "Third-person singular 's' missing",
+    "vietnamese_translation": "Bố tôi lái một chiếc ô tô màu đỏ."
+  },
+  {
+    "id": "rps9",
+    "tense": "Present Simple",
+    "level": "Beginner",
+    "correct_sentence": "The birds sing beautiful songs.",
+    "wrong_sentence": "The birds sings beautiful songs.",
+    "pedagogical_focus": "Incorrect 's' on plural subject",
+    "vietnamese_translation": "Những con chim hát những bài hát tuyệt đẹp."
+  },
+  {
+    "id": "rps10",
+    "tense": "Present Simple",
+    "level": "Beginner",
+    "correct_sentence": "He rarely washes his hands.",
+    "wrong_sentence": "He rarely wash his hands.",
+    "pedagogical_focus": "Third-person singular 'es' missing with adverb of frequency",
+    "vietnamese_translation": "Anh ấy hiếm khi rửa tay."
+  },
+  {
+    "id": "rps11",
+    "tense": "Present Simple",
+    "level": "Beginner",
+    "correct_sentence": "She doesn't like spicy food.",
+    "wrong_sentence": "She don't like spicy food.",
+    "pedagogical_focus": "Doesn't vs don't with third-person singular",
+    "vietnamese_translation": "Cô ấy không thích đồ ăn cay."
+  },
+  {
+    "id": "rps12",
+    "tense": "Present Simple",
+    "level": "Beginner",
+    "correct_sentence": "They don't understand the homework.",
+    "wrong_sentence": "They doesn't understand the homework.",
+    "pedagogical_focus": "Don't vs doesn't with plural subject",
+    "vietnamese_translation": "Họ không hiểu bài tập về nhà."
+  },
+  {
+    "id": "rps13",
+    "tense": "Present Simple",
+    "level": "Beginner",
+    "correct_sentence": "Sarah rides her bike to the park.",
+    "wrong_sentence": "Sarah ride her bike to the park.",
+    "pedagogical_focus": "Third-person singular 's' missing",
+    "vietnamese_translation": "Sarah đạp xe đến công viên."
+  },
+  {
+    "id": "rps14",
+    "tense": "Present Simple",
+    "level": "Beginner",
+    "correct_sentence": "The train leaves at 8 PM tonight.",
+    "wrong_sentence": "The train leave at 8 PM tonight.",
+    "pedagogical_focus": "Present continuous schedule meaning uses simple present",
+    "vietnamese_translation": "Chuyến tàu rời đi lúc 8 giờ tối nay."
+  },
+  {
+    "id": "rps15",
+    "tense": "Present Simple",
+    "level": "Beginner",
+    "correct_sentence": "Does he always wake up early?",
+    "wrong_sentence": "Do he always wake up early?",
+    "pedagogical_focus": "Does vs Do auxiliary in questions",
+    "vietnamese_translation": "Anh ấy có luôn thức dậy sớm không?"
+  },
+  {
+    "id": "rps16",
+    "tense": "Present Simple",
+    "level": "Intermediate",
+    "correct_sentence": "Do you want some ice cream?",
+    "wrong_sentence": "Does you want some ice cream?",
+    "pedagogical_focus": "Do vs Does auxiliary in questions",
+    "vietnamese_translation": "Bạn có muốn một ít kem không?"
+  },
+  {
+    "id": "rps17",
+    "tense": "Present Simple",
+    "level": "Intermediate",
+    "correct_sentence": "It snows heavily in winter.",
+    "wrong_sentence": "It snow heavily in winter.",
+    "pedagogical_focus": "Third-person singular 's' missing for 'It'",
+    "vietnamese_translation": "Tuyết rơi dày vào mùa đông."
+  },
+  {
+    "id": "rps18",
+    "tense": "Present Simple",
+    "level": "Intermediate",
+    "correct_sentence": "The boys love playing video games.",
+    "wrong_sentence": "The boys loves playing video games.",
+    "pedagogical_focus": "Incorrect 's' on plural subject",
+    "vietnamese_translation": "Những cậu bé thích chơi trò chơi điện tử."
+  },
+  {
+    "id": "rps19",
+    "tense": "Present Simple",
+    "level": "Intermediate",
+    "correct_sentence": "Water boils at 100 degrees.",
+    "wrong_sentence": "Water boil at 100 degrees.",
+    "pedagogical_focus": "Third-person singular 's' missing for uncountable noun",
+    "vietnamese_translation": "Nước sôi ở 100 độ."
+  },
+  {
+    "id": "rps20",
+    "tense": "Present Simple",
+    "level": "Intermediate",
+    "correct_sentence": "Why does she study so hard?",
+    "wrong_sentence": "Why do she study so hard?",
+    "pedagogical_focus": "Does vs Do in WH-questions",
+    "vietnamese_translation": "Tại sao cô ấy học chăm chỉ như vậy?"
+  },
+  {
+    "id": "rps21",
+    "tense": "Present Simple",
+    "level": "Intermediate",
+    "correct_sentence": "He enjoys the sunshine.",
+    "wrong_sentence": "He enjoy the sunshine.",
+    "pedagogical_focus": "Third person singular 's'",
+    "vietnamese_translation": "Anh ấy tận hưởng ánh nắng."
+  },
+  {
+    "id": "rps22",
+    "tense": "Present Simple",
+    "level": "Intermediate",
+    "correct_sentence": "We walk to work.",
+    "wrong_sentence": "We walks to work.",
+    "pedagogical_focus": "Plural subject no 's'",
+    "vietnamese_translation": "Chúng tôi đi bộ đi làm."
+  },
+  {
+    "id": "rps23",
+    "tense": "Present Simple",
+    "level": "Intermediate",
+    "correct_sentence": "He reads a book.",
+    "wrong_sentence": "He read a book.",
+    "pedagogical_focus": "Third person singular 's'",
+    "vietnamese_translation": "Anh ấy đọc sách."
+  },
+  {
+    "id": "rps24",
+    "tense": "Present Simple",
+    "level": "Intermediate",
+    "correct_sentence": "They listen carefully.",
+    "wrong_sentence": "They listens carefully.",
+    "pedagogical_focus": "Plural subject no 's'",
+    "vietnamese_translation": "Họ lắng nghe cẩn thận."
+  },
+  {
+    "id": "rps25",
+    "tense": "Present Simple",
+    "level": "Intermediate",
+    "correct_sentence": "She reads a book.",
+    "wrong_sentence": "She read a book.",
+    "pedagogical_focus": "Third person singular 's'",
+    "vietnamese_translation": "Cô ấy đọc sách."
+  },
+  {
+    "id": "rps26",
+    "tense": "Present Simple",
+    "level": "Intermediate",
+    "correct_sentence": "The cats walk to work.",
+    "wrong_sentence": "The cats walks to work.",
+    "pedagogical_focus": "Plural subject no 's'",
+    "vietnamese_translation": "Những con mèo đi bộ đi làm."
+  },
+  {
+    "id": "rps27",
+    "tense": "Present Simple",
+    "level": "Intermediate",
+    "correct_sentence": "The dog enjoys the sunshine.",
+    "wrong_sentence": "The dog enjoy the sunshine.",
+    "pedagogical_focus": "Third person singular 's'",
+    "vietnamese_translation": "Con chó tận hưởng ánh nắng."
+  },
+  {
+    "id": "rps28",
+    "tense": "Present Simple",
+    "level": "Intermediate",
+    "correct_sentence": "They walk to work.",
+    "wrong_sentence": "They walks to work.",
+    "pedagogical_focus": "Plural subject no 's'",
+    "vietnamese_translation": "Họ đi bộ đi làm."
+  },
+  {
+    "id": "rps29",
+    "tense": "Present Simple",
+    "level": "Intermediate",
+    "correct_sentence": "She reads a book.",
+    "wrong_sentence": "She read a book.",
+    "pedagogical_focus": "Third person singular 's'",
+    "vietnamese_translation": "Cô ấy đọc sách."
+  },
+  {
+    "id": "rps30",
+    "tense": "Present Simple",
+    "level": "Intermediate",
+    "correct_sentence": "They walk to work.",
+    "wrong_sentence": "They walks to work.",
+    "pedagogical_focus": "Plural subject no 's'",
+    "vietnamese_translation": "Họ đi bộ đi làm."
+  },
+  {
+    "id": "rps31",
+    "tense": "Present Simple",
+    "level": "Intermediate",
+    "correct_sentence": "He makes a cake.",
+    "wrong_sentence": "He make a cake.",
+    "pedagogical_focus": "Third person singular 's'",
+    "vietnamese_translation": "Anh ấy làm một cái bánh."
+  },
+  {
+    "id": "rps32",
+    "tense": "Present Simple",
+    "level": "Intermediate",
+    "correct_sentence": "We listen carefully.",
+    "wrong_sentence": "We listens carefully.",
+    "pedagogical_focus": "Plural subject no 's'",
+    "vietnamese_translation": "Chúng tôi lắng nghe cẩn thận."
+  },
+  {
+    "id": "rps33",
+    "tense": "Present Simple",
+    "level": "Intermediate",
+    "correct_sentence": "The dog enjoys the sunshine.",
+    "wrong_sentence": "The dog enjoy the sunshine.",
+    "pedagogical_focus": "Third person singular 's'",
+    "vietnamese_translation": "Con chó tận hưởng ánh nắng."
+  },
+  {
+    "id": "rps34",
+    "tense": "Present Simple",
+    "level": "Intermediate",
+    "correct_sentence": "They walk to work.",
+    "wrong_sentence": "They walks to work.",
+    "pedagogical_focus": "Plural subject no 's'",
+    "vietnamese_translation": "Họ đi bộ đi làm."
+  },
+  {
+    "id": "rps35",
+    "tense": "Present Simple",
+    "level": "Intermediate",
+    "correct_sentence": "He reads a book.",
+    "wrong_sentence": "He read a book.",
+    "pedagogical_focus": "Third person singular 's'",
+    "vietnamese_translation": "Anh ấy đọc sách."
+  },
+  {
+    "id": "rps36",
+    "tense": "Present Simple",
+    "level": "Advanced",
+    "correct_sentence": "The cats listen carefully.",
+    "wrong_sentence": "The cats listens carefully.",
+    "pedagogical_focus": "Plural subject no 's'",
+    "vietnamese_translation": "Những con mèo lắng nghe cẩn thận."
+  },
+  {
+    "id": "rps37",
+    "tense": "Present Simple",
+    "level": "Advanced",
+    "correct_sentence": "She enjoys the sunshine.",
+    "wrong_sentence": "She enjoy the sunshine.",
+    "pedagogical_focus": "Third person singular 's'",
+    "vietnamese_translation": "Cô ấy tận hưởng ánh nắng."
+  },
+  {
+    "id": "rps38",
+    "tense": "Present Simple",
+    "level": "Advanced",
+    "correct_sentence": "The cats listen carefully.",
+    "wrong_sentence": "The cats listens carefully.",
+    "pedagogical_focus": "Plural subject no 's'",
+    "vietnamese_translation": "Những con mèo lắng nghe cẩn thận."
+  },
+  {
+    "id": "rps39",
+    "tense": "Present Simple",
+    "level": "Advanced",
+    "correct_sentence": "The dog reads a book.",
+    "wrong_sentence": "The dog read a book.",
+    "pedagogical_focus": "Third person singular 's'",
+    "vietnamese_translation": "Con chó đọc sách."
+  },
+  {
+    "id": "rps40",
+    "tense": "Present Simple",
+    "level": "Advanced",
+    "correct_sentence": "We listen carefully.",
+    "wrong_sentence": "We listens carefully.",
+    "pedagogical_focus": "Plural subject no 's'",
+    "vietnamese_translation": "Chúng tôi lắng nghe cẩn thận."
+  },
+  {
+    "id": "rps41",
+    "tense": "Present Simple",
+    "level": "Advanced",
+    "correct_sentence": "He reads a book.",
+    "wrong_sentence": "He read a book.",
+    "pedagogical_focus": "Third person singular 's'",
+    "vietnamese_translation": "Anh ấy đọc sách."
+  },
+  {
+    "id": "rps42",
+    "tense": "Present Simple",
+    "level": "Advanced",
+    "correct_sentence": "The cats walk to work.",
+    "wrong_sentence": "The cats walks to work.",
+    "pedagogical_focus": "Plural subject no 's'",
+    "vietnamese_translation": "Những con mèo đi bộ đi làm."
+  },
+  {
+    "id": "rps43",
+    "tense": "Present Simple",
+    "level": "Advanced",
+    "correct_sentence": "The dog reads a book.",
+    "wrong_sentence": "The dog read a book.",
+    "pedagogical_focus": "Third person singular 's'",
+    "vietnamese_translation": "Con chó đọc sách."
+  },
+  {
+    "id": "rps44",
+    "tense": "Present Simple",
+    "level": "Advanced",
+    "correct_sentence": "The cats listen carefully.",
+    "wrong_sentence": "The cats listens carefully.",
+    "pedagogical_focus": "Plural subject no 's'",
+    "vietnamese_translation": "Những con mèo lắng nghe cẩn thận."
+  },
+  {
+    "id": "rps45",
+    "tense": "Present Simple",
+    "level": "Advanced",
+    "correct_sentence": "The dog makes a cake.",
+    "wrong_sentence": "The dog make a cake.",
+    "pedagogical_focus": "Third person singular 's'",
+    "vietnamese_translation": "Con chó làm một cái bánh."
+  },
+  {
+    "id": "rps46",
+    "tense": "Present Simple",
+    "level": "Advanced",
+    "correct_sentence": "They listen carefully.",
+    "wrong_sentence": "They listens carefully.",
+    "pedagogical_focus": "Plural subject no 's'",
+    "vietnamese_translation": "Họ lắng nghe cẩn thận."
+  },
+  {
+    "id": "rps47",
+    "tense": "Present Simple",
+    "level": "Advanced",
+    "correct_sentence": "She reads a book.",
+    "wrong_sentence": "She read a book.",
+    "pedagogical_focus": "Third person singular 's'",
+    "vietnamese_translation": "Cô ấy đọc sách."
+  },
+  {
+    "id": "rps48",
+    "tense": "Present Simple",
+    "level": "Advanced",
+    "correct_sentence": "The cats walk to work.",
+    "wrong_sentence": "The cats walks to work.",
+    "pedagogical_focus": "Plural subject no 's'",
+    "vietnamese_translation": "Những con mèo đi bộ đi làm."
+  },
+  {
+    "id": "rps49",
+    "tense": "Present Simple",
+    "level": "Advanced",
+    "correct_sentence": "He reads a book.",
+    "wrong_sentence": "He read a book.",
+    "pedagogical_focus": "Third person singular 's'",
+    "vietnamese_translation": "Anh ấy đọc sách."
+  },
+  {
+    "id": "rps50",
+    "tense": "Present Simple",
+    "level": "Advanced",
+    "correct_sentence": "The cats listen carefully.",
+    "wrong_sentence": "The cats listens carefully.",
+    "pedagogical_focus": "Plural subject no 's'",
+    "vietnamese_translation": "Những con mèo lắng nghe cẩn thận."
+  },
+  {
+    "id": "fs1",
+    "tense": "Future Simple",
+    "level": "Beginner",
+    "correct_sentence": "I will go to the park tomorrow.",
+    "wrong_sentence": "I will goes to the park tomorrow.",
+    "pedagogical_focus": "Modal auxiliary 'will' followed by bare infinitive",
+    "vietnamese_translation": "Tôi sẽ đi công viên vào ngày mai."
+  },
+  {
+    "id": "fs2",
+    "tense": "Future Simple",
+    "level": "Beginner",
+    "correct_sentence": "She will finish her homework soon.",
+    "wrong_sentence": "She will finishing her homework soon.",
+    "pedagogical_focus": "Modal auxiliary 'will' followed by bare infinitive",
+    "vietnamese_translation": "Cô ấy sẽ hoàn thành bài tập về nhà sớm thôi."
+  },
+  {
+    "id": "fs3",
+    "tense": "Future Simple",
+    "level": "Beginner",
+    "correct_sentence": "We are going to travel to Japan next year.",
+    "wrong_sentence": "We is going to travel to Japan next year.",
+    "pedagogical_focus": "'Going to' future subject-verb agreement",
+    "vietnamese_translation": "Chúng tôi dự định sẽ đi du lịch Nhật Bản vào năm sau."
+  },
+  {
+    "id": "fs4",
+    "tense": "Future Simple",
+    "level": "Beginner",
+    "correct_sentence": "They will win the game if they try.",
+    "wrong_sentence": "They will won the game if they try.",
+    "pedagogical_focus": "Will + plural past tense error",
+    "vietnamese_translation": "Họ sẽ thắng trò chơi nếu họ cố gắng."
+  },
+  {
+    "id": "fs5",
+    "tense": "Future Simple",
+    "level": "Beginner",
+    "correct_sentence": "He will call you later tonight.",
+    "wrong_sentence": "He will calls you later tonight.",
+    "pedagogical_focus": "Will + third-person singular error",
+    "vietnamese_translation": "Anh ấy sẽ gọi cho bạn tối nay."
+  },
+  {
+    "id": "fs6",
+    "tense": "Future Simple",
+    "level": "Beginner",
+    "correct_sentence": "It is going to rain this afternoon.",
+    "wrong_sentence": "It are going to rain this afternoon.",
+    "pedagogical_focus": "'Going to' future subject-verb agreement with 'it'",
+    "vietnamese_translation": "Trời dự định sẽ mưa vào chiều nay."
+  },
+  {
+    "id": "fs7",
+    "tense": "Future Simple",
+    "level": "Beginner",
+    "correct_sentence": "The sun will rise at 6 AM.",
+    "wrong_sentence": "The sun will rising at 6 AM.",
+    "pedagogical_focus": "Will + continuous participle error",
+    "vietnamese_translation": "Mặt trời sẽ mọc lúc 6 giờ sáng."
+  },
+  {
+    "id": "fs8",
+    "tense": "Future Simple",
+    "level": "Beginner",
+    "correct_sentence": "I am going to buy a new computer.",
+    "wrong_sentence": "I is going to buy a new computer.",
+    "pedagogical_focus": "'Going to' future subject-verb agreement (I am)",
+    "vietnamese_translation": "Tôi dự định mua một máy tính mới."
+  },
+  {
+    "id": "fs9",
+    "tense": "Future Simple",
+    "level": "Beginner",
+    "correct_sentence": "We will be very happy to see you.",
+    "wrong_sentence": "We will are very happy to see you.",
+    "pedagogical_focus": "Will + be vs Will + are",
+    "vietnamese_translation": "Chúng tôi sẽ rất vui khi gặp bạn."
+  },
+  {
+    "id": "fs10",
+    "tense": "Future Simple",
+    "level": "Beginner",
+    "correct_sentence": "Tom isn't going to play with us.",
+    "wrong_sentence": "Tom aren't going to play with us.",
+    "pedagogical_focus": "Negative 'Going to' subject-verb agreement",
+    "vietnamese_translation": "Tom sẽ không chơi cùng chúng ta đâu."
+  },
+  {
+    "id": "fs11",
+    "tense": "Future Simple",
+    "level": "Beginner",
+    "correct_sentence": "Will you help me with this box?",
+    "wrong_sentence": "Will you helps me with this box?",
+    "pedagogical_focus": "Will + bare infinitive in questions",
+    "vietnamese_translation": "Bạn sẽ giúp tôi với chiếc hộp này chứ?"
+  },
+  {
+    "id": "fs12",
+    "tense": "Future Simple",
+    "level": "Beginner",
+    "correct_sentence": "What will she wear to the party?",
+    "wrong_sentence": "What she will wear to the party?",
+    "pedagogical_focus": "WH-question syntax inversion missing",
+    "vietnamese_translation": "Cô ấy sẽ mặc gì đến bữa tiệc?"
+  },
+  {
+    "id": "fs13",
+    "tense": "Future Simple",
+    "level": "Beginner",
+    "correct_sentence": "My students will write a test on Monday.",
+    "wrong_sentence": "My students will wrote a test on Monday.",
+    "pedagogical_focus": "Will + past tense error",
+    "vietnamese_translation": "Học sinh của tôi sẽ làm bài kiểm tra vào thứ Hai."
+  },
+  {
+    "id": "fs14",
+    "tense": "Future Simple",
+    "level": "Beginner",
+    "correct_sentence": "They are going to build a new bridge here.",
+    "wrong_sentence": "They is going to build a new bridge here.",
+    "pedagogical_focus": "Plural subject 'going to' agreement",
+    "vietnamese_translation": "Họ dự định xây một cây cầu mới ở đây."
+  },
+  {
+    "id": "fs15",
+    "tense": "Future Simple",
+    "level": "Beginner",
+    "correct_sentence": "I won't tell anyone your secret.",
+    "wrong_sentence": "I willn't tell anyone your secret.",
+    "pedagogical_focus": "Negative structure of will (won't vs willn't)",
+    "vietnamese_translation": "Tôi sẽ không nói cho ai biết bí mật của bạn."
+  },
+  {
+    "id": "fs16",
+    "tense": "Future Simple",
+    "level": "Intermediate",
+    "correct_sentence": "Where are you going to stay?",
+    "wrong_sentence": "Where is you going to stay?",
+    "pedagogical_focus": "WH-question with going-to agreement",
+    "vietnamese_translation": "Bạn dự định sẽ ở đâu?"
+  },
+  {
+    "id": "fs17",
+    "tense": "Future Simple",
+    "level": "Intermediate",
+    "correct_sentence": "She won't be happy about this.",
+    "wrong_sentence": "She don't will be happy about this.",
+    "pedagogical_focus": "Double negative / modal auxiliary structure",
+    "vietnamese_translation": "Cô ấy sẽ không vui về điều này."
+  },
+  {
+    "id": "fs18",
+    "tense": "Future Simple",
+    "level": "Intermediate",
+    "correct_sentence": "The dog is going to catch the ball.",
+    "wrong_sentence": "The dog am going to catch the ball.",
+    "pedagogical_focus": "'Going to' subject-verb agreement",
+    "vietnamese_translation": "Con chó chuẩn bị bắt được quả bóng kìa."
+  },
+  {
+    "id": "fs19",
+    "tense": "Future Simple",
+    "level": "Intermediate",
+    "correct_sentence": "We will eat pizza for dinner tonight.",
+    "wrong_sentence": "We will eating pizza for dinner tonight.",
+    "pedagogical_focus": "Will + continuous participle error",
+    "vietnamese_translation": "Chúng tôi sẽ ăn pizza cho bữa tối nay."
+  },
+  {
+    "id": "fs20",
+    "tense": "Future Simple",
+    "level": "Intermediate",
+    "correct_sentence": "Are they going to join the club?",
+    "wrong_sentence": "Is they going to join the club?",
+    "pedagogical_focus": "Question formation with going-to",
+    "vietnamese_translation": "Họ có dự định tham gia câu lạc bộ không?"
+  },
+  {
+    "id": "fs21",
+    "tense": "Future Simple",
+    "level": "Intermediate",
+    "correct_sentence": "She will clean the house.",
+    "wrong_sentence": "She will cleans the house.",
+    "pedagogical_focus": "Will + bare infinitive",
+    "vietnamese_translation": "Cô ấy sẽ lau nhà."
+  },
+  {
+    "id": "fs22",
+    "tense": "Future Simple",
+    "level": "Intermediate",
+    "correct_sentence": "You will visit the museum.",
+    "wrong_sentence": "You will visited the museum.",
+    "pedagogical_focus": "Will + bare infinitive",
+    "vietnamese_translation": "Bạn sẽ thăm bảo tàng."
+  },
+  {
+    "id": "fs23",
+    "tense": "Future Simple",
+    "level": "Intermediate",
+    "correct_sentence": "She will clean the house.",
+    "wrong_sentence": "She will cleans the house.",
+    "pedagogical_focus": "Will + bare infinitive",
+    "vietnamese_translation": "Cô ấy sẽ lau nhà."
+  },
+  {
+    "id": "fs24",
+    "tense": "Future Simple",
+    "level": "Intermediate",
+    "correct_sentence": "It will draw a picture.",
+    "wrong_sentence": "It will drawed a picture.",
+    "pedagogical_focus": "Will + bare infinitive",
+    "vietnamese_translation": "Nó sẽ vẽ một bức tranh."
+  },
+  {
+    "id": "fs25",
+    "tense": "Future Simple",
+    "level": "Intermediate",
+    "correct_sentence": "You will clean the house.",
+    "wrong_sentence": "You will cleans the house.",
+    "pedagogical_focus": "Will + bare infinitive",
+    "vietnamese_translation": "Bạn sẽ lau nhà."
+  },
+  {
+    "id": "fs26",
+    "tense": "Future Simple",
+    "level": "Intermediate",
+    "correct_sentence": "It will draw a picture.",
+    "wrong_sentence": "It will drawed a picture.",
+    "pedagogical_focus": "Will + bare infinitive",
+    "vietnamese_translation": "Nó sẽ vẽ một bức tranh."
+  },
+  {
+    "id": "fs27",
+    "tense": "Future Simple",
+    "level": "Intermediate",
+    "correct_sentence": "You will draw a picture.",
+    "wrong_sentence": "You will draws a picture.",
+    "pedagogical_focus": "Will + bare infinitive",
+    "vietnamese_translation": "Bạn sẽ vẽ một bức tranh."
+  },
+  {
+    "id": "fs28",
+    "tense": "Future Simple",
+    "level": "Intermediate",
+    "correct_sentence": "We will visit the museum.",
+    "wrong_sentence": "We will visited the museum.",
+    "pedagogical_focus": "Will + bare infinitive",
+    "vietnamese_translation": "Chúng tôi sẽ thăm bảo tàng."
+  },
+  {
+    "id": "fs29",
+    "tense": "Future Simple",
+    "level": "Intermediate",
+    "correct_sentence": "It will clean the house.",
+    "wrong_sentence": "It will cleans the house.",
+    "pedagogical_focus": "Will + bare infinitive",
+    "vietnamese_translation": "Nó sẽ lau nhà."
+  },
+  {
+    "id": "fs30",
+    "tense": "Future Simple",
+    "level": "Intermediate",
+    "correct_sentence": "They will visit the museum.",
+    "wrong_sentence": "They will visited the museum.",
+    "pedagogical_focus": "Will + bare infinitive",
+    "vietnamese_translation": "Họ sẽ thăm bảo tàng."
+  },
+  {
+    "id": "fs31",
+    "tense": "Future Simple",
+    "level": "Intermediate",
+    "correct_sentence": "I will clean the house.",
+    "wrong_sentence": "I will cleans the house.",
+    "pedagogical_focus": "Will + bare infinitive",
+    "vietnamese_translation": "Tôi sẽ lau nhà."
+  },
+  {
+    "id": "fs32",
+    "tense": "Future Simple",
+    "level": "Intermediate",
+    "correct_sentence": "They will clean the house.",
+    "wrong_sentence": "They will cleaned the house.",
+    "pedagogical_focus": "Will + bare infinitive",
+    "vietnamese_translation": "Họ sẽ lau nhà."
+  },
+  {
+    "id": "fs33",
+    "tense": "Future Simple",
+    "level": "Intermediate",
+    "correct_sentence": "He will clean the house.",
+    "wrong_sentence": "He will cleans the house.",
+    "pedagogical_focus": "Will + bare infinitive",
+    "vietnamese_translation": "Anh ấy sẽ lau nhà."
+  },
+  {
+    "id": "fs34",
+    "tense": "Future Simple",
+    "level": "Intermediate",
+    "correct_sentence": "They will clean the house.",
+    "wrong_sentence": "They will cleaned the house.",
+    "pedagogical_focus": "Will + bare infinitive",
+    "vietnamese_translation": "Họ sẽ lau nhà."
+  },
+  {
+    "id": "fs35",
+    "tense": "Future Simple",
+    "level": "Intermediate",
+    "correct_sentence": "We will visit the museum.",
+    "wrong_sentence": "We will visits the museum.",
+    "pedagogical_focus": "Will + bare infinitive",
+    "vietnamese_translation": "Chúng tôi sẽ thăm bảo tàng."
+  },
+  {
+    "id": "fs36",
+    "tense": "Future Simple",
+    "level": "Advanced",
+    "correct_sentence": "They will draw a picture.",
+    "wrong_sentence": "They will drawed a picture.",
+    "pedagogical_focus": "Will + bare infinitive",
+    "vietnamese_translation": "Họ sẽ vẽ một bức tranh."
+  },
+  {
+    "id": "fs37",
+    "tense": "Future Simple",
+    "level": "Advanced",
+    "correct_sentence": "It will clean the house.",
+    "wrong_sentence": "It will cleans the house.",
+    "pedagogical_focus": "Will + bare infinitive",
+    "vietnamese_translation": "Nó sẽ lau nhà."
+  },
+  {
+    "id": "fs38",
+    "tense": "Future Simple",
+    "level": "Advanced",
+    "correct_sentence": "It will draw a picture.",
+    "wrong_sentence": "It will drawed a picture.",
+    "pedagogical_focus": "Will + bare infinitive",
+    "vietnamese_translation": "Nó sẽ vẽ một bức tranh."
+  },
+  {
+    "id": "fs39",
+    "tense": "Future Simple",
+    "level": "Advanced",
+    "correct_sentence": "I will draw a picture.",
+    "wrong_sentence": "I will draws a picture.",
+    "pedagogical_focus": "Will + bare infinitive",
+    "vietnamese_translation": "Tôi sẽ vẽ một bức tranh."
+  },
+  {
+    "id": "fs40",
+    "tense": "Future Simple",
+    "level": "Advanced",
+    "correct_sentence": "She will draw a picture.",
+    "wrong_sentence": "She will drawed a picture.",
+    "pedagogical_focus": "Will + bare infinitive",
+    "vietnamese_translation": "Cô ấy sẽ vẽ một bức tranh."
+  },
+  {
+    "id": "fs41",
+    "tense": "Future Simple",
+    "level": "Advanced",
+    "correct_sentence": "We will visit the museum.",
+    "wrong_sentence": "We will visits the museum.",
+    "pedagogical_focus": "Will + bare infinitive",
+    "vietnamese_translation": "Chúng tôi sẽ thăm bảo tàng."
+  },
+  {
+    "id": "fs42",
+    "tense": "Future Simple",
+    "level": "Advanced",
+    "correct_sentence": "He will clean the house.",
+    "wrong_sentence": "He will cleaned the house.",
+    "pedagogical_focus": "Will + bare infinitive",
+    "vietnamese_translation": "Anh ấy sẽ lau nhà."
+  },
+  {
+    "id": "fs43",
+    "tense": "Future Simple",
+    "level": "Advanced",
+    "correct_sentence": "She will clean the house.",
+    "wrong_sentence": "She will cleans the house.",
+    "pedagogical_focus": "Will + bare infinitive",
+    "vietnamese_translation": "Cô ấy sẽ lau nhà."
+  },
+  {
+    "id": "fs44",
+    "tense": "Future Simple",
+    "level": "Advanced",
+    "correct_sentence": "It will draw a picture.",
+    "wrong_sentence": "It will drawed a picture.",
+    "pedagogical_focus": "Will + bare infinitive",
+    "vietnamese_translation": "Nó sẽ vẽ một bức tranh."
+  },
+  {
+    "id": "fs45",
+    "tense": "Future Simple",
+    "level": "Advanced",
+    "correct_sentence": "I will clean the house.",
+    "wrong_sentence": "I will cleans the house.",
+    "pedagogical_focus": "Will + bare infinitive",
+    "vietnamese_translation": "Tôi sẽ lau nhà."
+  },
+  {
+    "id": "fs46",
+    "tense": "Future Simple",
+    "level": "Advanced",
+    "correct_sentence": "I will clean the house.",
+    "wrong_sentence": "I will cleaned the house.",
+    "pedagogical_focus": "Will + bare infinitive",
+    "vietnamese_translation": "Tôi sẽ lau nhà."
+  },
+  {
+    "id": "fs47",
+    "tense": "Future Simple",
+    "level": "Advanced",
+    "correct_sentence": "She will visit the museum.",
+    "wrong_sentence": "She will visits the museum.",
+    "pedagogical_focus": "Will + bare infinitive",
+    "vietnamese_translation": "Cô ấy sẽ thăm bảo tàng."
+  },
+  {
+    "id": "fs48",
+    "tense": "Future Simple",
+    "level": "Advanced",
+    "correct_sentence": "They will draw a picture.",
+    "wrong_sentence": "They will drawed a picture.",
+    "pedagogical_focus": "Will + bare infinitive",
+    "vietnamese_translation": "Họ sẽ vẽ một bức tranh."
+  },
+  {
+    "id": "fs49",
+    "tense": "Future Simple",
+    "level": "Advanced",
+    "correct_sentence": "I will draw a picture.",
+    "wrong_sentence": "I will draws a picture.",
+    "pedagogical_focus": "Will + bare infinitive",
+    "vietnamese_translation": "Tôi sẽ vẽ một bức tranh."
+  },
+  {
+    "id": "fs50",
+    "tense": "Future Simple",
+    "level": "Advanced",
+    "correct_sentence": "It will clean the house.",
+    "wrong_sentence": "It will cleaned the house.",
+    "pedagogical_focus": "Will + bare infinitive",
+    "vietnamese_translation": "Nó sẽ lau nhà."
+  },
+  {
+    "id": "pp1",
+    "tense": "Present Perfect",
+    "level": "Beginner",
+    "correct_sentence": "She has eaten all her vegetables.",
+    "wrong_sentence": "She have eaten all her vegetables.",
+    "pedagogical_focus": "Present perfect auxiliary agreement (has vs have)",
+    "vietnamese_translation": "Cô ấy đã ăn hết rau của mình."
+  },
+  {
+    "id": "pp2",
+    "tense": "Present Perfect",
+    "level": "Beginner",
+    "correct_sentence": "They have visited London three times.",
+    "wrong_sentence": "They has visited London three times.",
+    "pedagogical_focus": "Present perfect auxiliary agreement (have vs has)",
+    "vietnamese_translation": "Họ đã đến thăm London ba lần."
+  },
+  {
+    "id": "pp3",
+    "tense": "Present Perfect",
+    "level": "Beginner",
+    "correct_sentence": "I have finished my homework already.",
+    "wrong_sentence": "I has finished my homework already.",
+    "pedagogical_focus": "Present perfect auxiliary agreement (have vs has)",
+    "vietnamese_translation": "Tôi đã hoàn thành xong bài tập về nhà."
+  },
+  {
+    "id": "pp4",
+    "tense": "Present Perfect",
+    "level": "Beginner",
+    "correct_sentence": "He has lost his keys again.",
+    "wrong_sentence": "He have lost his keys again.",
+    "pedagogical_focus": "Present perfect auxiliary agreement (has vs have)",
+    "vietnamese_translation": "Anh ấy lại làm mất chìa khóa."
+  },
+  {
+    "id": "pp5",
+    "tense": "Present Perfect",
+    "level": "Beginner",
+    "correct_sentence": "We haven't seen that movie yet.",
+    "wrong_sentence": "We hasn't seen that movie yet.",
+    "pedagogical_focus": "Negative auxiliary agreement (haven't vs hasn't)",
+    "vietnamese_translation": "Chúng tôi chưa xem bộ phim đó."
+  },
+  {
+    "id": "pp6",
+    "tense": "Present Perfect",
+    "level": "Beginner",
+    "correct_sentence": "My mom has cooked dinner.",
+    "wrong_sentence": "My mom have cooked dinner.",
+    "pedagogical_focus": "Present perfect auxiliary agreement (has vs have)",
+    "vietnamese_translation": "Mẹ tôi nấu xong bữa tối rồi."
+  },
+  {
+    "id": "pp7",
+    "tense": "Present Perfect",
+    "level": "Beginner",
+    "correct_sentence": "I have been to Paris before.",
+    "wrong_sentence": "I have went to Paris before.",
+    "pedagogical_focus": "Past participle 'been' vs Past simple 'went'",
+    "vietnamese_translation": "Tôi đã từng đến Paris trước đây."
+  },
+  {
+    "id": "pp8",
+    "tense": "Present Perfect",
+    "level": "Beginner",
+    "correct_sentence": "She has broken her arm.",
+    "wrong_sentence": "She has broke her arm.",
+    "pedagogical_focus": "Past participle 'broken' vs Past simple 'broke'",
+    "vietnamese_translation": "Cô ấy bị gãy tay."
+  },
+  {
+    "id": "pp9",
+    "tense": "Present Perfect",
+    "level": "Beginner",
+    "correct_sentence": "They have written a new song.",
+    "wrong_sentence": "They have wrote a new song.",
+    "pedagogical_focus": "Past participle 'written' vs Past simple 'wrote'",
+    "vietnamese_translation": "Họ đã viết xong một bài hát mới."
+  },
+  {
+    "id": "pp10",
+    "tense": "Present Perfect",
+    "level": "Beginner",
+    "correct_sentence": "Has he ever flown in a helicopter?",
+    "wrong_sentence": "Have he ever flown in a helicopter?",
+    "pedagogical_focus": "Question auxiliary agreement (Has vs Have)",
+    "vietnamese_translation": "Anh ấy đã từng bay bằng trực thăng chưa?"
+  },
+  {
+    "id": "pp11",
+    "tense": "Present Perfect",
+    "level": "Beginner",
+    "correct_sentence": "Have you seen my dog?",
+    "wrong_sentence": "Has you seen my dog?",
+    "pedagogical_focus": "Question auxiliary agreement (Have vs Has)",
+    "vietnamese_translation": "Bạn có thấy con chó của tôi không?"
+  },
+  {
+    "id": "pp12",
+    "tense": "Present Perfect",
+    "level": "Beginner",
+    "correct_sentence": "The train has just arrived.",
+    "wrong_sentence": "The train have just arrived.",
+    "pedagogical_focus": "Present perfect auxiliary agreement for singular noun",
+    "vietnamese_translation": "Chuyến tàu vừa mới đến."
+  },
+  {
+    "id": "pp13",
+    "tense": "Present Perfect",
+    "level": "Beginner",
+    "correct_sentence": "We have painted the whole house.",
+    "wrong_sentence": "We has painted the whole house.",
+    "pedagogical_focus": "Present perfect auxiliary agreement (have vs has)",
+    "vietnamese_translation": "Chúng tôi đã sơn xong toàn bộ ngôi nhà."
+  },
+  {
+    "id": "pp14",
+    "tense": "Present Perfect",
+    "level": "Beginner",
+    "correct_sentence": "My sister has taken my jacket.",
+    "wrong_sentence": "My sister has took my jacket.",
+    "pedagogical_focus": "Past participle 'taken' vs Past simple 'took'",
+    "vietnamese_translation": "Chị gái tôi đã lấy áo khoác của tôi."
+  },
+  {
+    "id": "pp15",
+    "tense": "Present Perfect",
+    "level": "Beginner",
+    "correct_sentence": "I haven't slept well lately.",
+    "wrong_sentence": "I hasn't slept well lately.",
+    "pedagogical_focus": "Negative auxiliary agreement with I",
+    "vietnamese_translation": "Gần đây tôi ngủ không ngon giấc."
+  },
+  {
+    "id": "pp16",
+    "tense": "Present Perfect",
+    "level": "Intermediate",
+    "correct_sentence": "They have sung that song twice.",
+    "wrong_sentence": "They have sang that song twice.",
+    "pedagogical_focus": "Past participle 'sung' vs Past simple 'sang'",
+    "vietnamese_translation": "Họ đã hát bài đó hai lần rồi."
+  },
+  {
+    "id": "pp17",
+    "tense": "Present Perfect",
+    "level": "Intermediate",
+    "correct_sentence": "She hasn't spoken to him today.",
+    "wrong_sentence": "She haven't spoken to him today.",
+    "pedagogical_focus": "Negative auxiliary agreement (hasn't vs haven't)",
+    "vietnamese_translation": "Hôm nay cô ấy chưa nói chuyện với anh ấy."
+  },
+  {
+    "id": "pp18",
+    "tense": "Present Perfect",
+    "level": "Intermediate",
+    "correct_sentence": "You have grown so much!",
+    "wrong_sentence": "You has grown so much!",
+    "pedagogical_focus": "Present perfect auxiliary agreement with You",
+    "vietnamese_translation": "Cháu đã lớn quá nhiều rồi!"
+  },
+  {
+    "id": "pp19",
+    "tense": "Present Perfect",
+    "level": "Intermediate",
+    "correct_sentence": "He has forgotten my name.",
+    "wrong_sentence": "He has forgot my name.",
+    "pedagogical_focus": "Past participle 'forgotten' vs Past simple 'forgot'",
+    "vietnamese_translation": "Anh ấy đã quên tên tôi rồi."
+  },
+  {
+    "id": "pp20",
+    "tense": "Present Perfect",
+    "level": "Intermediate",
+    "correct_sentence": "How long have you lived here?",
+    "wrong_sentence": "How long has you lived here?",
+    "pedagogical_focus": "WH-question auxiliary agreement",
+    "vietnamese_translation": "Bạn đã sống ở đây bao lâu rồi?"
+  },
+  {
+    "id": "pp21",
+    "tense": "Present Perfect",
+    "level": "Intermediate",
+    "correct_sentence": "She has found a new job.",
+    "wrong_sentence": "She have found a new job.",
+    "pedagogical_focus": "has vs have",
+    "vietnamese_translation": "Cô ấy đã tìm được công việc mới."
+  },
+  {
+    "id": "pp22",
+    "tense": "Present Perfect",
+    "level": "Intermediate",
+    "correct_sentence": "We have learned a lot.",
+    "wrong_sentence": "We has learned a lot.",
+    "pedagogical_focus": "have vs has",
+    "vietnamese_translation": "Chúng tôi đã học được rất nhiều."
+  },
+  {
+    "id": "pp23",
+    "tense": "Present Perfect",
+    "level": "Intermediate",
+    "correct_sentence": "She has found a new job.",
+    "wrong_sentence": "She have found a new job.",
+    "pedagogical_focus": "has vs have",
+    "vietnamese_translation": "Cô ấy đã tìm được công việc mới."
+  },
+  {
+    "id": "pp24",
+    "tense": "Present Perfect",
+    "level": "Intermediate",
+    "correct_sentence": "We have learned a lot.",
+    "wrong_sentence": "We has learned a lot.",
+    "pedagogical_focus": "have vs has",
+    "vietnamese_translation": "Chúng tôi đã học được rất nhiều."
+  },
+  {
+    "id": "pp25",
+    "tense": "Present Perfect",
+    "level": "Intermediate",
+    "correct_sentence": "She has found a new job.",
+    "wrong_sentence": "She have found a new job.",
+    "pedagogical_focus": "has vs have",
+    "vietnamese_translation": "Cô ấy đã tìm được công việc mới."
+  },
+  {
+    "id": "pp26",
+    "tense": "Present Perfect",
+    "level": "Intermediate",
+    "correct_sentence": "We have learned a lot.",
+    "wrong_sentence": "We has learned a lot.",
+    "pedagogical_focus": "have vs has",
+    "vietnamese_translation": "Chúng tôi đã học được rất nhiều."
+  },
+  {
+    "id": "pp27",
+    "tense": "Present Perfect",
+    "level": "Intermediate",
+    "correct_sentence": "She has found a new job.",
+    "wrong_sentence": "She have found a new job.",
+    "pedagogical_focus": "has vs have",
+    "vietnamese_translation": "Cô ấy đã tìm được công việc mới."
+  },
+  {
+    "id": "pp28",
+    "tense": "Present Perfect",
+    "level": "Intermediate",
+    "correct_sentence": "We have learned a lot.",
+    "wrong_sentence": "We has learned a lot.",
+    "pedagogical_focus": "have vs has",
+    "vietnamese_translation": "Chúng tôi đã học được rất nhiều."
+  },
+  {
+    "id": "pp29",
+    "tense": "Present Perfect",
+    "level": "Intermediate",
+    "correct_sentence": "She has found a new job.",
+    "wrong_sentence": "She have found a new job.",
+    "pedagogical_focus": "has vs have",
+    "vietnamese_translation": "Cô ấy đã tìm được công việc mới."
+  },
+  {
+    "id": "pp30",
+    "tense": "Present Perfect",
+    "level": "Intermediate",
+    "correct_sentence": "We have learned a lot.",
+    "wrong_sentence": "We has learned a lot.",
+    "pedagogical_focus": "have vs has",
+    "vietnamese_translation": "Chúng tôi đã học được rất nhiều."
+  },
+  {
+    "id": "pp31",
+    "tense": "Present Perfect",
+    "level": "Intermediate",
+    "correct_sentence": "She has found a new job.",
+    "wrong_sentence": "She have found a new job.",
+    "pedagogical_focus": "has vs have",
+    "vietnamese_translation": "Cô ấy đã tìm được công việc mới."
+  },
+  {
+    "id": "pp32",
+    "tense": "Present Perfect",
+    "level": "Intermediate",
+    "correct_sentence": "We have learned a lot.",
+    "wrong_sentence": "We has learned a lot.",
+    "pedagogical_focus": "have vs has",
+    "vietnamese_translation": "Chúng tôi đã học được rất nhiều."
+  },
+  {
+    "id": "pp33",
+    "tense": "Present Perfect",
+    "level": "Intermediate",
+    "correct_sentence": "She has found a new job.",
+    "wrong_sentence": "She have found a new job.",
+    "pedagogical_focus": "has vs have",
+    "vietnamese_translation": "Cô ấy đã tìm được công việc mới."
+  },
+  {
+    "id": "pp34",
+    "tense": "Present Perfect",
+    "level": "Intermediate",
+    "correct_sentence": "We have learned a lot.",
+    "wrong_sentence": "We has learned a lot.",
+    "pedagogical_focus": "have vs has",
+    "vietnamese_translation": "Chúng tôi đã học được rất nhiều."
+  },
+  {
+    "id": "pp35",
+    "tense": "Present Perfect",
+    "level": "Intermediate",
+    "correct_sentence": "She has found a new job.",
+    "wrong_sentence": "She have found a new job.",
+    "pedagogical_focus": "has vs have",
+    "vietnamese_translation": "Cô ấy đã tìm được công việc mới."
+  },
+  {
+    "id": "pp36",
+    "tense": "Present Perfect",
+    "level": "Advanced",
+    "correct_sentence": "We have learned a lot.",
+    "wrong_sentence": "We has learned a lot.",
+    "pedagogical_focus": "have vs has",
+    "vietnamese_translation": "Chúng tôi đã học được rất nhiều."
+  },
+  {
+    "id": "pp37",
+    "tense": "Present Perfect",
+    "level": "Advanced",
+    "correct_sentence": "She has found a new job.",
+    "wrong_sentence": "She have found a new job.",
+    "pedagogical_focus": "has vs have",
+    "vietnamese_translation": "Cô ấy đã tìm được công việc mới."
+  },
+  {
+    "id": "pp38",
+    "tense": "Present Perfect",
+    "level": "Advanced",
+    "correct_sentence": "We have learned a lot.",
+    "wrong_sentence": "We has learned a lot.",
+    "pedagogical_focus": "have vs has",
+    "vietnamese_translation": "Chúng tôi đã học được rất nhiều."
+  },
+  {
+    "id": "pp39",
+    "tense": "Present Perfect",
+    "level": "Advanced",
+    "correct_sentence": "She has found a new job.",
+    "wrong_sentence": "She have found a new job.",
+    "pedagogical_focus": "has vs have",
+    "vietnamese_translation": "Cô ấy đã tìm được công việc mới."
+  },
+  {
+    "id": "pp40",
+    "tense": "Present Perfect",
+    "level": "Advanced",
+    "correct_sentence": "We have learned a lot.",
+    "wrong_sentence": "We has learned a lot.",
+    "pedagogical_focus": "have vs has",
+    "vietnamese_translation": "Chúng tôi đã học được rất nhiều."
+  },
+  {
+    "id": "pp41",
+    "tense": "Present Perfect",
+    "level": "Advanced",
+    "correct_sentence": "She has found a new job.",
+    "wrong_sentence": "She have found a new job.",
+    "pedagogical_focus": "has vs have",
+    "vietnamese_translation": "Cô ấy đã tìm được công việc mới."
+  },
+  {
+    "id": "pp42",
+    "tense": "Present Perfect",
+    "level": "Advanced",
+    "correct_sentence": "We have learned a lot.",
+    "wrong_sentence": "We has learned a lot.",
+    "pedagogical_focus": "have vs has",
+    "vietnamese_translation": "Chúng tôi đã học được rất nhiều."
+  },
+  {
+    "id": "pp43",
+    "tense": "Present Perfect",
+    "level": "Advanced",
+    "correct_sentence": "She has found a new job.",
+    "wrong_sentence": "She have found a new job.",
+    "pedagogical_focus": "has vs have",
+    "vietnamese_translation": "Cô ấy đã tìm được công việc mới."
+  },
+  {
+    "id": "pp44",
+    "tense": "Present Perfect",
+    "level": "Advanced",
+    "correct_sentence": "We have learned a lot.",
+    "wrong_sentence": "We has learned a lot.",
+    "pedagogical_focus": "have vs has",
+    "vietnamese_translation": "Chúng tôi đã học được rất nhiều."
+  },
+  {
+    "id": "pp45",
+    "tense": "Present Perfect",
+    "level": "Advanced",
+    "correct_sentence": "She has found a new job.",
+    "wrong_sentence": "She have found a new job.",
+    "pedagogical_focus": "has vs have",
+    "vietnamese_translation": "Cô ấy đã tìm được công việc mới."
+  },
+  {
+    "id": "pp46",
+    "tense": "Present Perfect",
+    "level": "Advanced",
+    "correct_sentence": "We have learned a lot.",
+    "wrong_sentence": "We has learned a lot.",
+    "pedagogical_focus": "have vs has",
+    "vietnamese_translation": "Chúng tôi đã học được rất nhiều."
+  },
+  {
+    "id": "pp47",
+    "tense": "Present Perfect",
+    "level": "Advanced",
+    "correct_sentence": "She has found a new job.",
+    "wrong_sentence": "She have found a new job.",
+    "pedagogical_focus": "has vs have",
+    "vietnamese_translation": "Cô ấy đã tìm được công việc mới."
+  },
+  {
+    "id": "pp48",
+    "tense": "Present Perfect",
+    "level": "Advanced",
+    "correct_sentence": "We have learned a lot.",
+    "wrong_sentence": "We has learned a lot.",
+    "pedagogical_focus": "have vs has",
+    "vietnamese_translation": "Chúng tôi đã học được rất nhiều."
+  },
+  {
+    "id": "pp49",
+    "tense": "Present Perfect",
+    "level": "Advanced",
+    "correct_sentence": "She has found a new job.",
+    "wrong_sentence": "She have found a new job.",
+    "pedagogical_focus": "has vs have",
+    "vietnamese_translation": "Cô ấy đã tìm được công việc mới."
+  },
+  {
+    "id": "pp50",
+    "tense": "Present Perfect",
+    "level": "Advanced",
+    "correct_sentence": "We have learned a lot.",
+    "wrong_sentence": "We has learned a lot.",
+    "pedagogical_focus": "have vs has",
+    "vietnamese_translation": "Chúng tôi đã học được rất nhiều."
+  }
+]

@@ -15,7 +15,11 @@ import ShapeBuilderGame from "./components/games/ShapeBuilderGame";
 import TimelineDetectiveGame from "./components/games/TimelineDetectiveGame";
 import MarioTenseRunner from "./components/games/MarioTenseRunner";
 import TenseSignalGame from "./components/games/TenseSignalGame";
+import EndlessRunner from "./components/games/EndlessRunner/EndlessRunner";
 import ProfileSwitcher from "./components/ProfileSwitcher";
+import ErrorBoundary from "./components/ErrorBoundary";
+import OfflineBanner from "./components/OfflineBanner";
+import ErrorToast from "./components/ErrorToast";
 import {
   updateWordLearning,
   getWordsForReview,
@@ -60,6 +64,7 @@ function App() {
 
   // Game state
   const [wordlist, setWordlist] = useState(null);
+  const [tenseSentences, setTenseSentences] = useState(null); // High-quality grammar DB
   const [selectedWordlist, setSelectedWordlist] = useState("");
   const [units, setUnits] = useState([]);
   const [selectedUnits, setSelectedUnits] = useState([]);
@@ -74,6 +79,7 @@ function App() {
   const [userAnswers, setUserAnswers] = useState([]);
   const [learningData, setLearningData] = useState({});
   const [showParentReport, setShowParentReport] = useState(false);
+  const [errorToast, setErrorToast] = useState(null);
   const [gameHistory] = useLocalStorage('gameHistory', []);
 
   const wordlists = ["wordlist_esl", "wordlist_math", "wordlist_science"];
@@ -110,6 +116,7 @@ function App() {
     if (preferences.lastGame) {
       setSelectedGame(preferences.lastGame);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [preferences]);
 
   // Restore selected units when wordlist loads
@@ -127,32 +134,79 @@ function App() {
     updatePreference('lastSubject', selected);
     
     if (selected) {
-      const response = await fetch(`db/${selected}.json`);
-      const data = await response.json();
-      setWordlist(data);
-      const uniqueUnits = [
-        ...new Set(data.map((item) => item.unit.split(".")[0])),
-      ];
-      uniqueUnits.sort((a, b) => {
-        const numA = parseInt(a, 10);
-        const numB = parseInt(b, 10);
-        const isNumA = !isNaN(numA);
-        const isNumB = !isNaN(numB);
+      try {
+        const response = await fetch(`db/${selected}.json`);
+        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+        const data = await response.json();
+        setWordlist(data);
 
-        if (isNumA && isNumB) {
-          return numA - numB;
-        } else if (isNumA) {
-          return -1;
-        } else if (isNumB) {
-          return 1;
+        // Load Enterprise Sentence Database if ESL is chosen
+        if (selected === 'wordlist_esl') {
+            try {
+                const tsResponse = await fetch(`db/tense_sentences_esl.toon`);
+                if (tsResponse.ok) {
+                    const tsText = await tsResponse.text();
+                    
+                    // Parse official TOON tabular format
+                    const lines = tsText.trim().split('\n');
+                    // Extract headers from: [250]{id,tense,level,correct_sentence,...}:
+                    const headerMatch = lines[0].match(/\{([^}]+)\}/);
+                    
+                    if (headerMatch) {
+                        const headers = headerMatch[1].split(',').map(h => h.trim());
+                        const tsData = [];
+                        for (let i = 1; i < lines.length; i++) {
+                            const line = lines[i].trim();
+                            if (!line) continue;
+                            // Split by comma for TOON CSV format
+                            const values = line.split(',').map(v => v.trim());
+                            const obj = {};
+                            headers.forEach((header, index) => {
+                                obj[header] = values[index];
+                            });
+                            tsData.push(obj);
+                        }
+                        setTenseSentences(tsData);
+                    }
+                }
+            } catch (err) {
+                console.warn("Could not load tense sentences: ", err);
+            }
         } else {
-          return a.localeCompare(b);
+            setTenseSentences(null);
         }
-      });
-      setUnits(uniqueUnits);
-      setSelectedUnits(uniqueUnits);
+
+        const uniqueUnits = [
+          ...new Set(data.map((item) => item.unit.split(".")[0])),
+        ];
+        uniqueUnits.sort((a, b) => {
+          const numA = parseInt(a, 10);
+          const numB = parseInt(b, 10);
+          const isNumA = !isNaN(numA);
+          const isNumB = !isNaN(numB);
+
+          if (isNumA && isNumB) {
+            return numA - numB;
+          } else if (isNumA) {
+            return -1;
+          } else if (isNumB) {
+            return 1;
+          } else {
+            return a.localeCompare(b);
+          }
+        });
+        setUnits(uniqueUnits);
+        setSelectedUnits(uniqueUnits);
+      } catch (err) {
+        console.error("Failed to load wordlist:", err);
+        setErrorToast({
+          message: "Failed to load wordlist data.",
+          subtitle: "Please check your network connection or try again later."
+        });
+      }
     } else {
       setWordlist(null);
+      setTenseSentences(null);
       setUnits([]);
       setSelectedUnits([]);
     }
@@ -411,6 +465,7 @@ function App() {
       // Render the appropriate game based on selection
       const gameProps = {
         words: questions,
+        tenseSentences: tenseSentences, // Pass down the grammar DB for Boss Levels!
         onAnswer: handleGameAnswer,
         onComplete: (results) => {
           // Game complete - trigger results screen
@@ -442,6 +497,8 @@ function App() {
           return <MarioTenseRunner {...gameProps} />;
         case 'tenseSignal':
           return <TenseSignalGame {...gameProps} />;
+        case 'endlessRunner':
+          return <EndlessRunner {...gameProps} />;
         case 'quiz':
         default:
           return (
@@ -488,7 +545,17 @@ function App() {
 
   return (
     <div className="App">
-      {renderContent()}
+      <OfflineBanner />
+      {errorToast && (
+        <ErrorToast 
+          message={errorToast.message}
+          subtitle={errorToast.subtitle}
+          onClose={() => setErrorToast(null)}
+        />
+      )}
+      <ErrorBoundary>
+        {renderContent()}
+      </ErrorBoundary>
       {showParentReport && (
         <ParentReport
           profile={profile}

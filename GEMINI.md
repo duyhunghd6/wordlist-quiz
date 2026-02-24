@@ -67,6 +67,17 @@ For this type of project, the Agentic SE workflow utilizes four core skills/pers
 - The local development server (Vite) MUST run on port **9997**.
 - If `npm run dev` fails due to the port already being in use, you MUST autonomously kill the existing process on port 9997 (e.g., `lsof -ti:9997 | xargs kill -9`) before retrying. Do not ask the user to free the port.
 
+### 8. Design System First (CRITICAL RULES)
+
+- **ALL UI changes, including new game screens (Game Scenes) or components, MUST be implemented in the Design System (`docs/design`) FIRST.**
+- Only after the Design System is updated should you apply those changes to the actual React application screens.
+
+### 9. Centralized Tense Question Bank
+
+- **ALL grammar/tense games MUST fetch and use the centralized TOON database (`public/db/tense_sentences_esl.toon`).**
+- Do NOT mock grammar questions using regex scrambling in individual components.
+- The TOON format is a pipe-delimited (`|`) tabular standard optimizing parsing speed and context windows over JSON.
+
 ## Task Management (Beads CLI Workflows)
 
 ### 0. When to use Beads CLI & Git (CRITICAL)

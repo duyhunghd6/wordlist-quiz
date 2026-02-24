@@ -36,48 +36,48 @@ const Results = ({ score, questions, userAnswers, playAgain, saveResult, playerN
   };
 
   return (
-    <div style={{ maxWidth: '600px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: 'var(--space-lg)', padding: 'var(--space-md)' }}>
+    <div className="results-container">
       {/* Hero Score */}
-      <div className="card shadow-lg" style={{ textAlign: 'center', padding: 'var(--space-2xl) var(--space-xl)', backgroundColor: performanceBg, border: `2px solid ${performanceColor}` }}>
-        <div style={{ fontSize: '4rem', lineHeight: 1, marginBottom: 'var(--space-sm)' }}>{performanceEmoji}</div>
-        <h1 style={{ fontSize: '3.5rem', fontWeight: 800, margin: '0 0 var(--space-xs) 0', color: performanceColor }}>{percentage}%</h1>
-        <p style={{ fontSize: '1.2rem', fontWeight: 700, margin: '0 0 var(--space-xl) 0', color: 'var(--color-text-primary)' }}>{performanceText}</p>
+      <div className="card shadow-lg results-hero" style={{ backgroundColor: performanceBg, borderColor: performanceColor }}>
+        <div className="rh-emoji">{performanceEmoji}</div>
+        <h1 className="rh-score" style={{ color: performanceColor }}>{percentage}%</h1>
+        <p className="rh-message">{performanceText}</p>
         
-        <div style={{ display: 'flex', justifyContent: 'center', gap: 'var(--space-xl)' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--color-success)' }}>
+        <div className="rh-stats">
+          <div className="rh-stat success">
             <CheckCircle size={24} />
-            <span style={{ fontSize: '1.2rem', fontWeight: 800 }}>{correctCount} correct</span>
+            <span>{correctCount} correct</span>
           </div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--color-danger)' }}>
+          <div className="rh-stat danger">
             <XCircle size={24} />
-            <span style={{ fontSize: '1.2rem', fontWeight: 800 }}>{wrongCount} wrong</span>
+            <span>{wrongCount} wrong</span>
           </div>
         </div>
       </div>
 
       {/* Action Buttons */}
-      <div style={{ display: 'flex', gap: 'var(--space-md)' }}>
-        <button className="btn btn-primary" style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', padding: 'var(--space-md)' }} onClick={handlePlayAgain}>
+      <div className="results-actions">
+        <button className="btn btn-primary results-action-btn" onClick={handlePlayAgain}>
           <RotateCcw size={20} />
           <span>Play Again</span>
         </button>
-        <button className="btn btn-secondary" style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', padding: 'var(--space-md)' }} onClick={playAgain}>
+        <button className="btn btn-secondary results-action-btn" onClick={playAgain}>
           <Home size={20} />
           <span>Home</span>
         </button>
       </div>
 
       {/* Answer Review */}
-      <div className="card shadow-sm" style={{ padding: 'var(--space-xl)' }}>
-        <h2 style={{ fontSize: '1.5rem', margin: '0 0 var(--space-lg) 0', color: 'var(--color-text-primary)' }}>Review Answers</h2>
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-md)' }}>
+      <div className="card shadow-sm results-review">
+        <h2 className="rr-title">Review Answers</h2>
+        <div className="rr-list">
           {userAnswers.map((answer, index) => (
             <div 
               key={index} 
-              style={{ padding: 'var(--space-md)', borderRadius: 'var(--radius-lg)', backgroundColor: answer.isCorrect ? '#F0FDF4' : '#FEF2F2', border: `1px solid ${answer.isCorrect ? '#BBF7D0' : '#FECACA'}` }}
+              className={`rr-item ${answer.isCorrect ? 'correct' : 'wrong'}`}
             >
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 'var(--space-xs)' }}>
-                <span className="badge badge-neutral" style={{ padding: '2px 8px' }}>Q{index + 1}</span>
+              <div className="rr-header">
+                <span className="badge badge-neutral rr-badge">Q{index + 1}</span>
                 {answer.isCorrect ? (
                   <CheckCircle size={20} color="var(--color-success)" />
                 ) : (
@@ -85,35 +85,35 @@ const Results = ({ score, questions, userAnswers, playAgain, saveResult, playerN
                 )}
               </div>
               
-              <p style={{ fontSize: '1.1rem', fontWeight: 600, color: 'var(--color-text-primary)', margin: '0 0 var(--space-sm) 0' }}>{answer.question.definition}</p>
+              <p className="rr-definition">{answer.question.definition}</p>
               
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+              <div className="rr-details">
                 {answer.isCorrect ? (
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--color-success)' }}>
+                  <div className="rr-row correct">
                     <CheckCircle size={16} />
-                    <span style={{ fontWeight: 800 }}>{answer.question.word}</span>
+                    <span>{answer.question.word}</span>
                   </div>
                 ) : (
                   <>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--color-danger)' }}>
+                    <div className="rr-row wrong">
                       <XCircle size={16} />
-                      <span style={{ fontWeight: 600, textDecoration: 'line-through' }}>{answer.selected || 'No answer'}</span>
+                      <span>{answer.selected || 'No answer'}</span>
                     </div>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--color-success)' }}>
+                    <div className="rr-row correct">
                       <CheckCircle size={16} />
-                      <span style={{ fontWeight: 800 }}>{answer.question.word}</span>
+                      <span>{answer.question.word}</span>
                     </div>
                     
                     {/* Learning context */}
-                    <div style={{ marginTop: 'var(--space-sm)', padding: 'var(--space-sm)', backgroundColor: 'white', borderRadius: 'var(--radius-md)' }}>
+                    <div className="rr-context">
                       {answer.question.example && (
-                        <p style={{ fontSize: '0.9rem', color: 'var(--color-text-secondary)', margin: '0 0 4px 0' }}>
-                          <strong style={{ color: 'var(--color-info)' }}>Example:</strong> "{answer.question.example}"
+                        <p className="rr-example">
+                          <strong className="rr-label">Example:</strong> "{answer.question.example}"
                         </p>
                       )}
                       {answer.question.vietnamese && (
-                        <p style={{ fontSize: '0.9rem', color: 'var(--color-text-secondary)', margin: '0' }}>
-                          <strong style={{ color: 'var(--color-info)' }}>Meaning:</strong> {answer.question.vietnamese}
+                        <p className="rr-meaning">
+                          <strong className="rr-label">Meaning:</strong> {answer.question.vietnamese}
                         </p>
                       )}
                     </div>
@@ -122,7 +122,7 @@ const Results = ({ score, questions, userAnswers, playAgain, saveResult, playerN
               </div>
 
               {answer.responseTime && (
-                <div style={{ display: 'flex', alignItems: 'center', gap: '4px', fontSize: '0.8rem', color: 'var(--color-text-secondary)', fontWeight: 600, marginTop: 'var(--space-sm)' }}>
+                <div className="rr-time">
                   <Zap size={12} />
                   <span>{(answer.responseTime / 1000).toFixed(1)}s</span>
                 </div>

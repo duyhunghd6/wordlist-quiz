@@ -1,7 +1,7 @@
 import React from 'react';
-import { BookOpen, Calculator, Microscope, BarChart3, Play, CheckSquare, Square, Pencil, Camera, History, Blocks, Gamepad2, Search } from 'lucide-react';
+import { BookOpen, Calculator, Microscope, BarChart3, Play, CheckSquare, Square, Pencil } from 'lucide-react';
 import GameSelector from './GameSelector';
-
+import { GAMES } from '../constants/gameConfig';
 const SUBJECTS = {
   wordlist_esl: {
     name: 'English',
@@ -137,49 +137,7 @@ const StartScreen = ({
         </div>
       </div>
 
-      {/* Recent History */}
-      {selectedWordlist && history[selectedWordlist]?.length > 0 && (
-        <div className="card" style={{ width: '100%', borderColor: 'var(--color-success)', background: '#F0FDF4' }}>
-          <h4 style={{ color: 'var(--color-success-hover)' }}>Recent Plays</h4>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-            {history[selectedWordlist].slice(0, 3).map((res, i) => (
-              <div key={i} style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.9rem', fontWeight: 600 }}>
-                <span style={{ color: 'var(--color-text-secondary)' }}>{new Date(res.date).toLocaleDateString()}</span>
-                <span style={{ color: 'var(--color-success)' }}>{res.score}%</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      )}
 
-      {/* Grammar Games (ESL Only) */}
-      {selectedWordlist === 'wordlist_esl' && (
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-xs)' }}>
-          <h2 className="gs-section-title">Tense & Grammar Games</h2>
-          <div className="gs-tense-games">
-            <button className="gs-tense-btn border-blue" onClick={() => startGrammarGame('shapeBuilder')}>
-              <div className="gs-tense-icon"><Blocks size={16} color="#3B82F6" /></div>
-              Shape Builder
-            </button>
-            <button className="gs-tense-btn border-yellow" onClick={() => startGrammarGame('timelineDetective')}>
-              <div className="gs-tense-icon"><History size={16} color="#FBBF24" /></div>
-              Timeline Detective
-            </button>
-            <button className="gs-tense-btn border-pink" onClick={() => startGrammarGame('photobomb')}>
-              <div className="gs-tense-icon"><Camera size={16} color="#EC4899" /></div>
-              Photobomb
-            </button>
-            <button className="gs-tense-btn border-green" onClick={() => startGrammarGame('marioTense')}>
-              <div className="gs-tense-icon"><Gamepad2 size={16} color="#22C55E" /></div>
-              Tense Runner
-            </button>
-            <button className="gs-tense-btn border-purple" onClick={() => startGrammarGame('tenseSignal')}>
-              <div className="gs-tense-icon"><Search size={16} color="#A855F7" /></div>
-              Signal Spotter
-            </button>
-          </div>
-        </div>
-      )}
 
       {/* Game Options */}
       {wordlist && (
@@ -191,6 +149,7 @@ const StartScreen = ({
               selectedGame={selectedGame}
               onSelectGame={onSelectGame}
               gameStats={gameStats}
+              selectedWordlist={selectedWordlist}
             />
           </div>
 
@@ -246,12 +205,34 @@ const StartScreen = ({
           <button 
             className="btn btn-primary"
             style={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', fontSize: '1.5rem', padding: 'var(--space-lg)' }}
-            onClick={startQuiz} 
+            onClick={() => {
+              const gameDef = GAMES.find(g => g.id === selectedGame);
+              if (gameDef && gameDef.isGrammar) {
+                startGrammarGame(selectedGame);
+              } else {
+                startQuiz();
+              }
+            }} 
             disabled={selectedUnits.length === 0}
           >
             <Play size={28} fill="currentColor" />
-            <span>Start {selectedGame === 'quiz' ? 'Quiz' : 'Game'}!</span>
+            <span>Play Now!</span>
           </button>
+          
+          {/* Recent History */}
+          {history[selectedWordlist]?.length > 0 && (
+            <div className="card" style={{ width: '100%', borderColor: 'var(--color-success)', background: '#F0FDF4', marginTop: 'var(--space-md)' }}>
+              <h4 style={{ color: 'var(--color-success-hover)', marginTop: 0 }}>Recent Plays</h4>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                {history[selectedWordlist].slice(0, 3).map((res, i) => (
+                  <div key={i} style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.9rem', fontWeight: 600 }}>
+                    <span style={{ color: 'var(--color-text-secondary)' }}>{new Date(res.date).toLocaleDateString()}</span>
+                    <span style={{ color: 'var(--color-success)' }}>{res.score}%</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
         </>
       )}
     </div>

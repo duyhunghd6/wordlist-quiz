@@ -21,7 +21,15 @@ export const GAMES = [
   { id: 'scramble', emoji: '🔀', name: 'Word Scramble', available: true },
   { id: 'wordSearch', emoji: '🔤', name: 'Word Search', available: true },
   { id: 'swipe', emoji: '👆', name: 'Swipe Cards', available: true },
-  { id: 'bubble', emoji: '🫧', name: 'Bubble Pop', available: true }
+  { id: 'bubble', emoji: '🫧', name: 'Bubble Pop', available: true },
+  
+  // Tense & Grammar Games
+  { id: 'shapeBuilder', emoji: '🧩', name: 'Shape Builder', available: true, isGrammar: true },
+  { id: 'timelineDetective', emoji: '🕵️', name: 'Timeline Detective', available: true, isGrammar: true },
+  { id: 'photobomb', emoji: '📸', name: 'Photobomb', available: true, isGrammar: true },
+  { id: 'marioTense', emoji: '🍄', name: 'Tense Runner', available: true, isGrammar: true },
+  { id: 'tenseSignal', emoji: '🔍', name: 'Signal Spotter', available: true, isGrammar: true },
+  { id: 'endlessRunner', emoji: '🏃', name: 'Word Runner', available: true, isGrammar: true }
 ];
 
 export const DEFAULT_PREFERENCES = {

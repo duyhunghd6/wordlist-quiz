@@ -2362,3 +2362,113 @@
 }
 .signal-option.wrong .signal-icon { color: var(--color-danger); font-size: 20px; }
 .signal-text { white-space: nowrap; }
+
+/* ═══════════════════════════════════════════════════════════ */
+/* Application Specific Missing Styles (Game Selection)      */
+/* ═══════════════════════════════════════════════════════════ */
+
+/* Game Selection Section Titles */
+.gs-section-title {
+    font-size: 0.85rem;
+    font-weight: 800;
+    color: var(--color-text-primary);
+    margin: 0 0 4px;
+    font-family: var(--font-family);
+}
+
+/* Unit Pills */
+.gs-units-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+}
+.gs-select-all {
+    background: white;
+    border: 1px solid var(--color-border-default);
+    border-radius: 12px;
+    padding: 2px 8px;
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: var(--color-text-secondary);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+    font-family: var(--font-family);
+    transition: all 0.2s;
+}
+.gs-select-all:hover {
+    background: #F1F5F9;
+    color: var(--color-text-primary);
+}
+.gs-units-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+.gs-unit-pill {
+    background: white;
+    border: 2px solid var(--color-border-default);
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: 800;
+    font-family: var(--font-family);
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    transition: all 0.2s;
+    padding: 0;
+}
+.gs-unit-pill:hover {
+    border-color: var(--color-info);
+    transform: scale(1.1);
+}
+.gs-unit-pill.active {
+    background: var(--color-success);
+    border-color: var(--color-success);
+    color: white;
+}
+
+/* Tense & Grammar Game Buttons */
+.gs-tense-games {
+    display: flex;
+    gap: 8px;
+}
+.gs-tense-btn {
+    flex: 1;
+    background: white;
+    border: 2px solid;
+    border-radius: 20px;
+    padding: 8px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    font-weight: 800;
+    font-size: 0.65rem;
+    font-family: var(--font-family);
+    color: var(--color-text-primary);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.gs-tense-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.gs-tense-btn:active {
+    transform: translateY(0);
+}
+.gs-tense-icon {
+    font-size: 16px;
+    display: flex;
+}
+.border-blue { border-color: #3B82F6; }
+.border-yellow { border-color: #FBBF24; color: #B45309; }
+.border-pink { border-color: #EC4899; }
+.border-green { border-color: #22C55E; }
+.border-purple { border-color: #A855F7; }
