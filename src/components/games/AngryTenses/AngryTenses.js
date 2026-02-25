@@ -3,56 +3,91 @@ import { Home } from "lucide-react";
 import Matter from "matter-js";
 import "./AngryTenses.css";
 
-const SAMPLE_SENTENCES = [
-  {
-    before: "I",
-    after: "to the park yesterday.",
-    options: ["go", "went", "gone", "going"],
-    correct: "went",
-  },
-  {
-    before: "She",
-    after: "her homework every day.",
-    options: ["do", "does", "did", "doing"],
-    correct: "does",
-  },
-  {
-    before: "They",
-    after: "playing football right now.",
-    options: ["is", "are", "was", "were"],
-    correct: "are",
-  },
-  {
-    before: "He",
-    after: "a book last night.",
-    options: ["read", "reads", "reading", "readed"],
-    correct: "read",
-  },
-  {
-    before: "We",
-    after: "to school by bus.",
-    options: ["go", "goes", "went", "going"],
-    correct: "go",
-  },
-  {
-    before: "The cat",
-    after: "on the mat.",
-    options: ["sit", "sits", "sat", "sitting"],
-    correct: "sits",
-  },
-  {
-    before: "I",
-    after: "already eaten lunch.",
-    options: ["have", "has", "had", "having"],
-    correct: "have",
-  },
-  {
-    before: "She",
-    after: "to music every morning.",
-    options: ["listen", "listens", "listened", "listening"],
-    correct: "listens",
-  },
-];
+/**
+ * Convert a TOON sentence entry into Angry Tenses question format.
+ * Uses verb_choices (pipe-delimited) when available, falls back to
+ * extracting from correct_sentence vs wrong_sentence.
+ */
+function toonToQuestion(entry) {
+  if (!entry || !entry.correct_sentence) return null;
+
+  // Parse verb_choices if available (e.g. "played|play|playing|plays")
+  if (entry.verb_choices && entry.verb_choices.trim()) {
+    const choices = entry.verb_choices.split('|').map(c => c.trim()).filter(Boolean);
+    if (choices.length >= 2) {
+      const correct = choices[0]; // First choice is always correct
+      // Find the verb in the sentence and split around it
+      const sentence = entry.correct_sentence;
+      const idx = sentence.toLowerCase().indexOf(correct.toLowerCase());
+      if (idx >= 0) {
+        const before = sentence.substring(0, idx).trim();
+        const after = sentence.substring(idx + correct.length).trim();
+        return {
+          before,
+          after,
+          options: [...choices].sort(() => Math.random() - 0.5),
+          correct,
+          tense: entry.tense || '',
+          targetWord: entry.id,
+        };
+      }
+    }
+  }
+
+  // Fallback: compare correct_sentence vs wrong_sentence to find the differing word
+  if (entry.wrong_sentence) {
+    const correctWords = entry.correct_sentence.split(' ');
+    const wrongWords = entry.wrong_sentence.split(' ');
+    for (let i = 0; i < correctWords.length; i++) {
+      if (correctWords[i] !== wrongWords[i]) {
+        const correct = correctWords[i].replace(/[.,!?]/g, '');
+        const wrong = wrongWords[i].replace(/[.,!?]/g, '');
+        const before = correctWords.slice(0, i).join(' ');
+        const after = correctWords.slice(i + 1).join(' ');
+        return {
+          before,
+          after,
+          options: [correct, wrong, correct + 'ing', correct + 'ed'].slice(0, 4)
+            .sort(() => Math.random() - 0.5),
+          correct,
+          tense: entry.tense || '',
+          targetWord: entry.id,
+        };
+      }
+    }
+  }
+  return null;
+}
+
+/**
+ * Weighted SRS shuffle — prioritize questions the student got wrong more often.
+ * Returns `count` questions from the pool, avoiding recent repeats.
+ */
+function pickWeightedQuestions(pool, count) {
+  // Load error history from localStorage for SRS weighting
+  const errorData = JSON.parse(localStorage.getItem('angryTensesErrors') || '{}');
+  const recent = [];
+  const result = [];
+
+  for (let i = 0; i < count && pool.length > 0; i++) {
+    // Filter out recently picked
+    let available = pool.filter(q => !recent.includes(q.id));
+    if (available.length === 0) available = pool;
+
+    // Build weighted pool — missed questions get 5x weight
+    const weighted = [];
+    available.forEach(q => {
+      const mistakes = errorData[q.id] || 0;
+      const weight = 1 + mistakes * 5;
+      for (let w = 0; w < weight; w++) weighted.push(q);
+    });
+
+    const picked = weighted[Math.floor(Math.random() * weighted.length)];
+    result.push(picked);
+    recent.push(picked.id);
+  }
+  return result;
+}
 
 const AngryTensesGame = ({
   words,
@@ -80,21 +115,30 @@ const AngryTensesGame = ({
   const timerRef = useRef(null);
   const viewportRef = useRef(null);
   const lastTapRef = useRef(0);
+  const wrongAnswersRef = useRef([]);
 
   const numQuestions = Math.min(words?.length || 5, 10);
 
   useEffect(() => {
-    const generated = [];
-    for (let i = 0; i < numQuestions; i++) {
-      const template = SAMPLE_SENTENCES[i % SAMPLE_SENTENCES.length];
-      generated.push({
-        ...template,
-        targetWord: words?.[i]?.word || `q${i}`,
-        options: [...template.options].sort(() => Math.random() - 0.5),
-      });
+    // Use centralized TOON database with weighted SRS shuffle
+    if (tenseSentences && tenseSentences.length > 0) {
+      const picked = pickWeightedQuestions(tenseSentences, numQuestions);
+      const generated = picked.map(entry => toonToQuestion(entry)).filter(Boolean);
+      if (generated.length > 0) {
+        setQuestions(generated);
+        return;
+      }
     }
-    setQuestions(generated);
-  }, [words, numQuestions]);
+    // Fallback: generate simple questions from words if no TOON data
+    const fallback = (words || []).slice(0, numQuestions).map((w, i) => ({
+      before: 'Choose the correct word:',
+      after: '',
+      options: [w.word, w.word + 's', w.word + 'ed', w.word + 'ing'].sort(() => Math.random() - 0.5),
+      correct: w.word,
+      targetWord: w.word || `q${i}`,
+    }));
+    setQuestions(fallback);
+  }, [words, tenseSentences, numQuestions]);
 
   // Keyboard handler for scroll picker
   useEffect(() => {
@@ -192,6 +236,18 @@ const AngryTensesGame = ({
     if (correct) {
       setCorrectCount((prev) => prev + 1);
       setScore((prev) => prev + 100);
+    } else {
+      // Track wrong answers for reporting + SRS persistence
+      wrongAnswersRef.current.push({
+        question: `${q.before} ___ ${q.after}`,
+        selected: selectedWord,
+        correct: q.correct,
+        targetWord: q.targetWord,
+      });
+      // Persist error weight for future SRS sessions
+      const errorData = JSON.parse(localStorage.getItem('angryTensesErrors') || '{}');
+      errorData[q.targetWord] = (errorData[q.targetWord] || 0) + 1;
+      localStorage.setItem('angryTensesErrors', JSON.stringify(errorData));
     }
 
     if (onAnswer && q.targetWord) {
@@ -242,11 +298,15 @@ const AngryTensesGame = ({
     setGameOver(true);
     cleanupPhysics();
     if (onComplete) {
+      const totalQ = questions.length;
+      // Use ref for wrong answers since state may be stale in closures
+      const wrongArr = wrongAnswersRef.current;
+      const correctFinal = totalQ - wrongArr.length;
       onComplete({
         gameId: "angryTenses",
-        totalQuestions: questions.length,
-        correctAnswers: correctCount,
-        wrongAnswers: [],
+        totalQuestions: totalQ,
+        correctAnswers: correctFinal,
+        wrongAnswers: wrongArr,
         averageResponseTime: 0,
       });
     }
@@ -298,19 +358,19 @@ const AngryTensesGame = ({
       const birdSize = 45;
       const pigSize = 45;
 
-      // Bird body — extra-large hitbox (60px radius) for very easy grabbing
-      let currentBird = Bodies.circle(slingX, slingY, 60, {
+      // Bird body — hitbox matches visual sprite size
+      let currentBird = Bodies.circle(slingX, slingY, 30, {
         restitution: 0.5,
         density: 0.004,
         label: "bird",
-        render: { opacity: 0 },
+        render: { visible: false },
       });
 
       const elastic = Constraint.create({
         pointA: { x: slingX, y: slingY },
         bodyB: currentBird,
-        stiffness: 0.08,
-        damping: 0.01,
+        stiffness: 0.12,
+        damping: 0.02,
         render: { strokeStyle: "#5C2E0A", lineWidth: 6 },
       });
 
@@ -452,7 +512,7 @@ const AngryTensesGame = ({
         if (!isDragging) return;
         e.preventDefault();
         const pos = getPointerPos(e);
-        const maxDist = 60;
+        const maxDist = 100;
         const dx = pos.x - slingX;
         const dy = pos.y - slingY;
         const dist = Math.sqrt(dx * dx + dy * dy);
@@ -502,7 +562,7 @@ const AngryTensesGame = ({
         });
 
         // Firing detection — bird released from drag and moving fast
-        if (!isFired && !isDragging && currentBird.speed > 1.5) {
+        if (!isFired && !isDragging && currentBird.speed > 0.8) {
           Composite.remove(world, elastic);
           isFired = true;
           birdEl.classList.remove("at-bird-pulse");
