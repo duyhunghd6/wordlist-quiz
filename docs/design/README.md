@@ -73,4 +73,22 @@ If a bug needs fixing or a feature needs building, follow this flow:
 - **Stop and Re-Plan**: If you find yourself writing lots of `style={{ ... }}` inline React definitions, STOP. You should either be using an existing `.card` or `.dash-section` class, or extracting those styles into `src/layouts.css`.
 - **Icons**: We use the `lucide-react` library for consistent SVG icons instead of raw SVGs or images.
 
+## 🏷️ Design System ID Registry
+
+Every component, screen, and layout in the showcase has a unique `id` attribute for programmatic referencing and consistency. IDs follow the convention:
+
+```
+ds-{category}-{name}
+```
+
+| Prefix    | Category     |
+| --------- | ------------ |
+| `ds-scr-` | Full Screens |
+| `ds-cmp-` | Components   |
+| `ds-lay-` | Layouts      |
+| `ds-fnd-` | Foundation   |
+| `ds-sys-` | Systems      |
+
+The complete registry of **124 IDs** is maintained in the Agent Skill: `.agents/skills/design-system/SKILL.md`. When adding new elements, always assign an ID and update the registry.
+
 _Happy building! Maintain the design standard and keep the UI premium._

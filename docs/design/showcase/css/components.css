@@ -26,6 +26,13 @@
     width: auto;
     max-width: 100%;
   }
+  /* Allow dropdown to overflow its container */
+  #ds-cmp-dropdown {
+    overflow: visible;
+  }
+  #ds-cmp-dropdown .flex-row {
+    overflow: visible;
+  }
 }
 
 .component-block h3 {
@@ -53,6 +60,16 @@
 .vertical-stack {
   flex-direction: column;
   width: 300px;
+}
+
+/* Notification card centered within its container */
+#ds-cmp-notif-card .vertical-stack {
+  width: 100%;
+}
+
+/* Sentence card: auto width to fit inside grid cell */
+#ds-cmp-sentence-card .vertical-stack {
+  width: 100%;
 }
 
 /* Button Component (Kids Upgrade) */
@@ -2844,7 +2861,8 @@
 /* 52. Flippable Flashcard Container */
 .flashcard-container {
   background-color: transparent;
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   height: 200px;
   perspective: 1000px;
 }
@@ -2913,11 +2931,12 @@
   background: white;
   border: 3px solid var(--color-border-default);
   border-radius: var(--radius-xl);
-  padding: var(--space-lg) var(--space-xl);
+  padding: var(--space-md) var(--space-lg);
   box-shadow: 0 4px 0 var(--color-border-default);
   width: 100%;
-  max-width: 500px;
+  max-width: 100%;
   transition: border-color 0.3s;
+  box-sizing: border-box;
 }
 .sentence-card.revealed {
   border-color: var(--color-success);
@@ -2932,10 +2951,10 @@
   line-height: 1.6;
 }
 .word-token {
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 700;
   color: var(--color-text-primary);
-  padding: 4px 8px;
+  padding: 3px 5px;
   border-radius: var(--radius-md);
   transition: all 0.2s;
 }
