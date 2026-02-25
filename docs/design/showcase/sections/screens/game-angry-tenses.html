@@ -1,0 +1,191 @@
+<link rel="stylesheet" href="css/angry-tenses.css" />
+
+<style>
+/* Landscape Phone Frame */
+.screen-mockup-landscape {
+    width: 667px;
+    height: 375px;
+    border: 12px solid #1E293B;
+    border-radius: 36px;
+    background: #87CEEB;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    font-family: var(--font-family);
+}
+
+/* Scale the 1000x600 game content to fit inside 667x375 phone */
+.angry-tenses-wrapper {
+    transform: scale(0.625);
+    transform-origin: top left;
+    width: 1000px !important;
+    height: 600px !important;
+}
+</style>
+
+<div class="section-header">
+  <div class="header-content">
+    <h2 class="section-title">Screen: Angry Tenses Game</h2>
+    <p class="section-description">A physics-based slinger game where players shoot grammatical birds at the correct word target. Displayed in landscape phone orientation.</p>
+  </div>
+  <div class="header-actions">
+    <button class="btn btn-primary" onclick="initAngryPhysics()">
+      <i class="ph ph-arrows-clockwise"></i> Restart Game
+    </button>
+  </div>
+</div>
+
+<div class="component-showcase" style="align-items: center; padding: 40px 0;">
+  <!-- Landscape Phone Frame -->
+  <div class="screen-mockup-landscape">
+    <!-- Game Container -->
+    <div class="angry-tenses-wrapper" id="angry-game">
+      
+      <!-- Shared Background elements -->
+      <div class="angry-sky">
+        <div class="clouds"></div>
+      </div>
+      <div class="angry-ground"></div>
+
+      <!-- SCREEN 1: GRAMMAR QUESTION -->
+      <div class="angry-screen-overlay" id="screen-grammar" style="position: absolute; top:0; left:0; width:100%; height:100%; z-index: 100; display: flex; align-items: center; justify-content: center; background: rgba(255, 255, 255, 0.2); backdrop-filter: blur(4px);">
+        <div class="angry-question-box compact-overlay">
+          <h2>Complete the sentence to get a bird!</h2>
+          <div class="angry-sentence-display">
+            <span>I</span>
+            
+            <div class="angry-scroll-picker inline-picker">
+              <div class="scroll-arrow up">▲</div>
+              <div class="picker-viewport" id="picker-viewport">
+                <div class="picker-track" id="picker-track">
+                  <!-- Items loaded via JS -->
+                  <div class="picker-item" data-val="go" data-correct="false">go</div>
+                  <div class="picker-item" data-val="went" data-correct="true">went</div>
+                  <div class="picker-item" data-val="gone" data-correct="false">gone</div>
+                  <div class="picker-item" data-val="going" data-correct="false">going</div>
+                </div>
+              </div>
+              <div class="picker-highlight-bar"></div>
+              <div class="scroll-arrow down">▼</div>
+            </div>
+            
+            <span>to the park yesterday.</span>
+          </div>
+          
+          <div class="picker-instructions">
+            Scroll, drag, or tap. <br/> <b>Double-Tap</b> or <b>Enter</b> to confirm.
+          </div>
+        </div>
+      </div>
+
+      <!-- SCREEN 2: PHYSICS SHOOTING -->
+      <div id="screen-physics" style="position: absolute; top:0; left:0; width:100%; height:100%; opacity: 0; pointer-events: none; transition: opacity 0.5s;">
+        <!-- Timer HUD -->
+        <div class="angry-timer-container">
+          <div class="angry-timer-bg">
+             <div class="angry-timer-bar" id="timer-bar"></div>
+          </div>
+          <div class="angry-timer-text" id="timer-text">30s</div>
+        </div>
+
+        <!-- Top HUD -->
+        <div class="angry-hud">
+          <div class="angry-score-container">
+            <div class="angry-score-label">SCORE</div>
+            <div class="angry-score-value" id="score">0</div>
+          </div>
+        </div>
+        <div class="angry-lives">❤️❤️❤️</div>
+
+        <!-- Active Sentence Board -->
+        <div class="angry-sentence-board" id="angry-sentence" style="display: none;">
+          I <span class="angry-blank">_______</span> to the park yesterday.
+        </div>
+
+        <!-- Physics Drawing Area -->
+        <div id="physics-container" style="position: absolute; top:0; left:0; width:100%; height:100%; overflow:hidden;">
+          
+          <!-- Visual Slingshot Back -->
+          <div class="slingshot-wrapper" id="slingshot-back">
+            <div class="sling-wood"></div>
+            <div class="sling-fork-back"></div>
+          </div>
+          
+          <!-- DOM Entities Synced with Physics -->
+          <div class="entities-layer" id="dom-entities">
+            <!-- Bird -->
+            <div id="bird" class="phys-box grammar-bird"></div>
+            <!-- Bird Queue (waiting birds) -->
+            <div id="bird-q1" class="phys-box grammar-bird" style="transform:translate3d(30px, 500px, 0); z-index:4;"></div>
+            <div id="bird-q2" class="phys-box grammar-bird" style="transform:translate3d(80px, 500px, 0); z-index:4;"></div>
+
+            <!-- Structure Layout (4 Targets) -->
+            <!-- Target 1: Incorrect -->
+            <div id="pig-1" class="phys-box target-pig">
+              <div class="target-word">go</div>
+            </div>
+            
+            <!-- Target 2: Correct -->
+            <div id="pig-2" class="phys-box target-pig">
+              <div class="target-word" style="background:#defade">went</div>
+            </div>
+
+            <!-- Target 3: Incorrect -->
+            <div id="pig-3" class="phys-box target-pig">
+              <div class="target-word">gone</div>
+            </div>
+            
+            <!-- Target 4: Incorrect -->
+            <div id="pig-4" class="phys-box target-pig">
+              <div class="target-word">going</div>
+            </div>
+
+            <!-- Structure Planks -->
+            <div id="plank-1" class="phys-box wood-plat"></div>
+            <div id="plank-2" class="phys-box wood-plat"></div>
+            <div id="plank-3" class="phys-box wood-plat"></div>
+            
+            <!-- Floors -->
+            <div id="floor-1" class="phys-box wood-plat"></div>
+            <div id="floor-2" class="phys-box wood-plat"></div>
+            
+            <div id="plank-4" class="phys-box wood-plat"></div>
+            <div id="plank-5" class="phys-box wood-plat"></div>
+            
+            <div id="floor-3" class="phys-box wood-plat"></div>
+          </div>
+
+          <!-- Visual Slingshot Front -->
+          <div class="slingshot-wrapper" id="slingshot-front">
+            <div class="sling-fork-front"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SCREEN 3: GAME OVER / WIN -->
+      <div class="angry-screen-overlay" id="screen-end" style="position: absolute; top:0; left:0; width:100%; height:100%; z-index: 200; display: none; align-items: center; justify-content: center; background: rgba(0, 0, 0, 0.7); backdrop-filter: blur(4px);">
+        <div class="angry-question-box compact-overlay" style="text-align: center; max-width: 400px;">
+          <h1 id="end-title" style="color: #E67E22; font-size: 3rem; margin-bottom: 10px; line-height: 1;">Level Complete!</h1>
+          <h2 id="end-score" style="font-size: 2rem; color: #301A0F; margin-bottom: 25px;">Final Score: <span style="color:#4CD964">1000</span></h2>
+          <button class="btn btn-primary" onclick="initAngryPhysics()" style="width: 100%; font-size: 1.5rem; justify-content: center;">
+            <i class="ph-bold ph-arrows-clockwise"></i> Play Again!
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card mt-xl">
+  <div class="card-header">
+    <h3 class="card-title">Prototype Features</h3>
+  </div>
+  <div class="card-content">
+    <ul class="design-list">
+      <li><strong>4 Targets:</strong> Players now have to choose between 4 specific verb/preposition choices by hitting the respective grammatical pig. Hitting the correct one updates the sentence board and increases the score.</li>
+      <li><strong>Timed Gameplay:</strong> A robust CSS/JS countdown timer runs automatically, applying urgency to the question reading and aiming.</li>
+      <li><strong>Blank Filling:</strong> Once a target is destroyed, the blank line is vividly updated with the player's selected word, showing whether it is correct or incorrect.</li>
+    </ul>
+  </div>
+</div>

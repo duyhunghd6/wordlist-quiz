@@ -29,7 +29,8 @@ export const GAMES = [
   { id: 'photobomb', emoji: '📸', name: 'Photobomb', available: true, isGrammar: true },
   { id: 'marioTense', emoji: '🍄', name: 'Tense Runner', available: true, isGrammar: true },
   { id: 'tenseSignal', emoji: '🔍', name: 'Signal Spotter', available: true, isGrammar: true },
-  { id: 'endlessRunner', emoji: '🏃', name: 'Word Runner', available: true, isGrammar: true }
+  { id: 'endlessRunner', emoji: '🏃', name: 'Word Runner', available: true, isGrammar: true },
+  { id: 'angryTenses', emoji: '😠', name: 'Angry Tenses', available: true, isGrammar: true }
 ];
 
 export const DEFAULT_PREFERENCES = {

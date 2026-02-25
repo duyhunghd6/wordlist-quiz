@@ -1,251 +1,521 @@
-[250]{id,tense,level,correct_sentence,wrong_sentence,pedagogical_focus,vietnamese_translation}:
-  pc1,Present Continuous,Beginner,She is playing football with her friends.,She are playing football with her friends.,Subject-verb agreement (is vs are),Cô ấy đang chơi bóng đá với bạn bè.
-  pc2,Present Continuous,Beginner,They are watching a movie in the living room.,They is watching a movie in the living room.,Subject-verb agreement (are vs is),Họ đang xem phim trong phòng khách.
-  pc3,Present Continuous,Beginner,I am reading an interesting book right now.,I are reading an interesting book right now.,Subject-verb agreement (am vs are),Tôi đang đọc một cuốn sách thú vị ngay bây giờ.
-  pc4,Present Continuous,Beginner,The dog is sleeping under the table.,The dog am sleeping under the table.,Subject-verb agreement (am vs is),Con chó đang ngủ dưới gầm bàn.
-  pc5,Present Continuous,Beginner,We are swimming in the ocean today.,We is swimming in the ocean today.,Subject-verb agreement (are vs is),Hôm nay chúng tôi đang bơi ở biển.
-  pc6,Present Continuous,Beginner,The baby is crying because he is hungry.,The baby are crying because he is hungry.,Subject-verb agreement,Đứa bé đang khóc vì đói.
-  pc7,Present Continuous,Beginner,Look! The birds are flying very high.,Look! The birds is flying very high.,Plural subject with are,Nhìn kìa! Những con chim đang bay rất cao.
-  pc8,Present Continuous,Beginner,My brother is doing his homework in his room.,My brother am doing his homework in his room.,He/is pairing,Anh trai tôi đang làm bài tập trong phòng.
-  pc9,Present Continuous,Beginner,I am learning English on my computer.,I is learning English on my computer.,I/am pairing,Tôi đang học tiếng Anh trên máy tính.
-  pc10,Present Continuous,Beginner,The sun is shining brightly today.,The sun are shining brightly today.,Singular noun with is,Hôm nay mặt trời rọi sáng chói chang.
-  pc11,Present Continuous,Beginner,Are you listening to the teacher?,Is you listening to the teacher?,Question formation auxiliary,Bạn có đang nghe giáo viên nói không?
-  pc12,Present Continuous,Beginner,What is she cooking in the kitchen?,What are she cooking in the kitchen?,WH-question auxiliary,Cô ấy đang nấu gì trong bếp vậy?
-  pc13,Present Continuous,Beginner,The cars are moving fast on the highway.,The cars is moving fast on the highway.,Plural cars with are,Những chiếc ô tô đang di chuyển nhanh trên đường cao tốc.
-  pc14,Present Continuous,Beginner,My parents are talking in the garden.,My parents is talking in the garden.,Plural parents with are,Bố mẹ tôi đang nói chuyện trong vườn.
-  pc15,Present Continuous,Beginner,She is wearing a beautiful red dress.,She are wearing a beautiful red dress.,She/is pairing,Cô ấy đang mặc một chiếc váy đỏ tuyệt đẹp.
-  pc16,Present Continuous,Intermediate,The students are writing their test right now.,The students is writing their test right now.,Plural students with are,Các học sinh đang làm bài kiểm tra ngay bây giờ.
-  pc17,Present Continuous,Intermediate,He is drinking water because it's hot.,He am drinking water because it's hot.,He/is pairing,Anh ấy đang uống nước vì trời nóng.
-  pc18,Present Continuous,Intermediate,We are planning a trip to the beach.,We am planning a trip to the beach.,We/are pairing,Chúng tôi đang lên kế hoạch cho một chuyến đi biển.
-  pc19,Present Continuous,Intermediate,They aren't playing video games anymore.,They isn't playing video games anymore.,Negative plural auxiliary,Họ không chơi trò chơi điện tử nữa.
-  pc20,Present Continuous,Intermediate,Isn't he coming to the party tonight?,Aren't he coming to the party tonight?,Negative question auxiliary,Anh ấy sẽ không đến bữa tiệc tối nay sao?
-  pc21,Present Continuous,Intermediate,My sister is painting a picture.,My sister are painting a picture.,Subject-verb agreement,Chị gái tôi đang vẽ một bức tranh.
-  pc22,Present Continuous,Intermediate,My friends are running in the park.,My friends is running in the park.,Plural subject agreement,Bạn bè tôi đang chạy trong công viên.
-  pc23,Present Continuous,Intermediate,My sister is eating lunch.,My sister are eating lunch.,Subject-verb agreement,Chị gái tôi đang ăn trưa.
-  pc24,Present Continuous,Intermediate,The children are listening to music.,The children is listening to music.,Plural subject agreement,Bọn trẻ đang nghe nhạc.
-  pc25,Present Continuous,Intermediate,The cat is painting a picture.,The cat are painting a picture.,Subject-verb agreement,Con mèo đang vẽ một bức tranh.
-  pc26,Present Continuous,Intermediate,The players are listening to music.,The players is listening to music.,Plural subject agreement,Các cầu thủ đang nghe nhạc.
-  pc27,Present Continuous,Intermediate,The cat is eating lunch.,The cat are eating lunch.,Subject-verb agreement,Con mèo đang ăn trưa.
-  pc28,Present Continuous,Intermediate,The children are eating lunch.,The children is eating lunch.,Plural subject agreement,Bọn trẻ đang ăn trưa.
-  pc29,Present Continuous,Intermediate,The cat is listening to music.,The cat are listening to music.,Subject-verb agreement,Con mèo đang nghe nhạc.
-  pc30,Present Continuous,Intermediate,My friends are running in the park.,My friends is running in the park.,Plural subject agreement,Bạn bè tôi đang chạy trong công viên.
-  pc31,Present Continuous,Intermediate,He is listening to music.,He am listening to music.,Subject-verb agreement,Anh ấy đang nghe nhạc.
-  pc32,Present Continuous,Intermediate,The children are listening to music.,The children is listening to music.,Plural subject agreement,Bọn trẻ đang nghe nhạc.
-  pc33,Present Continuous,Intermediate,He is running in the park.,He am running in the park.,Subject-verb agreement,Anh ấy đang chạy trong công viên.
-  pc34,Present Continuous,Intermediate,My friends are painting a picture.,My friends is painting a picture.,Plural subject agreement,Bạn bè tôi đang vẽ một bức tranh.
-  pc35,Present Continuous,Intermediate,He is running in the park.,He am running in the park.,Subject-verb agreement,Anh ấy đang chạy trong công viên.
-  pc36,Present Continuous,Advanced,My friends are painting a picture.,My friends is painting a picture.,Plural subject agreement,Bạn bè tôi đang vẽ một bức tranh.
-  pc37,Present Continuous,Advanced,The machine is painting a picture.,The machine are painting a picture.,Subject-verb agreement,Cái máy đang vẽ một bức tranh.
-  pc38,Present Continuous,Advanced,The players are running in the park.,The players is running in the park.,Plural subject agreement,Các cầu thủ đang chạy trong công viên.
-  pc39,Present Continuous,Advanced,The machine is listening to music.,The machine are listening to music.,Subject-verb agreement,Cái máy đang nghe nhạc.
-  pc40,Present Continuous,Advanced,The players are listening to music.,The players is listening to music.,Plural subject agreement,Các cầu thủ đang nghe nhạc.
-  pc41,Present Continuous,Advanced,The cat is listening to music.,The cat are listening to music.,Subject-verb agreement,Con mèo đang nghe nhạc.
-  pc42,Present Continuous,Advanced,The children are painting a picture.,The children is painting a picture.,Plural subject agreement,Bọn trẻ đang vẽ một bức tranh.
-  pc43,Present Continuous,Advanced,My sister is listening to music.,My sister are listening to music.,Subject-verb agreement,Chị gái tôi đang nghe nhạc.
-  pc44,Present Continuous,Advanced,The children are listening to music.,The children is listening to music.,Plural subject agreement,Bọn trẻ đang nghe nhạc.
-  pc45,Present Continuous,Advanced,The cat is eating lunch.,The cat are eating lunch.,Subject-verb agreement,Con mèo đang ăn trưa.
-  pc46,Present Continuous,Advanced,My friends are eating lunch.,My friends is eating lunch.,Plural subject agreement,Bạn bè tôi đang ăn trưa.
-  pc47,Present Continuous,Advanced,He is running in the park.,He am running in the park.,Subject-verb agreement,Anh ấy đang chạy trong công viên.
-  pc48,Present Continuous,Advanced,The players are eating lunch.,The players is eating lunch.,Plural subject agreement,Các cầu thủ đang ăn trưa.
-  pc49,Present Continuous,Advanced,My sister is eating lunch.,My sister are eating lunch.,Subject-verb agreement,Chị gái tôi đang ăn trưa.
-  pc50,Present Continuous,Advanced,The players are listening to music.,The players is listening to music.,Plural subject agreement,Các cầu thủ đang nghe nhạc.
-  ps1,Past Simple,Beginner,They walked to the school yesterday.,They walk to the school yesterday.,Past tense verb suffix (-ed) missing with time signal,Họ đã đi bộ đến trường ngày hôm qua.
-  ps2,Past Simple,Beginner,She visited her grandmother last week.,She visits her grandmother last week.,Present Simple vs Past Simple with past time signal,Cô ấy đã đến thăm bà của mình vào tuần trước.
-  ps3,Past Simple,Beginner,I ate a delicious pizza for dinner.,I eated a delicious pizza for dinner.,Irregular verb past form (ate vs eated),Tôi đã ăn một chiếc bánh pizza ngon cho bữa tối.
-  ps4,Past Simple,Beginner,He bought a new bike on his birthday.,He buyed a new bike on his birthday.,Irregular verb past form (bought vs buyed),Anh ấy đã mua một chiếc xe đạp mới vào ngày sinh nhật của mình.
-  ps5,Past Simple,Beginner,We saw a shooting star in the sky.,We seen a shooting star in the sky.,Past simple (saw) vs Past participle (seen),Chúng tôi đã nhìn thấy một ngôi sao băng trên bầu trời.
-  ps6,Past Simple,Beginner,I played soccer with my friends on Sunday.,I play soccer with my friends on Sunday.,Missing -ed past tense suffix,Tôi đã chơi bóng đá với bạn bè vào Chủ Nhật.
-  ps7,Past Simple,Beginner,She jumped over the puddle.,She jump over the puddle.,Missing -ed past tense suffix,Cô ấy đã nhảy qua vũng nước.
-  ps8,Past Simple,Beginner,The bird flew away when I got close.,The bird flied away when I got close.,Irregular verb past form (flew vs flied),Con chim bay đi khi tôi đến gần.
-  ps9,Past Simple,Beginner,They drank all the orange juice.,They drinked all the orange juice.,Irregular verb past form (drank vs drinked),Họ đã uống hết nước cam.
-  ps10,Past Simple,Beginner,We watched a funny movie last night.,We watchs a funny movie last night.,Present tense distractor on past time signal,Tối qua chúng tôi đã xem một bộ phim hài.
-  ps11,Past Simple,Beginner,She didn't know the answer to the question.,She didn't knew the answer to the question.,Did not + bare infinitive rule,Cô ấy không biết câu trả lời cho câu hỏi đó.
-  ps12,Past Simple,Beginner,Did you go to the store earlier?,Did you went to the store earlier?,Did + bare infinitive rule in questions,Bạn đã đến cửa hàng lúc nãy à?
-  ps13,Past Simple,Beginner,The phone rang while I was sleeping.,The phone ringed while I was sleeping.,Irregular verb past form (rang vs ringed),Điện thoại đã reo trong khi tôi đang ngủ.
-  ps14,Past Simple,Beginner,He ran very fast to catch the bus.,He runned very fast to catch the bus.,Irregular verb past form (ran vs runned),Anh ấy đã chạy rất nhanh để bắt xe buýt.
-  ps15,Past Simple,Beginner,I found a shiny coin on the sidewalk.,I finded a shiny coin on the sidewalk.,Irregular verb past form (found vs finded),Tôi đã tìm thấy một đồng xu sáng bóng trên vỉa hè.
-  ps16,Past Simple,Intermediate,The teacher smiled at the class.,The teacher smile at the class.,Missing past tense suffix (-ed),Giáo viên đã mỉm cười với cả lớp.
-  ps17,Past Simple,Intermediate,They didn't finish their lunch.,They didn't finished their lunch.,Did not + bare infinitive,Họ đã không ăn hết bữa trưa của mình.
-  ps18,Past Simple,Intermediate,She took her dog for a long walk.,She taked her dog for a long walk.,Irregular verb past form (took vs taked),Cô ấy đã đưa chó đi dạo một đoạn dài.
-  ps19,Past Simple,Intermediate,We painted a picture in art class.,We painting a picture in art class.,Past simple vs continuous participle mix,Chúng tôi đã vẽ một bức tranh trong giờ mỹ thuật.
-  ps20,Past Simple,Intermediate,What did you do during the summer break?,What did you did during the summer break?,Did + bare infinitive in WH-questions,Bạn đã làm gì trong kỳ nghỉ hè?
-  ps21,Past Simple,Intermediate,They slept all day.,They sleeped all day.,Past tense of sleep,Họ đã ngủ cả ngày.
-  ps22,Past Simple,Intermediate,We studied hard.,We study hard.,Missing -ed suffix,Chúng tôi đã học chăm chỉ.
-  ps23,Past Simple,Intermediate,She went to the zoo.,She goed to the zoo.,Past tense of go,Cô ấy đã đi sở thú.
-  ps24,Past Simple,Intermediate,He studied hard.,He study hard.,Missing -ed suffix,Anh ấy đã học chăm chỉ.
-  ps25,Past Simple,Intermediate,He went to the zoo.,He goed to the zoo.,Past tense of go,Anh ấy đã đi sở thú.
-  ps26,Past Simple,Intermediate,They washed the car.,They washes the car.,Present distractor,Họ đã rửa ô tô.
-  ps27,Past Simple,Intermediate,She slept all day.,She sleeped all day.,Past tense of sleep,Cô ấy đã ngủ cả ngày.
-  ps28,Past Simple,Intermediate,He cleaned the room.,He clean the room.,Missing -ed suffix,Anh ấy đã dọn dẹp phòng.
-  ps29,Past Simple,Intermediate,They taught a lesson.,They teached a lesson.,Past tense of teach,Họ đã dạy một bài học.
-  ps30,Past Simple,Intermediate,We washed the car.,We washes the car.,Present distractor,Chúng tôi đã rửa ô tô.
-  ps31,Past Simple,Intermediate,We slept all day.,We sleeped all day.,Past tense of sleep,Chúng tôi đã ngủ cả ngày.
-  ps32,Past Simple,Intermediate,She washed the car.,She washes the car.,Present distractor,Cô ấy đã rửa ô tô.
-  ps33,Past Simple,Intermediate,He caught a fish.,He catched a fish.,Past tense of catch,Anh ấy đã bắt được một con cá.
-  ps34,Past Simple,Intermediate,They cleaned the room.,They clean the room.,Missing -ed suffix,Họ đã dọn dẹp phòng.
-  ps35,Past Simple,Intermediate,They caught a fish.,They catched a fish.,Past tense of catch,Họ đã bắt được một con cá.
-  ps36,Past Simple,Advanced,She washed the car.,She washes the car.,Present distractor,Cô ấy đã rửa ô tô.
-  ps37,Past Simple,Advanced,They taught a lesson.,They teached a lesson.,Past tense of teach,Họ đã dạy một bài học.
-  ps38,Past Simple,Advanced,He washed the car.,He washes the car.,Present distractor,Anh ấy đã rửa ô tô.
-  ps39,Past Simple,Advanced,He slept all day.,He sleeped all day.,Past tense of sleep,Anh ấy đã ngủ cả ngày.
-  ps40,Past Simple,Advanced,We washed the car.,We washes the car.,Present distractor,Chúng tôi đã rửa ô tô.
-  ps41,Past Simple,Advanced,She taught a lesson.,She teached a lesson.,Past tense of teach,Cô ấy đã dạy một bài học.
-  ps42,Past Simple,Advanced,He washed the car.,He washes the car.,Present distractor,Anh ấy đã rửa ô tô.
-  ps43,Past Simple,Advanced,We went to the zoo.,We goed to the zoo.,Past tense of go,Chúng tôi đã đi sở thú.
-  ps44,Past Simple,Advanced,She cleaned the room.,She clean the room.,Missing -ed suffix,Cô ấy đã dọn dẹp phòng.
-  ps45,Past Simple,Advanced,They taught a lesson.,They teached a lesson.,Past tense of teach,Họ đã dạy một bài học.
-  ps46,Past Simple,Advanced,They washed the car.,They washes the car.,Present distractor,Họ đã rửa ô tô.
-  ps47,Past Simple,Advanced,He went to the zoo.,He goed to the zoo.,Past tense of go,Anh ấy đã đi sở thú.
-  ps48,Past Simple,Advanced,We washed the car.,We washes the car.,Present distractor,Chúng tôi đã rửa ô tô.
-  ps49,Past Simple,Advanced,She taught a lesson.,She teached a lesson.,Past tense of teach,Cô ấy đã dạy một bài học.
-  ps50,Past Simple,Advanced,We studied hard.,We study hard.,Missing -ed suffix,Chúng tôi đã học chăm chỉ.
-  rps1,Present Simple,Beginner,He plays basketball every Saturday.,He play basketball every Saturday.,Third-person singular 's' missing,Anh ấy chơi bóng rổ vào mỗi thứ Bảy.
-  rps2,Present Simple,Beginner,They eat breakfast at seven o'clock.,They eats breakfast at seven o'clock.,Incorrect third-person singular 's' on plural subject,Họ ăn sáng lúc bảy giờ.
-  rps3,Present Simple,Beginner,The earth goes around the sun.,The earth go around the sun.,Third-person singular 'es' missing,Trái đất quay quanh mặt trời.
-  rps4,Present Simple,Beginner,My cat sleeps on the sofa.,My cat sleep on the sofa.,Third-person singular 's' missing,Con mèo của tôi ngủ trên ghế sofa.
-  rps5,Present Simple,Beginner,I like to read books before bed.,I likes to read books before bed.,Incorrect 's' on first-person singular,Tôi thích đọc sách trước khi đi ngủ.
-  rps6,Present Simple,Beginner,We drink milk every morning.,We drinks milk every morning.,Incorrect 's' on plural subject,Chúng tôi uống sữa mỗi sáng.
-  rps7,Present Simple,Beginner,She watches cartoons after school.,She watch cartoons after school.,Third-person singular 'es' missing,Cô ấy xem phim hoạt hình sau giờ học.
-  rps8,Present Simple,Beginner,My dad drives a red car.,My dad drive a red car.,Third-person singular 's' missing,Bố tôi lái một chiếc ô tô màu đỏ.
-  rps9,Present Simple,Beginner,The birds sing beautiful songs.,The birds sings beautiful songs.,Incorrect 's' on plural subject,Những con chim hát những bài hát tuyệt đẹp.
-  rps10,Present Simple,Beginner,He rarely washes his hands.,He rarely wash his hands.,Third-person singular 'es' missing with adverb of frequency,Anh ấy hiếm khi rửa tay.
-  rps11,Present Simple,Beginner,She doesn't like spicy food.,She don't like spicy food.,Doesn't vs don't with third-person singular,Cô ấy không thích đồ ăn cay.
-  rps12,Present Simple,Beginner,They don't understand the homework.,They doesn't understand the homework.,Don't vs doesn't with plural subject,Họ không hiểu bài tập về nhà.
-  rps13,Present Simple,Beginner,Sarah rides her bike to the park.,Sarah ride her bike to the park.,Third-person singular 's' missing,Sarah đạp xe đến công viên.
-  rps14,Present Simple,Beginner,The train leaves at 8 PM tonight.,The train leave at 8 PM tonight.,Present continuous schedule meaning uses simple present,Chuyến tàu rời đi lúc 8 giờ tối nay.
-  rps15,Present Simple,Beginner,Does he always wake up early?,Do he always wake up early?,Does vs Do auxiliary in questions,Anh ấy có luôn thức dậy sớm không?
-  rps16,Present Simple,Intermediate,Do you want some ice cream?,Does you want some ice cream?,Do vs Does auxiliary in questions,Bạn có muốn một ít kem không?
-  rps17,Present Simple,Intermediate,It snows heavily in winter.,It snow heavily in winter.,Third-person singular 's' missing for 'It',Tuyết rơi dày vào mùa đông.
-  rps18,Present Simple,Intermediate,The boys love playing video games.,The boys loves playing video games.,Incorrect 's' on plural subject,Những cậu bé thích chơi trò chơi điện tử.
-  rps19,Present Simple,Intermediate,Water boils at 100 degrees.,Water boil at 100 degrees.,Third-person singular 's' missing for uncountable noun,Nước sôi ở 100 độ.
-  rps20,Present Simple,Intermediate,Why does she study so hard?,Why do she study so hard?,Does vs Do in WH-questions,Tại sao cô ấy học chăm chỉ như vậy?
-  rps21,Present Simple,Intermediate,He enjoys the sunshine.,He enjoy the sunshine.,Third person singular 's',Anh ấy tận hưởng ánh nắng.
-  rps22,Present Simple,Intermediate,We walk to work.,We walks to work.,Plural subject no 's',Chúng tôi đi bộ đi làm.
-  rps23,Present Simple,Intermediate,He reads a book.,He read a book.,Third person singular 's',Anh ấy đọc sách.
-  rps24,Present Simple,Intermediate,They listen carefully.,They listens carefully.,Plural subject no 's',Họ lắng nghe cẩn thận.
-  rps25,Present Simple,Intermediate,She reads a book.,She read a book.,Third person singular 's',Cô ấy đọc sách.
-  rps26,Present Simple,Intermediate,The cats walk to work.,The cats walks to work.,Plural subject no 's',Những con mèo đi bộ đi làm.
-  rps27,Present Simple,Intermediate,The dog enjoys the sunshine.,The dog enjoy the sunshine.,Third person singular 's',Con chó tận hưởng ánh nắng.
-  rps28,Present Simple,Intermediate,They walk to work.,They walks to work.,Plural subject no 's',Họ đi bộ đi làm.
-  rps29,Present Simple,Intermediate,She reads a book.,She read a book.,Third person singular 's',Cô ấy đọc sách.
-  rps30,Present Simple,Intermediate,They walk to work.,They walks to work.,Plural subject no 's',Họ đi bộ đi làm.
-  rps31,Present Simple,Intermediate,He makes a cake.,He make a cake.,Third person singular 's',Anh ấy làm một cái bánh.
-  rps32,Present Simple,Intermediate,We listen carefully.,We listens carefully.,Plural subject no 's',Chúng tôi lắng nghe cẩn thận.
-  rps33,Present Simple,Intermediate,The dog enjoys the sunshine.,The dog enjoy the sunshine.,Third person singular 's',Con chó tận hưởng ánh nắng.
-  rps34,Present Simple,Intermediate,They walk to work.,They walks to work.,Plural subject no 's',Họ đi bộ đi làm.
-  rps35,Present Simple,Intermediate,He reads a book.,He read a book.,Third person singular 's',Anh ấy đọc sách.
-  rps36,Present Simple,Advanced,The cats listen carefully.,The cats listens carefully.,Plural subject no 's',Những con mèo lắng nghe cẩn thận.
-  rps37,Present Simple,Advanced,She enjoys the sunshine.,She enjoy the sunshine.,Third person singular 's',Cô ấy tận hưởng ánh nắng.
-  rps38,Present Simple,Advanced,The cats listen carefully.,The cats listens carefully.,Plural subject no 's',Những con mèo lắng nghe cẩn thận.
-  rps39,Present Simple,Advanced,The dog reads a book.,The dog read a book.,Third person singular 's',Con chó đọc sách.
-  rps40,Present Simple,Advanced,We listen carefully.,We listens carefully.,Plural subject no 's',Chúng tôi lắng nghe cẩn thận.
-  rps41,Present Simple,Advanced,He reads a book.,He read a book.,Third person singular 's',Anh ấy đọc sách.
-  rps42,Present Simple,Advanced,The cats walk to work.,The cats walks to work.,Plural subject no 's',Những con mèo đi bộ đi làm.
-  rps43,Present Simple,Advanced,The dog reads a book.,The dog read a book.,Third person singular 's',Con chó đọc sách.
-  rps44,Present Simple,Advanced,The cats listen carefully.,The cats listens carefully.,Plural subject no 's',Những con mèo lắng nghe cẩn thận.
-  rps45,Present Simple,Advanced,The dog makes a cake.,The dog make a cake.,Third person singular 's',Con chó làm một cái bánh.
-  rps46,Present Simple,Advanced,They listen carefully.,They listens carefully.,Plural subject no 's',Họ lắng nghe cẩn thận.
-  rps47,Present Simple,Advanced,She reads a book.,She read a book.,Third person singular 's',Cô ấy đọc sách.
-  rps48,Present Simple,Advanced,The cats walk to work.,The cats walks to work.,Plural subject no 's',Những con mèo đi bộ đi làm.
-  rps49,Present Simple,Advanced,He reads a book.,He read a book.,Third person singular 's',Anh ấy đọc sách.
-  rps50,Present Simple,Advanced,The cats listen carefully.,The cats listens carefully.,Plural subject no 's',Những con mèo lắng nghe cẩn thận.
-  fs1,Future Simple,Beginner,I will go to the park tomorrow.,I will goes to the park tomorrow.,Modal auxiliary 'will' followed by bare infinitive,Tôi sẽ đi công viên vào ngày mai.
-  fs2,Future Simple,Beginner,She will finish her homework soon.,She will finishing her homework soon.,Modal auxiliary 'will' followed by bare infinitive,Cô ấy sẽ hoàn thành bài tập về nhà sớm thôi.
-  fs3,Future Simple,Beginner,We are going to travel to Japan next year.,We is going to travel to Japan next year.,'Going to' future subject-verb agreement,Chúng tôi dự định sẽ đi du lịch Nhật Bản vào năm sau.
-  fs4,Future Simple,Beginner,They will win the game if they try.,They will won the game if they try.,Will + plural past tense error,Họ sẽ thắng trò chơi nếu họ cố gắng.
-  fs5,Future Simple,Beginner,He will call you later tonight.,He will calls you later tonight.,Will + third-person singular error,Anh ấy sẽ gọi cho bạn tối nay.
-  fs6,Future Simple,Beginner,It is going to rain this afternoon.,It are going to rain this afternoon.,'Going to' future subject-verb agreement with 'it',Trời dự định sẽ mưa vào chiều nay.
-  fs7,Future Simple,Beginner,The sun will rise at 6 AM.,The sun will rising at 6 AM.,Will + continuous participle error,Mặt trời sẽ mọc lúc 6 giờ sáng.
-  fs8,Future Simple,Beginner,I am going to buy a new computer.,I is going to buy a new computer.,'Going to' future subject-verb agreement (I am),Tôi dự định mua một máy tính mới.
-  fs9,Future Simple,Beginner,We will be very happy to see you.,We will are very happy to see you.,Will + be vs Will + are,Chúng tôi sẽ rất vui khi gặp bạn.
-  fs10,Future Simple,Beginner,Tom isn't going to play with us.,Tom aren't going to play with us.,Negative 'Going to' subject-verb agreement,Tom sẽ không chơi cùng chúng ta đâu.
-  fs11,Future Simple,Beginner,Will you help me with this box?,Will you helps me with this box?,Will + bare infinitive in questions,Bạn sẽ giúp tôi với chiếc hộp này chứ?
-  fs12,Future Simple,Beginner,What will she wear to the party?,What she will wear to the party?,WH-question syntax inversion missing,Cô ấy sẽ mặc gì đến bữa tiệc?
-  fs13,Future Simple,Beginner,My students will write a test on Monday.,My students will wrote a test on Monday.,Will + past tense error,Học sinh của tôi sẽ làm bài kiểm tra vào thứ Hai.
-  fs14,Future Simple,Beginner,They are going to build a new bridge here.,They is going to build a new bridge here.,Plural subject 'going to' agreement,Họ dự định xây một cây cầu mới ở đây.
-  fs15,Future Simple,Beginner,I won't tell anyone your secret.,I willn't tell anyone your secret.,Negative structure of will (won't vs willn't),Tôi sẽ không nói cho ai biết bí mật của bạn.
-  fs16,Future Simple,Intermediate,Where are you going to stay?,Where is you going to stay?,WH-question with going-to agreement,Bạn dự định sẽ ở đâu?
-  fs17,Future Simple,Intermediate,She won't be happy about this.,She don't will be happy about this.,Double negative / modal auxiliary structure,Cô ấy sẽ không vui về điều này.
-  fs18,Future Simple,Intermediate,The dog is going to catch the ball.,The dog am going to catch the ball.,'Going to' subject-verb agreement,Con chó chuẩn bị bắt được quả bóng kìa.
-  fs19,Future Simple,Intermediate,We will eat pizza for dinner tonight.,We will eating pizza for dinner tonight.,Will + continuous participle error,Chúng tôi sẽ ăn pizza cho bữa tối nay.
-  fs20,Future Simple,Intermediate,Are they going to join the club?,Is they going to join the club?,Question formation with going-to,Họ có dự định tham gia câu lạc bộ không?
-  fs21,Future Simple,Intermediate,She will clean the house.,She will cleans the house.,Will + bare infinitive,Cô ấy sẽ lau nhà.
-  fs22,Future Simple,Intermediate,You will visit the museum.,You will visited the museum.,Will + bare infinitive,Bạn sẽ thăm bảo tàng.
-  fs23,Future Simple,Intermediate,She will clean the house.,She will cleans the house.,Will + bare infinitive,Cô ấy sẽ lau nhà.
-  fs24,Future Simple,Intermediate,It will draw a picture.,It will drawed a picture.,Will + bare infinitive,Nó sẽ vẽ một bức tranh.
-  fs25,Future Simple,Intermediate,You will clean the house.,You will cleans the house.,Will + bare infinitive,Bạn sẽ lau nhà.
-  fs26,Future Simple,Intermediate,It will draw a picture.,It will drawed a picture.,Will + bare infinitive,Nó sẽ vẽ một bức tranh.
-  fs27,Future Simple,Intermediate,You will draw a picture.,You will draws a picture.,Will + bare infinitive,Bạn sẽ vẽ một bức tranh.
-  fs28,Future Simple,Intermediate,We will visit the museum.,We will visited the museum.,Will + bare infinitive,Chúng tôi sẽ thăm bảo tàng.
-  fs29,Future Simple,Intermediate,It will clean the house.,It will cleans the house.,Will + bare infinitive,Nó sẽ lau nhà.
-  fs30,Future Simple,Intermediate,They will visit the museum.,They will visited the museum.,Will + bare infinitive,Họ sẽ thăm bảo tàng.
-  fs31,Future Simple,Intermediate,I will clean the house.,I will cleans the house.,Will + bare infinitive,Tôi sẽ lau nhà.
-  fs32,Future Simple,Intermediate,They will clean the house.,They will cleaned the house.,Will + bare infinitive,Họ sẽ lau nhà.
-  fs33,Future Simple,Intermediate,He will clean the house.,He will cleans the house.,Will + bare infinitive,Anh ấy sẽ lau nhà.
-  fs34,Future Simple,Intermediate,They will clean the house.,They will cleaned the house.,Will + bare infinitive,Họ sẽ lau nhà.
-  fs35,Future Simple,Intermediate,We will visit the museum.,We will visits the museum.,Will + bare infinitive,Chúng tôi sẽ thăm bảo tàng.
-  fs36,Future Simple,Advanced,They will draw a picture.,They will drawed a picture.,Will + bare infinitive,Họ sẽ vẽ một bức tranh.
-  fs37,Future Simple,Advanced,It will clean the house.,It will cleans the house.,Will + bare infinitive,Nó sẽ lau nhà.
-  fs38,Future Simple,Advanced,It will draw a picture.,It will drawed a picture.,Will + bare infinitive,Nó sẽ vẽ một bức tranh.
-  fs39,Future Simple,Advanced,I will draw a picture.,I will draws a picture.,Will + bare infinitive,Tôi sẽ vẽ một bức tranh.
-  fs40,Future Simple,Advanced,She will draw a picture.,She will drawed a picture.,Will + bare infinitive,Cô ấy sẽ vẽ một bức tranh.
-  fs41,Future Simple,Advanced,We will visit the museum.,We will visits the museum.,Will + bare infinitive,Chúng tôi sẽ thăm bảo tàng.
-  fs42,Future Simple,Advanced,He will clean the house.,He will cleaned the house.,Will + bare infinitive,Anh ấy sẽ lau nhà.
-  fs43,Future Simple,Advanced,She will clean the house.,She will cleans the house.,Will + bare infinitive,Cô ấy sẽ lau nhà.
-  fs44,Future Simple,Advanced,It will draw a picture.,It will drawed a picture.,Will + bare infinitive,Nó sẽ vẽ một bức tranh.
-  fs45,Future Simple,Advanced,I will clean the house.,I will cleans the house.,Will + bare infinitive,Tôi sẽ lau nhà.
-  fs46,Future Simple,Advanced,I will clean the house.,I will cleaned the house.,Will + bare infinitive,Tôi sẽ lau nhà.
-  fs47,Future Simple,Advanced,She will visit the museum.,She will visits the museum.,Will + bare infinitive,Cô ấy sẽ thăm bảo tàng.
-  fs48,Future Simple,Advanced,They will draw a picture.,They will drawed a picture.,Will + bare infinitive,Họ sẽ vẽ một bức tranh.
-  fs49,Future Simple,Advanced,I will draw a picture.,I will draws a picture.,Will + bare infinitive,Tôi sẽ vẽ một bức tranh.
-  fs50,Future Simple,Advanced,It will clean the house.,It will cleaned the house.,Will + bare infinitive,Nó sẽ lau nhà.
-  pp1,Present Perfect,Beginner,She has eaten all her vegetables.,She have eaten all her vegetables.,Present perfect auxiliary agreement (has vs have),Cô ấy đã ăn hết rau của mình.
-  pp2,Present Perfect,Beginner,They have visited London three times.,They has visited London three times.,Present perfect auxiliary agreement (have vs has),Họ đã đến thăm London ba lần.
-  pp3,Present Perfect,Beginner,I have finished my homework already.,I has finished my homework already.,Present perfect auxiliary agreement (have vs has),Tôi đã hoàn thành xong bài tập về nhà.
-  pp4,Present Perfect,Beginner,He has lost his keys again.,He have lost his keys again.,Present perfect auxiliary agreement (has vs have),Anh ấy lại làm mất chìa khóa.
-  pp5,Present Perfect,Beginner,We haven't seen that movie yet.,We hasn't seen that movie yet.,Negative auxiliary agreement (haven't vs hasn't),Chúng tôi chưa xem bộ phim đó.
-  pp6,Present Perfect,Beginner,My mom has cooked dinner.,My mom have cooked dinner.,Present perfect auxiliary agreement (has vs have),Mẹ tôi nấu xong bữa tối rồi.
-  pp7,Present Perfect,Beginner,I have been to Paris before.,I have went to Paris before.,Past participle 'been' vs Past simple 'went',Tôi đã từng đến Paris trước đây.
-  pp8,Present Perfect,Beginner,She has broken her arm.,She has broke her arm.,Past participle 'broken' vs Past simple 'broke',Cô ấy bị gãy tay.
-  pp9,Present Perfect,Beginner,They have written a new song.,They have wrote a new song.,Past participle 'written' vs Past simple 'wrote',Họ đã viết xong một bài hát mới.
-  pp10,Present Perfect,Beginner,Has he ever flown in a helicopter?,Have he ever flown in a helicopter?,Question auxiliary agreement (Has vs Have),Anh ấy đã từng bay bằng trực thăng chưa?
-  pp11,Present Perfect,Beginner,Have you seen my dog?,Has you seen my dog?,Question auxiliary agreement (Have vs Has),Bạn có thấy con chó của tôi không?
-  pp12,Present Perfect,Beginner,The train has just arrived.,The train have just arrived.,Present perfect auxiliary agreement for singular noun,Chuyến tàu vừa mới đến.
-  pp13,Present Perfect,Beginner,We have painted the whole house.,We has painted the whole house.,Present perfect auxiliary agreement (have vs has),Chúng tôi đã sơn xong toàn bộ ngôi nhà.
-  pp14,Present Perfect,Beginner,My sister has taken my jacket.,My sister has took my jacket.,Past participle 'taken' vs Past simple 'took',Chị gái tôi đã lấy áo khoác của tôi.
-  pp15,Present Perfect,Beginner,I haven't slept well lately.,I hasn't slept well lately.,Negative auxiliary agreement with I,Gần đây tôi ngủ không ngon giấc.
-  pp16,Present Perfect,Intermediate,They have sung that song twice.,They have sang that song twice.,Past participle 'sung' vs Past simple 'sang',Họ đã hát bài đó hai lần rồi.
-  pp17,Present Perfect,Intermediate,She hasn't spoken to him today.,She haven't spoken to him today.,Negative auxiliary agreement (hasn't vs haven't),Hôm nay cô ấy chưa nói chuyện với anh ấy.
-  pp18,Present Perfect,Intermediate,You have grown so much!,You has grown so much!,Present perfect auxiliary agreement with You,Cháu đã lớn quá nhiều rồi!
-  pp19,Present Perfect,Intermediate,He has forgotten my name.,He has forgot my name.,Past participle 'forgotten' vs Past simple 'forgot',Anh ấy đã quên tên tôi rồi.
-  pp20,Present Perfect,Intermediate,How long have you lived here?,How long has you lived here?,WH-question auxiliary agreement,Bạn đã sống ở đây bao lâu rồi?
-  pp21,Present Perfect,Intermediate,She has found a new job.,She have found a new job.,has vs have,Cô ấy đã tìm được công việc mới.
-  pp22,Present Perfect,Intermediate,We have learned a lot.,We has learned a lot.,have vs has,Chúng tôi đã học được rất nhiều.
-  pp23,Present Perfect,Intermediate,She has found a new job.,She have found a new job.,has vs have,Cô ấy đã tìm được công việc mới.
-  pp24,Present Perfect,Intermediate,We have learned a lot.,We has learned a lot.,have vs has,Chúng tôi đã học được rất nhiều.
-  pp25,Present Perfect,Intermediate,She has found a new job.,She have found a new job.,has vs have,Cô ấy đã tìm được công việc mới.
-  pp26,Present Perfect,Intermediate,We have learned a lot.,We has learned a lot.,have vs has,Chúng tôi đã học được rất nhiều.
-  pp27,Present Perfect,Intermediate,She has found a new job.,She have found a new job.,has vs have,Cô ấy đã tìm được công việc mới.
-  pp28,Present Perfect,Intermediate,We have learned a lot.,We has learned a lot.,have vs has,Chúng tôi đã học được rất nhiều.
-  pp29,Present Perfect,Intermediate,She has found a new job.,She have found a new job.,has vs have,Cô ấy đã tìm được công việc mới.
-  pp30,Present Perfect,Intermediate,We have learned a lot.,We has learned a lot.,have vs has,Chúng tôi đã học được rất nhiều.
-  pp31,Present Perfect,Intermediate,She has found a new job.,She have found a new job.,has vs have,Cô ấy đã tìm được công việc mới.
-  pp32,Present Perfect,Intermediate,We have learned a lot.,We has learned a lot.,have vs has,Chúng tôi đã học được rất nhiều.
-  pp33,Present Perfect,Intermediate,She has found a new job.,She have found a new job.,has vs have,Cô ấy đã tìm được công việc mới.
-  pp34,Present Perfect,Intermediate,We have learned a lot.,We has learned a lot.,have vs has,Chúng tôi đã học được rất nhiều.
-  pp35,Present Perfect,Intermediate,She has found a new job.,She have found a new job.,has vs have,Cô ấy đã tìm được công việc mới.
-  pp36,Present Perfect,Advanced,We have learned a lot.,We has learned a lot.,have vs has,Chúng tôi đã học được rất nhiều.
-  pp37,Present Perfect,Advanced,She has found a new job.,She have found a new job.,has vs have,Cô ấy đã tìm được công việc mới.
-  pp38,Present Perfect,Advanced,We have learned a lot.,We has learned a lot.,have vs has,Chúng tôi đã học được rất nhiều.
-  pp39,Present Perfect,Advanced,She has found a new job.,She have found a new job.,has vs have,Cô ấy đã tìm được công việc mới.
-  pp40,Present Perfect,Advanced,We have learned a lot.,We has learned a lot.,have vs has,Chúng tôi đã học được rất nhiều.
-  pp41,Present Perfect,Advanced,She has found a new job.,She have found a new job.,has vs have,Cô ấy đã tìm được công việc mới.
-  pp42,Present Perfect,Advanced,We have learned a lot.,We has learned a lot.,have vs has,Chúng tôi đã học được rất nhiều.
-  pp43,Present Perfect,Advanced,She has found a new job.,She have found a new job.,has vs have,Cô ấy đã tìm được công việc mới.
-  pp44,Present Perfect,Advanced,We have learned a lot.,We has learned a lot.,have vs has,Chúng tôi đã học được rất nhiều.
-  pp45,Present Perfect,Advanced,She has found a new job.,She have found a new job.,has vs have,Cô ấy đã tìm được công việc mới.
-  pp46,Present Perfect,Advanced,We have learned a lot.,We has learned a lot.,have vs has,Chúng tôi đã học được rất nhiều.
-  pp47,Present Perfect,Advanced,She has found a new job.,She have found a new job.,has vs have,Cô ấy đã tìm được công việc mới.
-  pp48,Present Perfect,Advanced,We have learned a lot.,We has learned a lot.,have vs has,Chúng tôi đã học được rất nhiều.
-  pp49,Present Perfect,Advanced,She has found a new job.,She have found a new job.,has vs have,Cô ấy đã tìm được công việc mới.
-  pp50,Present Perfect,Advanced,We have learned a lot.,We has learned a lot.,have vs has,Chúng tôi đã học được rất nhiều.
+[520]{id,tense,level,correct_sentence,wrong_sentence,pedagogical_focus,vietnamese_translation,verb_choices,prep_choices}:
+  pc1,Present Continuous,Beginner,She is playing football with her friends.,She are playing football with her friends.,Subject-verb agreement (is vs are),Cô ấy đang chơi bóng đá với bạn bè.,,
+  pc2,Present Continuous,Beginner,They are watching a movie in the living room.,They is watching a movie in the living room.,Subject-verb agreement (are vs is),Họ đang xem phim trong phòng khách.,,
+  pc3,Present Continuous,Beginner,I am reading an interesting book right now.,I are reading an interesting book right now.,Subject-verb agreement (am vs are),Tôi đang đọc một cuốn sách thú vị ngay bây giờ.,,
+  pc4,Present Continuous,Beginner,The dog is sleeping under the table.,The dog am sleeping under the table.,Subject-verb agreement (am vs is),Con chó đang ngủ dưới gầm bàn.,,
+  pc5,Present Continuous,Beginner,We are swimming in the ocean today.,We is swimming in the ocean today.,Subject-verb agreement (are vs is),Hôm nay chúng tôi đang bơi ở biển.,,
+  pc6,Present Continuous,Beginner,The baby is crying because he is hungry.,The baby are crying because he is hungry.,Subject-verb agreement,Đứa bé đang khóc vì đói.,,
+  pc7,Present Continuous,Beginner,Look! The birds are flying very high.,Look! The birds is flying very high.,Plural subject with are,Nhìn kìa! Những con chim đang bay rất cao.,,
+  pc8,Present Continuous,Beginner,My brother is doing his homework in his room.,My brother am doing his homework in his room.,He/is pairing,Anh trai tôi đang làm bài tập trong phòng.,,
+  pc9,Present Continuous,Beginner,I am learning English on my computer.,I is learning English on my computer.,I/am pairing,Tôi đang học tiếng Anh trên máy tính.,,
+  pc10,Present Continuous,Beginner,The sun is shining brightly today.,The sun are shining brightly today.,Singular noun with is,Hôm nay mặt trời rọi sáng chói chang.,,
+  pc11,Present Continuous,Beginner,Are you listening to the teacher?,Is you listening to the teacher?,Question formation auxiliary,Bạn có đang nghe giáo viên nói không?,,
+  pc12,Present Continuous,Beginner,What is she cooking in the kitchen?,What are she cooking in the kitchen?,WH-question auxiliary,Cô ấy đang nấu gì trong bếp vậy?,,
+  pc13,Present Continuous,Beginner,The cars are moving fast on the highway.,The cars is moving fast on the highway.,Plural cars with are,Những chiếc ô tô đang di chuyển nhanh trên đường cao tốc.,,
+  pc14,Present Continuous,Beginner,My parents are talking in the garden.,My parents is talking in the garden.,Plural parents with are,Bố mẹ tôi đang nói chuyện trong vườn.,,
+  pc15,Present Continuous,Beginner,She is wearing a beautiful red dress.,She are wearing a beautiful red dress.,She/is pairing,Cô ấy đang mặc một chiếc váy đỏ tuyệt đẹp.,,
+  pc16,Present Continuous,Intermediate,The students are writing their test right now.,The students is writing their test right now.,Plural students with are,Các học sinh đang làm bài kiểm tra ngay bây giờ.,,
+  pc17,Present Continuous,Intermediate,He is drinking water because it's hot.,He am drinking water because it's hot.,He/is pairing,Anh ấy đang uống nước vì trời nóng.,,
+  pc18,Present Continuous,Intermediate,We are planning a trip to the beach.,We am planning a trip to the beach.,We/are pairing,Chúng tôi đang lên kế hoạch cho một chuyến đi biển.,,
+  pc19,Present Continuous,Intermediate,They aren't playing video games anymore.,They isn't playing video games anymore.,Negative plural auxiliary,Họ không chơi trò chơi điện tử nữa.,,
+  pc20,Present Continuous,Intermediate,Isn't he coming to the party tonight?,Aren't he coming to the party tonight?,Negative question auxiliary,Anh ấy sẽ không đến bữa tiệc tối nay sao?,,
+  pc21,Present Continuous,Intermediate,My sister is painting a picture.,My sister are painting a picture.,Subject-verb agreement,Chị gái tôi đang vẽ một bức tranh.,,
+  pc22,Present Continuous,Intermediate,My friends are running in the park.,My friends is running in the park.,Plural subject agreement,Bạn bè tôi đang chạy trong công viên.,,
+  pc23,Present Continuous,Intermediate,My sister is eating lunch.,My sister are eating lunch.,Subject-verb agreement,Chị gái tôi đang ăn trưa.,,
+  pc24,Present Continuous,Intermediate,The children are listening to music.,The children is listening to music.,Plural subject agreement,Bọn trẻ đang nghe nhạc.,,
+  pc25,Present Continuous,Intermediate,The cat is painting a picture.,The cat are painting a picture.,Subject-verb agreement,Con mèo đang vẽ một bức tranh.,,
+  pc26,Present Continuous,Intermediate,The players are listening to music.,The players is listening to music.,Plural subject agreement,Các cầu thủ đang nghe nhạc.,,
+  pc27,Present Continuous,Intermediate,The cat is eating lunch.,The cat are eating lunch.,Subject-verb agreement,Con mèo đang ăn trưa.,,
+  pc28,Present Continuous,Intermediate,The children are eating lunch.,The children is eating lunch.,Plural subject agreement,Bọn trẻ đang ăn trưa.,,
+  pc29,Present Continuous,Intermediate,The cat is listening to music.,The cat are listening to music.,Subject-verb agreement,Con mèo đang nghe nhạc.,,
+  pc30,Present Continuous,Intermediate,My friends are running in the park.,My friends is running in the park.,Plural subject agreement,Bạn bè tôi đang chạy trong công viên.,,
+  pc31,Present Continuous,Intermediate,He is listening to music.,He am listening to music.,Subject-verb agreement,Anh ấy đang nghe nhạc.,,
+  pc32,Present Continuous,Intermediate,The children are listening to music.,The children is listening to music.,Plural subject agreement,Bọn trẻ đang nghe nhạc.,,
+  pc33,Present Continuous,Intermediate,He is running in the park.,He am running in the park.,Subject-verb agreement,Anh ấy đang chạy trong công viên.,,
+  pc34,Present Continuous,Intermediate,My friends are painting a picture.,My friends is painting a picture.,Plural subject agreement,Bạn bè tôi đang vẽ một bức tranh.,,
+  pc35,Present Continuous,Intermediate,He is running in the park.,He am running in the park.,Subject-verb agreement,Anh ấy đang chạy trong công viên.,,
+  pc36,Present Continuous,Advanced,My friends are painting a picture.,My friends is painting a picture.,Plural subject agreement,Bạn bè tôi đang vẽ một bức tranh.,,
+  pc37,Present Continuous,Advanced,The machine is painting a picture.,The machine are painting a picture.,Subject-verb agreement,Cái máy đang vẽ một bức tranh.,,
+  pc38,Present Continuous,Advanced,The players are running in the park.,The players is running in the park.,Plural subject agreement,Các cầu thủ đang chạy trong công viên.,,
+  pc39,Present Continuous,Advanced,The machine is listening to music.,The machine are listening to music.,Subject-verb agreement,Cái máy đang nghe nhạc.,,
+  pc40,Present Continuous,Advanced,The players are listening to music.,The players is listening to music.,Plural subject agreement,Các cầu thủ đang nghe nhạc.,,
+  pc41,Present Continuous,Advanced,The cat is listening to music.,The cat are listening to music.,Subject-verb agreement,Con mèo đang nghe nhạc.,,
+  pc42,Present Continuous,Advanced,The children are painting a picture.,The children is painting a picture.,Plural subject agreement,Bọn trẻ đang vẽ một bức tranh.,,
+  pc43,Present Continuous,Advanced,My sister is listening to music.,My sister are listening to music.,Subject-verb agreement,Chị gái tôi đang nghe nhạc.,,
+  pc44,Present Continuous,Advanced,The children are listening to music.,The children is listening to music.,Plural subject agreement,Bọn trẻ đang nghe nhạc.,,
+  pc45,Present Continuous,Advanced,The cat is eating lunch.,The cat are eating lunch.,Subject-verb agreement,Con mèo đang ăn trưa.,,
+  pc46,Present Continuous,Advanced,My friends are eating lunch.,My friends is eating lunch.,Plural subject agreement,Bạn bè tôi đang ăn trưa.,,
+  pc47,Present Continuous,Advanced,He is running in the park.,He am running in the park.,Subject-verb agreement,Anh ấy đang chạy trong công viên.,,
+  pc48,Present Continuous,Advanced,The players are eating lunch.,The players is eating lunch.,Plural subject agreement,Các cầu thủ đang ăn trưa.,,
+  pc49,Present Continuous,Advanced,My sister is eating lunch.,My sister are eating lunch.,Subject-verb agreement,Chị gái tôi đang ăn trưa.,,
+  pc50,Present Continuous,Advanced,The players are listening to music.,The players is listening to music.,Plural subject agreement,Các cầu thủ đang nghe nhạc.,,
+  ps1,Past Simple,Beginner,They walked to the school yesterday.,They walk to the school yesterday.,Past tense verb suffix (-ed) missing with time signal,Họ đã đi bộ đến trường ngày hôm qua.,,
+  ps2,Past Simple,Beginner,She visited her grandmother last week.,She visits her grandmother last week.,Present Simple vs Past Simple with past time signal,Cô ấy đã đến thăm bà của mình vào tuần trước.,,
+  ps3,Past Simple,Beginner,I ate a delicious pizza for dinner.,I eated a delicious pizza for dinner.,Irregular verb past form (ate vs eated),Tôi đã ăn một chiếc bánh pizza ngon cho bữa tối.,,
+  ps4,Past Simple,Beginner,He bought a new bike on his birthday.,He buyed a new bike on his birthday.,Irregular verb past form (bought vs buyed),Anh ấy đã mua một chiếc xe đạp mới vào ngày sinh nhật của mình.,,
+  ps5,Past Simple,Beginner,We saw a shooting star in the sky.,We seen a shooting star in the sky.,Past simple (saw) vs Past participle (seen),Chúng tôi đã nhìn thấy một ngôi sao băng trên bầu trời.,,
+  ps6,Past Simple,Beginner,I played soccer with my friends on Sunday.,I play soccer with my friends on Sunday.,Missing -ed past tense suffix,Tôi đã chơi bóng đá với bạn bè vào Chủ Nhật.,,
+  ps7,Past Simple,Beginner,She jumped over the puddle.,She jump over the puddle.,Missing -ed past tense suffix,Cô ấy đã nhảy qua vũng nước.,,
+  ps8,Past Simple,Beginner,The bird flew away when I got close.,The bird flied away when I got close.,Irregular verb past form (flew vs flied),Con chim bay đi khi tôi đến gần.,,
+  ps9,Past Simple,Beginner,They drank all the orange juice.,They drinked all the orange juice.,Irregular verb past form (drank vs drinked),Họ đã uống hết nước cam.,,
+  ps10,Past Simple,Beginner,We watched a funny movie last night.,We watchs a funny movie last night.,Present tense distractor on past time signal,Tối qua chúng tôi đã xem một bộ phim hài.,,
+  ps11,Past Simple,Beginner,She didn't know the answer to the question.,She didn't knew the answer to the question.,Did not + bare infinitive rule,Cô ấy không biết câu trả lời cho câu hỏi đó.,,
+  ps12,Past Simple,Beginner,Did you go to the store earlier?,Did you went to the store earlier?,Did + bare infinitive rule in questions,Bạn đã đến cửa hàng lúc nãy à?,,
+  ps13,Past Simple,Beginner,The phone rang while I was sleeping.,The phone ringed while I was sleeping.,Irregular verb past form (rang vs ringed),Điện thoại đã reo trong khi tôi đang ngủ.,,
+  ps14,Past Simple,Beginner,He ran very fast to catch the bus.,He runned very fast to catch the bus.,Irregular verb past form (ran vs runned),Anh ấy đã chạy rất nhanh để bắt xe buýt.,,
+  ps15,Past Simple,Beginner,I found a shiny coin on the sidewalk.,I finded a shiny coin on the sidewalk.,Irregular verb past form (found vs finded),Tôi đã tìm thấy một đồng xu sáng bóng trên vỉa hè.,,
+  ps16,Past Simple,Intermediate,The teacher smiled at the class.,The teacher smile at the class.,Missing past tense suffix (-ed),Giáo viên đã mỉm cười với cả lớp.,,
+  ps17,Past Simple,Intermediate,They didn't finish their lunch.,They didn't finished their lunch.,Did not + bare infinitive,Họ đã không ăn hết bữa trưa của mình.,,
+  ps18,Past Simple,Intermediate,She took her dog for a long walk.,She taked her dog for a long walk.,Irregular verb past form (took vs taked),Cô ấy đã đưa chó đi dạo một đoạn dài.,,
+  ps19,Past Simple,Intermediate,We painted a picture in art class.,We painting a picture in art class.,Past simple vs continuous participle mix,Chúng tôi đã vẽ một bức tranh trong giờ mỹ thuật.,,
+  ps20,Past Simple,Intermediate,What did you do during the summer break?,What did you did during the summer break?,Did + bare infinitive in WH-questions,Bạn đã làm gì trong kỳ nghỉ hè?,,
+  ps21,Past Simple,Intermediate,They slept all day.,They sleeped all day.,Past tense of sleep,Họ đã ngủ cả ngày.,,
+  ps22,Past Simple,Intermediate,We studied hard.,We study hard.,Missing -ed suffix,Chúng tôi đã học chăm chỉ.,,
+  ps23,Past Simple,Intermediate,She went to the zoo.,She goed to the zoo.,Past tense of go,Cô ấy đã đi sở thú.,,
+  ps24,Past Simple,Intermediate,He studied hard.,He study hard.,Missing -ed suffix,Anh ấy đã học chăm chỉ.,,
+  ps25,Past Simple,Intermediate,He went to the zoo.,He goed to the zoo.,Past tense of go,Anh ấy đã đi sở thú.,,
+  ps26,Past Simple,Intermediate,They washed the car.,They washes the car.,Present distractor,Họ đã rửa ô tô.,,
+  ps27,Past Simple,Intermediate,She slept all day.,She sleeped all day.,Past tense of sleep,Cô ấy đã ngủ cả ngày.,,
+  ps28,Past Simple,Intermediate,He cleaned the room.,He clean the room.,Missing -ed suffix,Anh ấy đã dọn dẹp phòng.,,
+  ps29,Past Simple,Intermediate,They taught a lesson.,They teached a lesson.,Past tense of teach,Họ đã dạy một bài học.,,
+  ps30,Past Simple,Intermediate,We washed the car.,We washes the car.,Present distractor,Chúng tôi đã rửa ô tô.,,
+  ps31,Past Simple,Intermediate,We slept all day.,We sleeped all day.,Past tense of sleep,Chúng tôi đã ngủ cả ngày.,,
+  ps32,Past Simple,Intermediate,She washed the car.,She washes the car.,Present distractor,Cô ấy đã rửa ô tô.,,
+  ps33,Past Simple,Intermediate,He caught a fish.,He catched a fish.,Past tense of catch,Anh ấy đã bắt được một con cá.,,
+  ps34,Past Simple,Intermediate,They cleaned the room.,They clean the room.,Missing -ed suffix,Họ đã dọn dẹp phòng.,,
+  ps35,Past Simple,Intermediate,They caught a fish.,They catched a fish.,Past tense of catch,Họ đã bắt được một con cá.,,
+  ps36,Past Simple,Advanced,She washed the car.,She washes the car.,Present distractor,Cô ấy đã rửa ô tô.,,
+  ps37,Past Simple,Advanced,They taught a lesson.,They teached a lesson.,Past tense of teach,Họ đã dạy một bài học.,,
+  ps38,Past Simple,Advanced,He washed the car.,He washes the car.,Present distractor,Anh ấy đã rửa ô tô.,,
+  ps39,Past Simple,Advanced,He slept all day.,He sleeped all day.,Past tense of sleep,Anh ấy đã ngủ cả ngày.,,
+  ps40,Past Simple,Advanced,We washed the car.,We washes the car.,Present distractor,Chúng tôi đã rửa ô tô.,,
+  ps41,Past Simple,Advanced,She taught a lesson.,She teached a lesson.,Past tense of teach,Cô ấy đã dạy một bài học.,,
+  ps42,Past Simple,Advanced,He washed the car.,He washes the car.,Present distractor,Anh ấy đã rửa ô tô.,,
+  ps43,Past Simple,Advanced,We went to the zoo.,We goed to the zoo.,Past tense of go,Chúng tôi đã đi sở thú.,,
+  ps44,Past Simple,Advanced,She cleaned the room.,She clean the room.,Missing -ed suffix,Cô ấy đã dọn dẹp phòng.,,
+  ps45,Past Simple,Advanced,They taught a lesson.,They teached a lesson.,Past tense of teach,Họ đã dạy một bài học.,,
+  ps46,Past Simple,Advanced,They washed the car.,They washes the car.,Present distractor,Họ đã rửa ô tô.,,
+  ps47,Past Simple,Advanced,He went to the zoo.,He goed to the zoo.,Past tense of go,Anh ấy đã đi sở thú.,,
+  ps48,Past Simple,Advanced,We washed the car.,We washes the car.,Present distractor,Chúng tôi đã rửa ô tô.,,
+  ps49,Past Simple,Advanced,She taught a lesson.,She teached a lesson.,Past tense of teach,Cô ấy đã dạy một bài học.,,
+  ps50,Past Simple,Advanced,We studied hard.,We study hard.,Missing -ed suffix,Chúng tôi đã học chăm chỉ.,,
+  rps1,Present Simple,Beginner,He plays basketball every Saturday.,He play basketball every Saturday.,Third-person singular 's' missing,Anh ấy chơi bóng rổ vào mỗi thứ Bảy.,,
+  rps2,Present Simple,Beginner,They eat breakfast at seven o'clock.,They eats breakfast at seven o'clock.,Incorrect third-person singular 's' on plural subject,Họ ăn sáng lúc bảy giờ.,,
+  rps3,Present Simple,Beginner,The earth goes around the sun.,The earth go around the sun.,Third-person singular 'es' missing,Trái đất quay quanh mặt trời.,,
+  rps4,Present Simple,Beginner,My cat sleeps on the sofa.,My cat sleep on the sofa.,Third-person singular 's' missing,Con mèo của tôi ngủ trên ghế sofa.,,
+  rps5,Present Simple,Beginner,I like to read books before bed.,I likes to read books before bed.,Incorrect 's' on first-person singular,Tôi thích đọc sách trước khi đi ngủ.,,
+  rps6,Present Simple,Beginner,We drink milk every morning.,We drinks milk every morning.,Incorrect 's' on plural subject,Chúng tôi uống sữa mỗi sáng.,,
+  rps7,Present Simple,Beginner,She watches cartoons after school.,She watch cartoons after school.,Third-person singular 'es' missing,Cô ấy xem phim hoạt hình sau giờ học.,,
+  rps8,Present Simple,Beginner,My dad drives a red car.,My dad drive a red car.,Third-person singular 's' missing,Bố tôi lái một chiếc ô tô màu đỏ.,,
+  rps9,Present Simple,Beginner,The birds sing beautiful songs.,The birds sings beautiful songs.,Incorrect 's' on plural subject,Những con chim hát những bài hát tuyệt đẹp.,,
+  rps10,Present Simple,Beginner,He rarely washes his hands.,He rarely wash his hands.,Third-person singular 'es' missing with adverb of frequency,Anh ấy hiếm khi rửa tay.,,
+  rps11,Present Simple,Beginner,She doesn't like spicy food.,She don't like spicy food.,Doesn't vs don't with third-person singular,Cô ấy không thích đồ ăn cay.,,
+  rps12,Present Simple,Beginner,They don't understand the homework.,They doesn't understand the homework.,Don't vs doesn't with plural subject,Họ không hiểu bài tập về nhà.,,
+  rps13,Present Simple,Beginner,Sarah rides her bike to the park.,Sarah ride her bike to the park.,Third-person singular 's' missing,Sarah đạp xe đến công viên.,,
+  rps14,Present Simple,Beginner,The train leaves at 8 PM tonight.,The train leave at 8 PM tonight.,Present continuous schedule meaning uses simple present,Chuyến tàu rời đi lúc 8 giờ tối nay.,,
+  rps15,Present Simple,Beginner,Does he always wake up early?,Do he always wake up early?,Does vs Do auxiliary in questions,Anh ấy có luôn thức dậy sớm không?,,
+  rps16,Present Simple,Intermediate,Do you want some ice cream?,Does you want some ice cream?,Do vs Does auxiliary in questions,Bạn có muốn một ít kem không?,,
+  rps17,Present Simple,Intermediate,It snows heavily in winter.,It snow heavily in winter.,Third-person singular 's' missing for 'It',Tuyết rơi dày vào mùa đông.,,
+  rps18,Present Simple,Intermediate,The boys love playing video games.,The boys loves playing video games.,Incorrect 's' on plural subject,Những cậu bé thích chơi trò chơi điện tử.,,
+  rps19,Present Simple,Intermediate,Water boils at 100 degrees.,Water boil at 100 degrees.,Third-person singular 's' missing for uncountable noun,Nước sôi ở 100 độ.,,
+  rps20,Present Simple,Intermediate,Why does she study so hard?,Why do she study so hard?,Does vs Do in WH-questions,Tại sao cô ấy học chăm chỉ như vậy?,,
+  rps21,Present Simple,Intermediate,He enjoys the sunshine.,He enjoy the sunshine.,Third person singular 's',Anh ấy tận hưởng ánh nắng.,,
+  rps22,Present Simple,Intermediate,We walk to work.,We walks to work.,Plural subject no 's',Chúng tôi đi bộ đi làm.,,
+  rps23,Present Simple,Intermediate,He reads a book.,He read a book.,Third person singular 's',Anh ấy đọc sách.,,
+  rps24,Present Simple,Intermediate,They listen carefully.,They listens carefully.,Plural subject no 's',Họ lắng nghe cẩn thận.,,
+  rps25,Present Simple,Intermediate,She reads a book.,She read a book.,Third person singular 's',Cô ấy đọc sách.,,
+  rps26,Present Simple,Intermediate,The cats walk to work.,The cats walks to work.,Plural subject no 's',Những con mèo đi bộ đi làm.,,
+  rps27,Present Simple,Intermediate,The dog enjoys the sunshine.,The dog enjoy the sunshine.,Third person singular 's',Con chó tận hưởng ánh nắng.,,
+  rps28,Present Simple,Intermediate,They walk to work.,They walks to work.,Plural subject no 's',Họ đi bộ đi làm.,,
+  rps29,Present Simple,Intermediate,She reads a book.,She read a book.,Third person singular 's',Cô ấy đọc sách.,,
+  rps30,Present Simple,Intermediate,They walk to work.,They walks to work.,Plural subject no 's',Họ đi bộ đi làm.,,
+  rps31,Present Simple,Intermediate,He makes a cake.,He make a cake.,Third person singular 's',Anh ấy làm một cái bánh.,,
+  rps32,Present Simple,Intermediate,We listen carefully.,We listens carefully.,Plural subject no 's',Chúng tôi lắng nghe cẩn thận.,,
+  rps33,Present Simple,Intermediate,The dog enjoys the sunshine.,The dog enjoy the sunshine.,Third person singular 's',Con chó tận hưởng ánh nắng.,,
+  rps34,Present Simple,Intermediate,They walk to work.,They walks to work.,Plural subject no 's',Họ đi bộ đi làm.,,
+  rps35,Present Simple,Intermediate,He reads a book.,He read a book.,Third person singular 's',Anh ấy đọc sách.,,
+  rps36,Present Simple,Advanced,The cats listen carefully.,The cats listens carefully.,Plural subject no 's',Những con mèo lắng nghe cẩn thận.,,
+  rps37,Present Simple,Advanced,She enjoys the sunshine.,She enjoy the sunshine.,Third person singular 's',Cô ấy tận hưởng ánh nắng.,,
+  rps38,Present Simple,Advanced,The cats listen carefully.,The cats listens carefully.,Plural subject no 's',Những con mèo lắng nghe cẩn thận.,,
+  rps39,Present Simple,Advanced,The dog reads a book.,The dog read a book.,Third person singular 's',Con chó đọc sách.,,
+  rps40,Present Simple,Advanced,We listen carefully.,We listens carefully.,Plural subject no 's',Chúng tôi lắng nghe cẩn thận.,,
+  rps41,Present Simple,Advanced,He reads a book.,He read a book.,Third person singular 's',Anh ấy đọc sách.,,
+  rps42,Present Simple,Advanced,The cats walk to work.,The cats walks to work.,Plural subject no 's',Những con mèo đi bộ đi làm.,,
+  rps43,Present Simple,Advanced,The dog reads a book.,The dog read a book.,Third person singular 's',Con chó đọc sách.,,
+  rps44,Present Simple,Advanced,The cats listen carefully.,The cats listens carefully.,Plural subject no 's',Những con mèo lắng nghe cẩn thận.,,
+  rps45,Present Simple,Advanced,The dog makes a cake.,The dog make a cake.,Third person singular 's',Con chó làm một cái bánh.,,
+  rps46,Present Simple,Advanced,They listen carefully.,They listens carefully.,Plural subject no 's',Họ lắng nghe cẩn thận.,,
+  rps47,Present Simple,Advanced,She reads a book.,She read a book.,Third person singular 's',Cô ấy đọc sách.,,
+  rps48,Present Simple,Advanced,The cats walk to work.,The cats walks to work.,Plural subject no 's',Những con mèo đi bộ đi làm.,,
+  rps49,Present Simple,Advanced,He reads a book.,He read a book.,Third person singular 's',Anh ấy đọc sách.,,
+  rps50,Present Simple,Advanced,The cats listen carefully.,The cats listens carefully.,Plural subject no 's',Những con mèo lắng nghe cẩn thận.,,
+  fs1,Future Simple,Beginner,I will go to the park tomorrow.,I will goes to the park tomorrow.,Modal auxiliary 'will' followed by bare infinitive,Tôi sẽ đi công viên vào ngày mai.,,
+  fs2,Future Simple,Beginner,She will finish her homework soon.,She will finishing her homework soon.,Modal auxiliary 'will' followed by bare infinitive,Cô ấy sẽ hoàn thành bài tập về nhà sớm thôi.,,
+  fs3,Future Simple,Beginner,We are going to travel to Japan next year.,We is going to travel to Japan next year.,'Going to' future subject-verb agreement,Chúng tôi dự định sẽ đi du lịch Nhật Bản vào năm sau.,,
+  fs4,Future Simple,Beginner,They will win the game if they try.,They will won the game if they try.,Will + plural past tense error,Họ sẽ thắng trò chơi nếu họ cố gắng.,,
+  fs5,Future Simple,Beginner,He will call you later tonight.,He will calls you later tonight.,Will + third-person singular error,Anh ấy sẽ gọi cho bạn tối nay.,,
+  fs6,Future Simple,Beginner,It is going to rain this afternoon.,It are going to rain this afternoon.,'Going to' future subject-verb agreement with 'it',Trời dự định sẽ mưa vào chiều nay.,,
+  fs7,Future Simple,Beginner,The sun will rise at 6 AM.,The sun will rising at 6 AM.,Will + continuous participle error,Mặt trời sẽ mọc lúc 6 giờ sáng.,,
+  fs8,Future Simple,Beginner,I am going to buy a new computer.,I is going to buy a new computer.,'Going to' future subject-verb agreement (I am),Tôi dự định mua một máy tính mới.,,
+  fs9,Future Simple,Beginner,We will be very happy to see you.,We will are very happy to see you.,Will + be vs Will + are,Chúng tôi sẽ rất vui khi gặp bạn.,,
+  fs10,Future Simple,Beginner,Tom isn't going to play with us.,Tom aren't going to play with us.,Negative 'Going to' subject-verb agreement,Tom sẽ không chơi cùng chúng ta đâu.,,
+  fs11,Future Simple,Beginner,Will you help me with this box?,Will you helps me with this box?,Will + bare infinitive in questions,Bạn sẽ giúp tôi với chiếc hộp này chứ?,,
+  fs12,Future Simple,Beginner,What will she wear to the party?,What she will wear to the party?,WH-question syntax inversion missing,Cô ấy sẽ mặc gì đến bữa tiệc?,,
+  fs13,Future Simple,Beginner,My students will write a test on Monday.,My students will wrote a test on Monday.,Will + past tense error,Học sinh của tôi sẽ làm bài kiểm tra vào thứ Hai.,,
+  fs14,Future Simple,Beginner,They are going to build a new bridge here.,They is going to build a new bridge here.,Plural subject 'going to' agreement,Họ dự định xây một cây cầu mới ở đây.,,
+  fs15,Future Simple,Beginner,I won't tell anyone your secret.,I willn't tell anyone your secret.,Negative structure of will (won't vs willn't),Tôi sẽ không nói cho ai biết bí mật của bạn.,,
+  fs16,Future Simple,Intermediate,Where are you going to stay?,Where is you going to stay?,WH-question with going-to agreement,Bạn dự định sẽ ở đâu?,,
+  fs17,Future Simple,Intermediate,She won't be happy about this.,She don't will be happy about this.,Double negative / modal auxiliary structure,Cô ấy sẽ không vui về điều này.,,
+  fs18,Future Simple,Intermediate,The dog is going to catch the ball.,The dog am going to catch the ball.,'Going to' subject-verb agreement,Con chó chuẩn bị bắt được quả bóng kìa.,,
+  fs19,Future Simple,Intermediate,We will eat pizza for dinner tonight.,We will eating pizza for dinner tonight.,Will + continuous participle error,Chúng tôi sẽ ăn pizza cho bữa tối nay.,,
+  fs20,Future Simple,Intermediate,Are they going to join the club?,Is they going to join the club?,Question formation with going-to,Họ có dự định tham gia câu lạc bộ không?,,
+  fs21,Future Simple,Intermediate,She will clean the house.,She will cleans the house.,Will + bare infinitive,Cô ấy sẽ lau nhà.,,
+  fs22,Future Simple,Intermediate,You will visit the museum.,You will visited the museum.,Will + bare infinitive,Bạn sẽ thăm bảo tàng.,,
+  fs23,Future Simple,Intermediate,She will clean the house.,She will cleans the house.,Will + bare infinitive,Cô ấy sẽ lau nhà.,,
+  fs24,Future Simple,Intermediate,It will draw a picture.,It will drawed a picture.,Will + bare infinitive,Nó sẽ vẽ một bức tranh.,,
+  fs25,Future Simple,Intermediate,You will clean the house.,You will cleans the house.,Will + bare infinitive,Bạn sẽ lau nhà.,,
+  fs26,Future Simple,Intermediate,It will draw a picture.,It will drawed a picture.,Will + bare infinitive,Nó sẽ vẽ một bức tranh.,,
+  fs27,Future Simple,Intermediate,You will draw a picture.,You will draws a picture.,Will + bare infinitive,Bạn sẽ vẽ một bức tranh.,,
+  fs28,Future Simple,Intermediate,We will visit the museum.,We will visited the museum.,Will + bare infinitive,Chúng tôi sẽ thăm bảo tàng.,,
+  fs29,Future Simple,Intermediate,It will clean the house.,It will cleans the house.,Will + bare infinitive,Nó sẽ lau nhà.,,
+  fs30,Future Simple,Intermediate,They will visit the museum.,They will visited the museum.,Will + bare infinitive,Họ sẽ thăm bảo tàng.,,
+  fs31,Future Simple,Intermediate,I will clean the house.,I will cleans the house.,Will + bare infinitive,Tôi sẽ lau nhà.,,
+  fs32,Future Simple,Intermediate,They will clean the house.,They will cleaned the house.,Will + bare infinitive,Họ sẽ lau nhà.,,
+  fs33,Future Simple,Intermediate,He will clean the house.,He will cleans the house.,Will + bare infinitive,Anh ấy sẽ lau nhà.,,
+  fs34,Future Simple,Intermediate,They will clean the house.,They will cleaned the house.,Will + bare infinitive,Họ sẽ lau nhà.,,
+  fs35,Future Simple,Intermediate,We will visit the museum.,We will visits the museum.,Will + bare infinitive,Chúng tôi sẽ thăm bảo tàng.,,
+  fs36,Future Simple,Advanced,They will draw a picture.,They will drawed a picture.,Will + bare infinitive,Họ sẽ vẽ một bức tranh.,,
+  fs37,Future Simple,Advanced,It will clean the house.,It will cleans the house.,Will + bare infinitive,Nó sẽ lau nhà.,,
+  fs38,Future Simple,Advanced,It will draw a picture.,It will drawed a picture.,Will + bare infinitive,Nó sẽ vẽ một bức tranh.,,
+  fs39,Future Simple,Advanced,I will draw a picture.,I will draws a picture.,Will + bare infinitive,Tôi sẽ vẽ một bức tranh.,,
+  fs40,Future Simple,Advanced,She will draw a picture.,She will drawed a picture.,Will + bare infinitive,Cô ấy sẽ vẽ một bức tranh.,,
+  fs41,Future Simple,Advanced,We will visit the museum.,We will visits the museum.,Will + bare infinitive,Chúng tôi sẽ thăm bảo tàng.,,
+  fs42,Future Simple,Advanced,He will clean the house.,He will cleaned the house.,Will + bare infinitive,Anh ấy sẽ lau nhà.,,
+  fs43,Future Simple,Advanced,She will clean the house.,She will cleans the house.,Will + bare infinitive,Cô ấy sẽ lau nhà.,,
+  fs44,Future Simple,Advanced,It will draw a picture.,It will drawed a picture.,Will + bare infinitive,Nó sẽ vẽ một bức tranh.,,
+  fs45,Future Simple,Advanced,I will clean the house.,I will cleans the house.,Will + bare infinitive,Tôi sẽ lau nhà.,,
+  fs46,Future Simple,Advanced,I will clean the house.,I will cleaned the house.,Will + bare infinitive,Tôi sẽ lau nhà.,,
+  fs47,Future Simple,Advanced,She will visit the museum.,She will visits the museum.,Will + bare infinitive,Cô ấy sẽ thăm bảo tàng.,,
+  fs48,Future Simple,Advanced,They will draw a picture.,They will drawed a picture.,Will + bare infinitive,Họ sẽ vẽ một bức tranh.,,
+  fs49,Future Simple,Advanced,I will draw a picture.,I will draws a picture.,Will + bare infinitive,Tôi sẽ vẽ một bức tranh.,,
+  fs50,Future Simple,Advanced,It will clean the house.,It will cleaned the house.,Will + bare infinitive,Nó sẽ lau nhà.,,
+  pp1,Present Perfect,Beginner,She has eaten all her vegetables.,She have eaten all her vegetables.,Present perfect auxiliary agreement (has vs have),Cô ấy đã ăn hết rau của mình.,,
+  pp2,Present Perfect,Beginner,They have visited London three times.,They has visited London three times.,Present perfect auxiliary agreement (have vs has),Họ đã đến thăm London ba lần.,,
+  pp3,Present Perfect,Beginner,I have finished my homework already.,I has finished my homework already.,Present perfect auxiliary agreement (have vs has),Tôi đã hoàn thành xong bài tập về nhà.,,
+  pp4,Present Perfect,Beginner,He has lost his keys again.,He have lost his keys again.,Present perfect auxiliary agreement (has vs have),Anh ấy lại làm mất chìa khóa.,,
+  pp5,Present Perfect,Beginner,We haven't seen that movie yet.,We hasn't seen that movie yet.,Negative auxiliary agreement (haven't vs hasn't),Chúng tôi chưa xem bộ phim đó.,,
+  pp6,Present Perfect,Beginner,My mom has cooked dinner.,My mom have cooked dinner.,Present perfect auxiliary agreement (has vs have),Mẹ tôi nấu xong bữa tối rồi.,,
+  pp7,Present Perfect,Beginner,I have been to Paris before.,I have went to Paris before.,Past participle 'been' vs Past simple 'went',Tôi đã từng đến Paris trước đây.,,
+  pp8,Present Perfect,Beginner,She has broken her arm.,She has broke her arm.,Past participle 'broken' vs Past simple 'broke',Cô ấy bị gãy tay.,,
+  pp9,Present Perfect,Beginner,They have written a new song.,They have wrote a new song.,Past participle 'written' vs Past simple 'wrote',Họ đã viết xong một bài hát mới.,,
+  pp10,Present Perfect,Beginner,Has he ever flown in a helicopter?,Have he ever flown in a helicopter?,Question auxiliary agreement (Has vs Have),Anh ấy đã từng bay bằng trực thăng chưa?,,
+  pp11,Present Perfect,Beginner,Have you seen my dog?,Has you seen my dog?,Question auxiliary agreement (Have vs Has),Bạn có thấy con chó của tôi không?,,
+  pp12,Present Perfect,Beginner,The train has just arrived.,The train have just arrived.,Present perfect auxiliary agreement for singular noun,Chuyến tàu vừa mới đến.,,
+  pp13,Present Perfect,Beginner,We have painted the whole house.,We has painted the whole house.,Present perfect auxiliary agreement (have vs has),Chúng tôi đã sơn xong toàn bộ ngôi nhà.,,
+  pp14,Present Perfect,Beginner,My sister has taken my jacket.,My sister has took my jacket.,Past participle 'taken' vs Past simple 'took',Chị gái tôi đã lấy áo khoác của tôi.,,
+  pp15,Present Perfect,Beginner,I haven't slept well lately.,I hasn't slept well lately.,Negative auxiliary agreement with I,Gần đây tôi ngủ không ngon giấc.,,
+  pp16,Present Perfect,Intermediate,They have sung that song twice.,They have sang that song twice.,Past participle 'sung' vs Past simple 'sang',Họ đã hát bài đó hai lần rồi.,,
+  pp17,Present Perfect,Intermediate,She hasn't spoken to him today.,She haven't spoken to him today.,Negative auxiliary agreement (hasn't vs haven't),Hôm nay cô ấy chưa nói chuyện với anh ấy.,,
+  pp18,Present Perfect,Intermediate,You have grown so much!,You has grown so much!,Present perfect auxiliary agreement with You,Cháu đã lớn quá nhiều rồi!,,
+  pp19,Present Perfect,Intermediate,He has forgotten my name.,He has forgot my name.,Past participle 'forgotten' vs Past simple 'forgot',Anh ấy đã quên tên tôi rồi.,,
+  pp20,Present Perfect,Intermediate,How long have you lived here?,How long has you lived here?,WH-question auxiliary agreement,Bạn đã sống ở đây bao lâu rồi?,,
+  pp21,Present Perfect,Intermediate,She has found a new job.,She have found a new job.,has vs have,Cô ấy đã tìm được công việc mới.,,
+  pp22,Present Perfect,Intermediate,We have learned a lot.,We has learned a lot.,have vs has,Chúng tôi đã học được rất nhiều.,,
+  pp23,Present Perfect,Intermediate,She has found a new job.,She have found a new job.,has vs have,Cô ấy đã tìm được công việc mới.,,
+  pp24,Present Perfect,Intermediate,We have learned a lot.,We has learned a lot.,have vs has,Chúng tôi đã học được rất nhiều.,,
+  pp25,Present Perfect,Intermediate,She has found a new job.,She have found a new job.,has vs have,Cô ấy đã tìm được công việc mới.,,
+  pp26,Present Perfect,Intermediate,We have learned a lot.,We has learned a lot.,have vs has,Chúng tôi đã học được rất nhiều.,,
+  pp27,Present Perfect,Intermediate,She has found a new job.,She have found a new job.,has vs have,Cô ấy đã tìm được công việc mới.,,
+  pp28,Present Perfect,Intermediate,We have learned a lot.,We has learned a lot.,have vs has,Chúng tôi đã học được rất nhiều.,,
+  pp29,Present Perfect,Intermediate,She has found a new job.,She have found a new job.,has vs have,Cô ấy đã tìm được công việc mới.,,
+  pp30,Present Perfect,Intermediate,We have learned a lot.,We has learned a lot.,have vs has,Chúng tôi đã học được rất nhiều.,,
+  pp31,Present Perfect,Intermediate,She has found a new job.,She have found a new job.,has vs have,Cô ấy đã tìm được công việc mới.,,
+  pp32,Present Perfect,Intermediate,We have learned a lot.,We has learned a lot.,have vs has,Chúng tôi đã học được rất nhiều.,,
+  pp33,Present Perfect,Intermediate,She has found a new job.,She have found a new job.,has vs have,Cô ấy đã tìm được công việc mới.,,
+  pp34,Present Perfect,Intermediate,We have learned a lot.,We has learned a lot.,have vs has,Chúng tôi đã học được rất nhiều.,,
+  pp35,Present Perfect,Intermediate,She has found a new job.,She have found a new job.,has vs have,Cô ấy đã tìm được công việc mới.,,
+  pp36,Present Perfect,Advanced,We have learned a lot.,We has learned a lot.,have vs has,Chúng tôi đã học được rất nhiều.,,
+  pp37,Present Perfect,Advanced,She has found a new job.,She have found a new job.,has vs have,Cô ấy đã tìm được công việc mới.,,
+  pp38,Present Perfect,Advanced,We have learned a lot.,We has learned a lot.,have vs has,Chúng tôi đã học được rất nhiều.,,
+  pp39,Present Perfect,Advanced,She has found a new job.,She have found a new job.,has vs have,Cô ấy đã tìm được công việc mới.,,
+  pp40,Present Perfect,Advanced,We have learned a lot.,We has learned a lot.,have vs has,Chúng tôi đã học được rất nhiều.,,
+  pp41,Present Perfect,Advanced,She has found a new job.,She have found a new job.,has vs have,Cô ấy đã tìm được công việc mới.,,
+  pp42,Present Perfect,Advanced,We have learned a lot.,We has learned a lot.,have vs has,Chúng tôi đã học được rất nhiều.,,
+  pp43,Present Perfect,Advanced,She has found a new job.,She have found a new job.,has vs have,Cô ấy đã tìm được công việc mới.,,
+  pp44,Present Perfect,Advanced,We have learned a lot.,We has learned a lot.,have vs has,Chúng tôi đã học được rất nhiều.,,
+  pp45,Present Perfect,Advanced,She has found a new job.,She have found a new job.,has vs have,Cô ấy đã tìm được công việc mới.,,
+  pp46,Present Perfect,Advanced,We have learned a lot.,We has learned a lot.,have vs has,Chúng tôi đã học được rất nhiều.,,
+  pp47,Present Perfect,Advanced,She has found a new job.,She have found a new job.,has vs have,Cô ấy đã tìm được công việc mới.,,
+  pp48,Present Perfect,Advanced,We have learned a lot.,We has learned a lot.,have vs has,Chúng tôi đã học được rất nhiều.,,
+  pp49,Present Perfect,Advanced,She has found a new job.,She have found a new job.,has vs have,Cô ấy đã tìm được công việc mới.,,
+  pp50,Present Perfect,Advanced,We have learned a lot.,We has learned a lot.,have vs has,Chúng tôi đã học được rất nhiều.,,
+  ps_new_1,Present Simple,Beginner,We clean the room usually.,We cleans the room usually.,Verb Agreement,Chúng tôi thường dọn dẹp căn phòng.,clean|cleans|cleaning|cleaned,usually|yesterday|tomorrow|now
+  ps_new_2,Present Simple,Beginner,She fixes the car often.,She fix the car often.,Verb Agreement,Cô ấy thường xuyên sửa chiếc xe.,fixes|fix|fixing|fixed,often|yesterday|tomorrow|now
+  ps_new_3,Present Simple,Beginner,He cleans the room usually.,He clean the room usually.,Verb Agreement,Anh ấy thường dọn dẹp căn phòng.,cleans|clean|cleaning|cleaned,usually|yesterday|tomorrow|now
+  ps_new_4,Present Simple,Beginner,She cleans the room often.,She clean the room often.,Verb Agreement,Cô ấy thường xuyên dọn dẹp căn phòng.,cleans|clean|cleaning|cleaned,often|yesterday|tomorrow|now
+  ps_new_5,Present Simple,Beginner,She reads a book usually.,She read a book usually.,Verb Agreement,Cô ấy thường đọc một cuốn sách.,reads|read|reading,usually|yesterday|tomorrow|now
+  ps_new_6,Present Simple,Beginner,We study English every day.,We studies English every day.,Verb Agreement,Chúng tôi mỗi ngày học tiếng Anh.,study|studies|studying|studied,every day|yesterday|tomorrow|now
+  ps_new_7,Present Simple,Beginner,We watch a movie often.,We watches a movie often.,Verb Agreement,Chúng tôi thường xuyên xem một bộ phim.,watch|watches|watching|watched,often|yesterday|tomorrow|now
+  ps_new_8,Present Simple,Beginner,I drink water usually.,I drinks water usually.,Verb Agreement,Tôi thường uống nước.,drink|drinks|drinking|drank,usually|yesterday|tomorrow|now
+  ps_new_9,Present Simple,Beginner,We play football often.,We plays football often.,Verb Agreement,Chúng tôi thường xuyên chơi bóng đá.,play|plays|playing|played,often|yesterday|tomorrow|now
+  ps_new_10,Present Simple,Beginner,We study English often.,We studies English often.,Verb Agreement,Chúng tôi thường xuyên học tiếng Anh.,study|studies|studying|studied,often|yesterday|tomorrow|now
+  ps_new_11,Present Simple,Beginner,I study English usually.,I studies English usually.,Verb Agreement,Tôi thường học tiếng Anh.,study|studies|studying|studied,usually|yesterday|tomorrow|now
+  ps_new_12,Present Simple,Beginner,They eat dinner usually.,They eats dinner usually.,Verb Agreement,Họ thường ăn bữa tối.,eat|eats|eating|ate,usually|yesterday|tomorrow|now
+  ps_new_13,Present Simple,Beginner,He fixes the car often.,He fix the car often.,Verb Agreement,Anh ấy thường xuyên sửa chiếc xe.,fixes|fix|fixing|fixed,often|yesterday|tomorrow|now
+  ps_new_14,Present Simple,Beginner,We read a book every day.,We reads a book every day.,Verb Agreement,Chúng tôi mỗi ngày đọc một cuốn sách.,read|reads|reading,every day|yesterday|tomorrow|now
+  ps_new_15,Present Simple,Intermediate,My dog studies English usually.,My dog study English usually.,Verb Agreement,Con chó của tôi thường học tiếng Anh.,studies|study|studying|studied,usually|yesterday|tomorrow|now
+  ps_new_16,Present Simple,Intermediate,My dog eats dinner usually.,My dog eat dinner usually.,Verb Agreement,Con chó của tôi thường ăn bữa tối.,eats|eat|eating|ate,usually|yesterday|tomorrow|now
+  ps_new_17,Present Simple,Intermediate,My brother writes a letter every day.,My brother write a letter every day.,Verb Agreement,Anh trai tôi mỗi ngày viết một bức thư.,writes|write|writing|wrote,every day|yesterday|tomorrow|now
+  ps_new_18,Present Simple,Intermediate,My parents study English often.,My parents studies English often.,Verb Agreement,Bố mẹ tôi thường xuyên học tiếng Anh.,study|studies|studying|studied,often|yesterday|tomorrow|now
+  ps_new_19,Present Simple,Intermediate,My brother fixes the car often.,My brother fix the car often.,Verb Agreement,Anh trai tôi thường xuyên sửa chiếc xe.,fixes|fix|fixing|fixed,often|yesterday|tomorrow|now
+  ps_new_20,Present Simple,Intermediate,The students finish the homework usually.,The students finishes the homework usually.,Verb Agreement,Các học sinh thường làm xong bài tập về nhà.,finish|finishes|finishing|finished,usually|yesterday|tomorrow|now
+  ps_new_21,Present Simple,Intermediate,My dog fixes the car every day.,My dog fix the car every day.,Verb Agreement,Con chó của tôi mỗi ngày sửa chiếc xe.,fixes|fix|fixing|fixed,every day|yesterday|tomorrow|now
+  ps_new_22,Present Simple,Intermediate,My brother finishes the homework every day.,My brother finish the homework every day.,Verb Agreement,Anh trai tôi mỗi ngày làm xong bài tập về nhà.,finishes|finish|finishing|finished,every day|yesterday|tomorrow|now
+  ps_new_23,Present Simple,Intermediate,My brother studies English usually.,My brother study English usually.,Verb Agreement,Anh trai tôi thường học tiếng Anh.,studies|study|studying|studied,usually|yesterday|tomorrow|now
+  ps_new_24,Present Simple,Intermediate,My parents clean the room every day.,My parents cleans the room every day.,Verb Agreement,Bố mẹ tôi mỗi ngày dọn dẹp căn phòng.,clean|cleans|cleaning|cleaned,every day|yesterday|tomorrow|now
+  ps_new_25,Present Simple,Advanced,The factory workers watch a movie every day.,The factory workers watches a movie every day.,Verb Agreement,Các công nhân nhà máy mỗi ngày xem một bộ phim.,watch|watches|watching|watched,every day|yesterday|tomorrow|now
+  ps_new_26,Present Simple,Advanced,Nobody eat dinner often.,Nobody eats dinner often.,Verb Agreement,Không ai thường xuyên ăn bữa tối.,eat|eats|eating|ate,often|yesterday|tomorrow|now
+  ps_new_27,Present Simple,Advanced,Nobody fix the car every day.,Nobody fixes the car every day.,Verb Agreement,Không ai mỗi ngày sửa chiếc xe.,fix|fixes|fixing|fixed,every day|yesterday|tomorrow|now
+  ps_new_28,Present Simple,Advanced,Nobody watch a movie usually.,Nobody watches a movie usually.,Verb Agreement,Không ai thường xem một bộ phim.,watch|watches|watching|watched,usually|yesterday|tomorrow|now
+  ps_new_29,Present Simple,Advanced,Nobody finish the homework usually.,Nobody finishes the homework usually.,Verb Agreement,Không ai thường làm xong bài tập về nhà.,finish|finishes|finishing|finished,usually|yesterday|tomorrow|now
+  ps_new_30,Present Simple,Advanced,The old scientist drinks water every day.,The old scientist drink water every day.,Verb Agreement,Nhà khoa học già mỗi ngày uống nước.,drinks|drink|drinking|drank,every day|yesterday|tomorrow|now
+  pc_new_31,Present Continuous,Beginner,I am watching a movie now.,I is watching a movie now.,Be Verb Agreement,Tôi đang xem một bộ phim bây giờ.,am watching|is watching|watch|watched,now|every day|yesterday|tomorrow
+  pc_new_32,Present Continuous,Beginner,They are playing football now.,They is playing football now.,Be Verb Agreement,Họ đang chơi bóng đá bây giờ.,are playing|is playing|play|played,now|every day|yesterday|tomorrow
+  pc_new_33,Present Continuous,Beginner,She is drinking water right now.,She are drinking water right now.,Be Verb Agreement,Cô ấy đang uống nước ngay bây giờ.,is drinking|are drinking|drink|drank,right now|every day|yesterday|tomorrow
+  pc_new_34,Present Continuous,Beginner,She is fixing the car at the moment.,She are fixing the car at the moment.,Be Verb Agreement,Cô ấy đang sửa chiếc xe vào lúc này.,is fixing|are fixing|fix|fixed,at the moment|every day|yesterday|tomorrow
+  pc_new_35,Present Continuous,Beginner,I am reading a book at the moment.,I is reading a book at the moment.,Be Verb Agreement,Tôi đang đọc một cuốn sách vào lúc này.,am reading|is reading|read,at the moment|every day|yesterday|tomorrow
+  pc_new_36,Present Continuous,Beginner,They are finishing the homework right now.,They is finishing the homework right now.,Be Verb Agreement,Họ đang làm xong bài tập về nhà ngay bây giờ.,are finishing|is finishing|finish|finished,right now|every day|yesterday|tomorrow
+  pc_new_37,Present Continuous,Beginner,I am cleaning the room right now.,I is cleaning the room right now.,Be Verb Agreement,Tôi đang dọn dẹp căn phòng ngay bây giờ.,am cleaning|is cleaning|clean|cleaned,right now|every day|yesterday|tomorrow
+  pc_new_38,Present Continuous,Beginner,They are studying English right now.,They is studying English right now.,Be Verb Agreement,Họ đang học tiếng Anh ngay bây giờ.,are studying|is studying|study|studied,right now|every day|yesterday|tomorrow
+  pc_new_39,Present Continuous,Beginner,We are writing a letter right now.,We is writing a letter right now.,Be Verb Agreement,Chúng tôi đang viết một bức thư ngay bây giờ.,are writing|is writing|write|wrote,right now|every day|yesterday|tomorrow
+  pc_new_40,Present Continuous,Beginner,I am eating dinner at the moment.,I is eating dinner at the moment.,Be Verb Agreement,Tôi đang ăn bữa tối vào lúc này.,am eating|is eating|eat|ate,at the moment|every day|yesterday|tomorrow
+  pc_new_41,Present Continuous,Beginner,I am watching a movie right now.,I is watching a movie right now.,Be Verb Agreement,Tôi đang xem một bộ phim ngay bây giờ.,am watching|is watching|watch|watched,right now|every day|yesterday|tomorrow
+  pc_new_42,Present Continuous,Beginner,They are writing a letter at the moment.,They is writing a letter at the moment.,Be Verb Agreement,Họ đang viết một bức thư vào lúc này.,are writing|is writing|write|wrote,at the moment|every day|yesterday|tomorrow
+  pc_new_43,Present Continuous,Beginner,She is watching a movie right now.,She are watching a movie right now.,Be Verb Agreement,Cô ấy đang xem một bộ phim ngay bây giờ.,is watching|are watching|watch|watched,right now|every day|yesterday|tomorrow
+  pc_new_44,Present Continuous,Beginner,She is fixing the car at the moment.,She are fixing the car at the moment.,Be Verb Agreement,Cô ấy đang sửa chiếc xe vào lúc này.,is fixing|are fixing|fix|fixed,at the moment|every day|yesterday|tomorrow
+  pc_new_45,Present Continuous,Intermediate,My parents are writing a letter now.,My parents is writing a letter now.,Be Verb Agreement,Bố mẹ tôi đang viết một bức thư bây giờ.,are writing|is writing|write|wrote,now|every day|yesterday|tomorrow
+  pc_new_46,Present Continuous,Intermediate,My parents are drinking water right now.,My parents is drinking water right now.,Be Verb Agreement,Bố mẹ tôi đang uống nước ngay bây giờ.,are drinking|is drinking|drink|drank,right now|every day|yesterday|tomorrow
+  pc_new_47,Present Continuous,Intermediate,My parents are fixing the car at the moment.,My parents is fixing the car at the moment.,Be Verb Agreement,Bố mẹ tôi đang sửa chiếc xe vào lúc này.,are fixing|is fixing|fix|fixed,at the moment|every day|yesterday|tomorrow
+  pc_new_48,Present Continuous,Intermediate,My parents are eating dinner at the moment.,My parents is eating dinner at the moment.,Be Verb Agreement,Bố mẹ tôi đang ăn bữa tối vào lúc này.,are eating|is eating|eat|ate,at the moment|every day|yesterday|tomorrow
+  pc_new_49,Present Continuous,Intermediate,The students are playing football now.,The students is playing football now.,Be Verb Agreement,Các học sinh đang chơi bóng đá bây giờ.,are playing|is playing|play|played,now|every day|yesterday|tomorrow
+  pc_new_50,Present Continuous,Intermediate,My parents are eating dinner now.,My parents is eating dinner now.,Be Verb Agreement,Bố mẹ tôi đang ăn bữa tối bây giờ.,are eating|is eating|eat|ate,now|every day|yesterday|tomorrow
+  pc_new_51,Present Continuous,Intermediate,My brother is writing a letter right now.,My brother are writing a letter right now.,Be Verb Agreement,Anh trai tôi đang viết một bức thư ngay bây giờ.,is writing|are writing|write|wrote,right now|every day|yesterday|tomorrow
+  pc_new_52,Present Continuous,Intermediate,My dog is playing football at the moment.,My dog are playing football at the moment.,Be Verb Agreement,Con chó của tôi đang chơi bóng đá vào lúc này.,is playing|are playing|play|played,at the moment|every day|yesterday|tomorrow
+  pc_new_53,Present Continuous,Intermediate,My dog is playing football now.,My dog are playing football now.,Be Verb Agreement,Con chó của tôi đang chơi bóng đá bây giờ.,is playing|are playing|play|played,now|every day|yesterday|tomorrow
+  pc_new_54,Present Continuous,Intermediate,My dog is studying English right now.,My dog are studying English right now.,Be Verb Agreement,Con chó của tôi đang học tiếng Anh ngay bây giờ.,is studying|are studying|study|studied,right now|every day|yesterday|tomorrow
+  pc_new_55,Present Continuous,Advanced,Nobody is writing a letter right now.,Nobody are writing a letter right now.,Be Verb Agreement,Không ai đang viết một bức thư ngay bây giờ.,is writing|are writing|write|wrote,right now|every day|yesterday|tomorrow
+  pc_new_56,Present Continuous,Advanced,The old scientist is writing a letter right now.,The old scientist are writing a letter right now.,Be Verb Agreement,Nhà khoa học già đang viết một bức thư ngay bây giờ.,is writing|are writing|write|wrote,right now|every day|yesterday|tomorrow
+  pc_new_57,Present Continuous,Advanced,The old scientist is cleaning the room right now.,The old scientist are cleaning the room right now.,Be Verb Agreement,Nhà khoa học già đang dọn dẹp căn phòng ngay bây giờ.,is cleaning|are cleaning|clean|cleaned,right now|every day|yesterday|tomorrow
+  pc_new_58,Present Continuous,Advanced,The factory workers are watching a movie now.,The factory workers is watching a movie now.,Be Verb Agreement,Các công nhân nhà máy đang xem một bộ phim bây giờ.,are watching|is watching|watch|watched,now|every day|yesterday|tomorrow
+  pc_new_59,Present Continuous,Advanced,The factory workers are watching a movie right now.,The factory workers is watching a movie right now.,Be Verb Agreement,Các công nhân nhà máy đang xem một bộ phim ngay bây giờ.,are watching|is watching|watch|watched,right now|every day|yesterday|tomorrow
+  pc_new_60,Present Continuous,Advanced,The factory workers are eating dinner now.,The factory workers is eating dinner now.,Be Verb Agreement,Các công nhân nhà máy đang ăn bữa tối bây giờ.,are eating|is eating|eat|ate,now|every day|yesterday|tomorrow
+  past_new_61,Past Simple,Beginner,She played football two days ago.,She play football two days ago.,Past Tense Form,Cô ấy đã chơi bóng đá hai ngày trước.,played|play|playing|plays,two days ago|tomorrow|now|always
+  past_new_62,Past Simple,Beginner,We fixed the car two days ago.,We fix the car two days ago.,Past Tense Form,Chúng tôi đã sửa chiếc xe hai ngày trước.,fixed|fix|fixing|fixes,two days ago|tomorrow|now|always
+  past_new_63,Past Simple,Beginner,We watched a movie yesterday.,We watch a movie yesterday.,Past Tense Form,Chúng tôi đã xem một bộ phim hôm qua.,watched|watch|watching|watches,yesterday|tomorrow|now|always
+  past_new_64,Past Simple,Beginner,We played football last week.,We play football last week.,Past Tense Form,Chúng tôi đã chơi bóng đá tuần trước.,played|play|playing|plays,last week|tomorrow|now|always
+  past_new_65,Past Simple,Beginner,They watched a movie two days ago.,They watch a movie two days ago.,Past Tense Form,Họ đã xem một bộ phim hai ngày trước.,watched|watch|watching|watches,two days ago|tomorrow|now|always
+  past_new_66,Past Simple,Beginner,We finished the homework last week.,We finish the homework last week.,Past Tense Form,Chúng tôi đã làm xong bài tập về nhà tuần trước.,finished|finish|finishing|finishes,last week|tomorrow|now|always
+  past_new_67,Past Simple,Beginner,We wrote a letter yesterday.,We write a letter yesterday.,Past Tense Form,Chúng tôi đã viết một bức thư hôm qua.,wrote|write|writing|writes,yesterday|tomorrow|now|always
+  past_new_68,Past Simple,Beginner,They read a book last week.,They read a book last week.,Past Tense Form,Họ đã đọc một cuốn sách tuần trước.,read|reading|reads,last week|tomorrow|now|always
+  past_new_69,Past Simple,Beginner,I watched a movie last week.,I watch a movie last week.,Past Tense Form,Tôi đã xem một bộ phim tuần trước.,watched|watch|watching|watches,last week|tomorrow|now|always
+  past_new_70,Past Simple,Beginner,He cleaned the room two days ago.,He clean the room two days ago.,Past Tense Form,Anh ấy đã dọn dẹp căn phòng hai ngày trước.,cleaned|clean|cleaning|cleans,two days ago|tomorrow|now|always
+  past_new_71,Past Simple,Beginner,He studied English last week.,He study English last week.,Past Tense Form,Anh ấy đã học tiếng Anh tuần trước.,studied|study|studying|studies,last week|tomorrow|now|always
+  past_new_72,Past Simple,Beginner,They fixed the car yesterday.,They fix the car yesterday.,Past Tense Form,Họ đã sửa chiếc xe hôm qua.,fixed|fix|fixing|fixes,yesterday|tomorrow|now|always
+  past_new_73,Past Simple,Beginner,He played football yesterday.,He play football yesterday.,Past Tense Form,Anh ấy đã chơi bóng đá hôm qua.,played|play|playing|plays,yesterday|tomorrow|now|always
+  past_new_74,Past Simple,Beginner,He played football two days ago.,He play football two days ago.,Past Tense Form,Anh ấy đã chơi bóng đá hai ngày trước.,played|play|playing|plays,two days ago|tomorrow|now|always
+  past_new_75,Past Simple,Intermediate,My brother studied English yesterday.,My brother study English yesterday.,Past Tense Form,Anh trai tôi đã học tiếng Anh hôm qua.,studied|study|studying|studies,yesterday|tomorrow|now|always
+  past_new_76,Past Simple,Intermediate,The students finished the homework last week.,The students finish the homework last week.,Past Tense Form,Các học sinh đã làm xong bài tập về nhà tuần trước.,finished|finish|finishing|finishes,last week|tomorrow|now|always
+  past_new_77,Past Simple,Intermediate,My dog wrote a letter last week.,My dog write a letter last week.,Past Tense Form,Con chó của tôi đã viết một bức thư tuần trước.,wrote|write|writing|writes,last week|tomorrow|now|always
+  past_new_78,Past Simple,Intermediate,The students wrote a letter yesterday.,The students write a letter yesterday.,Past Tense Form,Các học sinh đã viết một bức thư hôm qua.,wrote|write|writing|writes,yesterday|tomorrow|now|always
+  past_new_79,Past Simple,Intermediate,My brother watched a movie two days ago.,My brother watch a movie two days ago.,Past Tense Form,Anh trai tôi đã xem một bộ phim hai ngày trước.,watched|watch|watching|watches,two days ago|tomorrow|now|always
+  past_new_80,Past Simple,Intermediate,My dog ate dinner last week.,My dog eat dinner last week.,Past Tense Form,Con chó của tôi đã ăn bữa tối tuần trước.,ate|eat|eating|eats,last week|tomorrow|now|always
+  past_new_81,Past Simple,Intermediate,My parents ate dinner yesterday.,My parents eat dinner yesterday.,Past Tense Form,Bố mẹ tôi đã ăn bữa tối hôm qua.,ate|eat|eating|eats,yesterday|tomorrow|now|always
+  past_new_82,Past Simple,Intermediate,My dog finished the homework last week.,My dog finish the homework last week.,Past Tense Form,Con chó của tôi đã làm xong bài tập về nhà tuần trước.,finished|finish|finishing|finishes,last week|tomorrow|now|always
+  past_new_83,Past Simple,Intermediate,The students read a book last week.,The students read a book last week.,Past Tense Form,Các học sinh đã đọc một cuốn sách tuần trước.,read|reading|reads,last week|tomorrow|now|always
+  past_new_84,Past Simple,Intermediate,The students finished the homework yesterday.,The students finish the homework yesterday.,Past Tense Form,Các học sinh đã làm xong bài tập về nhà hôm qua.,finished|finish|finishing|finishes,yesterday|tomorrow|now|always
+  past_new_85,Past Simple,Advanced,Nobody ate dinner two days ago.,Nobody eat dinner two days ago.,Past Tense Form,Không ai đã ăn bữa tối hai ngày trước.,ate|eat|eating|eats,two days ago|tomorrow|now|always
+  past_new_86,Past Simple,Advanced,The factory workers fixed the car last week.,The factory workers fix the car last week.,Past Tense Form,Các công nhân nhà máy đã sửa chiếc xe tuần trước.,fixed|fix|fixing|fixes,last week|tomorrow|now|always
+  past_new_87,Past Simple,Advanced,The factory workers fixed the car two days ago.,The factory workers fix the car two days ago.,Past Tense Form,Các công nhân nhà máy đã sửa chiếc xe hai ngày trước.,fixed|fix|fixing|fixes,two days ago|tomorrow|now|always
+  past_new_88,Past Simple,Advanced,The old scientist ate dinner two days ago.,The old scientist eat dinner two days ago.,Past Tense Form,Nhà khoa học già đã ăn bữa tối hai ngày trước.,ate|eat|eating|eats,two days ago|tomorrow|now|always
+  past_new_89,Past Simple,Advanced,The factory workers played football last week.,The factory workers play football last week.,Past Tense Form,Các công nhân nhà máy đã chơi bóng đá tuần trước.,played|play|playing|plays,last week|tomorrow|now|always
+  past_new_90,Past Simple,Advanced,The old scientist wrote a letter two days ago.,The old scientist write a letter two days ago.,Past Tense Form,Nhà khoa học già đã viết một bức thư hai ngày trước.,wrote|write|writing|writes,two days ago|tomorrow|now|always
+  pastc_new_91,Past Continuous,Beginner,We were watching a movie at 8 PM yesterday.,We was watching a movie at 8 PM yesterday.,Was/Were Agreement,Chúng tôi đang xem một bộ phim lúc 8 giờ tối hôm qua.,were watching|was watching|watched|watch,at 8 PM yesterday|now|tomorrow|every day
+  pastc_new_92,Past Continuous,Beginner,They were studying English at 8 PM yesterday.,They was studying English at 8 PM yesterday.,Was/Were Agreement,Họ đang học tiếng Anh lúc 8 giờ tối hôm qua.,were studying|was studying|studied|study,at 8 PM yesterday|now|tomorrow|every day
+  pastc_new_93,Past Continuous,Beginner,She was finishing the homework at 8 PM yesterday.,She were finishing the homework at 8 PM yesterday.,Was/Were Agreement,Cô ấy đang làm xong bài tập về nhà lúc 8 giờ tối hôm qua.,was finishing|were finishing|finished|finish,at 8 PM yesterday|now|tomorrow|every day
+  pastc_new_94,Past Continuous,Beginner,I was reading a book at 8 PM yesterday.,I were reading a book at 8 PM yesterday.,Was/Were Agreement,Tôi đang đọc một cuốn sách lúc 8 giờ tối hôm qua.,was reading|were reading|read,at 8 PM yesterday|now|tomorrow|every day
+  pastc_new_95,Past Continuous,Beginner,They were reading a book at 8 PM yesterday.,They was reading a book at 8 PM yesterday.,Was/Were Agreement,Họ đang đọc một cuốn sách lúc 8 giờ tối hôm qua.,were reading|was reading|read,at 8 PM yesterday|now|tomorrow|every day
+  pastc_new_96,Past Continuous,Beginner,I was fixing the car at 8 PM yesterday.,I were fixing the car at 8 PM yesterday.,Was/Were Agreement,Tôi đang sửa chiếc xe lúc 8 giờ tối hôm qua.,was fixing|were fixing|fixed|fix,at 8 PM yesterday|now|tomorrow|every day
+  pastc_new_97,Past Continuous,Beginner,They were watching a movie at 8 PM yesterday.,They was watching a movie at 8 PM yesterday.,Was/Were Agreement,Họ đang xem một bộ phim lúc 8 giờ tối hôm qua.,were watching|was watching|watched|watch,at 8 PM yesterday|now|tomorrow|every day
+  pastc_new_98,Past Continuous,Beginner,He was studying English at 8 PM yesterday.,He were studying English at 8 PM yesterday.,Was/Were Agreement,Anh ấy đang học tiếng Anh lúc 8 giờ tối hôm qua.,was studying|were studying|studied|study,at 8 PM yesterday|now|tomorrow|every day
+  pastc_new_99,Past Continuous,Beginner,We were writing a letter at 8 PM yesterday.,We was writing a letter at 8 PM yesterday.,Was/Were Agreement,Chúng tôi đang viết một bức thư lúc 8 giờ tối hôm qua.,were writing|was writing|wrote|write,at 8 PM yesterday|now|tomorrow|every day
+  pastc_new_100,Past Continuous,Beginner,We were watching a movie at 8 PM yesterday.,We was watching a movie at 8 PM yesterday.,Was/Were Agreement,Chúng tôi đang xem một bộ phim lúc 8 giờ tối hôm qua.,were watching|was watching|watched|watch,at 8 PM yesterday|now|tomorrow|every day
+  pastc_new_101,Past Continuous,Beginner,I was fixing the car at 8 PM yesterday.,I were fixing the car at 8 PM yesterday.,Was/Were Agreement,Tôi đang sửa chiếc xe lúc 8 giờ tối hôm qua.,was fixing|were fixing|fixed|fix,at 8 PM yesterday|now|tomorrow|every day
+  pastc_new_102,Past Continuous,Beginner,We were finishing the homework at 8 PM yesterday.,We was finishing the homework at 8 PM yesterday.,Was/Were Agreement,Chúng tôi đang làm xong bài tập về nhà lúc 8 giờ tối hôm qua.,were finishing|was finishing|finished|finish,at 8 PM yesterday|now|tomorrow|every day
+  pastc_new_103,Past Continuous,Beginner,He was reading a book at 8 PM yesterday.,He were reading a book at 8 PM yesterday.,Was/Were Agreement,Anh ấy đang đọc một cuốn sách lúc 8 giờ tối hôm qua.,was reading|were reading|read,at 8 PM yesterday|now|tomorrow|every day
+  pastc_new_104,Past Continuous,Beginner,She was watching a movie at 8 PM yesterday.,She were watching a movie at 8 PM yesterday.,Was/Were Agreement,Cô ấy đang xem một bộ phim lúc 8 giờ tối hôm qua.,was watching|were watching|watched|watch,at 8 PM yesterday|now|tomorrow|every day
+  pastc_new_105,Past Continuous,Intermediate,The students were finishing the homework at 8 PM yesterday.,The students was finishing the homework at 8 PM yesterday.,Was/Were Agreement,Các học sinh đang làm xong bài tập về nhà lúc 8 giờ tối hôm qua.,were finishing|was finishing|finished|finish,at 8 PM yesterday|now|tomorrow|every day
+  pastc_new_106,Past Continuous,Intermediate,My dog was eating dinner at 8 PM yesterday.,My dog were eating dinner at 8 PM yesterday.,Was/Were Agreement,Con chó của tôi đang ăn bữa tối lúc 8 giờ tối hôm qua.,was eating|were eating|ate|eat,at 8 PM yesterday|now|tomorrow|every day
+  pastc_new_107,Past Continuous,Intermediate,My parents were fixing the car at 8 PM yesterday.,My parents was fixing the car at 8 PM yesterday.,Was/Were Agreement,Bố mẹ tôi đang sửa chiếc xe lúc 8 giờ tối hôm qua.,were fixing|was fixing|fixed|fix,at 8 PM yesterday|now|tomorrow|every day
+  pastc_new_108,Past Continuous,Intermediate,My brother was finishing the homework at 8 PM yesterday.,My brother were finishing the homework at 8 PM yesterday.,Was/Were Agreement,Anh trai tôi đang làm xong bài tập về nhà lúc 8 giờ tối hôm qua.,was finishing|were finishing|finished|finish,at 8 PM yesterday|now|tomorrow|every day
+  pastc_new_109,Past Continuous,Intermediate,My brother was fixing the car at 8 PM yesterday.,My brother were fixing the car at 8 PM yesterday.,Was/Were Agreement,Anh trai tôi đang sửa chiếc xe lúc 8 giờ tối hôm qua.,was fixing|were fixing|fixed|fix,at 8 PM yesterday|now|tomorrow|every day
+  pastc_new_110,Past Continuous,Intermediate,My brother was eating dinner at 8 PM yesterday.,My brother were eating dinner at 8 PM yesterday.,Was/Were Agreement,Anh trai tôi đang ăn bữa tối lúc 8 giờ tối hôm qua.,was eating|were eating|ate|eat,at 8 PM yesterday|now|tomorrow|every day
+  pastc_new_111,Past Continuous,Intermediate,My parents were drinking water at 8 PM yesterday.,My parents was drinking water at 8 PM yesterday.,Was/Were Agreement,Bố mẹ tôi đang uống nước lúc 8 giờ tối hôm qua.,were drinking|was drinking|drank|drink,at 8 PM yesterday|now|tomorrow|every day
+  pastc_new_112,Past Continuous,Intermediate,My brother was writing a letter at 8 PM yesterday.,My brother were writing a letter at 8 PM yesterday.,Was/Were Agreement,Anh trai tôi đang viết một bức thư lúc 8 giờ tối hôm qua.,was writing|were writing|wrote|write,at 8 PM yesterday|now|tomorrow|every day
+  pastc_new_113,Past Continuous,Intermediate,My parents were fixing the car at 8 PM yesterday.,My parents was fixing the car at 8 PM yesterday.,Was/Were Agreement,Bố mẹ tôi đang sửa chiếc xe lúc 8 giờ tối hôm qua.,were fixing|was fixing|fixed|fix,at 8 PM yesterday|now|tomorrow|every day
+  pastc_new_114,Past Continuous,Intermediate,My dog was playing football at 8 PM yesterday.,My dog were playing football at 8 PM yesterday.,Was/Were Agreement,Con chó của tôi đang chơi bóng đá lúc 8 giờ tối hôm qua.,was playing|were playing|played|play,at 8 PM yesterday|now|tomorrow|every day
+  pastc_new_115,Past Continuous,Advanced,Nobody was reading a book at 8 PM yesterday.,Nobody were reading a book at 8 PM yesterday.,Was/Were Agreement,Không ai đang đọc một cuốn sách lúc 8 giờ tối hôm qua.,was reading|were reading|read,at 8 PM yesterday|now|tomorrow|every day
+  pastc_new_116,Past Continuous,Advanced,The old scientist was writing a letter at 8 PM yesterday.,The old scientist were writing a letter at 8 PM yesterday.,Was/Were Agreement,Nhà khoa học già đang viết một bức thư lúc 8 giờ tối hôm qua.,was writing|were writing|wrote|write,at 8 PM yesterday|now|tomorrow|every day
+  pastc_new_117,Past Continuous,Advanced,Nobody was writing a letter at 8 PM yesterday.,Nobody were writing a letter at 8 PM yesterday.,Was/Were Agreement,Không ai đang viết một bức thư lúc 8 giờ tối hôm qua.,was writing|were writing|wrote|write,at 8 PM yesterday|now|tomorrow|every day
+  pastc_new_118,Past Continuous,Advanced,Nobody was reading a book at 8 PM yesterday.,Nobody were reading a book at 8 PM yesterday.,Was/Were Agreement,Không ai đang đọc một cuốn sách lúc 8 giờ tối hôm qua.,was reading|were reading|read,at 8 PM yesterday|now|tomorrow|every day
+  pastc_new_119,Past Continuous,Advanced,The old scientist was reading a book at 8 PM yesterday.,The old scientist were reading a book at 8 PM yesterday.,Was/Were Agreement,Nhà khoa học già đang đọc một cuốn sách lúc 8 giờ tối hôm qua.,was reading|were reading|read,at 8 PM yesterday|now|tomorrow|every day
+  pastc_new_120,Past Continuous,Advanced,The factory workers were drinking water at 8 PM yesterday.,The factory workers was drinking water at 8 PM yesterday.,Was/Were Agreement,Các công nhân nhà máy đang uống nước lúc 8 giờ tối hôm qua.,were drinking|was drinking|drank|drink,at 8 PM yesterday|now|tomorrow|every day
+  fs_new_121,Future Simple,Beginner,I will read a book soon.,I will reads a book soon.,Will + Bare Infinitive,Tôi sẽ đọc một cuốn sách sớm thôi.,will read|will reads|will reading|read,soon|yesterday|now|last week
+  fs_new_122,Future Simple,Beginner,He will clean the room soon.,He will cleans the room soon.,Will + Bare Infinitive,Anh ấy sẽ dọn dẹp căn phòng sớm thôi.,will clean|will cleans|will cleaning|cleaned,soon|yesterday|now|last week
+  fs_new_123,Future Simple,Beginner,They will eat dinner next week.,They will eats dinner next week.,Will + Bare Infinitive,Họ sẽ ăn bữa tối tuần tới.,will eat|will eats|will eating|ate,next week|yesterday|now|last week
+  fs_new_124,Future Simple,Beginner,He will finish the homework next week.,He will finishes the homework next week.,Will + Bare Infinitive,Anh ấy sẽ làm xong bài tập về nhà tuần tới.,will finish|will finishes|will finishing|finished,next week|yesterday|now|last week
+  fs_new_125,Future Simple,Beginner,She will study English next week.,She will studies English next week.,Will + Bare Infinitive,Cô ấy sẽ học tiếng Anh tuần tới.,will study|will studies|will studying|studied,next week|yesterday|now|last week
+  fs_new_126,Future Simple,Beginner,I will fix the car next week.,I will fixes the car next week.,Will + Bare Infinitive,Tôi sẽ sửa chiếc xe tuần tới.,will fix|will fixes|will fixing|fixed,next week|yesterday|now|last week
+  fs_new_127,Future Simple,Beginner,They will watch a movie soon.,They will watches a movie soon.,Will + Bare Infinitive,Họ sẽ xem một bộ phim sớm thôi.,will watch|will watches|will watching|watched,soon|yesterday|now|last week
+  fs_new_128,Future Simple,Beginner,He will finish the homework soon.,He will finishes the homework soon.,Will + Bare Infinitive,Anh ấy sẽ làm xong bài tập về nhà sớm thôi.,will finish|will finishes|will finishing|finished,soon|yesterday|now|last week
+  fs_new_129,Future Simple,Beginner,He will finish the homework soon.,He will finishes the homework soon.,Will + Bare Infinitive,Anh ấy sẽ làm xong bài tập về nhà sớm thôi.,will finish|will finishes|will finishing|finished,soon|yesterday|now|last week
+  fs_new_130,Future Simple,Beginner,She will play football tomorrow.,She will plays football tomorrow.,Will + Bare Infinitive,Cô ấy sẽ chơi bóng đá ngày mai.,will play|will plays|will playing|played,tomorrow|yesterday|now|last week
+  fs_new_131,Future Simple,Beginner,I will watch a movie soon.,I will watches a movie soon.,Will + Bare Infinitive,Tôi sẽ xem một bộ phim sớm thôi.,will watch|will watches|will watching|watched,soon|yesterday|now|last week
+  fs_new_132,Future Simple,Beginner,I will finish the homework next week.,I will finishes the homework next week.,Will + Bare Infinitive,Tôi sẽ làm xong bài tập về nhà tuần tới.,will finish|will finishes|will finishing|finished,next week|yesterday|now|last week
+  fs_new_133,Future Simple,Beginner,They will eat dinner soon.,They will eats dinner soon.,Will + Bare Infinitive,Họ sẽ ăn bữa tối sớm thôi.,will eat|will eats|will eating|ate,soon|yesterday|now|last week
+  fs_new_134,Future Simple,Beginner,He will eat dinner soon.,He will eats dinner soon.,Will + Bare Infinitive,Anh ấy sẽ ăn bữa tối sớm thôi.,will eat|will eats|will eating|ate,soon|yesterday|now|last week
+  fs_new_135,Future Simple,Intermediate,My parents will drink water next week.,My parents will drinks water next week.,Will + Bare Infinitive,Bố mẹ tôi sẽ uống nước tuần tới.,will drink|will drinks|will drinking|drank,next week|yesterday|now|last week
+  fs_new_136,Future Simple,Intermediate,The students will finish the homework soon.,The students will finishes the homework soon.,Will + Bare Infinitive,Các học sinh sẽ làm xong bài tập về nhà sớm thôi.,will finish|will finishes|will finishing|finished,soon|yesterday|now|last week
+  fs_new_137,Future Simple,Intermediate,The students will write a letter tomorrow.,The students will writes a letter tomorrow.,Will + Bare Infinitive,Các học sinh sẽ viết một bức thư ngày mai.,will write|will writes|will writing|wrote,tomorrow|yesterday|now|last week
+  fs_new_138,Future Simple,Intermediate,My dog will finish the homework next week.,My dog will finishes the homework next week.,Will + Bare Infinitive,Con chó của tôi sẽ làm xong bài tập về nhà tuần tới.,will finish|will finishes|will finishing|finished,next week|yesterday|now|last week
+  fs_new_139,Future Simple,Intermediate,My brother will clean the room tomorrow.,My brother will cleans the room tomorrow.,Will + Bare Infinitive,Anh trai tôi sẽ dọn dẹp căn phòng ngày mai.,will clean|will cleans|will cleaning|cleaned,tomorrow|yesterday|now|last week
+  fs_new_140,Future Simple,Intermediate,My brother will watch a movie soon.,My brother will watches a movie soon.,Will + Bare Infinitive,Anh trai tôi sẽ xem một bộ phim sớm thôi.,will watch|will watches|will watching|watched,soon|yesterday|now|last week
+  fs_new_141,Future Simple,Intermediate,My dog will clean the room soon.,My dog will cleans the room soon.,Will + Bare Infinitive,Con chó của tôi sẽ dọn dẹp căn phòng sớm thôi.,will clean|will cleans|will cleaning|cleaned,soon|yesterday|now|last week
+  fs_new_142,Future Simple,Intermediate,My dog will study English next week.,My dog will studies English next week.,Will + Bare Infinitive,Con chó của tôi sẽ học tiếng Anh tuần tới.,will study|will studies|will studying|studied,next week|yesterday|now|last week
+  fs_new_143,Future Simple,Intermediate,My parents will eat dinner tomorrow.,My parents will eats dinner tomorrow.,Will + Bare Infinitive,Bố mẹ tôi sẽ ăn bữa tối ngày mai.,will eat|will eats|will eating|ate,tomorrow|yesterday|now|last week
+  fs_new_144,Future Simple,Intermediate,My brother will study English soon.,My brother will studies English soon.,Will + Bare Infinitive,Anh trai tôi sẽ học tiếng Anh sớm thôi.,will study|will studies|will studying|studied,soon|yesterday|now|last week
+  fs_new_145,Future Simple,Advanced,The old scientist will play football next week.,The old scientist will plays football next week.,Will + Bare Infinitive,Nhà khoa học già sẽ chơi bóng đá tuần tới.,will play|will plays|will playing|played,next week|yesterday|now|last week
+  fs_new_146,Future Simple,Advanced,Nobody will eat dinner tomorrow.,Nobody will eats dinner tomorrow.,Will + Bare Infinitive,Không ai sẽ ăn bữa tối ngày mai.,will eat|will eats|will eating|ate,tomorrow|yesterday|now|last week
+  fs_new_147,Future Simple,Advanced,Nobody will watch a movie soon.,Nobody will watches a movie soon.,Will + Bare Infinitive,Không ai sẽ xem một bộ phim sớm thôi.,will watch|will watches|will watching|watched,soon|yesterday|now|last week
+  fs_new_148,Future Simple,Advanced,Nobody will study English next week.,Nobody will studies English next week.,Will + Bare Infinitive,Không ai sẽ học tiếng Anh tuần tới.,will study|will studies|will studying|studied,next week|yesterday|now|last week
+  fs_new_149,Future Simple,Advanced,The old scientist will study English soon.,The old scientist will studies English soon.,Will + Bare Infinitive,Nhà khoa học già sẽ học tiếng Anh sớm thôi.,will study|will studies|will studying|studied,soon|yesterday|now|last week
+  fs_new_150,Future Simple,Advanced,Nobody will eat dinner soon.,Nobody will eats dinner soon.,Will + Bare Infinitive,Không ai sẽ ăn bữa tối sớm thôi.,will eat|will eats|will eating|ate,soon|yesterday|now|last week
+  fc_new_151,Future Continuous,Beginner,We will be watching a movie at 8 PM tomorrow.,We will being watching a movie at 8 PM tomorrow.,Will be + V-ing,Chúng tôi sẽ đang xem một bộ phim lúc 8 giờ tối mai.,will be watching|will being watching|will watching|will watch,at 8 PM tomorrow|yesterday|every day|ago
+  fc_new_152,Future Continuous,Beginner,They will be reading a book at this time next week.,They will being reading a book at this time next week.,Will be + V-ing,Họ sẽ đang đọc một cuốn sách vào thời điểm này tuần tới.,will be reading|will being reading|will reading|will read,at this time next week|yesterday|every day|ago
+  fc_new_153,Future Continuous,Beginner,She will be watching a movie at this time next week.,She will being watching a movie at this time next week.,Will be + V-ing,Cô ấy sẽ đang xem một bộ phim vào thời điểm này tuần tới.,will be watching|will being watching|will watching|will watch,at this time next week|yesterday|every day|ago
+  fc_new_154,Future Continuous,Beginner,We will be cleaning the room at 8 PM tomorrow.,We will being cleaning the room at 8 PM tomorrow.,Will be + V-ing,Chúng tôi sẽ đang dọn dẹp căn phòng lúc 8 giờ tối mai.,will be cleaning|will being cleaning|will cleaning|will clean,at 8 PM tomorrow|yesterday|every day|ago
+  fc_new_155,Future Continuous,Beginner,They will be reading a book at this time next week.,They will being reading a book at this time next week.,Will be + V-ing,Họ sẽ đang đọc một cuốn sách vào thời điểm này tuần tới.,will be reading|will being reading|will reading|will read,at this time next week|yesterday|every day|ago
+  fc_new_156,Future Continuous,Beginner,He will be cleaning the room at 8 PM tomorrow.,He will being cleaning the room at 8 PM tomorrow.,Will be + V-ing,Anh ấy sẽ đang dọn dẹp căn phòng lúc 8 giờ tối mai.,will be cleaning|will being cleaning|will cleaning|will clean,at 8 PM tomorrow|yesterday|every day|ago
+  fc_new_157,Future Continuous,Beginner,We will be playing football at this time next week.,We will being playing football at this time next week.,Will be + V-ing,Chúng tôi sẽ đang chơi bóng đá vào thời điểm này tuần tới.,will be playing|will being playing|will playing|will play,at this time next week|yesterday|every day|ago
+  fc_new_158,Future Continuous,Beginner,They will be watching a movie at 8 PM tomorrow.,They will being watching a movie at 8 PM tomorrow.,Will be + V-ing,Họ sẽ đang xem một bộ phim lúc 8 giờ tối mai.,will be watching|will being watching|will watching|will watch,at 8 PM tomorrow|yesterday|every day|ago
+  fc_new_159,Future Continuous,Beginner,I will be playing football at this time next week.,I will being playing football at this time next week.,Will be + V-ing,Tôi sẽ đang chơi bóng đá vào thời điểm này tuần tới.,will be playing|will being playing|will playing|will play,at this time next week|yesterday|every day|ago
+  fc_new_160,Future Continuous,Beginner,She will be finishing the homework at this time next week.,She will being finishing the homework at this time next week.,Will be + V-ing,Cô ấy sẽ đang làm xong bài tập về nhà vào thời điểm này tuần tới.,will be finishing|will being finishing|will finishing|will finish,at this time next week|yesterday|every day|ago
+  fc_new_161,Future Continuous,Beginner,She will be reading a book at 8 PM tomorrow.,She will being reading a book at 8 PM tomorrow.,Will be + V-ing,Cô ấy sẽ đang đọc một cuốn sách lúc 8 giờ tối mai.,will be reading|will being reading|will reading|will read,at 8 PM tomorrow|yesterday|every day|ago
+  fc_new_162,Future Continuous,Beginner,I will be reading a book at this time next week.,I will being reading a book at this time next week.,Will be + V-ing,Tôi sẽ đang đọc một cuốn sách vào thời điểm này tuần tới.,will be reading|will being reading|will reading|will read,at this time next week|yesterday|every day|ago
+  fc_new_163,Future Continuous,Beginner,They will be writing a letter at 8 PM tomorrow.,They will being writing a letter at 8 PM tomorrow.,Will be + V-ing,Họ sẽ đang viết một bức thư lúc 8 giờ tối mai.,will be writing|will being writing|will writing|will write,at 8 PM tomorrow|yesterday|every day|ago
+  fc_new_164,Future Continuous,Beginner,They will be writing a letter at 8 PM tomorrow.,They will being writing a letter at 8 PM tomorrow.,Will be + V-ing,Họ sẽ đang viết một bức thư lúc 8 giờ tối mai.,will be writing|will being writing|will writing|will write,at 8 PM tomorrow|yesterday|every day|ago
+  fc_new_165,Future Continuous,Intermediate,My brother will be eating dinner at 8 PM tomorrow.,My brother will being eating dinner at 8 PM tomorrow.,Will be + V-ing,Anh trai tôi sẽ đang ăn bữa tối lúc 8 giờ tối mai.,will be eating|will being eating|will eating|will eat,at 8 PM tomorrow|yesterday|every day|ago
+  fc_new_166,Future Continuous,Intermediate,The students will be playing football at 8 PM tomorrow.,The students will being playing football at 8 PM tomorrow.,Will be + V-ing,Các học sinh sẽ đang chơi bóng đá lúc 8 giờ tối mai.,will be playing|will being playing|will playing|will play,at 8 PM tomorrow|yesterday|every day|ago
+  fc_new_167,Future Continuous,Intermediate,The students will be drinking water at 8 PM tomorrow.,The students will being drinking water at 8 PM tomorrow.,Will be + V-ing,Các học sinh sẽ đang uống nước lúc 8 giờ tối mai.,will be drinking|will being drinking|will drinking|will drink,at 8 PM tomorrow|yesterday|every day|ago
+  fc_new_168,Future Continuous,Intermediate,My dog will be watching a movie at this time next week.,My dog will being watching a movie at this time next week.,Will be + V-ing,Con chó của tôi sẽ đang xem một bộ phim vào thời điểm này tuần tới.,will be watching|will being watching|will watching|will watch,at this time next week|yesterday|every day|ago
+  fc_new_169,Future Continuous,Intermediate,The students will be studying English at this time next week.,The students will being studying English at this time next week.,Will be + V-ing,Các học sinh sẽ đang học tiếng Anh vào thời điểm này tuần tới.,will be studying|will being studying|will studying|will study,at this time next week|yesterday|every day|ago
+  fc_new_170,Future Continuous,Intermediate,The students will be watching a movie at this time next week.,The students will being watching a movie at this time next week.,Will be + V-ing,Các học sinh sẽ đang xem một bộ phim vào thời điểm này tuần tới.,will be watching|will being watching|will watching|will watch,at this time next week|yesterday|every day|ago
+  fc_new_171,Future Continuous,Intermediate,The students will be drinking water at 8 PM tomorrow.,The students will being drinking water at 8 PM tomorrow.,Will be + V-ing,Các học sinh sẽ đang uống nước lúc 8 giờ tối mai.,will be drinking|will being drinking|will drinking|will drink,at 8 PM tomorrow|yesterday|every day|ago
+  fc_new_172,Future Continuous,Intermediate,My dog will be eating dinner at 8 PM tomorrow.,My dog will being eating dinner at 8 PM tomorrow.,Will be + V-ing,Con chó của tôi sẽ đang ăn bữa tối lúc 8 giờ tối mai.,will be eating|will being eating|will eating|will eat,at 8 PM tomorrow|yesterday|every day|ago
+  fc_new_173,Future Continuous,Intermediate,My dog will be drinking water at 8 PM tomorrow.,My dog will being drinking water at 8 PM tomorrow.,Will be + V-ing,Con chó của tôi sẽ đang uống nước lúc 8 giờ tối mai.,will be drinking|will being drinking|will drinking|will drink,at 8 PM tomorrow|yesterday|every day|ago
+  fc_new_174,Future Continuous,Intermediate,My parents will be watching a movie at 8 PM tomorrow.,My parents will being watching a movie at 8 PM tomorrow.,Will be + V-ing,Bố mẹ tôi sẽ đang xem một bộ phim lúc 8 giờ tối mai.,will be watching|will being watching|will watching|will watch,at 8 PM tomorrow|yesterday|every day|ago
+  fc_new_175,Future Continuous,Advanced,The old scientist will be eating dinner at 8 PM tomorrow.,The old scientist will being eating dinner at 8 PM tomorrow.,Will be + V-ing,Nhà khoa học già sẽ đang ăn bữa tối lúc 8 giờ tối mai.,will be eating|will being eating|will eating|will eat,at 8 PM tomorrow|yesterday|every day|ago
+  fc_new_176,Future Continuous,Advanced,The old scientist will be fixing the car at 8 PM tomorrow.,The old scientist will being fixing the car at 8 PM tomorrow.,Will be + V-ing,Nhà khoa học già sẽ đang sửa chiếc xe lúc 8 giờ tối mai.,will be fixing|will being fixing|will fixing|will fix,at 8 PM tomorrow|yesterday|every day|ago
+  fc_new_177,Future Continuous,Advanced,Nobody will be finishing the homework at this time next week.,Nobody will being finishing the homework at this time next week.,Will be + V-ing,Không ai sẽ đang làm xong bài tập về nhà vào thời điểm này tuần tới.,will be finishing|will being finishing|will finishing|will finish,at this time next week|yesterday|every day|ago
+  fc_new_178,Future Continuous,Advanced,Nobody will be playing football at 8 PM tomorrow.,Nobody will being playing football at 8 PM tomorrow.,Will be + V-ing,Không ai sẽ đang chơi bóng đá lúc 8 giờ tối mai.,will be playing|will being playing|will playing|will play,at 8 PM tomorrow|yesterday|every day|ago
+  fc_new_179,Future Continuous,Advanced,Nobody will be writing a letter at this time next week.,Nobody will being writing a letter at this time next week.,Will be + V-ing,Không ai sẽ đang viết một bức thư vào thời điểm này tuần tới.,will be writing|will being writing|will writing|will write,at this time next week|yesterday|every day|ago
+  fc_new_180,Future Continuous,Advanced,The factory workers will be studying English at 8 PM tomorrow.,The factory workers will being studying English at 8 PM tomorrow.,Will be + V-ing,Các công nhân nhà máy sẽ đang học tiếng Anh lúc 8 giờ tối mai.,will be studying|will being studying|will studying|will study,at 8 PM tomorrow|yesterday|every day|ago
+  pp_new_181,Present Perfect,Beginner,He has fixed the car recently.,He have fixed the car recently.,Have/Has Agreement,Anh ấy đã sửa xong chiếc xe gần đây.,has fixed|have fixed|fixed,recently|tomorrow|now|yesterday
+  pp_new_182,Present Perfect,Beginner,He has played football recently.,He have played football recently.,Have/Has Agreement,Anh ấy đã chơi xong bóng đá gần đây.,has played|have played|played,recently|tomorrow|now|yesterday
+  pp_new_183,Present Perfect,Beginner,He has cleaned the room three times.,He have cleaned the room three times.,Have/Has Agreement,Anh ấy đã dọn dẹp xong căn phòng ba lần.,has cleaned|have cleaned|cleaned,three times|tomorrow|now|yesterday
+  pp_new_184,Present Perfect,Beginner,She has drunk water three times.,She have drunk water three times.,Have/Has Agreement,Cô ấy đã uống xong nước ba lần.,has drunk|have drunk|has drank|drank,three times|tomorrow|now|yesterday
+  pp_new_185,Present Perfect,Beginner,He has drunk water already.,He have drunk water already.,Have/Has Agreement,Anh ấy đã uống xong nước rồi.,has drunk|have drunk|has drank|drank,already|tomorrow|now|yesterday
+  pp_new_186,Present Perfect,Beginner,She has written a letter three times.,She have written a letter three times.,Have/Has Agreement,Cô ấy đã viết xong một bức thư ba lần.,has written|have written|has wrote|wrote,three times|tomorrow|now|yesterday
+  pp_new_187,Present Perfect,Beginner,She has written a letter already.,She have written a letter already.,Have/Has Agreement,Cô ấy đã viết xong một bức thư rồi.,has written|have written|has wrote|wrote,already|tomorrow|now|yesterday
+  pp_new_188,Present Perfect,Beginner,I have cleaned the room already.,I has cleaned the room already.,Have/Has Agreement,Tôi đã dọn dẹp xong căn phòng rồi.,have cleaned|has cleaned|cleaned,already|tomorrow|now|yesterday
+  pp_new_189,Present Perfect,Beginner,We have drunk water recently.,We has drunk water recently.,Have/Has Agreement,Chúng tôi đã uống xong nước gần đây.,have drunk|has drunk|have drank|drank,recently|tomorrow|now|yesterday
+  pp_new_190,Present Perfect,Beginner,She has finished the homework already.,She have finished the homework already.,Have/Has Agreement,Cô ấy đã làm xong xong bài tập về nhà rồi.,has finished|have finished|finished,already|tomorrow|now|yesterday
+  pp_new_191,Present Perfect,Beginner,She has watched a movie already.,She have watched a movie already.,Have/Has Agreement,Cô ấy đã xem xong một bộ phim rồi.,has watched|have watched|watched,already|tomorrow|now|yesterday
+  pp_new_192,Present Perfect,Beginner,They have studied English three times.,They has studied English three times.,Have/Has Agreement,Họ đã học xong tiếng Anh ba lần.,have studied|has studied|studied,three times|tomorrow|now|yesterday
+  pp_new_193,Present Perfect,Beginner,I have fixed the car already.,I has fixed the car already.,Have/Has Agreement,Tôi đã sửa xong chiếc xe rồi.,have fixed|has fixed|fixed,already|tomorrow|now|yesterday
+  pp_new_194,Present Perfect,Beginner,He has studied English recently.,He have studied English recently.,Have/Has Agreement,Anh ấy đã học xong tiếng Anh gần đây.,has studied|have studied|studied,recently|tomorrow|now|yesterday
+  pp_new_195,Present Perfect,Intermediate,The students have drunk water three times.,The students has drunk water three times.,Have/Has Agreement,Các học sinh đã uống xong nước ba lần.,have drunk|has drunk|have drank|drank,three times|tomorrow|now|yesterday
+  pp_new_196,Present Perfect,Intermediate,My dog has finished the homework already.,My dog have finished the homework already.,Have/Has Agreement,Con chó của tôi đã làm xong xong bài tập về nhà rồi.,has finished|have finished|finished,already|tomorrow|now|yesterday
+  pp_new_197,Present Perfect,Intermediate,My brother has cleaned the room already.,My brother have cleaned the room already.,Have/Has Agreement,Anh trai tôi đã dọn dẹp xong căn phòng rồi.,has cleaned|have cleaned|cleaned,already|tomorrow|now|yesterday
+  pp_new_198,Present Perfect,Intermediate,My parents have studied English three times.,My parents has studied English three times.,Have/Has Agreement,Bố mẹ tôi đã học xong tiếng Anh ba lần.,have studied|has studied|studied,three times|tomorrow|now|yesterday
+  pp_new_199,Present Perfect,Intermediate,My brother has fixed the car already.,My brother have fixed the car already.,Have/Has Agreement,Anh trai tôi đã sửa xong chiếc xe rồi.,has fixed|have fixed|fixed,already|tomorrow|now|yesterday
+  pp_new_200,Present Perfect,Intermediate,My parents have eaten dinner already.,My parents has eaten dinner already.,Have/Has Agreement,Bố mẹ tôi đã ăn xong bữa tối rồi.,have eaten|has eaten|have ate|ate,already|tomorrow|now|yesterday
+  pp_new_201,Present Perfect,Intermediate,My brother has drunk water recently.,My brother have drunk water recently.,Have/Has Agreement,Anh trai tôi đã uống xong nước gần đây.,has drunk|have drunk|has drank|drank,recently|tomorrow|now|yesterday
+  pp_new_202,Present Perfect,Intermediate,My parents have watched a movie already.,My parents has watched a movie already.,Have/Has Agreement,Bố mẹ tôi đã xem xong một bộ phim rồi.,have watched|has watched|watched,already|tomorrow|now|yesterday
+  pp_new_203,Present Perfect,Intermediate,My brother has written a letter recently.,My brother have written a letter recently.,Have/Has Agreement,Anh trai tôi đã viết xong một bức thư gần đây.,has written|have written|has wrote|wrote,recently|tomorrow|now|yesterday
+  pp_new_204,Present Perfect,Intermediate,My brother has written a letter already.,My brother have written a letter already.,Have/Has Agreement,Anh trai tôi đã viết xong một bức thư rồi.,has written|have written|has wrote|wrote,already|tomorrow|now|yesterday
+  pp_new_205,Present Perfect,Advanced,Nobody has eaten dinner three times.,Nobody have eaten dinner three times.,Have/Has Agreement,Không ai đã ăn xong bữa tối ba lần.,has eaten|have eaten|has ate|ate,three times|tomorrow|now|yesterday
+  pp_new_206,Present Perfect,Advanced,The old scientist has drunk water recently.,The old scientist have drunk water recently.,Have/Has Agreement,Nhà khoa học già đã uống xong nước gần đây.,has drunk|have drunk|has drank|drank,recently|tomorrow|now|yesterday
+  pp_new_207,Present Perfect,Advanced,The old scientist has written a letter already.,The old scientist have written a letter already.,Have/Has Agreement,Nhà khoa học già đã viết xong một bức thư rồi.,has written|have written|has wrote|wrote,already|tomorrow|now|yesterday
+  pp_new_208,Present Perfect,Advanced,The old scientist has written a letter already.,The old scientist have written a letter already.,Have/Has Agreement,Nhà khoa học già đã viết xong một bức thư rồi.,has written|have written|has wrote|wrote,already|tomorrow|now|yesterday
+  pp_new_209,Present Perfect,Advanced,The old scientist has watched a movie already.,The old scientist have watched a movie already.,Have/Has Agreement,Nhà khoa học già đã xem xong một bộ phim rồi.,has watched|have watched|watched,already|tomorrow|now|yesterday
+  pp_new_210,Present Perfect,Advanced,The factory workers have eaten dinner recently.,The factory workers has eaten dinner recently.,Have/Has Agreement,Các công nhân nhà máy đã ăn xong bữa tối gần đây.,have eaten|has eaten|have ate|ate,recently|tomorrow|now|yesterday
+  ppc_new_211,Present Perfect Continuous,Beginner,I have been playing football all day.,I has been playing football all day.,Have/Has been + V-ing,Tôi đã và đang chơi bóng đá cả ngày.,have been playing|has been playing|have playing|playing,all day|tomorrow|yesterday|next week
+  ppc_new_212,Present Perfect Continuous,Beginner,She has been fixing the car since morning.,She have been fixing the car since morning.,Have/Has been + V-ing,Cô ấy đã và đang sửa chiếc xe từ sáng.,has been fixing|have been fixing|has fixing|fixing,since morning|tomorrow|yesterday|next week
+  ppc_new_213,Present Perfect Continuous,Beginner,I have been studying English all day.,I has been studying English all day.,Have/Has been + V-ing,Tôi đã và đang học tiếng Anh cả ngày.,have been studying|has been studying|have studying|studying,all day|tomorrow|yesterday|next week
+  ppc_new_214,Present Perfect Continuous,Beginner,They have been finishing the homework all day.,They has been finishing the homework all day.,Have/Has been + V-ing,Họ đã và đang làm xong bài tập về nhà cả ngày.,have been finishing|has been finishing|have finishing|finishing,all day|tomorrow|yesterday|next week
+  ppc_new_215,Present Perfect Continuous,Beginner,We have been fixing the car since morning.,We has been fixing the car since morning.,Have/Has been + V-ing,Chúng tôi đã và đang sửa chiếc xe từ sáng.,have been fixing|has been fixing|have fixing|fixing,since morning|tomorrow|yesterday|next week
+  ppc_new_216,Present Perfect Continuous,Beginner,He has been studying English since morning.,He have been studying English since morning.,Have/Has been + V-ing,Anh ấy đã và đang học tiếng Anh từ sáng.,has been studying|have been studying|has studying|studying,since morning|tomorrow|yesterday|next week
+  ppc_new_217,Present Perfect Continuous,Beginner,They have been finishing the homework since morning.,They has been finishing the homework since morning.,Have/Has been + V-ing,Họ đã và đang làm xong bài tập về nhà từ sáng.,have been finishing|has been finishing|have finishing|finishing,since morning|tomorrow|yesterday|next week
+  ppc_new_218,Present Perfect Continuous,Beginner,He has been reading a book since morning.,He have been reading a book since morning.,Have/Has been + V-ing,Anh ấy đã và đang đọc một cuốn sách từ sáng.,has been reading|have been reading|has reading|reading,since morning|tomorrow|yesterday|next week
+  ppc_new_219,Present Perfect Continuous,Beginner,He has been studying English all day.,He have been studying English all day.,Have/Has been + V-ing,Anh ấy đã và đang học tiếng Anh cả ngày.,has been studying|have been studying|has studying|studying,all day|tomorrow|yesterday|next week
+  ppc_new_220,Present Perfect Continuous,Beginner,They have been writing a letter since morning.,They has been writing a letter since morning.,Have/Has been + V-ing,Họ đã và đang viết một bức thư từ sáng.,have been writing|has been writing|have writing|writing,since morning|tomorrow|yesterday|next week
+  ppc_new_221,Present Perfect Continuous,Beginner,We have been watching a movie since morning.,We has been watching a movie since morning.,Have/Has been + V-ing,Chúng tôi đã và đang xem một bộ phim từ sáng.,have been watching|has been watching|have watching|watching,since morning|tomorrow|yesterday|next week
+  ppc_new_222,Present Perfect Continuous,Beginner,We have been eating dinner since morning.,We has been eating dinner since morning.,Have/Has been + V-ing,Chúng tôi đã và đang ăn bữa tối từ sáng.,have been eating|has been eating|have eating|eating,since morning|tomorrow|yesterday|next week
+  ppc_new_223,Present Perfect Continuous,Beginner,They have been fixing the car all day.,They has been fixing the car all day.,Have/Has been + V-ing,Họ đã và đang sửa chiếc xe cả ngày.,have been fixing|has been fixing|have fixing|fixing,all day|tomorrow|yesterday|next week
+  ppc_new_224,Present Perfect Continuous,Beginner,We have been watching a movie for 2 hours.,We has been watching a movie for 2 hours.,Have/Has been + V-ing,Chúng tôi đã và đang xem một bộ phim trong 2 giờ.,have been watching|has been watching|have watching|watching,for 2 hours|tomorrow|yesterday|next week
+  ppc_new_225,Present Perfect Continuous,Intermediate,My brother has been fixing the car since morning.,My brother have been fixing the car since morning.,Have/Has been + V-ing,Anh trai tôi đã và đang sửa chiếc xe từ sáng.,has been fixing|have been fixing|has fixing|fixing,since morning|tomorrow|yesterday|next week
+  ppc_new_226,Present Perfect Continuous,Intermediate,The students have been eating dinner all day.,The students has been eating dinner all day.,Have/Has been + V-ing,Các học sinh đã và đang ăn bữa tối cả ngày.,have been eating|has been eating|have eating|eating,all day|tomorrow|yesterday|next week
+  ppc_new_227,Present Perfect Continuous,Intermediate,My brother has been drinking water all day.,My brother have been drinking water all day.,Have/Has been + V-ing,Anh trai tôi đã và đang uống nước cả ngày.,has been drinking|have been drinking|has drinking|drinking,all day|tomorrow|yesterday|next week
+  ppc_new_228,Present Perfect Continuous,Intermediate,My parents have been fixing the car for 2 hours.,My parents has been fixing the car for 2 hours.,Have/Has been + V-ing,Bố mẹ tôi đã và đang sửa chiếc xe trong 2 giờ.,have been fixing|has been fixing|have fixing|fixing,for 2 hours|tomorrow|yesterday|next week
+  ppc_new_229,Present Perfect Continuous,Intermediate,The students have been studying English all day.,The students has been studying English all day.,Have/Has been + V-ing,Các học sinh đã và đang học tiếng Anh cả ngày.,have been studying|has been studying|have studying|studying,all day|tomorrow|yesterday|next week
+  ppc_new_230,Present Perfect Continuous,Intermediate,The students have been fixing the car all day.,The students has been fixing the car all day.,Have/Has been + V-ing,Các học sinh đã và đang sửa chiếc xe cả ngày.,have been fixing|has been fixing|have fixing|fixing,all day|tomorrow|yesterday|next week
+  ppc_new_231,Present Perfect Continuous,Intermediate,My brother has been watching a movie since morning.,My brother have been watching a movie since morning.,Have/Has been + V-ing,Anh trai tôi đã và đang xem một bộ phim từ sáng.,has been watching|have been watching|has watching|watching,since morning|tomorrow|yesterday|next week
+  ppc_new_232,Present Perfect Continuous,Intermediate,My parents have been watching a movie all day.,My parents has been watching a movie all day.,Have/Has been + V-ing,Bố mẹ tôi đã và đang xem một bộ phim cả ngày.,have been watching|has been watching|have watching|watching,all day|tomorrow|yesterday|next week
+  ppc_new_233,Present Perfect Continuous,Intermediate,My parents have been eating dinner since morning.,My parents has been eating dinner since morning.,Have/Has been + V-ing,Bố mẹ tôi đã và đang ăn bữa tối từ sáng.,have been eating|has been eating|have eating|eating,since morning|tomorrow|yesterday|next week
+  ppc_new_234,Present Perfect Continuous,Intermediate,My dog has been drinking water for 2 hours.,My dog have been drinking water for 2 hours.,Have/Has been + V-ing,Con chó của tôi đã và đang uống nước trong 2 giờ.,has been drinking|have been drinking|has drinking|drinking,for 2 hours|tomorrow|yesterday|next week
+  ppc_new_235,Present Perfect Continuous,Advanced,The factory workers have been reading a book since morning.,The factory workers has been reading a book since morning.,Have/Has been + V-ing,Các công nhân nhà máy đã và đang đọc một cuốn sách từ sáng.,have been reading|has been reading|have reading|reading,since morning|tomorrow|yesterday|next week
+  ppc_new_236,Present Perfect Continuous,Advanced,The old scientist has been reading a book all day.,The old scientist have been reading a book all day.,Have/Has been + V-ing,Nhà khoa học già đã và đang đọc một cuốn sách cả ngày.,has been reading|have been reading|has reading|reading,all day|tomorrow|yesterday|next week
+  ppc_new_237,Present Perfect Continuous,Advanced,The old scientist has been eating dinner all day.,The old scientist have been eating dinner all day.,Have/Has been + V-ing,Nhà khoa học già đã và đang ăn bữa tối cả ngày.,has been eating|have been eating|has eating|eating,all day|tomorrow|yesterday|next week
+  ppc_new_238,Present Perfect Continuous,Advanced,Nobody has been watching a movie since morning.,Nobody have been watching a movie since morning.,Have/Has been + V-ing,Không ai đã và đang xem một bộ phim từ sáng.,has been watching|have been watching|has watching|watching,since morning|tomorrow|yesterday|next week
+  ppc_new_239,Present Perfect Continuous,Advanced,The factory workers have been reading a book since morning.,The factory workers has been reading a book since morning.,Have/Has been + V-ing,Các công nhân nhà máy đã và đang đọc một cuốn sách từ sáng.,have been reading|has been reading|have reading|reading,since morning|tomorrow|yesterday|next week
+  ppc_new_240,Present Perfect Continuous,Advanced,The old scientist has been watching a movie for 2 hours.,The old scientist have been watching a movie for 2 hours.,Have/Has been + V-ing,Nhà khoa học già đã và đang xem một bộ phim trong 2 giờ.,has been watching|have been watching|has watching|watching,for 2 hours|tomorrow|yesterday|next week
+  pastp_new_241,Past Perfect,Beginner,He had studied English before I arrived.,He have studied English before I arrived.,Had + Past Participle,Anh ấy đã học xong tiếng Anh trước khi tôi đến.,had studied|have studied|had studying|has studied,before I arrived|tomorrow|always|now
+  pastp_new_242,Past Perfect,Beginner,They had read a book by the time we came.,They have read a book by the time we came.,Had + Past Participle,Họ đã đọc xong một cuốn sách vào lúc chúng tôi đến.,had read|have read|had reading|has read,by the time we came|tomorrow|always|now
+  pastp_new_243,Past Perfect,Beginner,We had read a book by the time we came.,We have read a book by the time we came.,Had + Past Participle,Chúng tôi đã đọc xong một cuốn sách vào lúc chúng tôi đến.,had read|have read|had reading|has read,by the time we came|tomorrow|always|now
+  pastp_new_244,Past Perfect,Beginner,We had fixed the car before I arrived.,We have fixed the car before I arrived.,Had + Past Participle,Chúng tôi đã sửa xong chiếc xe trước khi tôi đến.,had fixed|have fixed|had fixing|has fixed,before I arrived|tomorrow|always|now
+  pastp_new_245,Past Perfect,Beginner,She had written a letter before I arrived.,She have written a letter before I arrived.,Had + Past Participle,Cô ấy đã viết xong một bức thư trước khi tôi đến.,had written|have written|had writing|has written,before I arrived|tomorrow|always|now
+  pastp_new_246,Past Perfect,Beginner,We had cleaned the room before I arrived.,We have cleaned the room before I arrived.,Had + Past Participle,Chúng tôi đã dọn dẹp xong căn phòng trước khi tôi đến.,had cleaned|have cleaned|had cleaning|has cleaned,before I arrived|tomorrow|always|now
+  pastp_new_247,Past Perfect,Beginner,She had eaten dinner by the time we came.,She have eaten dinner by the time we came.,Had + Past Participle,Cô ấy đã ăn xong bữa tối vào lúc chúng tôi đến.,had eaten|have eaten|had eating|has eaten,by the time we came|tomorrow|always|now
+  pastp_new_248,Past Perfect,Beginner,He had drunk water by the time we came.,He have drunk water by the time we came.,Had + Past Participle,Anh ấy đã uống xong nước vào lúc chúng tôi đến.,had drunk|have drunk|had drinking|has drunk,by the time we came|tomorrow|always|now
+  pastp_new_249,Past Perfect,Beginner,We had written a letter by the time we came.,We have written a letter by the time we came.,Had + Past Participle,Chúng tôi đã viết xong một bức thư vào lúc chúng tôi đến.,had written|have written|had writing|has written,by the time we came|tomorrow|always|now
+  pastp_new_250,Past Perfect,Beginner,He had cleaned the room by the time we came.,He have cleaned the room by the time we came.,Had + Past Participle,Anh ấy đã dọn dẹp xong căn phòng vào lúc chúng tôi đến.,had cleaned|have cleaned|had cleaning|has cleaned,by the time we came|tomorrow|always|now
+  pastp_new_251,Past Perfect,Beginner,He had watched a movie by the time we came.,He have watched a movie by the time we came.,Had + Past Participle,Anh ấy đã xem xong một bộ phim vào lúc chúng tôi đến.,had watched|have watched|had watching|has watched,by the time we came|tomorrow|always|now
+  pastp_new_252,Past Perfect,Beginner,They had eaten dinner before I arrived.,They have eaten dinner before I arrived.,Had + Past Participle,Họ đã ăn xong bữa tối trước khi tôi đến.,had eaten|have eaten|had eating|has eaten,before I arrived|tomorrow|always|now
+  pastp_new_253,Past Perfect,Beginner,She had written a letter before I arrived.,She have written a letter before I arrived.,Had + Past Participle,Cô ấy đã viết xong một bức thư trước khi tôi đến.,had written|have written|had writing|has written,before I arrived|tomorrow|always|now
+  pastp_new_254,Past Perfect,Beginner,She had cleaned the room before I arrived.,She have cleaned the room before I arrived.,Had + Past Participle,Cô ấy đã dọn dẹp xong căn phòng trước khi tôi đến.,had cleaned|have cleaned|had cleaning|has cleaned,before I arrived|tomorrow|always|now
+  pastp_new_255,Past Perfect,Intermediate,My dog had finished the homework by the time we came.,My dog have finished the homework by the time we came.,Had + Past Participle,Con chó của tôi đã làm xong xong bài tập về nhà vào lúc chúng tôi đến.,had finished|have finished|had finishing|has finished,by the time we came|tomorrow|always|now
+  pastp_new_256,Past Perfect,Intermediate,My dog had studied English by the time we came.,My dog have studied English by the time we came.,Had + Past Participle,Con chó của tôi đã học xong tiếng Anh vào lúc chúng tôi đến.,had studied|have studied|had studying|has studied,by the time we came|tomorrow|always|now
+  pastp_new_257,Past Perfect,Intermediate,My brother had eaten dinner before I arrived.,My brother have eaten dinner before I arrived.,Had + Past Participle,Anh trai tôi đã ăn xong bữa tối trước khi tôi đến.,had eaten|have eaten|had eating|has eaten,before I arrived|tomorrow|always|now
+  pastp_new_258,Past Perfect,Intermediate,My parents had played football by the time we came.,My parents have played football by the time we came.,Had + Past Participle,Bố mẹ tôi đã chơi xong bóng đá vào lúc chúng tôi đến.,had played|have played|had playing|has played,by the time we came|tomorrow|always|now
+  pastp_new_259,Past Perfect,Intermediate,My brother had studied English before I arrived.,My brother have studied English before I arrived.,Had + Past Participle,Anh trai tôi đã học xong tiếng Anh trước khi tôi đến.,had studied|have studied|had studying|has studied,before I arrived|tomorrow|always|now
+  pastp_new_260,Past Perfect,Intermediate,My brother had finished the homework by the time we came.,My brother have finished the homework by the time we came.,Had + Past Participle,Anh trai tôi đã làm xong xong bài tập về nhà vào lúc chúng tôi đến.,had finished|have finished|had finishing|has finished,by the time we came|tomorrow|always|now
+  pastp_new_261,Past Perfect,Intermediate,My dog had written a letter before I arrived.,My dog have written a letter before I arrived.,Had + Past Participle,Con chó của tôi đã viết xong một bức thư trước khi tôi đến.,had written|have written|had writing|has written,before I arrived|tomorrow|always|now
+  pastp_new_262,Past Perfect,Intermediate,My parents had drunk water before I arrived.,My parents have drunk water before I arrived.,Had + Past Participle,Bố mẹ tôi đã uống xong nước trước khi tôi đến.,had drunk|have drunk|had drinking|has drunk,before I arrived|tomorrow|always|now
+  pastp_new_263,Past Perfect,Intermediate,My brother had written a letter before I arrived.,My brother have written a letter before I arrived.,Had + Past Participle,Anh trai tôi đã viết xong một bức thư trước khi tôi đến.,had written|have written|had writing|has written,before I arrived|tomorrow|always|now
+  pastp_new_264,Past Perfect,Intermediate,My dog had played football by the time we came.,My dog have played football by the time we came.,Had + Past Participle,Con chó của tôi đã chơi xong bóng đá vào lúc chúng tôi đến.,had played|have played|had playing|has played,by the time we came|tomorrow|always|now
+  pastp_new_265,Past Perfect,Advanced,The factory workers had cleaned the room before I arrived.,The factory workers have cleaned the room before I arrived.,Had + Past Participle,Các công nhân nhà máy đã dọn dẹp xong căn phòng trước khi tôi đến.,had cleaned|have cleaned|had cleaning|has cleaned,before I arrived|tomorrow|always|now
+  pastp_new_266,Past Perfect,Advanced,Nobody had studied English by the time we came.,Nobody have studied English by the time we came.,Had + Past Participle,Không ai đã học xong tiếng Anh vào lúc chúng tôi đến.,had studied|have studied|had studying|has studied,by the time we came|tomorrow|always|now
+  pastp_new_267,Past Perfect,Advanced,The factory workers had drunk water before I arrived.,The factory workers have drunk water before I arrived.,Had + Past Participle,Các công nhân nhà máy đã uống xong nước trước khi tôi đến.,had drunk|have drunk|had drinking|has drunk,before I arrived|tomorrow|always|now
+  pastp_new_268,Past Perfect,Advanced,The old scientist had cleaned the room before I arrived.,The old scientist have cleaned the room before I arrived.,Had + Past Participle,Nhà khoa học già đã dọn dẹp xong căn phòng trước khi tôi đến.,had cleaned|have cleaned|had cleaning|has cleaned,before I arrived|tomorrow|always|now
+  pastp_new_269,Past Perfect,Advanced,The old scientist had written a letter by the time we came.,The old scientist have written a letter by the time we came.,Had + Past Participle,Nhà khoa học già đã viết xong một bức thư vào lúc chúng tôi đến.,had written|have written|had writing|has written,by the time we came|tomorrow|always|now
+  pastp_new_270,Past Perfect,Advanced,The factory workers had eaten dinner before I arrived.,The factory workers have eaten dinner before I arrived.,Had + Past Participle,Các công nhân nhà máy đã ăn xong bữa tối trước khi tôi đến.,had eaten|have eaten|had eating|has eaten,before I arrived|tomorrow|always|now

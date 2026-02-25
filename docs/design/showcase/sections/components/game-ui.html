@@ -1,184 +1,228 @@
 <div class="section-header">
-    <h2 class="section-title">Game UI Elements</h2>
-    <p class="section-description">High-contrast feedback mechanisms for progression and scoring.</p>
+  <h2 class="section-title">Game UI Elements</h2>
+  <p class="section-description">
+    High-contrast feedback mechanisms for progression and scoring.
+  </p>
 </div>
 
 <div class="component-showcase">
-    <div class="component-block">
-        <h3>1. Progress & Score</h3>
-        <p class="text-sm">High-contrast, chunky elements for immediate readability.</p>
-        
-        <div class="flex-row vertical-stack">
-            <!-- Score Pill -->
-            <div class="score-pill">
-                <i class="ph-fill ph-star" style="color: var(--color-warning);"></i>
-                <span class="score-text">1,450</span>
-            </div>
-            
-            <!-- Thick Progress Bar -->
-            <div class="progress-container">
-                <div class="progress-bar" style="width: 70%; background-color: var(--color-success);"></div>
-                <div class="progress-icon"><i class="ph-fill ph-lightning"></i></div>
-            </div>
-            
-            <div class="progress-container">
-                <div class="progress-bar" style="width: 30%; background-color: var(--color-danger);"></div>
-                <div class="progress-icon"><i class="ph-fill ph-heart"></i></div>
-            </div>
-        </div>
-    </div>
-    
-    <div class="component-block">
-        <h3>2. Timer Bars</h3>
-        <p class="text-sm">Time pressure visualizer with urgent states.</p>
-        <div class="flex-row">
-            <div class="timer-container">
-                <div class="timer-bar safe" style="width: 80%;"></div>
-                <i class="ph-fill ph-clock timer-icon"></i>
-            </div>
-            
-            <div class="timer-container urgent" style="margin-top:20px;">
-                <div class="timer-bar danger pulse" style="width: 15%;"></div>
-                <i class="ph-fill ph-clock timer-icon"></i>
-            </div>
-        </div>
-    </div>
+  <div class="component-block">
+    <h3>1. Progress & Score</h3>
+    <p class="text-sm">
+      High-contrast, chunky elements for immediate readability.
+    </p>
 
-    <div class="component-block">
-        <h3>3. Game HUD Header</h3>
-        <p class="text-sm">Standard top navigation for all active game screens.</p>
-        <div class="flex-row">
-            <div class="game-hud">
-                <button class="hud-btn"><i class="ph-bold ph-x"></i></button>
-                <div class="hud-title">Unit 1: Animals</div>
-                <button class="hud-btn"><i class="ph-bold ph-gear"></i></button>
-            </div>
-        </div>
-    <div class="component-block">
-        <h3>4. Zelda/Mario Health Hearts</h3>
-        <p class="text-sm">Classic 3-heart life system.</p>
-        <div class="flex-row horizontal-stack">
-            <div class="health-hearts">
-                <i class="ph-fill ph-heart full"></i>
-                <i class="ph-fill ph-heart full"></i>
-                <i class="ph ph-heart empty"></i>
-            </div>
-        </div>
-    </div>
+    <div class="flex-row vertical-stack">
+      <!-- Score Pill -->
+      <div class="score-pill">
+        <i class="ph-fill ph-star" style="color: var(--color-warning)"></i>
+        <span class="score-text">1,450</span>
+      </div>
 
-    <div class="component-block">
-        <h3>5. Curved Stamina/Energy Bar</h3>
-        <p class="text-sm">Segmented arcs for energy drain.</p>
-        <div class="flex-row">
-            <div class="stamina-container">
-                <svg viewBox="0 0 100 50" class="stamina-arc">
-                    <path class="arc-bg" d="M 10 50 A 40 40 0 0 1 90 50" />
-                    <path class="arc-fill" d="M 10 50 A 40 40 0 0 1 90 50" stroke-dasharray="125" stroke-dashoffset="40" />
-                </svg>
-                <i class="ph-fill ph-lightning stamina-icon"></i>
-            </div>
-        </div>
-    </div>
+      <!-- Thick Progress Bar -->
+      <div class="progress-container">
+        <div
+          class="progress-bar"
+          style="width: 70%; background-color: var(--color-success)"
+        ></div>
+        <div class="progress-icon"><i class="ph-fill ph-lightning"></i></div>
+      </div>
 
-    <div class="component-block">
-        <h3>6. Combo Multiplier Pill</h3>
-        <p class="text-sm">Bouncy pill for active streaks.</p>
-        <div class="flex-row">
-            <div class="combo-pill cursor-pointer">
-                <span class="combo-x">x</span><span class="combo-num">3</span>!
-            </div>
-        </div>
+      <div class="progress-container">
+        <div
+          class="progress-bar"
+          style="width: 30%; background-color: var(--color-danger)"
+        ></div>
+        <div class="progress-icon"><i class="ph-fill ph-heart"></i></div>
+      </div>
     </div>
+  </div>
 
-    <div class="component-block">
-        <h3>7. Boss Health Bar</h3>
-        <p class="text-sm">Large, centered, menacing red bar.</p>
-        <div class="flex-row" style="padding-top: 30px; width: 100%;">
-            <div class="boss-health-container">
-                <div class="boss-name">Dragon King</div>
-                <div class="boss-bar-track">
-                    <div class="boss-bar-fill" style="width: 45%;"></div>
-                </div>
-            </div>
-        </div>
-    </div>
+  <div class="component-block">
+    <h3>2. Timer Bars</h3>
+    <p class="text-sm">Time pressure visualizer with urgent states.</p>
+    <div class="flex-row">
+      <div class="timer-container">
+        <div class="timer-bar safe" style="width: 80%"></div>
+        <i class="ph-fill ph-clock timer-icon"></i>
+      </div>
 
-    <div class="component-block">
-        <h3>8. XP / Experience Bar</h3>
-        <p class="text-sm">Slim progress bar, often fixed at bottom.</p>
-        <div class="flex-row" style="width: 100%; border-bottom: 2px solid #E2E8F0; padding-bottom: 0;">
-            <div class="xp-bar-container">
-                <div class="xp-bar-track">
-                    <div class="xp-bar-fill" style="width: 80%;"></div>
-                </div>
-                <div class="xp-level-badge">LV 12</div>
-            </div>
-        </div>
+      <div class="timer-container urgent" style="margin-top: 20px">
+        <div class="timer-bar danger pulse" style="width: 15%"></div>
+        <i class="ph-fill ph-clock timer-icon"></i>
+      </div>
     </div>
+  </div>
 
-    <div class="component-block">
-        <h3>9. Mini-map / Radar UI Marker</h3>
-        <p class="text-sm">Compass dot for showing nearby objectives.</p>
-        <div class="flex-row">
-            <div class="radar-map">
-                <div class="radar-player"></div>
-                <div class="radar-dot" style="top: 20%; left: 70%;"></div>
-                <div class="radar-dot enemy" style="top: 80%; left: 30%;"></div>
-            </div>
-        </div>
+  <div class="component-block">
+    <h3>3. Game HUD Header</h3>
+    <p class="text-sm">Standard top navigation for all active game screens.</p>
+    <div class="flex-row">
+      <div class="game-hud">
+        <button class="hud-btn"><i class="ph-bold ph-x"></i></button>
+        <div class="hud-title">Unit 1: Animals</div>
+        <button class="hud-btn"><i class="ph-bold ph-gear"></i></button>
+      </div>
     </div>
+  </div>
+  <div class="component-block">
+    <h3>4. Zelda/Mario Health Hearts</h3>
+    <p class="text-sm">Classic 3-heart life system.</p>
+    <div class="flex-row horizontal-stack">
+      <div class="health-hearts">
+        <i class="ph-fill ph-heart full"></i>
+        <i class="ph-fill ph-heart full"></i>
+        <i class="ph ph-heart empty"></i>
+      </div>
+    </div>
+  </div>
 
-    <div class="component-block">
-        <h3>10. Inventory Slot</h3>
-        <p class="text-sm">Square slots for item holding.</p>
-        <div class="flex-row horizontal-stack">
-            <div class="inventory-slot empty"></div>
-            <div class="inventory-slot full cursor-pointer">
-                <i class="ph-fill ph-sword"></i>
-                <div class="item-count">2</div>
-            </div>
-            <div class="inventory-slot locked">
-                <i class="ph-bold ph-lock"></i>
-            </div>
-        </div>
+  <div class="component-block">
+    <h3>5. Curved Stamina/Energy Bar</h3>
+    <p class="text-sm">Segmented arcs for energy drain.</p>
+    <div class="flex-row">
+      <div class="stamina-container">
+        <svg viewBox="0 0 100 50" class="stamina-arc">
+          <path class="arc-bg" d="M 10 50 A 40 40 0 0 1 90 50" />
+          <path
+            class="arc-fill"
+            d="M 10 50 A 40 40 0 0 1 90 50"
+            stroke-dasharray="125"
+            stroke-dashoffset="40"
+          />
+        </svg>
+        <i class="ph-fill ph-lightning stamina-icon"></i>
+      </div>
     </div>
+  </div>
 
-    <div class="component-block">
-        <h3>11. Action Cool-down Timer</h3>
-        <p class="text-sm">Dark radial overlay on skills.</p>
-        <div class="flex-row horizontal-stack">
-            <div class="cooldown-slot ready cursor-pointer">
-                <i class="ph-fill ph-fire"></i>
-            </div>
-            <div class="cooldown-slot cooling">
-                <i class="ph-fill ph-lightning"></i>
-                <div class="cooldown-overlay" style="height: 60%;"></div>
-                <span class="cooldown-text">3s</span>
-            </div>
-        </div>
+  <div class="component-block">
+    <h3>6. Combo Multiplier Pill</h3>
+    <p class="text-sm">Bouncy pill for active streaks.</p>
+    <div class="flex-row">
+      <div class="combo-pill cursor-pointer">
+        <span class="combo-x">x</span><span class="combo-num">3</span>!
+      </div>
     </div>
+  </div>
 
-    <div class="component-block">
-        <h3>12. Directional D-Pad</h3>
-        <p class="text-sm">Cohesive unit for movement control.</p>
-        <div class="flex-row">
-            <div class="d-pad">
-                <div class="d-btn up cursor-pointer"><i class="ph-bold ph-caret-up"></i></div>
-                <div class="d-btn left cursor-pointer"><i class="ph-bold ph-caret-left"></i></div>
-                <div class="d-center"></div>
-                <div class="d-btn right cursor-pointer"><i class="ph-bold ph-caret-right"></i></div>
-                <div class="d-btn down cursor-pointer"><i class="ph-bold ph-caret-down"></i></div>
-            </div>
+  <div class="component-block">
+    <h3>7. Boss Health Bar</h3>
+    <p class="text-sm">Large, centered, menacing red bar.</p>
+    <div
+      class="flex-row"
+      style="
+        padding-top: 30px;
+        width: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+      "
+    >
+      <div class="boss-health-container">
+        <div class="boss-name">Dragon King</div>
+        <div class="boss-bar-track">
+          <div class="boss-bar-fill" style="width: 45%"></div>
         </div>
+      </div>
     </div>
+  </div>
 
-    <div class="component-block">
-        <h3>13. Floating Combat Text</h3>
-        <p class="text-sm">Damage or score popups.</p>
-        <div class="flex-row" style="height: 100px; display: flex; align-items: flex-end;">
-            <div class="floating-text damage">-15</div>
-            <div class="floating-text crit" style="margin-left: 20px;">CRITICAL!</div>
-            <div class="floating-text heal" style="margin-left: 20px;">+20</div>
+  <div class="component-block">
+    <h3>8. XP / Experience Bar</h3>
+    <p class="text-sm">Slim progress bar, often fixed at bottom.</p>
+    <div
+      class="flex-row"
+      style="
+        width: 100%;
+        border-bottom: 2px solid #e2e8f0;
+        padding-bottom: 0;
+        box-sizing: border-box;
+        overflow: hidden;
+      "
+    >
+      <div class="xp-bar-container">
+        <div class="xp-bar-track">
+          <div class="xp-bar-fill" style="width: 80%"></div>
         </div>
+        <div class="xp-level-badge">LV 12</div>
+      </div>
     </div>
+  </div>
+
+  <div class="component-block">
+    <h3>9. Mini-map / Radar UI Marker</h3>
+    <p class="text-sm">Compass dot for showing nearby objectives.</p>
+    <div class="flex-row">
+      <div class="radar-map">
+        <div class="radar-player"></div>
+        <div class="radar-dot" style="top: 20%; left: 70%"></div>
+        <div class="radar-dot enemy" style="top: 80%; left: 30%"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="component-block">
+    <h3>10. Inventory Slot</h3>
+    <p class="text-sm">Square slots for item holding.</p>
+    <div class="flex-row horizontal-stack">
+      <div class="inventory-slot empty"></div>
+      <div class="inventory-slot full cursor-pointer">
+        <i class="ph-fill ph-sword"></i>
+        <div class="item-count">2</div>
+      </div>
+      <div class="inventory-slot locked">
+        <i class="ph-bold ph-lock"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="component-block">
+    <h3>11. Action Cool-down Timer</h3>
+    <p class="text-sm">Dark radial overlay on skills.</p>
+    <div class="flex-row horizontal-stack">
+      <div class="cooldown-slot ready cursor-pointer">
+        <i class="ph-fill ph-fire"></i>
+      </div>
+      <div class="cooldown-slot cooling">
+        <i class="ph-fill ph-lightning"></i>
+        <div class="cooldown-overlay" style="height: 60%"></div>
+        <span class="cooldown-text">3s</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="component-block">
+    <h3>12. Directional D-Pad</h3>
+    <p class="text-sm">Cohesive unit for movement control.</p>
+    <div class="flex-row">
+      <div class="d-pad">
+        <div class="d-btn up cursor-pointer">
+          <i class="ph-bold ph-caret-up"></i>
+        </div>
+        <div class="d-btn left cursor-pointer">
+          <i class="ph-bold ph-caret-left"></i>
+        </div>
+        <div class="d-center"></div>
+        <div class="d-btn right cursor-pointer">
+          <i class="ph-bold ph-caret-right"></i>
+        </div>
+        <div class="d-btn down cursor-pointer">
+          <i class="ph-bold ph-caret-down"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="component-block">
+    <h3>13. Floating Combat Text</h3>
+    <p class="text-sm">Damage or score popups.</p>
+    <div
+      class="flex-row"
+      style="height: 100px; display: flex; align-items: flex-end"
+    >
+      <div class="floating-text damage">-15</div>
+      <div class="floating-text crit" style="margin-left: 20px">CRITICAL!</div>
+      <div class="floating-text heal" style="margin-left: 20px">+20</div>
+    </div>
+  </div>
 </div>

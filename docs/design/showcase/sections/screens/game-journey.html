@@ -1,0 +1,524 @@
+<script>
+    if (window.location.pathname.endsWith('game-journey.html')) {
+        window.location.replace('../../index.html#sections/screens/game-journey.html');
+    }
+</script>
+<style>
+/* Phone Frame */
+.screen-mockup {
+    width: 375px;
+    height: 667px;
+    border: 12px solid #1E293B;
+    border-radius: 36px;
+    background: #F8FAFC;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-family);
+}
+
+.screen-mockup.journey-mode {
+    padding: 0; /* Clear padding for full width header */
+    background: #F8FAFC; /* slightly different base to pop */
+}
+
+/* Pinned Header */
+.journey-header-container {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid #F1F5F9;
+    padding-bottom: 8px;
+}
+.journey-header {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 12px 12px 8px;
+}
+.jh-user {
+    display: flex; align-items: center; gap: 8px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    padding: 4px 8px 4px 4px;
+    border-radius: 40px;
+    transition: background 0.2s;
+}
+.jh-user:hover { background: #F8FAFC; }
+.jh-user:active { background: #F1F5F9; }
+
+.jh-avatar {
+    width: 36px; height: 36px; border-radius: 50%;
+    background: #FEF3C7; border: 2px solid #F59E0B;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px;
+}
+.jh-name-wrapper {
+    display: flex; flex-direction: column; align-items: flex-start;
+}
+.jh-name { font-weight: 800; font-size: 0.95rem; color: #1E293B; }
+.jh-edit { font-size: 0.65rem; color: #64748B; font-weight: 600; display: flex; align-items: center; gap: 4px; }
+
+.jh-actions {
+    display: flex; align-items: center; gap: 8px;
+}
+.jh-stats {
+    display: flex; gap: 6px;
+}
+.jh-stat-badge {
+    display: flex; align-items: center; gap: 4px;
+    padding: 4px 8px; border-radius: 20px;
+    font-weight: 700; font-size: 0.75rem;
+    box-shadow: 0 3px 0 rgba(0,0,0,0.05);
+}
+.jh-stat-badge:nth-child(1) { background: #FFF7ED; color: #EA580C; border: 1px solid #FFEDD5; }
+.jh-stat-badge:nth-child(2) { background: #FEFCE8; color: #D97706; border: 1px solid #FEF08A; }
+
+.jh-parent-panel {
+    width: 34px; height: 34px;
+    border-radius: 50%;
+    background: white; border: 2px solid #E2E8F0;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 16px; color: #64748B;
+    box-shadow: 0 3px 0 #CBD5E1;
+    cursor: pointer; transition: 0.1s;
+}
+.jh-parent-panel:active {
+    transform: translateY(3px);
+    box-shadow: 0 0 0 #CBD5E1;
+}
+
+/* Recent Play Banner */
+.recent-play-banner {
+    margin: 0 12px 8px;
+    background: #EFF6FF;
+    border: 2px solid #DBEAFE;
+    border-radius: 12px;
+    padding: 8px 12px;
+    display: flex; justify-content: space-between; align-items: center;
+    cursor: pointer;
+    box-shadow: 0 3px 0 #BFDBFE;
+    transition: 0.1s;
+}
+.recent-play-banner:active {
+    transform: translateY(3px);
+    box-shadow: 0 0 0 #BFDBFE;
+}
+.rp-info { display: flex; align-items: center; gap: 8px; }
+.rp-icon {
+    width: 30px; height: 30px; border-radius: 10px; background: #3B82F6; color: white; display: flex; align-items: center; justify-content: center; font-size: 14px;
+}
+.rp-text { display: flex; flex-direction: column; }
+.rp-title { font-size: 0.65rem; color: #475569; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; }
+.rp-game { font-size: 0.8rem; color: #1E293B; font-weight: 800; }
+.rp-action {
+    background: #3B82F6; color: white; border-radius: 20px; padding: 5px 12px; font-weight: 800; font-size: 0.75rem; box-shadow: 0 3px 0 #1D4ED8;
+}
+
+/* Subject Selector */
+.journey-subjects {
+    display: flex;
+    gap: 6px;
+    padding: 0 12px;
+}
+.js-btn {
+    flex: 1;
+    background: white;
+    border: 2px solid #E2E8F0;
+    border-radius: 12px;
+    padding: 6px 0;
+    text-align: center;
+    font-weight: 800;
+    font-size: 0.75rem;
+    color: var(--color-text-secondary);
+    display: flex; align-items: center; justify-content: center; gap: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.js-btn.active.js-esl { background: #EEF2FF; border-color: #6366F1; color: #4F46E5; }
+.js-btn.active.js-math { background: #F7FEE7; border-color: #A3E635; color: #4D7C0F; }
+.js-btn.active.js-science { background: #F0F9FF; border-color: #38BDF8; color: #0369A1; }
+
+.js-objective {
+    margin-top: 8px;
+    font-size: 0.7rem;
+    color: #64748B;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.3;
+    padding: 0 12px;
+}
+
+/* Scrollable Map Area */
+.journey-map-area {
+    flex: 1;
+    overflow-y: auto;
+    background: #F0FDF4; /* light mint base for journey */
+    position: relative;
+    padding: 40px 0 80px; 
+    /* Hide scrollbar */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.journey-map-area::-webkit-scrollbar { display: none; }
+
+/* SVG Background Winding Path */
+.journey-path-svg {
+    position: absolute;
+    top: 40px; left: 0; width: 100%; height: 500px; /* arbitrary height for showcase */
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Map Node */
+.journey-node-wrapper {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px; /* Increased spacing */
+}
+.journey-node-wrapper:last-child { margin-bottom: 0; }
+
+.j-node {
+    width: 80px; height: 80px; /* Slightly larger */
+    border-radius: 50%;
+    background: white;
+    border: 6px solid #E2E8F0; /* Thicker border */
+    display: flex; align-items: center; justify-content: center;
+    font-size: 32px; /* Larger icon */
+    box-shadow: 0 8px 0 #CBD5E1, 0 12px 10px rgba(0,0,0,0.1); /* Chunky 3D shadow */
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.j-node:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 0 #CBD5E1, 0 16px 15px rgba(0,0,0,0.1);
+}
+.j-node:active {
+    transform: translateY(6px);
+    box-shadow: 0 2px 0 #CBD5E1, 0 4px 5px rgba(0,0,0,0.1);
+    transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.j-node.completed {
+    background: #10B981;
+    border-color: #059669;
+    color: white;
+    box-shadow: 0 8px 0 #047857, 0 12px 10px rgba(0,0,0,0.15); /* Deep green 3D shadow */
+}
+.j-node.completed:hover {
+    box-shadow: 0 12px 0 #047857, 0 16px 15px rgba(0,0,0,0.15);
+}
+.j-node.completed:active {
+    box-shadow: 0 2px 0 #047857, 0 4px 5px rgba(0,0,0,0.15);
+}
+
+.j-node.active {
+    background: #3B82F6;
+    border-color: #2563EB;
+    color: white;
+    box-shadow: 0 8px 0 #1D4ED8, 0 12px 10px rgba(0,0,0,0.2), 0 0 0 8px rgba(59, 130, 246, 0.2); /* Deep blue 3D shadow + glow */
+    animation: pulseActive 2s infinite;
+}
+.j-node.active:hover {
+    box-shadow: 0 12px 0 #1D4ED8, 0 16px 15px rgba(0,0,0,0.2), 0 0 0 8px rgba(59, 130, 246, 0.2);
+    animation: none; /* Pause pulse on hover so bounce is clear */
+}
+.j-node.active:active {
+    box-shadow: 0 2px 0 #1D4ED8, 0 4px 5px rgba(0,0,0,0.2), 0 0 0 8px rgba(59, 130, 246, 0.2);
+}
+
+.j-node.locked {
+    background: #E2E8F0;
+    border-color: #CBD5E1;
+    color: #94A3B8;
+    box-shadow: 0 8px 0 #94A3B8, 0 12px 10px rgba(0,0,0,0.05); /* Grey 3D shadow */
+    cursor: not-allowed;
+}
+.j-node.locked:hover {
+    transform: none; /* Locked nodes don't bounce */
+    box-shadow: 0 8px 0 #94A3B8, 0 12px 10px rgba(0,0,0,0.05); 
+}
+.j-node.locked:active {
+    box-shadow: 0 8px 0 #94A3B8, 0 12px 10px rgba(0,0,0,0.05); /* No press effect */
+}
+
+@keyframes pulseActive {
+    0% { box-shadow: 0 8px 0 #1D4ED8, 0 12px 10px rgba(0,0,0,0.2), 0 0 0 0 rgba(59, 130, 246, 0.5); }
+    70% { box-shadow: 0 8px 0 #1D4ED8, 0 12px 10px rgba(0,0,0,0.2), 0 0 0 16px rgba(59, 130, 246, 0); }
+    100% { box-shadow: 0 8px 0 #1D4ED8, 0 12px 10px rgba(0,0,0,0.2), 0 0 0 0 rgba(59, 130, 246, 0); }
+}
+
+.j-node-stars {
+    position: absolute;
+    bottom: -20px;
+    display: flex;
+    gap: 4px;
+    background: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1), 0 2px 0 #E2E8F0; /* Added subtle 3d edge here too */
+    border: 1px solid #F1F5F9;
+}
+.j-star { color: #F59E0B; font-size: 14px; }
+.j-star.empty { color: #E2E8F0; }
+
+.j-node-label-container {
+    margin-top: 32px; /* Increased to accommodate larger star box */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.j-node-label {
+    font-weight: 800;
+    font-size: 0.9rem;
+    color: var(--color-text-primary);
+    background: white;
+    padding: 4px 12px;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    border: 1px solid #F1F5F9;
+}
+.j-node-sub {
+    font-size: 0.7rem;
+    color: #475569;
+    font-weight: 700;
+    margin-top: 4px;
+}
+
+/* Winding Offsets - simulating a path */
+.journey-node-wrapper:nth-of-type(1) { transform: translateX(0); }
+.journey-node-wrapper:nth-of-type(2) { transform: translateX(-45px); }
+.journey-node-wrapper:nth-of-type(3) { transform: translateX(30px); }
+.journey-node-wrapper:nth-of-type(4) { transform: translateX(50px); }
+.journey-node-wrapper:nth-of-type(5) { transform: translateX(-10px); }
+
+/* Activity Float */
+.j-action-bubble {
+    position: absolute;
+    right: -55px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white;
+    color: #3B82F6;
+    border-radius: 50%;
+    width: 48px; height: 48px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 24px;
+    box-shadow: 0 6px 0 #E2E8F0, 0 10px 10px rgba(0,0,0,0.1);
+    opacity: 0; pointer-events: none; 
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.j-node.active ~ .j-action-bubble {
+    opacity: 1; pointer-events: auto;
+    background: white; 
+    color: #EC4899; /* pink pop for active game start */
+    border: 3px solid #EC4899;
+    box-shadow: 0 6px 0 #BE185D, 0 10px 10px rgba(0,0,0,0.15); /* Match 3D style */
+    cursor: pointer;
+}
+.j-node.active ~ .j-action-bubble:hover {
+    transform: translateY(calc(-50% - 4px));
+    box-shadow: 0 10px 0 #BE185D, 0 14px 15px rgba(0,0,0,0.15);
+}
+.j-node.active ~ .j-action-bubble:active {
+    transform: translateY(calc(-50% + 6px)); /* active press state */
+    box-shadow: 0 2px 0 #BE185D, 0 4px 5px rgba(0,0,0,0.15);
+}
+
+/* Game Selection Modal (Bottom Sheet) */
+.game-selection-modal {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    background: white;
+    border-radius: 32px 32px 0 0;
+    box-shadow: 0 -8px 24px rgba(0,0,0,0.1);
+    padding: 24px 24px;
+    z-index: 50;
+    transform: translateY(100%);
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    display: flex; flex-direction: column; gap: 20px;
+}
+.game-selection-modal.open {
+    transform: translateY(0);
+}
+
+.gs-drag-handle {
+    width: 48px; height: 6px;
+    background: #E2E8F0;
+    border-radius: 4px;
+    margin: 0 auto 8px;
+}
+
+.gs-header {
+    display: flex; justify-content: space-between; align-items:flex-start;
+}
+.gs-title-area { display: flex; flex-direction: column; gap: 4px; }
+.gs-title { font-size: 1.4rem; font-weight: 800; color: #1E293B; }
+.gs-desc { font-size: 0.9rem; color: #64748B; font-weight: 600; line-height: 1.4; }
+
+.gs-close-btn {
+    width: 36px; height: 36px;
+    border-radius: 50%; background: #F1F5F9; color: #64748B;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px; cursor: pointer; transition: 0.2s; border: none;
+}
+.gs-close-btn:hover { background: #E2E8F0; color: #1E293B; }
+
+.gs-game-list {
+    display: flex; flex-direction: column; gap: 12px;
+    max-height: 40vh; overflow-y: auto;
+    margin: 8px 0;
+    padding-bottom: 20px;
+}
+
+.gs-game-card {
+    display: flex; align-items: center; gap: 16px;
+    padding: 16px; border-radius: 20px;
+    border: 2px solid #E2E8F0;
+    background: white;
+    cursor: pointer; transition: 0.2s;
+}
+.gs-game-card:hover {
+    border-color: #3B82F6; background: #EFF6FF;
+    transform: translateY(-2px); box-shadow: 0 4px 12px rgba(59, 130, 246, 0.1);
+}
+.gs-game-icon {
+    width: 56px; height: 56px; border-radius: 16px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 28px; color: white; flex-shrink: 0;
+}
+.gs-bg-blue { background: #3B82F6; }
+.gs-bg-purple { background: #8B5CF6; }
+.gs-bg-pink { background: #EC4899; }
+.gs-bg-orange { background: #F97316; }
+
+.gs-game-info { flex: 1; display: flex; flex-direction: column; gap: 4px; }
+.gs-game-name { font-weight: 800; font-size: 1.1rem; color: #1E293B; }
+.gs-game-tags { display: flex; gap: 8px; }
+.gs-tag { font-size: 0.7rem; font-weight: 700; color: #64748B; background: #F1F5F9; padding: 2px 8px; border-radius: 12px; }
+
+/* Backdrop */
+.modal-backdrop {
+    position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(15, 23, 42, 0.4);
+    backdrop-filter: blur(4px);
+    z-index: 40;
+    opacity: 0; pointer-events: none; transition: opacity 0.3s;
+}
+.modal-backdrop.open { opacity: 1; pointer-events: auto; }
+
+</style>
+
+<div class="section-header">
+    <h2 class="section-title">Screen: Game Journey Map</h2>
+    <p class="section-description">A scrolling journey map replacing the static configuration screen. Guides learners through pedagogical stages: Vocab ➔ Grammar ➔ Sentences ➔ Paragraphs.</p>
+</div>
+
+<div class="component-showcase" style="align-items: center; padding: 40px 0;">
+    <div class="screen-mockup journey-mode">
+        
+        <!-- Pinned Header -->
+        <div class="journey-header-container">
+            <div class="journey-header">
+                <button class="jh-user">
+                    <div class="jh-avatar">🐼</div>
+                    <div class="jh-name-wrapper">
+                        <div class="jh-name">Explorer</div>
+                        <div class="jh-edit">Switch / Edit <i class="ph-bold ph-caret-down"></i></div>
+                    </div>
+                </button>
+                <div class="jh-actions">
+                    <div class="jh-stats">
+                        <div class="jh-stat-badge"><i class="ph-fill ph-fire"></i> 12</div>
+                        <div class="jh-stat-badge"><i class="ph-fill ph-star"></i> 450</div>
+                    </div>
+                    <button class="jh-parent-panel" title="Parent Dashboard">
+                        <i class="ph-bold ph-user-gear"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Recent Play -->
+            <div class="recent-play-banner">
+                <div class="rp-info">
+                    <div class="rp-icon"><i class="ph-bold ph-play-circle"></i></div>
+                    <div class="rp-text">
+                        <span class="rp-title">Resume Learning</span>
+                        <span class="rp-game">ESL • Grammar Structures</span>
+                    </div>
+                </div>
+                <div class="rp-action">Continue</div>
+            </div>
+
+            <!-- Subjects -->
+            <div class="journey-subjects">
+                <div class="js-btn active js-esl">
+                    <i class="ph ph-book-open"></i> ESL
+                </div>
+                <div class="js-btn js-math">
+                    <i class="ph ph-calculator"></i> Math
+                </div>
+                <div class="js-btn js-science">
+                    <i class="ph ph-microscope"></i> Sci
+                </div>
+            </div>
+            <div class="js-objective">
+                Objective: Describe daily routines and past experiences
+            </div>
+        </div>
+
+        <!-- Scrollable Map -->
+        <div class="journey-map-area">
+            
+            <!-- Custom Dynamic Nodes handled by hub.js -->
+        </div>
+
+        <!-- Modal Backdrop -->
+        <div class="modal-backdrop js-modal-backdrop"></div>
+
+        <!-- Game Selection Sub-screen (Bottom Sheet) -->
+        <div class="game-selection-modal js-game-modal">
+            <div class="gs-drag-handle"></div>
+            
+            <div class="gs-header">
+                <div class="gs-title-area">
+                    <div class="gs-title js-modal-title">Grammar Structures</div>
+                    <div class="gs-desc js-modal-desc">Master tense building and sentence timelines. Select a game to practice:</div>
+                </div>
+                <button class="gs-close-btn js-close-modal"><i class="ph-bold ph-x"></i></button>
+            </div>
+
+            <div class="gs-game-list js-modal-games">
+                <!-- Games injected here dynamically -->
+                
+                <div class="gs-game-card">
+                    <div class="gs-game-icon gs-bg-purple"><i class="ph-fill ph-squares-four"></i></div>
+                    <div class="gs-game-info">
+                        <div class="gs-game-name">Shape Builder</div>
+                        <div class="gs-game-tags"><span class="gs-tag">Grammar</span><span class="gs-tag">Drag & Drop</span></div>
+                    </div>
+                    <i class="ph-bold ph-caret-right" style="color:#94A3B8"></i>
+                </div>
+
+                <div class="gs-game-card">
+                    <div class="gs-game-icon gs-bg-orange"><i class="ph-fill ph-magnifying-glass"></i></div>
+                    <div class="gs-game-info">
+                        <div class="gs-game-name">Timeline Detective</div>
+                        <div class="gs-game-tags"><span class="gs-tag">Context</span><span class="gs-tag">Logic</span></div>
+                    </div>
+                    <i class="ph-bold ph-caret-right" style="color:#94A3B8"></i>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

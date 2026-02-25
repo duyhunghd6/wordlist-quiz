@@ -16,6 +16,7 @@ import TimelineDetectiveGame from "./components/games/TimelineDetectiveGame";
 import MarioTenseRunner from "./components/games/MarioTenseRunner";
 import TenseSignalGame from "./components/games/TenseSignalGame";
 import EndlessRunner from "./components/games/EndlessRunner/EndlessRunner";
+import AngryTensesGame from "./components/games/AngryTenses/AngryTenses";
 import ProfileSwitcher from "./components/ProfileSwitcher";
 import ErrorBoundary from "./components/ErrorBoundary";
 import OfflineBanner from "./components/OfflineBanner";
@@ -506,6 +507,8 @@ function App() {
           return <MarioTenseRunner {...gameProps} />;
         case 'tenseSignal':
           return <TenseSignalGame {...gameProps} />;
+        case 'angryTenses':
+          return <AngryTensesGame {...gameProps} />;
         case 'endlessRunner':
           const runnerProps = {
             ...gameProps,

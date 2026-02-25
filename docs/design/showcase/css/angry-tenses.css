@@ -1,0 +1,436 @@
+/* Angry Tenses Game Styles - High Fidelity */
+@import url('https://fonts.googleapis.com/css2?family=Angrybirds&display=swap');
+
+.angry-tenses-wrapper {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  font-family: 'Baloo 2', 'Inter', sans-serif;
+  background: #d4eaf5; /* Light blue sky */
+  user-select: none;
+}
+
+/* Background */
+.angry-sky {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 120px;
+  background: linear-gradient(#b5dcf1 0%, #e8f5fb 100%);
+  z-index: 1;
+}
+
+.angry-ground {
+  position: absolute;
+  bottom: 0; left: 0; right: 0; height: 120px;
+  background: #463b36;
+  z-index: 2;
+  border-top: 15px solid #66bc29; /* Grass top */
+}
+.angry-ground::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; height: 8px;
+  background: repeating-linear-gradient(45deg, #7ad23b, #7ad23b 10px, #66bc29 10px, #66bc29 20px);
+}
+
+.clouds {
+  position: absolute;
+  top: 10%; right: -200px;
+  width: 150px; height: 50px;
+  background: rgba(255,255,255,0.8);
+  border-radius: 50px;
+  animation: floatCloud 40s linear infinite;
+  z-index: 1;
+}
+.clouds::before, .clouds::after {
+  content: ''; position: absolute; background: rgba(255,255,255,0.8); border-radius: 50%;
+}
+.clouds::before { width: 70px; height: 70px; top: -30px; left: 20px; }
+.clouds::after { width: 50px; height: 50px; top: -20px; right: 20px; }
+
+@keyframes floatCloud {
+  from { transform: translateX(0); }
+  to { transform: translateX(-1200px); }
+}
+
+/* HUD */
+.angry-hud {
+  position: absolute;
+  top: 10px;
+  left: 0; right: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.angry-score-container {
+  text-align: center;
+}
+
+.angry-score-label {
+  font-family: 'Arial Black', sans-serif;
+  color: #db0000;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  -webkit-text-stroke: 2px white;
+  text-shadow: 2px 2px 0px rgba(0,0,0,0.2);
+  line-height: 1;
+}
+
+.angry-score-value {
+  font-family: 'Arial Black', sans-serif;
+  color: #000;
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.angry-lives {
+  position: absolute;
+  top: 60px; right: 20px;
+}
+
+/* Timer HUD */
+.angry-timer-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 150px;
+  z-index: 10;
+  pointer-events: none;
+}
+.angry-timer-bg {
+  width: 100%;
+  height: 14px;
+  background: rgba(0,0,0,0.5);
+  border-radius: 10px;
+  border: 2px solid white;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+.angry-timer-bar {
+  height: 100%;
+  background: #4CD964;
+  width: 100%;
+  transition: width 1s linear, background-color 0.5s ease;
+}
+.angry-timer-text {
+  color: white;
+  text-align: right;
+  font-family: 'Arial Black', sans-serif;
+  font-size: 1.2rem;
+  margin-top: 4px;
+  text-shadow: 2px 2px 0 #000;
+}
+
+.angry-bird-queue {
+  position: absolute;
+  bottom: 125px;
+  left: 20px;
+  display: flex;
+  gap: -10px;
+  z-index: 8;
+}
+
+/* Question Phase Overlay */
+.angry-screen-overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+.angry-question-box {
+  background: #fffdf2;
+  border: 6px solid #301A0F;
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 15px 0 rgba(0,0,0,0.4), inset 0 0 30px rgba(0,0,0,0.1);
+  max-width: 650px;
+  width: 90%;
+  animation: popIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.angry-question-box.compact-overlay {
+  padding: 25px;
+  max-width: 500px;
+  background: rgba(255, 253, 242, 0.95);
+}
+.angry-question-box.compact-overlay h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+.angry-sentence-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-weight: 800;
+  color: #301A0F;
+  padding: 15px 25px;
+  background: #fff;
+  border-radius: 12px;
+  border: 3px dashed #D35400;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.05);
+  line-height: 1;
+}
+
+/* Removing the angry blank rules since it's replaced by the scroll picker */
+
+/* Scroll Picker Interactive Element */
+.angry-scroll-picker {
+  position: relative;
+  width: 100%;
+  height: 180px; /* Default */
+  background: #FFF9E6;
+  border: 4px solid #E67E22;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: inset 0 5px 15px rgba(0,0,0,0.1);
+  margin-bottom: 15px;
+}
+
+/* Inline Picker variation */
+.angry-scroll-picker.inline-picker {
+  width: 170px;
+  height: 140px; 
+  margin-bottom: 0;
+  border-width: 3px;
+  border-radius: 12px;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+}
+.angry-scroll-picker.inline-picker .picker-track {
+  padding: 40px 0; /* aligns 60px height items perfectly in 140px container */
+}
+
+/* Scroll Arrows */
+.scroll-arrow {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #D35400;
+  font-size: 1.2rem;
+  z-index: 10;
+  pointer-events: none;
+  animation: floatArrow 1.5s infinite ease-in-out;
+  opacity: 0.7;
+}
+.scroll-arrow.up { top: 5px; }
+.scroll-arrow.down { bottom: 5px; }
+
+@keyframes floatArrow {
+  0%, 100% { transform: translate(-50%, 0); }
+  50% { transform: translate(-50%, -3px); }
+}
+
+/* Highlighting the center selection */
+.picker-highlight-bar {
+  position: absolute;
+  top: 50%; left: 10%; right: 10%;
+  height: 60px; /* height of one item */
+  margin-top: -30px;
+  border-top: 3px solid #D35400;
+  border-bottom: 3px solid #D35400;
+  background: rgba(241, 196, 15, 0.2);
+  pointer-events: none; /* Let clicks pass through to items */
+  border-radius: 8px;
+  z-index: 2;
+}
+
+.picker-viewport {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  -ms-overflow-style: none; /* IE/Edge */
+  scrollbar-width: none;    /* Firefox */
+  position: relative;
+  z-index: 1;
+}
+.picker-viewport::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+.picker-track {
+  /* padding to allow first/last items to reach center */
+  padding: 60px 0; 
+  display: flex;
+  flex-direction: column;
+}
+
+.picker-item {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #c08b65;
+  transition: all 0.2s ease;
+  scroll-snap-align: center;
+  cursor: pointer;
+  user-select: none;
+  opacity: 0.3; /* Inactive items are faint */
+}
+
+.picker-item.active {
+  color: #D35400;
+  font-size: 2.2rem;
+  text-shadow: 1px 1px 0 #fff;
+  opacity: 1; /* Active item is fully visible */
+}
+
+.picker-instructions {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+/* Sentence Board */
+.angry-sentence-board {
+  position: absolute;
+  top: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #FFF9E6;
+  border: 4px solid #5C2E0A;
+  border-radius: 12px;
+  padding: 15px 40px;
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #333;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.1), 0 10px 15px rgba(0,0,0,0.3);
+  z-index: 10;
+  text-align: center;
+  pointer-events: none;
+}
+.angry-blank {
+  display: inline-block; min-width: 120px; border-bottom: 4px dashed #D35400; color: #D35400; padding: 0 10px;
+}
+
+/* Physics Entities */
+.phys-box {
+  position: absolute;
+  top: 0; left: 0;
+  will-change: transform;
+  transform-origin: center center;
+  margin-top: calc(var(--h) / -2);
+  margin-left: calc(var(--w) / -2);
+  pointer-events: none;
+  z-index: 5;
+}
+
+.wood-plat {
+  background: #D2A679;
+  border: 2px solid #6b3e12;
+  box-sizing: border-box;
+  background-image: repeating-linear-gradient(90deg, transparent, transparent 10px, rgba(107, 62, 18, 0.2) 10px, rgba(107, 62, 18, 0.2) 12px);
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.3);
+  border-radius: 2px;
+}
+
+/* SVG Overlays for Entities */
+.grammar-bird {
+  width: 45px; height: 45px;
+  background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="45" fill="%23d32f2f"/><path d="M 20 40 Q 50 30 80 40" stroke="black" stroke-width="6" fill="transparent"/><circle cx="35" cy="50" r="10" fill="white"/><circle cx="65" cy="50" r="10" fill="white"/><circle cx="38" cy="50" r="4" fill="black"/><circle cx="62" cy="50" r="4" fill="black"/><path d="M 35 60 L 65 60 L 50 75 Z" fill="%23ffeb3b" stroke="black" stroke-width="2"/><circle cx="50" cy="90" r="20" fill="rgba(0,0,0,0.2)"/></svg>');
+  background-size: cover;
+}
+
+.target-pig {
+  width: 45px; height: 45px;
+  background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="45" fill="%2366bc29" stroke="%23388e3c" stroke-width="3"/><ellipse cx="35" cy="45" rx="8" ry="10" fill="white"/><ellipse cx="65" cy="45" rx="8" ry="10" fill="white"/><circle cx="38" cy="45" r="3" fill="black"/><circle cx="62" cy="45" r="3" fill="black"/><ellipse cx="50" cy="65" rx="15" ry="10" fill="%2381c784" stroke="%232e7d32" stroke-width="2"/><circle cx="45" cy="65" r="3" fill="%231b5e20"/><circle cx="55" cy="65" r="3" fill="%231b5e20"/></svg>');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.target-word {
+  position: absolute;
+  top: -25px;
+  background: white;
+  color: #333;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 800;
+  border: 1px solid #333;
+  white-space: nowrap;
+  pointer-events: none;
+}
+.target-word::after {
+  content: ''; position: absolute; bottom: -4px; left: 50%; transform: translateX(-50%);
+  border-width: 4px 4px 0; border-style: solid; border-color: #333 transparent transparent transparent;
+}
+
+/* Slingshot details */
+.slingshot-wrapper {
+  position: absolute;
+  bottom: 90px; /* on top of ground */
+  left: 170px;
+  width: 40px; height: 120px;
+  z-index: 4;
+  pointer-events: none;
+}
+.sling-wood {
+  position: absolute;
+  bottom: 0; left: 15px;
+  width: 10px; height: 80px;
+  background: #5C2E0A;
+}
+.sling-fork-back {
+  position: absolute;
+  top: 10px; left: 0;
+  width: 10px; height: 50px;
+  background: #472105;
+  transform: rotate(-30deg);
+}
+.sling-fork-front {
+  position: absolute;
+  top: 10px; right: 0;
+  width: 10px; height: 50px;
+  background: #5C2E0A;
+  transform: rotate(30deg);
+  z-index: 6; /* Front fork covers bird */
+}
+
+/* Physics Interaction Canvas */
+#physics-canvas {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: 10;
+  opacity: 0.1; /* slightly visible for debug if needed, set to 0 for prod */
+  pointer-events: auto;
+}
+
+/* Destructible Elements */
+.target-pig, .wood-plat {
+  transition: opacity 0.3s ease;
+}
+
+@keyframes poofEffect {
+  0% { transform: scale(1) rotate(0deg); opacity: 1; filter: brightness(1) drop-shadow(0 0 0 transparent); }
+  50% { transform: scale(1.3) rotate(10deg); opacity: 0.8; filter: brightness(1.5) drop-shadow(0 0 10px rgba(255,255,255,0.8)); }
+  100% { transform: scale(0.5) rotate(-10deg); opacity: 0; filter: brightness(0) drop-shadow(0 0 0 transparent); }
+}
+
+.poof-anim {
+  animation: poofEffect 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards !important;
+}
