@@ -394,7 +394,7 @@ const AngryTensesGame = ({
         });
       });
 
-      // Wooden planks (static structure that holds pigs)
+      // Wooden planks — dynamic so they break apart on impact
       const plankStyle = {
         fillStyle: "#D2A679",
         strokeStyle: "#6b3e12",
@@ -405,34 +405,40 @@ const AngryTensesGame = ({
         strokeStyle: "#6b3e12",
         lineWidth: 2,
       };
+      const plankPhysics = {
+        density: 0.002,
+        friction: 0.6,
+        frictionStatic: 0.8,
+        restitution: 0.1,
+      };
       const planks = [
         Bodies.rectangle(targetX - 35, groundY - 20, 12, 60, {
-          isStatic: true,
+          ...plankPhysics,
           render: plankStyle,
           label: "plank-0",
         }),
         Bodies.rectangle(targetX + 35, groundY - 20, 12, 60, {
-          isStatic: true,
+          ...plankPhysics,
           render: plankStyle,
           label: "plank-1",
         }),
         Bodies.rectangle(targetX, groundY - 55, 90, 10, {
-          isStatic: true,
+          ...plankPhysics,
           render: floorStyle,
           label: "floor-0",
         }),
         Bodies.rectangle(targetX - 15, groundY - 90, 12, 50, {
-          isStatic: true,
+          ...plankPhysics,
           render: plankStyle,
           label: "plank-2",
         }),
         Bodies.rectangle(targetX + 15, groundY - 90, 12, 50, {
-          isStatic: true,
+          ...plankPhysics,
           render: plankStyle,
           label: "plank-3",
         }),
         Bodies.rectangle(targetX, groundY - 120, 80, 10, {
-          isStatic: true,
+          ...plankPhysics,
           render: floorStyle,
           label: "floor-1",
         }),
@@ -583,36 +589,123 @@ const AngryTensesGame = ({
           const a = pair.bodyA;
           const b = pair.bodyB;
           const target = a.isTarget ? a : b.isTarget ? b : null;
-          if (target && !target.isDestroyed && Math.max(a.speed, b.speed) > 3) {
-            target.isDestroyed = true;
-            hasHit = true;
+          const birdInvolved = a.label === 'bird' || b.label === 'bird';
 
-            // Show hit effect on the pig sprite
-            const pigData = pigEls.find((p) => p.body === target);
-            if (pigData) {
-              pigData.el.innerHTML = '<div style="font-size:30px">💥</div>';
-              pigData.el.style.background = "transparent";
-            }
+          // Bird hits ANY body in the structure area — trigger destruction
+          if (birdInvolved && Math.max(a.speed, b.speed) > 1.5) {
+            // If we hit a target pig directly
+            if (target && !target.isDestroyed) {
+              target.isDestroyed = true;
+              hasHit = true;
 
-            if (target.isCorrectTarget) {
-              setScore((prev) => prev + 1000);
-            } else {
-              setScore((prev) => prev + 100);
-            }
-
-            setTimeout(() => {
-              try {
-                Composite.remove(world, target);
-              } catch (e) {
-                /* */
+              // Hit pig shows explosion
+              const pigData = pigEls.find((p) => p.body === target);
+              if (pigData) {
+                pigData.el.innerHTML = '<div style="font-size:30px">💥</div>';
+                pigData.el.style.background = "transparent";
+                setTimeout(() => {
+                  pigData.el.innerHTML = '<div style="font-size:30px">⭐</div>';
+                }, 300);
               }
-            }, 300);
 
-            setTimeout(() => {
-              cleanupPhysics();
-              advanceQuestion();
-            }, 2000);
-            return;
+              if (target.isCorrectTarget) {
+                setScore((prev) => prev + 1000);
+              } else {
+                setScore((prev) => prev + 100);
+              }
+
+              // === DESTRUCTION CASCADE ===
+              // Scatter all other pigs
+              pigEls.forEach(({ el, body }) => {
+                if (body !== target && !body.isDestroyed) {
+                  const impulseX = (Math.random() - 0.5) * 0.08;
+                  const impulseY = -(Math.random() * 0.06 + 0.02);
+                  Matter.Body.applyForce(body, body.position, { x: impulseX, y: impulseY });
+                  setTimeout(() => {
+                    el.innerHTML = '<div style="font-size:24px">😵</div>';
+                  }, 200);
+                }
+              });
+
+              // Push all planks outward from impact
+              planks.forEach(plank => {
+                const dx = plank.position.x - target.position.x;
+                const dy = plank.position.y - target.position.y;
+                const dist = Math.sqrt(dx * dx + dy * dy) || 1;
+                const force = 0.08 / dist;
+                Matter.Body.applyForce(plank, plank.position, {
+                  x: (dx / dist) * force + (Math.random() - 0.5) * 0.02,
+                  y: (dy / dist) * force - Math.random() * 0.03,
+                });
+              });
+
+              // Spawn visual debris particles
+              for (let d = 0; d < 8; d++) {
+                const debris = document.createElement('div');
+                debris.className = 'at-sprite at-debris';
+                const size = 6 + Math.random() * 10;
+                const angle = (Math.PI * 2 * d) / 8 + Math.random() * 0.5;
+                const speed = 80 + Math.random() * 120;
+                const tx = Math.cos(angle) * speed;
+                const ty = Math.sin(angle) * speed - 60;
+                debris.style.cssText = `
+                  position:absolute;
+                  left:${target.position.x}px;
+                  top:${target.position.y}px;
+                  width:${size}px;height:${size}px;
+                  background:${['#D2A679','#CD853F','#8B4513','#A0522D','#DEB887'][d % 5]};
+                  border-radius:${Math.random() > 0.5 ? '50%' : '2px'};
+                  z-index:20;
+                  pointer-events:none;
+                  transition: all 0.8s cubic-bezier(.25,.1,.25,1);
+                  opacity:1;
+                `;
+                container.appendChild(debris);
+                requestAnimationFrame(() => {
+                  debris.style.transform = `translate(${tx}px, ${ty}px) rotate(${Math.random() * 720}deg)`;
+                  debris.style.opacity = '0';
+                });
+                setTimeout(() => debris.remove(), 1000);
+              }
+
+              setTimeout(() => {
+                try {
+                  Composite.remove(world, target);
+                } catch (e) {
+                  /* */
+                }
+              }, 300);
+
+              setTimeout(() => {
+                cleanupPhysics();
+                advanceQuestion();
+              }, 2500);
+              return;
+            }
+
+            // Bird hit a plank/floor (not a pig) — still trigger some chaos
+            if (!hasHit && (a.label?.startsWith('plank') || a.label?.startsWith('floor') ||
+                b.label?.startsWith('plank') || b.label?.startsWith('floor'))) {
+              // Apply force to all pigs to shake them
+              pigEls.forEach(({ body }) => {
+                Matter.Body.applyForce(body, body.position, {
+                  x: (Math.random() - 0.5) * 0.03,
+                  y: -(Math.random() * 0.02),
+                });
+              });
+              // Push planks from impact point
+              const impactBody = a.label === 'bird' ? b : a;
+              planks.forEach(plank => {
+                if (plank === impactBody) return;
+                const dx = plank.position.x - impactBody.position.x;
+                const dy = plank.position.y - impactBody.position.y;
+                const dist = Math.sqrt(dx * dx + dy * dy) || 1;
+                Matter.Body.applyForce(plank, plank.position, {
+                  x: (dx / dist) * 0.02,
+                  y: -0.01,
+                });
+              });
+            }
           }
         }
       });
