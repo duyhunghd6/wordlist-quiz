@@ -82,7 +82,6 @@ const ScienceThinkQuiz = ({ words, onAnswer, onComplete, onHome, gameId }) => {
       anime({
         targets: `.stq-option-${optionIndex}`,
         scale: [1, 1.05, 1],
-        backgroundColor: ['#ffffff', '#dcfce7'],
         duration: 400,
         easing: 'easeOutElastic(1, .8)'
       });
@@ -92,7 +91,6 @@ const ScienceThinkQuiz = ({ words, onAnswer, onComplete, onHome, gameId }) => {
       anime({
         targets: `.stq-option-${optionIndex}`,
         translateX: [0, -8, 8, -8, 0],
-        backgroundColor: ['#ffffff', '#fee2e2'],
         duration: 400,
         easing: 'easeInOutSine'
       });
