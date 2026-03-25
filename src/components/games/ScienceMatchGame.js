@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
-import { ArrowLeft, Brain, Check } from 'lucide-react';
+import { ArrowLeft, Brain } from 'lucide-react';
 import anime from 'animejs';
 import './ScienceMatchGame.css';
 
@@ -33,6 +33,7 @@ const ScienceMatchGame = ({ words, onAnswer, onComplete, onHome, gameId }) => {
     // Verification state
     const [verifiedCorrect, setVerifiedCorrect] = useState([]); // array of matched IDs (since defId === wordId)
     const [verifiedWrong, setVerifiedWrong] = useState([]); // array of connections
+    const [hintConnections, setHintConnections] = useState([]); // array of correct pairs shown as hints
     const [isChecking, setIsChecking] = useState(false);
     
     // Stats
@@ -49,8 +50,8 @@ const ScienceMatchGame = ({ words, onAnswer, onComplete, onHome, gameId }) => {
     useEffect(() => {
         if (!words || words.length === 0) return;
         
-        // Task 3: 10 rounds (plays), max 5 words per play
-        const numRounds = 10;
+        // Task 2: 5 rounds (plays), max 5 pairs per play
+        const numRounds = 5;
         const pairsPerRound = Math.min(5, words.length);
         
         // Initial pool of words to draw from without repetition immediately
@@ -86,6 +87,7 @@ const ScienceMatchGame = ({ words, onAnswer, onComplete, onHome, gameId }) => {
         setActiveWordId(null);
         setVerifiedCorrect([]);
         setVerifiedWrong([]);
+        setHintConnections([]);
         setIsChecking(false);
         setStartTime(Date.now());
         
@@ -202,6 +204,7 @@ const ScienceMatchGame = ({ words, onAnswer, onComplete, onHome, gameId }) => {
         setIsChecking(true);
         const correctList = [...verifiedCorrect];
         const wrongList = [];
+        const hintList = [];
         const currentRoundItems = rounds[currentRoundIndex];
         
         // Find newly verified ones among connections
@@ -232,6 +235,18 @@ const ScienceMatchGame = ({ words, onAnswer, onComplete, onHome, gameId }) => {
                 if (onAnswer && wordItem) {
                     onAnswer(wordItem.word, false, Date.now() - startTime);
                 }
+                
+                // Generate hint for this incorrect definition
+                if (defItem) {
+                    const correctWordItem = shuffledWords.find(w => w.word === defItem.word);
+                    if (correctWordItem) {
+                        hintList.push({ 
+                            defId: conn.defId, 
+                            wordId: correctWordItem.id, 
+                            color: '#fbbf24' // Yellow hint
+                        });
+                    }
+                }
             }
         });
         
@@ -240,24 +255,32 @@ const ScienceMatchGame = ({ words, onAnswer, onComplete, onHome, gameId }) => {
         
         if (wrongList.length > 0) {
             if (window.navigator?.vibrate) window.navigator.vibrate([200, 100, 200]);
+            
+            // Task 1: blinking connected lines for 5 seconds by red color
             anime({
                 targets: '.science-line-error',
-                translateX: [0, -5, 5, -5, 5, 0],
-                duration: 400,
-                easing: 'easeInOutSine'
+                opacity: [1, 0.2, 1, 0.2, 1, 0.2, 1], // Blink effect
+                duration: 5000,
+                easing: 'linear'
             });
             
-            // Remove wrong connections after delay
+            // After 5s, remove wrong connections and show correct connections (hints)
             setTimeout(() => {
                 setConnections(prev => prev.filter(c => !wrongList.includes(c)));
                 setVerifiedWrong([]);
+                setHintConnections(hintList);
+            }, 5000); // 5 seconds
+
+            // After 10 more seconds (15s total), remove hints so kid can try again
+            setTimeout(() => {
+                setHintConnections([]);
                 setIsChecking(false);
-            }, 1000);
+            }, 15000); // 15 seconds total
         } else {
             if (window.navigator?.vibrate) window.navigator.vibrate([50, 50]);
             
             if (correctList.length === currentRoundItems.length * 2) {
-                // Round Complete! Give kids a moment to see the green lines before clearing
+                // Task 1: Pause about 3 seconds if passed to show result to kids
                 setTimeout(() => {
                     if (currentRoundIndex < rounds.length - 1) {
                         setCurrentRoundIndex(prev => prev + 1);
@@ -267,7 +290,7 @@ const ScienceMatchGame = ({ words, onAnswer, onComplete, onHome, gameId }) => {
                             onComplete({ score, totalCorrect: score > 0 ? score/10 : 0 });
                         }
                     }
-                }, 1000);
+                }, 3000); // 3 seconds
             } else {
                 setIsChecking(false);
             }
@@ -320,6 +343,28 @@ const ScienceMatchGame = ({ words, onAnswer, onComplete, onHome, gameId }) => {
             >
                 {/* SVG Overlay for lines */}
                 <svg className="science-match-svg-overlay">
+                    {/* Render hint connections (dashed lines) */}
+                    {hintConnections.map((c, i) => {
+                        const start = dotCoords.defs[c.defId];
+                        const end = dotCoords.words[c.wordId];
+                        if (!start || !end) return null;
+                        
+                        return (
+                            <line
+                                key={`hint-${c.defId}-${c.wordId}-${i}`}
+                                x1={start.x}
+                                y1={start.y}
+                                x2={end.x}
+                                y2={end.y}
+                                stroke={c.color || '#fbbf24'}
+                                strokeWidth="4"
+                                strokeDasharray="10 10"
+                                strokeLinecap="round"
+                            />
+                        );
+                    })}
+
+                    {/* Main user connections */}
                     {connections.map((c, i) => {
                         const start = dotCoords.defs[c.defId];
                         const end = dotCoords.words[c.wordId];
