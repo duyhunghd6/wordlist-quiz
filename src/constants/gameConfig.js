@@ -30,7 +30,11 @@ export const GAMES = [
   { id: 'marioTense', emoji: '🍄', name: 'Tense Runner', available: true, isGrammar: true },
   { id: 'tenseSignal', emoji: '🔍', name: 'Signal Spotter', available: true, isGrammar: true },
   { id: 'endlessRunner', emoji: '🏃', name: 'Word Runner', available: true, isGrammar: true },
-  { id: 'angryTenses', emoji: '😠', name: 'Angry Tenses', available: true, isGrammar: true }
+  { id: 'angryTenses', emoji: '😠', name: 'Angry Tenses', available: true, isGrammar: true },
+
+  // Science Games
+  { id: 'scienceThinkQuiz', emoji: '🧪', name: 'Science Think Quiz', available: true, isScience: true },
+  { id: 'scienceMatchGame', emoji: '🧩', name: 'Science Match', available: true, isScience: true }
 ];
 
 export const DEFAULT_PREFERENCES = {

@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { BookOpen, Calculator, MagnifyingGlass, Flask, X, CaretRight, Cards, CheckSquareOffset, Strategy, SquaresFour, ClockCounterClockwise, Keyboard, ArrowsLeftRight, Hash, Lightning, Equals, Intersect, ArrowsClockwise, CheckSquare, Square, UserGear, Play } from 'phosphor-react';
+import { BookOpen, Calculator, MagnifyingGlass, Flask, X, CaretRight, Cards, CheckSquareOffset, Strategy, SquaresFour, ClockCounterClockwise, Keyboard, ArrowsLeftRight, Hash, Lightning, Equals, Intersect, ArrowsClockwise, CheckSquare, Square, UserGear, Play, Brain } from 'phosphor-react';
 import { GAMES } from '../constants/gameConfig';
 
 // Make subjects list to drive the Header Sub-navigation
@@ -32,13 +32,13 @@ const JOURNEY_DATA = {
         ]
     },
     wordlist_science: {
-        objective: "Objective: Understand properties of matter, force and ecosystems",
+        objective: "Objective: Understand light, the solar system and critical thinking",
         nodes: [
-            { id: "sci_1", label: "Science Vocab", sub: "Quiz, Flashcards", icon: "flask" },
-            { id: "sci_2", label: "Identify Concepts", sub: "Sort & Match", icon: "magnifying-glass" },
-            { id: "sci_3", label: "Simple Processes", sub: "Process Builder", icon: "arrows-clockwise" },
-            { id: "sci_4", label: "Complex Systems", sub: "Coming Soon", icon: "tree" },
-            { id: "sci_5", label: "Method Mastery", sub: "Explain phenomena", icon: "lightbulb" }
+            { id: "sci_1", label: "Science Vocab", sub: "Quiz, Typing, Swipe", icon: "flask", type: "vocab" },
+            { id: "sci_2", label: "Identify Concepts", sub: "Bubble, Word Search, Scramble", icon: "magnifying-glass", type: "vocab" },
+            { id: "sci_3", label: "Critical Thinking", sub: "Science Think Quiz", icon: "brain", type: "science" },
+            { id: "sci_4", label: "Deep Analysis", sub: "Science Think Quiz", icon: "flask", type: "science" },
+            { id: "sci_5", label: "Method Mastery", sub: "Coming Soon", icon: "lightbulb", type: "science" }
         ]
     }
 };
@@ -63,7 +63,9 @@ const GAME_ICONS = {
     "Tense Runner": { icon: Strategy, color: "gs-bg-orange", tags: ["Grammar", "Reflex"] },
     "Signal Spotter": { icon: BookOpen, color: "gs-bg-purple", tags: ["Grammar", "Reading"] },
     "Word Runner": { icon: Lightning, color: "gs-bg-blue", tags: ["Grammar", "Speed"] },
-    "Angry Tenses": { icon: Strategy, color: "gs-bg-orange", tags: ["Grammar", "Physics"] }
+    "Angry Tenses": { icon: Strategy, color: "gs-bg-orange", tags: ["Grammar", "Physics"] },
+    "Science Think Quiz": { icon: Brain, color: "gs-bg-purple", tags: ["Science", "Thinking"] },
+    "Science Match": { icon: Intersect, color: "gs-bg-blue", tags: ["Science", "Matching"] }
 };
 
 
@@ -105,10 +107,11 @@ const GameJourney = ({
         let state = "locked";
         let stars = 0;
         
-        // Mock data: first node 3 stars, second node 1 star, etc based on index
+        // Mock data: first 3 nodes accessible for Science to let kids reach Critical Thinking
         if (i === 0) { state = "completed"; stars = 3; }
-        else if (i === 1) { state = "active"; stars = 1; }
-        else if (i === 2) { state = "locked"; stars = 0; }
+        else if (i === 1) { state = "completed"; stars = 2; }
+        else if (i === 2) { state = "active"; stars = 1; }
+        else if (i === 3) { state = "active"; stars = 0; }
         else { state = "locked"; stars = 0; }
 
         return { ...node, state, stars };
@@ -194,8 +197,9 @@ const GameJourney = ({
     };
 
     // We want to show all games separated by category, not just a static subset
-    const vocabGames = GAMES.filter(g => !g.isGrammar);
+    const vocabGames = GAMES.filter(g => !g.isGrammar && !g.isScience);
     const grammarGames = GAMES.filter(g => g.isGrammar);
+    const scienceGames = GAMES.filter(g => g.isScience);
 
     const handleStartSpecificGame = (gameObj) => {
         onSelectGame(gameObj.id);
@@ -397,6 +401,22 @@ const GameJourney = ({
                                     <div style={{ fontWeight: 800, color: '#1E293B', margin: '16px 0 8px', fontSize: '1.1rem' }}>Grammar Games</div>
                                     {grammarGames.map(g => renderGameCardRow(g))}
                                 </>
+                            )}
+                        </>
+                    ) : currentSubjectKey === 'wordlist_science' ? (
+                        <>
+                            {(!activeModalNode?.type || activeModalNode.type === 'vocab') && (
+                                <>
+                                    <div style={{ fontWeight: 800, color: '#1E293B', margin: '4px 0 8px', fontSize: '1.1rem' }}>Vocab Games</div>
+                                    {vocabGames.map(g => renderGameCardRow(g))}
+                                </>
+                            )}
+                            <>
+                                <div style={{ fontWeight: 800, color: '#1E293B', margin: '16px 0 8px', fontSize: '1.1rem' }}>🧪 Science Games</div>
+                                {scienceGames.map(g => renderGameCardRow(g))}
+                            </>
+                            {activeModalNode?.sub?.toLowerCase().includes('coming soon') && (
+                                <div style={{ textAlign: 'center', padding: '20px', color: '#94A3B8' }}>More science games arriving in the next update!</div>
                             )}
                         </>
                     ) : (

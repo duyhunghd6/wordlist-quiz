@@ -17,6 +17,8 @@ import MarioTenseRunner from "./components/games/MarioTenseRunner";
 import TenseSignalGame from "./components/games/TenseSignalGame";
 import EndlessRunner from "./components/games/EndlessRunner/EndlessRunner";
 import AngryTensesGame from "./components/games/AngryTenses/AngryTenses";
+import ScienceThinkQuiz from "./components/games/ScienceThinkQuiz";
+import ScienceMatchGame from "./components/games/ScienceMatchGame";
 import ProfileSwitcher from "./components/ProfileSwitcher";
 import ErrorBoundary from "./components/ErrorBoundary";
 import OfflineBanner from "./components/OfflineBanner";
@@ -509,6 +511,10 @@ function App() {
           return <TenseSignalGame {...gameProps} />;
         case 'angryTenses':
           return <AngryTensesGame {...gameProps} />;
+        case 'scienceThinkQuiz':
+          return <ScienceThinkQuiz {...gameProps} />;
+        case 'scienceMatchGame':
+          return <ScienceMatchGame {...gameProps} />;
         case 'endlessRunner':
           const runnerProps = {
             ...gameProps,

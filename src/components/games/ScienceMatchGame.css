@@ -1,0 +1,282 @@
+.science-match-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
+    color: white;
+    font-family: 'Nunito', 'Segoe UI', system-ui, sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+.science-match-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+    background: rgba(15, 23, 42, 0.4);
+    backdrop-filter: blur(8px);
+    z-index: 10;
+}
+
+.science-match-back-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.science-match-back-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+.science-match-progress-container {
+    flex: 1;
+    margin: 0 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.science-match-progress-bar {
+    flex: 1;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+}
+
+.science-match-progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+    border-radius: 4px;
+    transition: width 0.3s ease-out;
+}
+
+.science-match-round-text {
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+.science-match-score {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 800;
+    font-size: 1.1rem;
+    color: #ffd700;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 6px 12px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+.science-match-board {
+    display: flex;
+    flex: 1;
+    padding: 24px;
+    overflow-y: auto;
+    position: relative;
+    /* 3 column layout */
+}
+
+@media (max-width: 768px) {
+    .science-match-board {
+        padding: 16px;
+    }
+}
+
+.science-match-svg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 5;
+}
+
+.science-match-column {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    position: relative;
+    z-index: 10;
+}
+
+/* 45% definitions, 20% connection space, 35% words */
+.science-match-column-left {
+    flex: 0 0 45%;
+}
+
+.science-match-column-center {
+    flex: 1; /* fills remaining space, roughly 20% */
+}
+
+.science-match-column-right {
+    flex: 0 0 35%;
+}
+
+.science-match-column-title {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.science-match-card {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 16px;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    min-height: 64px;
+    font-weight: 600;
+    color: white;
+    user-select: none;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.science-match-card:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Active highlighting logic is mostly handled inline via React now for dynamic colors */
+.science-match-card.is-selected {
+    transform: scale(1.02);
+}
+
+.science-match-card.is-matched {
+    opacity: 0.8;
+}
+
+.science-match-def {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    text-align: left;
+    padding-right: 32px;
+}
+
+.science-match-word {
+    font-size: 1.1rem;
+    font-weight: 800;
+    text-align: center;
+    justify-content: center;
+    padding-left: 32px;
+}
+
+/* Connection points (Dots) */
+.science-match-dot {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    border: 3px solid rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.2s;
+    z-index: 15;
+}
+
+.science-match-def .science-match-dot {
+    right: -10px;
+}
+
+.science-match-word .science-match-dot {
+    left: -10px;
+}
+
+.science-match-card:hover .science-match-dot {
+    background: rgba(255, 255, 255, 0.8);
+    border-color: white;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.science-match-card.is-selected .science-match-dot {
+    background: white;
+    border-color: white;
+    transform: translateY(-50%) scale(1.2);
+    box-shadow: 0 0 10px white;
+}
+
+/* Actions */
+.science-match-actions {
+    padding: 16px 24px;
+    background: rgba(15, 23, 42, 0.4);
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.science-match-check-btn {
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+    color: white;
+    border: none;
+    padding: 12px 32px;
+    border-radius: 24px;
+    font-size: 1.1rem;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 4px 15px rgba(139, 92, 246, 0.4);
+}
+
+.science-match-check-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(139, 92, 246, 0.6);
+}
+
+.science-match-check-btn:disabled {
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.4);
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+/* SVG Line Animations */
+.science-line-path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: drawLine 0.5s ease forwards;
+}
+
+.science-line-error {
+    animation: shakeLine 0.4s ease-in-out;
+}
+
+@keyframes drawLine {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes shakeLine {
+    0%, 100% { transform: translateX(0); }
+    20%, 60% { transform: translateX(-5px); }
+    40%, 80% { transform: translateX(5px); }
+}

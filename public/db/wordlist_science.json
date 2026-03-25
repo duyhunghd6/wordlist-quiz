@@ -336,11 +336,11 @@
     "vietnamese": "Khi chất rắn hòa vào chất lỏng và dường như biến mất."
   },
   {
-    "unit": "Test Vocabulary",
-    "word": "Particle model",
-    "definition": "A way of explaining materials by thinking of them as made of tiny particles that we cannot see.",
-    "example": "",
-    "vietnamese": "Cách giải thích về vật chất bằng cách coi chúng được tạo thành từ các hạt cực nhỏ mà mắt thường không thấy được."
+    "unit": "3",
+    "word": "Particle Model",
+    "definition": "A scientific way to describe solids, liquids, and gases by showing how their particles are arranged[cite: 2, 7, 17].",
+    "example": "Drawing circles close together to show what a solid looks like inside.",
+    "vietnamese": "Mô hình hạt: Một cách khoa học để mô tả chất rắn, lỏng và khí bằng cách thể hiện sự sắp xếp các hạt của chúng."
   },
   {
     "unit": "Test Vocabulary",
@@ -425,20 +425,6 @@
     "definition": "The stuff that all materials and objects are made of[cite: 2, 16].",
     "example": "Everything around us, like water, wood, and air, is matter.",
     "vietnamese": "Vật chất: Những thứ cấu tạo nên mọi vật liệu và đồ vật."
-  },
-  {
-    "unit": "3",
-    "word": "Particle",
-    "definition": "The tiny pieces that make up all matter[cite: 2, 16].",
-    "example": "If you zoom in on a piece of gold, you would see tiny gold particles.",
-    "vietnamese": "Hạt: Những mảnh nhỏ xíu cấu tạo nên mọi vật chất."
-  },
-  {
-    "unit": "3",
-    "word": "Particle Model",
-    "definition": "A scientific way to describe solids, liquids, and gases by showing how their particles are arranged[cite: 2, 7, 17].",
-    "example": "Drawing circles close together to show what a solid looks like inside.",
-    "vietnamese": "Mô hình hạt: Một cách khoa học để mô tả chất rắn, lỏng và khí bằng cách thể hiện sự sắp xếp các hạt của chúng."
   },
   {
     "unit": "3",
@@ -747,5 +733,789 @@
     "definition": "The long, flexible nose of an elephant.",
     "example": "Elephants have long trunks that help them drink water and grab food from trees.",
     "vietnamese": "Cái mũi dài, linh hoạt của voi."
+  },
+  {
+    "unit": "1.1 Bones and Skeleton",
+    "word": "Joint",
+    "definition": "A place in the body where two bones meet, allowing movement.",
+    "example": "Your elbow is a joint that lets you bend your arm.",
+    "vietnamese": "Khớp: Nơi hai xương gặp nhau trong cơ thể, cho phép cử động."
+  },
+  {
+    "unit": "1.1 Bones and Skeleton",
+    "word": "Backbone",
+    "definition": "The long line of bones that runs down the middle of your back.",
+    "example": "All vertebrates have a backbone.",
+    "vietnamese": "Xương sống: Dãy dài các xương chạy dọc giữa lưng."
+  },
+  {
+    "unit": "1.2 Why we need a skeleton",
+    "word": "Pollutants",
+    "definition": "Substances that make water, air, or land dirty and harmful.",
+    "example": "Smoke from factories puts pollutants into the air.",
+    "vietnamese": "Chất ô nhiễm: Các chất làm bẩn nước, không khí hoặc đất và gây hại."
+  },
+  {
+    "unit": "1.3 Skeletons and movement",
+    "word": "Muscle pair",
+    "definition": "Two muscles that work together — when one gets shorter, the other gets longer.",
+    "example": "The biceps and triceps are a muscle pair in your arm.",
+    "vietnamese": "Cặp cơ: Hai cơ hoạt động cùng nhau — khi một cơ co lại thì cơ kia giãn ra."
+  },
+  {
+    "unit": "1.4 Different kinds of skeletons",
+    "word": "Endoskeleton",
+    "definition": "A skeleton found inside the body of an animal.",
+    "example": "Humans, dogs, and fish all have an endoskeleton.",
+    "vietnamese": "Bộ xương trong: Bộ xương nằm bên trong cơ thể động vật."
+  },
+  {
+    "unit": "1.5 Medicines and infectious diseases",
+    "word": "Virus",
+    "definition": "A very tiny thing that can enter your body and make you sick.",
+    "example": "The flu is caused by a virus.",
+    "vietnamese": "Vi-rút: Một thứ rất nhỏ có thể xâm nhập cơ thể và khiến bạn bị bệnh."
+  },
+  {
+    "unit": "1.5 Medicines and infectious diseases",
+    "word": "Bacteria",
+    "definition": "Tiny living things, some of which can cause diseases.",
+    "example": "Washing your hands helps remove bacteria.",
+    "vietnamese": "Vi khuẩn: Những sinh vật nhỏ bé, một số trong đó có thể gây bệnh."
+  },
+  {
+    "unit": "1.5 Medicines and infectious diseases",
+    "word": "Dose",
+    "definition": "The amount of medicine you should take at one time.",
+    "example": "The label says to take one dose in the morning.",
+    "vietnamese": "Liều lượng: Lượng thuốc bạn nên dùng trong một lần."
+  },
+  {
+    "unit": "Unit 2.1 Energy around us",
+    "word": "Kinetic energy",
+    "definition": "The energy something has when it is moving.",
+    "example": "A ball rolling down a hill has kinetic energy.",
+    "vietnamese": "Động năng: Năng lượng mà vật có khi nó đang chuyển động."
+  },
+  {
+    "unit": "Unit 2.1 Energy around us",
+    "word": "Potential energy",
+    "definition": "Stored energy that is ready to be used.",
+    "example": "A book on a high shelf has potential energy.",
+    "vietnamese": "Thế năng: Năng lượng được lưu trữ sẵn sàng để sử dụng."
+  },
+  {
+    "unit": "Unit 2.2 Energy transfers",
+    "word": "Heat energy",
+    "definition": "Energy that makes the temperature of something go up.",
+    "example": "A fire gives off heat energy to warm the room.",
+    "vietnamese": "Nhiệt năng: Năng lượng làm tăng nhiệt độ của vật."
+  },
+  {
+    "unit": "Unit 2.2 Energy transfers",
+    "word": "Transfer",
+    "definition": "To move something from one place to another.",
+    "example": "Energy can transfer from a hot cup to your cold hands.",
+    "vietnamese": "Truyền: Di chuyển thứ gì đó từ nơi này sang nơi khác."
+  },
+  {
+    "unit": "Unit 2.2 Energy transfers",
+    "word": "Sound energy",
+    "definition": "Energy that you can hear, made by vibrations.",
+    "example": "When you hit a drum, it makes sound energy.",
+    "vietnamese": "Năng lượng âm thanh: Năng lượng bạn có thể nghe, được tạo ra bởi rung động."
+  },
+  {
+    "unit": "Unit 2.3 Energy changes",
+    "word": "Light energy",
+    "definition": "Energy that lets us see things around us.",
+    "example": "A lamp gives off light energy so we can read at night.",
+    "vietnamese": "Quang năng: Năng lượng cho phép chúng ta nhìn thấy mọi thứ xung quanh."
+  },
+  {
+    "unit": "Unit 2.3 Energy changes",
+    "word": "Energy store",
+    "definition": "A place or object where energy is kept until it is needed.",
+    "example": "A battery is an energy store.",
+    "vietnamese": "Kho năng lượng: Nơi hoặc vật chứa năng lượng cho đến khi cần dùng."
+  },
+  {
+    "unit": "Unit 2.4 Energy and living things",
+    "word": "Food web",
+    "definition": "Many food chains linked together showing how animals and plants share energy.",
+    "example": "A food web shows that a rabbit is eaten by both a fox and an eagle.",
+    "vietnamese": "Lưới thức ăn: Nhiều chuỗi thức ăn liên kết, cho thấy cách động vật và thực vật chia sẻ năng lượng."
+  },
+  {
+    "unit": "Unit 2.4 Energy and living things",
+    "word": "Photosynthesis",
+    "definition": "The way plants use sunlight, water and air to make their own food.",
+    "example": "Green plants use photosynthesis to grow.",
+    "vietnamese": "Quang hợp: Cách thực vật sử dụng ánh sáng, nước và không khí để tự tạo thức ăn."
+  },
+  {
+    "unit": "Unit 2.4 Energy and living things",
+    "word": "Moist",
+    "definition": "Slightly wet or damp.",
+    "example": "Pythons live in moist, hot places.",
+    "vietnamese": "Ẩm ướt: Hơi ướt."
+  },
+  {
+    "unit": "Unit 2.4 Energy and living things",
+    "word": "Coil",
+    "definition": "To wind or wrap around something in circles.",
+    "example": "A python can coil its body around its prey.",
+    "vietnamese": "Cuộn: Quấn hoặc bao quanh thứ gì đó thành vòng tròn."
+  },
+  {
+    "unit": "Unit 2.4 Energy and living things",
+    "word": "Squeeze",
+    "definition": "To press something tightly from all sides.",
+    "example": "The python squeezes its prey until it cannot breathe.",
+    "vietnamese": "Siết: Ép chặt thứ gì đó từ mọi phía."
+  },
+  {
+    "unit": "Unit 2.4 Energy and living things",
+    "word": "Swallow",
+    "definition": "To make food go from your mouth down into your stomach.",
+    "example": "A snake can swallow its food whole.",
+    "vietnamese": "Nuốt: Đưa thức ăn từ miệng qua họng xuống dạ dày."
+  },
+  {
+    "unit": "Unit 2.4 Energy and living things",
+    "word": "Blend in",
+    "definition": "To look the same as what is around you so you are hard to see.",
+    "example": "A green frog can blend in with green leaves.",
+    "vietnamese": "Hòa lẫn: Trông giống với môi trường xung quanh để khó bị nhìn thấy."
+  },
+  {
+    "unit": "3",
+    "word": "Evaporation",
+    "definition": "When a liquid turns into a gas, usually by heating.",
+    "example": "When you leave a glass of water in the sun, evaporation makes the water disappear slowly.",
+    "vietnamese": "Bay hơi: Khi chất lỏng biến thành chất khí, thường do đun nóng."
+  },
+  {
+    "unit": "3",
+    "word": "Condensation",
+    "definition": "When a gas cools down and turns back into a liquid.",
+    "example": "Water drops on a cold glass are caused by condensation.",
+    "vietnamese": "Ngưng tụ: Khi chất khí nguội đi và biến trở lại thành chất lỏng."
+  },
+  {
+    "unit": "3",
+    "word": "Boiling",
+    "definition": "When a liquid gets very hot and starts turning into a gas with bubbles.",
+    "example": "Water is boiling when you see lots of bubbles in the pot.",
+    "vietnamese": "Sôi: Khi chất lỏng trở nên rất nóng và bắt đầu chuyển thành khí với các bọt khí."
+  },
+  {
+    "unit": "3",
+    "word": "Thermometer",
+    "definition": "A tool used to measure how hot or cold something is.",
+    "example": "We used a thermometer to check the temperature of the water.",
+    "vietnamese": "Nhiệt kế: Dụng cụ dùng để đo nhiệt độ nóng hay lạnh của vật."
+  },
+  {
+    "unit": "3",
+    "word": "Temperature",
+    "definition": "A measure of how hot or cold something is.",
+    "example": "The temperature of boiling water is 100 degrees Celsius.",
+    "vietnamese": "Nhiệt độ: Thước đo mức độ nóng hay lạnh của vật."
+  },
+  {
+    "unit": "3",
+    "word": "Variable",
+    "definition": "Something in an experiment that can be changed, measured or kept the same.",
+    "example": "In our experiment, the variable we changed was the amount of heat.",
+    "vietnamese": "Biến số: Thứ trong thí nghiệm có thể thay đổi, đo lường hoặc giữ nguyên."
+  },
+  {
+    "unit": "3",
+    "word": "Reversible",
+    "definition": "A change that can be undone to go back to the way it was before.",
+    "example": "Melting ice is reversible — you can freeze the water back into ice.",
+    "vietnamese": "Thuận nghịch (có thể đảo ngược): Sự thay đổi có thể hoàn tác để trở về trạng thái ban đầu."
+  },
+  {
+    "unit": "3",
+    "word": "Irreversible",
+    "definition": "A change that cannot be undone.",
+    "example": "Burning wood is irreversible — you cannot turn ash back into wood.",
+    "vietnamese": "Không thể đảo ngược: Sự thay đổi không thể hoàn tác."
+  },
+  {
+    "unit": "3",
+    "word": "Burning",
+    "definition": "A chemical reaction that happens when something is set on fire.",
+    "example": "Burning a candle makes light and heat.",
+    "vietnamese": "Đốt cháy: Phản ứng hóa học xảy ra khi thứ gì đó bị đốt."
+  },
+  {
+    "unit": "3",
+    "word": "Mixing",
+    "definition": "Putting two or more things together.",
+    "example": "Mixing sand and water makes the water cloudy.",
+    "vietnamese": "Trộn: Kết hợp hai hay nhiều thứ lại với nhau."
+  },
+  {
+    "unit": "3",
+    "word": "Filtering",
+    "definition": "Separating solids from a liquid by passing it through a material with tiny holes.",
+    "example": "We used filtering to remove the sand from the water.",
+    "vietnamese": "Lọc: Tách chất rắn ra khỏi chất lỏng bằng cách cho đi qua vật liệu có lỗ nhỏ."
+  },
+  {
+    "unit": "3",
+    "word": "Sieving",
+    "definition": "Separating different-sized pieces by pushing them through a mesh or net.",
+    "example": "We used sieving to separate the big rocks from the sand.",
+    "vietnamese": "Sàng: Tách các mảnh có kích thước khác nhau bằng cách đẩy qua lưới."
+  },
+  {
+    "unit": "4",
+    "word": "Volcano",
+    "definition": "A mountain with an opening where hot lava, ash and gas can come out from deep inside the Earth.",
+    "example": "The volcano erupted and sent ash high into the sky.",
+    "vietnamese": "Núi lửa: Một ngọn núi có lỗ mở nơi dung nham nóng, tro và khí có thể thoát ra từ bên trong Trái đất."
+  },
+  {
+    "unit": "4",
+    "word": "Eject",
+    "definition": "To push or throw something out with force.",
+    "example": "The volcano ejects hot ash and rocks from its crater.",
+    "vietnamese": "Phun: Đẩy hoặc ném thứ gì đó ra ngoài với lực mạnh."
+  },
+  {
+    "unit": "4",
+    "word": "Seismometer",
+    "definition": "A scientific tool that detects and measures earthquakes.",
+    "example": "Scientists use a seismometer to detect earthquakes.",
+    "vietnamese": "Máy đo địa chấn: Dụng cụ khoa học phát hiện và đo động đất."
+  },
+  {
+    "unit": "4",
+    "word": "Focus point",
+    "definition": "The place underground where an earthquake starts.",
+    "example": "The focus point of the earthquake was deep below the surface.",
+    "vietnamese": "Tâm chấn (dưới đất): Nơi bên dưới mặt đất nơi trận động đất bắt đầu."
+  },
+  {
+    "unit": "4",
+    "word": "Tropical forest",
+    "definition": "A hot, wet area with many tall trees and animals.",
+    "example": "Orangutans live in tropical forests.",
+    "vietnamese": "Rừng nhiệt đới: Khu vực nóng ẩm với nhiều cây cao và động vật."
+  },
+  {
+    "unit": "4",
+    "word": "Camouflage",
+    "definition": "A way animals hide by looking like their surroundings.",
+    "example": "Some frogs use camouflage to look like leaves.",
+    "vietnamese": "Ngụy trang: Cách động vật ẩn mình bằng cách trông giống với môi trường xung quanh."
+  },
+  {
+    "unit": "4",
+    "word": "Characteristics",
+    "definition": "Special features or qualities that help describe a living thing.",
+    "example": "Long legs and a spotted coat are characteristics of a giraffe.",
+    "vietnamese": "Đặc điểm: Các tính năng hoặc phẩm chất đặc biệt giúp mô tả một sinh vật."
+  },
+  {
+    "unit": "4",
+    "word": "Grip",
+    "definition": "To hold onto something tightly.",
+    "example": "Orangutans grip branches with their strong fingers.",
+    "vietnamese": "Nắm chặt: Giữ chặt thứ gì đó."
+  },
+  {
+    "unit": "4",
+    "word": "Survive",
+    "definition": "To stay alive, especially in a difficult situation.",
+    "example": "Fish cannot survive outside of water for long.",
+    "vietnamese": "Sống sót: Tiếp tục sống, đặc biệt trong hoàn cảnh khó khăn."
+  },
+  {
+    "unit": "4",
+    "word": "Claws",
+    "definition": "Sharp, curved nails on an animal's feet used for gripping or digging.",
+    "example": "Bears use their claws to catch fish.",
+    "vietnamese": "Vuốt: Những móng sắc, cong ở chân động vật dùng để bám hoặc đào."
+  },
+  {
+    "unit": "5.1 Light sources and seeing",
+    "word": "Light source",
+    "definition": "An object that makes its own light.",
+    "example": "The Sun and a lamp are both light sources.",
+    "vietnamese": "Nguồn sáng: Vật tự tạo ra ánh sáng."
+  },
+  {
+    "unit": "5.1 Light sources and seeing",
+    "word": "Opaque",
+    "definition": "A material that does not let any light pass through it.",
+    "example": "A wooden door is opaque — you cannot see through it.",
+    "vietnamese": "Chắn sáng (không trong suốt): Vật liệu không cho ánh sáng xuyên qua."
+  },
+  {
+    "unit": "5.1 Light sources and seeing",
+    "word": "Transparent",
+    "definition": "A material that lets all light pass through so you can see clearly through it.",
+    "example": "A clear glass window is transparent.",
+    "vietnamese": "Trong suốt: Vật liệu cho tất cả ánh sáng xuyên qua để bạn nhìn rõ qua nó."
+  },
+  {
+    "unit": "5.1 Light sources and seeing",
+    "word": "Translucent",
+    "definition": "A material that lets some light pass through but you cannot see clearly through it.",
+    "example": "Frosted glass in a bathroom is translucent.",
+    "vietnamese": "Mờ (bán trong suốt): Vật liệu cho một phần ánh sáng xuyên qua nhưng không nhìn rõ."
+  },
+  {
+    "unit": "5.1 Light sources and seeing",
+    "word": "Shadow",
+    "definition": "A dark area made when an object blocks the path of light.",
+    "example": "Stand in the sunlight and look at your shadow on the ground.",
+    "vietnamese": "Bóng: Vùng tối được tạo ra khi vật chắn đường đi của ánh sáng."
+  },
+  {
+    "unit": "5.1 Light sources and seeing",
+    "word": "Absorb",
+    "definition": "To take in light or heat instead of bouncing it back.",
+    "example": "Dark colours absorb more light than light colours.",
+    "vietnamese": "Hấp thụ: Hút ánh sáng hoặc nhiệt thay vì phản lại."
+  },
+  {
+    "unit": "5.2 Light travels in straight lines",
+    "word": "Ray",
+    "definition": "A narrow beam of light that travels in a straight line.",
+    "example": "Draw a ray to show the path of light from the torch to the wall.",
+    "vietnamese": "Tia sáng: Một chùm ánh sáng hẹp di chuyển theo đường thẳng."
+  },
+  {
+    "unit": "5.2 Light travels in straight lines",
+    "word": "Ray diagram",
+    "definition": "A drawing that uses lines with arrows to show how light travels.",
+    "example": "The ray diagram shows light going from the lamp to the book and then to the eye.",
+    "vietnamese": "Sơ đồ tia sáng: Bản vẽ sử dụng các đường có mũi tên để thể hiện cách ánh sáng di chuyển."
+  },
+  {
+    "unit": "5.2 Light travels in straight lines",
+    "word": "Beam",
+    "definition": "A wide band of light, like from a torch or car headlight.",
+    "example": "A torch shines a beam of light in the dark.",
+    "vietnamese": "Chùm sáng: Một dải ánh sáng rộng, như từ đèn pin hoặc đèn pha."
+  },
+  {
+    "unit": "5.2 Light travels in straight lines",
+    "word": "Straight line",
+    "definition": "A line that goes in one direction without bending or curving.",
+    "example": "Light always travels in a straight line.",
+    "vietnamese": "Đường thẳng: Đường đi theo một hướng mà không uốn cong."
+  },
+  {
+    "unit": "5.2 Light travels in straight lines",
+    "word": "Enquiry",
+    "definition": "A scientific investigation to find the answer to a question.",
+    "example": "We did an enquiry to find out which material blocks the most light.",
+    "vietnamese": "Nghiên cứu (điều tra): Cuộc điều tra khoa học để tìm câu trả lời cho một câu hỏi."
+  },
+  {
+    "unit": "5.3 Reflection and surfaces",
+    "word": "Reflect",
+    "definition": "When light bounces off a surface.",
+    "example": "A mirror can reflect light very well.",
+    "vietnamese": "Phản xạ: Khi ánh sáng bật lại từ một bề mặt."
+  },
+  {
+    "unit": "5.3 Reflection and surfaces",
+    "word": "Reflection",
+    "definition": "The image you see when light bounces off a smooth, shiny surface.",
+    "example": "You can see your reflection in a calm lake.",
+    "vietnamese": "Sự phản xạ / Hình ảnh phản chiếu: Hình ảnh bạn thấy khi ánh sáng bật lại từ bề mặt nhẵn, sáng bóng."
+  },
+  {
+    "unit": "5.3 Reflection and surfaces",
+    "word": "Surface",
+    "definition": "The outside layer or top part of something.",
+    "example": "Light reflects better off a smooth surface.",
+    "vietnamese": "Bề mặt: Lớp bên ngoài hoặc phần trên cùng của vật."
+  },
+  {
+    "unit": "5.3 Reflection and surfaces",
+    "word": "Smooth",
+    "definition": "A surface that is flat and even with no bumps.",
+    "example": "A mirror is smooth, so it reflects light well.",
+    "vietnamese": "Nhẵn: Bề mặt phẳng, đều, không có gồ ghề."
+  },
+  {
+    "unit": "5.3 Reflection and surfaces",
+    "word": "Rough",
+    "definition": "A surface that is bumpy and not even.",
+    "example": "A rough rock absorbs more light than a polished mirror.",
+    "vietnamese": "Thô ráp: Bề mặt gồ ghề, không đều."
+  },
+  {
+    "unit": "5.3 Reflection and surfaces",
+    "word": "Mirror",
+    "definition": "A flat piece of glass with a shiny coating that reflects light clearly.",
+    "example": "You can see yourself when you look in a mirror.",
+    "vietnamese": "Gương: Miếng kính phẳng có lớp phủ sáng bóng phản chiếu ánh sáng rõ ràng."
+  },
+  {
+    "unit": "5.3 Reflection and surfaces",
+    "word": "Aluminium foil",
+    "definition": "A thin, shiny sheet of metal that reflects light.",
+    "example": "Aluminium foil is shiny and can reflect light well.",
+    "vietnamese": "Giấy bạc (nhôm): Tấm kim loại mỏng, sáng bóng phản chiếu ánh sáng."
+  },
+  {
+    "unit": "5.3 Reflection and surfaces",
+    "word": "Shiny",
+    "definition": "Something that reflects a lot of light and looks bright.",
+    "example": "A gold medal is shiny because its smooth surface reflects light.",
+    "vietnamese": "Sáng bóng: Vật phản chiếu nhiều ánh sáng và trông rực rỡ."
+  },
+  {
+    "unit": "5.4 Solar system",
+    "word": "Solar system",
+    "definition": "The Sun and all the planets, moons, and other objects that move around it.",
+    "example": "Earth is one of eight planets in our solar system.",
+    "vietnamese": "Hệ Mặt Trời: Mặt Trời cùng tất cả các hành tinh, mặt trăng và các thiên thể khác quay quanh nó."
+  },
+  {
+    "unit": "5.4 Solar system",
+    "word": "Star",
+    "definition": "A huge ball of hot, glowing gas in space that makes its own light.",
+    "example": "The Sun is the closest star to Earth.",
+    "vietnamese": "Ngôi sao: Một quả cầu khí nóng, phát sáng khổng lồ trong không gian tự tạo ra ánh sáng."
+  },
+  {
+    "unit": "5.4 Solar system",
+    "word": "Planet",
+    "definition": "A large round body in space that moves around a star.",
+    "example": "Earth is the third planet from the Sun.",
+    "vietnamese": "Hành tinh: Một thiên thể lớn, tròn trong không gian quay quanh một ngôi sao."
+  },
+  {
+    "unit": "5.4 Solar system",
+    "word": "Orbit",
+    "definition": "The curved path a planet or moon follows as it moves around a star or planet.",
+    "example": "The Earth takes one year to complete its orbit around the Sun.",
+    "vietnamese": "Quỹ đạo: Đường cong mà hành tinh hoặc mặt trăng đi theo khi quay quanh một ngôi sao hoặc hành tinh."
+  },
+  {
+    "unit": "5.4 Solar system",
+    "word": "Asteroid",
+    "definition": "A small rocky object that moves around the Sun.",
+    "example": "There are many asteroids between Mars and Jupiter.",
+    "vietnamese": "Tiểu hành tinh: Vật thể đá nhỏ di chuyển quanh Mặt Trời."
+  },
+  {
+    "unit": "5.4 Solar system",
+    "word": "Comet",
+    "definition": "A ball of ice and dust that travels around the Sun and has a bright tail.",
+    "example": "When a comet gets close to the Sun, its tail shines brightly.",
+    "vietnamese": "Sao chổi: Một khối băng và bụi di chuyển quanh Mặt Trời và có đuôi sáng."
+  },
+  {
+    "unit": "5.4 Solar system",
+    "word": "Asteroid belt",
+    "definition": "A region in space filled with rocky objects, located between Mars and Jupiter.",
+    "example": "The asteroid belt separates the inner planets from the outer planets.",
+    "vietnamese": "Vành đai tiểu hành tinh: Vùng không gian chứa nhiều thiên thể đá, nằm giữa Sao Hỏa và Sao Mộc."
+  },
+  {
+    "unit": "5.4 Solar system",
+    "word": "Mercury",
+    "definition": "The smallest planet and the closest one to the Sun.",
+    "example": "Mercury is very hot because it is so close to the Sun.",
+    "vietnamese": "Sao Thủy: Hành tinh nhỏ nhất và gần Mặt Trời nhất."
+  },
+  {
+    "unit": "5.4 Solar system",
+    "word": "Venus",
+    "definition": "The second planet from the Sun, known as the hottest planet.",
+    "example": "Venus is covered in thick clouds.",
+    "vietnamese": "Sao Kim: Hành tinh thứ hai tính từ Mặt Trời, được biết là hành tinh nóng nhất."
+  },
+  {
+    "unit": "5.4 Solar system",
+    "word": "Mars",
+    "definition": "The fourth planet from the Sun, often called the Red Planet.",
+    "example": "Mars looks red because of the iron in its soil.",
+    "vietnamese": "Sao Hỏa: Hành tinh thứ tư tính từ Mặt Trời, thường được gọi là Hành tinh Đỏ."
+  },
+  {
+    "unit": "5.4 Solar system",
+    "word": "Jupiter",
+    "definition": "The largest planet in our solar system, fifth from the Sun.",
+    "example": "Jupiter has a big red spot which is a giant storm.",
+    "vietnamese": "Sao Mộc: Hành tinh lớn nhất trong hệ Mặt Trời, thứ năm tính từ Mặt Trời."
+  },
+  {
+    "unit": "5.4 Solar system",
+    "word": "Saturn",
+    "definition": "The sixth planet from the Sun, famous for its beautiful rings.",
+    "example": "Saturn has rings made of ice and rock.",
+    "vietnamese": "Sao Thổ: Hành tinh thứ sáu tính từ Mặt Trời, nổi tiếng với các vành đai đẹp."
+  },
+  {
+    "unit": "5.4 Solar system",
+    "word": "Uranus",
+    "definition": "The seventh planet from the Sun, tilted on its side.",
+    "example": "Uranus looks blue-green because of the gas in its atmosphere.",
+    "vietnamese": "Sao Thiên Vương: Hành tinh thứ bảy tính từ Mặt Trời, nghiêng sang một bên."
+  },
+  {
+    "unit": "5.4 Solar system",
+    "word": "Neptune",
+    "definition": "The eighth and farthest planet from the Sun in our solar system.",
+    "example": "Neptune is a very cold, windy planet far from the Sun.",
+    "vietnamese": "Sao Hải Vương: Hành tinh thứ tám và xa nhất từ Mặt Trời trong hệ Mặt Trời."
+  },
+  {
+    "unit": "5.4 Solar system",
+    "word": "Moon",
+    "definition": "A natural body that moves around a planet and does not make its own light.",
+    "example": "The Moon orbits Earth and reflects light from the Sun.",
+    "vietnamese": "Mặt Trăng: Thiên thể tự nhiên quay quanh hành tinh và không tự tạo ra ánh sáng."
+  },
+  {
+    "unit": "5.5 Earth's rotation and shadows",
+    "word": "Axis",
+    "definition": "An imaginary line through the centre of the Earth from top to bottom that it spins around.",
+    "example": "The Earth spins on its axis once every 24 hours.",
+    "vietnamese": "Trục: Đường tưởng tượng xuyên qua tâm Trái Đất từ trên xuống dưới mà nó quay quanh."
+  },
+  {
+    "unit": "5.5 Earth's rotation and shadows",
+    "word": "Rotation",
+    "definition": "The spinning of the Earth on its axis.",
+    "example": "The rotation of the Earth causes day and night.",
+    "vietnamese": "Sự tự quay: Việc Trái Đất quay trên trục của nó."
+  },
+  {
+    "unit": "5.5 Earth's rotation and shadows",
+    "word": "Revolution",
+    "definition": "The movement of the Earth around the Sun, taking one year.",
+    "example": "One revolution of the Earth around the Sun takes 365 days.",
+    "vietnamese": "Sự công chuyển (quay quanh): Chuyển động của Trái Đất quanh Mặt Trời, mất một năm."
+  },
+  {
+    "unit": "5.5 Earth's rotation and shadows",
+    "word": "Spin",
+    "definition": "To turn around and around quickly.",
+    "example": "The Earth spins around once every day.",
+    "vietnamese": "Quay: Xoay vòng nhanh."
+  },
+  {
+    "unit": "5.5 Earth's rotation and shadows",
+    "word": "Day and night",
+    "definition": "The cycle of light and dark caused by the Earth spinning on its axis.",
+    "example": "When your side of the Earth faces the Sun, it is day. When it faces away, it is night.",
+    "vietnamese": "Ngày và đêm: Chu kỳ sáng và tối do Trái Đất quay trên trục."
+  },
+  {
+    "unit": "5.5 Earth's rotation and shadows",
+    "word": "Season",
+    "definition": "One of four times of the year (spring, summer, autumn, winter) with different weather.",
+    "example": "Summer is the season when it is hottest and days are longest.",
+    "vietnamese": "Mùa: Một trong bốn khoảng thời gian trong năm (xuân, hạ, thu, đông) với thời tiết khác nhau."
+  },
+  {
+    "unit": "5.5 Earth's rotation and shadows",
+    "word": "Tilt",
+    "definition": "To lean or slope to one side.",
+    "example": "The Earth is tilted, which causes different seasons.",
+    "vietnamese": "Nghiêng: Lệch hoặc dốc sang một bên."
+  },
+  {
+    "unit": "5.5 Earth's rotation and shadows",
+    "word": "Apparent movement",
+    "definition": "How the Sun looks like it moves across the sky, even though it is the Earth that is spinning.",
+    "example": "The Sun's apparent movement from east to west is caused by the Earth's rotation.",
+    "vietnamese": "Chuyển động biểu kiến: Cách Mặt Trời trông như di chuyển trên bầu trời, mặc dù thực ra Trái Đất đang quay."
+  },
+  {
+    "unit": "5.5 Earth's rotation and shadows",
+    "word": "Sundial",
+    "definition": "An old-fashioned clock that uses a shadow from the Sun to tell the time.",
+    "example": "Long ago, people used a sundial to know what time it was.",
+    "vietnamese": "Đồng hồ mặt trời: Loại đồng hồ cổ dùng bóng của Mặt Trời để xem giờ."
+  },
+  {
+    "unit": "5.1 Light sources and seeing",
+    "word": "Produce",
+    "definition": "To make or create something. A light source makes its own light.",
+    "example": "The Sun produces light, but the Moon does not.",
+    "vietnamese": "Tạo ra: Làm ra hoặc sản sinh thứ gì đó. Nguồn sáng tự tạo ra ánh sáng."
+  },
+  {
+    "unit": "5.1 Light sources and seeing",
+    "word": "Natural light",
+    "definition": "Light that comes from nature, not made by people.",
+    "example": "Sunlight and starlight are types of natural light.",
+    "vietnamese": "Ánh sáng tự nhiên: Ánh sáng đến từ thiên nhiên, không phải do con người tạo ra."
+  },
+  {
+    "unit": "5.1 Light sources and seeing",
+    "word": "Artificial light",
+    "definition": "Light made by people using electricity or fire.",
+    "example": "A light bulb and a candle both give off artificial light.",
+    "vietnamese": "Ánh sáng nhân tạo: Ánh sáng do con người tạo ra bằng điện hoặc lửa."
+  },
+  {
+    "unit": "5.1 Light sources and seeing",
+    "word": "Darkness",
+    "definition": "When there is no light at all, you cannot see anything.",
+    "example": "In complete darkness, we need a torch to find our way.",
+    "vietnamese": "Bóng tối: Khi không có ánh sáng, bạn không thể nhìn thấy gì."
+  },
+  {
+    "unit": "5.1 Light sources and seeing",
+    "word": "Visible",
+    "definition": "Something that can be seen with your eyes.",
+    "example": "Stars are only visible at night when the sky is dark.",
+    "vietnamese": "Nhìn thấy được: Thứ có thể nhìn thấy bằng mắt."
+  },
+  {
+    "unit": "5.1 Light sources and seeing",
+    "word": "Image",
+    "definition": "A picture of something that you see, for example in a mirror or on water.",
+    "example": "You can see an image of your face when you look into a mirror.",
+    "vietnamese": "Hình ảnh: Bức ảnh của vật mà bạn nhìn thấy, ví dụ trong gương hoặc trên mặt nước."
+  },
+  {
+    "unit": "5.2 Light travels in straight lines",
+    "word": "Path",
+    "definition": "The direction or route that light follows as it moves.",
+    "example": "Light follows a straight path from the torch to the wall.",
+    "vietnamese": "Đường đi: Hướng hoặc lộ trình mà ánh sáng đi theo khi di chuyển."
+  },
+  {
+    "unit": "5.2 Light travels in straight lines",
+    "word": "Block",
+    "definition": "To stop something from passing through. An opaque object stops light.",
+    "example": "Your body blocks light from the Sun and creates a shadow behind you.",
+    "vietnamese": "Chắn: Ngăn không cho thứ gì đó đi qua. Vật chắn sáng ngăn ánh sáng lại."
+  },
+  {
+    "unit": "5.2 Light travels in straight lines",
+    "word": "Direction",
+    "definition": "The way that something is moving or pointing.",
+    "example": "Light travels in one direction — it always goes in a straight line.",
+    "vietnamese": "Hướng: Chiều mà thứ gì đó đang di chuyển hoặc chỉ tới."
+  },
+  {
+    "unit": "5.3 Reflection and surfaces",
+    "word": "Reflector",
+    "definition": "An object or surface that bounces light back well.",
+    "example": "A gold medal is a good reflector because it is smooth and shiny.",
+    "vietnamese": "Vật phản xạ: Vật hoặc bề mặt phản chiếu ánh sáng tốt."
+  },
+  {
+    "unit": "5.3 Reflection and surfaces",
+    "word": "Polished",
+    "definition": "Made smooth and shiny by rubbing.",
+    "example": "A polished mirror reflects light better than a rough piece of wood.",
+    "vietnamese": "Được đánh bóng: Được làm nhẵn và sáng bóng bằng cách chà."
+  },
+  {
+    "unit": "5.3 Reflection and surfaces",
+    "word": "Dull",
+    "definition": "Not shiny; does not reflect much light.",
+    "example": "A dull surface absorbs more light than a shiny one.",
+    "vietnamese": "Mờ (xỉn): Không sáng bóng; không phản chiếu nhiều ánh sáng."
+  },
+  {
+    "unit": "5.3 Reflection and surfaces",
+    "word": "Scatter",
+    "definition": "When light bounces off a rough surface in many different directions.",
+    "example": "Rough surfaces scatter light, so you cannot see a clear reflection.",
+    "vietnamese": "Tán xạ: Khi ánh sáng bật ra từ bề mặt thô ráp theo nhiều hướng khác nhau."
+  },
+  {
+    "unit": "5.4 Solar system",
+    "word": "Gravity",
+    "definition": "An invisible force that pulls objects toward each other. It keeps planets orbiting the Sun.",
+    "example": "Gravity keeps us on the ground and keeps the Moon orbiting the Earth.",
+    "vietnamese": "Trọng lực: Lực vô hình kéo các vật về phía nhau. Nó giữ các hành tinh quay quanh Mặt Trời."
+  },
+  {
+    "unit": "5.4 Solar system",
+    "word": "Atmosphere",
+    "definition": "The layer of gases that surrounds a planet.",
+    "example": "Earth's atmosphere protects us from the Sun's harmful rays.",
+    "vietnamese": "Khí quyển: Lớp khí bao quanh hành tinh."
+  },
+  {
+    "unit": "5.4 Solar system",
+    "word": "Telescope",
+    "definition": "A tool that makes faraway things look closer and bigger.",
+    "example": "Scientists use a telescope to study the planets and stars.",
+    "vietnamese": "Kính thiên văn: Dụng cụ làm cho các vật ở xa trông gần và lớn hơn."
+  },
+  {
+    "unit": "5.4 Solar system",
+    "word": "Anti-clockwise",
+    "definition": "Moving in the opposite direction to the hands of a clock.",
+    "example": "The planets in our solar system orbit the Sun in an anti-clockwise direction.",
+    "vietnamese": "Ngược chiều kim đồng hồ: Di chuyển theo hướng ngược lại với kim đồng hồ."
+  },
+  {
+    "unit": "5.4 Solar system",
+    "word": "Inner planets",
+    "definition": "The four planets closest to the Sun: Mercury, Venus, Earth, and Mars.",
+    "example": "The inner planets are smaller and made mostly of rock.",
+    "vietnamese": "Các hành tinh phía trong: Bốn hành tinh gần Mặt Trời nhất: Sao Thủy, Sao Kim, Trái Đất và Sao Hỏa."
+  },
+  {
+    "unit": "5.4 Solar system",
+    "word": "Outer planets",
+    "definition": "The four planets farthest from the Sun: Jupiter, Saturn, Uranus, and Neptune.",
+    "example": "The outer planets are much larger and made mostly of gas.",
+    "vietnamese": "Các hành tinh phía ngoài: Bốn hành tinh xa Mặt Trời nhất: Sao Mộc, Sao Thổ, Sao Thiên Vương và Sao Hải Vương."
+  },
+  {
+    "unit": "5.5 Earth's rotation and shadows",
+    "word": "Constant",
+    "definition": "Something that does not stop or change.",
+    "example": "If the Earth stopped spinning, one side would have constant daylight.",
+    "vietnamese": "Liên tục (không đổi): Thứ không dừng lại hoặc thay đổi."
+  },
+  {
+    "unit": "5.5 Earth's rotation and shadows",
+    "word": "Permanent",
+    "definition": "Lasting forever, not changing.",
+    "example": "If the Earth stopped spinning, one side would have permanent night.",
+    "vietnamese": "Vĩnh viễn: Kéo dài mãi mãi, không thay đổi."
+  },
+  {
+    "unit": "5.5 Earth's rotation and shadows",
+    "word": "Climate",
+    "definition": "The usual weather in a place over a long time.",
+    "example": "If the Earth's tilt changed, our climate would become very different.",
+    "vietnamese": "Khí hậu: Thời tiết thông thường ở một nơi trong thời gian dài."
+  },
+  {
+    "unit": "5.5 Earth's rotation and shadows",
+    "word": "Extreme",
+    "definition": "Very strong, very big, or much more than usual.",
+    "example": "A bigger tilt of the Earth would cause more extreme seasons.",
+    "vietnamese": "Cực đoan (khắc nghiệt): Rất mạnh, rất lớn, hoặc nhiều hơn bình thường."
+  },
+  {
+    "unit": "5.5 Earth's rotation and shadows",
+    "word": "Sunlight",
+    "definition": "The light that comes from the Sun.",
+    "example": "Different parts of the Earth receive different amounts of sunlight during the year.",
+    "vietnamese": "Ánh nắng mặt trời: Ánh sáng đến từ Mặt Trời."
+  },
+  {
+    "unit": "5.5 Earth's rotation and shadows",
+    "word": "Hemisphere",
+    "definition": "One half of the Earth, either the top half (north) or the bottom half (south).",
+    "example": "When it is summer in the northern hemisphere, it is winter in the southern hemisphere.",
+    "vietnamese": "Bán cầu: Một nửa Trái Đất, nửa phía trên (bắc) hoặc nửa phía dưới (nam)."
   }
 ]
