@@ -55,16 +55,34 @@ const ScienceThinkQuiz = ({ words, onAnswer, onComplete, onHome, gameId }) => {
       filtered = allQuestions.filter(q => q.difficulty === diff);
     }
 
-    // Shuffle
-    const shuffled = filtered.sort(() => Math.random() - 0.5);
+    // Shuffle questions
+    const shuffledQs = filtered.sort(() => Math.random() - 0.5);
     // Take up to numQuestions (from words.length) or all available
-    const count = Math.min(words.length || 10, shuffled.length);
-    setQuestions(shuffled.slice(0, count));
+    const count = Math.min(words?.length || 10, shuffledQs.length);
+    
+    // Select and shuffle options for each selected question
+    const finalQuestions = shuffledQs.slice(0, count).map(q => {
+      // Create options array tracking original correct index
+      const mappedOpts = q.options.map((text, idx) => ({ 
+        text, 
+        isCorrect: idx === q.correctIndex 
+      }));
+      // Shuffle options randomly
+      const shuffledOpts = mappedOpts.sort(() => Math.random() - 0.5);
+      
+      return {
+        ...q,
+        options: shuffledOpts.map(o => o.text),
+        correctIndex: shuffledOpts.findIndex(o => o.isCorrect)
+      };
+    });
+
+    setQuestions(finalQuestions);
     setCurrentIndex(0);
     setCorrectCount(0);
     setWrongWords([]);
     setStartTime(Date.now());
-  }, [allQuestions, words.length]);
+  }, [allQuestions, words]);
 
   const handleSelect = (optionIndex) => {
     if (selectedOption !== null) return;
