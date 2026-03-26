@@ -35,6 +35,7 @@ const ScienceMatchGame = ({ words, onAnswer, onComplete, onHome, gameId }) => {
     const [verifiedWrong, setVerifiedWrong] = useState([]); // array of connections
     const [hintConnections, setHintConnections] = useState([]); // array of correct pairs shown as hints
     const [isChecking, setIsChecking] = useState(false);
+    const [showRoundComplete, setShowRoundComplete] = useState(false);
     
     // Stats
     const [score, setScore] = useState(0);
@@ -256,7 +257,7 @@ const ScienceMatchGame = ({ words, onAnswer, onComplete, onHome, gameId }) => {
         if (wrongList.length > 0) {
             if (window.navigator?.vibrate) window.navigator.vibrate([200, 100, 200]);
             
-            // Task 1: blinking connected lines for 5 seconds by red color
+            // Task 2: Do not clear wrong answer but blinking connection as red color
             anime({
                 targets: '.science-line-error',
                 opacity: [1, 0.2, 1, 0.2, 1, 0.2, 1], // Blink effect
@@ -264,30 +265,31 @@ const ScienceMatchGame = ({ words, onAnswer, onComplete, onHome, gameId }) => {
                 easing: 'linear'
             });
             
-            // After 5s, remove wrong connections and show correct connections (hints)
+            // After 5s blink finishes, release check lock so kid can try again
+            // We do NOT clear wrong connections, so they stay red (verifiedWrong)
+            // and kids can click dots to manually re-connect.
             setTimeout(() => {
-                setConnections(prev => prev.filter(c => !wrongList.includes(c)));
-                setVerifiedWrong([]);
-                setHintConnections(hintList);
-            }, 5000); // 5 seconds
-
-            // After 10 more seconds (15s total), remove hints so kid can try again
-            setTimeout(() => {
-                setHintConnections([]);
                 setIsChecking(false);
-            }, 15000); // 15 seconds total
+            }, 5000); // 5 seconds
         } else {
             if (window.navigator?.vibrate) window.navigator.vibrate([50, 50]);
             
             if (correctList.length === currentRoundItems.length * 2) {
                 // Task 1: Pause about 3 seconds if passed to show result to kids
+                // Display the score of that play
+                setShowRoundComplete(true);
                 setTimeout(() => {
+                    setShowRoundComplete(false);
                     if (currentRoundIndex < rounds.length - 1) {
                         setCurrentRoundIndex(prev => prev + 1);
                         setupRound(rounds[currentRoundIndex + 1]);
                     } else {
                         if (onComplete) {
-                            onComplete({ score, totalCorrect: score > 0 ? score/10 : 0 });
+                            onComplete({ 
+                                score, 
+                                totalCorrect: score > 0 ? score/10 : 0,
+                                totalQuestions: rounds.length * 5
+                            });
                         }
                     }
                 }, 3000); // 3 seconds
@@ -340,7 +342,27 @@ const ScienceMatchGame = ({ words, onAnswer, onComplete, onHome, gameId }) => {
                 onScroll={measureDots} 
                 onWheel={measureDots} 
                 onTouchMove={measureDots}
+                style={{ position: 'relative' }}
             >
+                {/* Score overlay for completed play */}
+                {showRoundComplete && (
+                    <div className="science-match-round-complete" style={{
+                        position: 'absolute',
+                        top: 0, left: 0, right: 0, bottom: 0,
+                        display: 'flex', flexDirection: 'column',
+                        alignItems: 'center', justifyContent: 'center',
+                        backgroundColor: 'rgba(255, 255, 255, 0.85)',
+                        zIndex: 100,
+                        borderRadius: '24px',
+                        animation: 'fadeIn 0.3s ease-out'
+                    }}>
+                        <h2 style={{ fontSize: '2.5rem', color: '#4ade80', marginBottom: '10px', textShadow: '0 2px 4px rgba(0,0,0,0.1)' }}>Excellent!</h2>
+                        <p style={{ fontSize: '1.5rem', color: '#1e293b', fontWeight: 'bold' }}>
+                            Score: ⭐ {score}
+                        </p>
+                    </div>
+                )}
+
                 {/* SVG Overlay for lines */}
                 <svg className="science-match-svg-overlay">
                     {/* Render hint connections (dashed lines) */}

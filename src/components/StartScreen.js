@@ -42,7 +42,7 @@ const StartScreen = ({
       selectedGame={selectedGame}
       units={units}
       selectedUnits={selectedUnits}
-      setSelectedUnits={setSelectedUnits}
+      setSelectedUnits={handleUnitChange}
       numQuestions={numQuestions}
       setNumQuestions={setNumQuestions}
     />

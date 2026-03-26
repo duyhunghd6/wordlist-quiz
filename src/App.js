@@ -108,29 +108,16 @@ function App() {
     }
   }, []);
 
-  // Restore preferences when available
+  // Restore preferences ONLY for last subject, everything else is in handleWordlistChange
   useEffect(() => {
     if (preferences.lastSubject && !selectedWordlist) {
       handleWordlistChange(preferences.lastSubject);
-    }
-    if (preferences.lastQuestionCount) {
-      setNumQuestions(preferences.lastQuestionCount);
     }
     if (preferences.lastGame) {
       setSelectedGame(preferences.lastGame);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [preferences]);
-
-  // Restore selected units when wordlist loads
-  useEffect(() => {
-    if (units.length > 0 && preferences.lastUnits?.length > 0) {
-      const validUnits = preferences.lastUnits.filter(u => units.includes(u));
-      if (validUnits.length > 0) {
-        setSelectedUnits(validUnits);
-      }
-    }
-  }, [units, preferences.lastUnits]);
 
   const handleWordlistChange = async (selected) => {
     setSelectedWordlist(selected);
@@ -199,7 +186,26 @@ function App() {
           }
         });
         setUnits(uniqueUnits);
-        setSelectedUnits(uniqueUnits);
+
+        const currentPrefs = JSON.parse(localStorage.getItem('userPreferences')) || {};
+        const savedUnits = currentPrefs[`lastUnits_${selected}`];
+        if (savedUnits && Array.isArray(savedUnits) && savedUnits.length > 0) {
+            const validUnits = savedUnits.filter(u => uniqueUnits.includes(u));
+            if (validUnits.length > 0) {
+                setSelectedUnits(validUnits);
+            } else {
+                setSelectedUnits(uniqueUnits);
+            }
+        } else {
+            setSelectedUnits(uniqueUnits);
+        }
+
+        const savedCount = currentPrefs[`lastQuestionCount_${selected}`];
+        if (savedCount) {
+            setNumQuestions(savedCount);
+        } else {
+            setNumQuestions(10);
+        }
       } catch (err) {
         console.error("Failed to load wordlist:", err);
         setErrorToast({
@@ -215,18 +221,23 @@ function App() {
     }
   };
 
-  const handleUnitChange = (e) => {
-    const unit = e.target.value;
-    const newUnits = e.target.checked 
-      ? [...selectedUnits, unit] 
-      : selectedUnits.filter((u) => u !== unit);
+  const handleUnitChange = (eOrUnits) => {
+    let newUnits;
+    if (eOrUnits && eOrUnits.target) {
+      const unit = eOrUnits.target.value;
+      newUnits = eOrUnits.target.checked 
+        ? [...selectedUnits, unit] 
+        : selectedUnits.filter((u) => u !== unit);
+    } else {
+      newUnits = Array.isArray(eOrUnits) ? eOrUnits : [];
+    }
     setSelectedUnits(newUnits);
-    updatePreference('lastUnits', newUnits);
+    updatePreference(`lastUnits_${selectedWordlist}`, newUnits);
   };
 
   const handleNumQuestionsChange = (num) => {
     setNumQuestions(num);
-    updatePreference('lastQuestionCount', num);
+    updatePreference(`lastQuestionCount_${selectedWordlist}`, num);
   };
 
   const handleGameChange = (gameId) => {
@@ -333,7 +344,24 @@ function App() {
     localStorage.setItem("learningData", JSON.stringify(updatedLearningData));
     
     // Find the question object by word
-    const questionObj = questions.find(q => q.word === word) || { word, definition: '' };
+    let questionObj = questions.find(q => q.word === word || q.targetWord === word);
+    
+    // If not found in primary list, check TenseSentences DB for TOON sentences!
+    if (!questionObj && tenseSentences) {
+        const ts = tenseSentences.find(t => t.id === word || t.word === word);
+        if (ts) {
+            questionObj = {
+                word: word,
+                definition: ts.correct_sentence || ts.sentence || ts.verb_choices || '',
+                example: ts.wrong_sentence || '',
+                vietnamese: ts.translation || ''
+            };
+        }
+    }
+    
+    if (!questionObj) {
+        questionObj = { word, definition: '' };
+    }
     
     // Add to userAnswers for Results display
     setUserAnswers((prev) => [
@@ -378,19 +406,24 @@ function App() {
     
     let finalScore = 0;
     
-    // Handle standard quizzes vs Runner analytics 
+    // Handle standard quizzes vs custom game analytics 
     if (runnerData) {
         finalScore = runnerData.score;
         recordGameResult(selectedGame, finalScore);
         // The Heatmap counts total questions & correct answers
-        recordActivity(selectedWordlist, finalScore, runnerData.totalQuestions, runnerData.correctCount);
+        const totalQ = runnerData.totalQuestions || questions.length || 10;
+        const correctQ = runnerData.correctCount ?? runnerData.correctAnswers ?? runnerData.totalCorrect ?? 0;
+        recordActivity(selectedWordlist, finalScore, totalQ, correctQ);
     } else {
         // Legacy Game / Quiz logic
-        finalScore = Math.round((score / questions.length) * 100);
+        const correctCount = userAnswers.filter(a => a.isCorrect).length;
+        const wrongCount = userAnswers.filter(a => !a.isCorrect).length;
+        const totalAnswered = Math.max(1, correctCount + wrongCount);
+
+        finalScore = Math.round((correctCount / totalAnswered) * 100);
         recordGameResult(selectedGame, finalScore);
         
-        const correctCount = userAnswers.filter(a => a.isCorrect).length;
-        recordActivity(selectedWordlist, finalScore, questions.length, correctCount);
+        recordActivity(selectedWordlist, finalScore, totalAnswered, correctCount);
     }
 
     const newResult = {
@@ -480,7 +513,10 @@ function App() {
         tenseSentences: tenseSentences, // Pass down the grammar DB for Boss Levels!
         onAnswer: handleGameAnswer,
         onComplete: (results) => {
-          // Game complete - trigger results screen
+          if (results && typeof results.score !== 'undefined') {
+            setScore(results.score);
+          }
+          saveResult(profile.name, results || null);
           setShowResults(true);
           setQuizStarted(false);
         },
@@ -516,17 +552,7 @@ function App() {
         case 'scienceMatchGame':
           return <ScienceMatchGame {...gameProps} />;
         case 'endlessRunner':
-          const runnerProps = {
-            ...gameProps,
-            onComplete: (runnerData) => {
-              // runnerData = { score, correctCount, totalQuestions, totalTimeTaken }
-              setScore(runnerData.score);
-              setShowResults(true);
-              setQuizStarted(false);
-              saveResult(profile.name, runnerData);
-            }
-          };
-          return <EndlessRunner {...runnerProps} />;
+          return <EndlessRunner {...gameProps} />;
         case 'quiz':
         default:
           return (

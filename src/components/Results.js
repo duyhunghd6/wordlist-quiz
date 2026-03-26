@@ -3,9 +3,13 @@ import { XCircle, CheckCircle, RotateCcw, Home, Zap } from 'lucide-react';
 import './Results.css';
 
 const Results = ({ score, questions, userAnswers, playAgain, saveResult, playerName }) => {
-  const percentage = Math.min(100, Math.round((score / questions.length) * 100));
   const correctCount = userAnswers.filter(a => a.isCorrect).length;
   const wrongCount = userAnswers.filter(a => !a.isCorrect).length;
+  const totalAnswered = correctCount + wrongCount;
+  
+  const percentage = totalAnswered > 0 
+    ? Math.round((correctCount / totalAnswered) * 100)
+    : Math.min(100, Math.round((score / Math.max(1, questions.length)) * 100));
   
   let performanceEmoji, performanceText, performanceColor, performanceBg;
   if (percentage >= 90) {
@@ -31,7 +35,6 @@ const Results = ({ score, questions, userAnswers, playAgain, saveResult, playerN
   }
 
   const handlePlayAgain = () => {
-    saveResult(playerName);
     playAgain();
   };
 
