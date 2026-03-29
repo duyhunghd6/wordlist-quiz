@@ -34,6 +34,7 @@ export const GAMES = [
 
   // Science Games
   { id: 'scienceThinkQuiz', emoji: '🧪', name: 'Science Think Quiz', available: true, isScience: true },
+  { id: 'scienceTrueFalseGame', emoji: '⚖️', name: 'Science True/False', available: true, isScience: true },
   { id: 'scienceMatchGame', emoji: '🧩', name: 'Science Match', available: true, isScience: true }
 ];
 

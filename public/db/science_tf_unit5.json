@@ -1,0 +1,502 @@
+[
+  {
+    "id": "tf_5_001",
+    "unit": "5.1",
+    "topic": "Light sources and seeing",
+    "difficulty": "easy",
+    "statement": "The Sun is a light source.",
+    "isTrue": true,
+    "explanation": "True! The Sun makes its own light, which makes it our most important light source.",
+    "thinkingSkill": "identify"
+  },
+  {
+    "id": "tf_5_002",
+    "unit": "5.1",
+    "topic": "Light sources and seeing",
+    "difficulty": "easy",
+    "statement": "A mirror is a light source because it shines.",
+    "isTrue": false,
+    "explanation": "False! A mirror only reflects light from other things. It does not make its own light.",
+    "thinkingSkill": "identify"
+  },
+  {
+    "id": "tf_5_003",
+    "unit": "5.1",
+    "topic": "Light sources and seeing",
+    "difficulty": "medium",
+    "statement": "We can see things because light bounces off them and into our eyes.",
+    "isTrue": true,
+    "explanation": "True! Light travels from a source, hits an object, and reflects into our eyes so we can see it.",
+    "thinkingSkill": "reason"
+  },
+  {
+    "id": "tf_5_004",
+    "unit": "5.1",
+    "topic": "Light sources and seeing",
+    "difficulty": "medium",
+    "statement": "If you are in a completely dark room, your eyes will adjust and you can see perfectly.",
+    "isTrue": false,
+    "explanation": "False! Without any light at all, it is impossible to see. Our eyes need light to work.",
+    "thinkingSkill": "reason"
+  },
+  {
+    "id": "tf_5_005",
+    "unit": "5.1",
+    "topic": "Light sources and seeing",
+    "difficulty": "easy",
+    "statement": "Opaque materials let all light pass through them.",
+    "isTrue": false,
+    "explanation": "False! Opaque materials block all light. You cannot see through them.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_5_006",
+    "unit": "5.1",
+    "topic": "Light sources and seeing",
+    "difficulty": "easy",
+    "statement": "Glass is a transparent material.",
+    "isTrue": true,
+    "explanation": "True! Transparent materials let light pass through them clearly.",
+    "thinkingSkill": "apply"
+  },
+  {
+    "id": "tf_5_007",
+    "unit": "5.1",
+    "topic": "Light sources and seeing",
+    "difficulty": "medium",
+    "statement": "A wooden door is translucent.",
+    "isTrue": false,
+    "explanation": "False! A wooden door is opaque because it blocks all light from passing through.",
+    "thinkingSkill": "apply"
+  },
+  {
+    "id": "tf_5_008",
+    "unit": "5.1",
+    "topic": "Light sources and seeing",
+    "difficulty": "hard",
+    "statement": "If a material is translucent, you can see light through it but not clear shapes.",
+    "isTrue": true,
+    "explanation": "True! Translucent things (like frosted glass) let some light through but scatter it, making shapes blurred.",
+    "thinkingSkill": "analyze"
+  },
+  {
+    "id": "tf_5_009",
+    "unit": "5.1",
+    "topic": "Light sources and seeing",
+    "difficulty": "hard",
+    "statement": "The Moon is the biggest light source in the night sky.",
+    "isTrue": false,
+    "explanation": "False! The Moon doesn't make its own light. It only reflects light from the Sun.",
+    "thinkingSkill": "evaluate"
+  },
+  {
+    "id": "tf_5_010",
+    "unit": "5.1",
+    "topic": "Light sources and seeing",
+    "difficulty": "easy",
+    "statement": "A candle flame is a light source.",
+    "isTrue": true,
+    "explanation": "True! A burning candle produces its own light.",
+    "thinkingSkill": "identify"
+  },
+  {
+    "id": "tf_5_011",
+    "unit": "5.2",
+    "topic": "Light travels in straight lines",
+    "difficulty": "easy",
+    "statement": "Light travels in squiggly, wavy lines.",
+    "isTrue": false,
+    "explanation": "False! Light always travels in perfectly straight lines.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_5_012",
+    "unit": "5.2",
+    "topic": "Light travels in straight lines",
+    "difficulty": "easy",
+    "statement": "Shadows happen because light cannot bend around objects.",
+    "isTrue": true,
+    "explanation": "True! Because light travels in straight lines, when an object blocks it, a dark shadow forms behind it.",
+    "thinkingSkill": "reason"
+  },
+  {
+    "id": "tf_5_013",
+    "unit": "5.2",
+    "topic": "Light travels in straight lines",
+    "difficulty": "medium",
+    "statement": "A ray diagram uses straight arrows to show how light travels.",
+    "isTrue": true,
+    "explanation": "True! We draw straight arrows in a ray diagram to represent the straight path of light rays.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_5_014",
+    "unit": "5.2",
+    "topic": "Light travels in straight lines",
+    "difficulty": "medium",
+    "statement": "If you look through a bent tube, you can still see the light at the other end.",
+    "isTrue": false,
+    "explanation": "False! Light cannot bend around the curve of the tube, so it will not reach your eye.",
+    "thinkingSkill": "apply"
+  },
+  {
+    "id": "tf_5_015",
+    "unit": "5.2",
+    "topic": "Light travels in straight lines",
+    "difficulty": "hard",
+    "statement": "If you move a torch closer to a toy, the toy's shadow on the wall gets smaller.",
+    "isTrue": false,
+    "explanation": "False! Moving the light source closer makes it block more light angles, so the shadow gets LARGER.",
+    "thinkingSkill": "predict"
+  },
+  {
+    "id": "tf_5_016",
+    "unit": "5.2",
+    "topic": "Light travels in straight lines",
+    "difficulty": "hard",
+    "statement": "In a ray diagram, the arrow always points away from the light source.",
+    "isTrue": true,
+    "explanation": "True! The arrow shows the direction the light is travelling: away from the source.",
+    "thinkingSkill": "analyze"
+  },
+  {
+    "id": "tf_5_017",
+    "unit": "5.2",
+    "topic": "Light travels in straight lines",
+    "difficulty": "medium",
+    "statement": "If you line up three holes in three cards, you can see a light through them.",
+    "isTrue": true,
+    "explanation": "True! Because light travels in a straight line, it can pass straight through all three aligned holes.",
+    "thinkingSkill": "reason"
+  },
+  {
+    "id": "tf_5_018",
+    "unit": "5.2",
+    "topic": "Light travels in straight lines",
+    "difficulty": "easy",
+    "statement": "A shadow is always the exact same size as the object.",
+    "isTrue": false,
+    "explanation": "False! A shadow changes size depending on how close the object is to the light source.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_5_019",
+    "unit": "5.2",
+    "topic": "Light travels in straight lines",
+    "difficulty": "medium",
+    "statement": "Transparent objects cast very dark, sharp shadows.",
+    "isTrue": false,
+    "explanation": "False! Transparent objects let light through, so they cast very faint shadows or no shadow at all.",
+    "thinkingSkill": "apply"
+  },
+  {
+    "id": "tf_5_020",
+    "unit": "5.2",
+    "topic": "Light travels in straight lines",
+    "difficulty": "hard",
+    "statement": "A solar eclipse happens because the Moon blocks light travelling in a straight line to Earth.",
+    "isTrue": true,
+    "explanation": "True! The Moon casts a shadow on Earth because it blocks the straight path of the Sun's light.",
+    "thinkingSkill": "evaluate"
+  },
+  {
+    "id": "tf_5_021",
+    "unit": "5.3",
+    "topic": "Reflection and surfaces",
+    "difficulty": "easy",
+    "statement": "Reflection happens when light passes straight through a window.",
+    "isTrue": false,
+    "explanation": "False! Reflection is when light hits a surface and BOUNCES back.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_5_022",
+    "unit": "5.3",
+    "topic": "Reflection and surfaces",
+    "difficulty": "easy",
+    "statement": "Mirrors are great at reflecting light because they are smooth and shiny.",
+    "isTrue": true,
+    "explanation": "True! Smooth, shiny surfaces reflect light evenly, giving a clear reflection.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_5_023",
+    "unit": "5.3",
+    "topic": "Reflection and surfaces",
+    "difficulty": "medium",
+    "statement": "A bumpy, rough surface reflects light perfectly like a mirror.",
+    "isTrue": false,
+    "explanation": "False! Rough surfaces scatter the light in many different directions, so there is no clear image.",
+    "thinkingSkill": "reason"
+  },
+  {
+    "id": "tf_5_024",
+    "unit": "5.3",
+    "topic": "Reflection and surfaces",
+    "difficulty": "medium",
+    "statement": "Cyclists wear reflective vests so they can glow in the dark like fireflies.",
+    "isTrue": false,
+    "explanation": "False! The vests don't glow themselves. They just reflect the light from car headlights.",
+    "thinkingSkill": "apply"
+  },
+  {
+    "id": "tf_5_025",
+    "unit": "5.3",
+    "topic": "Reflection and surfaces",
+    "difficulty": "hard",
+    "statement": "A piece of white paper reflects light, but we can't see our face in it because its surface is rough.",
+    "isTrue": true,
+    "explanation": "True! Paper reflects light, which is why we can see it, but microscopically it's rough, so it scatters the light.",
+    "thinkingSkill": "analyze"
+  },
+  {
+    "id": "tf_5_026",
+    "unit": "5.3",
+    "topic": "Reflection and surfaces",
+    "difficulty": "easy",
+    "statement": "Still water can act like a mirror.",
+    "isTrue": true,
+    "explanation": "True! Because the surface of still water is very smooth, it reflects light clearly.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_5_027",
+    "unit": "5.3",
+    "topic": "Reflection and surfaces",
+    "difficulty": "hard",
+    "statement": "When a lake is very windy and wavy, you can see a perfect reflection of the trees.",
+    "isTrue": false,
+    "explanation": "False! The waves make the water surface rough, which scatters the light breaking the reflection.",
+    "thinkingSkill": "apply"
+  },
+  {
+    "id": "tf_5_028",
+    "unit": "5.3",
+    "topic": "Reflection and surfaces",
+    "difficulty": "medium",
+    "statement": "Periscopes use mirrors to bounce light around corners.",
+    "isTrue": true,
+    "explanation": "True! By using two mirrors at different angles, periscopes reflect light so you can see over walls.",
+    "thinkingSkill": "reason"
+  },
+  {
+    "id": "tf_5_029",
+    "unit": "5.3",
+    "topic": "Reflection and surfaces",
+    "difficulty": "medium",
+    "statement": "Dark, dull materials like black cloth are the best at reflecting light.",
+    "isTrue": false,
+    "explanation": "False! Dark, dull materials absorb most light and reflect very little.",
+    "thinkingSkill": "identify"
+  },
+  {
+    "id": "tf_5_030",
+    "unit": "5.3",
+    "topic": "Reflection and surfaces",
+    "difficulty": "hard",
+    "statement": "If you look at a shiny, curved spoon, your reflection might look upside-down or stretched.",
+    "isTrue": true,
+    "explanation": "True! The curved surface bounces the rays of light at different angles, distorting the image.",
+    "thinkingSkill": "evaluate"
+  },
+  {
+    "id": "tf_5_031",
+    "unit": "5.4",
+    "topic": "Solar system",
+    "difficulty": "easy",
+    "statement": "The Earth is at the exact center of our solar system.",
+    "isTrue": false,
+    "explanation": "False! The Sun is at the center of the solar system, and Earth orbits around it.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_5_032",
+    "unit": "5.4",
+    "topic": "Solar system",
+    "difficulty": "easy",
+    "statement": "There are 8 planets in our solar system.",
+    "isTrue": true,
+    "explanation": "True! The planets are: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_5_033",
+    "unit": "5.4",
+    "topic": "Solar system",
+    "difficulty": "medium",
+    "statement": "Mercury is the hottest planet because it is closest to the Sun.",
+    "isTrue": false,
+    "explanation": "False! Venus is actually hotter than Mercury because Venus has a thick atmosphere that traps heat.",
+    "thinkingSkill": "reason"
+  },
+  {
+    "id": "tf_5_034",
+    "unit": "5.4",
+    "topic": "Solar system",
+    "difficulty": "easy",
+    "statement": "The Sun is a star.",
+    "isTrue": true,
+    "explanation": "True! The Sun is a star, just like the ones we see at night, but it is much closer to Earth.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_5_035",
+    "unit": "5.4",
+    "topic": "Solar system",
+    "difficulty": "medium",
+    "statement": "Planets travel around the Sun in square-shaped paths.",
+    "isTrue": false,
+    "explanation": "False! Planets travel in oval-shaped or circular paths called orbits.",
+    "thinkingSkill": "identify"
+  },
+  {
+    "id": "tf_5_036",
+    "unit": "5.4",
+    "topic": "Solar system",
+    "difficulty": "medium",
+    "statement": "Jupiter is the largest planet in our solar system.",
+    "isTrue": true,
+    "explanation": "True! Jupiter is a gas giant and is much larger than any other planet.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_5_037",
+    "unit": "5.4",
+    "topic": "Solar system",
+    "difficulty": "hard",
+    "statement": "Neptune takes less time to orbit the Sun than Earth does.",
+    "isTrue": false,
+    "explanation": "False! Neptune is much further away, so its orbit takes about 165 Earth years!",
+    "thinkingSkill": "analyze"
+  },
+  {
+    "id": "tf_5_038",
+    "unit": "5.4",
+    "topic": "Solar system",
+    "difficulty": "hard",
+    "statement": "Mars looks red because its surface is covered in iron oxide (rust).",
+    "isTrue": true,
+    "explanation": "True! The soil on Mars has lots of rusted iron in it, giving it a red color.",
+    "thinkingSkill": "reason"
+  },
+  {
+    "id": "tf_5_039",
+    "unit": "5.4",
+    "topic": "Solar system",
+    "difficulty": "medium",
+    "statement": "Stars make their own light, but planets only reflect star light.",
+    "isTrue": true,
+    "explanation": "True! Stars like our Sun are burning balls of gas that make light. Planets just reflect it.",
+    "thinkingSkill": "compare"
+  },
+  {
+    "id": "tf_5_040",
+    "unit": "5.4",
+    "topic": "Solar system",
+    "difficulty": "hard",
+    "statement": "The asteroid belt is located between Earth and Mars.",
+    "isTrue": false,
+    "explanation": "False! The asteroid belt is located between Mars and Jupiter.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_5_041",
+    "unit": "5.5",
+    "topic": "Earth's rotation and shadows",
+    "difficulty": "easy",
+    "statement": "Earth spinning on its axis causes day and night.",
+    "isTrue": true,
+    "explanation": "True! As Earth rotates, the side facing the Sun has daytime, and the side facing away has night.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_5_042",
+    "unit": "5.5",
+    "topic": "Earth's rotation and shadows",
+    "difficulty": "easy",
+    "statement": "It takes the Earth about 24 hours to spin around one time.",
+    "isTrue": true,
+    "explanation": "True! One full rotation takes 24 hours, which is why our day is 24 hours long.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_5_043",
+    "unit": "5.5",
+    "topic": "Earth's rotation and shadows",
+    "difficulty": "medium",
+    "statement": "When it is morning in Vietnam, it is also morning everywhere else in the world.",
+    "isTrue": false,
+    "explanation": "False! Because the Earth is round and spins, different parts of the world face the Sun at different times.",
+    "thinkingSkill": "apply"
+  },
+  {
+    "id": "tf_5_044",
+    "unit": "5.5",
+    "topic": "Earth's rotation and shadows",
+    "difficulty": "medium",
+    "statement": "Your shadow is longest at midday (noon) when the Sun is overhead.",
+    "isTrue": false,
+    "explanation": "False! At midday the Sun is very high, so your shadow is very short. Shadows are longest at sunrise and sunset.",
+    "thinkingSkill": "reason"
+  },
+  {
+    "id": "tf_5_045",
+    "unit": "5.5",
+    "topic": "Earth's rotation and shadows",
+    "difficulty": "hard",
+    "statement": "Earth's axis is perfectly straight up and down.",
+    "isTrue": false,
+    "explanation": "False! Earth's axis is actually tilted on an angle (about 23.5 degrees), which causes our seasons.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_5_046",
+    "unit": "5.5",
+    "topic": "Earth's rotation and shadows",
+    "difficulty": "medium",
+    "statement": "If the Earth stopped spinning, one side would be very hot and one side very cold.",
+    "isTrue": true,
+    "explanation": "True! One side would face the Sun constantly and get hot, while the other side would stay dark and freeze.",
+    "thinkingSkill": "predict"
+  },
+  {
+    "id": "tf_5_047",
+    "unit": "5.5",
+    "topic": "Earth's rotation and shadows",
+    "difficulty": "easy",
+    "statement": "Earth travels around the Sun, and this journey takes about 365 days.",
+    "isTrue": true,
+    "explanation": "True! One full orbit around the Sun takes one Earth year.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_5_048",
+    "unit": "5.5",
+    "topic": "Earth's rotation and shadows",
+    "difficulty": "hard",
+    "statement": "Shadows get shorter and shorter during the entire afternoon.",
+    "isTrue": false,
+    "explanation": "False! Shadows are shortest at midday, and then they get LONGER as the afternoon goes on towards sunset.",
+    "thinkingSkill": "predict"
+  },
+  {
+    "id": "tf_5_049",
+    "unit": "5.5",
+    "topic": "Earth's rotation and shadows",
+    "difficulty": "hard",
+    "statement": "The tilt of the Earth means some countries get more hours of daylight in the summer.",
+    "isTrue": true,
+    "explanation": "True! When a part of Earth leans toward the Sun, it stays in the sunlight longer each day.",
+    "thinkingSkill": "reason"
+  },
+  {
+    "id": "tf_5_050",
+    "unit": "5.5",
+    "topic": "Earth's rotation and shadows",
+    "difficulty": "medium",
+    "statement": "The Sun literally moves across the sky from East to West every day.",
+    "isTrue": false,
+    "explanation": "False! The Sun isn't moving across the sky; the Earth is spinning, making the Sun appear to move.",
+    "thinkingSkill": "evaluate"
+  }
+]

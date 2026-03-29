@@ -18,6 +18,7 @@ import TenseSignalGame from "./components/games/TenseSignalGame";
 import EndlessRunner from "./components/games/EndlessRunner/EndlessRunner";
 import AngryTensesGame from "./components/games/AngryTenses/AngryTenses";
 import ScienceThinkQuiz from "./components/games/ScienceThinkQuiz";
+import ScienceTrueFalseGame from "./components/games/ScienceTrueFalseGame";
 import ScienceMatchGame from "./components/games/ScienceMatchGame";
 import ProfileSwitcher from "./components/ProfileSwitcher";
 import ErrorBoundary from "./components/ErrorBoundary";
@@ -549,6 +550,8 @@ function App() {
           return <AngryTensesGame {...gameProps} />;
         case 'scienceThinkQuiz':
           return <ScienceThinkQuiz {...gameProps} />;
+        case 'scienceTrueFalseGame':
+          return <ScienceTrueFalseGame {...gameProps} />;
         case 'scienceMatchGame':
           return <ScienceMatchGame {...gameProps} />;
         case 'endlessRunner':

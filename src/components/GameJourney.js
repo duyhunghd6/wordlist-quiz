@@ -65,6 +65,7 @@ const GAME_ICONS = {
     "Word Runner": { icon: Lightning, color: "gs-bg-blue", tags: ["Grammar", "Speed"] },
     "Angry Tenses": { icon: Strategy, color: "gs-bg-orange", tags: ["Grammar", "Physics"] },
     "Science Think Quiz": { icon: Brain, color: "gs-bg-purple", tags: ["Science", "Thinking"] },
+    "Science True/False": { icon: CheckSquareOffset, color: "gs-bg-pink", tags: ["Science", "Logic"] },
     "Science Match": { icon: Intersect, color: "gs-bg-blue", tags: ["Science", "Matching"] }
 };
 

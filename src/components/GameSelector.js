@@ -13,7 +13,10 @@ const GAME_ICONS = {
   photobomb: Camera,
   marioTense: Gamepad2,
   tenseSignal: Search,
-  endlessRunner: FastForward
+  endlessRunner: FastForward,
+  scienceThinkQuiz: Search,
+  scienceTrueFalseGame: Check,
+  scienceMatchGame: Layers
 };
 
 const GAME_COLORS = {
@@ -27,7 +30,10 @@ const GAME_COLORS = {
   photobomb: '#EC4899',
   marioTense: '#22C55E',
   tenseSignal: '#A855F7',
-  endlessRunner: '#14B8A6'
+  endlessRunner: '#14B8A6',
+  scienceThinkQuiz: '#3B82F6',
+  scienceTrueFalseGame: '#EC4899',
+  scienceMatchGame: '#10B981'
 };
 
 const GameSelector = ({ selectedGame, onSelectGame, gameStats, selectedWordlist }) => {
