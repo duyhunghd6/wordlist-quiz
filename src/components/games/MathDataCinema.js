@@ -41,34 +41,52 @@ export default function MathDataCinema({ onComplete, onBack }) {
   // L2 State
   const [l2QuestionIdx, setL2QuestionIdx] = useState(0);
 
+  const [feedbackL1, setFeedbackL1] = useState(null);
+  const [feedbackL2, setFeedbackL2] = useState(null);
+
   const handleKeypad = (num) => {
     setKeypadInput(prev => prev + num);
   };
   const handleClear = () => setKeypadInput("");
 
   const submitL1Answer = () => {
+    if (feedbackL1) return;
     if (parseInt(keypadInput) === level.questions[l1QuestionIdx].answer) {
-      setScore(score + 50);
-      if (l1QuestionIdx + 1 < level.questions.length) {
-        setL1QuestionIdx(l1QuestionIdx + 1);
-        setKeypadInput("");
-      } else {
-        setLevelIdx(1);
-      }
+      setFeedbackL1('correct');
+      setTimeout(() => {
+          setScore(score + 50);
+          setFeedbackL1(null);
+          if (l1QuestionIdx + 1 < level.questions.length) {
+            setL1QuestionIdx(l1QuestionIdx + 1);
+            setKeypadInput("");
+          } else {
+            setLevelIdx(1);
+          }
+      }, 1500);
     } else {
-      setKeypadInput(""); // Retry
+      setFeedbackL1('wrong');
+      setTimeout(() => {
+          setFeedbackL1(null);
+          setKeypadInput("");
+      }, 1500);
     }
   };
 
   const submitL2Answer = (selectedChart) => {
+    if (feedbackL2) return;
     const isCorrect = selectedChart === level.pairs[l2QuestionIdx].chart;
-    if (isCorrect) setScore(score + 50);
+    
+    setFeedbackL2(isCorrect ? 'correct' : 'wrong');
+    setTimeout(() => {
+        setFeedbackL2(null);
+        if (isCorrect) setScore(score + 50);
 
-    if (l2QuestionIdx + 1 < level.pairs.length) {
-      setL2QuestionIdx(l2QuestionIdx + 1);
-    } else {
-      if (onComplete) onComplete(score + (isCorrect ? 50 : 0));
-    }
+        if (l2QuestionIdx + 1 < level.pairs.length) {
+          setL2QuestionIdx(l2QuestionIdx + 1);
+        } else {
+          if (onComplete) onComplete(score + (isCorrect ? 50 : 0));
+        }
+    }, 1500);
   };
 
   return (
@@ -113,7 +131,7 @@ export default function MathDataCinema({ onComplete, onBack }) {
             <div style={styles.keyBox}>Key: [Full Ticket] = 20, [Half] = 10</div>
           </div>
 
-          <div style={styles.questionCard}>
+          <div style={{...styles.questionCard, borderColor: feedbackL1 === 'correct' ? '#10B981' : (feedbackL1 === 'wrong' ? '#EF4444' : '#BBF7D0')}}>
             {level.questions[l1QuestionIdx].text}
             <div style={styles.answerSlot}>{keypadInput || '_'}</div>
           </div>
@@ -131,7 +149,7 @@ export default function MathDataCinema({ onComplete, onBack }) {
 
       {level.type === 'matching' && (
         <div style={styles.levelContainer}>
-          <div style={styles.matchScenarioCard}>
+          <div style={{...styles.matchScenarioCard, borderColor: feedbackL2 === 'correct' ? '#10B981' : (feedbackL2 === 'wrong' ? '#EF4444' : '#E11D48')}}>
             {level.pairs[l2QuestionIdx].scenario}
           </div>
           <div style={{display:'flex', flexDirection:'column', gap:'16px', padding:'24px', width:'100%', boxSizing:'border-box'}}>
@@ -140,6 +158,7 @@ export default function MathDataCinema({ onComplete, onBack }) {
                 key={opt}
                 style={{...styles.keypadBtn, backgroundColor:'#3B82F6', color:'white', width:'100%', padding:'16px'}}
                 onClick={() => submitL2Answer(opt)}
+                disabled={!!feedbackL2}
               >
                 {opt}
               </button>

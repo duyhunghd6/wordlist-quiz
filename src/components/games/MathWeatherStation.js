@@ -43,40 +43,84 @@ export default function MathWeatherStation({ onComplete, onBack }) {
 
   const level = M1_WEATHER_STATION_MODULE.levels[currentLevelIdx];
 
-  // Logic for L1 (Simplified: Click to select in order instead of drag to make it simple on mobile if Drag & Drop is too complex without a library, but let's do a simple array matching for now).
-  // Actually, let's implement click-to-sort.
-  const [sortedValues, setSortedValues] = useState([]);
+  const [sortedValues, setSortedValues] = useState(new Array(6).fill(null));
   const [availableItems, setAvailableItems] = useState(level?.data_pool || []);
+  const [feedback, setFeedback] = useState(null);
 
-  const handleL1Click = (item) => {
-    setSortedValues([...sortedValues, item]);
-    setAvailableItems(availableItems.filter(i => i.value !== item.value));
+  const handleDragStart = (e, item) => {
+    e.dataTransfer.setData("itemValue", item.value);
+  };
+
+  const handleDragOver = (e) => {
+    e.preventDefault();
+  };
+
+  const handleDrop = (e, slotIdx) => {
+    e.preventDefault();
+    const itemValue = e.dataTransfer.getData("itemValue");
+    if (!itemValue) return;
+    
+    const itemFromRack = availableItems.find(i => i.value.toString() === itemValue.toString());
+    if (itemFromRack) {
+      const newSorted = [...sortedValues];
+      let newAvailable = availableItems.filter(i => i.value.toString() !== itemValue.toString());
+      
+      // Swap out the existing item
+      if (newSorted[slotIdx]) {
+        newAvailable.push(newSorted[slotIdx]);
+      }
+      
+      newSorted[slotIdx] = itemFromRack;
+      setSortedValues(newSorted);
+      setAvailableItems(newAvailable);
+    }
+  };
+
+  const handleClear = () => {
+    setSortedValues(new Array(6).fill(null));
+    setAvailableItems(level.data_pool);
+    setFeedback(null);
   };
 
   const verifyL1 = () => {
+    if (sortedValues.includes(null)) {
+      setFeedback('incomplete');
+      setTimeout(() => setFeedback(null), 1500);
+      return;
+    }
+
     const isCorrect = sortedValues.map(v => v.value).join(',') === level.correct_order_values.join(',');
     if (isCorrect) {
+      setFeedback('correct');
       setScore(score + level.reward_points);
-      setTimeout(() => setCurrentLevelIdx(1), 1000);
+      setTimeout(() => {
+          setFeedback(null);
+          setCurrentLevelIdx(1);
+      }, 1500);
     } else {
-      // Reset
-      setSortedValues([]);
-      setAvailableItems(level.data_pool);
+      setFeedback('wrong');
+      setTimeout(() => setFeedback(null), 2000);
     }
   };
 
   // Logic for L2
   const handleL2Answer = (operator) => {
     const q = level.questions[l2QuestionIdx];
-    if (q.correct_operator === operator) {
-      setScore(score + (level.reward_points / level.questions.length));
-    }
+    const isCorrect = q.correct_operator === operator;
     
-    if (l2QuestionIdx + 1 < level.questions.length) {
-      setL2QuestionIdx(l2QuestionIdx + 1);
-    } else {
-      if (onComplete) onComplete(score + (level.reward_points / level.questions.length));
-    }
+    setFeedback(isCorrect ? 'correct' : 'wrong');
+    setTimeout(() => {
+        setFeedback(null);
+        if (isCorrect) {
+          setScore(score + (level.reward_points / level.questions.length));
+        }
+        
+        if (l2QuestionIdx + 1 < level.questions.length) {
+          setL2QuestionIdx(l2QuestionIdx + 1);
+        } else {
+          if (onComplete) onComplete(score + (isCorrect ? (level.reward_points / level.questions.length) : 0));
+        }
+    }, 1000);
   };
 
   return (
@@ -92,37 +136,53 @@ export default function MathWeatherStation({ onComplete, onBack }) {
       {level.type === 'sorting' && (
         <div style={styles.levelContainer}>
           <div style={styles.numberLine}>
-            {level.data_pool.map((_, idx) => (
-              <div key={idx} style={styles.slot}>
-                {sortedValues[idx] ? `${sortedValues[idx].label} (${sortedValues[idx].value})` : ''}
+            {sortedValues.map((val, idx) => (
+              <div 
+                key={idx} 
+                style={{
+                  ...styles.slot, 
+                  backgroundColor: feedback === 'correct' ? '#10B981' : (feedback === 'wrong' ? '#EF4444' : 'white'),
+                  color: (feedback === 'correct' || feedback === 'wrong') ? 'white' : '#334155'
+                }}
+                onDragOver={handleDragOver}
+                onDrop={(e) => handleDrop(e, idx)}
+              >
+                {val ? `${val.label} (${val.value})` : 'Drop Here'}
               </div>
             ))}
           </div>
 
           <div style={styles.rack}>
             {availableItems.map((item, idx) => (
-              <div key={idx} style={styles.dragItem} onClick={() => handleL1Click(item)}>
+              <div 
+                key={idx} 
+                style={styles.dragItem} 
+                draggable 
+                onDragStart={(e) => handleDragStart(e, item)}
+              >
                 {item.label} ({item.value})
               </div>
             ))}
           </div>
           
-          {availableItems.length === 0 && (
+          <div style={{display:'flex', gap:'16px'}}>
+            <button style={{...styles.verifyBtn, backgroundColor:'#EF4444'}} onClick={handleClear}>Clear</button>
             <button style={styles.verifyBtn} onClick={verifyL1}>Check Order</button>
-          )}
+          </div>
+          {feedback === 'incomplete' && <div style={{color:'#EF4444', fontWeight:'bold', marginTop:'16px'}}>Please fill all slots!</div>}
         </div>
       )}
 
       {level.type === 'comparison_quickfire' && (
         <div style={styles.levelContainer}>
-          <div style={styles.arena}>
+          <div style={{...styles.arena, backgroundColor: feedback === 'correct' ? '#D1FAE5' : (feedback === 'wrong' ? '#FEE2E2' : 'transparent'), padding:'24px', borderRadius:'16px' }}>
             <div style={styles.numberCard}>{level.questions[l2QuestionIdx].left_value}</div>
             <div style={{fontSize:'48px', color:'#64748B'}}>?</div>
             <div style={styles.numberCard}>{level.questions[l2QuestionIdx].right_value}</div>
           </div>
           <div style={styles.crocBtns}>
-            <button style={styles.crocBtn} onClick={() => handleL2Answer('<')}>&lt;</button>
-            <button style={styles.crocBtn} onClick={() => handleL2Answer('>')}>&gt;</button>
+            <button style={styles.crocBtn} onClick={() => handleL2Answer('<')} disabled={!!feedback}>&lt;</button>
+            <button style={styles.crocBtn} onClick={() => handleL2Answer('>')} disabled={!!feedback}>&gt;</button>
           </div>
         </div>
       )}

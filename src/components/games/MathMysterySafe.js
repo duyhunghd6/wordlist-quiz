@@ -28,8 +28,10 @@ export default function MathMysterySafe({ onComplete, onBack }) {
   
   const [safeInput, setSafeInput] = useState([null, null, null]);
   const [availableDigits, setAvailableDigits] = useState(level.available_digits);
+  const [feedback, setFeedback] = useState(null);
 
   const handleSelectDigit = (digit) => {
+    if (feedback !== null) return;
     const emptySlotIdx = safeInput.indexOf(null);
     if (emptySlotIdx !== -1) {
       const newSafe = [...safeInput];
@@ -39,15 +41,24 @@ export default function MathMysterySafe({ onComplete, onBack }) {
     }
   };
 
+  const handleClear = () => {
+    setSafeInput([null, null, null]);
+    setAvailableDigits(level.available_digits);
+    setFeedback(null);
+  };
+
   const verifySafe = () => {
     const attemptedValue = parseInt(safeInput.join(''), 10);
     if (level.accepted_answers.includes(attemptedValue)) {
+      setFeedback('correct');
       setScore(level.reward_points);
-      if (onComplete) onComplete(level.reward_points);
+      setTimeout(() => {
+          setFeedback(null);
+          if (onComplete) onComplete(level.reward_points);
+      }, 1500);
     } else {
-      // Wrong. Reset
-      setSafeInput([null, null, null]);
-      setAvailableDigits(level.available_digits);
+      setFeedback('wrong');
+      setTimeout(() => setFeedback(null), 2000);
     }
   };
 
@@ -71,10 +82,10 @@ export default function MathMysterySafe({ onComplete, onBack }) {
       </div>
 
       <div style={styles.safeContainer}>
-        <div style={styles.safeDisplay}>
-          <div style={styles.digitSlot}>{safeInput[0] !== null ? safeInput[0] : '_'}</div>
-          <div style={styles.digitSlot}>{safeInput[1] !== null ? safeInput[1] : '_'}</div>
-          <div style={styles.digitSlot}>{safeInput[2] !== null ? safeInput[2] : '_'}</div>
+        <div style={{...styles.safeDisplay, borderColor: feedback === 'correct' ? '#10B981' : (feedback === 'wrong' ? '#EF4444' : '#1e293b')}}>
+          <div style={{...styles.digitSlot, color: feedback === 'wrong' ? '#EF4444' : '#10B981'}}>{safeInput[0] !== null ? safeInput[0] : '_'}</div>
+          <div style={{...styles.digitSlot, color: feedback === 'wrong' ? '#EF4444' : '#10B981'}}>{safeInput[1] !== null ? safeInput[1] : '_'}</div>
+          <div style={{...styles.digitSlot, color: feedback === 'wrong' ? '#EF4444' : '#10B981'}}>{safeInput[2] !== null ? safeInput[2] : '_'}</div>
         </div>
         
         <div style={styles.digitBank}>
@@ -86,8 +97,13 @@ export default function MathMysterySafe({ onComplete, onBack }) {
         </div>
 
         {safeInput.indexOf(null) === -1 && (
-          <button style={styles.verifyBtn} onClick={verifySafe}>OPEN SAFE</button>
+          <div style={{display:'flex', gap:'16px', marginTop:'32px'}}>
+            <button style={{...styles.verifyBtn, marginTop:0, backgroundColor:'#EF4444'}} onClick={handleClear} disabled={!!feedback}>CLEAR</button>
+            <button style={{...styles.verifyBtn, marginTop:0}} onClick={verifySafe} disabled={!!feedback}>OPEN SAFE</button>
+          </div>
         )}
+        {feedback === 'wrong' && <div style={{color:'#EF4444', fontWeight:'bold', marginTop:'16px', fontSize:'24px'}}>Access Denied!</div>}
+        {feedback === 'correct' && <div style={{color:'#10B981', fontWeight:'bold', marginTop:'16px', fontSize:'24px'}}>Safe Unlocked!</div>}
       </div>
 
     </div>

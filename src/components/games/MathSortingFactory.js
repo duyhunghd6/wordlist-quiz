@@ -37,30 +37,52 @@ export default function MathSortingFactory({ onComplete, onBack }) {
   // L1 State
   const [queue, setQueue] = useState(levelIdx === 0 ? level.items_to_sort : []);
   const [boxes, setBoxes] = useState({left:[], right:[], intersection:[]});
-  
+  const [feedback, setFeedback] = useState(null);
+
   // L2 State
   const [imposterTaps, setImposterTaps] = useState([]);
 
-  const handleL1Sort = (region) => {
-    if (queue.length === 0) return;
-    const item = queue[0];
+  const handleDragStart = (e, item) => {
+    e.dataTransfer.setData("item", item);
+  };
+  const handleDragOver = (e) => e.preventDefault();
+
+  const handleDrop = (e, region) => {
+    e.preventDefault();
+    const itemStr = e.dataTransfer.getData("item");
+    if (!itemStr) return;
+    const item = parseInt(itemStr, 10);
+    if (!queue.includes(item)) return;
+
     const newBoxes = { ...boxes };
     newBoxes[region].push(item);
     setBoxes(newBoxes);
     
-    // Check if correct
+    // Check if correct immediately
     const isCorrect = level.correct_mapping[region].includes(item);
     if (!isCorrect) {
-      // Simplification: bounce it back or lose points
+       setFeedback('wrong');
+       setTimeout(() => setFeedback(null), 1000);
+    } else {
+       setFeedback('correct');
+       setTimeout(() => setFeedback(null), 500);
     }
 
-    setQueue(queue.slice(1));
-    if (queue.length === 1) { // After pushing the last one
+    const newQueue = queue.filter(q => q !== item);
+    setQueue(newQueue);
+    if (newQueue.length === 0) { 
+      // Verify complete
       setScore(score + level.reward_points);
       setTimeout(() => {
         setLevelIdx(1);
-      }, 1000);
+      }, 1500);
     }
+  };
+
+  const handleClear = () => {
+    setQueue(level.items_to_sort);
+    setBoxes({left:[], right:[], intersection:[]});
+    setFeedback(null);
   };
 
   const handleL2Tap = (num) => {
@@ -90,24 +112,39 @@ export default function MathSortingFactory({ onComplete, onBack }) {
       {level.type === 'venn_diagram_drag_drop' && (
         <div style={styles.levelContainer}>
           <div style={styles.vennContainer}>
-            <div style={{...styles.vennCircle, ...styles.leftCircle}} onClick={() => handleL1Sort('left')}>
+            <div 
+              style={{...styles.vennCircle, ...styles.leftCircle}} 
+              onDragOver={handleDragOver} 
+              onDrop={(e) => handleDrop(e, 'left')}
+            >
               <div style={styles.vennItems}>{boxes.left.join(', ')}</div>
             </div>
-            <div style={{...styles.vennCircle, ...styles.rightCircle}} onClick={() => handleL1Sort('right')}>
+            <div 
+              style={{...styles.vennCircle, ...styles.rightCircle}} 
+              onDragOver={handleDragOver} 
+              onDrop={(e) => handleDrop(e, 'right')}
+            >
               <div style={styles.vennItems}>{boxes.right.join(', ')}</div>
             </div>
-            <div style={styles.intersectionBtn} onClick={() => handleL1Sort('intersection')}>
+            <div 
+              style={styles.intersectionBtn} 
+              onDragOver={handleDragOver} 
+              onDrop={(e) => handleDrop(e, 'intersection')}
+            >
               BOTH
               <div style={styles.vennItems}>{boxes.intersection.join(', ')}</div>
             </div>
           </div>
           
-          <div style={styles.conveyor}>
+          <div style={{...styles.conveyor, borderColor: feedback === 'wrong' ? '#EF4444' : (feedback === 'correct' ? '#10B981' : '#334155')}}>
             {queue.map((item, idx) => (
-              <div key={idx} style={styles.sortableItem}>{item}</div>
+              <div key={idx} style={styles.sortableItem} draggable onDragStart={(e) => handleDragStart(e, item)}>{item}</div>
             ))}
           </div>
-          <p style={{textAlign:'center', color:'#64748B'}}>Tap a circle to place the first number!</p>
+          <div style={{display:'flex', gap:'16px'}}>
+            <button style={{padding:'8px 16px', backgroundColor:'#EF4444', color:'white', border:'none', borderRadius:'8px', fontWeight:'bold', cursor:'pointer'}} onClick={handleClear}>Retry Sorting</button>
+            <p style={{textAlign:'center', color:'#64748B', margin:0, padding:'8px'}}>Drag numbers into the correct area!</p>
+          </div>
         </div>
       )}
 
