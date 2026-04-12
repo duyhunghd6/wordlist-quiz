@@ -1,51 +1,133 @@
 import React, { useState } from 'react';
 import '../GameUI.css';
 
-const M3_SORTING_FACTORY_MODULE = {
-  "module_id": "M3",
-  "title": "The Sorting Factory",
-  "levels": [
-    {
-      "level_id": "M3_L1",
-      "type": "venn_diagram_drag_drop",
-      "instruction": "Sort the numbers! Factor of 60 (Left) vs Multiple of 6 (Right)",
-      "items_to_sort": [2, 12, 15, 18, 20, 30, 36],
-      "correct_mapping": {
-        "left": [2, 15, 20],
-        "right": [18, 36],
-        "intersection": [12, 30]
-      },
-      "reward_points": 100
-    },
-    {
-      "level_id": "M3_L2",
-      "type": "error_identification",
-      "instruction": "Find the imposters! Tap the numbers that are in the wrong place.",
-      "displayed_numbers": [
-        { val: 7, x: 40, y: 50 }, { val: 9, x: 70, y: 130 }, { val: 28, x: 100, y: 70 },
-        { val: 42, x: 140, y: 40 }, { val: 49, x: 140, y: 140 }, 
-        { val: 56, x: 190, y: 50 }, { val: 67, x: 230, y: 100 }, { val: 70, x: 200, y: 140 },
-        { val: 50, x: 250, y: 60 }, { val: 57, x: 260, y: 150 }
-      ],
-      "correct_imposters_to_tap": [42, 50, 56, 57, 70],
-      "reward_points": 150
-    }
-  ]
+const VennCategories = [
+  { name: "< 50", check: (n) => n < 50 },
+  { name: "> 30", check: (n) => n > 30 },
+  { name: "Even", check: (n) => n % 2 === 0 },
+  { name: "Odd", check: (n) => n % 2 !== 0 },
+  { name: "Multiples of 5", check: (n) => n % 5 === 0 },
+  { name: "Multiples of 10", check: (n) => n % 10 === 0 },
+  { name: "Multiples of 3", check: (n) => n % 3 === 0 },
+];
+
+const nodePositions = [
+  { x: 40, y: 50 }, { x: 70, y: 130 }, { x: 100, y: 70 },
+  { x: 140, y: 40 }, { x: 140, y: 140 }, 
+  { x: 190, y: 50 }, { x: 230, y: 100 }, { x: 200, y: 140 },
+  { x: 250, y: 60 }, { x: 260, y: 150 }
+];
+
+const generateL1Question = (levelIdx) => {
+   const shuffledCats = [...VennCategories].sort(() => 0.5 - Math.random());
+   const catLeft = shuffledCats[0];
+   const catRight = shuffledCats[1];
+   
+   const numbers = [];
+   while(numbers.length < 8) {
+      const n = Math.floor(Math.random() * 99) + 1;
+      if (!numbers.includes(n)) numbers.push(n);
+   }
+   
+   const mapping = { left: [], right: [], intersection: [], none: [] };
+   numbers.forEach(n => {
+       const isLeft = catLeft.check(n);
+       const isRight = catRight.check(n);
+       if (isLeft && isRight) mapping.intersection.push(n);
+       else if (isLeft) mapping.left.push(n);
+       else if (isRight) mapping.right.push(n);
+       else mapping.none.push(n); 
+   });
+   
+   return {
+      level_id: `M3_L${levelIdx}`,
+      type: "venn_diagram_drag_drop",
+      instruction: `Sort the numbers! Left Circle is '${catLeft.name}', Right Circle is '${catRight.name}'.`,
+      items_to_sort: numbers,
+      correct_mapping: mapping,
+      catLeftName: catLeft.name,
+      catRightName: catRight.name,
+      reward_points: 50
+   };
+};
+
+const generateL2Question = (levelIdx) => {
+   const shuffledCats = [...VennCategories].sort(() => 0.5 - Math.random());
+   const catLeft = shuffledCats[0];
+   const catRight = shuffledCats[1];
+   
+   const numbersObj = [];
+   const correct_imposters = [];
+   
+   nodePositions.forEach((pos) => {
+      let n = Math.floor(Math.random() * 99) + 1;
+      numbersObj.push({ val: n, x: pos.x, y: pos.y });
+      
+      const isGeometricallyLeft = pos.x < 120;
+      const isGeometricallyIntersection = pos.x >= 120 && pos.x <= 220;
+      const isGeometricallyRight = pos.x > 220;
+      
+      const isLogicallyLeft = catLeft.check(n) && !catRight.check(n);
+      const isLogicallyIntersection = catLeft.check(n) && catRight.check(n);
+      const isLogicallyRight = !catLeft.check(n) && catRight.check(n);
+      
+      const isCorrectPlace = 
+         (isGeometricallyLeft && isLogicallyLeft) ||
+         (isGeometricallyIntersection && isLogicallyIntersection) ||
+         (isGeometricallyRight && isLogicallyRight);
+         
+      const isLogicallyNone = !catLeft.check(n) && !catRight.check(n);
+      
+      if (!isCorrectPlace || isLogicallyNone) {
+          correct_imposters.push(n);
+      }
+   });
+   
+   return {
+      level_id: `M3_L${levelIdx}`,
+      type: "error_identification",
+      instruction: `Find imposters (incorrect numbers)! Left is '${catLeft.name}', Right is '${catRight.name}'.`,
+      displayed_numbers: numbersObj,
+      correct_imposters_to_tap: correct_imposters,
+      catLeftName: catLeft.name,
+      catRightName: catRight.name,
+      reward_points: 50
+   };
 };
 
 export default function MathSortingFactory({ onComplete, onHome }) {
+  const { levels } = React.useMemo(() => {
+     const genLevels = [];
+     for(let i=0; i<5; i++) {
+        if (i % 2 === 0) genLevels.push(generateL1Question(i+1));
+        else genLevels.push(generateL2Question(i+1));
+     }
+     return { levels: genLevels };
+  }, []);
+
   const [levelIdx, setLevelIdx] = useState(0);
   const [score, setScore] = useState(0);
 
-  const level = M3_SORTING_FACTORY_MODULE.levels[levelIdx];
+  const level = levels[levelIdx];
   
   // L1 State
-  const [queue, setQueue] = useState(levelIdx === 0 ? level.items_to_sort : []);
+  const [queue, setQueue] = useState(level.items_to_sort || []);
   const [boxes, setBoxes] = useState({left:[], right:[], intersection:[]});
   const [feedback, setFeedback] = useState(null);
 
   // L2 State
   const [imposterTaps, setImposterTaps] = useState([]);
+
+  // Mount reset
+  React.useEffect(() => {
+    if (level.type === 'venn_diagram_drag_drop') {
+      setQueue(level.items_to_sort);
+      setBoxes({left: [], right: [], intersection: []});
+    } else {
+      setImposterTaps([]);
+    }
+    setFeedback(null);
+  }, [level]);
 
   const handleDragStart = (e, item, sourceRegion = null) => {
     e.dataTransfer.setData("itemStr", item.toString());
@@ -77,29 +159,38 @@ export default function MathSortingFactory({ onComplete, onHome }) {
 
     newBoxes[targetRegion].push(item);
     setBoxes(newBoxes);
+  };
+
+  const verifySortingSubmit = () => {
+    let allCorrect = true;
+    const { correct_mapping } = level;
     
-    // Auto verifying upon drop
-    const isCorrect = level.correct_mapping[targetRegion].includes(item);
-    if (!isCorrect) {
-       setFeedback('wrong');
-       setTimeout(() => setFeedback(null), 1000);
-    } else {
-       setFeedback('correct');
-       setTimeout(() => setFeedback(null), 500);
+    // Check missing items that were supposed to be placed correctly
+    if (boxes.left.length !== correct_mapping.left.length) allCorrect = false;
+    if (boxes.right.length !== correct_mapping.right.length) allCorrect = false;
+    if (boxes.intersection.length !== correct_mapping.intersection.length) allCorrect = false;
+
+    // Check validity of placed items
+    if (allCorrect) {
+       for(let n of boxes.left) if (!correct_mapping.left.includes(n)) allCorrect = false;
+       for(let n of boxes.right) if (!correct_mapping.right.includes(n)) allCorrect = false;
+       for(let n of boxes.intersection) if (!correct_mapping.intersection.includes(n)) allCorrect = false;
     }
 
-    // Checking win state
-    if (
-      queue.length === 0 && 
-      (!sourceRegion || sourceRegion === "") && 
-      (queue.filter(q => q !== item).length === 0)
-    ) {
-      // Very naive check: assumes once the queue is empty, the user has completed it. However, since the user can move numbers around, it's better to verify via an explicit button or check if all numbers are in correct locations.
-      // Actually, let's keep the existing logic: once the queue is empty, it triggers next level. (Simple version)
-      setScore(score + level.reward_points);
-      setTimeout(() => {
-        setLevelIdx(1);
-      }, 1500);
+    if (allCorrect) {
+       setFeedback('level_correct');
+       setScore(score + level.reward_points);
+       setTimeout(() => {
+         setFeedback(null);
+         if (levelIdx + 1 < levels.length) {
+            setLevelIdx(levelIdx + 1);
+         } else {
+            if (onComplete) onComplete({ score: score + level.reward_points });
+         }
+       }, 2000);
+    } else {
+       setFeedback('level_wrong');
+       setTimeout(() => setFeedback(null), 2500);
     }
   };
 
@@ -129,14 +220,38 @@ export default function MathSortingFactory({ onComplete, onHome }) {
     const newTaps = [...imposterTaps, num];
     setImposterTaps(newTaps);
 
-    let currentScore = score;
-    if (level.correct_imposters_to_tap.includes(num)) {
-      currentScore += 30; // Partial score
-      setScore(currentScore); 
+    if (newTaps.length === level.correct_imposters_to_tap.length) {
+       // auto-verify imposter when maximum count reached? No, wait for explicit submit!
+    }
+  };
+
+  const verifyImposterSubmit = () => {
+    let allCorrect = true;
+    if (imposterTaps.length !== level.correct_imposters_to_tap.length) {
+        allCorrect = false;
+    } else {
+        for(let n of imposterTaps) {
+            if (!level.correct_imposters_to_tap.includes(n)) allCorrect = false;
+        }
     }
     
-    if (newTaps.filter(n => level.correct_imposters_to_tap.includes(n)).length === level.correct_imposters_to_tap.length) {
-      if (onComplete) setTimeout(() => onComplete({ score: currentScore }), 1000);
+    if (allCorrect) {
+       setFeedback('level_correct');
+       setScore(score + level.reward_points);
+       setTimeout(() => {
+         setFeedback(null);
+         if (levelIdx + 1 < levels.length) {
+            setLevelIdx(levelIdx + 1);
+         } else {
+            if (onComplete) onComplete({ score: score + level.reward_points });
+         }
+       }, 2000);
+    } else {
+       setFeedback('level_wrong');
+       setTimeout(() => {
+         setFeedback(null);
+         setImposterTaps([]); // Clear to try again
+       }, 2500);
     }
   };
 
@@ -144,7 +259,7 @@ export default function MathSortingFactory({ onComplete, onHome }) {
     <div style={styles.container}>
       <div style={styles.header}>
         <div style={styles.backBtn} onClick={onHome}>← Back</div>
-        <h1 style={{margin:0, fontSize:'24px'}}>{M3_SORTING_FACTORY_MODULE.title}</h1>
+        <h1 style={{margin:0, fontSize:'24px'}}>The Sorting Factory</h1>
         <div style={{fontWeight:'bold'}}>Score: {Math.round(score)}</div>
       </div>
 
@@ -158,6 +273,7 @@ export default function MathSortingFactory({ onComplete, onHome }) {
               onDragOver={handleDragOver} 
               onDrop={(e) => handleDrop(e, 'left')}
             >
+              <div style={styles.catLabel}>{level.catLeftName}</div>
               <div style={styles.vennItems}>
                 {boxes.left.map((item, idx) => (
                   <span key={idx} draggable onDragStart={(e) => handleDragStart(e, item, 'left')} style={{cursor:'grab', margin:'0 4px', padding:'2px', display:'inline-block'}}>{item}</span>
@@ -169,6 +285,7 @@ export default function MathSortingFactory({ onComplete, onHome }) {
               onDragOver={handleDragOver} 
               onDrop={(e) => handleDrop(e, 'right')}
             >
+              <div style={styles.catLabel}>{level.catRightName}</div>
               <div style={styles.vennItems}>
                 {boxes.right.map((item, idx) => (
                   <span key={idx} draggable onDragStart={(e) => handleDragStart(e, item, 'right')} style={{cursor:'grab', margin:'0 4px', padding:'2px', display:'inline-block'}}>{item}</span>
@@ -194,9 +311,13 @@ export default function MathSortingFactory({ onComplete, onHome }) {
               <div key={idx} style={styles.sortableItem} draggable onDragStart={(e) => handleDragStart(e, item, null)}>{item}</div>
             ))}
           </div>
-          <div style={{display:'flex', gap:'16px'}}>
-            <button style={{padding:'8px 16px', backgroundColor:'#EF4444', color:'white', border:'none', borderRadius:'8px', fontWeight:'bold', cursor:'pointer'}} onClick={handleClear}>Retry Sorting</button>
-            <p style={{textAlign:'center', color:'#64748B', margin:0, padding:'8px'}}>Drag numbers into the correct area!</p>
+          
+          {feedback === 'level_wrong' && <div style={{color:'#EF4444', fontWeight:'bold', fontSize:'20px', textAlign:'center', marginTop:'10px'}}>Hmm, some aren't quite right. Keep trying!</div>}
+          {feedback === 'level_correct' && <div style={{color:'#10B981', fontWeight:'bold', fontSize:'24px', textAlign:'center', marginTop:'10px'}}>Perfect Sorting!</div>}
+
+          <div style={{display:'flex', gap:'16px', justifyContent:'center', marginTop:'16px'}}>
+            <button style={{padding:'12px 24px', backgroundColor:'#EF4444', color:'white', border:'none', borderRadius:'8px', fontWeight:'bold', cursor:'pointer'}} onClick={handleClear}>Retry Sorting</button>
+            <button style={{padding:'12px 24px', backgroundColor:'#3B82F6', color:'white', border:'none', borderRadius:'8px', fontWeight:'bold', cursor:'pointer'}} onClick={verifySortingSubmit}>Submit Answers</button>
           </div>
         </div>
       )}
@@ -204,8 +325,12 @@ export default function MathSortingFactory({ onComplete, onHome }) {
       {level.type === 'error_identification' && (
         <div style={styles.levelContainer}>
            <div style={{...styles.vennContainer, width: '340px', height: '240px'}}>
-            <div style={{...styles.vennCircle, ...styles.leftCircle, width:'220px', height:'220px'}}>{"< 50"}</div>
-            <div style={{...styles.vennCircle, ...styles.rightCircle, width:'220px', height:'220px'}}>{"x 7"}</div>
+            <div style={{...styles.vennCircle, ...styles.leftCircle, width:'220px', height:'220px'}}>
+               <div style={styles.catLabel}>{level.catLeftName}</div>
+            </div>
+            <div style={{...styles.vennCircle, ...styles.rightCircle, width:'220px', height:'220px'}}>
+               <div style={styles.catLabel}>{level.catRightName}</div>
+            </div>
             
             {level.displayed_numbers.map((itemObj, idx) => {
               const isTapped = imposterTaps.includes(itemObj.val);
@@ -227,6 +352,17 @@ export default function MathSortingFactory({ onComplete, onHome }) {
                 </div>
               );
             })}
+          </div>
+          
+          <div style={{marginTop: '24px', textAlign: 'center'}}>
+            <p style={{fontWeight:'bold', fontSize:'18px'}}>You have found {imposterTaps.length} / {level.correct_imposters_to_tap.length} imposters!</p>
+            {feedback === 'level_wrong' && <div style={{color:'#EF4444', fontWeight:'bold', fontSize:'20px'}}>Not quite! Try finding the correct imposters.</div>}
+            {feedback === 'level_correct' && <div style={{color:'#10B981', fontWeight:'bold', fontSize:'24px'}}>Great Detective Work!</div>}
+            
+            <div style={{display:'flex', gap:'16px', justifyContent:'center', marginTop:'16px'}}>
+               <button style={{padding:'12px 24px', backgroundColor:'#EF4444', color:'white', border:'none', borderRadius:'8px', fontWeight:'bold', cursor:'pointer'}} onClick={() => setImposterTaps([])}>Clear Taps</button>
+               <button style={{padding:'12px 24px', backgroundColor:'#3B82F6', color:'white', border:'none', borderRadius:'8px', fontWeight:'bold', cursor:'pointer'}} onClick={verifyImposterSubmit}>Submit Found Imposters</button>
+            </div>
           </div>
         </div>
       )}
@@ -276,5 +412,14 @@ const styles = {
     fontWeight: 'bold', fontSize: '18px', color: '#334155', flexShrink: 0,
     cursor: 'pointer'
   },
-  vennItems: { marginTop: '8px', fontSize: '14px', fontWeight: 'normal', whiteSpace: 'pre-wrap', textAlign:'center', padding:'0 16px' }
+  vennItems: { marginTop: '8px', fontSize: '14px', fontWeight: 'normal', whiteSpace: 'pre-wrap', textAlign:'center', padding:'0 16px' },
+  catLabel: {
+    position: 'absolute',
+    top: '10px',
+    width: '100%',
+    textAlign: 'center',
+    fontWeight: 'bold',
+    fontSize: '18px',
+    color: '#333'
+  }
 };
