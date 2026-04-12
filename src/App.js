@@ -20,6 +20,10 @@ import AngryTensesGame from "./components/games/AngryTenses/AngryTenses";
 import ScienceThinkQuiz from "./components/games/ScienceThinkQuiz";
 import ScienceTrueFalseGame from "./components/games/ScienceTrueFalseGame";
 import ScienceMatchGame from "./components/games/ScienceMatchGame";
+import MathWeatherStation from "./components/games/MathWeatherStation";
+import MathMysterySafe from "./components/games/MathMysterySafe";
+import MathSortingFactory from "./components/games/MathSortingFactory";
+import MathDataCinema from "./components/games/MathDataCinema";
 import ProfileSwitcher from "./components/ProfileSwitcher";
 import ErrorBoundary from "./components/ErrorBoundary";
 import OfflineBanner from "./components/OfflineBanner";
@@ -556,6 +560,14 @@ function App() {
           return <ScienceMatchGame {...gameProps} />;
         case 'endlessRunner':
           return <EndlessRunner {...gameProps} />;
+        case 'math_weather_station':
+          return <MathWeatherStation {...gameProps} />;
+        case 'math_mystery_safe':
+          return <MathMysterySafe {...gameProps} />;
+        case 'math_sorting_factory':
+          return <MathSortingFactory {...gameProps} />;
+        case 'math_data_cinema':
+          return <MathDataCinema {...gameProps} />;
         case 'quiz':
         default:
           return (

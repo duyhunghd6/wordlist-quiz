@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>M4: The Data Cinema</title>
+  <link rel="stylesheet" href="../showcase/css/layouts.css">
+  <link rel="stylesheet" href="../showcase/css/components.css">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    /* Math Specific Styles */
+    :root {
+      --math-bg: #FFE4E6; /* Rose light */
+      --math-primary: #E11D48; /* Rose */
+    }
+    
+    body {
+      background-color: var(--math-bg);
+      font-family: 'Baloo 2', sans-serif;
+      overflow: hidden; 
+      margin: 0;
+      padding: 0;
+    }
+
+    .math-game-container {
+      max-width: 600px;
+      margin: 0 auto;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      background: white;
+      box-shadow: var(--shadow-xl);
+      overflow-y: auto;
+    }
+    
+    .math-header {
+      background: var(--math-primary);
+      padding: var(--space-md) var(--space-lg);
+      color: white;
+      border-radius: 0 0 var(--radius-xl) var(--radius-xl);
+      text-align: center;
+      margin-bottom: var(--space-md);
+      box-shadow: var(--shadow-sm);
+    }
+    
+    .math-header h1 {
+      margin: 0;
+      font-size: 24px;
+      font-weight: 800;
+    }
+    
+    .math-level-instructions {
+      padding: 0 var(--space-lg);
+      text-align: center;
+      font-size: 18px;
+      color: var(--text-secondary);
+      margin-bottom: var(--space-md);
+    }
+    
+    /* M4_L1: Pictogram */
+    .cinema-screen {
+      background: #0F172A;
+      color: white;
+      margin: 0 var(--space-lg) var(--space-md);
+      border-radius: var(--radius-md);
+      padding: var(--space-md);
+      border: 6px solid #475569;
+    }
+
+    .pictogram-title {
+      text-align: center;
+      font-weight: bold;
+      color: #FDE047;
+      margin-bottom: var(--space-sm);
+    }
+
+    .pictogram-row {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #334155;
+      padding: var(--space-xs) 0;
+    }
+    .pictogram-row:last-child {
+      border-bottom: none;
+    }
+
+    .picto-day {
+      width: 60px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .picto-icons {
+      display: flex;
+      gap: 4px;
+    }
+
+    .ticket-icon {
+      width: 24px;
+      height: 16px;
+      background: #F43F5E;
+      border-radius: 2px;
+      display: inline-block;
+      position: relative;
+    }
+    .ticket-icon::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -4px;
+      height: 8px;
+      width: 8px;
+      background: #0F172A;
+      border-radius: 50%;
+      transform: translateY(-50%);
+    }
+
+    .key-box {
+      font-size: 14px;
+      color: #94A3B8;
+      text-align: center;
+      margin-top: var(--space-sm);
+      border-top: 2px dashed #334155;
+      padding-top: var(--space-sm);
+    }
+
+    .keypad-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-sm);
+      margin: 0 var(--space-lg);
+    }
+
+    .keypad-btn {
+      background: #F1F5F9;
+      border: 2px solid #CBD5E1;
+      padding: var(--space-md);
+      font-size: 24px;
+      font-weight: bold;
+      border-radius: var(--radius-sm);
+      color: #334155;
+      cursor: pointer;
+    }
+    .keypad-btn:active {
+      background: #E2E8F0;
+    }
+
+    .question-card {
+      background: #F0FDF4;
+      border: 2px solid #BBF7D0;
+      padding: var(--space-md);
+      margin: 0 var(--space-lg) var(--space-md);
+      border-radius: var(--radius-md);
+      color: #166534;
+      font-weight: 600;
+    }
+
+    /* M4_L2: Diagram Matching */
+    .matching-scenario {
+      background: #F8FAFC;
+      border: 2px solid #E2E8F0;
+      padding: var(--space-md);
+      margin: var(--space-sm) var(--space-lg);
+      border-radius: var(--radius-md);
+      font-weight: 500;
+      color: #334155;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .chart-badge {
+      background: #3B82F6;
+      color: white;
+      padding: 4px 12px;
+      border-radius: var(--radius-full);
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="math-game-container">
+    <div class="math-header">
+      <h1>M4: The Data Cinema</h1>
+    </div>
+    
+    <div style="border-bottom: 2px dashed #CBD5E1; padding-bottom: 20px;">
+      <p class="math-level-instructions">Level 1: Look at the Cinema Pictogram. Enter the correct numbers.</p>
+      
+      <div class="cinema-screen">
+        <div class="pictogram-title">Tickets Sold This Week</div>
+        <div class="pictogram-row"><div class="picto-day">Day 1</div><div class="picto-icons"><div class="ticket-icon"></div><div class="ticket-icon"></div><div class="ticket-icon"></div><div class="ticket-icon" style="width:12px;"></div></div></div>
+        <div class="pictogram-row"><div class="picto-day">Day 2</div><div class="picto-icons"><div class="ticket-icon"></div><div class="ticket-icon"></div><div class="ticket-icon"></div><div class="ticket-icon"></div><div class="ticket-icon" style="width:12px;"></div></div></div>
+        
+        <div class="key-box">Key: [Full Ticket] = 20 tickets, [Half] = 10 tickets</div>
+      </div>
+
+      <div class="question-card">
+        How many tickets were sold on Day 2?
+        <div style="display:inline-block; border-bottom: 2px solid #166534; width: 60px; text-align:center;">90</div>
+      </div>
+
+      <div class="keypad-container">
+        <button class="keypad-btn">1</button>
+        <button class="keypad-btn">2</button>
+        <button class="keypad-btn">3</button>
+        <!-- And so on... -->
+      </div>
+    </div>
+
+    <div style="padding-top: 20px; padding-bottom: 20px;">
+      <p class="math-level-instructions">Level 2: Draw lines to connect the scenario to the best chart to use.</p>
+      
+      <div class="matching-scenario">
+        Comparing similarities between cats and dogs
+        <span class="chart-badge">Venn Diagram</span>
+      </div>
+      <div class="matching-scenario">
+        Most popular colours of students in a class
+        <span class="chart-badge">Bar Chart</span>
+      </div>
+    </div>
+    
+  </div>
+
+</body>
+</html>

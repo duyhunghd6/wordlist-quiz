@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>M3: The Sorting Factory</title>
+  <link rel="stylesheet" href="../showcase/css/layouts.css">
+  <link rel="stylesheet" href="../showcase/css/components.css">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    /* Math Specific Styles */
+    :root {
+      --math-bg: #FEF3C7; /* Amber light */
+      --math-primary: #D97706; /* Amber */
+    }
+    
+    body {
+      background-color: var(--math-bg);
+      font-family: 'Baloo 2', sans-serif;
+      overflow: hidden; 
+      margin: 0;
+      padding: 0;
+    }
+
+    .math-game-container {
+      max-width: 600px;
+      margin: 0 auto;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      background: white;
+      box-shadow: var(--shadow-xl);
+      overflow-y: auto;
+    }
+    
+    .math-header {
+      background: var(--math-primary);
+      padding: var(--space-md) var(--space-lg);
+      color: white;
+      border-radius: 0 0 var(--radius-xl) var(--radius-xl);
+      text-align: center;
+      margin-bottom: var(--space-md);
+      box-shadow: var(--shadow-sm);
+    }
+    
+    .math-header h1 {
+      margin: 0;
+      font-size: 24px;
+      font-weight: 800;
+    }
+    
+    .math-level-instructions {
+      padding: 0 var(--space-lg);
+      text-align: center;
+      font-size: 18px;
+      color: var(--text-secondary);
+      margin-bottom: var(--space-md);
+    }
+    
+    /* M3_L1: Venn Diagram Drag Drop */
+    .venn-container {
+      position: relative;
+      width: 320px;
+      height: 220px;
+      margin: 0 auto;
+    }
+
+    .venn-circle {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      mix-blend-mode: multiply;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: var(--space-lg);
+      box-sizing: border-box;
+      border: 3px solid white;
+    }
+
+    .venn-circle.left {
+      background: rgba(59, 130, 246, 0.4); /* Blue */
+      left: 0;
+    }
+
+    .venn-circle.right {
+      background: rgba(239, 68, 68, 0.4); /* Red */
+      right: 0;
+    }
+
+    .venn-intersection {
+      position: absolute;
+      width: 80px;
+      height: 160px;
+      top: 30px;
+      left: 120px;
+      z-index: 2;
+    }
+
+    .venn-label {
+      font-weight: 800;
+      color: #1E293B;
+      text-shadow: 0 1px 2px white;
+      text-align: center;
+    }
+
+    .conveyor-belt {
+      background: #475569;
+      padding: var(--space-md);
+      margin: var(--space-lg);
+      border-radius: var(--radius-md);
+      border-bottom: 8px solid #334155;
+      display: flex;
+      gap: var(--space-sm);
+      overflow-x: auto;
+    }
+
+    .sortable-item {
+      background: white;
+      border: 2px solid #94A3B8;
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-full);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      font-size: 20px;
+      color: #334155;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+      cursor: grab;
+      flex-shrink: 0;
+    }
+
+    /* Imposter State */
+    .imposter {
+      animation: pulse 1s infinite alternate;
+      border-color: #EF4444;
+      cursor: pointer;
+    }
+
+    @keyframes pulse {
+      from { transform: scale(1); }
+      to { transform: scale(1.1); }
+    }
+
+    /* M3_L2 Imposter Layout */
+    .imposter-layout .sortable-item {
+      position: absolute;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="math-game-container">
+    <div class="math-header">
+      <h1>M3: The Sorting Factory</h1>
+    </div>
+    
+    <div style="border-bottom: 2px dashed #CBD5E1; padding-bottom: 20px;">
+      <p class="math-level-instructions">Level 1: Sort the numbers into the correct boxes on the conveyor belt.</p>
+      
+      <div class="venn-container">
+        <div class="venn-circle left">
+          <span class="venn-label">Factor of 60</span>
+        </div>
+        <div class="venn-circle right">
+          <span class="venn-label">Multiple of 6</span>
+        </div>
+        <div class="venn-intersection"></div>
+      </div>
+      
+      <div class="conveyor-belt">
+        <div class="sortable-item">2</div>
+        <div class="sortable-item">12</div>
+        <div class="sortable-item">15</div>
+        <div class="sortable-item">18</div>
+        <div class="sortable-item">20</div>
+        <div class="sortable-item">30</div>
+        <div class="sortable-item">36</div>
+      </div>
+    </div>
+
+    <div style="padding-top: 20px; padding-bottom: 20px;">
+      <p class="math-level-instructions">Level 2: Find the imposters! Tap the numbers that are in the wrong place.</p>
+      <div class="venn-container imposter-layout" style="height: 250px;">
+        <div class="venn-circle left" style="width: 220px; height: 220px;">
+          <span class="venn-label">Less than 50</span>
+        </div>
+        <div class="venn-circle right" style="width: 220px; height: 220px;">
+          <span class="venn-label">Multiple of 7</span>
+        </div>
+        
+        <!-- Examples scattered around -->
+        <div class="sortable-item" style="top: 80px; left: 40px;">28</div> <!-- Correct -->
+        <div class="sortable-item imposter" style="top: 130px; left: 60px;">50</div> <!-- Imposter (Not < 50) -->
+        <div class="sortable-item" style="top: 100px; left: 140px;">7</div> <!-- Correct (Both) -->
+        <div class="sortable-item imposter" style="top: 140px; left: 240px;">57</div> <!-- Imposter (Not mult of 7) -->
+      </div>
+    </div>
+    
+  </div>
+
+</body>
+</html>
