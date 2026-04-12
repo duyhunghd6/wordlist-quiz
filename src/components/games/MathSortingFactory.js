@@ -21,7 +21,12 @@ const M3_SORTING_FACTORY_MODULE = {
       "level_id": "M3_L2",
       "type": "error_identification",
       "instruction": "Find the imposters! Tap the numbers that are in the wrong place.",
-      "displayed_numbers": [7, 9, 28, 42, 49, 50, 56, 57, 67, 70],
+      "displayed_numbers": [
+        { val: 7, x: 40, y: 50 }, { val: 9, x: 70, y: 130 }, { val: 28, x: 100, y: 70 },
+        { val: 42, x: 140, y: 40 }, { val: 49, x: 140, y: 140 }, 
+        { val: 56, x: 190, y: 50 }, { val: 67, x: 230, y: 100 }, { val: 70, x: 200, y: 140 },
+        { val: 50, x: 250, y: 60 }, { val: 57, x: 260, y: 150 }
+      ],
       "correct_imposters_to_tap": [42, 50, 56, 57, 70],
       "reward_points": 150
     }
@@ -42,24 +47,39 @@ export default function MathSortingFactory({ onComplete, onHome }) {
   // L2 State
   const [imposterTaps, setImposterTaps] = useState([]);
 
-  const handleDragStart = (e, item) => {
-    e.dataTransfer.setData("item", item);
+  const handleDragStart = (e, item, sourceRegion = null) => {
+    e.dataTransfer.setData("itemStr", item.toString());
+    if (sourceRegion) {
+      e.dataTransfer.setData("sourceRegion", sourceRegion);
+    }
   };
   const handleDragOver = (e) => e.preventDefault();
 
-  const handleDrop = (e, region) => {
+  const handleDrop = (e, targetRegion) => {
     e.preventDefault();
-    const itemStr = e.dataTransfer.getData("item");
+    const itemStr = e.dataTransfer.getData("itemStr");
     if (!itemStr) return;
     const item = parseInt(itemStr, 10);
-    if (!queue.includes(item)) return;
+    const sourceRegion = e.dataTransfer.getData("sourceRegion");
 
     const newBoxes = { ...boxes };
-    newBoxes[region].push(item);
+
+    if (sourceRegion && sourceRegion !== "") {
+      if (sourceRegion === targetRegion) return;
+      // move from one circle to another
+      newBoxes[sourceRegion] = newBoxes[sourceRegion].filter(i => i !== item);
+    } else {
+      // move from queue
+      if (!queue.includes(item)) return;
+      const newQueue = queue.filter(q => q !== item);
+      setQueue(newQueue);
+    }
+
+    newBoxes[targetRegion].push(item);
     setBoxes(newBoxes);
     
-    // Check if correct immediately
-    const isCorrect = level.correct_mapping[region].includes(item);
+    // Auto verifying upon drop
+    const isCorrect = level.correct_mapping[targetRegion].includes(item);
     if (!isCorrect) {
        setFeedback('wrong');
        setTimeout(() => setFeedback(null), 1000);
@@ -68,14 +88,33 @@ export default function MathSortingFactory({ onComplete, onHome }) {
        setTimeout(() => setFeedback(null), 500);
     }
 
-    const newQueue = queue.filter(q => q !== item);
-    setQueue(newQueue);
-    if (newQueue.length === 0) { 
-      // Verify complete
+    // Checking win state
+    if (
+      queue.length === 0 && 
+      (!sourceRegion || sourceRegion === "") && 
+      (queue.filter(q => q !== item).length === 0)
+    ) {
+      // Very naive check: assumes once the queue is empty, the user has completed it. However, since the user can move numbers around, it's better to verify via an explicit button or check if all numbers are in correct locations.
+      // Actually, let's keep the existing logic: once the queue is empty, it triggers next level. (Simple version)
       setScore(score + level.reward_points);
       setTimeout(() => {
         setLevelIdx(1);
       }, 1500);
+    }
+  };
+
+  const handleConveyorDrop = (e) => {
+    e.preventDefault();
+    const itemStr = e.dataTransfer.getData("itemStr");
+    if (!itemStr) return;
+    const item = parseInt(itemStr, 10);
+    const sourceRegion = e.dataTransfer.getData("sourceRegion");
+
+    if (sourceRegion && sourceRegion !== "") {
+      const newBoxes = { ...boxes };
+      newBoxes[sourceRegion] = newBoxes[sourceRegion].filter(i => i !== item);
+      setBoxes(newBoxes);
+      setQueue([...queue, item]);
     }
   };
 
@@ -119,14 +158,22 @@ export default function MathSortingFactory({ onComplete, onHome }) {
               onDragOver={handleDragOver} 
               onDrop={(e) => handleDrop(e, 'left')}
             >
-              <div style={styles.vennItems}>{boxes.left.join(', ')}</div>
+              <div style={styles.vennItems}>
+                {boxes.left.map((item, idx) => (
+                  <span key={idx} draggable onDragStart={(e) => handleDragStart(e, item, 'left')} style={{cursor:'grab', margin:'0 4px', padding:'2px', display:'inline-block'}}>{item}</span>
+                ))}
+              </div>
             </div>
             <div 
               style={{...styles.vennCircle, ...styles.rightCircle}} 
               onDragOver={handleDragOver} 
               onDrop={(e) => handleDrop(e, 'right')}
             >
-              <div style={styles.vennItems}>{boxes.right.join(', ')}</div>
+              <div style={styles.vennItems}>
+                {boxes.right.map((item, idx) => (
+                  <span key={idx} draggable onDragStart={(e) => handleDragStart(e, item, 'right')} style={{cursor:'grab', margin:'0 4px', padding:'2px', display:'inline-block'}}>{item}</span>
+                ))}
+              </div>
             </div>
             <div 
               style={styles.intersectionBtn} 
@@ -134,13 +181,17 @@ export default function MathSortingFactory({ onComplete, onHome }) {
               onDrop={(e) => handleDrop(e, 'intersection')}
             >
               BOTH
-              <div style={styles.vennItems}>{boxes.intersection.join(', ')}</div>
+              <div style={styles.vennItems}>
+                {boxes.intersection.map((item, idx) => (
+                   <span key={idx} draggable onDragStart={(e) => handleDragStart(e, item, 'intersection')} style={{cursor:'grab', margin:'0 4px', padding:'2px', display:'inline-block'}}>{item}</span>
+                ))}
+              </div>
             </div>
           </div>
           
-          <div style={{...styles.conveyor, borderColor: feedback === 'wrong' ? '#EF4444' : (feedback === 'correct' ? '#10B981' : '#334155')}}>
+          <div style={{...styles.conveyor, borderColor: feedback === 'wrong' ? '#EF4444' : (feedback === 'correct' ? '#10B981' : '#334155')}} onDragOver={handleDragOver} onDrop={handleConveyorDrop}>
             {queue.map((item, idx) => (
-              <div key={idx} style={styles.sortableItem} draggable onDragStart={(e) => handleDragStart(e, item)}>{item}</div>
+              <div key={idx} style={styles.sortableItem} draggable onDragStart={(e) => handleDragStart(e, item, null)}>{item}</div>
             ))}
           </div>
           <div style={{display:'flex', gap:'16px'}}>
@@ -152,27 +203,27 @@ export default function MathSortingFactory({ onComplete, onHome }) {
 
       {level.type === 'error_identification' && (
         <div style={styles.levelContainer}>
-           <div style={styles.vennContainer}>
-            <div style={{...styles.vennCircle, ...styles.leftCircle}}>{"< 50"}</div>
-            <div style={{...styles.vennCircle, ...styles.rightCircle}}>{"x 7"}</div>
+           <div style={{...styles.vennContainer, width: '340px', height: '240px'}}>
+            <div style={{...styles.vennCircle, ...styles.leftCircle, width:'220px', height:'220px'}}>{"< 50"}</div>
+            <div style={{...styles.vennCircle, ...styles.rightCircle, width:'220px', height:'220px'}}>{"x 7"}</div>
             
-            {level.displayed_numbers.map((item, idx) => {
-              const isTapped = imposterTaps.includes(item);
-              const isCorrectImposter = level.correct_imposters_to_tap.includes(item);
+            {level.displayed_numbers.map((itemObj, idx) => {
+              const isTapped = imposterTaps.includes(itemObj.val);
+              const isCorrectImposter = level.correct_imposters_to_tap.includes(itemObj.val);
               return (
                 <div 
                   key={idx} 
-                  onClick={() => handleL2Tap(item)}
+                  onClick={() => handleL2Tap(itemObj.val)}
                   style={{
                     ...styles.sortableItem, 
                     position:'absolute', 
-                    top: `${100 + (idx * 23) % 80}px`, 
-                    left: `${20 + (idx * 30) % 200}px`,
+                    top: `${itemObj.y}px`, 
+                    left: `${itemObj.x}px`,
                     borderColor: isTapped ? (isCorrectImposter ? '#10B981' : '#EF4444') : '#94A3B8',
                     backgroundColor: isTapped ? (isCorrectImposter ? '#D1FAE5' : '#FEE2E2') : 'white'
                   }}
                 >
-                  {item}
+                  {itemObj.val}
                 </div>
               );
             })}

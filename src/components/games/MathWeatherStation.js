@@ -47,30 +47,65 @@ export default function MathWeatherStation({ onComplete, onHome }) {
   const [availableItems, setAvailableItems] = useState(level?.data_pool || []);
   const [feedback, setFeedback] = useState(null);
 
-  const handleDragStart = (e, item) => {
+  const handleDragStart = (e, item, sourceSlotIdx = null) => {
     e.dataTransfer.setData("itemValue", item.value);
+    if (sourceSlotIdx !== null) {
+      e.dataTransfer.setData("sourceSlotIdx", sourceSlotIdx.toString());
+    }
   };
 
   const handleDragOver = (e) => {
     e.preventDefault();
   };
 
-  const handleDrop = (e, slotIdx) => {
+  const handleRackDrop = (e) => {
+    e.preventDefault();
+    const sourceSlotIdx = e.dataTransfer.getData("sourceSlotIdx");
+    if (sourceSlotIdx !== "") {
+      const idx = parseInt(sourceSlotIdx, 10);
+      const item = sortedValues[idx];
+      if (item) {
+        const newSorted = [...sortedValues];
+        newSorted[idx] = null;
+        setSortedValues(newSorted);
+        setAvailableItems([...availableItems, item]);
+      }
+    }
+  };
+
+  const handleDrop = (e, targetSlotIdx) => {
     e.preventDefault();
     const itemValue = e.dataTransfer.getData("itemValue");
     if (!itemValue) return;
+
+    const sourceSlotIdx = e.dataTransfer.getData("sourceSlotIdx");
+    if (sourceSlotIdx !== "") {
+      // Dragging from one slot to another
+      const srcIdx = parseInt(sourceSlotIdx, 10);
+      if (srcIdx === targetSlotIdx) return;
+      
+      const newSorted = [...sortedValues];
+      const itemToMove = newSorted[srcIdx];
+      const targetItem = newSorted[targetSlotIdx];
+      
+      newSorted[targetSlotIdx] = itemToMove;
+      newSorted[srcIdx] = targetItem; // allow swapping
+      setSortedValues(newSorted);
+      return;
+    }
     
+    // Dragging from rack to slot
     const itemFromRack = availableItems.find(i => i.value.toString() === itemValue.toString());
     if (itemFromRack) {
       const newSorted = [...sortedValues];
       let newAvailable = availableItems.filter(i => i.value.toString() !== itemValue.toString());
       
-      // Swap out the existing item
-      if (newSorted[slotIdx]) {
-        newAvailable.push(newSorted[slotIdx]);
+      // Swap out the existing item back to rack
+      if (newSorted[targetSlotIdx]) {
+        newAvailable.push(newSorted[targetSlotIdx]);
       }
       
-      newSorted[slotIdx] = itemFromRack;
+      newSorted[targetSlotIdx] = itemFromRack;
       setSortedValues(newSorted);
       setAvailableItems(newAvailable);
     }
@@ -142,24 +177,29 @@ export default function MathWeatherStation({ onComplete, onHome }) {
                 key={idx} 
                 style={{
                   ...styles.slot, 
-                  backgroundColor: feedback === 'correct' ? '#10B981' : (feedback === 'wrong' ? '#EF4444' : 'white'),
-                  color: (feedback === 'correct' || feedback === 'wrong') ? 'white' : '#334155'
+                  backgroundColor: feedback === 'correct' ? '#10B981' : (feedback === 'wrong' ? '#EF4444' : (val ? '#EAB308' : 'white')),
+                  color: (feedback === 'correct' || feedback === 'wrong' || val) ? 'white' : '#334155',
+                  borderColor: val ? '#CA8A04' : '#64748B',
+                  fontWeight: val ? 'bold' : 'normal',
+                  cursor: val ? 'grab' : 'default'
                 }}
                 onDragOver={handleDragOver}
                 onDrop={(e) => handleDrop(e, idx)}
+                draggable={!!val}
+                onDragStart={(e) => { if (val) handleDragStart(e, val, idx) }}
               >
                 {val ? `${val.label} (${val.value})` : 'Drop Here'}
               </div>
             ))}
           </div>
 
-          <div style={styles.rack}>
+          <div style={styles.rack} onDragOver={handleDragOver} onDrop={handleRackDrop}>
             {availableItems.map((item, idx) => (
               <div 
                 key={idx} 
                 style={styles.dragItem} 
                 draggable 
-                onDragStart={(e) => handleDragStart(e, item)}
+                onDragStart={(e) => handleDragStart(e, item, null)}
               >
                 {item.label} ({item.value})
               </div>
@@ -275,33 +315,39 @@ const styles = {
   arena: {
     display: 'flex',
     alignItems: 'center',
-    gap: '24px',
-    margin: '40px 0'
+    gap: '32px',
+    margin: '40px 0',
+    flexWrap: 'wrap',
+    justifyContent: 'center'
   },
   numberCard: {
-    fontSize: '48px',
+    fontSize: '64px',
     fontWeight: '900',
     color: '#0284C7',
     backgroundColor: 'white',
-    padding: '24px',
-    borderRadius: '24px',
-    border: '4px solid #0284C7',
-    width: '60px',
-    textAlign: 'center'
+    padding: '32px',
+    borderRadius: '32px',
+    border: '6px solid #0284C7',
+    minWidth: '100px',
+    textAlign: 'center',
+    boxShadow: '0 8px 16px rgba(0,0,0,0.1)'
   },
   crocBtns: {
     display: 'flex',
-    gap: '24px'
+    gap: '32px',
+    flexWrap: 'wrap',
+    justifyContent: 'center'
   },
   crocBtn: {
-    fontSize: '36px',
-    padding: '16px 24px',
+    fontSize: '64px',
+    padding: '16px 40px',
     backgroundColor: '#10B981',
     color: 'white',
     border: 'none',
-    borderRadius: '16px',
-    borderBottom: '6px solid #059669',
+    borderRadius: '24px',
+    borderBottom: '8px solid #059669',
     fontWeight: 'bold',
-    cursor: 'pointer'
+    cursor: 'pointer',
+    boxShadow: '0 8px 16px rgba(0,0,0,0.1)'
   }
 };
