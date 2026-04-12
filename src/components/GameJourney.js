@@ -24,11 +24,11 @@ const JOURNEY_DATA = {
     wordlist_math: {
         objective: "Objective: Master addition, subtraction and word problems",
         nodes: [
-            { id: "math_1", label: "Number Basics", sub: "Math Weather Station, Quiz", icon: "hash", type: "math" },
-            { id: "math_2", label: "Logic Puzzles", sub: "Math Mystery Safe, Timeline", icon: "lock-key", type: "math" },
-            { id: "math_3", label: "Sorting & Matching", sub: "Math Sorting Factory, Bubble", icon: "factory", type: "math" },
-            { id: "math_4", label: "Data & Charts", sub: "Math Data Cinema, Swipe", icon: "film-strip", type: "math" },
-            { id: "math_5", label: "Concept Mastery", sub: "More games arriving soon", icon: "lightbulb", type: "math" }
+            { id: "math_1", label: "Number Basics", sub: "Math Weather Station, Quiz", icon: "hash", type: "both" },
+            { id: "math_2", label: "Logic Puzzles", sub: "Math Mystery Safe, Timeline", icon: "lock-key", type: "both" },
+            { id: "math_3", label: "Sorting & Matching", sub: "Math Sorting Factory, Bubble", icon: "factory", type: "both" },
+            { id: "math_4", label: "Data & Charts", sub: "Math Data Cinema, Swipe", icon: "film-strip", type: "both" },
+            { id: "math_5", label: "Concept Mastery", sub: "More games arriving soon", icon: "lightbulb", type: "both" }
         ]
     },
     wordlist_science: {
