@@ -28,7 +28,7 @@ const M4_DATA_CINEMA_MODULE = {
   ]
 };
 
-export default function MathDataCinema({ onComplete, onBack }) {
+export default function MathDataCinema({ onComplete, onHome }) {
   const [levelIdx, setLevelIdx] = useState(0);
   const [score, setScore] = useState(0);
 
@@ -76,15 +76,18 @@ export default function MathDataCinema({ onComplete, onBack }) {
     if (feedbackL2) return;
     const isCorrect = selectedChart === level.pairs[l2QuestionIdx].chart;
     
+    let currentScore = score;
+    if (isCorrect) currentScore += 50;
+    setScore(currentScore);
+
     setFeedbackL2(isCorrect ? 'correct' : 'wrong');
     setTimeout(() => {
         setFeedbackL2(null);
-        if (isCorrect) setScore(score + 50);
 
         if (l2QuestionIdx + 1 < level.pairs.length) {
           setL2QuestionIdx(l2QuestionIdx + 1);
         } else {
-          if (onComplete) onComplete(score + (isCorrect ? 50 : 0));
+          if (onComplete) onComplete({ score: currentScore });
         }
     }, 1500);
   };
@@ -92,7 +95,7 @@ export default function MathDataCinema({ onComplete, onBack }) {
   return (
     <div style={styles.container}>
       <div style={styles.header}>
-        <div style={styles.backBtn} onClick={onBack}>← Back</div>
+        <div style={styles.backBtn} onClick={onHome}>← Back</div>
         <h1 style={{margin:0, fontSize:'24px'}}>{M4_DATA_CINEMA_MODULE.title}</h1>
         <div style={{fontWeight:'bold'}}>Score: {Math.round(score)}</div>
       </div>

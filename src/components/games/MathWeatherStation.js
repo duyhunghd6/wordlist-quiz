@@ -36,7 +36,7 @@ const M1_WEATHER_STATION_MODULE = {
   ]
 };
 
-export default function MathWeatherStation({ onComplete, onBack }) {
+export default function MathWeatherStation({ onComplete, onHome }) {
   const [currentLevelIdx, setCurrentLevelIdx] = useState(0);
   const [l2QuestionIdx, setL2QuestionIdx] = useState(0);
   const [score, setScore] = useState(0);
@@ -118,7 +118,8 @@ export default function MathWeatherStation({ onComplete, onBack }) {
         if (l2QuestionIdx + 1 < level.questions.length) {
           setL2QuestionIdx(l2QuestionIdx + 1);
         } else {
-          if (onComplete) onComplete(score + (isCorrect ? (level.reward_points / level.questions.length) : 0));
+          const finalScore = score + (isCorrect ? (level.reward_points / level.questions.length) : 0);
+          if (onComplete) onComplete({ score: finalScore });
         }
     }, 1000);
   };
@@ -126,7 +127,7 @@ export default function MathWeatherStation({ onComplete, onBack }) {
   return (
     <div style={styles.container}>
       <div style={styles.header}>
-        <div style={styles.backBtn} onClick={onBack}>← Back</div>
+        <div style={styles.backBtn} onClick={onHome}>← Back</div>
         <h1 style={{margin:0, fontSize:'24px'}}>{M1_WEATHER_STATION_MODULE.title}</h1>
         <div style={{fontWeight:'bold'}}>Score: {Math.round(score)}</div>
       </div>

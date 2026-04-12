@@ -22,7 +22,7 @@ const M2_MYSTERY_SAFE_MODULE = {
   ]
 };
 
-export default function MathMysterySafe({ onComplete, onBack }) {
+export default function MathMysterySafe({ onComplete, onHome }) {
   const [score, setScore] = useState(0);
   const level = M2_MYSTERY_SAFE_MODULE.levels[0];
   
@@ -54,7 +54,7 @@ export default function MathMysterySafe({ onComplete, onBack }) {
       setScore(level.reward_points);
       setTimeout(() => {
           setFeedback(null);
-          if (onComplete) onComplete(level.reward_points);
+          if (onComplete) onComplete({ score: level.reward_points });
       }, 1500);
     } else {
       setFeedback('wrong');
@@ -65,7 +65,7 @@ export default function MathMysterySafe({ onComplete, onBack }) {
   return (
     <div style={styles.container}>
       <div style={styles.header}>
-        <div style={styles.backBtn} onClick={onBack}>← Back</div>
+        <div style={styles.backBtn} onClick={onHome}>← Back</div>
         <h1 style={{margin:0, fontSize:'24px'}}>{M2_MYSTERY_SAFE_MODULE.title}</h1>
         <div style={{fontWeight:'bold'}}>Score: {Math.round(score)}</div>
       </div>

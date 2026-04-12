@@ -28,7 +28,7 @@ const M3_SORTING_FACTORY_MODULE = {
   ]
 };
 
-export default function MathSortingFactory({ onComplete, onBack }) {
+export default function MathSortingFactory({ onComplete, onHome }) {
   const [levelIdx, setLevelIdx] = useState(0);
   const [score, setScore] = useState(0);
 
@@ -90,19 +90,21 @@ export default function MathSortingFactory({ onComplete, onBack }) {
     const newTaps = [...imposterTaps, num];
     setImposterTaps(newTaps);
 
+    let currentScore = score;
     if (level.correct_imposters_to_tap.includes(num)) {
-      setScore(score + 30); // Partial score
+      currentScore += 30; // Partial score
+      setScore(currentScore); 
     }
     
     if (newTaps.filter(n => level.correct_imposters_to_tap.includes(n)).length === level.correct_imposters_to_tap.length) {
-      if (onComplete) onComplete(score + level.reward_points);
+      if (onComplete) setTimeout(() => onComplete({ score: currentScore }), 1000);
     }
   };
 
   return (
     <div style={styles.container}>
       <div style={styles.header}>
-        <div style={styles.backBtn} onClick={onBack}>← Back</div>
+        <div style={styles.backBtn} onClick={onHome}>← Back</div>
         <h1 style={{margin:0, fontSize:'24px'}}>{M3_SORTING_FACTORY_MODULE.title}</h1>
         <div style={{fontWeight:'bold'}}>Score: {Math.round(score)}</div>
       </div>
