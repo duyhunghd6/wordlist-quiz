@@ -24,11 +24,11 @@ const JOURNEY_DATA = {
     wordlist_math: {
         objective: "Objective: Master addition, subtraction and word problems",
         nodes: [
-            { id: "math_weather_station", label: "The Weather Station", sub: "M1_L1, M1_L2", icon: "cloud-sun" },
-            { id: "math_mystery_safe", label: "The Mystery Safe", sub: "M2_L1", icon: "lock-key" },
-            { id: "math_sorting_factory", label: "The Sorting Factory", sub: "M3_L1, M3_L2", icon: "factory" },
-            { id: "math_data_cinema", label: "The Data Cinema", sub: "M4_L1, M4_L2", icon: "film-strip" },
-            { id: "math_5", label: "Concept Mastery", sub: "Explain steps", icon: "lightbulb" }
+            { id: "math_1", label: "Number Basics", sub: "Math Weather Station, Quiz", icon: "hash", type: "math" },
+            { id: "math_2", label: "Logic Puzzles", sub: "Math Mystery Safe, Timeline", icon: "lock-key", type: "math" },
+            { id: "math_3", label: "Sorting & Matching", sub: "Math Sorting Factory, Bubble", icon: "factory", type: "math" },
+            { id: "math_4", label: "Data & Charts", sub: "Math Data Cinema, Swipe", icon: "film-strip", type: "math" },
+            { id: "math_5", label: "Concept Mastery", sub: "More games arriving soon", icon: "lightbulb", type: "math" }
         ]
     },
     wordlist_science: {
@@ -67,10 +67,10 @@ const GAME_ICONS = {
     "Science Think Quiz": { icon: Brain, color: "gs-bg-purple", tags: ["Science", "Thinking"] },
     "Science True/False": { icon: CheckSquareOffset, color: "gs-bg-pink", tags: ["Science", "Logic"] },
     "Science Match": { icon: Intersect, color: "gs-bg-blue", tags: ["Science", "Matching"] },
-    "The Weather Station": { icon: Hash, color: "gs-bg-blue", tags: ["Math", "Logic"] },
-    "The Mystery Safe": { icon: Calculator, color: "gs-bg-purple", tags: ["Math", "Logic"] },
-    "The Sorting Factory": { icon: Intersect, color: "gs-bg-pink", tags: ["Math", "Categories"] },
-    "The Data Cinema": { icon: Cards, color: "gs-bg-orange", tags: ["Math", "Charts"] }
+    "Math Weather Station": { icon: Hash, color: "gs-bg-blue", tags: ["Math", "Logic"] },
+    "Math Mystery Safe": { icon: Calculator, color: "gs-bg-purple", tags: ["Math", "Logic"] },
+    "Math Sorting Factory": { icon: Intersect, color: "gs-bg-pink", tags: ["Math", "Categories"] },
+    "Math Data Cinema": { icon: Cards, color: "gs-bg-orange", tags: ["Math", "Charts"] }
 };
 
 
@@ -202,9 +202,10 @@ const GameJourney = ({
     };
 
     // We want to show all games separated by category, not just a static subset
-    const vocabGames = GAMES.filter(g => !g.isGrammar && !g.isScience);
+    const vocabGames = GAMES.filter(g => !g.isGrammar && !g.isScience && !g.isMath);
     const grammarGames = GAMES.filter(g => g.isGrammar);
     const scienceGames = GAMES.filter(g => g.isScience);
+    const mathGames = GAMES.filter(g => g.isMath);
 
     const handleStartSpecificGame = (gameObj) => {
         onSelectGame(gameObj.id);
@@ -424,18 +425,28 @@ const GameJourney = ({
                                 <div style={{ textAlign: 'center', padding: '20px', color: '#94A3B8' }}>More science games arriving in the next update!</div>
                             )}
                         </>
+                    ) : currentSubjectKey === 'wordlist_math' ? (
+                        <>
+                            {(!activeModalNode?.type || activeModalNode.type === 'vocab' || activeModalNode.type === 'both') && (
+                                <>
+                                    <div style={{ fontWeight: 800, color: '#1E293B', margin: '4px 0 8px', fontSize: '1.1rem' }}>General Games</div>
+                                    {vocabGames.map(g => renderGameCardRow(g))}
+                                </>
+                            )}
+                            {(!activeModalNode?.type || activeModalNode.type === 'math' || activeModalNode.type === 'both') && (
+                                <>
+                                    <div style={{ fontWeight: 800, color: '#1E293B', margin: '16px 0 8px', fontSize: '1.1rem' }}>🧮 Math Arcade</div>
+                                    {mathGames.map(g => renderGameCardRow(g))}
+                                </>
+                            )}
+                            {activeModalNode?.sub?.toLowerCase().includes('coming soon') && (
+                                <div style={{ textAlign: 'center', padding: '20px', color: '#94A3B8' }}>More math games arriving in the next update!</div>
+                            )}
+                        </>
                     ) : (
                         <>
                             <div style={{ fontWeight: 800, color: '#1E293B', margin: '4px 0 8px', fontSize: '1.1rem' }}>{subjectData.label || "Available"} Games</div>
-                            {(() => {
-                                const parsedGames = activeModalNode?.sub.split(",").map(s => s.trim()).filter(s => s.toLowerCase() !== "coming soon") || [];
-                                if (parsedGames.length === 0) {
-                                    return <div style={{ textAlign: 'center', padding: '20px', color: '#94A3B8' }}>More games arriving in the next update!</div>;
-                                }
-                                return parsedGames.map(gameName => 
-                                    renderGameCardRow({ id: gameName.toLowerCase().replace(" ", "_"), name: gameName, isGrammar: false })
-                                );
-                            })()}
+                            {vocabGames.map(g => renderGameCardRow(g))}
                         </>
                     )}
                 </div>

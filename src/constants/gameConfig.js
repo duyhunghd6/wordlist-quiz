@@ -35,7 +35,13 @@ export const GAMES = [
   // Science Games
   { id: 'scienceThinkQuiz', emoji: '🧪', name: 'Science Think Quiz', available: true, isScience: true },
   { id: 'scienceTrueFalseGame', emoji: '⚖️', name: 'Science True/False', available: true, isScience: true },
-  { id: 'scienceMatchGame', emoji: '🧩', name: 'Science Match', available: true, isScience: true }
+  { id: 'scienceMatchGame', emoji: '🧩', name: 'Science Match', available: true, isScience: true },
+
+  // Math Games
+  { id: 'math_weather_station', emoji: '🌦️', name: 'Math Weather Station', available: true, isMath: true },
+  { id: 'math_mystery_safe', emoji: '🔐', name: 'Math Mystery Safe', available: true, isMath: true },
+  { id: 'math_sorting_factory', emoji: '🏭', name: 'Math Sorting Factory', available: true, isMath: true },
+  { id: 'math_data_cinema', emoji: '🎞️', name: 'Math Data Cinema', available: true, isMath: true }
 ];
 
 export const DEFAULT_PREFERENCES = {
