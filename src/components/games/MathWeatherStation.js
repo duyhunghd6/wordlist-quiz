@@ -36,15 +36,79 @@ const M1_WEATHER_STATION_MODULE = {
   ]
 };
 
+const CITIES = [
+  "Yakutsk", "Ulaanbaatar", "Toronto", "New York", "Bangkok", 
+  "Jakarta", "London", "Tokyo", "Hanoi", "Paris", 
+  "Berlin", "Sydney", "Dubai", "Cairo", "Moscow", 
+  "Chicago", "Vancouver", "Singapore"
+];
+
+const generateRandomSortData = (numItems = 6) => {
+  const shuffledCities = [...CITIES].sort(() => 0.5 - Math.random());
+  const selected = shuffledCities.slice(0, numItems);
+  
+  // ensure a mix of negative and positive
+  let dataPool = selected.map((city, idx) => {
+     let temp;
+     // Force at least some negatives and positives
+     if (idx < 2) temp = Math.floor(Math.random() * 35) - 40; // -5 to -40
+     else if (idx < 4) temp = Math.floor(Math.random() * 35) + 5; // 5 to 40
+     else temp = Math.floor(Math.random() * 80) - 40; // -40 to 40
+     return { label: city, value: temp };
+  });
+
+  // Ensure unique values
+  let uniqueValues = Array.from(new Set(dataPool.map(d => d.value)));
+  while(uniqueValues.length < dataPool.length) {
+     let temp = Math.floor(Math.random() * 80) - 40;
+     if (!uniqueValues.includes(temp)) uniqueValues.push(temp);
+  }
+  
+  dataPool.forEach((d, i) => { d.value = uniqueValues[i]; });
+  dataPool = dataPool.sort(() => 0.5 - Math.random());
+  const correct_order_values = [...dataPool].map(d => d.value).sort((a,b) => a - b);
+  
+  return { dataPool, correct_order_values };
+};
+
+const generateRandomQuickfire = (numQuestions = 5) => {
+   const questions = [];
+   for(let i=0; i<numQuestions; i++) {
+      let left = Math.floor(Math.random() * 60) - 30;
+      let right = Math.floor(Math.random() * 60) - 30;
+      while(left === right) right = Math.floor(Math.random() * 60) - 30;
+      // Map to correct API
+      questions.push({ left_value: left, right_value: right, correct_operator: left > right ? ">" : "<" });
+   }
+   return questions;
+};
+
 export default function MathWeatherStation({ onComplete, onHome }) {
+  const { dynamicL1, dynamicL2 } = React.useMemo(() => {
+    const l1Data = generateRandomSortData(6);
+    const l2Questions = generateRandomQuickfire(5);
+    return {
+      dynamicL1: {
+        ...M1_WEATHER_STATION_MODULE.levels[0],
+        data_pool: l1Data.dataPool,
+        correct_order_values: l1Data.correct_order_values,
+        instruction: "Level 1: Drag the randomly generated temperatures onto the number line from coldest to warmest."
+      },
+      dynamicL2: {
+        ...M1_WEATHER_STATION_MODULE.levels[1],
+        questions: l2Questions
+      }
+    };
+  }, []);
+
   const [currentLevelIdx, setCurrentLevelIdx] = useState(0);
   const [l2QuestionIdx, setL2QuestionIdx] = useState(0);
   const [score, setScore] = useState(0);
 
-  const level = M1_WEATHER_STATION_MODULE.levels[currentLevelIdx];
+  const level = currentLevelIdx === 0 ? dynamicL1 : dynamicL2;
 
-  const [sortedValues, setSortedValues] = useState(new Array(6).fill(null));
-  const [availableItems, setAvailableItems] = useState(level?.data_pool || []);
+  const [sortedValues, setSortedValues] = useState(new Array(dynamicL1.data_pool.length).fill(null));
+  const [availableItems, setAvailableItems] = useState(dynamicL1.data_pool);
   const [feedback, setFeedback] = useState(null);
 
   const handleDragStart = (e, item, sourceSlotIdx = null) => {
