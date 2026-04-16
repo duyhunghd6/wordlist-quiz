@@ -42,7 +42,8 @@ Build strong vocabulary foundations for elementary school children (Grade 3+) th
         ▼
 ┌─────────────────────────────────────────────────────────────────┐
 │                      DATA LAYER                                  │
-│  📚 Content: public/db/wordlist_*.json                         │
+│  📚 Vocab:   public/db/wordlist_*.json                         │
+│  📚 Grammar: public/db/tense_sentences_esl.toon                │
 │  💾 Progress: localStorage (unified per-word tracking)         │
 └─────────────────────────────────────────────────────────────────┘
 ```
@@ -52,6 +53,7 @@ Build strong vocabulary foundations for elementary school children (Grade 3+) th
 - ✅ **All games available from start** - No unlocking required
 - ✅ **Default to last game** - One-tap to change, remembers preference
 - ✅ **Unified learning algorithm** - Progress syncs across all games
+- ✅ **Centralized Tense DB** - Grammar MUST use `*.toon` DB. Regex scrambling is strictly forbidden.
 
 ---
 
@@ -693,6 +695,7 @@ src/
 │   └── Results.js          # Score display
 public/
 └── db/
+    ├── tense_sentences_esl.toon # Centralized Grammar Database
     ├── wordlist_esl.json   # ESL vocabulary
     ├── wordlist_math.json  # Math vocabulary
     └── wordlist_science.json

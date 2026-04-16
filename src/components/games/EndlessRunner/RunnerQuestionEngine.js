@@ -50,29 +50,6 @@ const createSpellingDistractors = (wordStr) => {
     ];
 };
 
-// Helper to mock grammatically incorrect sentence for True/False tense questions
-const mockWrongTense = (sentence) => {
-    let wrong = sentence;
-    // Swap common auxiliaries to test grammatical awareness
-    if (/\b(is|are)\b/i.test(wrong)) {
-        wrong = wrong.replace(/\bis\b/gi, 'are').replace(/\bare\b/gi, 'is');
-    } else if (/\b(was|were)\b/i.test(wrong)) {
-        wrong = wrong.replace(/\bwas\b/gi, 'were').replace(/\bwere\b/gi, 'was');
-    } else if (/\b(has|have)\b/i.test(wrong)) {
-        wrong = wrong.replace(/\bhas\b/gi, 'have').replace(/\bhave\b/gi, 'has');
-    } else {
-        // Fallback: mess up the verb suffix
-        if (/ing\b/i.test(wrong)) {
-            wrong = wrong.replace(/ing\b/gi, 'ed');
-        } else if (/ed\b/i.test(wrong)) {
-            wrong = wrong.replace(/ed\b/gi, 'ing');
-        } else {
-            // Absolute fallback for sentences without obvious aux/suffixes
-            wrong = wrong.replace(/[aeiou]/, 'x');
-        }
-    }
-    return wrong;
-};
 
 /**
  * RunnerQuestionEngine Hook (Enterprise Grade)
@@ -294,19 +271,17 @@ export const useRunnerEngine = (words = [], tenseSentences = []) => {
                     { id: 2, text: 'False ✗', isCorrect: showWrong }
                 ];
             } else {
-                // Fallback if the database failed to load completely
-                target = pickRandomWord(w => w.example && w.example.length > 10);
-                const makeWrong = Math.random() > 0.5;
-                let displaySentence = target.example;
-                if (makeWrong) {
-                    displaySentence = mockWrongTense(displaySentence);
-                }
-
-                newQuestion.sentence = displaySentence;
-                newQuestion.options = [
-                    { id: 1, text: 'True ✓', isCorrect: !makeWrong },
-                    { id: 2, text: 'False ✗', isCorrect: makeWrong }
-                ];
+                // Fallback if the database failed to load completely: gracefully degrade to CONTEXT
+                target = pickRandomWord(w => w.example && w.example.toLowerCase().includes(w.word.toLowerCase()));
+                let prompt = target.example || "No example found.";
+                
+                // Blank out the target word in the sentence
+                const regex = new RegExp(`\\b${target.word}\\b`, 'gi');
+                prompt = prompt.replace(regex, '______');
+                
+                newQuestion.type = 'CONTEXT';
+                newQuestion.sentence = prompt;
+                newQuestion.options = shuffleArray(pickTwoDistractors(target));
             }
         }
 
