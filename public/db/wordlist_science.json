@@ -1218,189 +1218,189 @@
     "vietnamese": "Bán cầu: Một nửa Trái Đất, nửa phía trên (bắc) hoặc nửa phía dưới (nam)."
   },
   {
-    "unit": "Unit 6",
+    "unit": "6",
     "word": "Battery",
     "definition": "Two or more cells connected together.",
     "example": "A car _____.",
     "vietnamese": "Pin (hai hay nhiều pin kết nối lại với nhau)."
   },
   {
-    "unit": "Unit 6",
+    "unit": "6",
     "word": "Cable",
     "definition": "A rope of wires.",
     "example": "The thick _____ carries high voltage from the station.",
     "vietnamese": "Dây cáp."
   },
   {
-    "unit": "Unit 6",
+    "unit": "6",
     "word": "Conductor",
     "definition": "A material that lets electricity move through it.",
     "example": "The inside of a cable wire, salt water, and tap water are examples.",
     "vietnamese": "Vật dẫn điện."
   },
   {
-    "unit": "Unit 6",
+    "unit": "6",
     "word": "Cord",
     "definition": "The plastic-coated wire that connects to a plug at one end and an appliance at the other end.",
     "example": "Please plug the power _____ into the wall socket.",
     "vietnamese": "Dây điện."
   },
   {
-    "unit": "Unit 6",
+    "unit": "6",
     "word": "Electric shock",
     "definition": "The effect of a sudden flow of electricity through a person's body.",
     "example": "An _____ can badly affect a person's heart.",
     "vietnamese": "Điện giật."
   },
   {
-    "unit": "Unit 6",
+    "unit": "6",
     "word": "Insulator",
     "definition": "A material that stops electricity from moving.",
     "example": "The handle of an electric appliance is an _____.",
     "vietnamese": "Vật cách điện."
   },
   {
-    "unit": "Unit 6",
+    "unit": "6",
     "word": "Mains electricity",
     "definition": "High voltage electricity that is sent to homes, schools, factories and offices to provide power for machines, lighting and appliances.",
     "example": "We use _____ to power our refrigerator.",
     "vietnamese": "Điện lưới."
   },
   {
-    "unit": "Unit 6",
+    "unit": "6",
     "word": "Plug",
     "definition": "A device for connecting an electric wire or cable to an electricity supply.",
     "example": "Put the _____ into the socket to turn it on.",
     "vietnamese": "Phích cắm."
   },
   {
-    "unit": "Unit 6",
+    "unit": "6",
     "word": "Pylon",
     "definition": "The structure that carries cables from the power station where electricity is made (or generated) to cities, towns and villages.",
     "example": "A large metal _____ supports the high voltage cables.",
     "vietnamese": "Cột điện cao thế."
   },
   {
-    "unit": "Unit 6",
+    "unit": "6",
     "word": "Volt",
     "definition": "A unit to measure the strength of electricity.",
     "example": "This battery has 1.5 _____.",
     "vietnamese": "Vôn (đơn vị đo điện áp)."
   },
   {
-    "unit": "Unit 6",
+    "unit": "6",
     "word": "Voltage",
     "definition": "The measure of power of electricity.",
     "example": "Mains electricity has a _____ of 220V in Vietnam.",
     "vietnamese": "Điện áp."
   },
   {
-    "unit": "Unit 6",
+    "unit": "6",
     "word": "Wall socket",
     "definition": "A hole in the wall connecting the plug on an appliance with the electric cables in the wall.",
     "example": "Plug the charger into the _____.",
     "vietnamese": "Ổ cắm điện trên tường."
   },
   {
-    "unit": "Unit 6",
+    "unit": "6",
     "word": "Cell",
     "definition": "A unit that stores electricity, with each typically storing 1.5 V.",
     "example": "When we have two or more of these connected together we call it a battery.",
     "vietnamese": "Pin đơn (pin)."
   },
   {
-    "unit": "Unit 6",
+    "unit": "6",
     "word": "Electric circuit",
     "definition": "A connected path for electricity that includes parts such as a cell, lamp, lamp holder, wire, and switch.",
     "example": "An _____ must be connected properly without gaps for the light to turn on.",
     "vietnamese": "Mạch điện."
   },
   {
-    "unit": "Unit 6",
+    "unit": "6",
     "word": "Wire",
     "definition": "A conductive line used to connect different parts of an electric circuit.",
     "example": "The inside of a cable _____ is a conductor, while its cover is an insulator.",
     "vietnamese": "Dây điện / Dây dẫn."
   },
   {
-    "unit": "Unit 6",
+    "unit": "6",
     "word": "Switch",
     "definition": "A component used to control the flow of electricity, allowing you to turn appliances on and off.",
     "example": "Turn off the _____ before you pull out the plug.",
     "vietnamese": "Công tắc."
   },
   {
-    "unit": "Unit 6",
+    "unit": "6",
     "word": "Lamp",
     "definition": "A light bulb that illuminates when electricity successfully flows through an electric circuit.",
     "example": "You can test if materials are conductors or insulators by seeing if the _____ turns on in the circuit.",
     "vietnamese": "Bóng đèn."
   },
   {
-    "unit": "Unit 6",
+    "unit": "6",
     "word": "Lamp holder",
     "definition": "A base or socket that holds the lamp securely in place within an electric circuit.",
     "example": "The wires connect to the _____ to allow electricity to reach the light.",
     "vietnamese": "Đui đèn."
   },
   {
-    "unit": "Unit 6",
+    "unit": "6",
     "word": "Power station",
     "definition": "A facility where electricity is made or generated.",
     "example": "Pylons carry electricity from a _____ to homes.",
     "vietnamese": "Nhà máy điện."
   },
   {
-    "unit": "Unit 6",
+    "unit": "6",
     "word": "Bare wires",
     "definition": "Wires that have lost their protective insulating plastic cover due to damage.",
     "example": "If you handle the _____ you could get an electric shock.",
     "vietnamese": "Dây điện trần (bị hở)."
   },
   {
-    "unit": "Unit 6",
+    "unit": "6",
     "word": "Electric appliance",
     "definition": "A machine or device that is plugged in and powered by mains electricity.",
     "example": "The handle of an _____ acts as an insulator to keep you safe.",
     "vietnamese": "Thiết bị điện."
   },
   {
-    "unit": "Unit 6",
+    "unit": "6",
     "word": "Metal pins",
     "definition": "The conductive metal prongs located on an electrical plug.",
     "example": "We should not touch the _____ of a plug when plugging it into a socket.",
     "vietnamese": "Chân cắm kim loại."
   },
   {
-    "unit": "Unit 4",
+    "unit": "4",
     "word": "Volcanic ash",
     "definition": "Material produced from a volcano that can be harmful to breathe, but can also fertilize soil.",
     "example": "_____ covers buildings and crops.",
     "vietnamese": "Tro núi lửa."
   },
   {
-    "unit": "Unit 5",
+    "unit": "5",
     "word": "Anticlockwise",
     "definition": "In the opposite direction to a clock's hands.",
     "example": "Earth orbits the sun in an _____ direction.",
     "vietnamese": "Ngược chiều kim đồng hồ."
   },
   {
-    "unit": "Unit 5",
+    "unit": "5",
     "word": "Proof",
     "definition": "Scientific evidence that something is true.",
     "example": "Scientists use observations of the solar system as _____ of how planets move.",
     "vietnamese": "Bằng chứng."
   },
   {
-    "unit": "Unit 5",
+    "unit": "5",
     "word": "Asteroids",
     "definition": "Rocky masses that orbit the Sun.",
     "example": "_____ are rocky objects found in our solar system.",
     "vietnamese": "Tiểu hành tinh."
   },
   {
-    "unit": "Unit 5",
+    "unit": "5",
     "word": "Muddy Water",
     "definition": "Unclear, dark water that absorbs light.",
     "example": "_____ is listed as a surface that absorbs light rather than reflecting it.",
