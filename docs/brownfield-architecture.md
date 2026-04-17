@@ -1,5 +1,9 @@
 # Wordlist Quiz Brownfield Architecture Document
 
+<!-- unid-meta
+unid: arch:wordlist-quiz:brownfield-current-state-introduction
+fulfills: []
+-->
 ## Introduction
 
 This document captures the CURRENT STATE of the Wordlist Quiz codebase, including technical debt, workarounds, and real-world patterns. It serves as a reference for AI agents and developers working on enhancements.
@@ -14,6 +18,10 @@ Comprehensive documentation of the entire system as it currently exists. The pro
 | ---------- | ------- | --------------------------- | --------------------------- |
 | 2026-02-23 | 1.0     | Initial brownfield analysis | Antigravity (Agile Analyst) |
 
+<!-- unid-meta
+unid: arch:wordlist-quiz:brownfield-current-state-quick-reference
+fulfills: []
+-->
 ## Quick Reference - Key Files and Entry Points
 
 ### Critical Files for Understanding the System
@@ -23,6 +31,10 @@ Comprehensive documentation of the entire system as it currently exists. The pro
 - **Game Component Registry**: `src/components/games/` (Note: Actually exists flattened within `src/components/`, e.g., `src/components/Quiz.js`, `src/components/WordSearch.js`)
 - **JSON Data Content**: `public/db/wordlist_*.json` (Static vocabulary databases)
 
+<!-- unid-meta
+unid: arch:wordlist-quiz:brownfield-current-state-high-level-architecture
+fulfills: []
+-->
 ## High Level Architecture
 
 ### Technical Summary
@@ -49,6 +61,10 @@ The application is a pure client-side React Single Page Application (SPA). It ha
 - Package Manager: npm
 - Notable: Word lists are pulled from `/public/db/` statically rather than through an API layer.
 
+<!-- unid-meta
+unid: arch:wordlist-quiz:brownfield-current-state-source-tree-module-organization
+fulfills: []
+-->
 ## Source Tree and Module Organization
 
 ### Project Structure (Actual)
@@ -82,6 +98,10 @@ root/
 - **Learning Algorithm**: `src/learningAlgorithm.js` - Contains `updateWordLearning` and `getWordsForReview`. Controls probability bounds (0.6x mastery to 2.0x needs practice).
 - **Multiple Choice Quiz Game**: `src/components/Quiz.js` - Reference implementation that acts as the contract consumer for the unified loop.
 
+<!-- unid-meta
+unid: arch:wordlist-quiz:brownfield-current-state-data-models-apis
+fulfills: []
+-->
 ## Data Models and APIs
 
 ### Data Schema (localStorage)
@@ -107,6 +127,10 @@ Data fetched from `public/db/wordlist_*.json`:
 }
 ```
 
+<!-- unid-meta
+unid: arch:wordlist-quiz:brownfield-current-state-technical-debt-known-issues
+fulfills: []
+-->
 ## Technical Debt and Known Issues
 
 ### Critical Technical Debt
@@ -124,6 +148,10 @@ Data fetched from `public/db/wordlist_*.json`:
 - **Component Contract Adherence**: Any new `/src/components/*` that represents a "Game" MUST respect the `GameProps` contract specifically taking `words`, emitting `onAnswer(word, isCorrect, ms)`, and emitting `onComplete(results)`.
 - **Timer Reset Dependencies**: Within Games, `questionStartTime` state must immediately reset in `useEffect` arrays observing `currentIndex` to prevent inaccurate response profiling which cascades into broken spaced-repetition logic.
 
+<!-- unid-meta
+unid: arch:wordlist-quiz:brownfield-current-state-integration-points-external-dependencies
+fulfills: []
+-->
 ## Integration Points and External Dependencies
 
 ### Internal Integration Points
@@ -131,6 +159,10 @@ Data fetched from `public/db/wordlist_*.json`:
 - Data is retrieved statically via Fetch API pointing at standard `public/db/` paths based on base URL parameters.
 - There are NO external REST API services required; the entire loop handles state inside browser DOM.
 
+<!-- unid-meta
+unid: arch:wordlist-quiz:brownfield-current-state-development-deployment
+fulfills: []
+-->
 ## Development and Deployment
 
 ### Local Development Setup
@@ -145,6 +177,10 @@ Data fetched from `public/db/wordlist_*.json`:
 - **Output**: Generates optimized static assets in `/build`.
 - **Deployment Strategy**: Output directory is ready to drop into any static host (Netlify, GitHub Pages, Vercel) since there's zero runtime dependency.
 
+<!-- unid-meta
+unid: arch:wordlist-quiz:brownfield-current-state-testing-reality
+fulfills: []
+-->
 ## Testing Reality
 
 ### Current Test Coverage

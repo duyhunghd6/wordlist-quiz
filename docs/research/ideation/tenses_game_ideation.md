@@ -1,5 +1,9 @@
 # Tenses Game Ideation for Vietnamese Kids
 
+<!-- unid-meta
+unid: research:grade3-esl:tenses-game-overview
+fulfills: []
+-->
 ## Overview
 
 Based on the provided research documents covering pedagogy for Vietnamese ESL learners, interactive app design, and cognitive studying methodologies, we have brainstormed 15 game concepts to teach English Tenses. These concepts were evaluated using the three core agent skills:
@@ -10,6 +14,10 @@ Based on the provided research documents covering pedagogy for Vietnamese ESL le
 
 ---
 
+<!-- unid-meta
+unid: research:grade3-esl:tenses-landscape
+fulfills: []
+-->
 ## The 12 English Tenses Landscape
 
 To ensure comprehensive coverage, games must eventually address all tenses, progressing from foundational to complex.
@@ -37,6 +45,10 @@ To ensure comprehensive coverage, games must eventually address all tenses, prog
 
 ---
 
+<!-- unid-meta
+unid: research:grade3-esl:tenses-game-ideas
+fulfills: []
+-->
 ## 15 Brainstormed Game Ideas
 
 ### Foundational Games
@@ -101,6 +113,10 @@ To ensure comprehensive coverage, games must eventually address all tenses, prog
 
 ---
 
+<!-- unid-meta
+unid: research:grade3-esl:tenses-game-shortlist
+fulfills: []
+-->
 ## Top 3 Selected Games for Implementation
 
 After applying the verification criteria from the QA personas, the following three games are selected for implementation due to their strict adherence to avoiding time-limits, promoting Active Recall, using Shape Coding, explicitly addressing Vietnamese L1 negative transfer, and covering a range of simple to complex tenses:

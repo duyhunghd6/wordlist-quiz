@@ -1,3 +1,7 @@
+<!-- unid-meta
+unid: prd:grade3-esl:learning-objectives-week-25
+fulfills: []
+-->
 ### Week 25
 
 4Rm.02 Read, with support, an increasing range of short, simple fiction and non-fiction texts with confidence and enjoyment.

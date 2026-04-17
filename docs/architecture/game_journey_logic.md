@@ -2,6 +2,10 @@
 
 This document explains the internal mechanics, component logic, and the game categorization filtering system inside the `GameJourney.js` component.
 
+<!-- unid-meta
+unid: arch:wordlist-quiz:game-journey-data-structure-state
+fulfills: []
+-->
 ## 1. Data Structure & State
 
 The `GameJourney` component utilizes hardcoded structures to frame educational progression:
@@ -12,6 +16,10 @@ The `GameJourney` component utilizes hardcoded structures to frame educational p
   - Each node dictates its ID, description, and an expected game `type` (`vocab`, `grammar`, `science`, or `both`).
 - **`GAME_ICONS`**: A dictionary that maps game string names to pedagogical metadata (Phosphor React icons, theme colors, and visual tags).
 
+<!-- unid-meta
+unid: arch:wordlist-quiz:game-journey-categorization-filtering
+fulfills: []
+-->
 ## 2. Game Categorization & Filtering Architecture
 
 The logic for how game categories are displayed is managed in three distinct layers within the dashboard modal:
@@ -49,6 +57,10 @@ The visual representation of a game, including its color scheme and pedagogical 
 4. Iterates through the predefined string tags (e.g., `["Math", "Pairs"]`) and renders them as pill badges beneath the title.
 5. If a game is missing from the dictionary, it defaults safely to the "Quiz" styling.
 
+<!-- unid-meta
+unid: arch:wordlist-quiz:game-journey-map-drawing-strategy
+fulfills: []
+-->
 ## 3. Map Drawing Strategy
 - Uses a `useEffect` wrapped `getBoundingClientRect()` calculation against the rendered DOM nodes.
 - Extracts an SVG `path` built entirely utilizing Bezier Curves (`C`) spanning from the geometric centers of the `locked`, `active`, and `completed` nodes.

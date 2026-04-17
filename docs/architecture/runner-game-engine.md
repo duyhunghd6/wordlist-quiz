@@ -6,6 +6,10 @@ This document outlines how the game functions to assist future developers in mai
 
 ---
 
+<!-- unid-meta
+unid: arch:wordlist-quiz:runner-game-core-components
+fulfills: []
+-->
 ## Core Components
 
 The game is split into two primary layers:
@@ -23,6 +27,10 @@ The game is split into two primary layers:
 
 ---
 
+<!-- unid-meta
+unid: arch:wordlist-quiz:runner-game-difficulty-progression
+fulfills: []
+-->
 ## Difficulty Progression (The 6 Tiers)
 
 The engine automatically scales through 6 tiers based on consecutive correct answers. If a user gets a question wrong, their streak drops slightly, ensuring they aren't punished entirely but keeping them at an appropriate challenge level.
@@ -38,6 +46,10 @@ The engine automatically scales through 6 tiers based on consecutive correct ans
 
 ---
 
+<!-- unid-meta
+unid: arch:wordlist-quiz:runner-game-pedagogical-algorithms
+fulfills: []
+-->
 ## Pedagogical Algorithms
 
 ### 1. The Anti-Repetition Buffer (`recentWords`)
@@ -63,6 +75,10 @@ The distractor selection algorithms (`createSpellingDistractors` and `pickTwoDis
 
 ---
 
+<!-- unid-meta
+unid: arch:wordlist-quiz:runner-game-tense-sentence-database
+fulfills: []
+-->
 ## Enterprise Tense Sentence Database (Level 5)
 
 The `TENSE_TF` (Tense True/False) questions do **not** rely on standard regex string scrambling, as that creates low-quality, chaotic English.
