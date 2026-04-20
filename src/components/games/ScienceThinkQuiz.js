@@ -198,7 +198,7 @@ const ScienceThinkQuiz = ({ words, selectedUnits, onAnswer, onComplete, onHome, 
           <div className="stq-difficulty-hero">
             <Brain size={64} weight="duotone" color="#7c3aed" />
             <h3>Choose Your Challenge</h3>
-            <p>Unit 5: Light & Solar System</p>
+            <p>Selected Units: {selectedUnits?.join(', ') || '5'}</p>
           </div>
 
           <div className="stq-difficulty-grid">

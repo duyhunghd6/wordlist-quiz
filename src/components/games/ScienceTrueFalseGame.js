@@ -174,7 +174,7 @@ const ScienceTrueFalseGame = ({ words, selectedUnits, onAnswer, onComplete, onHo
           <div className="stf-difficulty-hero">
             <Brain size={64} weight="duotone" color="#ec4899" />
             <h3>Fact or Fiction?</h3>
-            <p>Unit 5: Light & Solar System</p>
+            <p>Selected Units: {selectedUnits?.join(', ') || '5'}</p>
           </div>
 
           <div className="stf-difficulty-grid">
