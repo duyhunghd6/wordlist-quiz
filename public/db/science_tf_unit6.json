@@ -1,0 +1,622 @@
+[
+  {
+    "id": "tf_6_001",
+    "unit": "6.1",
+    "topic": "Circuits",
+    "difficulty": "easy",
+    "statement": "A circuit must be a complete, unbroken path for the light to turn on.",
+    "isTrue": true,
+    "explanation": "True! Electricity can only flow through a complete circuit with no gaps.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_6_002",
+    "unit": "6.1",
+    "topic": "Circuits",
+    "difficulty": "easy",
+    "statement": "A metal key will stop the light from turning on in a circuit.",
+    "isTrue": false,
+    "explanation": "False! A metal key is a conductor. It completes the circuit and the light turns on.",
+    "thinkingSkill": "apply"
+  },
+  {
+    "id": "tf_6_003",
+    "unit": "6.1",
+    "topic": "Circuits",
+    "difficulty": "easy",
+    "statement": "A rubber duck placed in a circuit will light up the bulb.",
+    "isTrue": false,
+    "explanation": "False! Rubber is an insulator. It breaks the circuit, so the light stays off.",
+    "thinkingSkill": "apply"
+  },
+  {
+    "id": "tf_6_004",
+    "unit": "6.1",
+    "topic": "Circuits",
+    "difficulty": "medium",
+    "statement": "If there is a gap in a circuit, electricity can still flow through.",
+    "isTrue": false,
+    "explanation": "False! A gap breaks the circuit completely. Electricity needs an unbroken conductive path to flow.",
+    "thinkingSkill": "reason"
+  },
+  {
+    "id": "tf_6_005",
+    "unit": "6.2",
+    "topic": "Circuit components",
+    "difficulty": "easy",
+    "statement": "A cell stores electricity.",
+    "isTrue": true,
+    "explanation": "True! A cell stores electrical energy, typically at 1.5 volts.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_6_006",
+    "unit": "6.2",
+    "topic": "Circuit components",
+    "difficulty": "easy",
+    "statement": "A battery is the same thing as a single cell.",
+    "isTrue": false,
+    "explanation": "False! A single unit is called a cell. Two or more cells connected together make a battery.",
+    "thinkingSkill": "compare"
+  },
+  {
+    "id": "tf_6_007",
+    "unit": "6.2",
+    "topic": "Circuit components",
+    "difficulty": "easy",
+    "statement": "A switch opens and closes a circuit.",
+    "isTrue": true,
+    "explanation": "True! A switch controls the flow of electricity by opening (breaking) or closing (completing) the circuit.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_6_008",
+    "unit": "6.2",
+    "topic": "Circuit components",
+    "difficulty": "medium",
+    "statement": "A lamp holder connects the lamp to the circuit.",
+    "isTrue": true,
+    "explanation": "True! The lamp holder keeps the lamp in place and connects it to the wires so electricity can flow through.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_6_009",
+    "unit": "6.2",
+    "topic": "Circuit components",
+    "difficulty": "medium",
+    "statement": "A circuit without a switch means the lamp can never turn on.",
+    "isTrue": false,
+    "explanation": "False! Without a switch, the circuit is always complete, so the lamp will stay on permanently with no easy way to turn it off.",
+    "thinkingSkill": "predict"
+  },
+  {
+    "id": "tf_6_010",
+    "unit": "6.3",
+    "topic": "Conductors and insulators",
+    "difficulty": "easy",
+    "statement": "A conductor lets electricity move through it.",
+    "isTrue": true,
+    "explanation": "True! Conductors are materials that allow electricity to pass through freely. Metals are great conductors.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_6_011",
+    "unit": "6.3",
+    "topic": "Conductors and insulators",
+    "difficulty": "easy",
+    "statement": "An insulator lets electricity move through it easily.",
+    "isTrue": false,
+    "explanation": "False! An insulator blocks the flow of electricity. Materials like plastic, rubber, and wood are insulators.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_6_012",
+    "unit": "6.3",
+    "topic": "Conductors and insulators",
+    "difficulty": "easy",
+    "statement": "Plastic is a good conductor of electricity.",
+    "isTrue": false,
+    "explanation": "False! Plastic is an insulator. It blocks electricity, which is why it is used to cover wires and make appliance handles.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_6_013",
+    "unit": "6.3",
+    "topic": "Conductors and insulators",
+    "difficulty": "medium",
+    "statement": "The handles of electric appliances are insulators to keep you safe.",
+    "isTrue": true,
+    "explanation": "True! Appliance handles are made of insulating materials like plastic so you can safely hold them without getting an electric shock.",
+    "thinkingSkill": "reason"
+  },
+  {
+    "id": "tf_6_014",
+    "unit": "6.3",
+    "topic": "Conductors and insulators",
+    "difficulty": "medium",
+    "statement": "The inside of a cable wire is an insulator.",
+    "isTrue": false,
+    "explanation": "False! The inside of a cable wire is metal, which is a conductor. The plastic covering on the outside is the insulator.",
+    "thinkingSkill": "apply"
+  },
+  {
+    "id": "tf_6_015",
+    "unit": "6.3",
+    "topic": "Conductors and insulators",
+    "difficulty": "medium",
+    "statement": "Salt water is a conductor of electricity.",
+    "isTrue": true,
+    "explanation": "True! The dissolved salt in the water creates particles that help electricity flow through it.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_6_016",
+    "unit": "6.3",
+    "topic": "Conductors and insulators",
+    "difficulty": "medium",
+    "statement": "Tap water is an insulator.",
+    "isTrue": false,
+    "explanation": "False! Tap water is a conductor because it contains dissolved minerals that allow electricity to flow.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_6_017",
+    "unit": "6.3",
+    "topic": "Conductors and insulators",
+    "difficulty": "hard",
+    "statement": "Distilled water is a conductor just like tap water.",
+    "isTrue": false,
+    "explanation": "False! Distilled water is an insulator because it has been purified and has no minerals dissolved in it. Tap water conducts because of its minerals.",
+    "thinkingSkill": "compare"
+  },
+  {
+    "id": "tf_6_018",
+    "unit": "6.4",
+    "topic": "Electrical properties",
+    "difficulty": "easy",
+    "statement": "The water in our body is an insulator.",
+    "isTrue": false,
+    "explanation": "False! The water in our body has dissolved minerals, making it a conductor. That is why we can get electric shocks.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_6_019",
+    "unit": "6.4",
+    "topic": "Electrical properties",
+    "difficulty": "easy",
+    "statement": "Switches turn appliances on and off.",
+    "isTrue": true,
+    "explanation": "True! Switches control the flow of electricity by completing or breaking the circuit.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_6_020",
+    "unit": "6.4",
+    "topic": "Electrical properties",
+    "difficulty": "easy",
+    "statement": "Pylons carry electricity from power stations to homes and schools.",
+    "isTrue": true,
+    "explanation": "True! Pylons are tall metal towers that support cables carrying electricity over long distances.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_6_021",
+    "unit": "6.4",
+    "topic": "Electrical properties",
+    "difficulty": "medium",
+    "statement": "Two cells connected together is called a battery.",
+    "isTrue": true,
+    "explanation": "True! A single unit is a cell. When you connect two or more cells, the combination is called a battery.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_6_022",
+    "unit": "6.4",
+    "topic": "Electrical properties",
+    "difficulty": "medium",
+    "statement": "Switches do not turn appliances on and off.",
+    "isTrue": false,
+    "explanation": "False! Switches are designed specifically to turn appliances on and off by opening and closing the circuit.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_6_023",
+    "unit": "6.5",
+    "topic": "Electrical vocabulary",
+    "difficulty": "easy",
+    "statement": "A wall socket is where we plug in appliances to get electricity.",
+    "isTrue": true,
+    "explanation": "True! Wall sockets connect to the house wiring and provide mains electricity to appliances when plugged in.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_6_024",
+    "unit": "6.5",
+    "topic": "Electrical vocabulary",
+    "difficulty": "easy",
+    "statement": "We measure the strength of electricity in kilograms.",
+    "isTrue": false,
+    "explanation": "False! The strength of electricity is measured in volts. Kilograms measure weight.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_6_025",
+    "unit": "6.5",
+    "topic": "Electrical vocabulary",
+    "difficulty": "medium",
+    "statement": "Mains electricity is the low voltage electricity stored in batteries.",
+    "isTrue": false,
+    "explanation": "False! Mains electricity is high voltage power that comes from power stations. Battery electricity is low voltage.",
+    "thinkingSkill": "compare"
+  },
+  {
+    "id": "tf_6_026",
+    "unit": "6.5",
+    "topic": "Electrical vocabulary",
+    "difficulty": "medium",
+    "statement": "A cord is the plastic-covered wire that connects a plug to an appliance.",
+    "isTrue": true,
+    "explanation": "True! The cord carries electricity from the wall socket plug to the appliance safely inside its plastic cover.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_6_027",
+    "unit": "6.5",
+    "topic": "Electrical vocabulary",
+    "difficulty": "medium",
+    "statement": "An electric shock only happens when you touch very large machines.",
+    "isTrue": false,
+    "explanation": "False! An electric shock can happen whenever a person touches any electrical energy source, even small household appliances and sockets.",
+    "thinkingSkill": "evaluate"
+  },
+  {
+    "id": "tf_6_028",
+    "unit": "6.5",
+    "topic": "Electrical vocabulary",
+    "difficulty": "hard",
+    "statement": "A cable is a single thin wire.",
+    "isTrue": false,
+    "explanation": "False! A cable is a rope of wires — multiple wires bundled together, often used to carry high-voltage electricity.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_6_029",
+    "unit": "6.5",
+    "topic": "Electrical vocabulary",
+    "difficulty": "hard",
+    "statement": "Voltage measures how powerful electricity is.",
+    "isTrue": true,
+    "explanation": "True! Voltage is the measure of electrical power. Higher voltage means more powerful and potentially more dangerous electricity.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_6_030",
+    "unit": "6.6",
+    "topic": "Electrical safety",
+    "difficulty": "easy",
+    "statement": "You should always grip the plastic plug when pulling it out of a socket.",
+    "isTrue": true,
+    "explanation": "True! The plastic plug body is an insulator. Gripping it protects you from electricity.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_6_031",
+    "unit": "6.6",
+    "topic": "Electrical safety",
+    "difficulty": "easy",
+    "statement": "It is safe to pull a plug out by pulling the cord.",
+    "isTrue": false,
+    "explanation": "False! Pulling by the cord damages it and can expose bare wires, which can cause dangerous electric shocks.",
+    "thinkingSkill": "evaluate"
+  },
+  {
+    "id": "tf_6_032",
+    "unit": "6.6",
+    "topic": "Electrical safety",
+    "difficulty": "easy",
+    "statement": "You should never touch the metal pins of a plug.",
+    "isTrue": true,
+    "explanation": "True! Metal pins are conductors. If connected to electricity, touching them could give you a dangerous shock.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_6_033",
+    "unit": "6.6",
+    "topic": "Electrical safety",
+    "difficulty": "medium",
+    "statement": "It is safe to use electrical appliances with wet hands.",
+    "isTrue": false,
+    "explanation": "False! Water is a conductor. Wet hands can create a path for electricity to flow through your body.",
+    "thinkingSkill": "reason"
+  },
+  {
+    "id": "tf_6_034",
+    "unit": "6.6",
+    "topic": "Electrical safety",
+    "difficulty": "medium",
+    "statement": "Overloading a socket with too many plugs is dangerous.",
+    "isTrue": true,
+    "explanation": "True! Plugging too many appliances into one socket draws too much electricity and can cause overheating or fire.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_6_035",
+    "unit": "6.6",
+    "topic": "Electrical safety",
+    "difficulty": "medium",
+    "statement": "Bare wires are perfectly safe to touch.",
+    "isTrue": false,
+    "explanation": "False! Bare wires have lost their protective insulating cover. Touching them can cause a dangerous electric shock.",
+    "thinkingSkill": "evaluate"
+  },
+  {
+    "id": "tf_6_036",
+    "unit": "6.6",
+    "topic": "Electrical safety",
+    "difficulty": "medium",
+    "statement": "You should stay away from pylons because they carry very high voltage electricity.",
+    "isTrue": true,
+    "explanation": "True! Pylons carry extremely powerful electricity. Getting too close to them is very dangerous.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_6_037",
+    "unit": "6.6",
+    "topic": "Electrical safety",
+    "difficulty": "hard",
+    "statement": "Running electrical cords under rugs is a safe practice.",
+    "isTrue": false,
+    "explanation": "False! Cords under rugs can overheat because the rug traps the heat. This can cause fires.",
+    "thinkingSkill": "evaluate"
+  },
+  {
+    "id": "tf_6_038",
+    "unit": "6.6",
+    "topic": "Electrical safety",
+    "difficulty": "hard",
+    "statement": "Sticking a metal fork into a wall socket is extremely dangerous.",
+    "isTrue": true,
+    "explanation": "True! A metal fork is a conductor. Electricity from the socket would flow through the fork and into your body, causing a severe shock.",
+    "thinkingSkill": "reason"
+  },
+  {
+    "id": "tf_6_039",
+    "unit": "6.3",
+    "topic": "Conductors and insulators",
+    "difficulty": "easy",
+    "statement": "Wood is a good conductor of electricity.",
+    "isTrue": false,
+    "explanation": "False! Wood is an insulator. It does not let electricity flow through it.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_6_040",
+    "unit": "6.3",
+    "topic": "Conductors and insulators",
+    "difficulty": "easy",
+    "statement": "Most metals are good conductors of electricity.",
+    "isTrue": true,
+    "explanation": "True! Metals like iron, copper, and gold all conduct electricity very well.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_6_041",
+    "unit": "6.1",
+    "topic": "Circuits",
+    "difficulty": "medium",
+    "statement": "A cork placed in a circuit will complete the circuit and light the bulb.",
+    "isTrue": false,
+    "explanation": "False! Cork is an insulator. It breaks the circuit, so the bulb will not light up.",
+    "thinkingSkill": "apply"
+  },
+  {
+    "id": "tf_6_042",
+    "unit": "6.4",
+    "topic": "Electrical properties",
+    "difficulty": "hard",
+    "statement": "Electricity is generated at power stations and travels through cables on pylons.",
+    "isTrue": true,
+    "explanation": "True! Power stations generate electricity, which then travels along cables supported by pylons to reach homes and schools.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_6_043",
+    "unit": "6.3",
+    "topic": "Conductors and insulators",
+    "difficulty": "hard",
+    "statement": "A cable uses both a conductor (metal inside) and an insulator (plastic outside) for safety.",
+    "isTrue": true,
+    "explanation": "True! The metal inside carries electricity while the plastic outside prevents shocks. Both materials are essential for safe use.",
+    "thinkingSkill": "analyze"
+  },
+  {
+    "id": "tf_6_044",
+    "unit": "6.1",
+    "topic": "Circuits",
+    "difficulty": "hard",
+    "statement": "You can test if a material is a conductor by placing it in a circuit gap to see if the lamp turns on.",
+    "isTrue": true,
+    "explanation": "True! If the lamp lights up, the material completes the circuit and is a conductor. If it stays off, the material is an insulator.",
+    "thinkingSkill": "design"
+  },
+  {
+    "id": "tf_6_045",
+    "unit": "6.2",
+    "topic": "Circuit components",
+    "difficulty": "easy",
+    "statement": "Wires carry electricity from one part of the circuit to another.",
+    "isTrue": true,
+    "explanation": "True! Wires are conductors that connect all the parts of the circuit, allowing electricity to flow through.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_6_046",
+    "unit": "6.5",
+    "topic": "Electrical vocabulary",
+    "difficulty": "easy",
+    "statement": "A plug is a device for connecting to an electricity supply.",
+    "isTrue": true,
+    "explanation": "True! A plug connects an appliance's cord to a wall socket to access mains electricity.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_6_047",
+    "unit": "6.4",
+    "topic": "Electrical properties",
+    "difficulty": "medium",
+    "statement": "A single cell typically stores 1.5 volts of electricity.",
+    "isTrue": true,
+    "explanation": "True! Most standard cells (like AA or AAA) store 1.5 volts of electricity.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_6_048",
+    "unit": "6.6",
+    "topic": "Electrical safety",
+    "difficulty": "easy",
+    "statement": "It is safe to play near pylons.",
+    "isTrue": false,
+    "explanation": "False! Pylons carry extremely high voltage electricity. You should always stay far away from them.",
+    "thinkingSkill": "evaluate"
+  },
+  {
+    "id": "tf_6_049",
+    "unit": "6.3",
+    "topic": "Conductors and insulators",
+    "difficulty": "medium",
+    "statement": "Rubber is a conductor of electricity.",
+    "isTrue": false,
+    "explanation": "False! Rubber is one of the best insulators. It blocks electricity completely, which is why it is used in protective gear.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_6_050",
+    "unit": "6.6",
+    "topic": "Electrical safety",
+    "difficulty": "hard",
+    "statement": "The human body is a conductor of electricity because it contains water with minerals.",
+    "isTrue": true,
+    "explanation": "True! The water in our bodies has dissolved minerals, making our bodies conduct electricity. This is why electric shocks are so dangerous to us.",
+    "thinkingSkill": "reason"
+  },
+  {
+    "id": "tf_6_051",
+    "unit": "6.7",
+    "topic": "Energy transfers",
+    "difficulty": "easy",
+    "statement": "All electrical appliances produce heat energy when they work.",
+    "isTrue": true,
+    "explanation": "True! Every electrical appliance produces some heat when it operates, even if heat is not its main purpose.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_6_052",
+    "unit": "6.7",
+    "topic": "Energy transfers",
+    "difficulty": "easy",
+    "statement": "A food mixer transfers electrical energy into movement energy.",
+    "isTrue": true,
+    "explanation": "True! The motor in a food mixer converts electrical energy into movement (kinetic) energy to spin its blades.",
+    "thinkingSkill": "identify"
+  },
+  {
+    "id": "tf_6_053",
+    "unit": "6.7",
+    "topic": "Energy transfers",
+    "difficulty": "medium",
+    "statement": "A speaker transfers electrical energy into light energy.",
+    "isTrue": false,
+    "explanation": "False! A speaker transfers electrical energy into sound energy, not light energy.",
+    "thinkingSkill": "apply"
+  },
+  {
+    "id": "tf_6_054",
+    "unit": "6.7",
+    "topic": "Energy transfers",
+    "difficulty": "medium",
+    "statement": "When an object cools down, it transfers heat energy to its surroundings.",
+    "isTrue": true,
+    "explanation": "True! Heat energy moves from warmer objects to cooler surroundings until the temperatures even out.",
+    "thinkingSkill": "reason"
+  },
+  {
+    "id": "tf_6_055",
+    "unit": "6.7",
+    "topic": "Energy transfers",
+    "difficulty": "hard",
+    "statement": "Energy can be created and destroyed.",
+    "isTrue": false,
+    "explanation": "False! The law of conservation of energy says that energy cannot be made, lost, used up, or destroyed — only transferred from one form to another.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_6_056",
+    "unit": "6.2",
+    "topic": "Circuit components",
+    "difficulty": "medium",
+    "statement": "Adding an extra lamp to a circuit makes all the lamps glow brighter.",
+    "isTrue": false,
+    "explanation": "False! Adding more lamps means the energy is shared between more components, so each lamp glows dimmer.",
+    "thinkingSkill": "reason"
+  },
+  {
+    "id": "tf_6_057",
+    "unit": "6.2",
+    "topic": "Circuit components",
+    "difficulty": "medium",
+    "statement": "Adding an extra cell to a circuit makes the lamps glow brighter.",
+    "isTrue": true,
+    "explanation": "True! More cells provide more voltage (energy), which makes the lamps receive more power and glow brighter.",
+    "thinkingSkill": "reason"
+  },
+  {
+    "id": "tf_6_058",
+    "unit": "6.2",
+    "topic": "Circuit components",
+    "difficulty": "hard",
+    "statement": "Adding one cell and one lamp at the same time to a circuit keeps the brightness the same.",
+    "isTrue": true,
+    "explanation": "True! Adding both a cell and a lamp increases the power and the load equally, so the brightness stays balanced.",
+    "thinkingSkill": "analyze"
+  },
+  {
+    "id": "tf_6_059",
+    "unit": "6.7",
+    "topic": "Health and vaccination",
+    "difficulty": "medium",
+    "statement": "If fewer people are vaccinated, the number of infections will decrease.",
+    "isTrue": false,
+    "explanation": "False! Fewer vaccinations mean less protection, so diseases spread more easily and infections increase.",
+    "thinkingSkill": "analyze"
+  },
+  {
+    "id": "tf_6_060",
+    "unit": "6.6",
+    "topic": "Electrical safety",
+    "difficulty": "easy",
+    "statement": "Safety caps on medicine bottles prevent young children from opening them.",
+    "isTrue": true,
+    "explanation": "True! Safety caps are specially designed to be difficult for young children to open, protecting them from accidentally taking medicine.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_6_061",
+    "unit": "6.6",
+    "topic": "Electrical safety",
+    "difficulty": "easy",
+    "statement": "You do not need goggles when doing experiments with chemicals.",
+    "isTrue": false,
+    "explanation": "False! You should always wear goggles during chemical experiments to protect your eyes from splashes.",
+    "thinkingSkill": "evaluate"
+  },
+  {
+    "id": "tf_6_062",
+    "unit": "6.7",
+    "topic": "Energy transfers",
+    "difficulty": "easy",
+    "statement": "A lamp transfers electrical energy into light and heat energy.",
+    "isTrue": true,
+    "explanation": "True! A lamp's main purpose is to produce light, but it also produces heat energy as a side effect.",
+    "thinkingSkill": "recall"
+  }
+]

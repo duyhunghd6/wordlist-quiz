@@ -1,0 +1,622 @@
+[
+  {
+    "id": "tf_4_001",
+    "unit": "4.1",
+    "topic": "Earth's layers",
+    "difficulty": "easy",
+    "statement": "The Earth has four main layers.",
+    "isTrue": true,
+    "explanation": "True! The Earth has four layers: the crust, the mantle, the outer core, and the inner core.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_4_002",
+    "unit": "4.1",
+    "topic": "Earth's layers",
+    "difficulty": "easy",
+    "statement": "The crust is the innermost layer of the Earth.",
+    "isTrue": false,
+    "explanation": "False! The crust is the outermost layer. The inner core is at the very centre of the Earth.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_4_003",
+    "unit": "4.1",
+    "topic": "Earth's layers",
+    "difficulty": "easy",
+    "statement": "The Earth's crust is made of rocks.",
+    "isTrue": true,
+    "explanation": "True! The crust is the hard, rocky outer layer that we live on.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_4_004",
+    "unit": "4.1",
+    "topic": "Earth's layers",
+    "difficulty": "easy",
+    "statement": "The core of the Earth is made of gold and silver.",
+    "isTrue": false,
+    "explanation": "False! The core is made of the metals iron and nickel, not gold and silver.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_4_005",
+    "unit": "4.1",
+    "topic": "Earth's layers",
+    "difficulty": "medium",
+    "statement": "The melted rock inside the mantle is called magma.",
+    "isTrue": true,
+    "explanation": "True! The rocks in the mantle are so hot that they melt. This melted rock is called magma.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_4_006",
+    "unit": "4.1",
+    "topic": "Earth's layers",
+    "difficulty": "medium",
+    "statement": "The outer core is solid because it is under so much pressure.",
+    "isTrue": false,
+    "explanation": "False! The outer core is liquid. It is the inner core that is solid due to the extreme force of gravity.",
+    "thinkingSkill": "reason"
+  },
+  {
+    "id": "tf_4_007",
+    "unit": "4.1",
+    "topic": "Earth's layers",
+    "difficulty": "medium",
+    "statement": "The inner core is solid even though it is extremely hot.",
+    "isTrue": true,
+    "explanation": "True! The force of gravity is so strong at the centre that it keeps the inner core in a solid state, even at 6,000 °C.",
+    "thinkingSkill": "reason"
+  },
+  {
+    "id": "tf_4_008",
+    "unit": "4.1",
+    "topic": "Earth's layers",
+    "difficulty": "hard",
+    "statement": "The inner core is about as hot as the surface of the Sun.",
+    "isTrue": true,
+    "explanation": "True! The inner core reaches about 6,000 °C, which is roughly the same temperature as the surface of the Sun.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_4_009",
+    "unit": "4.1",
+    "topic": "Earth's layers",
+    "difficulty": "hard",
+    "statement": "The mantle is thinner than the crust.",
+    "isTrue": false,
+    "explanation": "False! The mantle is much thicker than the crust. The crust is actually the thinnest layer of the Earth.",
+    "thinkingSkill": "compare"
+  },
+  {
+    "id": "tf_4_010",
+    "unit": "4.1",
+    "topic": "Earth's layers",
+    "difficulty": "hard",
+    "statement": "As you go deeper into the Earth, it generally gets colder.",
+    "isTrue": false,
+    "explanation": "False! It actually gets hotter as you go deeper. The inner core is the hottest layer of the Earth.",
+    "thinkingSkill": "reason"
+  },
+  {
+    "id": "tf_4_011",
+    "unit": "4.2",
+    "topic": "Volcanoes and eruptions",
+    "difficulty": "easy",
+    "statement": "When magma comes out of a volcano, it is called lava.",
+    "isTrue": true,
+    "explanation": "True! Magma is the name for melted rock underground. Once it reaches the surface, we call it lava.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_4_012",
+    "unit": "4.2",
+    "topic": "Volcanoes and eruptions",
+    "difficulty": "easy",
+    "statement": "A composite volcano is shaped like a flat table.",
+    "isTrue": false,
+    "explanation": "False! A composite volcano is cone-shaped, like an upside-down ice cream cone.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_4_013",
+    "unit": "4.2",
+    "topic": "Volcanoes and eruptions",
+    "difficulty": "easy",
+    "statement": "Lava can destroy buildings and plants.",
+    "isTrue": true,
+    "explanation": "True! Hot lava burns and buries everything in its path, including crops and buildings.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_4_014",
+    "unit": "4.2",
+    "topic": "Volcanoes and eruptions",
+    "difficulty": "easy",
+    "statement": "The crater is the opening at the top of a volcano.",
+    "isTrue": true,
+    "explanation": "True! The crater is the bowl-shaped opening at the top of a volcano where material comes out.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_4_015",
+    "unit": "4.2",
+    "topic": "Volcanoes and eruptions",
+    "difficulty": "medium",
+    "statement": "Volcanic ash and gases are good for people to breathe.",
+    "isTrue": false,
+    "explanation": "False! People become ill when they breathe in volcanic ash and poisonous gases.",
+    "thinkingSkill": "evaluate"
+  },
+  {
+    "id": "tf_4_016",
+    "unit": "4.2",
+    "topic": "Volcanoes and eruptions",
+    "difficulty": "medium",
+    "statement": "Lava and ash can make the soil better for growing crops.",
+    "isTrue": true,
+    "explanation": "True! Even though eruptions are destructive, lava creates good soil and ash works as a natural fertilizer.",
+    "thinkingSkill": "reason"
+  },
+  {
+    "id": "tf_4_017",
+    "unit": "4.2",
+    "topic": "Volcanoes and eruptions",
+    "difficulty": "medium",
+    "statement": "A volcanic plateau is a deep hole caused by a volcanic eruption.",
+    "isTrue": false,
+    "explanation": "False! A volcanic plateau is a flat area of land formed when lava cools and hardens into rock.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_4_018",
+    "unit": "4.2",
+    "topic": "Volcanoes and eruptions",
+    "difficulty": "medium",
+    "statement": "A magma chamber is a large pool of liquid rock beneath a volcano.",
+    "isTrue": true,
+    "explanation": "True! The magma chamber stores molten rock beneath the surface. When pressure builds, the magma rises and the volcano erupts.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_4_019",
+    "unit": "4.2",
+    "topic": "Volcanoes and eruptions",
+    "difficulty": "hard",
+    "statement": "Volcanoes can only cause harm — they have no positive effects.",
+    "isTrue": false,
+    "explanation": "False! While volcanoes are destructive, they also create fertile soil, new landforms, and provide geothermal energy.",
+    "thinkingSkill": "evaluate"
+  },
+  {
+    "id": "tf_4_020",
+    "unit": "4.2",
+    "topic": "Volcanoes and eruptions",
+    "difficulty": "hard",
+    "statement": "Geothermal energy comes from heat stored underground in volcanic regions.",
+    "isTrue": true,
+    "explanation": "True! Underground water in volcanic areas is heated by magma. This heat can be used to generate electricity.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_4_021",
+    "unit": "4.2",
+    "topic": "Volcanoes and eruptions",
+    "difficulty": "hard",
+    "statement": "A vent is a pool of water inside a volcano.",
+    "isTrue": false,
+    "explanation": "False! A vent is an opening in a volcano where lava, ash, and gases escape during an eruption.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_4_022",
+    "unit": "4.3",
+    "topic": "Earthquakes and tsunamis",
+    "difficulty": "easy",
+    "statement": "Earthquakes are caused by movements of rocks in the Earth's crust.",
+    "isTrue": true,
+    "explanation": "True! When large rock sections (tectonic plates) in the crust move and rub against each other, they cause earthquakes.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_4_023",
+    "unit": "4.3",
+    "topic": "Earthquakes and tsunamis",
+    "difficulty": "easy",
+    "statement": "A tsunami is a type of strong wind.",
+    "isTrue": false,
+    "explanation": "False! A tsunami is a giant ocean wave, usually caused by an earthquake under the sea.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_4_024",
+    "unit": "4.3",
+    "topic": "Earthquakes and tsunamis",
+    "difficulty": "easy",
+    "statement": "The epicentre is the point on the Earth's surface directly above where an earthquake starts.",
+    "isTrue": true,
+    "explanation": "True! The epicentre is on the surface directly above the underground focus point. It usually has the most damage.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_4_025",
+    "unit": "4.3",
+    "topic": "Earthquakes and tsunamis",
+    "difficulty": "medium",
+    "statement": "When tectonic plates rub together, the energy transfers into waves.",
+    "isTrue": true,
+    "explanation": "True! The friction between the plates creates energy that transfers into seismic waves, causing the ground to shake.",
+    "thinkingSkill": "reason"
+  },
+  {
+    "id": "tf_4_026",
+    "unit": "4.3",
+    "topic": "Earthquakes and tsunamis",
+    "difficulty": "medium",
+    "statement": "Earthquakes can cause landslides where rocks and soil slide down slopes.",
+    "isTrue": true,
+    "explanation": "True! The shaking from earthquakes is strong enough to make rocks and soil slide down slopes, creating landslides.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_4_027",
+    "unit": "4.3",
+    "topic": "Earthquakes and tsunamis",
+    "difficulty": "medium",
+    "statement": "Tsunami waves get smaller as they approach the coast.",
+    "isTrue": false,
+    "explanation": "False! Tsunami waves get bigger as they approach the coast because the water becomes shallower.",
+    "thinkingSkill": "reason"
+  },
+  {
+    "id": "tf_4_028",
+    "unit": "4.3",
+    "topic": "Earthquakes and tsunamis",
+    "difficulty": "hard",
+    "statement": "The focus and the epicentre of an earthquake are the same thing.",
+    "isTrue": false,
+    "explanation": "False! The focus is underground where the earthquake starts. The epicentre is on the surface directly above the focus.",
+    "thinkingSkill": "compare"
+  },
+  {
+    "id": "tf_4_029",
+    "unit": "4.3",
+    "topic": "Earthquakes and tsunamis",
+    "difficulty": "hard",
+    "statement": "The Pacific Ring of Fire is an area with very few earthquakes and volcanoes.",
+    "isTrue": false,
+    "explanation": "False! The Pacific Ring of Fire is an area around the Pacific Ocean where many tectonic plates meet, causing frequent volcanoes and earthquakes.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_4_030",
+    "unit": "4.3",
+    "topic": "Earthquakes and tsunamis",
+    "difficulty": "hard",
+    "statement": "A seismometer is a tool that measures the strength of earthquakes.",
+    "isTrue": true,
+    "explanation": "True! Scientists use seismometers to detect and measure the strength of seismic waves from earthquakes.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_4_031",
+    "unit": "4.4",
+    "topic": "Animal adaptations",
+    "difficulty": "easy",
+    "statement": "A giraffe has a long neck to eat leaves from tall trees.",
+    "isTrue": true,
+    "explanation": "True! The giraffe's long neck is an adaptation that helps it reach leaves high up in trees and also see predators from far away.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_4_032",
+    "unit": "4.4",
+    "topic": "Animal adaptations",
+    "difficulty": "easy",
+    "statement": "Fish breathe underwater using their lungs.",
+    "isTrue": false,
+    "explanation": "False! Fish use organs called gills to breathe underwater, not lungs.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_4_033",
+    "unit": "4.4",
+    "topic": "Animal adaptations",
+    "difficulty": "easy",
+    "statement": "A duck has webbed feet to help it swim.",
+    "isTrue": true,
+    "explanation": "True! The skin between a duck's toes acts like a paddle, helping it push through water efficiently.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_4_034",
+    "unit": "4.4",
+    "topic": "Animal adaptations",
+    "difficulty": "easy",
+    "statement": "Adaptations are special features that help animals survive.",
+    "isTrue": true,
+    "explanation": "True! Adaptations are physical features or behaviours that help living things survive in their specific habitat.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_4_035",
+    "unit": "4.4",
+    "topic": "Animal adaptations",
+    "difficulty": "medium",
+    "statement": "A duck has webbed feet so it can grip onto tree branches.",
+    "isTrue": false,
+    "explanation": "False! A duck's webbed feet are for swimming, not gripping. Birds that perch on trees have separate, curved toes.",
+    "thinkingSkill": "evaluate"
+  },
+  {
+    "id": "tf_4_036",
+    "unit": "4.4",
+    "topic": "Animal adaptations",
+    "difficulty": "medium",
+    "statement": "A flamingo's flat beak helps it strain (filter) small plants and animals from water.",
+    "isTrue": true,
+    "explanation": "True! The flamingo's beak works like a strainer, filtering tiny organisms from shallow water.",
+    "thinkingSkill": "apply"
+  },
+  {
+    "id": "tf_4_037",
+    "unit": "4.4",
+    "topic": "Animal adaptations",
+    "difficulty": "medium",
+    "statement": "A kingfisher's sharp, pointed beak is used for filtering water.",
+    "isTrue": false,
+    "explanation": "False! A kingfisher's sharp beak is used like a spear to catch fish, not to filter water. That's what a flamingo's beak does.",
+    "thinkingSkill": "compare"
+  },
+  {
+    "id": "tf_4_038",
+    "unit": "4.4",
+    "topic": "Animal adaptations",
+    "difficulty": "medium",
+    "statement": "Camouflage helps animals hide from predators by blending in with their surroundings.",
+    "isTrue": true,
+    "explanation": "True! Animals with camouflage have colours or patterns that match their environment, making them hard to spot.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_4_039",
+    "unit": "4.4",
+    "topic": "Animal adaptations",
+    "difficulty": "hard",
+    "statement": "An elephant's trunk is an adaptation only used for breathing.",
+    "isTrue": false,
+    "explanation": "False! An elephant's trunk is a multi-purpose adaptation used for breathing, drinking water, and grabbing food from trees.",
+    "thinkingSkill": "evaluate"
+  },
+  {
+    "id": "tf_4_040",
+    "unit": "4.4",
+    "topic": "Animal adaptations",
+    "difficulty": "hard",
+    "statement": "All birds have the same type of beak because they all eat the same food.",
+    "isTrue": false,
+    "explanation": "False! Different birds have different beak shapes because they eat different types of food. A flamingo filters water; a kingfisher spears fish.",
+    "thinkingSkill": "analyze"
+  },
+  {
+    "id": "tf_4_041",
+    "unit": "4.4",
+    "topic": "Animal adaptations",
+    "difficulty": "hard",
+    "statement": "An orangutan's long arms are an adaptation for living in tropical forests.",
+    "isTrue": true,
+    "explanation": "True! Orangutans use their long arms and strong fingers to grip branches and swing through the trees of tropical forests.",
+    "thinkingSkill": "apply"
+  },
+  {
+    "id": "tf_4_042",
+    "unit": "4.1",
+    "topic": "Earth's layers",
+    "difficulty": "medium",
+    "statement": "The inner core and outer core are both made of the same metals.",
+    "isTrue": true,
+    "explanation": "True! Both the inner and outer core are made of iron and nickel. The difference is their state: the inner core is solid and the outer core is liquid.",
+    "thinkingSkill": "compare"
+  },
+  {
+    "id": "tf_4_043",
+    "unit": "4.2",
+    "topic": "Volcanoes and eruptions",
+    "difficulty": "easy",
+    "statement": "Magma and lava are the same thing.",
+    "isTrue": false,
+    "explanation": "False! Magma is melted rock underground. Once it reaches the surface through a volcano, we call it lava.",
+    "thinkingSkill": "compare"
+  },
+  {
+    "id": "tf_4_044",
+    "unit": "4.3",
+    "topic": "Earthquakes and tsunamis",
+    "difficulty": "medium",
+    "statement": "Earthquakes can only happen on land, not under the sea.",
+    "isTrue": false,
+    "explanation": "False! Earthquakes can happen under the sea too. When they do, they can cause giant waves called tsunamis.",
+    "thinkingSkill": "reason"
+  },
+  {
+    "id": "tf_4_045",
+    "unit": "4.4",
+    "topic": "Animal adaptations",
+    "difficulty": "easy",
+    "statement": "A habitat is the natural home of an animal.",
+    "isTrue": true,
+    "explanation": "True! A habitat is the natural environment where an animal lives, finds food, water, and shelter.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_4_046",
+    "unit": "4.1",
+    "topic": "Earth's layers",
+    "difficulty": "easy",
+    "statement": "We can easily dig down to the Earth's core.",
+    "isTrue": false,
+    "explanation": "False! The Earth's layers are thousands of kilometres deep. No one has ever dug past even a small fraction of the crust.",
+    "thinkingSkill": "reason"
+  },
+  {
+    "id": "tf_4_047",
+    "unit": "4.2",
+    "topic": "Volcanoes and eruptions",
+    "difficulty": "hard",
+    "statement": "Composite volcanoes are built from alternating layers of ash and lava that have hardened over time.",
+    "isTrue": true,
+    "explanation": "True! Each eruption adds new layers of ash and lava. Over many eruptions, these layers build up to form the cone shape.",
+    "thinkingSkill": "analyze"
+  },
+  {
+    "id": "tf_4_048",
+    "unit": "4.4",
+    "topic": "Animal adaptations",
+    "difficulty": "hard",
+    "statement": "Bears use their sharp claws mainly for climbing trees.",
+    "isTrue": false,
+    "explanation": "False! While some bears can climb, their sharp claws are primarily adapted for catching fish and digging for food.",
+    "thinkingSkill": "evaluate"
+  },
+  {
+    "id": "tf_4_049",
+    "unit": "4.3",
+    "topic": "Earthquakes and tsunamis",
+    "difficulty": "easy",
+    "statement": "Tectonic plates are big pieces of the Earth's crust that can move.",
+    "isTrue": true,
+    "explanation": "True! The Earth's crust is made of large sections called tectonic plates that fit together like puzzle pieces and slowly move.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_4_050",
+    "unit": "4.4",
+    "topic": "Animal adaptations",
+    "difficulty": "medium",
+    "statement": "An animal's characteristics are the special features that help describe it.",
+    "isTrue": true,
+    "explanation": "True! Characteristics are the special features or qualities of a living thing, such as a giraffe's long neck or a duck's webbed feet.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_4_051",
+    "unit": "4.5",
+    "topic": "Muscles and movement",
+    "difficulty": "easy",
+    "statement": "Muscles are joined to the skeleton.",
+    "isTrue": true,
+    "explanation": "True! Muscles are attached to bones in the skeleton and pull on them to create movement.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_4_052",
+    "unit": "4.5",
+    "topic": "Muscles and movement",
+    "difficulty": "easy",
+    "statement": "Muscles push on bones to make them move.",
+    "isTrue": false,
+    "explanation": "False! Muscles can only pull on bones — they cannot push. Contraction (shortening) pulls the bone.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_4_053",
+    "unit": "4.5",
+    "topic": "Muscles and movement",
+    "difficulty": "medium",
+    "statement": "Muscles work in pairs to move bones.",
+    "isTrue": true,
+    "explanation": "True! Muscles always work in pairs with opposite actions — one contracts while the other relaxes.",
+    "thinkingSkill": "reason"
+  },
+  {
+    "id": "tf_4_054",
+    "unit": "4.5",
+    "topic": "Muscles and movement",
+    "difficulty": "medium",
+    "statement": "When one muscle contracts and gets shorter, the other muscle in the pair also contracts.",
+    "isTrue": false,
+    "explanation": "False! When one muscle contracts, the other relaxes and gets longer. They work with opposite actions.",
+    "thinkingSkill": "reason"
+  },
+  {
+    "id": "tf_4_055",
+    "unit": "4.5",
+    "topic": "Muscles and movement",
+    "difficulty": "hard",
+    "statement": "Muscles can both push and pull on bones to create movement.",
+    "isTrue": false,
+    "explanation": "False! Muscles can only pull (contract). This is why they must work in pairs — one to pull a bone one way, and another to pull it back.",
+    "thinkingSkill": "evaluate"
+  },
+  {
+    "id": "tf_4_056",
+    "unit": "4.5",
+    "topic": "Skeleton and bones",
+    "difficulty": "easy",
+    "statement": "One function of the skeleton is to protect organs.",
+    "isTrue": true,
+    "explanation": "True! The skeleton protects vital organs. For example, the skull protects the brain and the rib cage protects the heart and lungs.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_4_057",
+    "unit": "4.5",
+    "topic": "Skeleton and bones",
+    "difficulty": "easy",
+    "statement": "The skeleton only helps us move — it has no other job.",
+    "isTrue": false,
+    "explanation": "False! The skeleton does three things: it helps us move, gives shape to our body, and protects our organs.",
+    "thinkingSkill": "evaluate"
+  },
+  {
+    "id": "tf_4_058",
+    "unit": "4.5",
+    "topic": "Vertebrates and invertebrates",
+    "difficulty": "easy",
+    "statement": "Vertebrates are animals with a backbone.",
+    "isTrue": true,
+    "explanation": "True! Vertebrates include fish, birds, reptiles, amphibians, and mammals — all have a backbone.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_4_059",
+    "unit": "4.5",
+    "topic": "Vertebrates and invertebrates",
+    "difficulty": "easy",
+    "statement": "A worm is a vertebrate.",
+    "isTrue": false,
+    "explanation": "False! A worm has no backbone, making it an invertebrate.",
+    "thinkingSkill": "identify"
+  },
+  {
+    "id": "tf_4_060",
+    "unit": "4.5",
+    "topic": "Vertebrates and invertebrates",
+    "difficulty": "medium",
+    "statement": "A ladybird (ladybug) is an invertebrate.",
+    "isTrue": true,
+    "explanation": "True! A ladybird is an insect. All insects are invertebrates — they have no backbone but have an exoskeleton.",
+    "thinkingSkill": "identify"
+  },
+  {
+    "id": "tf_4_061",
+    "unit": "4.5",
+    "topic": "Vertebrates and invertebrates",
+    "difficulty": "medium",
+    "statement": "An exoskeleton is a skeleton on the outside of an animal's body.",
+    "isTrue": true,
+    "explanation": "True! An exoskeleton is a hard outer covering found on invertebrates like insects, crabs, and spiders.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_4_062",
+    "unit": "4.5",
+    "topic": "Muscles and movement",
+    "difficulty": "easy",
+    "statement": "Regular exercise makes our bones and muscles weaker.",
+    "isTrue": false,
+    "explanation": "False! Regular exercise makes our bones and muscles stronger and keeps our heart healthy.",
+    "thinkingSkill": "recall"
+  }
+]

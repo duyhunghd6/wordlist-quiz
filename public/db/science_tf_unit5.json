@@ -498,5 +498,225 @@
     "isTrue": false,
     "explanation": "False! The Sun isn't moving across the sky; the Earth is spinning, making the Sun appear to move.",
     "thinkingSkill": "evaluate"
+  },
+  {
+    "id": "tf_5_051",
+    "unit": "5.1",
+    "topic": "Light sources and seeing",
+    "difficulty": "easy",
+    "statement": "Light travels in straight lines called rays.",
+    "isTrue": true,
+    "explanation": "True! Light always travels in perfectly straight paths called rays. Ray diagrams use arrows to show these straight paths.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_5_052",
+    "unit": "5.3",
+    "topic": "Reflection and surfaces",
+    "difficulty": "medium",
+    "statement": "Aluminium foil reflects light better than a mirror.",
+    "isTrue": false,
+    "explanation": "False! A mirror is smoother and specifically designed to reflect light uniformly. Aluminium foil reflects some light but not as cleanly as a mirror.",
+    "thinkingSkill": "compare"
+  },
+  {
+    "id": "tf_5_053",
+    "unit": "5.3",
+    "topic": "Reflection and surfaces",
+    "difficulty": "easy",
+    "statement": "Wood absorbs light because it is dull and rough.",
+    "isTrue": true,
+    "explanation": "True! Wood is an opaque, dull, rough material that absorbs light rather than reflecting it.",
+    "thinkingSkill": "reason"
+  },
+  {
+    "id": "tf_5_054",
+    "unit": "5.3",
+    "topic": "Reflection and surfaces",
+    "difficulty": "medium",
+    "statement": "Muddy water reflects light well because it contains water.",
+    "isTrue": false,
+    "explanation": "False! Muddy water absorbs light because the dirt particles make it dark and rough. Only clear, smooth water reflects light well.",
+    "thinkingSkill": "reason"
+  },
+  {
+    "id": "tf_5_055",
+    "unit": "5.4",
+    "topic": "Solar system",
+    "difficulty": "easy",
+    "statement": "A comet is a lump of ice and dirt that travels around the Sun.",
+    "isTrue": true,
+    "explanation": "True! Comets are made of ice, dust, and rock. When they get close to the Sun, they develop bright, glowing tails.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_5_056",
+    "unit": "5.4",
+    "topic": "Solar system",
+    "difficulty": "medium",
+    "statement": "The word 'spin' in science means to move in a straight line.",
+    "isTrue": false,
+    "explanation": "False! 'Spin' means to go round and round very fast. The Earth spins on its axis, rotating once every 24 hours.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_5_057",
+    "unit": "5.2",
+    "topic": "Light travels in straight lines",
+    "difficulty": "medium",
+    "statement": "In a ray diagram, you need two arrows: one from the light source to the object, and one from the object to the eye.",
+    "isTrue": true,
+    "explanation": "True! The first arrow shows light travelling to the object, and the second shows light reflecting back to the observer's eye.",
+    "thinkingSkill": "apply"
+  },
+  {
+    "id": "tf_5_058",
+    "unit": "5.2",
+    "topic": "Light travels in straight lines",
+    "difficulty": "easy",
+    "statement": "A torch (flashlight) is a light source because it makes its own light.",
+    "isTrue": true,
+    "explanation": "True! A torch produces its own light, so it is a light source. Objects like cats and books only reflect light from sources.",
+    "thinkingSkill": "identify"
+  },
+  {
+    "id": "tf_5_059",
+    "unit": "5.5",
+    "topic": "Earth's rotation and shadows",
+    "difficulty": "medium",
+    "statement": "Shadows get longer from early morning to midday.",
+    "isTrue": false,
+    "explanation": "False! From early morning to midday, shadows get shorter as the Sun rises higher in the sky. Shadows get longer from midday to evening.",
+    "thinkingSkill": "reason"
+  },
+  {
+    "id": "tf_5_060",
+    "unit": "5.1",
+    "topic": "Light sources and seeing",
+    "difficulty": "hard",
+    "statement": "In science, 'proof' means a guess about what might happen in the future.",
+    "isTrue": false,
+    "explanation": "False! Proof is scientific evidence that something is true. A guess about future outcomes is called a prediction.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_5_061",
+    "unit": "5.6",
+    "topic": "States of matter",
+    "difficulty": "easy",
+    "statement": "A substance is a pure type of solid, liquid, or gas.",
+    "isTrue": true,
+    "explanation": "True! A substance is a single, pure type of matter in one of the three common states.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_5_062",
+    "unit": "5.6",
+    "topic": "States of matter",
+    "difficulty": "easy",
+    "statement": "Liquids keep their own fixed shape.",
+    "isTrue": false,
+    "explanation": "False! Liquids flow and take the shape of whatever container they are in. Only solids keep a fixed shape.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_5_063",
+    "unit": "5.6",
+    "topic": "States of matter",
+    "difficulty": "medium",
+    "statement": "In a solid, particles only move by vibrating in a fixed position.",
+    "isTrue": true,
+    "explanation": "True! Solid particles are locked in place and can only vibrate. They don't move around freely like liquid or gas particles.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_5_064",
+    "unit": "5.6",
+    "topic": "States of matter",
+    "difficulty": "medium",
+    "statement": "You can easily squash a liquid because the particles are far apart.",
+    "isTrue": false,
+    "explanation": "False! Liquid particles are close together, so liquids cannot be squashed. Only gases can be compressed easily because their particles are far apart.",
+    "thinkingSkill": "reason"
+  },
+  {
+    "id": "tf_5_065",
+    "unit": "5.6",
+    "topic": "States of matter",
+    "difficulty": "medium",
+    "statement": "Grains of sugar are a solid that can flow like a liquid.",
+    "isTrue": true,
+    "explanation": "True! Each grain of sugar is a solid, but many grains together can pour and flow like a liquid because they slide over each other.",
+    "thinkingSkill": "apply"
+  },
+  {
+    "id": "tf_5_066",
+    "unit": "5.6",
+    "topic": "Melting and freezing",
+    "difficulty": "easy",
+    "statement": "Melting is the change of state from solid to liquid.",
+    "isTrue": true,
+    "explanation": "True! When a solid is heated enough, it melts and becomes a liquid. For example, ice melts into water.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_5_067",
+    "unit": "5.6",
+    "topic": "Melting and freezing",
+    "difficulty": "medium",
+    "statement": "Adding salt to an ice cube makes it melt more slowly.",
+    "isTrue": false,
+    "explanation": "False! Salt makes ice melt faster by lowering the freezing point of water.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_5_068",
+    "unit": "5.6",
+    "topic": "Melting and freezing",
+    "difficulty": "medium",
+    "statement": "Freezing is also called solidification.",
+    "isTrue": true,
+    "explanation": "True! When a liquid cools and becomes a solid, this change of state is called solidification or freezing.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_5_069",
+    "unit": "5.6",
+    "topic": "Heat transfer",
+    "difficulty": "hard",
+    "statement": "Water at a higher temperature transfers heat energy to a metal spoon faster.",
+    "isTrue": true,
+    "explanation": "True! Hotter water has more energy. It transfers heat to the spoon more quickly, which is why experiments show faster results at higher temperatures.",
+    "thinkingSkill": "analyze"
+  },
+  {
+    "id": "tf_5_070",
+    "unit": "5.6",
+    "topic": "Chemical reactions",
+    "difficulty": "medium",
+    "statement": "When a new substance is produced during a change, it is called a chemical reaction.",
+    "isTrue": true,
+    "explanation": "True! A chemical reaction creates entirely new substances. For example, vinegar and baking soda react to produce carbon dioxide gas.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_5_071",
+    "unit": "5.6",
+    "topic": "Food chains",
+    "difficulty": "easy",
+    "statement": "In a food chain, the producer is always a plant.",
+    "isTrue": true,
+    "explanation": "True! Producers are plants that make their own food using sunlight. They are always at the start of a food chain.",
+    "thinkingSkill": "recall"
+  },
+  {
+    "id": "tf_5_072",
+    "unit": "5.6",
+    "topic": "Food chains",
+    "difficulty": "medium",
+    "statement": "A herbivore is an animal that eats only other animals.",
+    "isTrue": false,
+    "explanation": "False! A herbivore eats only plants. An animal that eats other animals is called a carnivore.",
+    "thinkingSkill": "recall"
   }
 ]
