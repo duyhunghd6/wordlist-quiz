@@ -373,7 +373,7 @@ const GameJourney = ({
                         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '4px' }}>
                            <div style={{ fontSize: '0.85rem', fontWeight: 700, color: '#475569' }}>Questions</div>
                            <div style={{ display: 'flex', gap: '4px' }}>
-                               {[5, 10, 20].map(num => (
+                               {[5, 10, 20, 999].map(num => (
                                    <button
                                      key={num}
                                      onClick={() => setNumQuestions(num)}
@@ -383,7 +383,7 @@ const GameJourney = ({
                                          color: numQuestions === num ? 'white' : '#475569',
                                      }}
                                    >
-                                       {num}
+                                       {num === 999 ? 'All' : num}
                                    </button>
                                ))}
                            </div>
