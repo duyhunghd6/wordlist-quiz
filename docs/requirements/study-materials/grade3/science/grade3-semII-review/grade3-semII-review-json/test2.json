@@ -1,0 +1,236 @@
+{
+  "game_data": {
+    "title": "Science Progression Quiz Game",
+    "questions": [
+      {
+        "id": "1a",
+        "question_text": "The model shows the different layers of the Earth. Match each letter (A, B, C) to its correct layer (core, crust, mantle). [cite: 1, 5-12]",
+        "correct_answers": [
+          "A: core [cite: 183]",
+          "B: crust [cite: 183]",
+          "C: mantle [cite: 183]"
+        ],
+        "marks": 1
+      },
+      {
+        "id": "1b",
+        "question_text": "Suggest one way the model does not represent the structure of the Earth. [cite: 14]",
+        "correct_answers": [
+          "It has a flat bottom [cite: 183]",
+          "It is not spherical [cite: 183]",
+          "There is no ocean or land visible [cite: 183]",
+          "The Earth's crust is not moving [cite: 183]"
+        ],
+        "marks": 1
+      },
+      {
+        "id": "1c",
+        "question_text": "Our Solar System contains planets and a star. Write down one other object found in our Solar System. [cite: 16, 17]",
+        "correct_answers": [
+          "asteroids [cite: 183]",
+          "comets [cite: 183]",
+          "satellites [cite: 183]",
+          "the Moon [cite: 183]"
+        ],
+        "marks": 1
+      },
+      {
+        "id": "1d",
+        "question_text": "The Earth is one planet in our Solar System. Write down the names of two other planets in our Solar System. [cite: 19, 20]",
+        "correct_answers": [
+          "Jupiter [cite: 183]",
+          "Neptune [cite: 183]",
+          "Mars [cite: 183]",
+          "Saturn [cite: 183]",
+          "Venus [cite: 183]",
+          "Uranus [cite: 183]",
+          "Mercury [cite: 183]"
+        ],
+        "marks": 2
+      },
+      {
+        "id": "1e",
+        "question_text": "Write down the name of the star found at the centre of our Solar System. [cite: 24]",
+        "correct_answers": [
+          "Sun [cite: 183]"
+        ],
+        "marks": 1
+      },
+      {
+        "id": "2a",
+        "question_text": "Animals can be grouped into vertebrates and invertebrates. Write down the names of each animal in the correct group: lizard, rhino, ladybird, worm, fox, butterfly. [cite: 26-36]",
+        "correct_answers": [
+          "Vertebrate: lizard, rhino, fox [cite: 184]",
+          "Invertebrate: butterfly, worm, ladybird [cite: 184]"
+        ],
+        "marks": 2
+      },
+      {
+        "id": "2b",
+        "question_text": "Some animals have a skeleton on the outside of their body. Write down the name of this type of skeleton. [cite: 38, 39]",
+        "correct_answers": [
+          "exoskeleton [cite: 185]"
+        ],
+        "marks": 1
+      },
+      {
+        "id": "2c",
+        "question_text": "One function of the skeleton is to help animals move. Write down one other function of the skeleton. [cite: 41, 42]",
+        "correct_answers": [
+          "giving shape to the body [cite: 185]",
+          "protect organs [cite: 185]",
+          "support organs [cite: 185]"
+        ],
+        "marks": 1
+      },
+      {
+        "id": "3a",
+        "question_text": "Oliver investigates electrical conductors and insulators. Based on the results where object A (yes), B (no), C (yes), D (yes), E (no) light the lamp, write down the letters of all the objects that are electrical insulators. [cite: 48-52]",
+        "correct_answers": [
+          "B and E [cite: 186]"
+        ],
+        "marks": 1
+      },
+      {
+        "id": "3b",
+        "question_text": "Oliver places a copper coin in the circuit. Predict what will happen to the lamp and explain your answer. [cite: 54]",
+        "correct_answers": [
+          "The lamp will light. [cite: 186]",
+          "This is because copper conducts electricity / is a good conductor. [cite: 186]"
+        ],
+        "marks": 1
+      },
+      {
+        "id": "4a",
+        "question_text": "Blessy adds white powder to vinegar in a beaker. Write down one way Blessy stays safe when she adds the white powder to the vinegar. [cite: 58, 63]",
+        "correct_answers": [
+          "wears goggles [cite: 187]"
+        ],
+        "marks": 1
+      },
+      {
+        "id": "4b",
+        "question_text": "When the white powder reacts with the vinegar, carbon dioxide is made. Explain why this is an example of a chemical reaction. [cite: 65, 66]",
+        "correct_answers": [
+          "new substance is made / gas is produced [cite: 187]"
+        ],
+        "marks": 1
+      },
+      {
+        "id": "5a",
+        "question_text": "Carlos draws a diagram of his science investigation with an eye, a mirror, and a light source. Draw two arrows on the diagram to show the direction light travels. [cite: 68-72]",
+        "correct_answers": [
+          "one arrow from light source to mirror and one arrow from mirror to eye [cite: 188]"
+        ],
+        "marks": 1
+      },
+      {
+        "id": "5b",
+        "question_text": "Complete these sentences about light: Light travels in ___ lines. When light reaches the mirror the light changes direction because it is ___. [cite: 73-76]",
+        "correct_answers": [
+          "straight [cite: 188]",
+          "reflected [cite: 188]"
+        ],
+        "marks": 2
+      },
+      {
+        "id": "5c",
+        "question_text": "What type of diagram has Carlos drawn? Circle the correct answer: energy diagram, light diagram, mirror diagram, ray diagram. [cite: 78-81]",
+        "correct_answers": [
+          "ray diagram [cite: 188]"
+        ],
+        "marks": 1
+      },
+      {
+        "id": "6a",
+        "question_text": "A glass of water and ice cubes is left in a warm room. Complete the sentences: When ice cubes are left in a warm room the ice changes from a ___ state to a ___ state called water. This change of state is called ___. [cite: 83-88]",
+        "correct_answers": [
+          "solid [cite: 189]",
+          "liquid [cite: 189]",
+          "melting [cite: 189]"
+        ],
+        "marks": 2
+      },
+      {
+        "id": "6b",
+        "question_text": "Describe how to change water back into ice. [cite: 90]",
+        "correct_answers": [
+          "freeze the water / put it in a freezer [cite: 189]"
+        ],
+        "marks": 1
+      },
+      {
+        "id": "6c",
+        "question_text": "Water is a substance made from very small ___. [cite: 93]",
+        "correct_answers": [
+          "particles / molecules [cite: 189]"
+        ],
+        "marks": 1
+      },
+      {
+        "id": "7a",
+        "question_text": "Match the animal description to the habitat: 'Camels have large feet to stop them sinking into the sand.', 'Polar bears have thick fur to keep warm.', 'Sharks have fins to help them swim.' [cite: 99-104]",
+        "correct_answers": [
+          "Camels -> desert [cite: 190]",
+          "Polar bears -> Arctic [cite: 190]",
+          "Sharks -> sea [cite: 190]"
+        ],
+        "marks": 2
+      },
+      {
+        "id": "8a",
+        "question_text": "A bar chart shows the number of people infected with measles each year. How many people were infected with measles in 2016? [cite: 107-111, 120]",
+        "correct_answers": [
+          "100 [cite: 191]"
+        ],
+        "marks": 1
+      },
+      {
+        "id": "8b",
+        "question_text": "Vaccination is used to prevent people getting measles. Explain how the data in the bar chart supports the sentence: 'After 2016 fewer people in the country were vaccinated to prevent them getting measles.' [cite: 122-126]",
+        "correct_answers": [
+          "after 2016 the number of infections increases [cite: 191]"
+        ],
+        "marks": 1
+      },
+      {
+        "id": "8c",
+        "question_text": "Why are safety caps important on a bottle of medicine? [cite: 130]",
+        "correct_answers": [
+          "stop (young) children opening the bottle [cite: 191]"
+        ],
+        "marks": 1
+      },
+      {
+        "id": "9a",
+        "question_text": "Objects in the home (cooker, television, lamp, food mixer) transfer electrical energy into other types of energy. Which one type of energy do all four objects transfer electrical energy into? [cite: 132-144]",
+        "correct_answers": [
+          "heat [cite: 192]"
+        ],
+        "marks": 1
+      },
+      {
+        "id": "9b",
+        "question_text": "Which object transfers electrical energy into movement energy? [cite: 146]",
+        "correct_answers": [
+          "food mixer [cite: 192]"
+        ],
+        "marks": 1
+      },
+      {
+        "id": "9c",
+        "question_text": "Write down the name of one object not in the pictures that transfers electrical energy to sound energy. [cite: 148]",
+        "correct_answers": [
+          "speakers [cite: 192]",
+          "radio [cite: 192]",
+          "MP3 [cite: 192]",
+          "game console [cite: 192]",
+          "computer [cite: 192]",
+          "tablet [cite: 192]",
+          "mobile phone [cite: 192]"
+        ],
+        "marks": 1
+      }
+    ]
+  }
+}

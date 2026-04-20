@@ -1,0 +1,133 @@
+{
+  "presentation_review": "Grade 3 Science - Unit 4 Review",
+  "slides_data": [
+    {
+      "slide_number": "4-16",
+      "objective": "Review the layers of the Earth and their physical properties [1, 2].",
+      "content": "Diagrams of Earth's layers detailing the crust, mantle, outer core, and inner core, along with questions about their composition and physical states [2-8].",
+      "questions_and_answers": [
+        {
+          "question": "Name the layers of the Earth's structure.",
+          "answer": "Crust, mantle, outer core, inner core [2, 9]."
+        },
+        {
+          "question": "What is the crust made of?",
+          "answer": "The crust is formed of rocks [10]."
+        },
+        {
+          "question": "What is the mantle made of?",
+          "answer": "The rocks in the mantle have been melted by heat, which is called magma [11]."
+        },
+        {
+          "question": "What is the core made of?",
+          "answer": "The core is made up of the metals iron and nickel [12]."
+        },
+        {
+          "question": "Is the outer core in a solid or liquid state?",
+          "answer": "The metals in the outer core are liquid [13]."
+        },
+        {
+          "question": "Is the inner core in a solid or liquid state?",
+          "answer": "Due to the force of gravity the inner core is solid [7]."
+        },
+        {
+          "question": "How hot is the inner core?",
+          "answer": "6,000 °C, which is as hot as the surface of the Sun [14]."
+        }
+      ],
+      "hint": "Remember the layers from the outside in, and think about how heat and pressure change as you go deeper.",
+      "explanation": "The Earth consists of four main layers [9]. The outermost layer is the rocky crust [10], followed by the magma-filled mantle [11]. The core is composed of iron and nickel; the outer core is liquid metal, while extreme gravitational pressure keeps the intensely hot inner core completely solid [7, 12, 13]."
+    },
+    {
+      "slide_number": "17-21, 24-25",
+      "objective": "Assess understanding of volcanic eruptions, their environmental effects, and tsunamis [1, 15, 16].",
+      "content": "True/False statements and fill-in-the-blank sentences regarding volcanic ash, lava, geothermal energy, tsunamis, and volcano formation [15-21].",
+      "questions_and_answers": [
+        {
+          "question": "True or False: Volcanic ash and gases are good for people's health.",
+          "answer": "False. People become ill when they breathe in ash and poisonous gases [15]."
+        },
+        {
+          "question": "True or False: Lava can destroy buildings and plants.",
+          "answer": "True. Lava burns and buries crops and buildings [17]."
+        },
+        {
+          "question": "True or False: Lava and ash can make the soil better for growing crops.",
+          "answer": "True. Lava makes good soil and ash fertilizes it [18]."
+        },
+        {
+          "question": "True or False: Tsunami waves get bigger as they get closer to the coast because the water is shallower.",
+          "answer": "True [20]."
+        },
+        {
+          "question": "The most common type of volcano is a ______ volcano. It is ______ shaped.",
+          "answer": "composite, cone [16]."
+        },
+        {
+          "question": "Once magma goes above the Earth's surface we call it ______.",
+          "answer": "lava [21]."
+        },
+        {
+          "question": "When lava cools it becomes ______. It can make a flat surface called a volcanic ______.",
+          "answer": "rock, plateau [21]."
+        }
+      ],
+      "hint": "Consider both the destructive forces of volcanoes during an eruption and their long-term constructive effects on the land.",
+      "explanation": "Volcanoes have dual impacts on the environment [15, 18]. They are highly destructive when they erupt, burning crops and releasing poisonous gases, but the cooled lava and ash eventually create highly fertile soil and landforms like volcanic plateaus [15, 17, 18, 21]. Additionally, underground water in volcanic regions provides valuable geothermal energy [19]."
+    },
+    {
+      "slide_number": "26",
+      "objective": "Evaluate knowledge of how earthquakes occur and the specific terminology used to describe them [1, 22].",
+      "content": "A fill-in-the-blank exercise explaining tectonic plate movements, energy transfer, landslides, and epicentres [22].",
+      "questions_and_answers": [
+        {
+          "question": "Earthquakes are caused by ______ of rocks in the Earth's ______.",
+          "answer": "movements, crust [22]."
+        },
+        {
+          "question": "Two big rocks (tectonic plates) rub against each other which makes a lot of ______ and this energy ______ into ______.",
+          "answer": "energy, transfers, waves [22]."
+        },
+        {
+          "question": "What is a landslide?",
+          "answer": "A type of damage caused by Earthquakes where rocks and soil slides down slopes [22]."
+        },
+        {
+          "question": "The focus is where the Earthquake starts, and the ______ is directly above on the Earth's surface.",
+          "answer": "epicentre [22]."
+        }
+      ],
+      "hint": "Think about the friction between giant puzzle pieces of the Earth's surface and where the shaking originates.",
+      "explanation": "Earthquakes are generated when tectonic plates in the Earth's crust move and rub against each other [22]. This massive friction builds up energy that suddenly releases and transfers into seismic waves [22]. The epicentre is the point on the surface directly above the earthquake's focus and typically experiences the most severe damage, including landslides [22]."
+    },
+    {
+      "slide_number": "22-23, 27",
+      "objective": "Test the ability to identify specific physical animal adaptations and their corresponding survival functions [1, 23].",
+      "content": "True/False questions about the anatomy of giraffes and ducks, paired with a matching activity connecting specific beak shapes and physical traits to their survival uses [23-25].",
+      "questions_and_answers": [
+        {
+          "question": "True or False: A giraffe has a long neck so that it can eat leaves and see predators.",
+          "answer": "True [24]."
+        },
+        {
+          "question": "True or False: A duck has webbed feet so it can grip onto tree branches.",
+          "answer": "False [25]."
+        },
+        {
+          "question": "What is the function of a kingfisher's large beak with a sharp point?",
+          "answer": "It helps it catch fish in rivers [23]."
+        },
+        {
+          "question": "What is the function of a flamingo's long, flat beak that can strain?",
+          "answer": "It helps it separate small plants and animals from the water [23]."
+        },
+        {
+          "question": "Why do fish have an organ called gills?",
+          "answer": "It helps it breathe underwater [23]."
+        }
+      ],
+      "hint": "Look at the physical shape of the animal's feature and think about what natural tool it mimics, like a strainer, a spear, or a paddle.",
+      "explanation": "Animals develop specialized physical adaptations suited to their specific environments and diets [23, 24]. For instance, a flamingo's flat beak acts like a strainer for shallow water, while a kingfisher's sharp beak acts like a spear for hunting [23]. Similarly, a duck's webbed feet are adapted for swimming, not for gripping tree branches [25]."
+    }
+  ]
+}

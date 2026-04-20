@@ -1,0 +1,168 @@
+{
+  "presentation_review": "G3 Science - Unit 5",
+  "slides_data": [
+    {
+      "slide_number": 1,
+      "objective": "Establish the learning goals for the lesson by outlining the specific tasks students will complete to review Unit 5 [1].",
+      "content": "The slide features a spinning Earth animation and a bulleted agenda: 'Work through the practice test', 'Work through the Learner’s Book revision questions', and 'Complete the unit 5 test' [1].",
+      "questions_and_answers": [],
+      "hint": "Review previous chapters thoroughly before beginning the practice and final unit tests to ensure you understand both light and space concepts [1].",
+      "explanation": "This introductory slide serves as an agenda to mentally prepare students for a comprehensive assessment of Unit 5, setting clear expectations for the workflow of the class session [1]."
+    },
+    {
+      "slide_number": 3,
+      "objective": "Assess the student's foundational understanding of how light travels from a source to illuminate an object [2].",
+      "content": "A graphical illustration of a boy named Arun sitting at a desk and reading a book illuminated by a desk lamp, accompanied by fill-in-the-blank sentences [2].",
+      "questions_and_answers": [
+        {
+          "question": "Light travels in straight lines called ______ [2].",
+          "answer": "rays [2]"
+        },
+        {
+          "question": "Light travels from the lamp to the ______ [2].",
+          "answer": "book [2]"
+        },
+        {
+          "question": "Arun sees the book because light travels into his ______ [2].",
+          "answer": "eyes [2]"
+        }
+      ],
+      "hint": "Trace the path of the illumination starting directly from the glowing bulb, hitting the pages, and bouncing back to the observer [2].",
+      "explanation": "In order for human vision to work in the dark, light must originate from a luminous source (the lamp), travel in straight paths (rays) to strike an object (the book), and finally reflect off that object into the observer's eyes [2]."
+    },
+    {
+      "slide_number": 4,
+      "objective": "Evaluate the ability to differentiate between materials that reflect light and materials that absorb light based on their physical properties [3].",
+      "content": "Visual representations of three distinct material surfaces: aluminium foil, a framed mirror, and a piece of wood with visible grain [3].",
+      "questions_and_answers": [
+        {
+          "question": "Which of the three surfaces do you think reflects light best? [3]",
+          "answer": "A mirror [3]"
+        },
+        {
+          "question": "Give a reason why this surface reflects light well. [3]",
+          "answer": "It is completely smooth, shiny, and specifically designed to bounce light back uniformly [3]"
+        },
+        {
+          "question": "Which of the three surfaces do you think absorbs light? [3]",
+          "answer": "Wood [3]"
+        },
+        {
+          "question": "Give a reason why this surface absorbs light. [3]",
+          "answer": "Wood is an opaque, dull, and relatively rough material that takes in light rather than bouncing it away [3]"
+        }
+      ],
+      "hint": "Consider what happens when you look at these objects; materials where you can see your own image bounce light back, while dull materials do not [3].",
+      "explanation": "Reflection depends heavily on surface texture and color. Smooth and shiny surfaces like mirrors allow light to bounce off at consistent angles, creating reflections. Rough, matte, or dark surfaces like wood scatter or absorb the light rays, turning the light energy into minute amounts of heat [3]."
+    },
+    {
+      "slide_number": 5,
+      "objective": "Test knowledge of the solar system's structure and the specific planetary movements that govern time on Earth [4].",
+      "content": "A detailed diagram of the solar system showing the Sun in the center, orbiting planets (including Earth and Uranus), orbital paths, and a ring of rocky debris [4].",
+      "questions_and_answers": [
+        {
+          "question": "Name the lines marked F: [4]",
+          "answer": "Orbits [4]"
+        },
+        {
+          "question": "What do the dots on the diagram represent? [4]",
+          "answer": "Asteroids or the asteroid belt [4]"
+        },
+        {
+          "question": "What Earth movement causes day and night? [4]",
+          "answer": "Earth spinning or rotating on its own axis [4]"
+        },
+        {
+          "question": "How long does this movement take? [4]",
+          "answer": "24 hours, which equals one day [4]"
+        }
+      ],
+      "hint": "Think about the invisible elliptical tracks the planets travel on, and remember the difference between Earth going around the Sun versus spinning in place [4].",
+      "explanation": "The solar system operates via gravitational pull, keeping planets in elliptical paths called orbits (labeled F). Day and night are not caused by Earth orbiting the sun, but by Earth's 24-hour rotation on its axis, which constantly shifts which half of the planet faces the Sun's light [4]."
+    },
+    {
+      "slide_number": 6,
+      "objective": "Demonstrate comprehension of how the apparent position of the sun in the sky affects the length of shadows cast on the ground [5].",
+      "content": "A photograph of a vast, flat landscape featuring a vertical stick casting a distinct shadow, with a superimposed dotted arc illustrating the Sun's trajectory across the sky over time [5].",
+      "questions_and_answers": [
+        {
+          "question": "Early morning and midday shadows become ______ [5].",
+          "answer": "shorter [5]"
+        },
+        {
+          "question": "Midday and evening shadows become ______ [5].",
+          "answer": "longer [5]"
+        }
+      ],
+      "hint": "When the sun is low on the horizon, it stretches shadows out. When the sun is directly overhead, it pushes the shadow straight down [5].",
+      "explanation": "Shadow length is inversely related to the solar altitude angle. In the early morning and late evening, the sun's low angle causes objects to block light over a longer distance, creating elongated shadows. At midday, the sun reaches its highest peak, causing shadows to shrink to their minimum length [5]."
+    },
+    {
+      "slide_number": 7,
+      "objective": "Reinforce correct scientific terminology related to light behavior and astronomy [6].",
+      "content": "A two-column matching exercise pairing vocabulary words (Reflect, Ray, Proof, Spin, Comet) with their corresponding scientific definitions [6].",
+      "questions_and_answers": [
+        {
+          "question": "Match the word 'Reflect' to its meaning [6].",
+          "answer": "The action of light bouncing off a surface [6]"
+        },
+        {
+          "question": "Match the word 'Ray' to its meaning [6].",
+          "answer": "A line that light travels in [6]"
+        },
+        {
+          "question": "Match the word 'Proof' to its meaning [6].",
+          "answer": "Scientific evidence that something is true [6]"
+        },
+        {
+          "question": "Match the word 'Spin' to its meaning [6].",
+          "answer": "Go round and round very fast [6]"
+        },
+        {
+          "question": "Match the word 'Comet' to its meaning [6].",
+          "answer": "A lump of ice and dirt that travels in a large orbit around the Sun [6]"
+        }
+      ],
+      "hint": "Look for distinct keywords; 'bouncing' goes with reflection, 'line' goes with ray, and 'ice and dirt' specifies a comet rather than an asteroid [6].",
+      "explanation": "Mastering this vocabulary is essential for effectively communicating scientific principles. Distinguishing between terms like comets (icy) and asteroids (rocky masses) shows a deeper understanding of celestial bodies [6]."
+    },
+    {
+      "slide_number": 8,
+      "objective": "Consolidate the unit's concepts by combining questions on light material properties with questions on Earth's rotation and orbital mechanics [7].",
+      "content": "A multipart slide containing a categorization task for reflective/absorbent materials and a diagram detailing the orbital relationship between the Sun, Earth, and Moon [7].",
+      "questions_and_answers": [
+        {
+          "question": "Which surfaces from the list below reflect light and which absorb light? (muddy water, mirror, clear water, wood) [7]",
+          "answer": "Reflect: mirror, clear water. Absorb: muddy water, wood [7]"
+        },
+        {
+          "question": "What does the Earth do to cause day and night? [7]",
+          "answer": "It spins on its axis [7]"
+        }
+      ],
+      "hint": "For the materials, think about which ones you can see through or see yourself in. For the Earth, focus on its internal movement rather than its travel around the Sun [7].",
+      "explanation": "Clear water and mirrors have properties that allow light to pass through or bounce back cleanly, whereas muddy water and wood block and absorb light. The diagram reinforces that while Earth orbits the sun yearly, it is the daily rotation on its axis that causes the sun to rise and set from our perspective [7]."
+    },
+    {
+      "slide_number": 9,
+      "objective": "Apply theoretical knowledge of light rays to a practical, real-world scenario by identifying the components of a ray diagram [8].",
+      "content": "An illustration depicting a girl named Rachel crouching down and using a red flashlight to find her cat hiding inside a dark box or cabinet [8].",
+      "questions_and_answers": [
+        {
+          "question": "Identify the light source [8].",
+          "answer": "The torch/flashlight [8]"
+        },
+        {
+          "question": "Identify the object [8].",
+          "answer": "The cat [8]"
+        },
+        {
+          "question": "Draw a simple ray diagram to show how Rachel sees the cat [8].",
+          "answer": "One arrow should point straight from the torch to the cat, and a second arrow should point from the cat back to Rachel's eyes [8]"
+        }
+      ],
+      "hint": "Remember the three necessary steps for sight in a dark room: light must be created, it must hit the target, and it must bounce back to the observer [8].",
+      "explanation": "This scenario perfectly encapsulates the unit's core lesson on light. The flashlight acts as the luminous source emitting rays. Because the cat is not a light source, it can only be seen when the flashlight's rays hit it and reflect back into Rachel's eyes, simulating a complete ray diagram [8]."
+    }
+  ]
+}

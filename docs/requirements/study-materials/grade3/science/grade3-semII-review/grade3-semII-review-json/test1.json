@@ -1,0 +1,296 @@
+{
+  "game_title": "Science & Geography Explorer",
+  "modules": [
+    {
+      "module_id": "M1",
+      "topic": "Structure of the Earth",
+      "challenges": [
+        {
+          "id": "q1a",
+          "type": "diagram_labeling",
+          "question": "Label the layers of the structure of the Earth on the diagram from top to bottom.",
+          "image_reference": "assets/images/earth_diagram.png",
+          "correct_answer": ["crust", "mantle", "outer core", "inner core"],
+          "gamification": {
+            "reward_points": 20,
+            "coaching_hint": "Start from the surface where we live and work your way to the very center."
+          }
+        },
+        {
+          "id": "q1b",
+          "type": "short_answer",
+          "question": "Which layer is solid and made of metal?",
+          "correct_answer": "Inner core",
+          "gamification": { "reward_points": 10, "coaching_hint": "This is the deepest part of the planet." }
+        },
+        {
+          "id": "q1c",
+          "type": "short_answer",
+          "question": "Which layer is liquid rock?",
+          "correct_answer": "Mantle",
+          "gamification": { "reward_points": 10, "coaching_hint": "This is the thickest layer, located just below the crust." }
+        },
+        {
+          "id": "q1d",
+          "type": "fill_in_blank",
+          "question": "Complete these sentences to describe two reasons why this diagram is a good model of the structure of the Earth. The Earth is shaped like a _____. The diagram clearly shows the _____ inside the Earth.",
+          "correct_answer": ["ball", "layers"],
+          "gamification": { "reward_points": 15, "coaching_hint": "Think of the Earth's 3D shape and what the diagram reveals about its interior." }
+        }
+      ]
+    },
+    {
+      "module_id": "M2",
+      "topic": "Muscles and Movement",
+      "challenges": [
+        {
+          "id": "q2",
+          "type": "fill_in_blank",
+          "question": "Fill in the missing words to complete the sentences about how muscles work. Muscles are joined to the _____. Muscles _____ on bones to make them move. Muscles work in _____. When one muscle _____ and gets shorter, the other muscle _____ and gets longer.",
+          "correct_answer": ["skeleton", "pull", "pairs", "contracts", "relaxes"],
+          "gamification": {
+            "reward_points": 25,
+            "coaching_hint": "Think about what gives your body structure, and the opposite actions muscles take to move your arms."
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "M3",
+      "topic": "Electrical Circuits",
+      "challenges": [
+        {
+          "id": "q3a",
+          "type": "multiple_selection",
+          "question": "Select the conductors of electricity from this list.",
+          "options": ["copper", "plastic", "seawater", "cork", "wood", "aluminium", "glass", "pure water", "steel"],
+          "correct_answer": ["copper", "seawater", "aluminium", "steel"],
+          "gamification": { "reward_points": 20, "coaching_hint": "Look for metals and saltwater." }
+        },
+        {
+          "id": "q3b",
+          "type": "multiple_choice",
+          "question": "When you add a lamp to a circuit, all the lamps will shine...",
+          "options": ["More brightly than before", "Less brightly than before", "The same as before"],
+          "correct_answer": "Less brightly than before",
+          "gamification": { "reward_points": 10, "coaching_hint": "More lamps mean the energy has to be shared among more components." }
+        },
+        {
+          "id": "q3c",
+          "type": "multiple_choice",
+          "question": "When you add a cell to a circuit, all the lamps will glow...",
+          "options": ["More brightly than before", "Less brightly than before", "The same as before"],
+          "correct_answer": "More brightly than before",
+          "gamification": { "reward_points": 10, "coaching_hint": "Adding a cell adds more power to the circuit." }
+        },
+        {
+          "id": "q3d",
+          "type": "multiple_choice",
+          "question": "If you add a cell and a lamp to a circuit that has only one cell and one lamp, all the lamps will shine...",
+          "options": ["More brightly than before", "Less brightly than before", "The same as before"],
+          "correct_answer": "The same as before",
+          "gamification": { "reward_points": 15, "coaching_hint": "You are increasing the power and the load equally." }
+        }
+      ]
+    },
+    {
+      "module_id": "M4",
+      "topic": "Graph Interpretation (Heat Transfer)",
+      "challenges": [
+        {
+          "id": "q4a",
+          "type": "short_answer",
+          "question": "Based on the experiment, what did they measure?",
+          "correct_answer": "The time taken for the bead to drop off the spoon.",
+          "gamification": { "reward_points": 10, "coaching_hint": "Look at the Y-axis or the result of the experiment." }
+        },
+        {
+          "id": "q4b",
+          "type": "short_answer",
+          "question": "What did they change?",
+          "correct_answer": "The temperature.",
+          "gamification": { "reward_points": 10, "coaching_hint": "Look at the independent variable on the X-axis." }
+        },
+        {
+          "id": "q4c",
+          "type": "short_answer",
+          "question": "How much time did it take for the bead to drop off the spoon at 60°C?",
+          "image_reference": "assets/images/heat_graph.png",
+          "correct_answer": "8 minutes",
+          "gamification": { "reward_points": 10, "coaching_hint": "Find 60°C on the graph and see where the data point aligns on the time axis." }
+        },
+        {
+          "id": "q4d",
+          "type": "short_answer",
+          "question": "What can you conclude from the graph?",
+          "correct_answer": "It takes less time for the bead to drop off the spoon as the temperature increases.",
+          "gamification": { "reward_points": 15, "coaching_hint": "Describe the relationship between temperature and time shown by the line." }
+        },
+        {
+          "id": "q4e",
+          "type": "short_answer",
+          "question": "Explain your answer to part d.",
+          "correct_answer": "The water gains energy as it is heated. This means the water has more energy that can be transferred/move to the spoon to make the bead fall off quicker.",
+          "gamification": { "reward_points": 20, "coaching_hint": "Think about heat as a form of energy moving through materials." }
+        }
+      ]
+    },
+    {
+      "module_id": "M5",
+      "topic": "Light Reflection",
+      "challenges": [
+        {
+          "id": "q5",
+          "type": "interactive_drawing",
+          "question": "Draw rays on this diagram to show how Marcus sees the cricket ball. Label the rays.",
+          "image_reference": "assets/images/marcus_cricket.png",
+          "correct_answer": {
+            "ray_1": {"from": "Sun", "to": "ball", "label": "Arriving ray"},
+            "ray_2": {"from": "ball", "to": "boy's eyes", "label": "Reflected ray"}
+          },
+          "gamification": { "reward_points": 20, "coaching_hint": "Light travels from the source, hits the object, and bounces to the eye." }
+        }
+      ]
+    },
+    {
+      "module_id": "M6",
+      "topic": "Volcanoes",
+      "challenges": [
+        {
+          "id": "q6a",
+          "type": "diagram_labeling",
+          "question": "Label the parts of the volcano lettered A–D.",
+          "image_reference": "assets/images/volcano_diagram.png",
+          "correct_answer": {"A": "Magma", "B": "Earth’s crust", "C": "Secondary cone", "D": "Crater"},
+          "gamification": { "reward_points": 20, "coaching_hint": "A is the molten rock underground, D is the opening at the top." }
+        },
+        {
+          "id": "q6b",
+          "type": "short_answer",
+          "question": "What type of volcano is this?",
+          "correct_answer": "Composite volcano",
+          "gamification": { "reward_points": 10, "coaching_hint": "It's built up by many layers (strata) of hardened lava and tephra." }
+        }
+      ]
+    },
+    {
+      "module_id": "M7",
+      "topic": "Animal Adaptations",
+      "challenges": [
+        {
+          "id": "q7a",
+          "type": "matching",
+          "question": "Select two ways that a bird's beak is suited to its habitat: A bird that lives next to a river and eats fish.",
+          "options": ["Short", "Long", "Flat", "Pointed", "Hooked"],
+          "correct_answer": ["Long", "Pointed"],
+          "gamification": { "reward_points": 10, "coaching_hint": "Think of a beak shaped like a spear for catching slippery prey." }
+        },
+        {
+          "id": "q7b",
+          "type": "matching",
+          "question": "Select two ways that a bird's beak is suited to its habitat: A bird that lives in grassland and eats seeds.",
+          "options": ["Short", "Long", "Flat", "Pointed", "Hooked"],
+          "correct_answer": ["Short", "Hooked"],
+          "gamification": { "reward_points": 10, "coaching_hint": "Think of a beak designed to crack hard shells open." }
+        }
+      ]
+    },
+    {
+      "module_id": "M8",
+      "topic": "States of Matter",
+      "challenges": [
+        {
+          "id": "q8a",
+          "type": "short_answer",
+          "question": "What is a substance?",
+          "correct_answer": "A substance is a pure type of solid, liquid or gas.",
+          "gamification": { "reward_points": 10, "coaching_hint": "It describes the pure state of matter." }
+        },
+        {
+          "id": "q8b",
+          "type": "multiple_choice",
+          "question": "Based on the table where A flows and B keeps its shape, which substance is a solid?",
+          "options": ["Substance A", "Substance B"],
+          "correct_answer": "Substance B",
+          "gamification": { "reward_points": 10, "coaching_hint": "Solids maintain their structure." }
+        },
+        {
+          "id": "q8c",
+          "type": "interactive_drawing",
+          "question": "Draw the arrangement of particles in substance A.",
+          "correct_answer": "loosely packed, unorganized cluster of particles (spheres) resting at the bottom of a container.",
+          "gamification": { "reward_points": 20, "coaching_hint": "Since it flows, the particles are close together but can move past one another." }
+        }
+      ]
+    },
+    {
+      "module_id": "M9",
+      "topic": "Earthquakes and Tsunamis",
+      "challenges": [
+        {
+          "id": "q9a",
+          "type": "short_answer",
+          "question": "What is an epicentre?",
+          "correct_answer": "The point on the Earth’s surface above the focus which is where the earthquake begins.",
+          "gamification": { "reward_points": 10, "coaching_hint": "It's the location directly above where the fault slipped underground." }
+        },
+        {
+          "id": "q9b",
+          "type": "short_answer",
+          "question": "What is a tsunami?",
+          "correct_answer": "A tsunami is a huge sea wave.",
+          "gamification": { "reward_points": 10, "coaching_hint": "It is a massive displacement of water caused by underwater activity." }
+        },
+        {
+          "id": "q9c",
+          "type": "short_answer",
+          "question": "Why were warnings sent to people living along the coast?",
+          "correct_answer": "The tsunami will flood the coast and people can drown.",
+          "gamification": { "reward_points": 10, "coaching_hint": "Consider the immediate danger a giant wave poses to coastal areas." }
+        },
+        {
+          "id": "q9d",
+          "type": "short_answer",
+          "question": "Why does Japan often have earthquakes?",
+          "correct_answer": "Japan is on the Pacific Ring of Fire.",
+          "gamification": { "reward_points": 15, "coaching_hint": "Think about the major tectonic boundary surrounding the Pacific Ocean." }
+        }
+      ]
+    },
+    {
+      "module_id": "M10",
+      "topic": "Earth's Orbit and Rotation",
+      "challenges": [
+        {
+          "id": "q10a",
+          "type": "short_answer",
+          "question": "What movement is the Earth doing around its axis?",
+          "correct_answer": "The Earth is spinning on its axis.",
+          "gamification": { "reward_points": 10, "coaching_hint": "It's a rotational motion, like a top." }
+        },
+        {
+          "id": "q10b",
+          "type": "short_answer",
+          "question": "What does this movement cause?",
+          "correct_answer": "Day and night.",
+          "gamification": { "reward_points": 10, "coaching_hint": "Think about why the sun rises and sets." }
+        },
+        {
+          "id": "q10c",
+          "type": "interactive_coloring",
+          "question": "On the diagram, colour in the areas on both Earths that are having night.",
+          "image_reference": "assets/images/earth_orbit.png",
+          "correct_answer": "The halves of both Earth globes that are facing directly away from the Sun should be shaded.",
+          "gamification": { "reward_points": 15, "coaching_hint": "Light from the sun only hits one side of the planet at a time." }
+        },
+        {
+          "id": "q10d",
+          "type": "short_answer",
+          "question": "Explain why you shaded these parts of the Earth.",
+          "correct_answer": "The sides facing away from the Sun are having night.",
+          "gamification": { "reward_points": 10, "coaching_hint": "Explain how the lack of direct sunlight affects those regions." }
+        }
+      ]
+    }
+  ]
+}

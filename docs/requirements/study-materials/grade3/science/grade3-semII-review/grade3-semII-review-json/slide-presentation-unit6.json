@@ -1,0 +1,155 @@
+{
+  "presentation_review": "Grade 3 Science - Unit 6 Review: Electricity",
+  "slides_data": [
+    {
+      "slide_number": "1-2",
+      "objective": "Determine whether an electric circuit is complete and identify conductive materials.",
+      "content": "Circuit diagrams showing batteries, wires, switches, and light bulbs. Slide 2 tests different objects inserted into the circuit: a metal key, a rubber duck, a ceramic cup, and a cork [1, 2].",
+      "questions_and_answers": [
+        {
+          "question": "Will the light turn on in the circuit with the key (A)?",
+          "answer": "Yes [2]."
+        },
+        {
+          "question": "Will the light turn on with the duck (B), cup (C), or cork (D)?",
+          "answer": "No [2]."
+        }
+      ],
+      "hint": "Think about which materials let electricity pass through them and which block it.",
+      "explanation": "For a light bulb to turn on, the circuit must be an unbroken path made of conductive materials [1]. Metals, like the key, are conductors, while rubber ducks, ceramic cups, and corks are insulators that break the flow of electricity [2]."
+    },
+    {
+      "slide_number": "3",
+      "objective": "Identify the basic components of a simple electric circuit.",
+      "content": "A labeled diagram of a circuit featuring a battery, wires, a switch, and a lightbulb in a holder [3].",
+      "questions_and_answers": [
+        {
+          "question": "Identify part A.",
+          "answer": "Cell [3]."
+        },
+        {
+          "question": "Identify part B.",
+          "answer": "Wire [3]."
+        },
+        {
+          "question": "Identify part C.",
+          "answer": "Lamp [3]."
+        },
+        {
+          "question": "Identify part D.",
+          "answer": "Lamp holder [3]."
+        },
+        {
+          "question": "Identify part E.",
+          "answer": "Switch [3]."
+        }
+      ],
+      "hint": "Look at the labels and match the power source, path, light source, and control mechanism.",
+      "explanation": "A standard circuit requires a cell to provide power, wires to carry the current, a lamp to output light, a holder to connect the lamp, and a switch to easily open and close the circuit path [3]."
+    },
+    {
+      "slide_number": "4-11",
+      "objective": "Differentiate between conductors and insulators and identify real-world examples.",
+      "content": "Definitions of conductors and insulators, paired with examples like appliance handles, wire covers, inside cable wires, and different types of water [4-11].",
+      "questions_and_answers": [
+        {
+          "question": "Is something that lets electricity move through it a conductor or insulator?",
+          "answer": "Conductor [4]."
+        },
+        {
+          "question": "Is something that stops electricity from moving a conductor or insulator?",
+          "answer": "Insulator [5]."
+        },
+        {
+          "question": "Are the inside of a cable wire, salt water, and tap water conductors or insulators?",
+          "answer": "Conductors [8-10]."
+        },
+        {
+          "question": "Are appliance handles, wire covers, and distilled water conductors or insulators?",
+          "answer": "Insulators [6, 7, 11]."
+        }
+      ],
+      "hint": "If it protects you from a shock, it's an insulator. If it carries power, it's a conductor.",
+      "explanation": "Conductors allow electrical current to flow freely, which is why the inside of cables and impure waters (tap and salt water) carry electricity [8-10]. Insulators block the flow, providing safety when used as plastic wire covers or appliance handles [6, 7]."
+    },
+    {
+      "slide_number": "12-15",
+      "objective": "Evaluate statements about electrical properties and large-scale electrical infrastructure.",
+      "content": "True/False statements covering the human body's conductivity, switch functionality, pylons, and the definition of a battery [12-15].",
+      "questions_and_answers": [
+        {
+          "question": "True or False: The water in our body is an insulator.",
+          "answer": "False [12]."
+        },
+        {
+          "question": "True or False: Switches do not turn appliances on and off.",
+          "answer": "False [13]."
+        },
+        {
+          "question": "True or False: Pylons carry electricity from power stations to homes and schools.",
+          "answer": "True [14]."
+        },
+        {
+          "question": "True or False: Two cells connected together is a battery.",
+          "answer": "True [15]."
+        }
+      ],
+      "hint": "Consider why humans can get electric shocks and read the specific definition of a battery versus a cell.",
+      "explanation": "The human body is mostly water with dissolved minerals, making it a conductor, not an insulator [12]. In electrical terms, a single power unit is a cell (1.5V), while combining two or more cells creates a battery [15]."
+    },
+    {
+      "slide_number": "16-19",
+      "objective": "Review and match essential electrical vocabulary terms.",
+      "content": "Definitions for cable, cord, electric shock, mains electricity, plug, pylon, volt, voltage, and wall socket, followed by a matching exercise [16-19].",
+      "questions_and_answers": [
+        {
+          "question": "What we plug into to get electricity for an appliance.",
+          "answer": "Wall socket [19]."
+        },
+        {
+          "question": "The unit in which we measure the strength of electricity.",
+          "answer": "Volts [19]."
+        },
+        {
+          "question": "Electricity that powers our homes and schools.",
+          "answer": "Mains electricity [19]."
+        },
+        {
+          "question": "The plastic covered wire we plug into our appliances.",
+          "answer": "Cord [19]."
+        },
+        {
+          "question": "What occurs when a person comes into contact with an electrical energy source.",
+          "answer": "Electric shock [19]."
+        }
+      ],
+      "hint": "Match everyday actions (like plugging things into the wall) with their specific terminology.",
+      "explanation": "Mastering these terms helps distinguish between everyday household electricity concepts (like wall sockets and cords) and the scientific measurements or infrastructure that make them work (like volts and mains electricity) [16-19]."
+    },
+    {
+      "slide_number": "20-24",
+      "objective": "Identify safe and unsafe practices when handling electrical appliances.",
+      "content": "Images and explanations of how to properly unplug cords, the dangers of bare wires, touching metal pins, overloading sockets, and using electricity near water [20-24].",
+      "questions_and_answers": [
+        {
+          "question": "How should you pull out a cord?",
+          "answer": "Grip the plug, which is made of insulating plastic, to pull it out [20, 21]."
+        },
+        {
+          "question": "Why shouldn't you pull the plug by the cord?",
+          "answer": "It damages the cord and leaves wires bare, which can cause an electric shock [21]."
+        },
+        {
+          "question": "Why shouldn't we touch the metal pins of a plug?",
+          "answer": "The metal pins are conductors and can deliver a dangerous electric shock [22]."
+        },
+        {
+          "question": "What are some ways we can be safe with electricity?",
+          "answer": "Don't overload sockets, stay away from pylons, don't use damaged cables, avoid running cords under rugs, don't stick objects in sockets, and never touch electrical appliances with wet hands [23, 24]."
+        }
+      ],
+      "hint": "Always interact with the plastic (insulator) parts of an electrical device and keep electricity far away from water.",
+      "explanation": "Safety relies on using insulators to protect ourselves from live current [21]. Improper handling—such as pulling cords, touching metal pins, or mixing water with electricity—bypasses these insulators and turns the human body into a conductor for a dangerous shock [21, 22, 24]."
+    }
+  ]
+}

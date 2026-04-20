@@ -1,0 +1,274 @@
+{
+  "gameData": {
+    "title": "Science Quiz Game [cite: 1]",
+    "levels": [
+      {
+        "levelName": "Skeleton and Muscles",
+        "questions": [
+          {
+            "id": "1a",
+            "type": "label_diagram",
+            "text": "The human body has a skeleton. Complete the diagram by labelling the bones of the human body. [cite: 2, 3]",
+            "correctAnswers": [
+              "spine [cite: 171]",
+              "rib (cage) [cite: 171]",
+              "leg (bone) / femur [cite: 171]"
+            ],
+            "marks": 2
+          },
+          {
+            "id": "1b",
+            "type": "multiple_choice",
+            "text": "Muscles work in pairs to move bones. Tick one box that describes how muscles move bones in the body. [cite: 8, 9]",
+            "options": [
+              "one muscle contracts and the other muscle relaxes [cite: 10]",
+              "one muscle stretches and the other muscle relaxes [cite: 11]",
+              "both muscles contract at the same time [cite: 12]",
+              "both muscles relax at the same time [cite: 13]"
+            ],
+            "correctAnswer": "one muscle contracts and the other muscle relaxes [cite: 171]",
+            "marks": 1
+          },
+          {
+            "id": "1c",
+            "type": "short_answer",
+            "text": "Moving the body regularly benefits our health. One benefit is a stronger heart. Suggest one other health benefit of moving the body. [cite: 15, 16]",
+            "correctAnswer": "stronger bones or muscles [cite: 171]",
+            "marks": 1
+          }
+        ]
+      },
+      {
+        "levelName": "Volcanoes",
+        "questions": [
+          {
+            "id": "2a",
+            "type": "fill_in_the_blank",
+            "text": "Complete the sentences about this volcano. Liquid rock is found below ground in the ______. When the volcano erupts lava flows out of the secondary cone and out of the ______. [cite: 24, 26, 27]",
+            "correctAnswers": [
+              "magma chamber [cite: 172]",
+              "crater [cite: 172]"
+            ],
+            "marks": 2
+          },
+          {
+            "id": "2b",
+            "type": "short_answer",
+            "text": "Volcanoes are found at breaks in the Earth’s crust. What word describes the sudden movement of the Earth’s crust? [cite: 29, 30]",
+            "correctAnswer": "earthquake [cite: 172]",
+            "marks": 1
+          }
+        ]
+      },
+      {
+        "levelName": "Particle Model and Solids",
+        "questions": [
+          {
+            "id": "3a",
+            "type": "matching",
+            "text": "The particle model is used to explain the properties of solids and liquids. Draw a line from each property to its correct explanation. [cite: 32, 33]",
+            "pairs": [
+              {
+                "property": "liquids take the shape of the container they are in [cite: 34]",
+                "explanation": "particles move around in all directions [cite: 173]"
+              },
+              {
+                "property": "liquids and solids cannot be squashed [cite: 37, 38]",
+                "explanation": "particles are close together [cite: 173]"
+              },
+              {
+                "property": "solids have a fixed shape [cite: 41]",
+                "explanation": "particles only move by vibrating [cite: 173]"
+              }
+            ],
+            "marks": 3
+          },
+          {
+            "id": "3b",
+            "type": "multiple_choice",
+            "text": "Some solids behave like liquids. Which solid flows like a liquid? [cite: 44, 45]",
+            "options": [
+              "iron magnet [cite: 46]",
+              "plastic spoon [cite: 46]",
+              "grains of sugar [cite: 46]",
+              "wooden ruler [cite: 47]"
+            ],
+            "correctAnswer": "grains of sugar [cite: 173]",
+            "marks": 1
+          }
+        ]
+      },
+      {
+        "levelName": "Electrical Circuits and Light",
+        "questions": [
+          {
+            "id": "4a",
+            "type": "short_answer",
+            "text": "Lily makes this electrical circuit. Explain why the lamp does not light. [cite: 49, 52]",
+            "correctAnswer": "switch is off or open [cite: 174]",
+            "marks": 1
+          },
+          {
+            "id": "4b",
+            "type": "short_answer",
+            "text": "Lily changes the electrical circuit so that the lamp lights. The lamp is very dim. Write down one way Lily makes the lamp brighter. [cite: 54, 55, 56]",
+            "correctAnswer": "add another cell [cite: 174]",
+            "marks": 1
+          },
+          {
+            "id": "4c",
+            "type": "fill_in_the_blank",
+            "text": "The lamp is a light source. Complete the sentences to describe how we see an object that is not a light source. We see the object because light ______ off the surface of the object into our eyes. [cite: 58, 59, 60, 61]",
+            "correctAnswer": "reflects [cite: 174]",
+            "marks": 1
+          }
+        ]
+      },
+      {
+        "levelName": "Melting and State Changes",
+        "questions": [
+          {
+            "id": "5a",
+            "type": "short_answer",
+            "text": "Yuri investigates melting. Write down one way Yuri makes his investigation a fair test. [cite: 62, 67]",
+            "correctAnswer": "same sized ice cubes [cite: 176]",
+            "marks": 1
+          },
+          {
+            "id": "5b",
+            "type": "table_completion",
+            "text": "Yuri writes down his results. Complete his results table. [cite: 69, 74]",
+            "headers": [
+              "method to melt ice cube [cite: 75]",
+              "time taken to melt in minutes/min [cite: 75, 175]"
+            ],
+            "correctData": [
+              {
+                "method": "in a beaker without salt or water [cite: 75]",
+                "time": "6 [cite: 175]"
+              },
+              {
+                "method": "in my hand [cite: 75]",
+                "time": "3 [cite: 175]"
+              },
+              {
+                "method": "in a beaker with salt [cite: 75]",
+                "time": "1 [cite: 175]"
+              },
+              {
+                "method": "in a beaker with water [cite: 175]",
+                "time": "2 [cite: 175]"
+              }
+            ],
+            "marks": 2
+          },
+          {
+            "id": "5c",
+            "type": "fill_in_the_blank",
+            "text": "Complete the conclusion for this investigation. The fastest way to melt an ice cube is to ______. [cite: 77, 78]",
+            "correctAnswer": "add salt [cite: 176]",
+            "marks": 1
+          },
+          {
+            "id": "5d",
+            "type": "multiple_choice",
+            "text": "Water turns to ice when it freezes. Which word describes freezing? [cite: 80, 81]",
+            "options": [
+              "chemical [cite: 82]",
+              "reaction [cite: 82]",
+              "solidification [cite: 82]",
+              "substance [cite: 82]"
+            ],
+            "correctAnswer": "solidification [cite: 176]",
+            "marks": 1
+          }
+        ]
+      },
+      {
+        "levelName": "Food Chains",
+        "questions": [
+          {
+            "id": "6",
+            "type": "fill_in_the_blank",
+            "text": "Look at the food chain. Complete the sentences about this food chain. The producer is the ______. The herbivore is the ______. The snake eats the ______. The mongoose is a predator and a ______. [cite: 84, 91, 92, 93]",
+            "correctAnswers": [
+              "leaf [cite: 177]",
+              "caterpillar [cite: 177]",
+              "chameleon [cite: 177]",
+              "carnivore [cite: 177]"
+            ],
+            "marks": 3
+          }
+        ]
+      },
+      {
+        "levelName": "Bird Identification",
+        "questions": [
+          {
+            "id": "7a",
+            "type": "short_answer",
+            "text": "Mike finds this identification key on the internet. Which bird in the key has a bent beak? [cite: 96, 114]",
+            "correctAnswer": "ibis [cite: 178]",
+            "marks": 1
+          },
+          {
+            "id": "7b",
+            "type": "short_answer",
+            "text": "Write down one way the great egret is different to the snowy egret. Use the key to help you. [cite: 116, 117]",
+            "correctAnswer": "has legs longer than its body [cite: 178]",
+            "marks": 1
+          },
+          {
+            "id": "7c",
+            "type": "short_answer",
+            "text": "Mike sees this bird flying near the water. Use the key to identify this bird. [cite: 119, 120]",
+            "correctAnswer": "spoonbill [cite: 178]",
+            "marks": 1
+          },
+          {
+            "id": "7d",
+            "type": "multiple_choice",
+            "text": "Mike also sees this bird. The bird has a beak suited to help it feed in the habitat where it lives. Tick one box that describes how the bird feeds. [cite: 122, 123, 124]",
+            "options": [
+              "uses its beak to pick up seeds from the ground [cite: 126]",
+              "uses it beak to pull insects from the mud [cite: 127]",
+              "uses its beak to scoop up large fish into its mouth [cite: 128]",
+              "uses its beak to pull plants from the water [cite: 129]"
+            ],
+            "correctAnswer": "uses its beak to scoop up large fish into its mouth [cite: 178]",
+            "marks": 1
+          }
+        ]
+      },
+      {
+        "levelName": "Energy",
+        "questions": [
+          {
+            "id": "8a",
+            "type": "short_answer",
+            "text": "This question is about energy. Which type of energy is transferred from a loud speaker to your ears? [cite: 131, 132]",
+            "correctAnswer": "sound [cite: 179]",
+            "marks": 1
+          },
+          {
+            "id": "8b",
+            "type": "short_answer",
+            "text": "Which type of energy is transferred when an object cools down? [cite: 134]",
+            "correctAnswer": "heat [cite: 179]",
+            "marks": 1
+          },
+          {
+            "id": "8c",
+            "type": "fill_in_the_blank",
+            "text": "Complete the sentence. Energy cannot be ______, lost, used up or ______. [cite: 136, 137, 138]",
+            "correctAnswers": [
+              "made [cite: 179]",
+              "destroyed [cite: 179]"
+            ],
+            "marks": 2
+          }
+        ]
+      }
+    ]
+  }
+}
