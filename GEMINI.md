@@ -132,6 +132,7 @@ All four personas (Analyst, Architect, Engineer, QA) must strictly follow this `
 
 - Once validations pass or the document/session is complete, close the issue: `bd close <id> --reason "..." --json`.
 - Always sync state: `bd sync && git pull --rebase && git push`.
+- **Version Bump**: Every deploy/push to Vercel requires updating the app version in the `<title>` tag of `public/index.html` (for example, incrementing to v1.21).
 - Run `bd ready --json` again to hand off state.
 
 ## Core Principles
