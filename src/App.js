@@ -516,7 +516,7 @@ function App() {
       const gameProps = {
         words: questions,
         tenseSentences: tenseSentences, // Pass down the grammar DB for Boss Levels!
-        selectedUnits: selectedUnits, // Added so games know which units are active
+        selectedUnits: selectedUnits && selectedUnits.length > 0 ? selectedUnits : units, // Pass all units if none selected
         onAnswer: handleGameAnswer,
         onComplete: (results) => {
           if (results && typeof results.score !== 'undefined') {
