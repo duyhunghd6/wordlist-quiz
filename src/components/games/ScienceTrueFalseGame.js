@@ -17,7 +17,7 @@ const DIFFICULTY_META = {
   hard: { label: 'Hard', color: '#ef4444', bg: '#fee2e2', emoji: '🧠' }
 };
 
-const ScienceTrueFalseGame = ({ words, onAnswer, onComplete, onHome, gameId }) => {
+const ScienceTrueFalseGame = ({ words, selectedUnits, onAnswer, onComplete, onHome, gameId }) => {
   const [allStatements, setAllStatements] = useState([]);
   const [statements, setStatements] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -32,17 +32,34 @@ const ScienceTrueFalseGame = ({ words, onAnswer, onComplete, onHome, gameId }) =
 
   // Load the statement bank
   useEffect(() => {
-    fetch('db/science_tf_unit5.json')
-      .then(res => res.json())
-      .then(data => {
-        setAllStatements(data);
-        setLoading(false);
-      })
-      .catch(err => {
-        console.error('Failed to load TF quiz:', err);
-        setLoading(false);
-      });
-  }, []);
+    const unitsToLoad = (selectedUnits && selectedUnits.length > 0) ? selectedUnits : ['5'];
+    
+    Promise.all(
+      unitsToLoad.map(unit => 
+        fetch(`db/science_tf_unit${unit}.json`)
+          .then(res => {
+            if (!res.ok) {
+              console.warn(`Unit ${unit} tf file not found.`);
+              return [];
+            }
+            return res.json();
+          })
+          .catch(err => {
+            console.error(`Failed to load tf quiz for unit ${unit}:`, err);
+            return [];
+          })
+      )
+    )
+    .then(dataArrays => {
+      const allData = dataArrays.flat();
+      setAllStatements(allData);
+      setLoading(false);
+    })
+    .catch(err => {
+      console.error('Failed to load TF quiz:', err);
+      setLoading(false);
+    });
+  }, [selectedUnits]);
 
   const startGame = useCallback((diff) => {
     setDifficulty(diff);

@@ -17,7 +17,7 @@ const DIFFICULTY_META = {
   hard: { label: 'Hard', color: '#ef4444', bg: '#fee2e2', emoji: '🧠' }
 };
 
-const ScienceThinkQuiz = ({ words, onAnswer, onComplete, onHome, gameId }) => {
+const ScienceThinkQuiz = ({ words, selectedUnits, onAnswer, onComplete, onHome, gameId }) => {
   const [allQuestions, setAllQuestions] = useState([]);
   const [questions, setQuestions] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -32,17 +32,34 @@ const ScienceThinkQuiz = ({ words, onAnswer, onComplete, onHome, gameId }) => {
 
   // Load the question bank
   useEffect(() => {
-    fetch('db/science_quiz_unit5.json')
-      .then(res => res.json())
-      .then(data => {
-        setAllQuestions(data);
-        setLoading(false);
-      })
-      .catch(err => {
-        console.error('Failed to load science quiz:', err);
-        setLoading(false);
-      });
-  }, []);
+    const unitsToLoad = (selectedUnits && selectedUnits.length > 0) ? selectedUnits : ['5'];
+    
+    Promise.all(
+      unitsToLoad.map(unit => 
+        fetch(`db/science_quiz_unit${unit}.json`)
+          .then(res => {
+            if (!res.ok) {
+              console.warn(`Unit ${unit} quiz file not found.`);
+              return [];
+            }
+            return res.json();
+          })
+          .catch(err => {
+            console.error(`Failed to load science quiz for unit ${unit}:`, err);
+            return [];
+          })
+      )
+    )
+    .then(dataArrays => {
+      const allData = dataArrays.flat();
+      setAllQuestions(allData);
+      setLoading(false);
+    })
+    .catch(err => {
+      console.error('Failed to load science quizzes:', err);
+      setLoading(false);
+    });
+  }, [selectedUnits]);
 
   // Filter and prepare questions when difficulty is selected
   const startGame = useCallback((diff) => {
