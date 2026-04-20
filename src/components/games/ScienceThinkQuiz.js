@@ -207,7 +207,9 @@ const ScienceThinkQuiz = ({ words, selectedUnits, onAnswer, onComplete, onHome, 
               { key: 'medium', emoji: '🔥', title: 'Medium', desc: 'Think & apply', count: allQuestions.filter(q => q.difficulty === 'medium').length },
               { key: 'hard', emoji: '🧠', title: 'Hard', desc: 'Reason & analyze', count: allQuestions.filter(q => q.difficulty === 'hard').length },
               { key: 'mixed', emoji: '🎲', title: 'Mixed', desc: 'All levels!', count: allQuestions.length }
-            ].map(d => (
+            ].map(d => {
+              const numToPlay = Math.min(words?.length || 10, d.count);
+              return (
               <button
                 key={d.key}
                 className={`stq-diff-card stq-diff-${d.key}`}
@@ -216,9 +218,9 @@ const ScienceThinkQuiz = ({ words, selectedUnits, onAnswer, onComplete, onHome, 
                 <span className="stq-diff-emoji">{d.emoji}</span>
                 <span className="stq-diff-title">{d.title}</span>
                 <span className="stq-diff-desc">{d.desc}</span>
-                <span className="stq-diff-count">{d.count} Qs</span>
+                <span className="stq-diff-count">{numToPlay} of {d.count} Qs</span>
               </button>
-            ))}
+            )})}
           </div>
         </div>
       </div>

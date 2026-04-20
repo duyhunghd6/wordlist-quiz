@@ -183,7 +183,9 @@ const ScienceTrueFalseGame = ({ words, selectedUnits, onAnswer, onComplete, onHo
               { key: 'medium', emoji: '🔥', title: 'Medium', desc: 'Think twice', count: allStatements.filter(q => q.difficulty === 'medium').length },
               { key: 'hard', emoji: '🧠', title: 'Hard', desc: 'Tricky logic', count: allStatements.filter(q => q.difficulty === 'hard').length },
               { key: 'mixed', emoji: '🎲', title: 'Mixed', desc: 'All levels!', count: allStatements.length }
-            ].map(d => (
+            ].map(d => {
+              const numToPlay = Math.min(words?.length || 10, d.count);
+              return (
               <button
                 key={d.key}
                 className={`stf-diff-card stf-diff-${d.key}`}
@@ -192,9 +194,9 @@ const ScienceTrueFalseGame = ({ words, selectedUnits, onAnswer, onComplete, onHo
                 <span className="stf-diff-emoji">{d.emoji}</span>
                 <span className="stf-diff-title">{d.title}</span>
                 <span className="stf-diff-desc">{d.desc}</span>
-                <span className="stf-diff-count">{d.count} Qs</span>
+                <span className="stf-diff-count">{numToPlay} of {d.count} Qs</span>
               </button>
-            ))}
+            )})}
           </div>
         </div>
       </div>
