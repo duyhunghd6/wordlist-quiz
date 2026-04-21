@@ -13,7 +13,7 @@ The `GameJourney` component utilizes hardcoded structures to frame educational p
 - **`JOURNEY_DATA`**: The core pedagogical progression tree. Each domain contains:
   - An overarching `objective`.
   - An array of `nodes` representing progression checkpoints.
-  - Each node dictates its ID, description, and an expected game `type` (`vocab`, `grammar`, `science`, or `both`).
+  - Each node dictates its ID, description, and an explicit array of `games` IDs denoting what games are unlocked.
 - **`GAME_ICONS`**: A dictionary that maps game string names to pedagogical metadata (Phosphor React icons, theme colors, and visual tags).
 
 <!-- unid-meta
@@ -24,28 +24,15 @@ fulfills: []
 
 The logic for how game categories are displayed is managed in three distinct layers within the dashboard modal:
 
-### A. Data Filtering (The Master Lists)
-At initialization, the entire `GAMES` dataset (imported from `gameConfig.js`) is sliced into four specific lists depending on boolean flags present on each game object:
+### A. Exact Node-to-Game Mapping
 
-```javascript
-const vocabGames = GAMES.filter(g => !g.isGrammar && !g.isScience && !g.isMath);    // General vocabulary games
-const grammarGames = GAMES.filter(g => g.isGrammar);                               // Strict grammar games
-const scienceGames = GAMES.filter(g => g.isScience);                               // Strict science games
-const mathGames = GAMES.filter(g => g.isMath);                                     // Strict math games
-```
+At initialization, the entire `GAMES` dataset (imported from `gameConfig.js`) is used as a lookup dictionary. We no longer slice the games into massive buckets via boolean flags.
 
 ### B. Contextual Display (Inside the Game Selection Modal)
-When a user clicks on an active node, the Bottom Sheet Game Modal uses **nested conditional logic** depending on the `currentSubjectKey` and the active `node.type` to display relevant bold headers and maps:
 
-- **ESL Subject (`wordlist_esl`)**:
-  - If node type is `"vocab"` or `"both"` -> Renders **Vocab Games** and displays `vocabGames`.
-  - If node type is `"grammar"` or `"both"` -> Renders **Grammar Games** and displays `grammarGames`.
-- **Science Subject (`wordlist_science`)**:
-  - If node type is EXACTLY `"vocab"` -> Renders **Vocab Games** and displays `vocabGames`.
-  - Universally renders **"🧪 Science Games"** and displays `scienceGames`.
-- **Math Subject (`wordlist_math`)**:
-  - If node type is `"vocab"` or `"both"` -> Renders **General Games** and displays `vocabGames`.
-  - If node type is `"math"` or `"both"` -> Renders **"🧮 Math Arcade"** and displays `mathGames`.
+When a user clicks on an active node, the Bottom Sheet Game Modal explicitly maps over the `games` array defined within the `node` itself.
+
+For example, if the active node contains `games: ["swipe", "quiz", "bubble"]`, the modal will only fetch and strictly render those 3 specific games. This isolates the pedagogical context and ensures a structured "journey" feel, preventing the user from being overwhelmed by the entire game roster at once.
 
 Additionally, if a node's description array contains "coming soon", a visual placeholder indicating upcoming updates is automatically injected.
 

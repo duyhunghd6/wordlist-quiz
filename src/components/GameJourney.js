@@ -14,31 +14,31 @@ const JOURNEY_DATA = {
     wordlist_esl: {
         objective: "Objective: Describe daily routines and past experiences",
         nodes: [
-            { id: "esl_1", label: "Vocab Basics", sub: "Swipe, Quiz, Bubble", icon: "stack", type: "vocab" },
-            { id: "esl_2", label: "Grammar Structures", sub: "Shape Builder, Timeline", icon: "squares-four", type: "grammar" },
-            { id: "esl_3", label: "Simple Sentences", sub: "Typing, Scramble", icon: "keyboard", type: "grammar" },
-            { id: "esl_4", label: "Complex Output", sub: "Coming Soon", icon: "text-align-left", type: "grammar" },
-            { id: "esl_5", label: "Mastery", sub: "Calculate & Explain", icon: "lightbulb", type: "both" }
+            { id: "esl_1", label: "Vocab Basics", sub: "Swipe, Quiz, Bubble", icon: "stack", type: "vocab", games: ["swipe", "quiz", "bubble"] },
+            { id: "esl_2", label: "Vocab & Structure", sub: "Word Search, Scramble, Shape Builder", icon: "squares-four", type: "grammar", games: ["wordSearch", "scramble", "shapeBuilder"] },
+            { id: "esl_3", label: "Grammar Spotting", sub: "Photobomb, Signal Spotter", icon: "keyboard", type: "grammar", games: ["photobomb", "tenseSignal"] },
+            { id: "esl_4", label: "Active Recall", sub: "Typing, Timeline Detective, Angry Tenses", icon: "text-align-left", type: "grammar", games: ["typing", "timelineDetective", "angryTenses"] },
+            { id: "esl_5", label: "Mastery Challenge", sub: "Tense Runner, Word Runner", icon: "lightbulb", type: "both", games: ["marioTense", "endlessRunner"] }
         ]
     },
     wordlist_math: {
         objective: "Objective: Master addition, subtraction and word problems",
         nodes: [
-            { id: "math_1", label: "Number Basics", sub: "Math Weather Station, Quiz", icon: "hash", type: "both" },
-            { id: "math_2", label: "Logic Puzzles", sub: "Math Mystery Safe, Timeline", icon: "lock-key", type: "both" },
-            { id: "math_3", label: "Sorting & Matching", sub: "Math Sorting Factory, Bubble", icon: "factory", type: "both" },
-            { id: "math_4", label: "Data & Charts", sub: "Math Data Cinema, Swipe", icon: "film-strip", type: "both" },
-            { id: "math_5", label: "Concept Mastery", sub: "More games arriving soon", icon: "lightbulb", type: "both" }
+            { id: "math_1", label: "Number Basics", sub: "Math Weather Station, Quiz", icon: "hash", type: "both", games: ["quiz", "math_weather_station"] },
+            { id: "math_2", label: "Logic Puzzles", sub: "Math Mystery Safe", icon: "lock-key", type: "both", games: ["math_mystery_safe"] },
+            { id: "math_3", label: "Sorting & Matching", sub: "Math Sorting Factory, Bubble", icon: "factory", type: "both", games: ["math_sorting_factory", "bubble"] },
+            { id: "math_4", label: "Data & Charts", sub: "Math Data Cinema, Swipe", icon: "film-strip", type: "both", games: ["math_data_cinema", "swipe"] },
+            { id: "math_5", label: "Concept Mastery", sub: "Typing", icon: "lightbulb", type: "both", games: ["typing"] }
         ]
     },
     wordlist_science: {
         objective: "Objective: Understand light, the solar system and critical thinking",
         nodes: [
-            { id: "sci_1", label: "Science Vocab", sub: "Quiz, Typing, Swipe", icon: "flask", type: "vocab" },
-            { id: "sci_2", label: "Identify Concepts", sub: "Bubble, Word Search, Scramble", icon: "magnifying-glass", type: "vocab" },
-            { id: "sci_3", label: "Critical Thinking", sub: "Science Think Quiz", icon: "brain", type: "science" },
-            { id: "sci_4", label: "Deep Analysis", sub: "Science Think Quiz", icon: "flask", type: "science" },
-            { id: "sci_5", label: "Method Mastery", sub: "Coming Soon", icon: "lightbulb", type: "science" }
+            { id: "sci_1", label: "Science Vocab", sub: "Swipe, Quiz, Bubble", icon: "flask", type: "vocab", games: ["swipe", "quiz", "bubble"] },
+            { id: "sci_2", label: "Classification", sub: "Word Search, Scramble", icon: "magnifying-glass", type: "vocab", games: ["wordSearch", "scramble"] },
+            { id: "sci_3", label: "Rules & Logic", sub: "Science True/False", icon: "brain", type: "science", games: ["scienceTrueFalseGame"] },
+            { id: "sci_4", label: "Connections", sub: "Science Match", icon: "flask", type: "science", games: ["scienceMatchGame"] },
+            { id: "sci_5", label: "Critical Thinking", sub: "Science Think Quiz", icon: "lightbulb", type: "science", games: ["scienceThinkQuiz"] }
         ]
     }
 };
@@ -201,11 +201,8 @@ const GameJourney = ({
         );
     };
 
-    // We want to show all games separated by category, not just a static subset
-    const vocabGames = GAMES.filter(g => !g.isGrammar && !g.isScience && !g.isMath);
-    const grammarGames = GAMES.filter(g => g.isGrammar);
-    const scienceGames = GAMES.filter(g => g.isScience);
-    const mathGames = GAMES.filter(g => g.isMath);
+    // The generic filter is no longer used for mapping all games into massive lists
+    // Instead we map precisely per activeModalNode.games
 
     const handleStartSpecificGame = (gameObj) => {
         onSelectGame(gameObj.id);
@@ -393,62 +390,18 @@ const GameJourney = ({
 
 
                 <div className="gs-game-list">
-                    {currentSubjectKey === 'wordlist_esl' ? (
+                    {activeModalNode && (
                         <>
-                            {(!activeModalNode?.type || activeModalNode.type === 'vocab' || activeModalNode.type === 'both') && (
-                                <>
-                                    <div style={{ fontWeight: 800, color: '#1E293B', margin: '4px 0 8px', fontSize: '1.1rem' }}>Vocab Games</div>
-                                    {vocabGames.map(g => renderGameCardRow(g))}
-                                </>
+                            <div style={{ fontWeight: 800, color: '#1E293B', margin: '4px 0 8px', fontSize: '1.1rem' }}>{activeModalNode.label}</div>
+                            {(activeModalNode.games || []).map(gameId => {
+                                const gameObj = GAMES.find(g => g.id === gameId);
+                                return gameObj ? renderGameCardRow(gameObj) : null;
+                            })}
+                            
+                            {/* Fallback for coming soon */}
+                            {(activeModalNode.games || []).length === 0 && activeModalNode.sub?.toLowerCase().includes('coming soon') && (
+                                <div style={{ textAlign: 'center', padding: '20px', color: '#94A3B8' }}>More games arriving in the next update!</div>
                             )}
-
-                            {(!activeModalNode?.type || activeModalNode.type === 'grammar' || activeModalNode.type === 'both') && (
-                                <>
-                                    <div style={{ fontWeight: 800, color: '#1E293B', margin: '16px 0 8px', fontSize: '1.1rem' }}>Grammar Games</div>
-                                    {grammarGames.map(g => renderGameCardRow(g))}
-                                </>
-                            )}
-                        </>
-                    ) : currentSubjectKey === 'wordlist_science' ? (
-                        <>
-                            {(!activeModalNode?.type || activeModalNode.type === 'vocab') && (
-                                <>
-                                    <div style={{ fontWeight: 800, color: '#1E293B', margin: '4px 0 8px', fontSize: '1.1rem' }}>Vocab Games</div>
-                                    {vocabGames.map(g => renderGameCardRow(g))}
-                                </>
-                            )}
-                            {(!activeModalNode?.type || activeModalNode.type === 'science' || activeModalNode.type === 'both') && (
-                                <>
-                                    <div style={{ fontWeight: 800, color: '#1E293B', margin: '16px 0 8px', fontSize: '1.1rem' }}>🧪 Science Games</div>
-                                    {scienceGames.map(g => renderGameCardRow(g))}
-                                </>
-                            )}
-                            {activeModalNode?.sub?.toLowerCase().includes('coming soon') && (
-                                <div style={{ textAlign: 'center', padding: '20px', color: '#94A3B8' }}>More science games arriving in the next update!</div>
-                            )}
-                        </>
-                    ) : currentSubjectKey === 'wordlist_math' ? (
-                        <>
-                            {(!activeModalNode?.type || activeModalNode.type === 'vocab' || activeModalNode.type === 'both') && (
-                                <>
-                                    <div style={{ fontWeight: 800, color: '#1E293B', margin: '4px 0 8px', fontSize: '1.1rem' }}>General Games</div>
-                                    {vocabGames.map(g => renderGameCardRow(g))}
-                                </>
-                            )}
-                            {(!activeModalNode?.type || activeModalNode.type === 'math' || activeModalNode.type === 'both') && (
-                                <>
-                                    <div style={{ fontWeight: 800, color: '#1E293B', margin: '16px 0 8px', fontSize: '1.1rem' }}>🧮 Math Arcade</div>
-                                    {mathGames.map(g => renderGameCardRow(g))}
-                                </>
-                            )}
-                            {activeModalNode?.sub?.toLowerCase().includes('coming soon') && (
-                                <div style={{ textAlign: 'center', padding: '20px', color: '#94A3B8' }}>More math games arriving in the next update!</div>
-                            )}
-                        </>
-                    ) : (
-                        <>
-                            <div style={{ fontWeight: 800, color: '#1E293B', margin: '4px 0 8px', fontSize: '1.1rem' }}>{subjectData.label || "Available"} Games</div>
-                            {vocabGames.map(g => renderGameCardRow(g))}
                         </>
                     )}
                 </div>
