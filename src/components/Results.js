@@ -107,20 +107,28 @@ const Results = ({ score, questions, userAnswers, playAgain, saveResult, playerN
                       <span>{answer.question.word}</span>
                     </div>
                     
-                    {/* Learning context */}
-                    <div className="rr-context">
-                      {answer.question.example && (
-                        <p className="rr-example">
-                          <strong className="rr-label">Example:</strong> "{answer.question.example}"
-                        </p>
-                      )}
-                      {answer.question.vietnamese && (
-                        <p className="rr-meaning">
-                          <strong className="rr-label">Meaning:</strong> {answer.question.vietnamese}
-                        </p>
-                      )}
-                    </div>
                   </>
+                )}
+
+                {/* Learning context */}
+                {(answer.question.explanation || answer.question.example || answer.question.vietnamese) && (
+                  <div className="rr-context">
+                    {answer.question.explanation && (
+                      <p className="rr-example">
+                        <strong className="rr-label">Explanation:</strong> {answer.question.explanation}
+                      </p>
+                    )}
+                    {answer.question.example && (
+                      <p className="rr-example">
+                        <strong className="rr-label">Example:</strong> "{answer.question.example}"
+                      </p>
+                    )}
+                    {answer.question.vietnamese && (
+                      <p className="rr-meaning">
+                        <strong className="rr-label">Meaning:</strong> {answer.question.vietnamese}
+                      </p>
+                    )}
+                  </div>
                 )}
               </div>
 

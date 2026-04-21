@@ -134,7 +134,13 @@ const ScienceThinkQuiz = ({ words, selectedUnits, onAnswer, onComplete, onHome, 
     // Report to learning engine
     const targetWord = words[currentIndex]?.word || currentQ.id;
     if (onAnswer) {
-      onAnswer(targetWord, correct, responseTime);
+      const customQ = {
+        definition: currentQ.question,
+        word: currentQ.options[currentQ.correctIndex],
+        explanation: currentQ.explanation,
+        vietnamese: ""
+      };
+      onAnswer(targetWord, correct, responseTime, customQ, currentQ.options[optionIndex]);
     }
 
     // Show explanation after a brief pause

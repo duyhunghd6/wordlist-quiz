@@ -336,7 +336,7 @@ function App() {
   };
 
   // Handler for new games (Swipe, Bubble, WordSearch) - they manage their own state
-  const handleGameAnswer = (word, isCorrect, responseTimeMs) => {
+  const handleGameAnswer = (word, isCorrect, responseTimeMs, customQuestionObj = null, customSelected = undefined) => {
     // Update learning algorithm
     const currentWordData = learningData[word] || createDefaultLearning(word);
     const updatedWordData = updateWordLearning(currentWordData, isCorrect, responseTimeMs);
@@ -348,24 +348,28 @@ function App() {
     setLearningData(updatedLearningData);
     localStorage.setItem("learningData", JSON.stringify(updatedLearningData));
     
-    // Find the question object by word
-    let questionObj = questions.find(q => q.word === word || q.targetWord === word);
-    
-    // If not found in primary list, check TenseSentences DB for TOON sentences!
-    if (!questionObj && tenseSentences) {
-        const ts = tenseSentences.find(t => t.id === word || t.word === word);
-        if (ts) {
-            questionObj = {
-                word: word,
-                definition: ts.correct_sentence || ts.sentence || ts.verb_choices || '',
-                example: ts.wrong_sentence || '',
-                vietnamese: ts.translation || ''
-            };
-        }
-    }
+    let questionObj = customQuestionObj;
     
     if (!questionObj) {
-        questionObj = { word, definition: '' };
+        // Find the question object by word
+        questionObj = questions.find(q => q.word === word || q.targetWord === word);
+        
+        // If not found in primary list, check TenseSentences DB for TOON sentences!
+        if (!questionObj && tenseSentences) {
+            const ts = tenseSentences.find(t => t.id === word || t.word === word);
+            if (ts) {
+                questionObj = {
+                    word: word,
+                    definition: ts.correct_sentence || ts.sentence || ts.verb_choices || '',
+                    example: ts.wrong_sentence || '',
+                    vietnamese: ts.translation || ''
+                };
+            }
+        }
+        
+        if (!questionObj) {
+            questionObj = { word, definition: '' };
+        }
     }
     
     // Add to userAnswers for Results display
@@ -373,7 +377,7 @@ function App() {
       ...prev,
       {
         question: questionObj,
-        selected: isCorrect ? word : null,
+        selected: customSelected !== undefined ? customSelected : (isCorrect ? word : null),
         isCorrect,
         responseTimeMs,
       },

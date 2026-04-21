@@ -417,10 +417,12 @@ const GameJourney = ({
                                     {vocabGames.map(g => renderGameCardRow(g))}
                                 </>
                             )}
-                            <>
-                                <div style={{ fontWeight: 800, color: '#1E293B', margin: '16px 0 8px', fontSize: '1.1rem' }}>🧪 Science Games</div>
-                                {scienceGames.map(g => renderGameCardRow(g))}
-                            </>
+                            {(!activeModalNode?.type || activeModalNode.type === 'science' || activeModalNode.type === 'both') && (
+                                <>
+                                    <div style={{ fontWeight: 800, color: '#1E293B', margin: '16px 0 8px', fontSize: '1.1rem' }}>🧪 Science Games</div>
+                                    {scienceGames.map(g => renderGameCardRow(g))}
+                                </>
+                            )}
                             {activeModalNode?.sub?.toLowerCase().includes('coming soon') && (
                                 <div style={{ textAlign: 'center', padding: '20px', color: '#94A3B8' }}>More science games arriving in the next update!</div>
                             )}

@@ -114,7 +114,13 @@ const ScienceTrueFalseGame = ({ words, selectedUnits, onAnswer, onComplete, onHo
     // Report
     const targetWord = words?.[currentIndex]?.word || currentS.id;
     if (onAnswer) {
-      onAnswer(targetWord, correct, responseTime);
+      const customS = {
+        definition: currentS.statement,
+        word: currentS.isTrue ? "True" : "False",
+        explanation: currentS.explanation,
+        vietnamese: ""
+      };
+      onAnswer(targetWord, correct, responseTime, customS, answerTrueOrFalse ? "True" : "False");
     }
 
     setTimeout(() => {
