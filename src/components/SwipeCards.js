@@ -122,25 +122,26 @@ const SwipeCards = ({ words, onAnswer, onComplete, onHome, gameId = 'swipe' }) =
   const swipeIndicator = dragOffset.x > 50 ? 'right' : dragOffset.x < -50 ? 'left' : null;
 
   return (
-    <div style={{ maxWidth: '600px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: 'var(--space-lg)' }}>
-      {/* HUD Header */}
-      <div className="game-hud" style={{ width: '100%', maxWidth: '100%' }}>
-        <button className="hud-btn" onClick={onHome} aria-label="Go home">
-          <Home size={20} />
-        </button>
-        
-        <div style={{ flex: 1, margin: '0 var(--space-md)' }}>
-          {/* Progress display instead of timer */}
-          <span className="badge badge-neutral" style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
-            Card {currentIndex + 1} of {cards.length}
-          </span>
-        </div>
+    <div className="swipe-board" style={{ width: '100%', height: '100%', flex: 1 }}>
+      <div style={{ maxWidth: '600px', width: '100%', display: 'flex', flexDirection: 'column', gap: 'var(--space-lg)', flex: 1 }}>
+        {/* HUD Header */}
+        <div className="game-hud" style={{ width: '100%', maxWidth: '100%' }}>
+          <button className="hud-btn" onClick={onHome} aria-label="Go home">
+            <Home size={20} />
+          </button>
+          
+          <div style={{ flex: 1, margin: '0 var(--space-md)' }}>
+            {/* Progress display instead of timer */}
+            <span className="badge badge-neutral" style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
+              Card {currentIndex + 1} of {cards.length}
+            </span>
+          </div>
 
-        <div className="score-pill">
-          <span style={{ fontSize: '18px' }}>⭐</span>
-          <span className="score-text">{results.correct}</span>
+          <div className="score-pill">
+            <span style={{ fontSize: '18px' }}>⭐</span>
+            <span className="score-text">{results.correct}</span>
+          </div>
         </div>
-      </div>
 
       {/* Swipe Instructions */}
       <div style={{ display: 'flex', justifyContent: 'space-between', padding: '0 var(--space-md)' }}>
@@ -153,65 +154,49 @@ const SwipeCards = ({ words, onAnswer, onComplete, onHome, gameId = 'swipe' }) =
       </div>
 
       {/* Card Area */}
-      <div style={{ position: 'relative', width: '100%', height: '400px', margin: '0 auto' }}>
+      <div className="swipe-card-container" style={{ margin: 'auto' }}>
         {/* Next Card */}
         {currentIndex + 1 < cards.length && (
-          <div className="card shadow-md" style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, padding: 'var(--space-lg)', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', opacity: 0.6, transform: 'scale(0.95) translateY(20px)', zIndex: 1, overflow: 'hidden' }}>
-            <div style={{ fontSize: '1.8rem', fontWeight: 800 }}>{cards[currentIndex + 1].word}</div>
+          <div className="swipe-card" style={{ opacity: 0.6, transform: 'scale(0.95) translateY(20px)', zIndex: 1 }}>
+            <div className="card-content">
+              <h2>{cards[currentIndex + 1].word}</h2>
+            </div>
           </div>
         )}
 
         {/* Current Card */}
         <div 
           ref={cardRef}
-          className="card shadow-drag"
+          className="swipe-card"
           style={{
-            position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, padding: 'var(--space-lg)',
-            textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
-            backgroundColor: 'white', zIndex: 10, cursor: isDragging ? 'grabbing' : 'grab',
-            overflow: 'hidden',
+            zIndex: 10, cursor: isDragging ? 'grabbing' : 'grab',
             transform: `translate(${dragOffset.x}px, ${dragOffset.y}px) rotate(${rotation}deg)`,
             transition: isDragging ? 'none' : 'transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275)'
           }}
-          onMouseDown={handleDragStart}
-          onMouseMove={handleDragMove}
-          onMouseUp={handleDragEnd}
-          onMouseLeave={handleDragEnd}
-          onTouchStart={handleDragStart}
-          onTouchMove={handleDragMove}
-          onTouchEnd={handleDragEnd}
+          onPointerDown={handleDragStart}
+          onPointerMove={handleDragMove}
+          onPointerUp={handleDragEnd}
+          onPointerCancel={handleDragEnd}
         >
-          {/* Overlays */}
-          <div style={{ 
-            position: 'absolute', top: 0, left: 0, bottom: 0, width: '50%', background: 'linear-gradient(to right, rgba(239,68,68,0.2), transparent)', 
-            borderTopLeftRadius: 'var(--radius-xl)', borderBottomLeftRadius: 'var(--radius-xl)', display: 'flex', alignItems: 'center', justifyContent: 'flex-start', paddingLeft: 'var(--space-lg)',
-            opacity: swipeIndicator === 'left' ? 1 : 0, transition: 'opacity 0.2s', pointerEvents: 'none'
-          }}>
-            <div style={{ color: 'var(--color-danger)', display: 'flex', flexDirection: 'column', alignItems: 'center', transform: 'rotate(-15deg)' }}>
-              <X size={48} strokeWidth={3} />
-              <span style={{ fontWeight: 800, fontSize: '1.2rem', marginTop: '8px' }}>WRONG</span>
-            </div>
+          {/* Swipe Hints */}
+          <div className="swipe-hint left" style={{ opacity: dragOffset.x < -20 ? Math.min(1, Math.abs(dragOffset.x)/100) : 0, transition: 'opacity 0.2s', pointerEvents: 'none' }}>
+            Wrong
           </div>
-          
-          <div style={{ 
-            position: 'absolute', top: 0, right: 0, bottom: 0, width: '50%', background: 'linear-gradient(to left, rgba(34,197,94,0.2), transparent)', 
-            borderTopRightRadius: 'var(--radius-xl)', borderBottomRightRadius: 'var(--radius-xl)', display: 'flex', alignItems: 'center', justifyContent: 'flex-end', paddingRight: 'var(--space-lg)',
-            opacity: swipeIndicator === 'right' ? 1 : 0, transition: 'opacity 0.2s', pointerEvents: 'none'
-          }}>
-            <div style={{ color: 'var(--color-success)', display: 'flex', flexDirection: 'column', alignItems: 'center', transform: 'rotate(15deg)' }}>
-              <Check size={48} strokeWidth={3} />
-              <span style={{ fontWeight: 800, fontSize: '1.2rem', marginTop: '8px' }}>CORRECT</span>
-            </div>
+          <div className="swipe-hint right" style={{ opacity: dragOffset.x > 20 ? Math.min(1, dragOffset.x/100) : 0, transition: 'opacity 0.2s', pointerEvents: 'none' }}>
+            Got It!
           </div>
 
-          <div style={{ fontSize: '2rem', fontWeight: 800, color: 'var(--color-info)', marginBottom: 'var(--space-md)', wordBreak: 'break-word', maxWidth: '90%' }}>
-            {currentCard?.word}
+          <div className="card-content" style={{ width: '100%', wordBreak: 'break-word' }}>
+            <h2 style={{ color: 'var(--color-info)' }}>
+              {currentCard?.word}
+            </h2>
+            <hr style={{ width: '60%', margin: 'var(--space-md) auto', borderColor: 'var(--color-border-default)', borderStyle: 'solid', borderWidth: '2px 0 0 0', opacity: 0.5 }} />
+            <p style={{ fontWeight: 700, fontSize: '1.2rem', color: 'var(--color-text-primary)' }}>
+              {currentCard?.shownDefinition}
+            </p>
           </div>
-          <div style={{ width: '80%', height: '4px', background: 'var(--color-border-default)', marginBottom: 'var(--space-md)', borderRadius: '2px', flexShrink: 0 }} />
-          <div style={{ fontSize: '1.2rem', fontWeight: 600, color: 'var(--color-text-primary)', maxWidth: '90%', overflow: 'hidden', display: '-webkit-box', WebkitLineClamp: 4, WebkitBoxOrient: 'vertical' }}>
-            {currentCard?.shownDefinition}
-          </div>
-          <div style={{ marginTop: 'auto', color: 'var(--color-text-secondary)', fontWeight: 600, paddingTop: 'var(--space-sm)', fontSize: '0.9rem', flexShrink: 0 }}>
+
+          <div style={{ marginTop: 'auto', marginBottom: 'var(--space-lg)', fontSize: '0.9rem', color: 'var(--color-text-secondary)', fontWeight: 600 }}>
             Does this definition match?
           </div>
         </div>
@@ -219,7 +204,7 @@ const SwipeCards = ({ words, onAnswer, onComplete, onHome, gameId = 'swipe' }) =
 
       {/* Button Controls */}
       {!showFeedback && (
-        <div style={{ display: 'flex', justifyContent: 'center', gap: 'var(--space-2xl)', marginTop: 'var(--space-md)' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-evenly', padding: '0 40px', marginBottom: 'var(--space-xl)' }}>
           <button 
             style={{ width: '80px', height: '80px', borderRadius: '50%', backgroundColor: 'white', border: 'none', boxShadow: 'var(--shadow-md)', color: 'var(--color-danger)', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', transition: 'all 0.2s' }}
             onClick={() => handleSwipe('left')}
@@ -272,6 +257,7 @@ const SwipeCards = ({ words, onAnswer, onComplete, onHome, gameId = 'swipe' }) =
           </div>
         </div>
       )}
+    </div>
     </div>
   );
 };
