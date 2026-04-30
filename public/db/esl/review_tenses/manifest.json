@@ -1,0 +1,132 @@
+{
+  "name": "ESL Review Tenses",
+  "version": 1,
+  "basePath": "db/esl/review_tenses",
+  "banks": [
+    {
+      "id": "matching",
+      "file": "matching.json",
+      "count": 10,
+      "categories": [
+        {
+          "name": "Vocabulary - Matching",
+          "count": 10
+        }
+      ]
+    },
+    {
+      "id": "fill_given_words",
+      "file": "fill_given_words.json",
+      "count": 10,
+      "categories": [
+        {
+          "name": "Vocabulary - Fill in with given words",
+          "count": 10
+        }
+      ]
+    },
+    {
+      "id": "fill_passage",
+      "file": "fill_passage.json",
+      "count": 10,
+      "categories": [
+        {
+          "name": "Vocabulary - Fill in the passage",
+          "count": 10
+        }
+      ]
+    },
+    {
+      "id": "multiple_choice",
+      "file": "multiple_choice.json",
+      "count": 50,
+      "categories": [
+        {
+          "name": "Vocabulary - Multiple Choice",
+          "count": 10
+        },
+        {
+          "name": "Reading - Multiple Choice",
+          "count": 10
+        },
+        {
+          "name": "Grammar - Multiple Choice - Would you like",
+          "count": 10
+        },
+        {
+          "name": "Grammar - Multiple Choice - Present Continuous Future",
+          "count": 10
+        },
+        {
+          "name": "Grammar - Multiple Choice - Future Forms",
+          "count": 10
+        }
+      ]
+    },
+    {
+      "id": "grammar_completion",
+      "file": "grammar_completion.json",
+      "count": 90,
+      "categories": [
+        {
+          "name": "Grammar - Completion - Tag Questions",
+          "count": 10
+        },
+        {
+          "name": "Grammar - Completion - Present Simple",
+          "count": 10
+        },
+        {
+          "name": "Grammar - Completion - Past Continuous",
+          "count": 10
+        },
+        {
+          "name": "Grammar - Completion - Present Perfect",
+          "count": 10
+        },
+        {
+          "name": "Grammar - Completion - Obligation & Possibility",
+          "count": 10
+        },
+        {
+          "name": "Grammar - Completion - Relative Clauses",
+          "count": 10
+        },
+        {
+          "name": "Grammar - Completion - Like/About",
+          "count": 10
+        },
+        {
+          "name": "Grammar - Completion - Prepositions of Direction",
+          "count": 10
+        },
+        {
+          "name": "Grammar - Completion - Mixed Grammar",
+          "count": 10
+        }
+      ]
+    },
+    {
+      "id": "reading_find_words",
+      "file": "reading_find_words.json",
+      "count": 10,
+      "categories": [
+        {
+          "name": "Reading - Find word or phrase",
+          "count": 10
+        }
+      ]
+    },
+    {
+      "id": "reading_short_answer",
+      "file": "reading_short_answer.json",
+      "count": 5,
+      "categories": [
+        {
+          "name": "Reading - Short Answer",
+          "count": 5
+        }
+      ]
+    }
+  ]
+}

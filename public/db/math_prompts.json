@@ -1,0 +1,522 @@
+[
+  {
+    "word": "Negative",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A vertical thermometer with a thick horizontal line representing a base point. The red liquid is clearly visible deep below this base line."
+  },
+  {
+    "word": "Minus",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A thick, bold horizontal bar symbol representing subtraction, styled as a solid 3D wooden block."
+  },
+  {
+    "word": "Difference",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. Two vertical stacks of blue blocks side-by-side; one stack is taller than the other. A bright red arrow points to the empty space above the shorter stack to show the gap between their heights."
+  },
+  {
+    "word": "Linear sequence",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A series of block towers increasing in height by exactly one block each time, forming a perfectly straight diagonal slope like a set of stairs."
+  },
+  {
+    "word": "Negative number",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A flat ground line with a rectangular pit dug into it. Inside the pit, below the surface level, sit three red cubes."
+  },
+  {
+    "word": "Non-linear sequence",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A series of block towers where the height increases inconsistently and sharply, such as 1 block, 2 blocks, 5 blocks, then 12 blocks."
+  },
+  {
+    "word": "(term to term) Rule",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A simple mechanical machine where a plain blue square enters on a conveyor belt and a blue square with a yellow star attached exits on the other side."
+  },
+  {
+    "word": "Sequence",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A horizontal row of geometric shapes following a repeating pattern: red circle, blue square, green triangle, red circle, blue square, green triangle."
+  },
+  {
+    "word": "Temperature",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A thermometer placed exactly in the middle between a bright glowing sun and a cold blue snowflake."
+  },
+  {
+    "word": "Zero",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A simple white ceramic plate that is completely empty, sitting next to a plate that contains a single apple."
+  },
+  {
+    "word": "Thermometer",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A glass tube with a bulb at the bottom filled with red liquid, featuring a scale of tick marks along the side but no numbers."
+  },
+  {
+    "word": "Compose",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. Two separate jigsaw puzzle pieces being pushed together to click into place and form a single shape."
+  },
+  {
+    "word": "Decompose",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A single large orange square breaking apart into four smaller, separate orange squares."
+  },
+  {
+    "word": "Regroup",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. Ten small unit cubes being enclosed in a glowing bracket and transformed into one solid vertical rod of the same total volume."
+  },
+  {
+    "word": "Equivalent",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A classic balance scale with two pans. One pan holds a large yellow triangle, and the other pan holds three small yellow triangles, with the beam perfectly level."
+  },
+  {
+    "word": "Thousand",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A large 3D cube made of many tiny individual unit cubes, arranged in a dense 10x10x10 grid."
+  },
+  {
+    "word": "Ten thousand",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A long horizontal row consisting of ten large 3D cubes, where each large cube is a block of a thousand units."
+  },
+  {
+    "word": "Hundred thousand",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A massive 10x10 square grid laid out on a floor, where every single cell in the grid is a large 3D cube made of tiny units."
+  },
+  {
+    "word": "Million",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A giant, towering mountain of tiny unit cubes, contrasting with a single tiny unit cube sitting alone next to it."
+  },
+  {
+    "word": "Place holder",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. Four wooden slots for digits; the second slot contains a bright red ring shaped like a zero to keep the first and third slots in their correct positions."
+  },
+  {
+    "word": "Place value",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. An abacus-style chart with three vertical poles of different colors; the first pole has one ring, the second has five rings, and the third has two rings."
+  },
+  {
+    "word": "Analogue clock",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A round clock face with a long minute hand and a short hour hand, featuring tick marks for hours but no numbers on the dial."
+  },
+  {
+    "word": "Digital clock",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A rectangular electronic screen showing the glowing outlines of a four-part seven-segment display without any active digits."
+  },
+  {
+    "word": "A.m",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A window view showing a bright yellow sun rising over a green horizon with the silhouette of a crowing rooster."
+  },
+  {
+    "word": "P.m",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A window view showing a dark blue night sky with a glowing crescent moon and several small stars."
+  },
+  {
+    "word": "Hour",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A circular clock face where exactly one-twelfth of the circle, like a single pie slice, is shaded in a bright color."
+  },
+  {
+    "word": "Minute",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A circular clock face where a very thin, needle-like sliver is shaded to represent a tiny fraction of the whole circle."
+  },
+  {
+    "word": "Second",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A close-up of a stopwatch dial with a thin red needle pointing to a single tiny tick mark among many hundreds of marks."
+  },
+  {
+    "word": "Calender",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A grid of 30 squares arranged in rows and columns, with one specific square highlighted in a bright red color."
+  },
+  {
+    "word": "Leap year",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A calendar page showing a grid where a single extra square is being added to the end of a row by a pencil, making it longer than the others."
+  },
+  {
+    "word": "Time interval",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. Two analog clock faces side-by-side; the second clock has a shaded colored wedge between the start and end positions of the minute hand to show the duration of time passed."
+  },
+  {
+    "word": "Timetable",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A grid layout resembling a schedule, with different simple icons like a sun, a book, and a school bus placed in various cells to represent a planned sequence."
+  },
+  {
+    "word": "Symbol",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A collection of mathematical operators including a plus sign, minus sign, multiplication cross, and division sign arranged neatly in a cluster."
+  },
+  {
+    "word": "Write",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A human hand holding a pencil, drawing a crisp line on a blank sheet of paper."
+  },
+  {
+    "word": "Use",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A hand holding a wooden ruler against a geometric square to measure its side, demonstrating the application of a tool."
+  },
+  {
+    "word": "Addition",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. Two separate piles of colorful wooden blocks being pushed together by two arrows into one single large pile."
+  },
+  {
+    "word": "Subtraction",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A large group of red spheres with a few spheres being pulled away by a dashed arrow, leaving a smaller group behind."
+  },
+  {
+    "word": "Even",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. Several pairs of identical socks arranged in neat rows, with every single sock having a matching partner and none left over."
+  },
+  {
+    "word": "Odd",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. Several pairs of identical socks, but one single sock is sitting alone at the end without a partner."
+  },
+  {
+    "word": "Generalisation (general statement)",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. Many different types of triangles (equilateral, right, isosceles) all pointing towards a single golden star icon representing a universal rule that applies to all."
+  },
+  {
+    "word": "Counter-example",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A row of five green circles, followed by one bright red square which is highlighted by a large pointing arrow to show it breaks the pattern."
+  },
+  {
+    "word": "Probability",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A circular spinner divided into four different colored sections with a black needle in the center ready to spin."
+  },
+  {
+    "word": "No chance",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A glass jar filled only with blue marbles; a hand reaches in, but a red marble icon outside the jar is crossed out with a large red X."
+  },
+  {
+    "word": "Poor chance",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A circular spinner that is almost entirely green, with only one tiny, thin sliver of yellow, showing it is unlikely to land on yellow."
+  },
+  {
+    "word": "Even chance",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A circular spinner divided exactly in half, one side blue and one side orange, showing equal likelihood."
+  },
+  {
+    "word": "Good chance",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A circular spinner that is almost entirely orange, with only one tiny, thin sliver of blue, showing it is very likely to land on orange."
+  },
+  {
+    "word": "Certain",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A glass jar filled entirely with blue marbles; a hand is shown successfully picking up one of the blue marbles because there are no other options."
+  },
+  {
+    "word": "Outcome",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A single wooden die that has just been rolled, showing the top face clearly with dots, with a small arrow pointing to the result."
+  },
+  {
+    "word": "Unlikely",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A bag containing many white marbles and only one single black marble being drawn out, representing a low probability."
+  },
+  {
+    "word": "Likely",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A bag containing many black marbles and only one single white marble, with a black marble being drawn out, representing a high probability."
+  },
+  {
+    "word": "Impossible",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A coin with the same 'heads' image on both sides; a 'tails' icon is shown to the side with a heavy red 'forbidden' circle over it."
+  },
+  {
+    "word": "Maybe",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A classic balance scale with two identical weights on each side, perfectly level and balanced, representing a 50/50 possibility."
+  },
+  {
+    "word": "Array",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A perfectly aligned grid of solid circles, arranged in 3 horizontal rows and 4 vertical columns."
+  },
+  {
+    "word": "Factor",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A large rectangle made of 6 squares, being split by dashed lines into three smaller equal groups of 2 squares each."
+  },
+  {
+    "word": "Inverse operations",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. Two curved arrows forming a circle; the top arrow has a plus symbol and the bottom arrow has a minus symbol, showing they undo each other."
+  },
+  {
+    "word": "Multiple",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A sequence of block towers: the first has 2 blocks, the second has 4 blocks, and the third has 6 blocks, showing growth by repeating the same unit."
+  },
+  {
+    "word": "Product",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A rectangular area model made of a grid of squares, representing the final result of combining rows and columns."
+  },
+  {
+    "word": "Associative law",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. Three groups of blocks (red, blue, yellow). One side shows red and blue in a bracket-like container next to yellow. The other side shows red next to blue and yellow in a bracket-like container, with an equals sign between them."
+  },
+  {
+    "word": "Multiplying Multiply Multiplied",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. Four identical groups of three cherries, with an arrow pointing to a single large pile containing all twelve cherries to show repeated addition."
+  },
+  {
+    "word": "Product",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A finished multiplication table grid where one specific cell is highlighted as the final result of the intersecting row and column."
+  },
+  {
+    "word": "2d Shape",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A collection of flat geometric shapes including a circle, a square, and a triangle, shown from a top-down perspective to emphasize flatness."
+  },
+  {
+    "word": "Polygon",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A group of several different shapes with only straight sides, such as a triangle, a pentagon, and a hexagon. No curved edges."
+  },
+  {
+    "word": "Parallel",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. Two thick, perfectly straight blue lines running side-by-side vertically, maintaining the exact same distance apart from top to bottom without ever touching."
+  },
+  {
+    "word": "Tessellation",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A repeating pattern of colorful hexagons interlocking perfectly with no gaps and no overlaps, like a honeycomb."
+  },
+  {
+    "word": "Symmetry/symmetrical",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A colorful butterfly with identical wing patterns on both sides, split down the middle by a faint vertical dashed line."
+  },
+  {
+    "word": "Line of symmetry",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A simple red heart shape with a bold, black dashed line running vertically through the exact center to show two identical halves."
+  },
+  {
+    "word": "Horizontal",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A single, bold black line running perfectly straight from left to right, parallel to the bottom edge of the frame."
+  },
+  {
+    "word": "Vertical",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A single, bold black line running perfectly straight from top to bottom, standing upright like a flagpole."
+  },
+  {
+    "word": "Numerator",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A visual representation of a fraction with a top box and a bottom box separated by a bar. A bright red arrow points specifically to the top box."
+  },
+  {
+    "word": "Denominator",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A visual representation of a fraction with a top box and a bottom box separated by a bar. A bright red arrow points specifically to the bottom box."
+  },
+  {
+    "word": "Fraction",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A circular pie divided into four equal slices, with one slice pulled slightly away from the rest of the whole."
+  },
+  {
+    "word": "Operator",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A large, bold division symbol (÷) placed between a fraction bar and a group of objects to show an action being performed."
+  },
+  {
+    "word": "Unit fraction",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A long rectangular bar divided into five equal segments, with only the very first segment colored in."
+  },
+  {
+    "word": "Angle",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. Two straight lines meeting at a single vertex point, with a small curved arc drawn between them to indicate the turn."
+  },
+  {
+    "word": "Degrees",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A semi-circle protractor tool placed over a geometric angle, showing the scale marks for measurement without any numbers."
+  },
+  {
+    "word": "Compare",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A simple balance scale with a large heavy cube on one side and a tiny small cube on the other side."
+  },
+  {
+    "word": "Right angle",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. Two lines meeting at a perfect corner, with a small square symbol drawn inside the corner to indicate 90 degrees."
+  },
+  {
+    "word": "Acute",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. Two lines meeting at a very narrow, sharp angle, much smaller than a square corner."
+  },
+  {
+    "word": "Obtuse angle",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. Two lines meeting at a very wide, open angle, much larger than a square corner."
+  },
+  {
+    "word": "Estimate",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A glass jar filled with many small blue beads. Next to it, a thought bubble contains a small, approximate group of the same beads."
+  },
+  {
+    "word": "Compare",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A large 'greater than' symbol (>) placed between a large pile of blocks and a small pile of blocks."
+  },
+  {
+    "word": "Order",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. Four wooden blocks of clearly different heights arranged in a row from the shortest to the tallest."
+  },
+  {
+    "word": "Round",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A horizontal line with two large dots at the ends. A smaller dot in the middle is being pulled by a magnet toward the closer large dot."
+  },
+  {
+    "word": "Round to the nearest",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A path with two markers. A character stands between the markers but is much closer to one, with an arrow pointing to that closer destination."
+  },
+  {
+    "word": "Division",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. Twelve identical apples being sorted into three separate, equal baskets to show sharing."
+  },
+  {
+    "word": "Remainder",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. Seven oranges being put into two boxes of three, with one single orange left sitting alone outside the boxes."
+  },
+  {
+    "word": "Divisor",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A large group of blocks and a thick vertical bar acting as a 'divider' tool to split them into specific groups."
+  },
+  {
+    "word": "Data",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A simple bar graph with three columns of different heights and a small tally chart next to it."
+  },
+  {
+    "word": "Dot plot",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A straight horizontal line with several small circles stacked vertically above different points on the line."
+  },
+  {
+    "word": "Statistical question",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A person holding a clipboard and a pencil, looking at a diverse crowd of people to collect information."
+  },
+  {
+    "word": "Equivalent (fraction)",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. Two identical circles side-by-side. The left circle is divided into two equal halves with one half shaded. The right circle is divided into four equal quarters with two quarters shaded. An equals symbol is placed between the two circles."
+  },
+  {
+    "word": "Proper Fraction",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A single circle divided into four equal slices. Only one slice is shaded, representing a part that is clearly less than the whole."
+  },
+  {
+    "word": "Percent",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A large grid consisting of ten rows and ten columns of small squares. A portion of the squares are shaded in a different color to represent a part of the hundred."
+  },
+  {
+    "word": "Percentage",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A circular progress ring that is partially filled with color, showing a specific portion of the total circle."
+  },
+  {
+    "word": "Face",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A 3D isometric cube where one flat side surface is highlighted in a bright, contrasting color."
+  },
+  {
+    "word": "Edge/edges",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A 3D isometric cube where one single line where two surfaces meet is highlighted with a thick, glowing stroke."
+  },
+  {
+    "word": "Vertex/vertices",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A 3D isometric cube where one corner point where three lines meet is highlighted with a bright, solid dot."
+  },
+  {
+    "word": "Pyramid",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A 3D square-based pyramid with four triangular faces meeting at a single top point."
+  },
+  {
+    "word": "Cone",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A 3D cone with a flat circular base and a smooth curved surface tapering to a sharp point at the top."
+  },
+  {
+    "word": "Prism",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A 3D triangular prism showing two identical triangular ends connected by three rectangular side faces."
+  },
+  {
+    "word": "Net",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A 2D flat shape composed of six squares arranged in a cross pattern, showing the unfolded layout of a cube."
+  },
+  {
+    "word": "Carry",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. Two columns of small blocks. A group of ten blocks from the right column is circled and has an arrow pointing upwards and then left into the top of the left column."
+  },
+  {
+    "word": "Compose",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. Several small geometric triangles and squares with arrows pointing inward toward each other to form one large, complex polygon."
+  },
+  {
+    "word": "Decompose",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. One large rectangle with arrows pointing outward, showing it breaking apart into several smaller, different-sized rectangles."
+  },
+  {
+    "word": "Proper fraction",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A fraction bar with a small group of three dots above it and a larger group of eight dots below it."
+  },
+  {
+    "word": "Improper fraction",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. Two identical circles. The first circle is completely shaded. The second circle is divided into four parts, with one part shaded."
+  },
+  {
+    "word": "Numerator",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A vertical fraction bar. A solid shaded square is positioned above the bar, and an empty square outline is positioned below the bar. The top square is highlighted with a glowing border."
+  },
+  {
+    "word": "Denominator",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A vertical fraction bar. An empty square outline is positioned above the bar, and a solid shaded square is positioned below the bar. The bottom square is highlighted with a glowing border."
+  },
+  {
+    "word": "Area",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A rectangle filled with a visible grid of small internal squares. The entire interior space of the rectangle is shaded to show surface coverage."
+  },
+  {
+    "word": "Perimeter",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A rectangle where the interior is empty, but the outer boundary line is very thick and highlighted with a bright color and a small arrow traveling along the edge."
+  },
+  {
+    "word": "Negative number",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A vertical thermometer scale with a thick horizontal line representing zero. The liquid level is shown significantly below that horizontal line in a cold blue color."
+  },
+  {
+    "word": "Compare",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A classic balance scale. One side is tilted down with a large pile of spheres, while the other side is tilted up with a single sphere, showing a clear difference in quantity."
+  },
+  {
+    "word": "Order",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. Five vertical bars of different heights arranged in a sequence from the shortest on the left to the tallest on the right, like a staircase."
+  },
+  {
+    "word": "Square number:",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A perfectly square arrangement of nine small circles, forming a 3x3 grid."
+  },
+  {
+    "word": "Multiple",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A row of distinct groups of stars. The first group has 3 stars, the second has 6, the third has 9, and the fourth has 12, showing repeated addition."
+  },
+  {
+    "word": "Factor",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A large rectangle made of twelve small squares, with dashed lines showing how it can be split into three equal rows of four."
+  },
+  {
+    "word": "Divisible",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. Eight apples being distributed equally into four baskets, with exactly two apples in each basket and no apples left over."
+  },
+  {
+    "word": "Divisibility rule",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A group of objects being passed through a logic gate or funnel that results in a green checkmark, showing they fit a specific mathematical pattern."
+  },
+  {
+    "word": "Carrol diagram",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A 2x2 grid table. The top headers show a sun and a cloud icon. The side headers show a large circle and a small circle icon. Shapes are sorted into the four boxes accordingly."
+  },
+  {
+    "word": "Venn diagram",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. Two large overlapping circles. The left section contains blue triangles, the right section contains red squares, and the overlapping center contains blue squares."
+  },
+  {
+    "word": "Pictogram",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A chart where rows are represented by small icons of identical red apples. The first row has three apples, the second has five, and the third has two, arranged in a grid-like alignment to show quantity visually."
+  },
+  {
+    "word": "Product",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A 3 by 4 grid of blue spheres forming a solid rectangle. A thick arrow points to the entire completed rectangular block of spheres to represent the total result of combining the groups."
+  },
+  {
+    "word": "Dividend",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A large, single pile of twelve orange cubes at the top. Below it, dashed lines show the pile being split into smaller groups. The large top pile is highlighted with a soft glow to show it is the amount being divided."
+  },
+  {
+    "word": "Divisor",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. Three identical empty wooden crates lined up. A large group of items is being distributed into these crates. The crates themselves are the focus, representing the number of groups the total is being split into."
+  },
+  {
+    "word": "Quotient",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A large group of items has been split into four equal smaller circles. One of these smaller circles is highlighted in bright yellow to represent the result of the division process."
+  },
+  {
+    "word": "Remainder",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. Ten green marbles divided into three equal groups of three. One single marble sits alone outside of the groups, highlighted with a red circle to show it is the amount left over."
+  },
+  {
+    "word": "Estimate",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A jar filled with many small jellybeans. Next to it, a thought bubble contains a simplified, rounded pile of jellybeans, representing a quick mental calculation of the approximate total."
+  },
+  {
+    "word": "Compass",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A circular magnetic compass with a silver casing. The needle is half red and half white, pointing towards the top. Small directional markers are visible around the edge but contain no letters or numbers."
+  },
+  {
+    "word": "Coordinates",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A simple grid of thin grey lines. A single bright red dot is placed at an intersection. Two dashed lines, one horizontal and one vertical, connect the dot to the main axes to show its specific position."
+  },
+  {
+    "word": "Quadrant",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A large square divided into four equal smaller squares by a vertical and horizontal axis. The top-right square is filled with a solid bright blue color, while the other three squares remain white."
+  }
+]

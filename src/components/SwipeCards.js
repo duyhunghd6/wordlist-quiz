@@ -187,9 +187,14 @@ const SwipeCards = ({ words, onAnswer, onComplete, onHome, gameId = 'swipe' }) =
           </div>
 
           <div className="card-content" style={{ width: '100%', wordBreak: 'break-word' }}>
-            <h2 style={{ color: 'var(--color-info)' }}>
+            <h2 style={{ color: 'var(--color-info)', marginBottom: currentCard?.sourceWord?.image ? 'var(--space-xs)' : 'var(--space-md)' }}>
               {currentCard?.word}
             </h2>
+            {currentCard?.sourceWord?.image && (
+              <div className="vocab-image-container">
+                <img src={currentCard.sourceWord.image} alt={currentCard.word} className="vocab-image" />
+              </div>
+            )}
             <hr style={{ width: '60%', margin: 'var(--space-md) auto', borderColor: 'var(--color-border-default)', borderStyle: 'solid', borderWidth: '2px 0 0 0', opacity: 0.5 }} />
             <p style={{ fontWeight: 700, fontSize: '1.2rem', color: 'var(--color-text-primary)' }}>
               {currentCard?.shownDefinition}

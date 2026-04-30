@@ -121,7 +121,12 @@ const Quiz = ({ selectedWordlist, questions, currentQuestionIndex, handleAnswer,
 
       {/* Question Card */}
       <div className="card shadow-md" style={{ width: '100%', padding: 'var(--space-xl)' }}>
-        <h2 style={{ fontSize: '1.5rem', textAlign: 'center', margin: '0 0 var(--space-xl) 0', color: 'var(--color-text-primary)' }}>
+        {currentQuestion.image && (
+          <div className="vocab-image-container" style={{ marginBottom: 'var(--space-md)' }}>
+            <img src={currentQuestion.image} alt={currentQuestion.word} className="vocab-image" />
+          </div>
+        )}
+        <h2 style={{ fontSize: '1.5rem', textAlign: 'center', margin: currentQuestion.image ? '0 0 var(--space-md) 0' : '0 0 var(--space-xl) 0', color: 'var(--color-text-primary)' }}>
           {currentQuestion.definition || currentQuestion.vietnamese}
         </h2>
         

@@ -14,11 +14,11 @@ const JOURNEY_DATA = {
     wordlist_esl: {
         objective: "Objective: Describe daily routines and past experiences",
         nodes: [
-            { id: "esl_1", label: "Vocab Basics", sub: "Swipe, Quiz, Bubble", icon: "stack", type: "vocab", games: ["swipe", "quiz", "bubble"] },
-            { id: "esl_2", label: "Vocab & Structure", sub: "Word Search, Scramble, Shape Builder", icon: "squares-four", type: "grammar", games: ["wordSearch", "scramble", "shapeBuilder"] },
-            { id: "esl_3", label: "Grammar Spotting", sub: "Photobomb, Signal Spotter", icon: "keyboard", type: "grammar", games: ["photobomb", "tenseSignal"] },
-            { id: "esl_4", label: "Active Recall", sub: "Typing, Timeline Detective, Angry Tenses", icon: "text-align-left", type: "grammar", games: ["typing", "timelineDetective", "angryTenses"] },
-            { id: "esl_5", label: "Mastery Challenge", sub: "Tense Runner, Word Runner", icon: "lightbulb", type: "both", games: ["marioTense", "endlessRunner"] }
+            { id: "esl_1", label: "Vocab Warm-up", sub: "Swipe, Quiz, Bubble", icon: "stack", type: "vocab", games: ["swipe", "quiz", "bubble"] },
+            { id: "esl_2", label: "Word Meaning & Form", sub: "Word Search, Scramble, ESL Matching", icon: "squares-four", type: "grammar", games: ["wordSearch", "scramble", "eslMatching"] },
+            { id: "esl_3", label: "Grammar Noticing", sub: "Shape Builder, Signal Spotter, Review Quiz", icon: "keyboard", type: "grammar", games: ["shapeBuilder", "tenseSignal", "eslReviewQuiz"] },
+            { id: "esl_4", label: "Grammar Building", sub: "Word Bank Builder, Angry Tenses, Timeline Detective", icon: "text-align-left", type: "grammar", games: ["wordBankBuilder", "angryTenses", "timelineDetective"] },
+            { id: "esl_5", label: "Reading Mission", sub: "Reading Explorer, Word Runner, Tense Runner", icon: "lightbulb", type: "both", games: ["readingExplorer", "endlessRunner", "marioTense"] }
         ]
     },
     wordlist_math: {
@@ -67,6 +67,10 @@ const GAME_ICONS = {
     "Science Think Quiz": { icon: Brain, color: "gs-bg-purple", tags: ["Science", "Thinking"] },
     "Science True/False": { icon: CheckSquareOffset, color: "gs-bg-pink", tags: ["Science", "Logic"] },
     "Science Match": { icon: Intersect, color: "gs-bg-blue", tags: ["Science", "Matching"] },
+    "Review Quiz": { icon: CheckSquareOffset, color: "gs-bg-purple", tags: ["Grammar", "Review"] },
+    "ESL Matching": { icon: Intersect, color: "gs-bg-blue", tags: ["Vocab", "Matching"] },
+    "Word Bank Builder": { icon: SquaresFour, color: "gs-bg-orange", tags: ["Grammar", "Build"] },
+    "Reading Explorer": { icon: BookOpen, color: "gs-bg-purple", tags: ["Reading", "Mission"] },
     "Math Weather Station": { icon: Hash, color: "gs-bg-blue", tags: ["Math", "Logic"] },
     "Math Mystery Safe": { icon: Calculator, color: "gs-bg-purple", tags: ["Math", "Logic"] },
     "Math Sorting Factory": { icon: Intersect, color: "gs-bg-pink", tags: ["Math", "Categories"] },

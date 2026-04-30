@@ -370,6 +370,24 @@
 .card-content h2 { margin: 0 0 var(--space-md); font-size: 2rem; color: var(--color-text-primary); line-height: 1.2;}
 .card-content p { color: var(--color-text-secondary); font-size: 1.1rem; margin:0;}
 
+/* Vocab Image Support */
+.vocab-image-container {
+  width: 100%;
+  max-height: 160px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  margin: var(--space-md) 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f8fafc;
+}
+.vocab-image {
+  max-width: 100%;
+  max-height: 160px;
+  object-fit: contain;
+}
+
 /* Game Selector Card */
 .game-selector-card {
     display: flex;

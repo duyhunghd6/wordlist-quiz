@@ -404,7 +404,13 @@ const TypingQuiz = ({ words, onAnswer, onComplete, onHome, gameId, learningData 
           {difficulty.toUpperCase()}
         </div>
         
-        <h2 style={{ fontSize: '1.5rem', margin: 'var(--space-lg) 0 var(--space-2xl) 0', color: 'var(--color-text-primary)' }}>
+        {currentWord.image && (
+          <div className="vocab-image-container" style={{ marginTop: 'var(--space-xl)' }}>
+            <img src={currentWord.image} alt={currentWord.word} className="vocab-image" />
+          </div>
+        )}
+        
+        <h2 style={{ fontSize: '1.5rem', margin: currentWord.image ? 'var(--space-md) 0 var(--space-xl) 0' : 'var(--space-lg) 0 var(--space-2xl) 0', color: 'var(--color-text-primary)' }}>
           {currentWord.definition || currentWord.vietnamese}
         </h2>
         

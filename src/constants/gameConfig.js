@@ -31,6 +31,10 @@ export const GAMES = [
   { id: 'tenseSignal', emoji: '🔍', name: 'Signal Spotter', available: true, isGrammar: true },
   { id: 'endlessRunner', emoji: '🏃', name: 'Word Runner', available: true, isGrammar: true },
   { id: 'angryTenses', emoji: '😠', name: 'Angry Tenses', available: true, isGrammar: true },
+  { id: 'eslReviewQuiz', emoji: '✅', name: 'Review Quiz', available: true, isGrammar: true },
+  { id: 'eslMatching', emoji: '🔗', name: 'ESL Matching', available: true, isGrammar: true },
+  { id: 'wordBankBuilder', emoji: '🧱', name: 'Word Bank Builder', available: true, isGrammar: true },
+  { id: 'readingExplorer', emoji: '📖', name: 'Reading Explorer', available: true, isGrammar: true },
 
   // Science Games
   { id: 'scienceThinkQuiz', emoji: '🧪', name: 'Science Think Quiz', available: true, isScience: true },

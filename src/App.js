@@ -20,6 +20,10 @@ import AngryTensesGame from "./components/games/AngryTenses/AngryTenses";
 import ScienceThinkQuiz from "./components/games/ScienceThinkQuiz";
 import ScienceTrueFalseGame from "./components/games/ScienceTrueFalseGame";
 import ScienceMatchGame from "./components/games/ScienceMatchGame";
+import EslReviewQuiz from "./components/games/EslReviewQuiz";
+import EslMatchingGame from "./components/games/EslMatchingGame";
+import WordBankBuilder from "./components/games/WordBankBuilder";
+import ReadingExplorer from "./components/games/ReadingExplorer";
 import MathWeatherStation from "./components/games/MathWeatherStation";
 import MathMysterySafe from "./components/games/MathMysterySafe";
 import MathSortingFactory from "./components/games/MathSortingFactory";
@@ -43,6 +47,7 @@ import {
   useActivityLog,
 } from "./hooks/useLocalStorage";
 import { getAvatarById } from "./constants/gameConfig";
+import { normalizeEslReviewQuestions } from "./utils/eslReviewNormalizer";
 
 function App() {
   // Multi-profile hooks
@@ -73,6 +78,7 @@ function App() {
   // Game state
   const [wordlist, setWordlist] = useState(null);
   const [tenseSentences, setTenseSentences] = useState(null); // High-quality grammar DB
+  const [eslReviewQuestions, setEslReviewQuestions] = useState(null);
   const [selectedWordlist, setSelectedWordlist] = useState("");
   const [units, setUnits] = useState([]);
   const [selectedUnits, setSelectedUnits] = useState([]);
@@ -141,12 +147,12 @@ function App() {
                 const tsResponse = await fetch(`db/tense_sentences_esl.toon`);
                 if (tsResponse.ok) {
                     const tsText = await tsResponse.text();
-                    
+
                     // Parse official TOON tabular format
                     const lines = tsText.trim().split('\n');
                     // Extract headers from: [250]{id,tense,level,correct_sentence,...}:
                     const headerMatch = lines[0].match(/\{([^}]+)\}/);
-                    
+
                     if (headerMatch) {
                         const headers = headerMatch[1].split(',').map(h => h.trim());
                         const tsData = [];
@@ -167,8 +173,29 @@ function App() {
             } catch (err) {
                 console.warn("Could not load tense sentences: ", err);
             }
+
+            try {
+                const manifestResponse = await fetch(`db/esl/review_tenses/manifest.json`);
+                if (manifestResponse.ok) {
+                    const manifest = await manifestResponse.json();
+                    const basePath = manifest.basePath || 'db/esl/review_tenses';
+                    const bankEntries = await Promise.all((manifest.banks || []).map(async (bank) => {
+                        const bankResponse = await fetch(`${basePath}/${bank.file}`);
+                        if (!bankResponse.ok) throw new Error(`Failed to load ESL review bank: ${bank.file}`);
+                        return [bank.id, await bankResponse.json()];
+                    }));
+                    setEslReviewQuestions({
+                        manifest,
+                        banks: normalizeEslReviewQuestions(Object.fromEntries(bankEntries)),
+                    });
+                }
+            } catch (err) {
+                console.warn("Could not load ESL review questions: ", err);
+                setEslReviewQuestions(null);
+            }
         } else {
             setTenseSentences(null);
+            setEslReviewQuestions(null);
         }
 
         const uniqueUnits = [
@@ -221,6 +248,7 @@ function App() {
     } else {
       setWordlist(null);
       setTenseSentences(null);
+      setEslReviewQuestions(null);
       setUnits([]);
       setSelectedUnits([]);
     }
@@ -520,6 +548,7 @@ function App() {
       const gameProps = {
         words: questions,
         tenseSentences: tenseSentences, // Pass down the grammar DB for Boss Levels!
+        eslReviewQuestions: eslReviewQuestions,
         selectedUnits: selectedUnits && selectedUnits.length > 0 ? selectedUnits : units, // Pass all units if none selected
         onAnswer: handleGameAnswer,
         onComplete: (results) => {
@@ -563,6 +592,14 @@ function App() {
           return <ScienceTrueFalseGame {...gameProps} />;
         case 'scienceMatchGame':
           return <ScienceMatchGame {...gameProps} />;
+        case 'eslReviewQuiz':
+          return <EslReviewQuiz {...gameProps} />;
+        case 'eslMatching':
+          return <EslMatchingGame {...gameProps} />;
+        case 'wordBankBuilder':
+          return <WordBankBuilder {...gameProps} />;
+        case 'readingExplorer':
+          return <ReadingExplorer {...gameProps} />;
         case 'endlessRunner':
           return <EndlessRunner {...gameProps} />;
         case 'math_weather_station':
