@@ -24,6 +24,7 @@ import EslReviewQuiz from "./components/games/EslReviewQuiz";
 import EslMatchingGame from "./components/games/EslMatchingGame";
 import WordBankBuilder from "./components/games/WordBankBuilder";
 import ReadingExplorer from "./components/games/ReadingExplorer";
+import StoryReadingMission from "./components/games/StoryReadingMission";
 import MathWeatherStation from "./components/games/MathWeatherStation";
 import MathMysterySafe from "./components/games/MathMysterySafe";
 import MathSortingFactory from "./components/games/MathSortingFactory";
@@ -598,6 +599,8 @@ function App() {
           return <EslMatchingGame {...gameProps} />;
         case 'wordBankBuilder':
           return <WordBankBuilder {...gameProps} />;
+        case 'storyReadingMission':
+          return <StoryReadingMission {...gameProps} />;
         case 'readingExplorer':
           return <ReadingExplorer {...gameProps} />;
         case 'endlessRunner':

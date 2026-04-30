@@ -34,6 +34,7 @@ export const GAMES = [
   { id: 'eslReviewQuiz', emoji: '✅', name: 'Review Quiz', available: true, isGrammar: true },
   { id: 'eslMatching', emoji: '🔗', name: 'ESL Matching', available: true, isGrammar: true },
   { id: 'wordBankBuilder', emoji: '🧱', name: 'Word Bank Builder', available: true, isGrammar: true },
+  { id: 'storyReadingMission', emoji: '📚', name: 'Story Reading Mission', available: true, isGrammar: true },
   { id: 'readingExplorer', emoji: '📖', name: 'Reading Explorer', available: true, isGrammar: true },
 
   // Science Games

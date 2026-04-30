@@ -194,6 +194,79 @@
   font-weight: 900;
 }
 
+.story-reading-card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.story-reading-chapter-title {
+  margin: 4px 0 0;
+  font-size: clamp(1.35rem, 4.5vw, 2rem);
+}
+
+.story-reading-date {
+  margin: 0;
+  color: #64748b;
+  font-weight: 800;
+}
+
+.story-reading-page-text {
+  background: #fffaf0;
+  border: 2px solid #fed7aa;
+  border-radius: 20px;
+  padding: clamp(14px, 4vw, 22px);
+  font-size: clamp(1.05rem, 3.4vw, 1.25rem);
+  line-height: 1.8;
+}
+
+.story-reading-page-text p {
+  margin: 0 0 14px;
+}
+
+.story-reading-page-text p:last-child {
+  margin-bottom: 0;
+}
+
+.story-reading-questions {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.story-reading-question-card {
+  border: 2px solid #dbeafe;
+  border-radius: 20px;
+  background: #f8fafc;
+  padding: 16px;
+}
+
+.story-reading-option-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+}
+
+.story-reading-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  border-top: 2px solid #e2e8f0;
+  padding-top: 16px;
+}
+
+.story-reading-lock-note {
+  color: #475569;
+  font-weight: 900;
+}
+
+.story-reading-next.locked,
+.story-reading-next:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
 @media (max-width: 640px) {
   .esl-review-game {
     padding: 10px;
@@ -204,7 +277,13 @@
   }
 
   .esl-review-options,
-  .esl-review-chip-row {
+  .esl-review-chip-row,
+  .story-reading-option-row {
     grid-template-columns: 1fr;
+  }
+
+  .story-reading-nav {
+    align-items: stretch;
+    flex-direction: column;
   }
 }

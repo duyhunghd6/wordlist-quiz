@@ -18,7 +18,7 @@ const JOURNEY_DATA = {
             { id: "esl_2", label: "Word Meaning & Form", sub: "Word Search, Scramble, ESL Matching", icon: "squares-four", type: "grammar", games: ["wordSearch", "scramble", "eslMatching"] },
             { id: "esl_3", label: "Grammar Noticing", sub: "Shape Builder, Signal Spotter, Review Quiz", icon: "keyboard", type: "grammar", games: ["shapeBuilder", "tenseSignal", "eslReviewQuiz"] },
             { id: "esl_4", label: "Grammar Building", sub: "Word Bank Builder, Angry Tenses, Timeline Detective", icon: "text-align-left", type: "grammar", games: ["wordBankBuilder", "angryTenses", "timelineDetective"] },
-            { id: "esl_5", label: "Reading Mission", sub: "Reading Explorer, Word Runner, Tense Runner", icon: "lightbulb", type: "both", games: ["readingExplorer", "endlessRunner", "marioTense"] }
+            { id: "esl_5", label: "Reading Mission", sub: "Story Reading Mission, Reading Explorer, Word Runner", icon: "lightbulb", type: "both", games: ["storyReadingMission", "readingExplorer", "endlessRunner"] }
         ]
     },
     wordlist_math: {
@@ -70,6 +70,7 @@ const GAME_ICONS = {
     "Review Quiz": { icon: CheckSquareOffset, color: "gs-bg-purple", tags: ["Grammar", "Review"] },
     "ESL Matching": { icon: Intersect, color: "gs-bg-blue", tags: ["Vocab", "Matching"] },
     "Word Bank Builder": { icon: SquaresFour, color: "gs-bg-orange", tags: ["Grammar", "Build"] },
+    "Story Reading Mission": { icon: BookOpen, color: "gs-bg-purple", tags: ["Reading", "Story"] },
     "Reading Explorer": { icon: BookOpen, color: "gs-bg-purple", tags: ["Reading", "Mission"] },
     "Math Weather Station": { icon: Hash, color: "gs-bg-blue", tags: ["Math", "Logic"] },
     "Math Mystery Safe": { icon: Calculator, color: "gs-bg-purple", tags: ["Math", "Logic"] },
