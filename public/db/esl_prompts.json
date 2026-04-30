@@ -1,0 +1,890 @@
+[
+  {
+    "word": "guardians",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. Two armored knights standing side-by-side in front of a large golden gate, holding shields and spears in a protective stance."
+  },
+  {
+    "word": "sword",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A single sharp medieval sword with a silver blade and a golden hilt, positioned vertically."
+  },
+  {
+    "word": "magic powers",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A person's hands held out with glowing blue energy spheres and sparkling stars floating between the palms."
+  },
+  {
+    "word": "paths",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A dirt road that splits into three distinct winding trails leading into the distance through a green field."
+  },
+  {
+    "word": "ravine",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A deep, narrow gap in the earth with steep rocky cliffs on both sides and a dark bottom."
+  },
+  {
+    "word": "beasts",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. Three different large, wild, scary monsters with fur and claws standing together in a group."
+  },
+  {
+    "word": "intelligent",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A person with a glowing yellow lightbulb floating above their head, holding a trophy and a completed complex puzzle."
+  },
+  {
+    "word": "honest",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A person with a halo above their head, handing a lost wallet back to a grateful person with a sincere expression."
+  },
+  {
+    "word": "loyal",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A faithful dog sitting patiently at its owner's feet, looking up with big eyes, staying close even as the owner walks."
+  },
+  {
+    "word": "athletic",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A person in sports clothes performing a high jump over a bar, showing great physical skill and agility."
+  },
+  {
+    "word": "powerful",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A person with large muscles lifting a massive, heavy boulder high above their head with ease."
+  },
+  {
+    "word": "Ferry",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A large flat-bottomed boat carrying several cars and passengers across a blue river."
+  },
+  {
+    "word": "Tuk-tuk",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A small, three-wheeled motorized taxi with a colorful canopy and a driver's seat in front."
+  },
+  {
+    "word": "Tram",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A long public transport vehicle on metal rails in a city street, with a pole connecting to overhead electric wires."
+  },
+  {
+    "word": "Hike",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A person wearing a backpack and holding walking sticks, trekking up a steep mountain trail."
+  },
+  {
+    "word": "Zipwire",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A person wearing a safety harness sliding down a long metal cable suspended high between two wooden towers."
+  },
+  {
+    "word": "Canyon",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A vast, deep valley with layered red rock walls and a small river flowing at the very bottom."
+  },
+  {
+    "word": "Cable",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A thick, heavy rope made of many twisted silver metal wires, showing the strong texture."
+  },
+  {
+    "word": "Harness",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A set of black and orange safety straps with metal buckles designed to be worn around the waist and legs for climbing."
+  },
+  {
+    "word": "Lorries",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. Three large heavy-duty cargo trucks with long trailers driving in a line on a road."
+  },
+  {
+    "word": "Helmet",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A bright red hard safety helmet with a protective chin strap."
+  },
+  {
+    "word": "Reflective armbands",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. Two neon green bands with a bright silver reflective strip wrapped around a person's arms, glowing brightly."
+  },
+  {
+    "word": "Reverse",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A car with bright white tail lights moving backwards out of a driveway, with a curved arrow pointing to the rear."
+  },
+  {
+    "word": "Pedestrian crossing",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A road with thick white parallel stripes and a person walking safely across while a car is stopped."
+  },
+  {
+    "word": "Seatbelt",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A black safety strap clicked into a metal buckle across a car seat."
+  },
+  {
+    "word": "Across",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A long bridge connecting two opposite sides of a wide river, with a large arrow pointing from one bank to the other."
+  },
+  {
+    "word": "Towards",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A person walking directly forward on a path, getting larger as they approach the viewer, with a forward-pointing arrow."
+  },
+  {
+    "word": "Pier",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A long wooden platform on pillars extending from the beach far out into the blue sea."
+  },
+  {
+    "word": "Metro stations",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. Two separate entrances to an underground subway, with stairs leading down and a generic circular logo on a signpost."
+  },
+  {
+    "word": "Main roads",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. Two wide, busy multi-lane highways with white lane markings and several cars driving on them."
+  },
+  {
+    "word": "Entertainment",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A television screen showing a colorful cartoon, a bucket of popcorn, and a pair of theater masks, representing various ways to have fun."
+  },
+  {
+    "word": "Giggle",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A young child with shoulders hunched up, eyes squinted shut, and hands covering their mouth to hide a silly, quiet laugh."
+  },
+  {
+    "word": "Sparkle",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A large, multifaceted diamond with many small, bright, four-pointed yellow stars radiating from its edges to show light reflecting."
+  },
+  {
+    "word": "Stare",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A close-up of a pair of wide-open eyes looking directly forward with large pupils, no eyelids blinking, focused intensely on a single point."
+  },
+  {
+    "word": "Rise",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A colorful hot air balloon ascending from a grassy field into the sky, with small upward motion arrows indicating vertical movement."
+  },
+  {
+    "word": "Huge",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A massive grey elephant standing next to a tiny, tiny mouse to show the extreme difference in size."
+  },
+  {
+    "word": "Enormous",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A giant blue whale swimming next to a very small wooden rowboat, emphasizing a size that is much larger than huge."
+  },
+  {
+    "word": "Tiny",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A small red ladybug standing on the tip of a giant human thumb, showing how small the insect is."
+  },
+  {
+    "word": "Amazing",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A person with their jaw dropped and hands on their cheeks, looking with wide eyes at a magician pulling a white rabbit out of a top hat."
+  },
+  {
+    "word": "Skyscraper",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. An incredibly tall building with hundreds of windows, its top floors disappearing into a white fluffy cloud, towering over small houses below."
+  },
+  {
+    "word": "Thousand",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A large transparent glass jar filled to the very top with a massive quantity of tiny, identical colorful marbles."
+  },
+  {
+    "word": "Dropped",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A hand with open fingers positioned above the ground, with an ice cream cone frozen in mid-air falling towards the pavement."
+  },
+  {
+    "word": "Arid",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A vast desert landscape with dry, cracked earth, a single dead brown shrub, and a bright, blazing sun in a cloudless sky."
+  },
+  {
+    "word": "Sprout up",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A sequence showing a seed under the soil, then a small green shoot suddenly bursting through the surface with fast growth lines."
+  },
+  {
+    "word": "Parched",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A person in a hot desert with a dry, red tongue hanging out, reaching desperately toward a single, clear drop of water."
+  },
+  {
+    "word": "Shade",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A large leafy oak tree on a sunny day, with a dark, cool-looking silhouette on the grass directly beneath its branches where a person is sitting."
+  },
+  {
+    "word": "Hide",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A child standing behind a long, heavy curtain, with only their shoes and one curious eye visible from the side."
+  },
+  {
+    "word": "Back and forth",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A playground swing with motion blur lines showing it moving in a curved arc to the left and then to the right repeatedly."
+  },
+  {
+    "word": "Reddish",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A round fruit that is mostly yellow and orange, but has a distinct, soft patch of red color on one side."
+  },
+  {
+    "word": "Bushy tail",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A close-up of a squirrel's tail, showing it as extremely thick, wide, and covered in soft, fluffy fur."
+  },
+  {
+    "word": "Scurry off",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A small mouse running away very quickly, with its legs shown as a blur and a small cloud of dust behind it."
+  },
+  {
+    "word": "Hung her head",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A girl standing with her chin pressed against her chest, looking down at her shoes with a sad and shameful expression."
+  },
+  {
+    "word": "Skipped",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A happy child moving forward by hopping lightly from one foot to the other in a rhythmic, bouncy motion."
+  },
+  {
+    "word": "Leapt",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. An athlete in mid-air, body fully stretched out, jumping over a wide gap between two high platforms."
+  },
+  {
+    "word": "Jumped",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A person with both feet high off the ground, knees tucked, and arms raised straight up in the air."
+  },
+  {
+    "word": "Hopped",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A person balancing on just one leg, performing a small, short vertical spring into the air."
+  },
+  {
+    "word": "Plodded",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A very tired hiker with a heavy backpack, walking slowly with heavy, dragging feet through thick, sticky mud."
+  },
+  {
+    "word": "Run away",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A person running at full speed with a scared face, looking back over their shoulder at a dark, scary shadow chasing them."
+  },
+  {
+    "word": "Advice",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. An older, wise person with a hand on a younger person's shoulder, whispering into their ear and pointing toward the correct path on a map."
+  },
+  {
+    "word": "Tornado",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A dark, swirling funnel-shaped cloud touching the ground, spinning rapidly and lifting a wooden fence into the air."
+  },
+  {
+    "word": "Flood",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A house partially submerged in deep blue water, with only the roof and a chimney visible above the surface."
+  },
+  {
+    "word": "Blizzard",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A person in a heavy parka leaning forward against a thick white wall of blowing snow and wind, with pine trees bent by the storm."
+  },
+  {
+    "word": "Cyclone",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A massive swirling spiral of dark clouds and wind over an ocean, with palm trees on a small island bending in the gale."
+  },
+  {
+    "word": "Drought",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A landscape of dry, cracked brown earth with a single wilted, yellow plant and a blazing hot sun in the corner."
+  },
+  {
+    "word": "Frosty",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A single green leaf covered in delicate, white crystalline ice needles and frozen dew drops."
+  },
+  {
+    "word": "Turbulent",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. An airplane tilted at an angle inside dark, bumpy clouds, with a cup of water on a tray table spilling over."
+  },
+  {
+    "word": "Blustery",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A person holding an umbrella that has been blown inside out by strong wind, with their scarf and autumn leaves flying horizontally."
+  },
+  {
+    "word": "Crashing",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A massive, powerful ocean wave hitting a jagged black rock, creating a huge explosion of white foam and spray."
+  },
+  {
+    "word": "Cutting",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A person huddled in a thick coat, shivering, with sharp blue jagged lines representing a freezing wind slicing through the air."
+  },
+  {
+    "word": "Violent",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A powerful bolt of lightning striking a large oak tree, causing the trunk to crack and split apart."
+  },
+  {
+    "word": "Fierce",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A powerful lion with a thick mane, mouth wide open in a roar, showing sharp teeth and an intense expression."
+  },
+  {
+    "word": "desert",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. Rolling orange sand dunes under a hot sun, with a single green cactus and a camel walking in the distance."
+  },
+  {
+    "word": "mountain range",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A long, continuous chain of many jagged, snow-capped mountain peaks stretching across the horizon."
+  },
+  {
+    "word": "coral reef",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A vibrant underwater scene with various shapes of colorful coral, sea anemones, and small tropical fish swimming around."
+  },
+  {
+    "word": "rock formation",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A natural red rock arch standing in a desert, showing layers of sediment and wind erosion."
+  },
+  {
+    "word": "coast",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. An aerial view showing the distinct line where a sandy beach meets the blue ocean waves."
+  },
+  {
+    "word": "tropical",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A bright scene with two palm trees, a hammock strung between them, a coconut on the sand, and a turquoise sea."
+  },
+  {
+    "word": "rainforest",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A dense jungle with giant green leaves, hanging vines, and heavy tropical rain falling through the canopy."
+  },
+  {
+    "word": "length",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A long yellow pencil with a horizontal double-headed arrow stretching from the very tip to the eraser."
+  },
+  {
+    "word": "width",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A wide wooden door with a horizontal double-headed arrow stretching from the left edge to the right edge."
+  },
+  {
+    "word": "depth",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A cross-section of a deep swimming pool, with a vertical double-headed arrow stretching from the water's surface to the bottom floor."
+  },
+  {
+    "word": "height",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A tall giraffe standing next to a short person, with a vertical double-headed arrow stretching from the ground to the top of the giraffe's head."
+  },
+  {
+    "word": "Kookaburra",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A bird with a large beak and brown-and-white feathers perched on a branch, its head tilted back and beak open as if laughing."
+  },
+  {
+    "word": "Lung fish",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A primitive fish with thick fins using them like legs to crawl across a muddy bank out of a small pool of water."
+  },
+  {
+    "word": "Dinosaur Ant",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A very large, primitive-looking ant with long, sharp mandibles and a visible stinger, standing on a prehistoric leaf."
+  },
+  {
+    "word": "Diet",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A dinner plate containing a balanced variety of foods: a piece of grilled fish, a pile of green broccoli, and a red apple."
+  },
+  {
+    "word": "Endangered",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A single, lonely panda sitting inside a protective circular fence, with a red warning light nearby."
+  },
+  {
+    "word": "Termite",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A small, pale, wood-eating insect chewing on a piece of a wooden house beam, with a large dirt mound in the background."
+  },
+  {
+    "word": "Extinct",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A complete skeleton of a Tyrannosaurus Rex displayed on a platform in a museum."
+  },
+  {
+    "word": "Curious",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A child leaning down with a magnifying glass to closely inspect a tiny ladybug on a leaf, with an inquisitive facial expression."
+  },
+  {
+    "word": "Snorkelling",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A person swimming just below the water surface wearing a diving mask and a snorkel tube sticking out of the water, colorful tropical fish nearby."
+  },
+  {
+    "word": "Conservation",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. Two giant human hands gently cupping and protecting a small, fragile green seedling growing from a patch of soil."
+  },
+  {
+    "word": "Conservationist",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A person in a khaki uniform and hat carefully bandaging the wing of a wild bird in a forest setting."
+  },
+  {
+    "word": "jealous",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. One child happily holding a large golden trophy; another child standing nearby with a grumpy face, arms crossed, staring longingly at the trophy."
+  },
+  {
+    "word": "wings",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. Two large, symmetrical feathered bird wings spread wide, shown clearly without the bird's body."
+  },
+  {
+    "word": "get about",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A person shown in three positions: riding a bicycle, walking with a cane, and sitting on a bus, indicating movement from place to place."
+  },
+  {
+    "word": "flew away",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. An open, empty birdcage on a table, with a small bird seen far away in the sky through a window, becoming a tiny silhouette."
+  },
+  {
+    "word": "fool (verb)",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A person wearing a realistic mask of a different person's face, holding a finger to their lips, while another person looks confusedly at them."
+  },
+  {
+    "word": "swiftly",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A greyhound dog running at full speed, legs fully extended, with several horizontal motion lines behind it to indicate extreme velocity."
+  },
+  {
+    "word": "striding",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A person with very long legs taking a massive, confident step forward, one foot far in front of the other, head held high."
+  },
+  {
+    "word": "race",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. Three runners side-by-side, sprinting toward a bright red finish line ribbon stretched across the path."
+  },
+  {
+    "word": "sprinted",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. An athlete in a running kit, body leaning forward at a sharp angle, feet blurred, crossing a finish line with intense effort on their face."
+  },
+  {
+    "word": "flapped",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A large bird with its wings shown in a blur of multiple positions—up, middle, and down—to indicate rapid movement."
+  },
+  {
+    "word": "landed",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. An eagle with its talons touching a rocky mountain peak, wings arched back to slow down, and a small puff of dust at its feet."
+  },
+  {
+    "word": "rushed at",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A large angry bull charging directly toward the viewer with its head down and hooves kicking up dirt."
+  },
+  {
+    "word": "striking out",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A person swinging a wooden bat with great force, a 'whoosh' arc line following the bat, just as it is about to hit a ball."
+  },
+  {
+    "word": "puzzled",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A person looking at a map that is upside down, scratching their head with a confused facial expression and a tilted head."
+  },
+  {
+    "word": "foolish",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A person trying to walk through a doorway while carrying a very long ladder horizontally, hitting both sides of the door frame."
+  },
+  {
+    "word": "air pollution",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A factory with three tall chimneys emitting thick, dark grey clouds of smoke into a hazy sky."
+  },
+  {
+    "word": "plastic pollution",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. An ocean scene where many plastic bottles, bags, and straws are floating around a sad-looking fish."
+  },
+  {
+    "word": "rising sea levels",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A small house on a beach where the ocean waves are now washing over the front porch and halfway up the front door."
+  },
+  {
+    "word": "melting ice caps",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A large iceberg in the ocean with water dripping rapidly from its sides, significantly smaller than the faint outline of its original size."
+  },
+  {
+    "word": "rubbish",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. An overflowing metal trash can with banana peels, crumpled paper, and empty tin cans spilling out onto the floor."
+  },
+  {
+    "word": "environment",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A circular composition showing a green forest, a blue river, a mountain, and a bright sun, representing the natural world."
+  },
+  {
+    "word": "global warming",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A round Earth character looking sweaty and tired, with a large thermometer in its mouth showing the red liquid at the very top."
+  },
+  {
+    "word": "eco-friendly",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A lightbulb with a green leaf growing inside it, next to a reusable cloth shopping bag."
+  },
+  {
+    "word": "environmentalists",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A group of three people wearing gloves, working together to plant small trees in a park."
+  },
+  {
+    "word": "non-biodegradable",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A cross-section of soil showing a rotted brown apple core next to a bright, perfectly intact plastic water bottle."
+  },
+  {
+    "word": "microparticle",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A giant magnifying glass held over a glass of water, revealing tiny, multi-colored specks floating inside the liquid."
+  },
+  {
+    "word": "medical products",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A neat arrangement of a blue surgical mask, a pair of white latex gloves, and a plastic syringe."
+  },
+  {
+    "word": "single use",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A plastic water bottle, a plastic straw, and a plastic fork being dropped into a trash can to show they are thrown away after one use."
+  },
+  {
+    "word": "replace",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A hand taking an old, dim lightbulb out of a socket and putting in a bright, new glowing LED bulb."
+  },
+  {
+    "word": "quiz",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A person sitting at a desk with a pencil, looking at a paper that has icons of a checkmark and a cross next to several lines."
+  },
+  {
+    "word": "be green",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A person happily putting a glass bottle into a recycling bin that has a large green leaf symbol on the side."
+  },
+  {
+    "word": "survey",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A person holding a clipboard and a pen, standing in front of a line of three different people, asking them questions."
+  },
+  {
+    "word": "Eco-challenges",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A person picking up litter in a park and checking a box on a list, with a small trophy icon nearby."
+  },
+  {
+    "word": "Field trip",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A yellow school bus parked in front of a large museum, with a group of children wearing matching hats walking toward the entrance."
+  },
+  {
+    "word": "theatre",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A wooden stage with large red velvet curtains pulled open, and a single bright spotlight shining on the floor."
+  },
+  {
+    "word": "clipboard",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A brown wooden board with a silver metal clip at the top holding a blank white sheet of paper."
+  },
+  {
+    "word": "duckling",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A small, fluffy yellow baby bird with a flat orange beak swimming in blue water."
+  },
+  {
+    "word": "reeds",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A cluster of multiple tall, thin green stalks with brown fuzzy cylindrical tops growing out of the water at a pond's edge."
+  },
+  {
+    "word": "purpose",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A hand holding a specific silver key and inserting it into a matching lock to show it is the right tool for the job."
+  },
+  {
+    "word": "steel",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A stack of heavy, grey industrial I-beams made of hard metal, with a construction helmet resting on top."
+  },
+  {
+    "word": "massive",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A tiny mouse standing next to a giant, towering block of cheese that is as big as a house to show extreme size."
+  },
+  {
+    "word": "vast",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A tiny person standing on a high cliff looking out over an endless, empty desert that stretches all the way to the horizon."
+  },
+  {
+    "word": "empty",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. An open cardboard box sitting on the floor, showing the bare brown bottom with absolutely nothing inside."
+  },
+  {
+    "word": "deserted",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A dusty street in an old town with a tumbleweed blowing across, open doors, and no people or cars anywhere."
+  },
+  {
+    "word": "greenery",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A dense, lush collection of many different types of vibrant green leaves, ferns, and plants."
+  },
+  {
+    "word": "remote control",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A hand holding a small black rectangular device with many colorful buttons, pointing it forward."
+  },
+  {
+    "word": "shadow",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A person standing under a bright sun, with a long, dark silhouette of their body cast on the ground behind them."
+  },
+  {
+    "word": "junk",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A messy pile of broken items including a bent bicycle wheel, a torn old boot, and a crushed rusty tin can."
+  },
+  {
+    "word": "electronic",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A green circuit board with glowing gold lines, a black square microchip in the center, and small capacitors."
+  },
+  {
+    "word": "dizzy",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A person with spiral patterns in their eyes and yellow stars floating in a circle around their head, looking unstable."
+  },
+  {
+    "word": "swirling",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A spoon stirring a cup of liquid, creating a perfect, deep spiral motion in the center."
+  },
+  {
+    "word": "emotion",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. Three simple faces arranged together: one laughing with joy, one crying with sadness, and one red-faced with anger."
+  },
+  {
+    "word": "make a den",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. Two children building a secret fort inside a room using blankets draped over chairs and pillows."
+  },
+  {
+    "word": "make friends",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. Two children smiling at each other and shaking hands warmly to show a new friendship."
+  },
+  {
+    "word": "bake a cake",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A person wearing an apron and oven mitts pulling a steaming, round chocolate cake out of an open oven."
+  },
+  {
+    "word": "go rock climbing",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A person wearing a harness and helmet, using a rope to climb up a steep, grey rock wall with colorful handholds."
+  },
+  {
+    "word": "on a zip wire",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A person hanging from a pulley, sliding quickly down a long metal cable stretched between two high trees."
+  },
+  {
+    "word": "explore a new place",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A person wearing a backpack and holding a paper map, standing on a hill looking out at a mysterious ancient temple hidden in a jungle. They are using binoculars to look at the unknown landscape."
+  },
+  {
+    "word": "design a t-shirt",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A person holding a fabric marker, drawing a unique colorful lightning bolt and star pattern onto a plain white t-shirt that is laid flat on a table."
+  },
+  {
+    "word": "web address/URL",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A close-up of a computer browser's top section. A cursor is clicking on a long, thin rectangular bar that contains a small icon of a globe and a chain link symbol."
+  },
+  {
+    "word": "refresh",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A computer screen showing a large, prominent circular arrow icon in the center. A hand cursor is clicking the arrow, and the screen behind it is shimmering as if reloading."
+  },
+  {
+    "word": "bookmark star",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A computer browser window where a cursor is clicking a bright, glowing yellow five-pointed star icon located in the top corner."
+  },
+  {
+    "word": "address bar",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A wide, empty white rectangular box at the top of a simplified web browser window, highlighted by a glowing blue border and a magnifying glass icon on the left side."
+  },
+  {
+    "word": "minimise",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A computer window with a cursor clicking a small horizontal dash icon in the top right corner. The window is shown in mid-motion, shrinking down into a small icon at the bottom of the screen."
+  },
+  {
+    "word": "search engine",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A large magnifying glass hovering over a simple search box in the middle of a computer screen. Below the box are several colorful icons representing different types of information like images, news, and maps."
+  },
+  {
+    "word": "go forward",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A browser interface showing a bold, thick arrow pointing to the right. A cursor is clicking the right-pointing arrow, which is glowing to show it is active."
+  },
+  {
+    "word": "go back",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A browser interface showing a bold, thick arrow pointing to the left. A cursor is clicking the left-pointing arrow, which is highlighted in blue."
+  },
+  {
+    "word": "friendship bracelets",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. Two different hands clasped together in a handshake. Each wrist has multiple colorful, braided thread bracelets with intricate patterns."
+  },
+  {
+    "word": "pet rocks",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. Three smooth, round grey stones sitting on a small wooden shelf. Each stone has googly eyes and a painted smiling mouth; one stone has a tiny tuft of yarn for hair."
+  },
+  {
+    "word": "wall painting",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. An artist standing on a ladder, using a brush to paint a large, colorful mural of a giant sun and green mountains directly onto a brick wall."
+  },
+  {
+    "word": "survive in the wild",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A person in the forest building a small A-frame shelter out of fallen branches and large green leaves. Next to them is a small, controlled fire and a pile of gathered berries."
+  },
+  {
+    "word": "wildflowers",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A vibrant, unorganized patch of various flowers like red poppies, blue cornflowers, and yellow daisies growing naturally in tall, thick green grass."
+  },
+  {
+    "word": "wildlife",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A group of different forest animals gathered together: a brown deer, a red fox, and a small owl perched on a branch, all in their natural habitat."
+  },
+  {
+    "word": "nature trail",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A winding dirt path leading through a forest. Beside the path is a wooden signpost with a carved image of a hiking boot and a leaf, pointing the way forward."
+  },
+  {
+    "word": "campfire",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A circle of grey stones on the ground with burning wooden logs inside. Bright orange and yellow flames are rising, and a stick with a white marshmallow is being held over the heat."
+  },
+  {
+    "word": "Torch",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A handheld black flashlight being held by a hand. A bright, wide beam of yellow light is shining out from the front into a dark space."
+  },
+  {
+    "word": "waterproof jacket",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A bright blue hooded jacket. Large, clear raindrops are falling on it, but the water is beading up and rolling off the fabric, leaving the jacket dry."
+  },
+  {
+    "word": "sleeping bag",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A thick, quilted green bag with a zipper along the side. The top is folded over to reveal a soft interior and a small pillow tucked inside."
+  },
+  {
+    "word": "Sweatshirt",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A thick, long-sleeved grey cotton pullover shirt with ribbed cuffs at the wrists and a ribbed waistband, laid flat."
+  },
+  {
+    "word": "sun cream",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. An orange plastic bottle with a yellow sun icon on the label. A hand is squeezing a dollop of white cream onto a person's arm under a very bright, shining sun."
+  },
+  {
+    "word": "tracksuit bottoms",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A pair of loose-fitting navy blue athletic trousers with an elastic waistband, a white drawstring, and two white stripes running down the side of each leg."
+  },
+  {
+    "word": "sunglasses",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A pair of dark-tinted glasses with black frames. The lenses are reflecting a bright yellow sun and a blue sky."
+  },
+  {
+    "word": "cap",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A red baseball-style hat with a stiff, curved brim at the front and a small button on the very top."
+  },
+  {
+    "word": "backpack",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A sturdy bag with two padded shoulder straps, several zippered compartments, and a mesh water bottle pocket on the side."
+  },
+  {
+    "word": "tent",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A triangular blue fabric shelter held up by poles and secured to the green grass with yellow pegs. The front flap is zipped open."
+  },
+  {
+    "word": "insect repellent",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A spray bottle with an icon of a mosquito inside a red 'no' symbol. A fine mist is being sprayed from the bottle into the air around a person's leg."
+  },
+  {
+    "word": "rope walking",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A person balancing on a thick, tight rope stretched between two wooden platforms high above the ground. Their arms are stretched out wide to stay steady."
+  },
+  {
+    "word": "trekking",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A person with a large backpack and hiking poles climbing a steep, rocky mountain trail under a bright sun."
+  },
+  {
+    "word": "sightseeing",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A tourist with a camera around their neck and a folded map in hand, looking up in awe at the Great Pyramids and the Eiffel Tower."
+  },
+  {
+    "word": "date of birth",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A newborn baby in a hospital cradle next to a calendar icon where a single day is marked with a bright gold star and a birthday candle."
+  },
+  {
+    "word": "guest",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A person standing at an open front door with a suitcase, being warmly greeted with a handshake and a key by a smiling homeowner."
+  },
+  {
+    "word": "passport number",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. An open passport book with a magnifying glass hovering over a specific, highlighted row of empty rectangular boxes on the identification page."
+  },
+  {
+    "word": "refreshment",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A silver tray holding a tall glass of iced lemonade with a lemon slice and a small plate with two cookies."
+  },
+  {
+    "word": "smooties",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A tall glass filled with a thick, vibrant pink blended drink, a green straw, and floating pieces of strawberry and banana."
+  },
+  {
+    "word": "craft",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A person's hands carefully folding a colorful piece of paper into an origami crane, with scissors and glue nearby."
+  },
+  {
+    "word": "persuasive",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A person standing at a podium gesturing confidently, while a group of people in front of them all nod their heads and give a thumbs up."
+  },
+  {
+    "word": "school grounds",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. An aerial view of a brick school building surrounded by a green soccer field, a playground with a slide, and a perimeter fence."
+  },
+  {
+    "word": "compliment",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. One person smiling and giving a thumbs up to another person; the second person is blushing and has a heart symbol in a speech bubble above their head."
+  },
+  {
+    "word": "Nervous",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A person standing behind a microphone on a stage, with sweat drops on their forehead, shaking knees, and biting their fingernails."
+  },
+  {
+    "word": "Upset",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A person sitting on a bench with a sad face, head down, looking at a broken toy on the ground with a small dark rain cloud over their head."
+  },
+  {
+    "word": "sick/funny",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A person with a green-tinted face clutching their stomach with both hands, with a dizzy spiral symbol floating above their head."
+  },
+  {
+    "word": "admit",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A child looking sheepish and pointing to themselves while standing next to a broken vase on the floor, speaking to an adult."
+  },
+  {
+    "word": "actually",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A person pointing at a real, 3D red apple on a table, while a flat drawing of a blue apple next to it has a large red 'X' over it."
+  },
+  {
+    "word": "pile",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A very tall, messy, and unstable stack of many colorful books reaching high into the air."
+  },
+  {
+    "word": "football season",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A calendar where every weekend square is marked with a small football icon, next to a stadium with bright floodlights."
+  },
+  {
+    "word": "bridge",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A stone arch structure connecting two green cliffs over a flowing blue river."
+  },
+  {
+    "word": "metro station",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A staircase leading underground with a large 'M' sign on a pole, and the front of a train visible in a dark tunnel below."
+  },
+  {
+    "word": "unaware",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A person walking forward while looking up at a bird, completely failing to notice a large open manhole directly in their path."
+  },
+  {
+    "word": "cobra",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A large snake with its neck flared out into a wide hood, reared up in a striking pose with its tongue out."
+  },
+  {
+    "word": "flickering",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A lightbulb with jagged, uneven yellow light rays, with some rays drawn as faint outlines to show the light is blinking on and off."
+  },
+  {
+    "word": "coiled up",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A long, thick garden hose wound tightly in a perfect, neat spiral circle on the grass."
+  },
+  {
+    "word": "tropical rainforest",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A dense green jungle with giant ferns, hanging vines, a waterfall, and heavy rain falling through the trees."
+  },
+  {
+    "word": "turtles",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. Three distinct turtles with patterned shells walking slowly in a line across a sandy beach."
+  },
+  {
+    "word": "poison",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A glass bottle with a skull and crossbones icon, with green liquid dripping onto a leaf that is shriveling and turning black."
+  },
+  {
+    "word": "landing",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A small airplane with its wheels just touching the grey runway, with small puffs of white smoke appearing at the tires."
+  },
+  {
+    "word": "environmentalist",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A person wearing a green vest, kneeling to plant a small tree sapling while holding a bag of collected litter."
+  },
+  {
+    "word": "reduce",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A giant hand pressing down on a large pile of trash, squashing it into a tiny, compact cube."
+  },
+  {
+    "word": "reuse",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. An empty glass jam jar being used as a container for colorful pencils and pens. A small green arrow indicates the transition from a food container to a desk organizer."
+  },
+  {
+    "word": "recycle",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A plastic water bottle entering a mechanical processing machine on the left and emerging on the right as a stack of new, clean plastic pellets, arranged in a circular flow."
+  },
+  {
+    "word": "ocean",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A vast expanse of deep blue water with large rolling waves. A tiny sailboat is visible on the distant horizon to emphasize the massive scale of the water."
+  },
+  {
+    "word": "ducklings",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. Five small, fluffy yellow baby ducks walking in a single file line, following closely behind a larger mother duck."
+  },
+  {
+    "word": "frog",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A bright green frog sitting on a green lily pad in a pond, with its long tongue extended to catch a small fly in mid-air."
+  },
+  {
+    "word": "design",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A person's hands using a pencil and a professional ruler to draw a detailed blueprint of a modern chair on a large sheet of drafting paper."
+  },
+  {
+    "word": "web address",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A computer monitor showing a web browser. A white arrow cursor is clicking on the long, empty horizontal bar at the very top of the window, next to a small globe icon."
+  },
+  {
+    "word": "bookmark",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A computer screen showing a webpage. A hand cursor is clicking a bright yellow star icon in the top corner, which then flies into a folder icon labeled with a heart."
+  },
+  {
+    "word": "smoothie",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A tall glass filled with thick, pink blended fruit liquid and a striped straw. Beside the glass are a whole strawberry, a slice of banana, and a blender."
+  },
+  {
+    "word": "humid",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A person in a tropical jungle wiping sweat from their forehead. The air is filled with visible misty vapor and heavy water droplets are clinging to large green leaves."
+  },
+  {
+    "word": "explore",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. A person wearing a safari hat and a backpack, holding a compass and looking through a magnifying glass at a mysterious ancient stone door hidden in thick jungle vines."
+  },
+  {
+    "word": "support",
+    "image_prompt": "Clean, flat vector-style educational flashcard illustration, solid white background. One person standing firmly on a high rock ledge, reaching down with a determined expression to grab the hand of another person to pull them up the cliff."
+  }
+]

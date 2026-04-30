@@ -802,693 +802,792 @@
     "word": "guardians",
     "definition": "People or beings that protect something or someone.",
     "example": "The guardians of the treasure stood watch over it day and night.",
-    "vietnamese": "Những người hoặc sinh vật bảo vệ một cái gì đó hoặc ai đó."
+    "vietnamese": "Những người hoặc sinh vật bảo vệ một cái gì đó hoặc ai đó.",
+    "image": "db/esl/guardians.png"
   },
   {
     "unit": "5.5",
     "word": "sword",
     "definition": "A long, sharp weapon used in battles.",
     "example": "The knight drew his sword to defend himself.",
-    "vietnamese": "Một vũ khí dài, sắc bén được sử dụng trong các trận chiến."
+    "vietnamese": "Một vũ khí dài, sắc bén được sử dụng trong các trận chiến.",
+    "image": "db/esl/sword.png"
   },
   {
     "unit": "5.5",
     "word": "magic powers",
     "definition": "Special abilities that allow someone to do impossible things.",
     "example": "The wizard used his magic powers to turn the frog into a prince.",
-    "vietnamese": "Những khả năng đặc biệt cho phép ai đó làm những điều không thể."
+    "vietnamese": "Những khả năng đặc biệt cho phép ai đó làm những điều không thể.",
+    "image": "db/esl/magic_powers.png"
   },
   {
     "unit": "5.5",
     "word": "paths",
     "definition": "Trails or ways that people can walk on.",
     "example": "We followed the narrow paths through the forest.",
-    "vietnamese": "Những con đường mòn hoặc lối đi mà mọi người có thể đi bộ."
+    "vietnamese": "Những con đường mòn hoặc lối đi mà mọi người có thể đi bộ.",
+    "image": "db/esl/paths.png"
   },
   {
     "unit": "5.5",
     "word": "ravine",
     "definition": "A deep, narrow valley with steep sides.",
     "example": "The adventurers crossed a wooden bridge over the ravine.",
-    "vietnamese": "Một thung lũng sâu, hẹp với các sườn dốc."
+    "vietnamese": "Một thung lũng sâu, hẹp với các sườn dốc.",
+    "image": "db/esl/ravine.png"
   },
   {
     "unit": "5.5",
     "word": "beasts",
     "definition": "Large, wild animals that can sometimes be dangerous.",
     "example": "The cave was home to mysterious beasts.",
-    "vietnamese": "Những động vật lớn, hoang dã đôi khi có thể gây nguy hiểm."
+    "vietnamese": "Những động vật lớn, hoang dã đôi khi có thể gây nguy hiểm.",
+    "image": "db/esl/beasts.png"
   },
   {
     "unit": "5.5",
     "word": "intelligent",
     "definition": "Very smart and able to think or learn quickly.",
     "example": "The intelligent scientist solved the problem in minutes.",
-    "vietnamese": "Rất thông minh và có khả năng suy nghĩ hoặc học hỏi nhanh chóng."
+    "vietnamese": "Rất thông minh và có khả năng suy nghĩ hoặc học hỏi nhanh chóng.",
+    "image": "db/esl/intelligent.png"
   },
   {
     "unit": "5.5",
     "word": "honest",
     "definition": "Always telling the truth and not lying.",
     "example": "An honest person will admit their mistakes.",
-    "vietnamese": "Luôn nói thật và không nói dối."
+    "vietnamese": "Luôn nói thật và không nói dối.",
+    "image": "db/esl/honest.png"
   },
   {
     "unit": "5.5",
     "word": "loyal",
     "definition": "Always supporting or standing by someone or something.",
     "example": "A loyal dog will stay by its owner’s side no matter what",
-    "vietnamese": "Luôn ủng hộ hoặc sát cánh bên cạnh ai đó hoặc điều gì đó."
+    "vietnamese": "Luôn ủng hộ hoặc sát cánh bên cạnh ai đó hoặc điều gì đó.",
+    "image": "db/esl/loyal.png"
   },
   {
     "unit": "5.5",
     "word": "athletic",
     "definition": "Good at sports or physical activities.",
     "example": "The athletic boy won the race with ease.",
-    "vietnamese": "Giỏi thể thao hoặc các hoạt động thể chất."
+    "vietnamese": "Giỏi thể thao hoặc các hoạt động thể chất.",
+    "image": "db/esl/athletic.png"
   },
   {
     "unit": "5.5",
     "word": "powerful",
     "definition": "Very strong or having great strength or influence.",
     "example": "The king was a powerful ruler respected by all.",
-    "vietnamese": "Rất mạnh mẽ hoặc có sức mạnh hoặc ảnh hưởng lớn."
+    "vietnamese": "Rất mạnh mẽ hoặc có sức mạnh hoặc ảnh hưởng lớn.",
+    "image": "db/esl/powerful.png"
   },
   {
     "unit": "6.1",
     "word": "Ferry",
     "definition": "A boat or ship that regularly carries passengers and sometimes vehicles across a body of water.",
     "example": "We took a ferry from England to France.",
-    "vietnamese": "Một chiếc thuyền hoặc tàu thường xuyên chở hành khách và đôi khi là phương tiện qua một vùng nước."
+    "vietnamese": "Một chiếc thuyền hoặc tàu thường xuyên chở hành khách và đôi khi là phương tiện qua một vùng nước.",
+    "image": "db/esl/Ferry.png"
   },
   {
     "unit": "6.1",
     "word": "Tuk-tuk",
     "definition": "A small, three-wheeled motorized vehicle used as a taxi in some countries.",
     "example": "In Thailand, we traveled around the city in a tuk-tuk.",
-    "vietnamese": "Một loại xe cơ giới ba bánh nhỏ được sử dụng như taxi ở một số quốc gia."
+    "vietnamese": "Một loại xe cơ giới ba bánh nhỏ được sử dụng như taxi ở một số quốc gia.",
+    "image": "db/esl/Tuktuk.png"
   },
   {
     "unit": "6.1",
     "word": "Tram",
     "definition": "A public transportation vehicle that runs on rails along streets.",
     "example": "The tram stopped right outside the museum.",
-    "vietnamese": "Một phương tiện giao thông công cộng chạy trên đường ray dọc theo các con phố."
+    "vietnamese": "Một phương tiện giao thông công cộng chạy trên đường ray dọc theo các con phố.",
+    "image": "db/esl/Tram.png"
   },
   {
     "unit": "6.1",
     "word": "Hike",
     "definition": "To walk for a long distance, especially in the countryside or mountains.",
     "example": "We went for a hike in the mountains and saw beautiful views.",
-    "vietnamese": "Đi bộ một quãng đường dài, đặc biệt là ở vùng nông thôn hoặc miền núi."
+    "vietnamese": "Đi bộ một quãng đường dài, đặc biệt là ở vùng nông thôn hoặc miền núi.",
+    "image": "db/esl/Hike.png"
   },
   {
     "unit": "6.1",
     "word": "Zipwire",
     "definition": "A cable high above the ground that you slide down using a harness.",
     "example": "The zipwire took us across the canyon at high speed.",
-    "vietnamese": "Một sợi cáp treo cao trên mặt đất mà bạn trượt xuống bằng dây đai an toàn."
+    "vietnamese": "Một sợi cáp treo cao trên mặt đất mà bạn trượt xuống bằng dây đai an toàn.",
+    "image": "db/esl/Zipwire.png"
   },
   {
     "unit": "6.1",
     "word": "Canyon",
     "definition": "A deep valley with steep sides, often with a river flowing through it.",
     "example": "The Grand Canyon in the USA is a very famous canyon.",
-    "vietnamese": "Một thung lũng sâu với các sườn dốc, thường có một dòng sông chảy qua."
+    "vietnamese": "Một thung lũng sâu với các sườn dốc, thường có một dòng sông chảy qua.",
+    "image": "db/esl/Canyon.png"
   },
   {
     "unit": "6.1",
     "word": "Cable",
     "definition": "A thick rope made of wires, used for support or pulling.",
     "example": "The cable car took us up the steep mountain.",
-    "vietnamese": "Một sợi dây thừng dày làm bằng các sợi kim loại, dùng để đỡ hoặc kéo."
+    "vietnamese": "Một sợi dây thừng dày làm bằng các sợi kim loại, dùng để đỡ hoặc kéo.",
+    "image": "db/esl/Cable.png"
   },
   {
     "unit": "6.1",
     "word": "Harness",
     "definition": "A set of straps that you fasten around your body, used for safety when climbing or doing other activities.",
     "example": "We wore a harness when we went rock climbing.",
-    "vietnamese": "Một bộ dây đai mà bạn thắt quanh người, dùng để đảm bảo an toàn khi leo núi hoặc thực hiện các hoạt động khác."
+    "vietnamese": "Một bộ dây đai mà bạn thắt quanh người, dùng để đảm bảo an toàn khi leo núi hoặc thực hiện các hoạt động khác.",
+    "image": "db/esl/Harness.png"
   },
   {
     "unit": "6.2",
     "word": "Lorries",
     "definition": "(British English) Large trucks used for transporting goods.",
     "example": "Many lorries use the highway to deliver products to stores.",
-    "vietnamese": "(Tiếng Anh-Anh) Những chiếc xe tải lớn dùng để vận chuyển hàng hóa."
+    "vietnamese": "(Tiếng Anh-Anh) Những chiếc xe tải lớn dùng để vận chuyển hàng hóa.",
+    "image": "db/esl/Lorries.png"
   },
   {
     "unit": "6.2",
     "word": "Helmet",
     "definition": "A hard hat that you wear to protect your head.",
     "example": "It's important to wear a helmet when you ride a bicycle.",
-    "vietnamese": "Một chiếc mũ cứng mà bạn đội để bảo vệ đầu."
+    "vietnamese": "Một chiếc mũ cứng mà bạn đội để bảo vệ đầu.",
+    "image": "db/esl/Helmet.png"
   },
   {
     "unit": "6.2",
     "word": "Reflective armbands",
     "definition": "Bands worn on the arms that reflect light, making you more visible in the dark.",
     "example": "Children wear reflective armbands when walking to school in the winter.",
-    "vietnamese": "Những chiếc băng đeo tay phản quang, giúp bạn dễ được nhìn thấy hơn trong bóng tối."
+    "vietnamese": "Những chiếc băng đeo tay phản quang, giúp bạn dễ được nhìn thấy hơn trong bóng tối.",
+    "image": "db/esl/Reflective_armbands.png"
   },
   {
     "unit": "6.2",
     "word": "Reverse",
     "definition": "To go backwards.",
     "example": "The driver had to reverse the car to park it.",
-    "vietnamese": "Đi lùi."
+    "vietnamese": "Đi lùi.",
+    "image": "db/esl/Reverse.png"
   },
   {
     "unit": "6.2",
     "word": "Pedestrian crossing",
     "definition": "A place where people can walk across a road safely.",
     "example": "Use the pedestrian crossing to cross the road.",
-    "vietnamese": "Nơi dành cho người đi bộ qua đường an toàn."
+    "vietnamese": "Nơi dành cho người đi bộ qua đường an toàn.",
+    "image": "db/esl/Pedestrian_crossing.png"
   },
   {
     "unit": "6.2",
     "word": "Seatbelt",
     "definition": "A safety belt used in a car or other vehicle.",
     "example": "Always wear your seatbelt when you are in a car.",
-    "vietnamese": "Dây đai an toàn được sử dụng trong ô tô hoặc các phương tiện khác."
+    "vietnamese": "Dây đai an toàn được sử dụng trong ô tô hoặc các phương tiện khác.",
+    "image": "db/esl/Seatbelt.png"
   },
   {
     "unit": "6.3",
     "word": "Across",
     "definition": "From one side to the other.",
     "example": "We walked across the bridge.",
-    "vietnamese": "Từ bên này sang bên kia."
+    "vietnamese": "Từ bên này sang bên kia.",
+    "image": "db/esl/Across.png"
   },
   {
     "unit": "6.3",
     "word": "Towards",
     "definition": "In the direction of.",
     "example": "We drove towards the mountains.",
-    "vietnamese": "Về phía, theo hướng của."
+    "vietnamese": "Về phía, theo hướng của.",
+    "image": "db/esl/Towards.png"
   },
   {
     "unit": "6.3",
     "word": "Pier",
     "definition": "A structure built out into the sea or a lake, used for boats to dock or for people to walk along.",
     "example": "We walked along the pier and watched the boats.",
-    "vietnamese": "Một cấu trúc được xây dựng vươn ra biển hoặc hồ, dùng cho tàu thuyền neo đậu hoặc cho mọi người đi dạo."
+    "vietnamese": "Một cấu trúc được xây dựng vươn ra biển hoặc hồ, dùng cho tàu thuyền neo đậu hoặc cho mọi người đi dạo.",
+    "image": "db/esl/Pier.png"
   },
   {
     "unit": "6.3",
     "word": "Metro stations",
     "definition": "Underground train stations.",
     "example": "The metro station is just around the corner.",
-    "vietnamese": "Các ga tàu điện ngầm."
+    "vietnamese": "Các ga tàu điện ngầm.",
+    "image": "db/esl/Metro_stations.png"
   },
   {
     "unit": "6.3",
     "word": "Main roads",
     "definition": "Important roads that connect cities or towns.",
     "example": "There is often a lot of traffic on the main roads during rush hour.",
-    "vietnamese": "Những con đường chính nối các thành phố hoặc thị trấn."
+    "vietnamese": "Những con đường chính nối các thành phố hoặc thị trấn.",
+    "image": "db/esl/Main_roads.png"
   },
   {
     "unit": "6.3",
     "word": "Entertainment",
     "definition": "Things that provide amusement or enjoyment.",
     "example": "The city has a lot of entertainment, such as cinemas and theaters.",
-    "vietnamese": "Những thứ mang lại sự giải trí hoặc thích thú."
+    "vietnamese": "Những thứ mang lại sự giải trí hoặc thích thú.",
+    "image": "db/esl/Entertainment.png"
   },
   {
     "unit": "6.4",
     "word": "Giggle",
     "definition": "To laugh in a quiet and silly way.",
     "example": "The children started to giggle when the clown made a funny face.",
-    "vietnamese": "Cười khúc khích (cười nhỏ và ngớ ngẩn)."
+    "vietnamese": "Cười khúc khích (cười nhỏ và ngớ ngẩn).",
+    "image": "db/esl/Giggle.png"
   },
   {
     "unit": "6.4",
     "word": "Sparkle",
     "definition": "To shine brightly with small flashes of light.",
     "example": "The stars sparkle in the night sky.",
-    "vietnamese": "Lấp lánh (tỏa sáng rực rỡ với những tia sáng nhỏ)."
+    "vietnamese": "Lấp lánh (tỏa sáng rực rỡ với những tia sáng nhỏ).",
+    "image": "db/esl/Sparkle.png"
   },
   {
     "unit": "6.4",
     "word": "Stare",
     "definition": "To look at something or someone for a long time without blinking.",
     "example": "She stared at the painting because it was so beautiful.",
-    "vietnamese": "Nhìn chằm chằm (nhìn ai đó hoặc vật gì đó trong thời gian dài mà không chớp mắt)."
+    "vietnamese": "Nhìn chằm chằm (nhìn ai đó hoặc vật gì đó trong thời gian dài mà không chớp mắt).",
+    "image": "db/esl/Stare.png"
   },
   {
     "unit": "6.4",
     "word": "Rise",
     "definition": "To move upwards or go to a higher position.",
     "example": "The sun rises in the morning.",
-    "vietnamese": "Mọc lên, dâng lên (di chuyển lên trên hoặc đến vị trí cao hơn)."
+    "vietnamese": "Mọc lên, dâng lên (di chuyển lên trên hoặc đến vị trí cao hơn).",
+    "image": "db/esl/Rise.png"
   },
   {
     "unit": "6.4",
     "word": "Huge",
     "definition": "Very big.",
     "example": "They live in a huge house with a big garden.",
-    "vietnamese": "Rất lớn."
+    "vietnamese": "Rất lớn.",
+    "image": "db/esl/Huge.png"
   },
   {
     "unit": "6.4",
     "word": "Enormous",
     "definition": "Very, very big (even bigger than \"huge\").",
     "example": "The elephant is an enormous animal.",
-    "vietnamese": "Khổng lồ (rất, rất lớn, thậm chí lớn hơn cả \"huge\")."
+    "vietnamese": "Khổng lồ (rất, rất lớn, thậm chí lớn hơn cả \"huge\").",
+    "image": "db/esl/Enormous.png"
   },
   {
     "unit": "6.4",
     "word": "Tiny",
     "definition": "Very small.",
     "example": "The baby bird was tiny and could fit in my hand.",
-    "vietnamese": "Rất nhỏ (tí hon)."
+    "vietnamese": "Rất nhỏ (tí hon).",
+    "image": "db/esl/Tiny.png"
   },
   {
     "unit": "6.4",
     "word": "Amazing",
     "definition": "Very surprising or wonderful.",
     "example": "The fireworks were amazing to watch.",
-    "vietnamese": "Tuyệt vời, đáng kinh ngạc."
+    "vietnamese": "Tuyệt vời, đáng kinh ngạc.",
+    "image": "db/esl/Amazing.png"
   },
   {
     "unit": "6.4",
     "word": "Skyscraper",
     "definition": "A very tall building with many floors.",
     "example": "New York City is famous for its tall skyscrapers.",
-    "vietnamese": "Tòa nhà chọc trời (một tòa nhà rất cao với nhiều tầng)."
+    "vietnamese": "Tòa nhà chọc trời (một tòa nhà rất cao với nhiều tầng).",
+    "image": "db/esl/Skyscraper.png"
   },
   {
     "unit": "6.4",
     "word": "Thousand",
     "definition": "The number 1,000.",
     "example": "There were over a thousand people at the concert.",
-    "vietnamese": "Một nghìn (số 1.000)."
+    "vietnamese": "Một nghìn (số 1.000).",
+    "image": "db/esl/Thousand.png"
   },
   {
     "unit": "6.5",
     "word": "Dropped",
     "definition": "Let something fall.",
     "example": "She dropped her pen on the floor.",
-    "vietnamese": "Đã làm rơi (để thứ gì đó rơi xuống)."
+    "vietnamese": "Đã làm rơi (để thứ gì đó rơi xuống).",
+    "image": "db/esl/Dropped.png"
   },
   {
     "unit": "6.5",
     "word": "Arid",
     "definition": "Very dry, with little or no rain.",
     "example": "The desert is an arid place.",
-    "vietnamese": "Khô cằn (rất khô, có ít hoặc không có mưa)."
+    "vietnamese": "Khô cằn (rất khô, có ít hoặc không có mưa).",
+    "image": "db/esl/Arid.png"
   },
   {
     "unit": "6.5",
     "word": "Sprout up",
     "definition": "To grow quickly or suddenly.",
     "example": "Flowers started to sprout up after the rain.",
-    "vietnamese": "Nảy mầm, mọc lên nhanh chóng hoặc đột ngột."
+    "vietnamese": "Nảy mầm, mọc lên nhanh chóng hoặc đột ngột.",
+    "image": "db/esl/Sprout_up.png"
   },
   {
     "unit": "6.5",
     "word": "Parched",
     "definition": "Very dry, especially because of hot weather.",
     "example": "After walking in the sun, my throat was parched.",
-    "vietnamese": "Khô khốc (rất khô, đặc biệt là do thời tiết nóng)."
+    "vietnamese": "Khô khốc (rất khô, đặc biệt là do thời tiết nóng).",
+    "image": "db/esl/Parched.png"
   },
   {
     "unit": "6.5",
     "word": "Shade",
     "definition": "An area where the sun doesn’t shine because something is blocking it.",
     "example": "We sat under the tree in the shade to stay cool.",
-    "vietnamese": "Bóng râm (vùng mà ánh nắng không chiếu tới do bị vật gì đó che khuất)."
+    "vietnamese": "Bóng râm (vùng mà ánh nắng không chiếu tới do bị vật gì đó che khuất).",
+    "image": "db/esl/Shade.png"
   },
   {
     "unit": "6.5",
     "word": "Hide",
     "definition": "To go somewhere or put something where it cannot be seen.",
     "example": "The cat tried to hide under the bed.",
-    "vietnamese": "Trốn, giấu (đi đến nơi nào đó hoặc đặt vật gì đó ở nơi không thể nhìn thấy)."
+    "vietnamese": "Trốn, giấu (đi đến nơi nào đó hoặc đặt vật gì đó ở nơi không thể nhìn thấy).",
+    "image": "db/esl/Hide.png"
   },
   {
     "unit": "6.5",
     "word": "Back and forth",
     "definition": "Moving in one direction and then in the opposite direction, repeatedly.",
     "example": "The swing moved back and forth in the wind.",
-    "vietnamese": "Qua lại (di chuyển theo một hướng rồi theo hướng ngược lại, lặp đi lặp lại)."
+    "vietnamese": "Qua lại (di chuyển theo một hướng rồi theo hướng ngược lại, lặp đi lặp lại).",
+    "image": "db/esl/Back_and_forth.png"
   },
   {
     "unit": "6.5",
     "word": "Reddish",
     "definition": "A little bit red.",
     "example": "Her hair was brown with a reddish tint.",
-    "vietnamese": "Hơi đỏ."
+    "vietnamese": "Hơi đỏ.",
+    "image": "db/esl/Reddish.png"
   },
   {
     "unit": "6.5",
     "word": "Bushy tail",
     "definition": "A thick and fluffy tail, like a squirrel’s.",
     "example": "The fox ran into the forest, its bushy tail waving behind it.",
-    "vietnamese": "Đuôi rậm (cái đuôi dày và xù, giống như đuôi sóc)."
+    "vietnamese": "Đuôi rậm (cái đuôi dày và xù, giống như đuôi sóc).",
+    "image": "db/esl/Bushy_tail.png"
   },
   {
     "unit": "6.5",
     "word": "Scurry off",
     "definition": "To move quickly with small, fast steps.",
     "example": "The mouse scurried off when it saw the cat.",
-    "vietnamese": "Chạy vụt đi (di chuyển nhanh với những bước nhỏ, nhanh)."
+    "vietnamese": "Chạy vụt đi (di chuyển nhanh với những bước nhỏ, nhanh).",
+    "image": "db/esl/Scurry_off.png"
   },
   {
     "unit": "6.5",
     "word": "Hung her head",
     "definition": "To lower her head, often because of sadness or shame.",
     "example": "She hung her head when she realized she had made a mistake.",
-    "vietnamese": "Cúi đầu (hạ thấp đầu, thường là do buồn bã hoặc xấu hổ)."
+    "vietnamese": "Cúi đầu (hạ thấp đầu, thường là do buồn bã hoặc xấu hổ).",
+    "image": "db/esl/Hung_her_head.png"
   },
   {
     "unit": "6.5",
     "word": "Skipped",
     "definition": "To move by jumping lightly from one foot to the other.",
     "example": "The little girl skipped down the street, humming a song.",
-    "vietnamese": "Nhảy chân sáo (di chuyển bằng cách nhảy nhẹ từ chân này sang chân kia)."
+    "vietnamese": "Nhảy chân sáo (di chuyển bằng cách nhảy nhẹ từ chân này sang chân kia).",
+    "image": "db/esl/Skipped.png"
   },
   {
     "unit": "6.5",
     "word": "Leapt",
     "definition": "To jump high or far.",
     "example": "The deer leapt over the stream.",
-    "vietnamese": "Đã nhảy vọt (nhảy cao hoặc xa)."
+    "vietnamese": "Đã nhảy vọt (nhảy cao hoặc xa).",
+    "image": "db/esl/Leapt.png"
   },
   {
     "unit": "6.5",
     "word": "Jumped",
     "definition": "To push yourself into the air using your legs.",
     "example": "He jumped to catch the ball.",
-    "vietnamese": "Đã nhảy (đẩy mình lên không trung bằng chân)."
+    "vietnamese": "Đã nhảy (đẩy mình lên không trung bằng chân).",
+    "image": "db/esl/Jumped.png"
   },
   {
     "unit": "6.5",
     "word": "Hopped",
     "definition": "To jump on one foot or with small jumps.",
     "example": "The rabbit hopped across the garden.",
-    "vietnamese": "Đã nhảy lò cò (nhảy bằng một chân hoặc nhảy những bước nhỏ)."
+    "vietnamese": "Đã nhảy lò cò (nhảy bằng một chân hoặc nhảy những bước nhỏ).",
+    "image": "db/esl/Hopped.png"
   },
   {
     "unit": "6.5",
     "word": "Plodded",
     "definition": "To walk slowly and heavily, often because you’re tired.",
     "example": "He plodded home after a long day at work.",
-    "vietnamese": "Lê bước (đi chậm chạp và nặng nề, thường là do mệt mỏi)."
+    "vietnamese": "Lê bước (đi chậm chạp và nặng nề, thường là do mệt mỏi).",
+    "image": "db/esl/Plodded.png"
   },
   {
     "unit": "6.5",
     "word": "Run away",
     "definition": "To leave quickly because you’re scared or don’t want to be caught.",
     "example": "The dog ran away when it heard the loud noise.",
-    "vietnamese": "Chạy trốn (rời đi nhanh chóng vì sợ hãi hoặc không muốn bị bắt)."
+    "vietnamese": "Chạy trốn (rời đi nhanh chóng vì sợ hãi hoặc không muốn bị bắt).",
+    "image": "db/esl/Run_away.png"
   },
   {
     "unit": "6.5",
     "word": "Advice",
     "definition": "Suggestions about what you should do in a situation.",
     "example": "My teacher gave me good advice on how to study for the test.",
-    "vietnamese": "Lời khuyên (gợi ý về những gì bạn nên làm trong một tình huống)."
+    "vietnamese": "Lời khuyên (gợi ý về những gì bạn nên làm trong một tình huống).",
+    "image": "db/esl/Advice.png"
   },
   {
     "unit": "7.1",
     "word": "Tornado",
     "definition": "A violent, spinning column of air that touches the ground, often causing damage.",
     "example": "The _______ tore through the town, destroying houses and trees.",
-    "vietnamese": "Lốc xoáy (Một cột không khí xoáy dữ dội chạm đất, thường gây ra thiệt hại)."
+    "vietnamese": "Lốc xoáy (Một cột không khí xoáy dữ dội chạm đất, thường gây ra thiệt hại).",
+    "image": "db/esl/Tornado.png"
   },
   {
     "unit": "7.1",
     "word": "Flood",
     "definition": "A large amount of water covering an area that is usually dry.",
     "example": "The heavy rains caused a terrible _______.",
-    "vietnamese": "Lũ lụt (Một lượng lớn nước bao phủ một khu vực thường khô ráo)."
+    "vietnamese": "Lũ lụt (Một lượng lớn nước bao phủ một khu vực thường khô ráo).",
+    "image": "db/esl/Flood.png"
   },
   {
     "unit": "7.1",
     "word": "Blizzard",
     "definition": "A severe snowstorm with strong winds and low visibility.",
     "example": "We couldn't go outside because the _______ made it hard to see and walk.",
-    "vietnamese": "Bão tuyết (Một cơn bão tuyết dữ dội với gió mạnh và tầm nhìn thấp)."
+    "vietnamese": "Bão tuyết (Một cơn bão tuyết dữ dội với gió mạnh và tầm nhìn thấp).",
+    "image": "db/esl/Blizzard.png"
   },
   {
     "unit": "7.1",
     "word": "Cyclone",
     "definition": "A very strong storm, also called a typhoon or hurricane.",
     "example": "The island was hit by a massive _______.",
-    "vietnamese": "Lốc xoáy/Bão nhiệt đới (Một cơn bão rất mạnh, còn được gọi là bão hoặc bão cuồng phong)."
+    "vietnamese": "Lốc xoáy/Bão nhiệt đới (Một cơn bão rất mạnh, còn được gọi là bão hoặc bão cuồng phong).",
+    "image": "db/esl/Cyclone.png"
   },
   {
     "unit": "7.1",
     "word": "Drought",
     "definition": "A long period with little or no rain, causing water shortages.",
     "example": "The farmers were worried because the _______ had dried up their crops.",
-    "vietnamese": "Hạn hán (Một thời gian dài có ít hoặc không có mưa, gây ra tình trạng thiếu nước)."
+    "vietnamese": "Hạn hán (Một thời gian dài có ít hoặc không có mưa, gây ra tình trạng thiếu nước).",
+    "image": "db/esl/Drought.png"
   },
   {
     "unit": "7.1",
     "word": "Frosty",
     "definition": "Very cold, with ice forming on surfaces.",
     "example": "The grass was _______ in the morning, sparkling under the sunlight.",
-    "vietnamese": "Băng giá (Rất lạnh, với băng hình thành trên các bề mặt)."
+    "vietnamese": "Băng giá (Rất lạnh, với băng hình thành trên các bề mặt).",
+    "image": "db/esl/Frosty.png"
   },
   {
     "unit": "7.1",
     "word": "Turbulent",
     "definition": "Rough, unsteady, or violent, often used for air or water.",
     "example": "The airplane shook as it flew through _______ weather.",
-    "vietnamese": "Hỗn loạn/Sóng gió (Thô bạo, không ổn định hoặc dữ dội, thường dùng cho không khí hoặc nước)."
+    "vietnamese": "Hỗn loạn/Sóng gió (Thô bạo, không ổn định hoặc dữ dội, thường dùng cho không khí hoặc nước).",
+    "image": "db/esl/Turbulent.png"
   },
   {
     "unit": "7.1",
     "word": "Blustery",
     "definition": "Windy with strong gusts of wind.",
     "example": "The _______ wind made it difficult to walk along the beach.",
-    "vietnamese": "Có gió mạnh (Nhiều gió với những cơn gió giật mạnh)."
+    "vietnamese": "Có gió mạnh (Nhiều gió với những cơn gió giật mạnh).",
+    "image": "db/esl/Blustery.png"
   },
   {
     "unit": "7.1",
     "word": "Crashing",
     "definition": "A loud, sudden sound, often made by waves, storms, or falling objects.",
     "example": "The waves were _______ against the rocks during the storm.",
-    "vietnamese": "Rầm rầm/Đổ vỡ (Một âm thanh lớn, đột ngột, thường do sóng, bão hoặc vật rơi tạo ra)."
+    "vietnamese": "Rầm rầm/Đổ vỡ (Một âm thanh lớn, đột ngột, thường do sóng, bão hoặc vật rơi tạo ra).",
+    "image": "db/esl/Crashing.png"
   },
   {
     "unit": "7.1",
     "word": "Cutting",
     "definition": "Very sharp or harsh, often used to describe wind or cold.",
     "example": "Ensure you wear a coat against the _______ wind.",
-    "vietnamese": "Cắt da cắt thịt (Rất sắc bén hoặc khắc nghiệt, thường dùng để mô tả gió hoặc cái lạnh)."
+    "vietnamese": "Cắt da cắt thịt (Rất sắc bén hoặc khắc nghiệt, thường dùng để mô tả gió hoặc cái lạnh).",
+    "image": "db/esl/Cutting.png"
   },
   {
     "unit": "7.1",
     "word": "Violent",
     "definition": "Strong and forceful in a way that can cause damage or harm.",
     "example": "The _______ storm knocked down trees and power lines.",
-    "vietnamese": "Dữ dội/Bạo lực (Mạnh mẽ và có lực có thể gây ra thiệt hại hoặc tổn hại)."
+    "vietnamese": "Dữ dội/Bạo lực (Mạnh mẽ và có lực có thể gây ra thiệt hại hoặc tổn hại).",
+    "image": "db/esl/Violent.png"
   },
   {
     "unit": "7.1",
     "word": "Fierce",
     "definition": "Strong, powerful, and sometimes frightening.",
     "example": "The _______ wind howled through the trees all night.",
-    "vietnamese": "Hung dữ/Mãnh liệt (Mạnh mẽ, đầy sức mạnh và đôi khi đáng sợ)."
+    "vietnamese": "Hung dữ/Mãnh liệt (Mạnh mẽ, đầy sức mạnh và đôi khi đáng sợ).",
+    "image": "db/esl/Fierce.png"
   },
   {
     "unit": "7.2",
     "word": "desert",
     "definition": "A dry, sandy area with very little rain and few plants.",
     "example": "Camels are often used to travel across the hot and dry _______.",
-    "vietnamese": "Sa mạc (Một khu vực khô cằn, đầy cát với rất ít mưa và thực vật)."
+    "vietnamese": "Sa mạc (Một khu vực khô cằn, đầy cát với rất ít mưa và thực vật).",
+    "image": "db/esl/desert.png"
   },
   {
     "unit": "7.2",
     "word": "mountain range",
     "definition": "A group or chain of mountains connected together.",
     "example": "The Himalayas is the highest _______ in the world.",
-    "vietnamese": "Dãy núi (Một nhóm hoặc chuỗi các ngọn núi nối liền với nhau)."
+    "vietnamese": "Dãy núi (Một nhóm hoặc chuỗi các ngọn núi nối liền với nhau).",
+    "image": "db/esl/mountain_range.png"
   },
   {
     "unit": "7.2",
     "word": "coral reef",
     "definition": "An underwater structure made of tiny sea animals called corals.",
     "example": "The Great Barrier Reef is the largest _______ and is home to many colorful fish.",
-    "vietnamese": "Rạn san hô (Một cấu trúc dưới nước được tạo nên từ những động vật biển nhỏ xíu gọi là san hô)."
+    "vietnamese": "Rạn san hô (Một cấu trúc dưới nước được tạo nên từ những động vật biển nhỏ xíu gọi là san hô).",
+    "image": "db/esl/coral_reef.png"
   },
   {
     "unit": "7.2",
     "word": "rock formation",
     "definition": "A natural shape or arrangement of rocks created over time.",
     "example": "The Grand Canyon has many unique _______s formed by wind and water erosion.",
-    "vietnamese": "Sự hình thành đá (Một hình dạng hoặc sự sắp xếp tự nhiên của các vạch đá được tạo ra theo thời gian)."
+    "vietnamese": "Sự hình thành đá (Một hình dạng hoặc sự sắp xếp tự nhiên của các vạch đá được tạo ra theo thời gian).",
+    "image": "db/esl/rock_formation.png"
   },
   {
     "unit": "7.2",
     "word": "coast",
     "definition": "The land next to the sea or ocean.",
     "example": "We walked along the _______ and collected seashells from the sandy beach.",
-    "vietnamese": "Bờ biển (Vùng đất liền kề với biển hoặc đại dương)."
+    "vietnamese": "Bờ biển (Vùng đất liền kề với biển hoặc đại dương).",
+    "image": "db/esl/coast.png"
   },
   {
     "unit": "7.2",
     "word": "tropical",
     "definition": "A warm and humid climate, often near the equator.",
     "example": "Mangoes and bananas grow well in _______ countries.",
-    "vietnamese": "Nhiệt đới (Một khí hậu ấm áp và ẩm ướt, thường gần xích đạo)."
+    "vietnamese": "Nhiệt đới (Một khí hậu ấm áp và ẩm ướt, thường gần xích đạo).",
+    "image": "db/esl/tropical.png"
   },
   {
     "unit": "7.2",
     "word": "rainforest",
     "definition": "A dense forest with heavy rainfall, usually in warm areas.",
     "example": "The Amazon _______ is home to many exotic animals and plants.",
-    "vietnamese": "Rừng nhiệt đới (Một khu rừng rậm rạp với lượng mưa lớn, thường ở các vùng ấm áp)."
+    "vietnamese": "Rừng nhiệt đới (Một khu rừng rậm rạp với lượng mưa lớn, thường ở các vùng ấm áp).",
+    "image": "db/esl/rainforest.png"
   },
   {
     "unit": "7.2",
     "word": "length",
     "definition": "How long something is from one end to the other.",
     "example": "The _______ of the river is more than 1,000 kilometers.",
-    "vietnamese": "Chiều dài (Mức độ dài của một vật từ đầu này đến đầu kia)."
+    "vietnamese": "Chiều dài (Mức độ dài của một vật từ đầu này đến đầu kia).",
+    "image": "db/esl/length.png"
   },
   {
     "unit": "7.2",
     "word": "width",
     "definition": "How wide something is from side to side.",
     "example": "The _______ of the table is perfect for our dining room.",
-    "vietnamese": "Chiều rộng (Mức độ rộng của một vật từ bên này sang bên kia)."
+    "vietnamese": "Chiều rộng (Mức độ rộng của một vật từ bên này sang bên kia).",
+    "image": "db/esl/width.png"
   },
   {
     "unit": "7.2",
     "word": "depth",
     "definition": "How deep something is from the top to the bottom.",
     "example": "The _______ of the swimming pool is 2 meters.",
-    "vietnamese": "Độ sâu (Mức độ sâu của một vật từ trên xuống dưới)."
+    "vietnamese": "Độ sâu (Mức độ sâu của một vật từ trên xuống dưới).",
+    "image": "db/esl/depth.png"
   },
   {
     "unit": "7.2",
     "word": "height",
     "definition": "How tall something is from the bottom to the top.",
     "example": "The _______ of the mountain makes it difficult to climb.",
-    "vietnamese": "Chiều cao/Độ cao (Mức độ cao của một vật từ dưới lên trên)."
+    "vietnamese": "Chiều cao/Độ cao (Mức độ cao của một vật từ dưới lên trên).",
+    "image": "db/esl/height.png"
   },
   {
     "unit": "7.3",
     "word": "Kookaburra",
     "definition": "A type of bird from Australia that makes a sound like laughing.",
     "example": "The _______ sat on a tree branch and made a funny laughing noise.",
-    "vietnamese": "Chim bói cá Kookaburra (Một loại chim từ Úc phát ra âm thanh giống như tiếng cười)."
+    "vietnamese": "Chim bói cá Kookaburra (Một loại chim từ Úc phát ra âm thanh giống như tiếng cười).",
+    "image": "db/esl/Kookaburra.png"
   },
   {
     "unit": "7.3",
     "word": "Lung fish",
     "definition": "A special kind of fish that can breathe air and live in water.",
     "example": "The _______ can survive in mud when there is no water for a long time.",
-    "vietnamese": "Cá phổi (Một loại cá đặc biệt có thể thở không khí và sống trong nước)."
+    "vietnamese": "Cá phổi (Một loại cá đặc biệt có thể thở không khí và sống trong nước).",
+    "image": "db/esl/Lung_fish.png"
   },
   {
     "unit": "7.3",
     "word": "Dinosaur Ant",
     "definition": "A very old type of ant that has been around for millions of years.",
     "example": "The _______ is one of the rarest ants in the world.",
-    "vietnamese": "Kiến khủng long (Một loài kiến rất cổ đã tồn tại trong hàng triệu năm)."
+    "vietnamese": "Kiến khủng long (Một loài kiến rất cổ đã tồn tại trong hàng triệu năm).",
+    "image": "db/esl/Dinosaur_Ant.png"
   },
   {
     "unit": "7.3",
     "word": "Diet",
     "definition": "The types of food that a person or an animal eats.",
     "example": "A panda’s _______ mostly consists of bamboo.",
-    "vietnamese": "Chế độ ăn uống (Các loại thực phẩm mà một người hoặc động vật ăn)."
+    "vietnamese": "Chế độ ăn uống (Các loại thực phẩm mà một người hoặc động vật ăn).",
+    "image": "db/esl/Diet.png"
   },
   {
     "unit": "7.3",
     "word": "Endangered",
     "definition": "When there are very few of an animal left, and they might disappear forever.",
     "example": "The giant panda is an _______ animal, so people try to protect it.",
-    "vietnamese": "Có nguy cơ tuyệt chủng (Khi chỉ còn lại rất ít một loài động vật và chúng có thể biến mất mãi mãi)."
+    "vietnamese": "Có nguy cơ tuyệt chủng (Khi chỉ còn lại rất ít một loài động vật và chúng có thể biến mất mãi mãi).",
+    "image": "db/esl/Endangered.png"
   },
   {
     "unit": "7.3",
     "word": "Termite",
     "definition": "A small insect that eats wood and lives in large groups.",
     "example": "The _______s built a big mound in the forest.",
-    "vietnamese": "Mối (Một loài côn trùng nhỏ ăn gỗ và sống thành các bầy lớn)."
+    "vietnamese": "Mối (Một loài côn trùng nhỏ ăn gỗ và sống thành các bầy lớn).",
+    "image": "db/esl/Termite.png"
   },
   {
     "unit": "7.3",
     "word": "Extinct",
     "definition": "When all animals of a certain kind have died and do not exist anymore.",
     "example": "Dinosaurs are _______ because they disappeared millions of years ago.",
-    "vietnamese": "Tuyệt chủng (Khi tất cả các động vật của một loài nhất định đã chết và không còn tồn tại nữa)."
+    "vietnamese": "Tuyệt chủng (Khi tất cả các động vật của một loài nhất định đã chết và không còn tồn tại nữa).",
+    "image": "db/esl/Extinct.png"
   },
   {
     "unit": "7.3",
     "word": "Curious",
     "definition": "Wanting to learn or know more about something.",
     "example": "The _______ boy asked many questions about space and planets.",
-    "vietnamese": "Tò mò (Muốn tìm hiểu hoặc biết thêm về một điều gì đó)."
+    "vietnamese": "Tò mò (Muốn tìm hiểu hoặc biết thêm về một điều gì đó).",
+    "image": "db/esl/Curious.png"
   },
   {
     "unit": "7.4",
     "word": "Snorkelling",
     "definition": "Swimming with a mask and a tube to breathe underwater.",
     "example": "We saw colorful fish while _______ in the ocean.",
-    "vietnamese": "Lặn ống thở (Bơi với mặt nạ và ống thở để thở dưới nước)."
+    "vietnamese": "Lặn ống thở (Bơi với mặt nạ và ống thở để thở dưới nước).",
+    "image": "db/esl/Snorkelling.png"
   },
   {
     "unit": "7.4",
     "word": "Conservation",
     "definition": "Protecting nature, animals, and the environment.",
     "example": "_______ helps save animals from becoming extinct.",
-    "vietnamese": "Bảo tồn (Bảo vệ thiên nhiên, động vật và môi trường)."
+    "vietnamese": "Bảo tồn (Bảo vệ thiên nhiên, động vật và môi trường).",
+    "image": "db/esl/Conservation.png"
   },
   {
     "unit": "7.4",
     "word": "Conservationist",
     "definition": "A person who works to protect nature and animals.",
     "example": "The _______ rescued a baby turtle and helped it return to the sea.",
-    "vietnamese": "Nhà bảo tồn (Người làm việc để bảo vệ thiên nhiên và động vật)."
+    "vietnamese": "Nhà bảo tồn (Người làm việc để bảo vệ thiên nhiên và động vật).",
+    "image": "db/esl/Conservationist.png"
   },
   {
     "unit": "7.5",
     "word": "jealous",
     "definition": "Feeling unhappy because someone else has something you want.",
     "example": "Tom was _______ when his friend got a new bicycle.",
-    "vietnamese": "Ghen tị (Cảm thấy không vui vì người khác có thứ bạn muốn)."
+    "vietnamese": "Ghen tị (Cảm thấy không vui vì người khác có thứ bạn muốn).",
+    "image": "db/esl/jealous.png"
   },
   {
     "unit": "7.5",
     "word": "wings",
     "definition": "The parts of a bird or insect that help it fly.",
     "example": "The butterfly flapped its _______ and flew away.",
-    "vietnamese": "Đôi cánh (Các bộ phận của loài chim hoặc côn trùng giúp chúng bay)."
+    "vietnamese": "Đôi cánh (Các bộ phận của loài chim hoặc côn trùng giúp chúng bay).",
+    "image": "db/esl/wings.png"
   },
   {
     "unit": "7.5",
     "word": "get about",
     "definition": "To move from one place to another.",
     "example": "Grandpa finds it hard to _______ without his walking stick.",
-    "vietnamese": "Đi lại/Di chuyển (Di chuyển từ nơi này sang nơi khác)."
+    "vietnamese": "Đi lại/Di chuyển (Di chuyển từ nơi này sang nơi khác).",
+    "image": "db/esl/get_about.png"
   },
   {
     "unit": "7.5",
     "word": "flew away",
     "definition": "Moved through the air and left.",
     "example": "The bird _______ when it heard a loud noise.",
-    "vietnamese": "Bay đi (Di chuyển qua không trung và rời đi)."
+    "vietnamese": "Bay đi (Di chuyển qua không trung và rời đi).",
+    "image": "db/esl/flew_away.png"
   },
   {
     "unit": "7.5",
     "word": "fool (verb)",
     "definition": "To trick or deceive someone.",
     "example": "The magician _______ed the audience with his magic tricks.",
-    "vietnamese": "Lừa gạt (Đánh lừa hoặc lừa dối ai đó)."
+    "vietnamese": "Lừa gạt (Đánh lừa hoặc lừa dối ai đó).",
+    "image": "db/esl/fool_verb.png"
   },
   {
     "unit": "7.5",
     "word": "swiftly",
     "definition": "Moving very quickly.",
     "example": "The rabbit ran _______ across the field.",
-    "vietnamese": "Nhanh chóng (Di chuyển rất nhanh)."
+    "vietnamese": "Nhanh chóng (Di chuyển rất nhanh).",
+    "image": "db/esl/swiftly.png"
   },
   {
     "unit": "7.5",
@@ -1523,63 +1622,72 @@
     "word": "landed",
     "definition": "Came down to the ground after flying.",
     "example": "The airplane _______ safely at the airport.",
-    "vietnamese": "Hạ cánh (Chạm đất sau khi bay)."
+    "vietnamese": "Hạ cánh (Chạm đất sau khi bay).",
+    "image": "db/esl/landed.png"
   },
   {
     "unit": "7.5",
     "word": "rushed at",
     "definition": "Moved quickly toward someone or something.",
     "example": "The dog _______ the cat, but it jumped away.",
-    "vietnamese": "Lao vào (Di chuyển nhanh về phía ai đó hoặc cái gì đó)."
+    "vietnamese": "Lao vào (Di chuyển nhanh về phía ai đó hoặc cái gì đó).",
+    "image": "db/esl/rushed_at.png"
   },
   {
     "unit": "7.5",
     "word": "striking out",
     "definition": "Trying to hit something or someone.",
     "example": "The angry boy was _______ at the air in frustration.",
-    "vietnamese": "Đánh vào (Cố gắng đánh đập một cái gì đó hoặc ai đó)."
+    "vietnamese": "Đánh vào (Cố gắng đánh đập một cái gì đó hoặc ai đó).",
+    "image": "db/esl/striking_out.png"
   },
   {
     "unit": "7.5",
     "word": "puzzled",
     "definition": "Feeling confused or not understanding something.",
     "example": "Lily looked _______ when she saw the difficult math question.",
-    "vietnamese": "Bối rối/Lúng túng (Cảm thấy bối rối hoặc không hiểu điều gì đó)."
+    "vietnamese": "Bối rối/Lúng túng (Cảm thấy bối rối hoặc không hiểu điều gì đó).",
+    "image": "db/esl/puzzled.png"
   },
   {
     "unit": "7.5",
     "word": "foolish",
     "definition": "Not wise; making silly or unwise choices.",
     "example": "It was _______ of Max to go outside without a coat in the rain.",
-    "vietnamese": "Ngốc nghếch (Không khôn ngoan; đưa ra những lựa chọn ngớ ngẩn hoặc không khôn báo)."
+    "vietnamese": "Ngốc nghếch (Không khôn ngoan; đưa ra những lựa chọn ngớ ngẩn hoặc không khôn báo).",
+    "image": "db/esl/foolish.png"
   },
   {
     "unit": "8.1",
     "word": "air pollution",
     "definition": "When the air becomes dirty from smoke, gases, or chemicals.",
     "example": "Cars and factories cause air pollution, making it harder to breathe.",
-    "vietnamese": "Ô nhiễm không khí. (Ví dụ: Ô tô và nhà máy gây ô nhiễm không khí, làm cho việc hít thở khó khăn hơn.)"
+    "vietnamese": "Ô nhiễm không khí. (Ví dụ: Ô tô và nhà máy gây ô nhiễm không khí, làm cho việc hít thở khó khăn hơn.)",
+    "image": "db/esl/air_pollution.png"
   },
   {
     "unit": "8.1",
     "word": "plastic pollution",
     "definition": "When plastic waste harms the environment, especially in oceans and rivers.",
     "example": "Plastic pollution is dangerous for sea animals like turtles and fish.",
-    "vietnamese": "Ô nhiễm nhựa. (Ví dụ: Ô nhiễm nhựa rất nguy hiểm cho các loài động vật biển như rùa và cá.)"
+    "vietnamese": "Ô nhiễm nhựa. (Ví dụ: Ô nhiễm nhựa rất nguy hiểm cho các loài động vật biển như rùa và cá.)",
+    "image": "db/esl/plastic_pollution.png"
   },
   {
     "unit": "8.1",
     "word": "rising sea levels",
     "definition": "When the ocean water gets higher due to melting ice and climate change.",
     "example": "Many islands are at risk because of rising sea levels.",
-    "vietnamese": "Mực nước biển dâng cao. (Ví dụ: Nhiều hòn đảo đang gặp nguy hiểm vì mực nước biển dâng cao.)"
+    "vietnamese": "Mực nước biển dâng cao. (Ví dụ: Nhiều hòn đảo đang gặp nguy hiểm vì mực nước biển dâng cao.)",
+    "image": "db/esl/rising_sea_levels.png"
   },
   {
     "unit": "8.1",
     "word": "melting ice caps",
     "definition": "When the ice at the North and South Poles melts due to global warming.",
     "example": "The melting ice caps are causing polar bears to lose their homes.",
-    "vietnamese": "Băng tan ở các cực. (Ví dụ: Băng tan ở các cực đang khiến gấu Bắc cực mất đi môi trường sống của chúng.)"
+    "vietnamese": "Băng tan ở các cực. (Ví dụ: Băng tan ở các cực đang khiến gấu Bắc cực mất đi môi trường sống của chúng.)",
+    "image": "db/esl/melting_ice_caps.png"
   },
   {
     "unit": "8.1",
@@ -1593,7 +1701,8 @@
     "word": "environment",
     "definition": "The world around us, including trees, animals, air, and water.",
     "example": "We must take care of the environment to keep it clean and safe.",
-    "vietnamese": "Môi trường. (Ví dụ: Chúng ta phải chăm sóc môi trường để giữ cho nó sạch sẽ và an toàn.)"
+    "vietnamese": "Môi trường. (Ví dụ: Chúng ta phải chăm sóc môi trường để giữ cho nó sạch sẽ và an toàn.)",
+    "image": "db/esl/environment.png"
   },
   {
     "unit": "8.1",
