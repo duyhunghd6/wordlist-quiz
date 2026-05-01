@@ -1,0 +1,1068 @@
+{
+  "storyId": "harrypotter_episode1",
+  "chapterId": "chapter_03",
+  "chapterNumber": 3,
+  "title": "The Letters from No One",
+  "dateLabel": "23 July 1991",
+  "sourceTextIncluded": true,
+  "pages": [
+    {
+      "pageId": "hp_ep1_ch03_p001",
+      "pageNumber": 1,
+      "sourceText": "CHAPTER THREE \n\nTHE LETTERS FROM NO ONE \n\nThe escape of the Brazilian boa constrictor earned Harry his longest-ever punishment. By the time he was allowed out of his cupboard again, the summer holidays had started and Dudley had already broken his new video camera, crashed his remote control airplane, and, first time out on his racing bike, knocked down old Mrs. Figg as she crossed Privet Drive on her crutches. \n\nHarry was glad school was over, but there was no escaping Dudley's gang, who visited the house every single day. Piers, Dennis, Malcolm, and Gordon were all big and stupid, but as Dudley was the biggest and stupidest of the lot, he was the leader. The rest of them were all quite happy to join in Dudley's favorite sport: Harry Hunting. \n\nThis was why Harry spent as much time as possible out of the house, wandering around and thinking about the end of the holidays, where he could see a tiny ray of hope. When September came he would be going off to secondary school and, for the first time in his life, he wouldn't be with Dudley. Dudley had been accepted at Uncle Vernon's old private school, Smeltings. Piers Polkiss was going there too. Harry, on the other hand, was going to Stonewall High, the local public school. Dudley thought this was very funny. \n\n\"They stuff people's heads down the toilet the first day at Stonewall,\" \n\nhe told Harry. \"Want to come upstairs and practice?\" \n\n\"No, thanks,\" said Harry.",
+      "approxWordCount": 250,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 1,
+        "sourceWordEnd": 250,
+        "sourceCharStart": 45415,
+        "sourceCharEnd": 46847
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch03_p001_q01",
+          "type": "multiple_choice",
+          "prompt": "Who visited the house every single day?",
+          "explanation": "The story says Dudley's gang visited the house every single day. We use 'who' to give more information about people!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Defining Relative Clauses",
+          "options": [
+            "Harry's teachers",
+            "Dudley's gang",
+            "Mrs. Figg"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch03_p001_q02",
+          "type": "true_false",
+          "prompt": "Harry was thinking about the end of the holidays.",
+          "explanation": "Yes! Harry spent time out of the house thinking about the end of the holidays. We use 'about' to show the topic he is thinking of.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Like & About",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch03_p001_q03",
+          "type": "multiple_choice",
+          "prompt": "How does Harry answer Dudley's invitation to go upstairs and practice?",
+          "explanation": "Harry politely refuses the invitation by saying 'No, thanks.'",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Would You Like (Offers & Invitations)",
+          "options": [
+            "Yes, please.",
+            "No, thanks.",
+            "I'd love to."
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch03_p001_q04",
+          "type": "true_false",
+          "prompt": "Dudley says that kids at Stonewall stuff people's heads down the toilet.",
+          "explanation": "Dudley tells Harry this as a general fact about the school. We use the present simple tense for routines and facts!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch03_p002",
+      "pageNumber": 2,
+      "sourceText": "\"The poor toilet's never had anything as horrible as your head down it -- it might be sick.\" Then he ran, before Dudley could work out what he'd said. \n\nOne day in July, Aunt Petunia took Dudley to London to buy his Smeltings uniform, leaving Harry at Mrs. Figg's. Mrs. Figg wasn 't as bad as usual. It turned out she'd broken her leg tripping over one of her cats, and she didn't seem quite as fond of them as before. She let Harry watch television and gave him a bit of chocolate cake that tasted as though she'd had it for several years. \n\nThat evening, Dudley paraded around the living room for the family in his brand-new uniform. Smeltings' boys wore maroon tailcoats, orange knickerbockers, and flat straw hats called boaters. They also carried knobbly sticks, used for hitting each other while the teachers weren't looking. This was supposed to be good training for later life. \n\nAs he looked at Dudley in his new knickerbockers, Uncle Vernon said gruffly that it was the proudest moment of his life. Aunt Petunia burst into tears and said she couldn't believe it was her Ickle Dudleykins, he looked so handsome and grown-up. Harry didn't trust himself to speak. He thought two of his ribs might already have cracked from trying not to laugh. \n\nThere was a horrible smell in the kitchen the next morning when Harry went in for breakfast.",
+      "approxWordCount": 238,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 251,
+        "sourceWordEnd": 488,
+        "sourceCharStart": 46848,
+        "sourceCharEnd": 48193
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch03_p002_q01",
+          "type": "multiple_choice",
+          "prompt": "Harry says the toilet 'might' be sick. What does the word 'might' show here?",
+          "explanation": "We use 'might' to talk about something that is possible.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Obligation & Possibility",
+          "options": [
+            "A. A possibility",
+            "B. A routine",
+            "C. A planned action"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch03_p002_q02",
+          "type": "true_false",
+          "prompt": "Aunt Petunia took Dudley to London to buy his new uniform.",
+          "explanation": "The story says Aunt Petunia took Dudley to London to buy his Smeltings uniform.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Prepositions of Direction",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch03_p002_q03",
+          "type": "multiple_choice",
+          "prompt": "Mrs. Figg gave Harry some chocolate cake _____ tasted very old. Which word fits best?",
+          "explanation": "We use 'that' or 'which' to give extra information about a thing, like a cake!",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Defining Relative Clauses",
+          "options": [
+            "A. who",
+            "B. that",
+            "C. where"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch03_p002_q04",
+          "type": "true_false",
+          "prompt": "Dudley's new school uniform includes a flat straw hat.",
+          "explanation": "The text says the boys wear flat straw hats called boaters.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch03_p003",
+      "pageNumber": 3,
+      "sourceText": "It seemed to be coming from a large metal tub in the sink. He went to have a look. The tub was full of what looked like dirty rags swimming in gray water. \n\n\"What's this?\" he asked Aunt Petunia. Her lips tightened as they always did if he dared to ask a question. \n\n\"Your new school uniform,\" she said. \n\nHarry looked in the bowl again. \n\n\"Oh,\" he said, \"I didn't realize it had to be so wet.\" \n\n\"DotA be stupid,\" snapped Aunt Petunia. \"I'm dyeing some of Dudley's old things gray for you. It'll look just like everyone else's when I've finished.\" \n\nHarry seriously doubted this, but thought it best not to argue. He sat down at the table and tried not to think about how he was going to look on his first day at Stonewall High -- like he was wearing bits of old elephant skin, probably. \n\nDudley and Uncle Vernon came in, both with wrinkled noses because of the smell from Harry's new uniform. Uncle Vernon opened his newspaper as usual and Dudley banged his Smelting stick, which he carried everywhere, on the table. \n\nThey heard the click of the mail slot and flop of letters on the doormat. \n\n\"Get the mail, Dudley,\" said Uncle Vernon from behind his paper. \n\n\"Make Harry get it.\" \n\n\"Get the mail, Harry.\" \n\n\"Make Dudley get it.\" \n\n\"Poke him with your Smelting stick, Dudley.\" \n\nHarry dodged the Smelting stick and went to get the mail.",
+      "approxWordCount": 243,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 489,
+        "sourceWordEnd": 731,
+        "sourceCharStart": 48194,
+        "sourceCharEnd": 49534
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch03_p003_q01",
+          "type": "multiple_choice",
+          "prompt": "The text says Dudley has a Smelting stick, \"_____ he carried everywhere.\" Which word fills the blank?",
+          "explanation": "We use \"which\" to give more information about a thing, like a stick!",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Defining Relative Clauses",
+          "options": [
+            "who",
+            "which",
+            "where"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch03_p003_q02",
+          "type": "true_false",
+          "prompt": "Harry thinks his new uniform will look like old elephant skin.",
+          "explanation": "Harry thinks he will look like he is wearing bits of old elephant skin. We use \"like\" to show two things are similar.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Like & About",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch03_p003_q03",
+          "type": "multiple_choice",
+          "prompt": "The strange smell seemed to be coming _____ a large metal tub.",
+          "explanation": "The word \"from\" shows the starting point of the smell.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "into",
+            "from",
+            "towards"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch03_p003_q04",
+          "type": "true_false",
+          "prompt": "Aunt Petunia says the uniform will look just like everyone else's.",
+          "explanation": "She uses \"will\" (It'll) to make a prediction about how the uniform is going to look in the future.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Future Forms",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch03_p004",
+      "pageNumber": 4,
+      "sourceText": "Three things lay on the doormat: a postcard from Uncle Vernon's sister Marge, who was vacationing on the Isle of Wight, a brown envelope that looked like a bill, and -- a letter for Harry. \n\nHarry picked it up and stared at it, his heart twanging like a giant elastic band. No one, ever, in his whole life, had written to him. Who would? He had no friends, no other relatives -- he didn't belong to the library, so he'd never even got rude notes asking for books back. Yet here it was, a letter, addressed so plainly there could be no mistake: Mr. H. Potter The Cupboard under the Stairs 4 Privet Drive Little Whinging Surrey The envelope was thick and heavy, made of yellowish parchment, and the address was written in emerald-green ink. There was no stamp. \n\nTurning the envelope over, his hand trembling, Harry saw a purple wax seal bearing a coat of arms; a lion, an eagle, a badger, and a snake surrounding a large letter H. \n\n\"Hurry up, boy!\" shouted Uncle Vernon from the kitchen. \"What are you doing, checking for letter bombs?\" He chuckled at his own joke. \n\nHarry went back to the kitchen, still staring at his letter. He handed Uncle Vernon the bill and the postcard, sat down, and slowly began to open the yellow envelope. \n\nUncle Vernon ripped open the bill, snorted in disgust, and flipped over the postcard. \n\n\"Marge's ill,\" he informed Aunt Petunia. \"Ate a funny whelk. --.\" \n\n\"Dad!\"",
+      "approxWordCount": 250,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 732,
+        "sourceWordEnd": 981,
+        "sourceCharStart": 49535,
+        "sourceCharEnd": 50934
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch03_p004_q01",
+          "type": "multiple_choice",
+          "prompt": "The text says the brown envelope looked _____ a bill.",
+          "explanation": "We use 'like' to say two things look similar.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Like & About",
+          "options": [
+            "like",
+            "about",
+            "from"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch03_p004_q02",
+          "type": "multiple_choice",
+          "prompt": "Who is the postcard from?",
+          "explanation": "The text says there was a postcard from Uncle Vernon's sister Marge, who was vacationing.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Defining Relative Clauses",
+          "options": [
+            "Aunt Petunia",
+            "Uncle Vernon",
+            "Uncle Vernon's sister Marge"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": "hp_ep1_ch03_p004_q03",
+          "type": "true_false",
+          "prompt": "Uncle Vernon shouted at Harry from the kitchen.",
+          "explanation": "The text says Uncle Vernon shouted from the kitchen, which tells us where he was.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Prepositions of Direction",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch03_p004_q04",
+          "type": "true_false",
+          "prompt": "Marge was vacationing on the Isle of Wight.",
+          "explanation": "The text uses 'was vacationing' to show an action that was happening in the past.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch03_p005",
+      "pageNumber": 5,
+      "sourceText": "said Dudley suddenly. \"Dad, Harry's got something!\" \n\nHarry was on the point of unfolding his letter, which was written on the same heavy parchment as the envelope, when it was jerked sharply out of his hand by Uncle Vernon. \n\n\"That's mine!\" said Harry, trying to snatch it back. \n\n\"Who'd be writing to you?\" sneered Uncle Vernon, shaking the letter open with one hand and glancing at it. His face went from red to green faster than a set of traffic lights. And it didn't stop there. Within seconds it was the grayish white of old porridge. \n\n\"P-P-Petunia!\" he gasped. \n\nDudley tried to grab the letter to read it, but Uncle Vernon held it high out of his reach. Aunt Petunia took it curiously and read the first line. For a moment it looked as though she might faint. She clutched her throat and made a choking noise. \n\n\"Vernon! Oh my goodness -- Vernon!\" \n\nThey stared at each other, seeming to have forgotten that Harry and Dudley were still in the room. Dudley wasn't used to being ignored. He gave his father a sharp tap on the head with his Smelting stick. \n\n\"I want to read that letter,\" he said loudly. want to read it,\" said Harry furiously, \"as it's mine.\" \n\n\"Get out, both of you,\" croaked Uncle Vernon, stuffing the letter back inside its envelope. \n\nHarry didn't move. \n\nI WANT MY LETTER!\" he shouted. \n\n\"Let me see it!\" demanded Dudley. \n\n\"OUT!\"",
+      "approxWordCount": 241,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 982,
+        "sourceWordEnd": 1222,
+        "sourceCharStart": 50935,
+        "sourceCharEnd": 52294
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch03_p005_q01",
+          "type": "multiple_choice",
+          "prompt": "What does the word 'which' give extra information about in this sentence: '...his letter, which was written on the same heavy parchment...'?",
+          "explanation": "The word 'which' is used to give more information about the thing right before it, which is the letter.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Defining Relative Clauses",
+          "options": [
+            "A. The envelope",
+            "B. The letter",
+            "C. Uncle Vernon"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch03_p005_q02",
+          "type": "true_false",
+          "prompt": "The story says Aunt Petunia 'might faint'. This means it is possible she will faint.",
+          "explanation": "The word 'might' shows that something is possible, but not 100% certain.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Obligation & Possibility",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch03_p005_q03",
+          "type": "multiple_choice",
+          "prompt": "Uncle Vernon jerked the letter _____ Harry's hand.",
+          "explanation": "Uncle Vernon took the letter away from Harry, so it moved 'out of' his hand.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. out of",
+            "B. into",
+            "C. towards"
+          ],
+          "answerIndex": 0
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch03_p006",
+      "pageNumber": 6,
+      "sourceText": "roared Uncle Vernon, and he took both Harry and Dudley by the scruffs of their necks and threw them into the hall, slamming the kitchen door behind them. Harry and Dudley promptly had a furious but silent fight over who would listen at the keyhole; Dudley won, so Harry, his glasses dangling from one ear, lay flat on his stomach to listen at the crack between door and floor. \n\n\"Vernon,\" Aunt Petunia was saying in a quivering voice, \"look at the address -- how could they possibly know where he sleeps? You don't think they're watching the house?\" \n\n\"Watching -- spying -- might be following us,\" muttered Uncle Vernon wildly. \n\n\"But what should we do, Vernon? Should we write back? Tell them we don't want --\" \n\nHarry could see Uncle Vernon's shiny black shoes pacing up and down the kitchen. \n\n\"No,\" he said finally. \"No, we'll ignore it. If they don't get an answer... Yes, that's best... we won't do anything.... \n\n\"But --\" \n\n\"I'm not having one in the house, Petunia! Didn't we swear when we took him in we'd stamp out that dangerous nonsense?\" \n\nThat evening when he got back from work, Uncle Vernon did something he'd never done before; he visited Harry in his cupboard. \n\n\"Where's my letter?\" said Harry, the moment Uncle Vernon had squeezed through the door. \"Who's writing to me?\" \n\n\"No one. it was addressed to you by mistake,\" said Uncle Vernon shortly. \n\n\"I have burned it.\"",
+      "approxWordCount": 242,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 1223,
+        "sourceWordEnd": 1464,
+        "sourceCharStart": 52295,
+        "sourceCharEnd": 53684
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch03_p006_q01",
+          "type": "multiple_choice",
+          "prompt": "Where did Uncle Vernon throw Harry and Dudley?",
+          "explanation": "The story says Uncle Vernon threw them into the hall. The word 'into' shows movement inside!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. Out of the house",
+            "B. Into the hall",
+            "C. Towards the stairs"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch03_p006_q02",
+          "type": "true_false",
+          "prompt": "Uncle Vernon thinks someone might be following them.",
+          "explanation": "Uncle Vernon says they 'might be following us.' The word 'might' shows it is a possibility!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Obligation & Possibility",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch03_p006_q03",
+          "type": "multiple_choice",
+          "prompt": "What will Uncle Vernon do about the letter?",
+          "explanation": "Uncle Vernon decides, 'No, we'll ignore it.' He uses 'will' to talk about his decision.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Future Forms",
+          "options": [
+            "A. He will write back.",
+            "B. He will ignore it.",
+            "C. He will give it to Harry."
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch03_p006_q04",
+          "type": "true_false",
+          "prompt": "Uncle Vernon says he has burned Harry's letter.",
+          "explanation": "At the end of the page, Uncle Vernon tells Harry, 'I have burned it.'",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Perfect",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch03_p007",
+      "pageNumber": 7,
+      "sourceText": "\"It was not a mistake,\" said Harry angrily, \"it had my cupboard on it.\" \n\n\"SILENCE!\" yelled Uncle Vernon, and a couple of spiders fell from the ceiling. He took a few deep breaths and then forced his face into a smile, which looked quite painful. \n\n\"Er -- yes, Harry -- about this cupboard. Your aunt and I have been thinking... you're really getting a bit big for it... we think it might be nice if you moved into Dudley's second bedroom. \n\n\"Why?\" said Harry. \n\n\"Don't ask questions!\" snapped his uncle. \"Take this stuff upstairs, now.\" \n\nThe Dursleys' house had four bedrooms: one for Uncle Vernon and Aunt Petunia, one for visitors (usually Uncle Vernon's sister, Marge), one where Dudley slept, and one where Dudley kept all the toys and things that wouldn't fit into his first bedroom. It only took Harry one trip upstairs to move everything he owned from the cupboard to this room. He sat down on the bed and stared around him. Nearly everything in here was broken.",
+      "approxWordCount": 171,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 1465,
+        "sourceWordEnd": 1635,
+        "sourceCharStart": 53687,
+        "sourceCharEnd": 54658
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch03_p007_q01",
+          "type": "multiple_choice",
+          "prompt": "Uncle Vernon wants to talk to Harry _____ the cupboard.",
+          "explanation": "We use 'about' to show the topic they are talking about.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Like & About",
+          "options": [
+            "A. like",
+            "B. about",
+            "C. from"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch03_p007_q02",
+          "type": "true_false",
+          "prompt": "The Dursleys have a bedroom where Dudley keeps his toys.",
+          "explanation": "The story says there is one bedroom 'where Dudley kept all the toys'.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Defining Relative Clauses",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch03_p007_q03",
+          "type": "multiple_choice",
+          "prompt": "Uncle Vernon says it 'might be nice' if Harry moves. What does 'might' show?",
+          "explanation": "The word 'might' is used to show possibility, meaning something could happen.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Obligation & Possibility",
+          "options": [
+            "A. A possibility",
+            "B. A habit",
+            "C. A past action"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch03_p007_q04",
+          "type": "multiple_choice",
+          "prompt": "Where did Harry move his things?",
+          "explanation": "Uncle Vernon told Harry to move into Dudley's second bedroom upstairs.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. Out of the house",
+            "B. Into Dudley's second bedroom",
+            "C. Towards the ceiling"
+          ],
+          "answerIndex": 1
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch03_p008",
+      "pageNumber": 8,
+      "sourceText": "The month-old video camera was lying on top of a small, working tank Dudley had once driven over the next door neighbor's dog; in the corner was Dudley's first-ever television set, which he'd put his foot through when his favorite program had been canceled; there was a large birdcage, which had once held a parrot that Dudley had swapped at school for a real air rifle, which was up on a shelf with the end all bent because Dudley had sat on it. Other shelves were full of books. They were the only things in the room that looked as though they'd never been touched. \n\nFrom downstairs came the sound of Dudley bawling at his mother, I don't want him in there... I need that room... make him get out....\" \n\nHarry sighed and stretched out on the bed. Yesterday he'd have given anything to be up here. Today he'd rather be back in his cupboard with that letter than up here without it. \n\nNext morning at breakfast, everyone was rather quiet. Dudley was in shock. He'd screamed, whacked his father with his Smelting stick, been sick on purpose, kicked his mother, and thrown his tortoise through the greenhouse roof, and he still didn't have his room back. Harry was thinking about this time yesterday and bitterly wishing he'd opened the letter in the hall. Uncle Vernon and Aunt Petunia kept looking at each other darkly.",
+      "approxWordCount": 235,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 1636,
+        "sourceWordEnd": 1870,
+        "sourceCharStart": 54659,
+        "sourceCharEnd": 55979
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch03_p008_q01",
+          "type": "multiple_choice",
+          "prompt": "The text says, \"there was a large birdcage, which had once held a parrot\". What does the word \"which\" give us more information about?",
+          "explanation": "The word \"which\" is used to give extra information about the thing right before it, the birdcage.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Defining Relative Clauses",
+          "options": [
+            "A. The parrot",
+            "B. The birdcage",
+            "C. The shelf"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch03_p008_q02",
+          "type": "multiple_choice",
+          "prompt": "Dudley yells, \"make him get out!\" This means Dudley wants Harry to move ________ the room.",
+          "explanation": "\"Out of\" shows movement leaving a place. Dudley wants Harry to leave the room!",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. into",
+            "B. out of",
+            "C. towards"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch03_p008_q03",
+          "type": "true_false",
+          "prompt": "Dudley has read all the books on his shelves.",
+          "explanation": "The story says the books looked like they had never been touched!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Perfect",
+          "answer": false
+        },
+        {
+          "id": "hp_ep1_ch03_p008_q04",
+          "type": "multiple_choice",
+          "prompt": "What was Harry doing during breakfast the next morning?",
+          "explanation": "The text says, \"Harry was thinking about this time yesterday\".",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "options": [
+            "A. He was yelling at Dudley.",
+            "B. He was thinking about yesterday.",
+            "C. He was reading a book."
+          ],
+          "answerIndex": 1
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch03_p009",
+      "pageNumber": 9,
+      "sourceText": "When the mail arrived, Uncle Vernon, who seemed to be trying to be nice to Harry, made Dudley go and get it. They heard him banging things with his Smelting stick all the way down the hall. Then he shouted, \"There's another one! 'Mr. H. Potter, The Smallest Bedroom, 4 Privet Drive --'� \n\nWith a strangled cry, Uncle Vernon leapt from his seat and ran down the hall, Harry right behind him. Uncle Vernon had to wrestle Dudley to the ground to get the letter from him, which was made difficult by the fact that Harry had grabbed Uncle Vernon around the neck from behind. After a minute of confused fighting, in which everyone got hit a lot by the Smelting stick, Uncle Vernon straightened up, gasping for breath, with Harry's letter clutched in his hand. \n\n\"Go to your cupboard -- I mean, your bedroom,\" he wheezed at Harry. \n\n\"Dudley -- go -- just go.\" \n\nHarry walked round and round his new room. Someone knew he had moved out of his cupboard and they seemed to know he hadn't received his first letter. Surely that meant they'd try again? And this time he'd make sure they didn't fail. He had a plan. \n\nThe repaired alarm clock rang at six o'clock the next morning. Harry turned it off quickly and dressed silently. He mustn't wake the Dursleys. He stole downstairs without turning on any of the lights.",
+      "approxWordCount": 236,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 1871,
+        "sourceWordEnd": 2106,
+        "sourceCharStart": 55982,
+        "sourceCharEnd": 57287
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch03_p009_q01",
+          "type": "multiple_choice",
+          "prompt": "Harry realized that someone knew he had moved ______ his cupboard.",
+          "explanation": "The story says someone knew he moved 'out of' his cupboard to his new bedroom.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "out of",
+            "into",
+            "towards"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch03_p009_q02",
+          "type": "true_false",
+          "prompt": "Read this part: 'Uncle Vernon, who seemed to be trying to be nice...' The word 'who' gives us more information about Uncle Vernon.",
+          "explanation": "We use the word 'who' to give extra information about a person!",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Defining Relative Clauses",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch03_p009_q03",
+          "type": "multiple_choice",
+          "prompt": "What did Uncle Vernon have to do to get the letter from Dudley?",
+          "explanation": "The story says Uncle Vernon 'had to wrestle Dudley to the ground to get the letter'.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Obligation & Possibility",
+          "options": [
+            "He had to ask Dudley nicely.",
+            "He had to wrestle Dudley to the ground.",
+            "He had to wake up the Dursleys."
+          ],
+          "answerIndex": 1
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch03_p010",
+      "pageNumber": 10,
+      "sourceText": "He was going to wait for the postman on the corner of Privet Drive and get the letters for number four first. His heart hammered as he crept across the dark hall toward the front door -- Harry leapt into the air; he'd trodden on something big and squashy on the doormat -- something alive! Lights clicked on upstairs and to his horror Harry realized that the big, squashy something had been his uncle's face. Uncle Vernon had been lying at the foot of the front door in a sleeping bag, clearly making sure that Harry didn't do exactly what he'd been trying to do. He shouted at Harry for about half an hour and then told him to go and make a cup of tea. Harry shuffled miserably off into the kitchen and by the time he got back, the mail had arrived, right into Uncle Vernon's lap. \n\nHarry could see three letters addressed in green ink. \n\nI want --\" he began, but Uncle Vernon was tearing the letters into pieces before his eyes. Uncle Vernon didnt go to work that day. He stayed at home and nailed up the mail slot. \n\n\"See,\" he explained to Aunt Petunia through a mouthful of nails, \"if they can't deliver them they'll just give up.\" \n\n\"I'm not sure that'll work, Vernon.\"",
+      "approxWordCount": 219,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 2107,
+        "sourceWordEnd": 2325,
+        "sourceCharStart": 57290,
+        "sourceCharEnd": 58464
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch03_p010_q01",
+          "type": "multiple_choice",
+          "prompt": "Where did Harry go to make a cup of tea?",
+          "explanation": "The story says Harry shuffled off into the kitchen to make tea.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "Into the kitchen",
+            "Out of the house",
+            "Towards the front door"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch03_p010_q02",
+          "type": "true_false",
+          "prompt": "Uncle Vernon was tearing the letters into pieces.",
+          "explanation": "Yes, Uncle Vernon was tearing the letters so Harry couldn't read them.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Past Continuous",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch03_p010_q03",
+          "type": "multiple_choice",
+          "prompt": "What does Uncle Vernon think will happen if he nails the mail slot closed?",
+          "explanation": "Uncle Vernon says, \"they'll just give up\" if they can't deliver the letters.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Future Forms",
+          "options": [
+            "The postman will break the door.",
+            "The letter writers will give up.",
+            "Harry will get the letters."
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch03_p010_q04",
+          "type": "true_false",
+          "prompt": "Harry crept across the hall toward the front door.",
+          "explanation": "The text says Harry crept toward the front door to wait for the postman.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Prepositions of Direction",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch03_p011",
+      "pageNumber": 11,
+      "sourceText": "\"Oh, these people's minds work in strange ways, Petunia, they're not like you and me,\" said Uncle Vernon, trying to knock in a nail with the piece of fruitcake Aunt Petunia had just brought him. \n\nOn Friday, no less than twelve letters arrived for Harry. As they couldn't go through the mail slot they had been pushed under the door, slotted through the sides, and a few even forced through the small window in the downstairs bathroom. \n\nUncle Vernon stayed at home again. After burning all the letters, he got out a hammer and nails and boarded up the cracks around the front and back doors so no one could go out. He hummed \"Tiptoe Through the Tulips\" \n\nas he worked, and jumped at small noises. \n\nOn Saturday, things began to get out of hand. Twenty-four letters to Harry found their way into the house, rolled up and hidden inside each of the two dozen eggs that their very confused milkman had handed Aunt Petunia through the living room window. While Uncle Vernon made furious telephone calls to the post office and the dairy trying to find someone to complain to, Aunt Petunia shredded the letters in her food processor. \n\n\"Who on earth wants to talk to you this badly?\" Dudley asked Harry in amazement. \n\nOn Sunday morning, Uncle Vernon sat down at the breakfast table looking tired and rather ill, but happy.",
+      "approxWordCount": 233,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 2326,
+        "sourceWordEnd": 2558,
+        "sourceCharStart": 58467,
+        "sourceCharEnd": 59784
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch03_p011_q01",
+          "type": "multiple_choice",
+          "prompt": "Uncle Vernon says the people sending the letters are not _____ him and Aunt Petunia.",
+          "explanation": "We use 'like' to talk about how people or things are similar. Uncle Vernon thinks the letter writers are very different from them!",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Like & About",
+          "options": [
+            "A. about",
+            "B. like",
+            "C. into"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch03_p011_q02",
+          "type": "multiple_choice",
+          "prompt": "Where did the twenty-four letters go on Saturday?",
+          "explanation": "The story says the letters found their way 'into' the house. They were hidden inside the eggs!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. Out of the house",
+            "B. Into the house",
+            "C. Towards the post office"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch03_p011_q03",
+          "type": "true_false",
+          "prompt": "Dudley wants to know who is trying to talk to Harry.",
+          "explanation": "Dudley asks Harry, 'Who on earth wants to talk to you this badly?'",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch03_p011_q04",
+          "type": "multiple_choice",
+          "prompt": "The letters were hidden inside the eggs _____ the milkman gave to Aunt Petunia.",
+          "explanation": "We use 'that' or 'which' to give more information about things, like the eggs!",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Defining Relative Clauses",
+          "options": [
+            "A. who",
+            "B. where",
+            "C. that"
+          ],
+          "answerIndex": 2
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch03_p012",
+      "pageNumber": 12,
+      "sourceText": "\"No post on Sundays,\" he reminded them cheerfully as he spread marmalade on his newspapers, \"no damn letters today --\" \n\nSomething came whizzing down the kitchen chimney as he spoke and caught him sharply on the back of the head. Next moment, thirty or forty letters came pelting out of the fireplace like bullets. The Dursleys ducked, but Harry leapt into the air trying to catch one. \n\n\"Out! OUT!\" \n\nUncle Vernon seized Harry around the waist and threw him into the hall. \n\nWhen Aunt Petunia and Dudley had run out with their arms over their faces, Uncle Vernon slammed the door shut. They could hear the letters still streaming into the room, bouncing off the walls and floor. \n\n\"That does it,\" said Uncle Vernon, trying to speak calmly but pulling great tufts out of his mustache at the same time. I want you all back here in five minutes ready to leave. We're going away. Just pack some clothes. No arguments!\" \n\nHe looked so dangerous with half his mustache missing that no one dared argue. Ten minutes later they had wrenched their way through the boarded-up doors and were in the car, speeding toward the highway. \n\nDudley was sniffling in the back seat; his father had hit him round the head for holding them up while he tried to pack his television, VCR, and computer in his sports bag. \n\nThey drove. And they drove. Even Aunt Petunia didn't dare ask where they were going.",
+      "approxWordCount": 244,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 2559,
+        "sourceWordEnd": 2802,
+        "sourceCharStart": 59787,
+        "sourceCharEnd": 61170
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch03_p012_q01",
+          "type": "multiple_choice",
+          "prompt": "Where did Uncle Vernon throw Harry?",
+          "explanation": "The story says Uncle Vernon grabbed Harry and threw him into the hall to get him away from the letters.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "Into the hall",
+            "Out of the window",
+            "Towards the fireplace"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch03_p012_q02",
+          "type": "multiple_choice",
+          "prompt": "The letters flew out of the fireplace very fast. What were they like?",
+          "explanation": "The text says the letters came out \"like bullets\" because they were moving so fast!",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Like & About",
+          "options": [
+            "Like birds",
+            "Like bullets",
+            "Like snow"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch03_p012_q03",
+          "type": "true_false",
+          "prompt": "Dudley was laughing in the back seat of the car.",
+          "explanation": "Dudley was sniffling (crying a little) because his dad hit him for trying to pack his TV.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "answer": false
+        },
+        {
+          "id": "hp_ep1_ch03_p012_q04",
+          "type": "true_false",
+          "prompt": "Uncle Vernon says, \"We're going away.\" This means they have a plan to leave the house.",
+          "explanation": "Yes! \"We're going away\" uses the present continuous tense to talk about a planned future action.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Present Continuous (Future Meaning)",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch03_p013",
+      "pageNumber": 13,
+      "sourceText": "Every now and then Uncle Vernon would take a sharp turn and drive in the opposite direction for a while. \"Shake'em off... shake 'em off,\" he would mutter whenever he did this. \n\nThey didn't stop to eat or drink all day. By nightfall Dudley was howling. He'd never had such a bad day in his life. He was hungry, he'd missed five television programs he'd wanted to see, and he'd never gone so long without blowing up an alien on his computer. \n\nUncle Vernon stopped at last outside a gloomy-looking hotel on the outskirts of a big city. Dudley and Harry shared a room with twin beds and damp, musty sheets. Dudley snored but Harry stayed awake, sitting on the windowsill, staring down at the lights of passing cars and wondering.... \n\nThey ate stale cornflakes and cold tinned tomatoes on toast for breakfast the next day. They had just finished when the owner of the hotel came over to their table. \n\n\"'Scuse me, but is one of you Mr. H. Potter? Only I got about an 'undred of these at the front desk.\" \n\nShe held up a letter so they could read the green ink address: Mr. H. Potter Room 17 Railview Hotel Cokeworth Harry made a grab for the letter but Uncle Vernon knocked his hand out of the way. The woman stared. \n\n\"I'll take them,\" said Uncle Vernon, standing up quickly and following her from the dining room. \n\nWouldn't it be better just to go home, dear?\"",
+      "approxWordCount": 249,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 2803,
+        "sourceWordEnd": 3051,
+        "sourceCharStart": 61171,
+        "sourceCharEnd": 62532
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch03_p013_q01",
+          "type": "multiple_choice",
+          "prompt": "When Uncle Vernon says, \"I'll take them,\" what is he doing?",
+          "explanation": "\"I'll\" means \"I will.\" We use \"will\" when we make a quick decision to do something right now!",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Future Forms",
+          "options": [
+            "A. Making a quick decision",
+            "B. Talking about the past",
+            "C. Asking a question"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch03_p013_q02",
+          "type": "true_false",
+          "prompt": "Dudley was howling because he was having a very good day.",
+          "explanation": "The story says Dudley was howling because he had a very bad day. He was hungry and missed his TV shows!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "answer": false
+        },
+        {
+          "id": "hp_ep1_ch03_p013_q03",
+          "type": "multiple_choice",
+          "prompt": "Uncle Vernon knocked Harry's hand \"out of\" the way. What does \"out of\" show here?",
+          "explanation": "\"Out of\" is a preposition of direction. It shows how Harry's hand moved away from the letter!",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. A person",
+            "B. A movement",
+            "C. A color"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch03_p013_q04",
+          "type": "true_false",
+          "prompt": "The word \"just\" in the sentence \"They had just finished\" shows that they finished eating a long time ago.",
+          "explanation": "The word \"just\" is used to show that an action happened a very short time ago, not a long time ago!",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Present Perfect",
+          "answer": false
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch03_p014",
+      "pageNumber": 14,
+      "sourceText": "Aunt Petunia suggested timidly, hours later, but Uncle Vernon didn't seem to hear her. Exactly what he was looking for, none of them knew. He drove them into the middle of a forest, got out, looked around, shook his head, got back in the car, and off they went again. The same thing happened in the middle of a plowed field, halfway across a suspension bridge, and at the top of a multilevel parking garage. \n\n\"Daddy's gone mad, hasn't he?\" Dudley asked Aunt Petunia dully late that afternoon. Uncle Vernon had parked at the coast, locked them all inside the car, and disappeared. \n\nIt started to rain. Great drops beat on the roof of the car. Dud ley sniveled. \n\n\"It's Monday,\" he told his mother. \"The Great Humberto's on tonight. I want to stay somewhere with a television. � \n\nMonday. This reminded Harry of something. If it was Monday -- and you could usually count on Dudley to know the days the week, because of television -- then tomorrow, Tuesday, was Harry's eleventh birthday. Of course, his birthdays were never exactly fun -- last year, the Dursleys had given him a coat hanger and a pair of Uncle Vernon's old socks. \n\nStill, you weren't eleven every day. \n\nUncle Vernon was back and he was smiling. He was also carrying a long, thin package and didn't answer Aunt Petunia when she asked what he'd bought. \n\n\"Found the perfect place!\" he said. \"Come on! Everyone out!\"",
+      "approxWordCount": 244,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 3052,
+        "sourceWordEnd": 3295,
+        "sourceCharStart": 62533,
+        "sourceCharEnd": 63915
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch03_p014_q01",
+          "type": "multiple_choice",
+          "prompt": "Dudley asks, \"Daddy's gone mad, hasn't he?\" Why does Dudley add \"hasn't he?\" at the end?",
+          "explanation": "We use tag questions like \"hasn't he?\" to check information or ask someone to agree with us.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Tag Questions",
+          "options": [
+            "A. To check if his mom agrees",
+            "B. To ask for a television",
+            "C. To say he is tired"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch03_p014_q02",
+          "type": "true_false",
+          "prompt": "Uncle Vernon drove the car into the middle of a forest.",
+          "explanation": "The story says he drove them into the middle of a forest, got out, and looked around.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Prepositions of Direction",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch03_p014_q03",
+          "type": "multiple_choice",
+          "prompt": "What does Dudley want to do on Monday night?",
+          "explanation": "Dudley says he wants to stay somewhere with a television to watch his favorite show.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "options": [
+            "A. Sleep in the car",
+            "B. Watch television",
+            "C. Open a package"
+          ],
+          "answerIndex": 1
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch03_p015",
+      "pageNumber": 15,
+      "sourceText": "It was very cold outside the car. Uncle Vernon was pointing at what looked like a large rock way out at sea. Perched on top of the rock was the most miserable little shack you could imagine. One thing was certain, there was no television in there. \n\n\"Storm forecast for tonight!\" said Uncle Vernon gleefully, clapping his hands together. \"And this gentleman's kindly agreed to lend us his boat!\" \n\nA toothless old man came ambling up to them, pointing, with a rather wicked grin, at an old rowboat bobbing in the iron-gray water below them. \n\n\"I've already got us some rations,\" said Uncle Vernon, \"so all aboard!\" \n\nIt was freezing in the boat. Icy sea spray and rain crept down their necks and a chilly wind whipped their faces. After what seemed like hours they reached the rock, where Uncle Vernon, slipping and sliding, led the way to the broken-down house. \n\nThe inside was horrible; it smelled strongly of seaweed, the wind whistled through the gaps in the wooden walls, and the fireplace was damp and empty. There were only two rooms. \n\nUncle Vernon's rations turned out to be a bag of chips each and four bananas. He tried to start a fire but the empty chip bags just smoked and shriveled up. \n\n\"Could do with some of those letters now, eh?\" he said cheerfully. \n\nHe was in a very good mood. Obviously he thought nobody stood a chance of reaching them here in a storm to deliver mail.",
+      "approxWordCount": 249,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 3296,
+        "sourceWordEnd": 3544,
+        "sourceCharStart": 63918,
+        "sourceCharEnd": 65311
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch03_p015_q01",
+          "type": "multiple_choice",
+          "prompt": "What was Uncle Vernon doing at the start of the page?",
+          "explanation": "The story says Uncle Vernon was pointing at what looked like a large rock out at sea.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "options": [
+            "A. He was pointing at a large rock.",
+            "B. He was sleeping in the car.",
+            "C. He was swimming in the sea."
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch03_p015_q02",
+          "type": "true_false",
+          "prompt": "Uncle Vernon says, \"I've already got us some rations.\" This means he has already prepared food for the trip.",
+          "explanation": "\"I've already got\" shows he did it before now, and \"rations\" means food!",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Present Perfect",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch03_p015_q03",
+          "type": "multiple_choice",
+          "prompt": "What did the place out at sea look like?",
+          "explanation": "The text says Uncle Vernon pointed at what \"looked like a large rock.\"",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Like & About",
+          "options": [
+            "A. It looked like a castle.",
+            "B. It looked like a large rock.",
+            "C. It looked like a big ship."
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch03_p015_q04",
+          "type": "true_false",
+          "prompt": "The toothless old man walked away from them.",
+          "explanation": "The text says the old man came \"up to\" them, which means he moved towards them.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Prepositions of Direction",
+          "answer": false
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch03_p016",
+      "pageNumber": 16,
+      "sourceText": "Harry privately agreed, though the thought didn't cheer him up at all. \n\nAs night fell, the promised storm blew up around them. Spray from the high waves splattered the walls of the hut and a fierce wind rattled the filthy windows. Aunt Petunia found a few moldy blankets in the second room and made up a bed for Dudley on the moth-eaten sofa. She and Uncle Vernon went off to the lumpy bed next door, and Harry was left to find the softest bit of floor he could and to curl up under the thinnest, most ragged blanket. \n\nThe storm raged more and more ferociously as the night went on. Harry couldn't sleep. He shivered and turned over, trying to get comfortable, his stomach rumbling with hunger. Dudley's snores were drowned by the low rolls of thunder that started near midnight. The lighted dial of Dudley's watch, which was dangling over the edge of the sofa on his fat wrist, told Harry he'd be eleven in ten minutes' time. He lay and watched his birthday tick nearer, wondering if the Dursleys would remember at all, wondering where the letter writer was now. \n\nFive minutes to go. Harry heard something creak outside. He hoped the roof wasn't going to fall in, although he might be warmer if it did. \n\nFour minutes to go. Maybe the house in Privet Drive would be so full of letters when they got back that he'd be able to steal one somehow. \n\nThree minutes to go.",
+      "approxWordCount": 250,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 3545,
+        "sourceWordEnd": 3794,
+        "sourceCharStart": 65312,
+        "sourceCharEnd": 66682
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch03_p016_q01",
+          "type": "multiple_choice",
+          "prompt": "What was dangling over the edge of the sofa?",
+          "explanation": "The story says Dudley's watch was dangling over the edge of the sofa.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "options": [
+            "A moldy blanket",
+            "Dudley's watch",
+            "A letter"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch03_p016_q02",
+          "type": "true_false",
+          "prompt": "Harry thought he might be warmer if the roof fell in.",
+          "explanation": "The text says he hoped the roof wasn't going to fall in, although he might be warmer if it did.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Obligation & Possibility",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch03_p016_q03",
+          "type": "multiple_choice",
+          "prompt": "Read this part: \"...Dudley's watch, which was dangling...\" Why do we use the word \"which\"?",
+          "explanation": "We use \"which\" to give more information about a thing, like a watch!",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Defining Relative Clauses",
+          "options": [
+            "To talk about a person",
+            "To talk about a place",
+            "To talk about a thing"
+          ],
+          "answerIndex": 2
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch03_p017",
+      "pageNumber": 17,
+      "sourceText": "Was that the sea, slapping hard on the rock like that? And (two minutes to go) what was that funny crunching noise? Was the rock crumbling into the sea? One minute to go and he'd be eleven. Thirty seconds... twenty ... ten... \n\nnine -- maybe he'd wake Dudley up, just to annoy him -- three... two... \n\none... \n\nBOOM. \n\nThe whole shack shivered and Harry sat bolt upright, staring at the door. Someone was outside, knocking to come in.",
+      "approxWordCount": 78,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 3795,
+        "sourceWordEnd": 3872,
+        "sourceCharStart": 66683,
+        "sourceCharEnd": 67117
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch03_p017_q01",
+          "type": "multiple_choice",
+          "prompt": "Where did Harry think the rock was falling?",
+          "explanation": "The story asks, \"Was the rock crumbling into the sea?\" The word \"into\" shows movement inside.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "Into the sea",
+            "Out of the sea",
+            "Towards the door"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch03_p017_q02",
+          "type": "true_false",
+          "prompt": "Someone was knocking on the door at the end of the page.",
+          "explanation": "The text says, \"Someone was outside, knocking to come in.\"",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch03_p017_q03",
+          "type": "multiple_choice",
+          "prompt": "Read this sentence: \"Was that the sea, slapping hard on the rock like that?\" What does \"like\" mean here?",
+          "explanation": "In this sentence, \"like\" is used to talk about how the sea is hitting the rock, not about enjoying something!",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Like & About",
+          "options": [
+            "Enjoying something",
+            "In that way",
+            "About an animal"
+          ],
+          "answerIndex": 1
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    }
+  ]
+}

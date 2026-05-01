@@ -1,0 +1,922 @@
+{
+  "storyId": "harrypotter_episode1",
+  "chapterId": "chapter_13",
+  "chapterNumber": 13,
+  "title": "Nicolas Flamel",
+  "dateLabel": "5 January 1992",
+  "sourceTextIncluded": true,
+  "pages": [
+    {
+      "pageId": "hp_ep1_ch13_p001",
+      "pageNumber": 1,
+      "sourceText": "CHAPTER THIRTEEN \n\nNICOLAS FLAMEL \n\nDumbledore had convinced Harry not to go looking for the Mirror of Erised again, and for the rest of the Christmas holidays the invisibility cloak stayed folded at the bottom of his trunk. Harry wished he could forget what he'd seen in the mirror as easily, but he couldn't. He started having nightmares. Over and over again he dreamed about his parents disappearing in a flash of green light, while a high voice cackled with laughter. \n\n\"You see, Dumbledore was right, that mirror could drive you mad,\" said Ron, when Harry told him about these drearns. \n\nHermione, who came back the day before term started, took a different view of things. She was torn between horror at the idea of Harry being out of bed, roaming the school three nights in a row (\"If Filch had caught you!\"), and disappointment that he hadn't at least found out who Nicolas Flamel was. \n\nThey had almost given up hope of ever finding Flamel in a li- brary book, even though Harry was still sure he'd read the name somewhere. \n\nOnce term had started, they were back to skimming through books for ten minutes during their breaks. Harry had even less time than the other two, because Quidditch practice had started again. \n\nWood was working the team harder than ever. Even the endless rain that had replaced the snow couldn't dampen his spirits. The Weasleys complained that Wood was becoming a fanatic, but Harry was on Wood's side.",
+      "approxWordCount": 249,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 1,
+        "sourceWordEnd": 249,
+        "sourceCharStart": 307153,
+        "sourceCharEnd": 308591
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch13_p001_q01",
+          "type": "multiple_choice",
+          "prompt": "In the story, it says: \"Hermione, who came back the day before term started...\" Who does the word \"who\" give us more information about?",
+          "explanation": "The word \"who\" is used to give more information about a person. Here, it tells us more about Hermione!",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Defining Relative Clauses",
+          "options": [
+            "A. Harry",
+            "B. Hermione",
+            "C. Ron"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch13_p001_q02",
+          "type": "multiple_choice",
+          "prompt": "Harry started having bad dreams. What did he have nightmares _____?",
+          "explanation": "We use \"about\" to show the topic of a dream or a story. Harry dreamed about his parents.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Like & About",
+          "options": [
+            "A. about",
+            "B. like",
+            "C. into"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch13_p001_q03",
+          "type": "true_false",
+          "prompt": "Wood was working the Quidditch team harder than ever.",
+          "explanation": "The story says Wood was working the team very hard, even in the rain! \"Was working\" shows an action that was happening in the past.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch13_p002",
+      "pageNumber": 2,
+      "sourceText": "If they won their next match, against Hufflepuff, they would overtake Slytherin in the house championship for the first time in seven years. Quite apart from wanting to win, Harry found that he had fewer nightmares when he was tired out after training. \n\nThen, during one particularly wet and muddy practice session, Wood gave the team a bit of bad news. He'd just gotten very angry with the Weasleys, who kept dive-bombing each other and pretending to fall off their brooms. \n\n\"Will you stop messing around!\" he yelled. \"That's exactly the sort of thing that'll lose us the match! Snape's refereeing this time, and he'll be looking for any excuse to knock points off Gryffindor!\" \n\nGeorge Weasley really did fall off his broom at these words. \n\n\"Snape's refereeing?\" he spluttered through a mouthful of mud. \"When's he ever refereed a Quidditch match? He's not going to be fair if we might overtake Slytherin.\" \n\nThe rest of the team landed next to George to complain, too. \n\n\"It's not my fault,\" said Wood. \"We've just got to make sure we play a clean game, so Snape hasn't got an excuse to pick on us.\" \n\nWhich was all very well, thought Harry, but he had another reason for not wanting Snape near him while he was playing Quidditch....",
+      "approxWordCount": 215,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 250,
+        "sourceWordEnd": 464,
+        "sourceCharStart": 308592,
+        "sourceCharEnd": 309831
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch13_p002_q01",
+          "type": "true_false",
+          "prompt": "George thinks Snape is going to be a fair referee.",
+          "explanation": "George says, 'He's not going to be fair,' because he thinks Snape wants Slytherin to win.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Future Forms",
+          "answer": false
+        },
+        {
+          "id": "hp_ep1_ch13_p002_q02",
+          "type": "multiple_choice",
+          "prompt": "Wood was angry with the Weasleys _____ kept pretending to fall off their brooms.",
+          "explanation": "We use 'who' to give extra information about people, like the Weasleys.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Defining Relative Clauses",
+          "options": [
+            "who",
+            "which",
+            "where"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch13_p002_q03",
+          "type": "multiple_choice",
+          "prompt": "Harry had another reason for not wanting Snape near him while he _____ Quidditch.",
+          "explanation": "The story is in the past, so we use 'was playing' to show an action that was happening in the past.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Past Continuous",
+          "options": [
+            "is playing",
+            "was playing",
+            "plays"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch13_p002_q04",
+          "type": "true_false",
+          "prompt": "Wood says the team has to play a clean game so Snape can't take points away.",
+          "explanation": "Wood tells the team they have to play a clean game so Snape doesn't have an excuse to pick on them.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Obligation & Possibility",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch13_p003",
+      "pageNumber": 3,
+      "sourceText": "The rest of the team hung back to talk to one another as usual at the end of practice, but Harry headed straight back to the Gryffindor common room, where he found Ron and Hermione playing chess. Chess was the only thing Hermione ever lost at, something Harry and Ron thought was very good for her. \n\n\"Don't talk to me for a moment,\" said Ron when Harry sat down next to him, \"I need to concen --\" He caught sight of Harry's face. \"What's the matter with you? You look terrible.\" \n\nSpeaking quietly so that no one else would hear, Harry told the other two about Snape's sudden, sinister desire to be a Quidditch referee. \n\n\"Don't play,\" said Hermione at once. \n\n\"Say you're ill,\" said Ron. \n\n\"Pretend to break your leg,\" Hermione suggested. \n\n\"Really break your leg,\" said Ron. \n\n\"I can't,\" said Harry. \"There isn't a reserve Seeker. If I back out, Gryffindor can't play at all.\" \n\nAt that moment Neville toppled into the common room. How he had managed to climb through the portrait hole was anyone's guess, because his legs had been stuck together with what they recognized at once as the Leg-Locker Curse. He must have had to bunny hop all the way up to Gryffindor tower. \n\nEveryone fell over laughing except Hermione, who leapt up and performed the countercurse. Neville's legs sprang apart and he got to his feet, trembling. \"What happened?\" Hermione asked him, leading him over to sit with Harry and Ron.",
+      "approxWordCount": 248,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 465,
+        "sourceWordEnd": 712,
+        "sourceCharStart": 309834,
+        "sourceCharEnd": 311244
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch13_p003_q01",
+          "type": "multiple_choice",
+          "prompt": "What were Ron and Hermione doing when Harry found them?",
+          "explanation": "The story says Harry found Ron and Hermione playing chess in the common room.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "options": [
+            "A. They were playing chess.",
+            "B. They were reading books.",
+            "C. They were sleeping."
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch13_p003_q02",
+          "type": "multiple_choice",
+          "prompt": "Which word shows how Neville moved? 'Neville toppled ____ the common room.'",
+          "explanation": "The word 'into' shows that Neville moved inside the common room.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. out of",
+            "B. into",
+            "C. from"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch13_p003_q03",
+          "type": "true_false",
+          "prompt": "Hermione was the person who laughed at Neville.",
+          "explanation": "Everyone laughed except Hermione. She was the person who helped him!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Defining Relative Clauses",
+          "answer": false
+        },
+        {
+          "id": "hp_ep1_ch13_p003_q04",
+          "type": "true_false",
+          "prompt": "Harry has to play Quidditch because there is no extra Seeker.",
+          "explanation": "Harry says, 'There isn't a reserve Seeker,' which means he is the only one who can play.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch13_p004",
+      "pageNumber": 4,
+      "sourceText": "\"Malfoy,\" said Neville shakily. \"I met him outside the library. He said he'd been looking for someone to practice that on.\" \n\n\"Go to Professor McGonagall!\" Hermione urged Neville. \"Report him!\" \n\nNeville shook his head. \n\n\"I don't want more trouble,\" he mumbled. \n\n\"You've got to stand up to him, Neville!\" said Ron. \"He's used to walking all over people, but that's no reason to lie down in front of him and make it easier.\" \n\n\"There's no need to tell me I'm not brave enough to be in Gryffindor, Malfoy's already done that,\" Neville choked out. \n\nHarry felt in the pocket of his robes and pulled out a Chocolate Frog, the very last one from the box Hermione had given him for Christmas. He gave it to Neville, who looked as though he might cry. \n\n\"You're worth twelve of Malfoy,\" Harry said. \"The Sorting Hat chose you for Gryffindor, didn't it? And where's Malfoy? In stinking Slytherin.\" \n\nNeville's lips twitched in a weak smile as he unwrapped the frog. \n\n\"Thanks, Harry... I think I'll go to bed.... D'you want the card, you collect them, don't you?\" \n\nAs Neville walked away, Harry looked at the Famous Wizard card. \n\n\"Dumbledore again,\" he said, \"He was the first one I ever-\" \n\nHe gasped. He stared at the back of the card. Then he looked up at Ron and Hermione. \n\n\"I've found him!\" he whispered. \"I've found Flamel!",
+      "approxWordCount": 232,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 713,
+        "sourceWordEnd": 944,
+        "sourceCharStart": 311247,
+        "sourceCharEnd": 312573
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch13_p004_q01",
+          "type": "multiple_choice",
+          "prompt": "Harry says, \"The Sorting Hat chose you for Gryffindor, didn't it?\" Why does he add \"didn't it?\" at the end?",
+          "explanation": "Harry uses a tag question (\"didn't it?\") to check a fact and help Neville agree that he belongs in Gryffindor.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Tag Questions",
+          "options": [
+            "To check information and ask for agreement.",
+            "To tell Neville to go to sleep.",
+            "To ask Neville for a Chocolate Frog."
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch13_p004_q02",
+          "type": "true_false",
+          "prompt": "Harry says, \"I've found Flamel!\" because he just saw Flamel's name on the wizard card.",
+          "explanation": "Harry uses the present perfect (\"I've found\") to talk about an exciting action that just happened!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Perfect",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch13_p004_q03",
+          "type": "multiple_choice",
+          "prompt": "Ron tells Neville, \"You've got to stand up to him!\" This means Neville _____ stand up to Malfoy.",
+          "explanation": "\"Got to\" means the same as \"has to\". Ron is telling Neville that it is very important to stand up to Malfoy.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Obligation & Possibility",
+          "options": [
+            "might",
+            "has to",
+            "could"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch13_p004_q04",
+          "type": "multiple_choice",
+          "prompt": "Neville says, \"I think I'll go to bed.\" Which word shows he is making a quick decision about the future?",
+          "explanation": "We use \"will\" (or \"I'll\") to talk about instant decisions for the future.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Future Forms",
+          "options": [
+            "think",
+            "go",
+            "I'll (I will)"
+          ],
+          "answerIndex": 2
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch13_p005",
+      "pageNumber": 5,
+      "sourceText": "I told you I'd read the name somewhere before, I read it on the train coming here -- listen to this: 'Dumbledore is particularly famous for his defeat of the dark wizard Grindelwald in 1945, for the discovery of the twelve uses of dragon's blood, and his work on alchemy with his partner, Nicolas Flamel'!\" \n\nHermione jumped to her feet. She hadn't looked so excited since they'd gotten back the marks for their very first piece of homework. \n\n\"Stay there!\" she said, and she sprinted up the stairs to the girls' dormitories. Harry and Ron barely had time to exchange mystified looks before she was dashing back, an enormous old book in her arms. \n\n\"I never thought to look in here!\" she whispered excitedly. \"I got this out of the library weeks ago for a bit of light reading.\" \n\n\"Light?\" said Ron, but Hermione told him to be quiet until she'd looked something up, and started flicking frantically through the pages, muttering to herself. \n\nAt last she found what she was looking for. \n\n\"I knew it! I knew it!\" \n\n\"Are we allowed to speak yet?\" said Ron grumpily. Hermione ignored him. \n\n\"Nicolas Flamel,\" she whispered dramatically, \"is the only known maker of the Sorcerer's Stone!\" \n\nThis didn't have quite the effect she'd expected. \n\n\"The what?\" said Harry and Ron. \n\n\"Oh, honestly, don't you two read? Look -- read that, there.\"",
+      "approxWordCount": 230,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 945,
+        "sourceWordEnd": 1174,
+        "sourceCharStart": 312574,
+        "sourceCharEnd": 313909
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch13_p005_q01",
+          "type": "true_false",
+          "prompt": "Harry and Ron know what the Sorcerer's Stone is.",
+          "explanation": "They ask 'The what?' because they do not know what the stone is.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "answer": false
+        },
+        {
+          "id": "hp_ep1_ch13_p005_q02",
+          "type": "multiple_choice",
+          "prompt": "Hermione got the big book _____ the library.",
+          "explanation": "Hermione says she got the book 'out of' the library. This shows where it came from!",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. out of",
+            "B. into",
+            "C. towards"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch13_p005_q03",
+          "type": "true_false",
+          "prompt": "Hermione has already found the information about Nicolas Flamel.",
+          "explanation": "She says 'I knew it!' after she finally finds what she is looking for in the book.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Perfect",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch13_p005_q04",
+          "type": "multiple_choice",
+          "prompt": "What was Hermione doing while she looked through the pages?",
+          "explanation": "The story says she was 'muttering to herself' as she quickly turned the pages.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Past Continuous",
+          "options": [
+            "A. She was singing loudly.",
+            "B. She was muttering to herself.",
+            "C. She was talking to Ron."
+          ],
+          "answerIndex": 1
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch13_p006",
+      "pageNumber": 6,
+      "sourceText": "She pushed the book toward them, and Harry and Ron read: The ancient study of alchemy is concerned with making the Sorcerer's Stone, a legendary substance with astonishing powers. The stone will transform any metal into pure gold. It also produces the Elixir of Life, which will make the drinker immortal. \n\nThere have been many reports of the Sorcerer's Stone over the centuries, but the only Stone currently in existence belongs to Mr. Nicolas Flamel, the noted alchemist and opera lover. Mr. Flamel, who celebrated his six hundred and sixty-fifth birthday last year, enjoys a quiet life in Devon with his wife, Perenelle (six hundred and fifty-eight). \n\n\"See?\" said Hermione, when Harry and Ron had finished. \"The dog must be guarding Flamel's Sorcerer's Stone! I bet he asked Dumbledore to keep it safe for him, because they're friends and he knew someone was after it, that's why he wanted the Stone moved out of Gringotts!\" \n\n\"A stone that makes gold and stops you from ever dying!\" said Harry. \"No wonder Snape's after it! Anyone would want it.\" \n\n\"And no wonder we couldn't find Flamel in that Study of Recent Developments in Wizardry,\" said Ron. \"He's not exactly recent if he's six hundred and sixty-five, is he?\" \n\nThe next morning in Defense Against the Dark Arts, while copying down different ways of treating werewolf bites, Harry and Ron were still discussing what they'd do with a Sorcerer's Stone if they had one.",
+      "approxWordCount": 241,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 1175,
+        "sourceWordEnd": 1415,
+        "sourceCharStart": 313912,
+        "sourceCharEnd": 315342
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch13_p006_q01",
+          "type": "multiple_choice",
+          "prompt": "Read this part: 'Mr. Flamel, who celebrated his birthday...' What does the word 'who' tell us about?",
+          "explanation": "We use 'who' to give more information about a person, like Mr. Flamel!",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Defining Relative Clauses",
+          "options": [
+            "A. A place",
+            "B. A person",
+            "C. A thing"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch13_p006_q02",
+          "type": "true_false",
+          "prompt": "The Sorcerer's Stone will change any metal into pure gold.",
+          "explanation": "The book says the stone will transform (or change) any metal into pure gold.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Future Forms",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch13_p006_q03",
+          "type": "multiple_choice",
+          "prompt": "Hermione pushed the book _____ Harry and Ron so they could read it.",
+          "explanation": "The word 'toward' means moving in the direction of someone or something.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. toward",
+            "B. out of",
+            "C. from"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch13_p006_q04",
+          "type": "multiple_choice",
+          "prompt": "Ron says, 'He's not exactly recent..., is he?' Why does he add 'is he?' at the end?",
+          "explanation": "Tag questions like 'is he?' are used to check information or ask someone to agree with you.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Tag Questions",
+          "options": [
+            "A. To ask if Harry agrees",
+            "B. To make a polite offer",
+            "C. To talk about the future"
+          ],
+          "answerIndex": 0
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch13_p007",
+      "pageNumber": 7,
+      "sourceText": "It wasn't until Ron said he'd buy his own Quidditch team that Harry remembered about Snape and the coming match. \n\n\"I'm going to play,\" he told Ron and Hermione. \"If I don't, all the Slytherins will think I'm just too scared to face Snape. I'll show them... it'll really wipe the smiles off their faces if we win.\" \n\n\"Just as long as we're not wiping you off the field,\" said Hermione. \n\nAs the match drew nearer, however, Harry became more and more nervous, whatever he told Ron and Hermione. The rest of the team wasn't too calm, either. The idea of overtaking Slytherin in the house championship was wonderful, no one had done it for seven years, but would they be allowed to, with such a biased referee? Harry didn't know whether he was imagining it or not, but he seemed to keep running into Snape wherever he went. At times, he even wondered whether Snape was following him, trying to catch him on his own. Potions lessons were turning into a sort of weekly torture, Snape was so horrible to Harry. Could Snape possibly know they'd found out about the Sorcerer's Stone? Harry didn't see how he could -- yet he sometimes had the horrible feeling that Snape could read minds. \n\nHarry knew, when they wished him good luck outside the locker rooms the next afternoon, that Ron and Hermione were wondering whether they'd ever see him alive again. This wasn't what you'd call comforting.",
+      "approxWordCount": 246,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 1416,
+        "sourceWordEnd": 1661,
+        "sourceCharStart": 315343,
+        "sourceCharEnd": 316730
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch13_p007_q01",
+          "type": "multiple_choice",
+          "prompt": "What is Harry planning to do?",
+          "explanation": "Harry tells his friends, 'I'm going to play,' because he wants to be brave.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Future Forms",
+          "options": [
+            "He is going to play in the match.",
+            "He is going to buy a team.",
+            "He is going to hide from Snape."
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch13_p007_q02",
+          "type": "true_false",
+          "prompt": "Harry wondered if Snape was following him.",
+          "explanation": "Harry kept seeing Snape everywhere and thought Snape was trying to catch him.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Past Continuous",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch13_p007_q03",
+          "type": "multiple_choice",
+          "prompt": "What does Harry think the Slytherins will do if he doesn't play?",
+          "explanation": "Harry says that if he doesn't play, the Slytherins will think he is too scared to face Snape.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Future Forms",
+          "options": [
+            "They will cheer for him.",
+            "They will think he is scared.",
+            "They will stop playing."
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch13_p007_q04",
+          "type": "true_false",
+          "prompt": "Harry thinks Snape might know about the Sorcerer's Stone.",
+          "explanation": "Harry asks himself if Snape could possibly know that they found out about the Stone.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Obligation & Possibility",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch13_p008",
+      "pageNumber": 8,
+      "sourceText": "Harry hardly heard a word of Wood's pep talk as he pulled on his Quidditch robes and picked up his Nimbus Two Thousand. \n\nRon and Hermione, meanwhile, had found a place in the stands next to Neville, who couldn't understand why they looked so grim and worried, or why they had both brought their wands to the match. Little did Harry know that Ron and Hermione had been secretly practicing the Leg-Locker Curse. They'd gotten the idea from Malfoy using it on Neville, and were ready to use it on Snape if he showed any sign of wanting to hurt Harry. \n\n\"Now, don't forget, it's Locomotor Mortis,\" Hermione muttered as Ron slipped his wand up his sleeve. \n\n\"I know,\" Ron snapped. \"Don't nag.\" \n\nBack in the locker room, Wood had taken Harry aside. \n\n\"Don't want to pressure you, Potter, but if we ever need an early capture of the Snitch it's now. Finish the game before Snape can favor Hufflepuff too much.\" \n\n\"The whole school's out there!\" said Fred Weasley, peering out of the door. \"Even -- blimey -- Dumbledore's come to watch!\" \n\nHarry's heart did a somersault. \n\n\"Dumbledore?\" he said, dashing to the door to make sure. Fred was right. \n\nThere was no mistaking that silver beard. \n\nHarry could have laughed out loud with relief He was safe. There was simply no way that Snape would dare to try to hurt him if Dumbledore was watching.",
+      "approxWordCount": 237,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 1662,
+        "sourceWordEnd": 1898,
+        "sourceCharStart": 316731,
+        "sourceCharEnd": 318069
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch13_p008_q01",
+          "type": "multiple_choice",
+          "prompt": "Read this: \"...next to Neville, who couldn't understand...\" Who does the word \"who\" give extra information about?",
+          "explanation": "The word \"who\" comes right after \"Neville\" to tell us more about him!",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Defining Relative Clauses",
+          "options": [
+            "A. Ron",
+            "B. Hermione",
+            "C. Neville"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": "hp_ep1_ch13_p008_q02",
+          "type": "multiple_choice",
+          "prompt": "Fred Weasley is looking \"out of\" the door. What does \"out of\" mean here?",
+          "explanation": "\"Out of\" shows movement outside. Fred is looking outside the door to see the game!",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. Movement inside",
+            "B. Movement outside",
+            "C. A starting point"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch13_p008_q03",
+          "type": "true_false",
+          "prompt": "Fred says, \"Dumbledore's come to watch!\" This means Dumbledore has already arrived at the game.",
+          "explanation": "\"Dumbledore's come\" is short for \"Dumbledore has come.\" It shows an action that has already happened!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Perfect",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch13_p008_q04",
+          "type": "multiple_choice",
+          "prompt": "Why did Ron and Hermione bring their wands to the game?",
+          "explanation": "They brought their wands because there is a possibility they might need to use a curse on Snape to protect Harry.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Obligation & Possibility",
+          "options": [
+            "A. They might need to stop Snape.",
+            "B. They have to do their homework.",
+            "C. They want to play Quidditch."
+          ],
+          "answerIndex": 0
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch13_p009",
+      "pageNumber": 9,
+      "sourceText": "Perhaps that was why Snape was looking so angry as the teams marched onto the field, something that Ron noticed, too. \n\n\"I've never seen Snape look so mean,\" he told Hermione. \"Look -they're off Ouch!\" \n\nSomeone had poked Ron in the back of the head. It was Malfoy. \n\n\"Oh, sorry, Weasley, didn't see you there.\" \n\nMalfoy grinned broadly at Crabbe and Goyle. \n\n\"Wonder how long Potter's going to stay on his broom this time? Anyone want a bet? What about you, Weasley?\" \n\nRon didn't answer; Snape had just awarded Hufflepuff a penalty because George Weasley had hit a Bludger at him. Hermione, who had all her fingers crossed in her lap, was squinting fixedly at Harry, who was circling the game like a hawk, looking for the Snitch. \n\n\"You know how I think they choose people for the Gryffindor team?\" said Malfoy loudly a few minutes later, as Snape awarded Hufflepuff another penalty for no reason at all. \"It's people they feel sorry for. See, there's Potter, who's got no parents, then there's the Weasleys, who've got no money -- you should be on the team, Longbottom, you've got no brains.\" \n\nNeville went bright red but turned in his seat to face Malfoy. \n\n\"I'm worth twelve of you, Malfoy,\" he stammered. \n\nMalfoy, Crabbe, and Goyle howled with laughter, but Ron, still not daring to take his eyes from the game, said, \"You tell him, Neville.\" \n\n\"Longbottom, if brains were gold you'd be poorer than Weasley, and that's saying something.\"",
+      "approxWordCount": 249,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 1899,
+        "sourceWordEnd": 2147,
+        "sourceCharStart": 318072,
+        "sourceCharEnd": 319517
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch13_p009_q01",
+          "type": "true_false",
+          "prompt": "Malfoy says Harry is a boy who has no parents.",
+          "explanation": "Malfoy uses the word 'who' to give extra information about Harry, saying he has no parents.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Defining Relative Clauses",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch13_p009_q02",
+          "type": "multiple_choice",
+          "prompt": "How was Harry flying during the game?",
+          "explanation": "The story says Harry was circling the game 'like a hawk' to find the Snitch.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Like & About",
+          "options": [
+            "A. Like a hawk",
+            "B. Like a bat",
+            "C. Like an eagle"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch13_p009_q03",
+          "type": "true_false",
+          "prompt": "Ron says, 'I've never seen Snape look so mean.' This means he has seen Snape look this mean many times before.",
+          "explanation": "The word 'never' means it has not happened before. This is the first time Ron has seen Snape look this mean!",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Present Perfect",
+          "answer": false
+        },
+        {
+          "id": "hp_ep1_ch13_p009_q04",
+          "type": "multiple_choice",
+          "prompt": "What does Malfoy ask about Harry's future in the game?",
+          "explanation": "Malfoy asks his friends, 'Wonder how long Potter's going to stay on his broom this time?'",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Future Forms",
+          "options": [
+            "A. If he will win the game",
+            "B. How long he is going to stay on his broom",
+            "C. If he is going to catch the Snitch"
+          ],
+          "answerIndex": 1
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch13_p010",
+      "pageNumber": 10,
+      "sourceText": "Ron's nerves were already stretched to the breaking point with anxiety about Harry. \n\n\"I'm warning you, Malfoy -- one more word \"Ron!\" said Hermione suddenly, \"Harry --\" \n\n\"What? Where?\" \n\nHarry had suddenly gone into a spectacular dive, which drew gasps and cheers from the crowd. Hermione stood up, her crossed fingers in her mouth, as Harry streaked toward the ground like a bullet. \n\n\"You're in luck, Weasley, Potter's obviously spotted some money on the ground!\" said Malfoy. \n\nRon snapped. Before Malfoy knew what was happening, Ron was on top of him, wrestling him to the ground. Neville hesitated, then clambered over the back of his seat to help. \n\n\"Come on, Harry!\" Hermione screamed, leaping onto her seat to watch as Harry sped straight at Snape -- she didn't even notice Malfoy and Ron rolling around under her seat, or the scuffles and yelps coming from the whirl of fists that was Neville, Crabbe, and Goyle. \n\nUp in the air, Snape turned on his broomstick just in time to see something scarlet shoot past him, missing him by inches -- the next second, Harry had pulled out of the dive, his arm raised in triumph, the Snitch clasped in his hand. \n\nThe stands erupted; it had to be a record, no one could ever remember the Snitch being caught so quickly. \n\n\"Ron! Ron! Where are you? The game's over! Harry's won! We've won! Gryffindor is in the lead!\"",
+      "approxWordCount": 237,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 2148,
+        "sourceWordEnd": 2384,
+        "sourceCharStart": 319520,
+        "sourceCharEnd": 320885
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch13_p010_q01",
+          "type": "multiple_choice",
+          "prompt": "The story says, \"Harry streaked toward the ground _____ a bullet.\" Which word is missing?",
+          "explanation": "We use 'like' to show that two things are similar. Harry was flying as fast as a bullet!",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Like & About",
+          "options": [
+            "like",
+            "about",
+            "who"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch13_p010_q02",
+          "type": "true_false",
+          "prompt": "At the end of the page, Hermione says, \"We've won!\" This means Gryffindor has won the game.",
+          "explanation": "\"We've won\" is short for \"We have won.\" It shows an action that just finished!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Perfect",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch13_p010_q03",
+          "type": "multiple_choice",
+          "prompt": "Read this sentence: \"Harry had suddenly gone into a spectacular dive, _____ drew gasps and cheers from the crowd.\" Which word goes in the blank?",
+          "explanation": "We use 'which' to give more information about a thing, like Harry's amazing dive.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Defining Relative Clauses",
+          "options": [
+            "who",
+            "where",
+            "which"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": "hp_ep1_ch13_p010_q04",
+          "type": "multiple_choice",
+          "prompt": "The text says, \"Harry streaked _____ the ground.\" Which word shows the direction Harry is flying?",
+          "explanation": "\"Toward\" means moving in the direction of something. Harry is flying down to the ground!",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "out of",
+            "toward",
+            "from"
+          ],
+          "answerIndex": 1
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch13_p011",
+      "pageNumber": 11,
+      "sourceText": "shrieked Hermione, dancing up and down on her seat and hugging Parvati Patil in the row in front. \n\nHarry jumped off his broom, a foot from the ground. He couldn't believe it. He'd done it -- the game was over; it had barely lasted five minutes. As Gryffindors came spilling onto the field, he saw Snape land nearby, white-faced and tight-lipped -- then Harry felt a hand on his shoulder and looked up into Dumbledore's smiling face. \n\n\"Well done,\" said Dumbledore quietly, so that only Harry could hear. \n\n\"Nice to see you haven't been brooding about that mirror... been keeping busy... excellent...\" \n\nSnape spat bitterly on the ground. \n\nHarry left the locker room alone some time later, to take his Nimbus Two Thousand back to the broomshed. He couldn't ever remember feeling happier. He'd really done something to be proud of now -- no one could say he was just a famous name any more. The evening air had never smelled so sweet. He walked over the damp grass, reliving the last hour in his head, which was a happy blur: Gryffindors running to lift him onto their shoulders; Ron and Hermione in the distance, jumping up and down, Ron cheering through a heavy nosebleed. \n\nHarry had reached the shed. He leaned against the wooden door and looked up at Hogwarts, with its windows glowing red in the setting sun. \n\nGryffindor in the lead. He'd done it, he'd shown Snape.... \n\nAnd speaking of Snape...",
+      "approxWordCount": 244,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 2385,
+        "sourceWordEnd": 2628,
+        "sourceCharStart": 320886,
+        "sourceCharEnd": 322288
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch13_p011_q01",
+          "type": "multiple_choice",
+          "prompt": "Which word completes the sentence from the story: 'Gryffindors came spilling ___ the field'?",
+          "explanation": "The word 'onto' shows the direction the Gryffindors were moving.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "onto",
+            "under",
+            "about"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch13_p011_q02",
+          "type": "multiple_choice",
+          "prompt": "What was Hermione doing in her seat?",
+          "explanation": "The story says Hermione was shrieking and dancing up and down on her seat because she was so excited.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "options": [
+            "She was sleeping.",
+            "She was dancing up and down.",
+            "She was reading a book."
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch13_p011_q03",
+          "type": "true_false",
+          "prompt": "Dumbledore talks to Harry about the mirror.",
+          "explanation": "Dumbledore says he is glad Harry hasn't been thinking too much about the mirror.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Like & About",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch13_p011_q04",
+          "type": "true_false",
+          "prompt": "Harry has never felt happier than he did after the game.",
+          "explanation": "The story says, 'He couldn't ever remember feeling happier.'",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Perfect",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch13_p012",
+      "pageNumber": 12,
+      "sourceText": "A hooded figure came swiftly down the front steps of the castle. Clearly not wanting to be seen, it walked as fast as possible toward the forbidden forest. Harry's victory faded from his mind as he watched. He recognized the figure's prowling walk. Snape, sneaking into the forest while everyone else was at dinner -- what was going on? Harry jumped back on his Nimbus Two Thousand and took off. Gliding silently over the castle he saw Snape enter the forest at a run. He followed. \n\nThe trees were so thick he couldn't see where Snape had gone. He flew in circles, lower and lower, brushing the top branches of trees until he heard voices. He glided toward them and landed noiselessly in a towering beech tree. \n\nHe climbed carefully along one of the branches, holding tight to his broomstick, trying to see through the leaves. Below, in a shadowy clearing, stood Snape, but he wasn't alone. Quirrell was there, too. \n\nHarry couldn't make out the look on his face, but he was stuttering worse than ever. Harry strained to catch what they were saying. \n\n\"... d-don't know why you wanted t-t-to meet here of all p-places, Severus...\" \n\n\"Oh, I thought we'd keep this private,\" said Snape, his voice icy. \n\n\"Students aren't supposed to know about the Sorcerer's Stone, after all.\" \n\nHarry leaned forward. Quirrell was mumbling something. Snape interrupted him. \n\n\"Have you found out how to get past that beast of Hagrid's yet?\"",
+      "approxWordCount": 244,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 2629,
+        "sourceWordEnd": 2872,
+        "sourceCharStart": 322291,
+        "sourceCharEnd": 323715
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch13_p012_q01",
+          "type": "multiple_choice",
+          "prompt": "Snape asks, \"Have you found out how to get past that beast of Hagrid's _____?\" Which word finishes his question?",
+          "explanation": "We use 'yet' in Present Perfect questions to ask if an action has happened.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Present Perfect",
+          "options": [
+            "A. already",
+            "B. yet",
+            "C. never"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch13_p012_q02",
+          "type": "multiple_choice",
+          "prompt": "What was Quirrell doing when Snape interrupted him?",
+          "explanation": "The story says, 'Quirrell was mumbling something' when Snape interrupted him.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "options": [
+            "A. He was flying.",
+            "B. He was mumbling.",
+            "C. He was running."
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch13_p012_q03",
+          "type": "multiple_choice",
+          "prompt": "The hooded figure walked ________ the forbidden forest.",
+          "explanation": "The word 'toward' shows the direction the figure was moving.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. toward",
+            "B. out of",
+            "C. from"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch13_p012_q04",
+          "type": "true_false",
+          "prompt": "Snape says that students are not supposed to know about the Sorcerer's Stone.",
+          "explanation": "Snape wants to keep the Stone a secret. We use 'about' to talk about a topic.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Like & About",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch13_p013",
+      "pageNumber": 13,
+      "sourceText": "\"B-b-but Severus, I --\" \n\n\"You don't want me as your enemy, Quirrell,\" said Snape, taking a step toward him. \n\n\"I-I don't know what you \"You know perfectly well what I mean.\" \n\nAn owl hooted loudly, and Harry nearly fell out of the tree. He steadied himself in time to hear Snape say, \"-- your little bit of hocus-pocus. \n\nI'm waiting.\" \n\n\"B-but I d-d-don't --\" \n\n\"Very well,\" Snape cut in. \"We'll have another little chat soon, when you've had time to think things over and decided where your loyalties lie.\" \n\nHe threw his cloak over his head and strode out of the clearing. It was almost dark now, but Harry could see Quirrell, standing quite still as though he was petrified. \n\n\"Harry, where have you been?\" Hermione squeaked. \n\n\"We won! You won! We won!\" shouted Ron, thumping Harry on the back. \"And I gave Malfoy a black eye, and Neville tried to take on Crabbe and Goyle single-handed! He's still out cold but Madam Pomftey says he'll be all right - talk about showing Slytherin! Everyone's waiting for you in the common room, we're having a party, Fred and George stole some cakes and stuff from the kitchens.\" \n\n\"Never mind that now,\" said Harry breathlessly. \"Let's find an empty room, you wait 'til you hear this....\" \n\nHe made sure Peeves wasn't inside before shutting the door behind them, then he told them what he'd seen and heard.",
+      "approxWordCount": 236,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 2873,
+        "sourceWordEnd": 3108,
+        "sourceCharStart": 323718,
+        "sourceCharEnd": 325065
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch13_p013_q01",
+          "type": "multiple_choice",
+          "prompt": "Where does Snape go after he finishes talking to Quirrell?",
+          "explanation": "The story says Snape threw his cloak over his head and 'strode out of the clearing.'",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "He climbs into the tree.",
+            "He walks out of the clearing.",
+            "He runs towards Harry."
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch13_p013_q02",
+          "type": "true_false",
+          "prompt": "Hermione asks Harry, \"Where have you been?\"",
+          "explanation": "Hermione squeaks, \"Harry, where have you been?\" when she finally sees him.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Present Perfect",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch13_p013_q03",
+          "type": "multiple_choice",
+          "prompt": "What does Snape say he and Quirrell will do soon?",
+          "explanation": "Snape tells Quirrell, \"We'll have another little chat soon.\"",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Future Forms",
+          "options": [
+            "They will have a party.",
+            "They will have another chat.",
+            "They will play a game."
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch13_p013_q04",
+          "type": "true_false",
+          "prompt": "Snape tells Quirrell, \"You want me as your enemy.\"",
+          "explanation": "Snape actually says, \"You don't want me as your enemy,\" which is a negative present simple sentence.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "answer": false
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch13_p014",
+      "pageNumber": 14,
+      "sourceText": "\"So we were right, it is the Sorcerer's Stone, and Snape's trying to force Quirrell to help him get it. He asked if he knew how to get past Fluffy - and he said something about Quirrell's 'hocus pocuss-- I reckon there are other things guarding the stone apart from Fluffy, loads of enchantments, probably, and Quirrell would have done some anti-Dark Arts spell that Snape needs to break through --\" \n\n\"So you mean the Stone's only safe as long as Quirrell stands up to Snape?\" said Hermione in alarm. \n\n\"It'll be gone by next Tuesday,\" said Ron.",
+      "approxWordCount": 98,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 3109,
+        "sourceWordEnd": 3206,
+        "sourceCharStart": 325068,
+        "sourceCharEnd": 325614
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch13_p014_q01",
+          "type": "true_false",
+          "prompt": "Harry thinks Snape is trying to make Quirrell help him get the Stone.",
+          "explanation": "The page says Snape is trying to force Quirrell to help him get it.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch13_p014_q02",
+          "type": "multiple_choice",
+          "prompt": "What does Ron think will happen by next Tuesday?",
+          "explanation": "Ron says, “It’ll be gone by next Tuesday.”",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Future Forms",
+          "options": [
+            "A. The Stone will be gone.",
+            "B. Fluffy will go home.",
+            "C. Hermione will find a spell."
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch13_p014_q03",
+          "type": "multiple_choice",
+          "prompt": "In “something about Quirrell’s hocus pocus,” what does “about” mean?",
+          "explanation": "Here, “about” means the topic is Quirrell’s magic.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Like & About",
+          "options": [
+            "A. on top of",
+            "B. because of",
+            "C. on the topic of"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": "hp_ep1_ch13_p014_q04",
+          "type": "true_false",
+          "prompt": "Hermione asks if the Stone is safe only while Quirrell stands up to Snape.",
+          "explanation": "Hermione asks if the Stone is safe as long as Quirrell stands up to Snape.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,1787 @@
+{
+  "storyId": "harrypotter_episode1",
+  "chapterId": "chapter_05",
+  "chapterNumber": 5,
+  "title": "Diagon Alley",
+  "dateLabel": "31 July 1991",
+  "sourceTextIncluded": true,
+  "pages": [
+    {
+      "pageId": "hp_ep1_ch05_p001",
+      "pageNumber": 1,
+      "sourceText": "CHAPTER FIVE \n\nDIAGON ALLEY \n\nHarry woke early the next morning. Although he could tell it was daylight, he kept his eyes shut tight. \n\n\"It was a dream, he told himself firmly. \"I dreamed a giant called Hagrid came to tell me I was going to a school for wizards. When I open my eyes I'll be at home in my cupboard.\" \n\nThere was suddenly a loud tapping noise. \n\nAnd there's Aunt Petunia knocking on the door, Harry thought, his heart sinking. But he still didn't open his eyes. It had been such a good dream. \n\nTap. Tap. Tap. \n\n\"All right,\" Harry mumbled, \"I'm getting up.\" \n\nHe sat up and Hagrid's heavy coat fell off him. The hut was full of sunlight, the storm was over, Hagrid himself was asleep on the collapsed sofa, and there was an owl rapping its claw on the window, a newspaper held in its beak. \n\nHarry scrambled to his feet, so happy he felt as though a large balloon was swelling inside him. He went straight to the window and jerked it open. The owl swooped in and dropped the newspaper on top of Hagrid, who didn't wake up. The owl then fluttered onto the floor and began to attack Hagrid's coat. \n\n\"Don't do that.\" \n\nHarry tried to wave the owl out of the way, but it snapped its beak fiercely at him and carried on savaging the coat. \n\n\"Hagrid!\" said Harry loudly. \"There's an owl \"Pay him,\" Hagrid grunted into the sofa. \n\n\"What?\"",
+      "approxWordCount": 249,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 1,
+        "sourceWordEnd": 249,
+        "sourceCharStart": 87704,
+        "sourceCharEnd": 89051
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch05_p001_q01",
+          "type": "multiple_choice",
+          "prompt": "The owl swooped _____ the room when Harry opened the window.",
+          "explanation": "The owl moved from outside to inside the room, so we use 'into'.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "into",
+            "out of",
+            "from"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch05_p001_q02",
+          "type": "true_false",
+          "prompt": "Harry thinks he is going to wake up in his cupboard.",
+          "explanation": "Harry tells himself it was all a dream and he will be back in his cupboard when he opens his eyes.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Future Forms",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch05_p001_q03",
+          "type": "multiple_choice",
+          "prompt": "Which sentence about Hagrid is true?",
+          "explanation": "The text says Hagrid is a giant and he is asleep on the collapsed sofa.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Defining Relative Clauses",
+          "options": [
+            "He is an owl that brings the newspaper.",
+            "He is a giant who is sleeping on the sofa.",
+            "He is a boy who lives in a cupboard."
+          ],
+          "answerIndex": 1
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch05_p002",
+      "pageNumber": 2,
+      "sourceText": "\"He wants payin' fer deliverin' the paper. Look in the pockets.\" \n\nHagrid's coat seemed to be made of nothing but pockets -- bunches of keys, slug pellets, balls of string, peppermint humbugs, teabags... \n\nfinally, Harry pulled out a handful of strange-looking coins. \n\n\"Give him five Knuts,\" said Hagrid sleepily. \n\n\"Knuts?\" \n\n\"The little bronze ones.\" \n\nHarry counted out five little bronze coins, and the owl held out his leg so Harry could put the money into a small leather pouch tied to it. Then he flew off through the open window. \n\nHagrid yawned loudly, sat up, and stretched. \n\n\"Best be Off, Harry, lots ter do today, gotta get up ter London an' buy all yer stuff fer school.\" \n\nHarry was turning over the wizard coins and looking at them. He had just thought of something that made him feel as though the happy balloon inside him had got a puncture. \n\n\"Um -- Hagrid?\" \n\n\"Mm?\" said Hagrid, who was pulling on his huge boots. \n\n\"I haven't got any money -- and you heard Uncle Vernon last night ... he won't pay for me to go and learn magic.\" \n\n\"Don't worry about that,\" said Hagrid, standing up and scratching his head. \"D'yeh think yer parents didn't leave yeh anything?\" \n\n\"But if their house was destroyed --\" \n\n\"They didn' keep their gold in the house, boy! Nah, first stop fer us is Gringotts. Wizards' bank.",
+      "approxWordCount": 231,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 250,
+        "sourceWordEnd": 480,
+        "sourceCharStart": 89054,
+        "sourceCharEnd": 90376
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch05_p002_q01",
+          "type": "multiple_choice",
+          "prompt": "What was Harry doing with the wizard coins?",
+          "explanation": "The story says Harry was turning over the wizard coins and looking at them.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "options": [
+            "He was turning them over.",
+            "He was throwing them away.",
+            "He was giving them to Hagrid."
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch05_p002_q02",
+          "type": "multiple_choice",
+          "prompt": "Where did Harry put the money for the owl?",
+          "explanation": "Harry put the coins into a small leather pouch tied to the owl's leg.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "Out of the window",
+            "Into a small leather pouch",
+            "Towards Hagrid's coat"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch05_p002_q03",
+          "type": "true_false",
+          "prompt": "Harry thinks Uncle Vernon will pay for him to learn magic.",
+          "explanation": "Harry says Uncle Vernon won't (will not) pay for him to learn magic.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Future Forms",
+          "answer": false
+        },
+        {
+          "id": "hp_ep1_ch05_p002_q04",
+          "type": "true_false",
+          "prompt": "In the sentence 'Hagrid, who was pulling on his huge boots', the word 'who' gives us more information about Hagrid.",
+          "explanation": "We use the word 'who' to give extra information about a person!",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Defining Relative Clauses",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch05_p003",
+      "pageNumber": 3,
+      "sourceText": "Have a sausage, they're not bad cold -- an' I wouldn' say no teh a bit o' yer birthday cake, neither.\" \n\n\"Wizards have banks?\" \n\n\"Just the one. Gringotts. Run by goblins.\" \n\nHarry dropped the bit of sausage he was holding. \n\n\"Goblins?\" \n\n\"Yeah -- so yeh'd be mad ter try an' rob it, I'll tell yeh that. Never mess with goblins, Harry. Gringotts is the safest place in the world fer anything yeh want ter keep safe -- 'cept maybe Hogwarts. As a matter o' fact, I gotta visit Gringotts anyway. Fer Dumbledore. Hogwarts business.\" Hagrid drew himself up proudly. \"He usually gets me ter do important stuff fer him. Fetchin' you gettin' things from Gringotts -- knows he can trust me, see. \n\n\"Got everythin'? Come on, then.\" \n\nHarry followed Hagrid out onto the rock. The sky was quite clear now and the sea gleamed in the sunlight. The boat Uncle Vernon had hired was still there, with a lot of water in the bottom after the storm. \n\n\"How did you get here?\" Harry asked, looking around for another boat. \n\n\"Flew,\" said Hagrid. \n\n\"Flew?\" \n\n\"Yeah -- but we'll go back in this. Not s'pposed ter use magic now I've got yeh.\" \n\nThey settled down in the boat, Harry still staring at Hagrid, trying to imagine him flying. \n\n\"Seems a shame ter row, though,\" said Hagrid, giving Harry another of his sideways looks.",
+      "approxWordCount": 231,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 481,
+        "sourceWordEnd": 711,
+        "sourceCharStart": 90377,
+        "sourceCharEnd": 91680
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch05_p003_q01",
+          "type": "multiple_choice",
+          "prompt": "What was Harry holding when he dropped it?",
+          "explanation": "The story says, 'Harry dropped the bit of sausage he was holding.'",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "options": [
+            "A bit of sausage",
+            "A piece of cake",
+            "A magic wand"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch05_p003_q02",
+          "type": "true_false",
+          "prompt": "Dumbledore usually asks Hagrid to do important things.",
+          "explanation": "Hagrid says Dumbledore usually gets him to do important stuff because he trusts him.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch05_p003_q03",
+          "type": "multiple_choice",
+          "prompt": "Where did Harry follow Hagrid?",
+          "explanation": "The text says, 'Harry followed Hagrid out onto the rock.'",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "Into the bank",
+            "Out onto the rock",
+            "Towards the castle"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch05_p003_q04",
+          "type": "true_false",
+          "prompt": "Hagrid and Harry will fly back home.",
+          "explanation": "Hagrid says they will go back in the boat because he is not supposed to use magic.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Future Forms",
+          "answer": false
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch05_p004",
+      "pageNumber": 4,
+      "sourceText": "\"If I was ter -- er -- speed things up a bit, would yeh mind not mentionin' it at Hogwarts?\" \n\n\"Of course not,\" said Harry, eager to see more magic. Hagrid pulled out the pink umbrella again, tapped it twice on the side of the boat, and they sped off toward land. \n\n\"Why would you be mad to try and rob Gringotts?\" Harry asked. \n\n\"Spells -- enchantments,\" said Hagrid, unfolding his newspaper as he spoke. \"They say there's dragons guardin' the highsecurity vaults. And then yeh gotta find yer way -- Gringotts is hundreds of miles under London, see. Deep under the Underground. Yeh'd die of hunger tryin' ter get out, even if yeh did manage ter get yer hands on summat.\" \n\nHarry sat and thought about this while Hagrid read his newspaper, the Daily Prophet. Harry had learned from Uncle Vernon that people liked to be left alone while they did this, but it was very difficult, he'd never had so many questions in his life. \n\n\"Ministry o' Magic messin' things up as usual,\" Hagrid muttered, turning the page. \n\n\"There's a Ministry of Magic?\" Harry asked, before he could stop himself. \n\n\"'Course,\" said Hagrid. \"They wanted Dumbledore fer Minister, 0 ' course, but he'd never leave Hogwarts, so old Cornelius Fudge got the job. Bungler if ever there was one. So he pelts Dumbledore with owls every morning, askin' fer advice.\" \n\n\"But what does a Ministry of Magic do?\"",
+      "approxWordCount": 240,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 712,
+        "sourceWordEnd": 951,
+        "sourceCharStart": 91681,
+        "sourceCharEnd": 93049
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch05_p004_q01",
+          "type": "multiple_choice",
+          "prompt": "Which way did the boat move after Hagrid tapped it with his umbrella?",
+          "explanation": "The text says they 'sped off toward land.' 'Toward' shows the direction they were going.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. Toward land",
+            "B. Out of the water",
+            "C. Into the sky"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch05_p004_q02",
+          "type": "multiple_choice",
+          "prompt": "Fill in the blank: Harry sat and thought _____ what Hagrid told him.",
+          "explanation": "We use 'about' to show the topic someone is thinking or talking about.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Like & About",
+          "options": [
+            "A. like",
+            "B. about",
+            "C. from"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch05_p004_q03",
+          "type": "true_false",
+          "prompt": "Cornelius Fudge sends owls to Dumbledore every morning to ask for advice.",
+          "explanation": "Hagrid says Fudge sends owls 'every morning, askin' fer advice.' This is a daily routine!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch05_p005",
+      "pageNumber": 5,
+      "sourceText": "\"Well, their main job is to keep it from the Muggles that there's still witches an' wizards up an' down the country.\" \n\n\"Why?\" \n\n\"Why? Blimey, Harry, everyone'd be wantin' magic solutions to their problems. Nah, we're best left alone.\" \n\nAt this moment the boat bumped gently into the harbor wall. Hagrid folded up his newspaper, and they clambered up the stone steps onto the street. \n\nPassersby stared a lot at Hagrid as they walked through the little town to the station. Harry couldn't blame them. Not only was Hagrid twice as tall as anyone else, he kept pointing at perfectly ordinary things like parking meters and saying loudly, \"See that, Harry? Things these Muggles dream up, eh?\" \n\n\"Hagrid,\" said Harry, panting a bit as he ran to keep up, \"did you say there are dragons at Gringotts?\" \n\n\"Well, so they say,\" said Hagrid. \"Crikey, I'd like a dragon.\" \n\n\"You'd like one?\" \n\n\"Wanted one ever since I was a kid -- here we go.\" \n\nThey had reached the station. There was a train to London in five minutes' time. Hagrid, who didn't understand \"Muggle money,\" as he called it, gave the bills to Harry so he could buy their tickets. \n\nPeople stared more than ever on the train. Hagrid took up two seats and sat knitting what looked like a canary-yellow circus tent. \n\n\"Still got yer letter, Harry?\" he asked as he counted stitches. Harry took the parchment envelope out of his pocket. \n\n\"Good,\" said Hagrid.",
+      "approxWordCount": 245,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 952,
+        "sourceWordEnd": 1196,
+        "sourceCharStart": 93052,
+        "sourceCharEnd": 94462
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch05_p005_q01",
+          "type": "multiple_choice",
+          "prompt": "The boat bumped gently _____ the harbor wall.",
+          "explanation": "The word 'into' shows the direction the boat moved when it hit the wall.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "into",
+            "out of",
+            "from"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch05_p005_q02",
+          "type": "true_false",
+          "prompt": "Hagrid is the person who didn't understand 'Muggle money'.",
+          "explanation": "The story says Hagrid, who didn't understand Muggle money, gave the bills to Harry.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Defining Relative Clauses",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch05_p005_q03",
+          "type": "multiple_choice",
+          "prompt": "Hagrid was knitting something that looked _____ a yellow circus tent.",
+          "explanation": "We use 'like' to say two things look similar.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Like & About",
+          "options": [
+            "about",
+            "like",
+            "towards"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch05_p005_q04",
+          "type": "true_false",
+          "prompt": "Hagrid has wanted a dragon since he was a child.",
+          "explanation": "Hagrid says he has wanted a dragon ever since he was a kid!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Perfect",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch05_p006",
+      "pageNumber": 6,
+      "sourceText": "\"There's a list there of everything yeh need.\" \n\nHarry unfolded a second piece of paper he hadn't noticed the night before, and read: HOGWARTS SCHOOL of WITCHCRAFT and WIZARDRY UNIFORM First-year students will require: 1. Three sets of plain work robes (black) 2. One plain pointed hat (black) for day wear 3. One pair of protective gloves (dragon hide or similar) 4. One winter cloak (black, silver fastenings) Please note that all pupils' clothes should carry name tags COURSE BOOKS All students should have a copy of each of the following: The Standard Book of Spells (Grade 1) by Miranda Goshawk A History of Magic by Bathilda Bagshot Magical Theory by Adalbert Waffling A Beginners' Guide to Transfiguration by Emetic Switch One Thousand Magical Herbs and Fungi by Phyllida Spore Magical Drafts and Potions by Arsenius Jigger Fantastic Beasts and Where to Find Them by Newt Scamander The Dark Forces: A Guide to Self-Protection by Quentin Trimble OTHER EQUIPMENT wand cauldron (pewter, standard size 2) set glass or crystal phials telescope set brass scales Students may also bring an owl OR a cat OR a toad PARENTS ARE REMINDED THAT FIRST YEARS ARE NOT ALLOWED THEIR OWN BROOMSTICKS \"Can we buy all this in London?\" Harry wondered aloud. \n\n\"If yeh know where to go,\" said Hagrid. \n\nHarry had never been to London before. Although Hagrid seemed to know where he was going, he was obviously not used to getting there in an ordinary way.",
+      "approxWordCount": 244,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 1197,
+        "sourceWordEnd": 1440,
+        "sourceCharStart": 94463,
+        "sourceCharEnd": 95903
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch05_p006_q01",
+          "type": "true_false",
+          "prompt": "First-year students are allowed to bring their own broomsticks to school.",
+          "explanation": "The list clearly says that first years are not allowed to have their own broomsticks.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "answer": false
+        },
+        {
+          "id": "hp_ep1_ch05_p006_q02",
+          "type": "multiple_choice",
+          "prompt": "How many sets of plain work robes will first-year students need?",
+          "explanation": "The list says students will require three sets of plain work robes.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Future Forms",
+          "options": [
+            "One set",
+            "Two sets",
+            "Three sets"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": "hp_ep1_ch05_p006_q03",
+          "type": "multiple_choice",
+          "prompt": "Which pet may a student bring to Hogwarts?",
+          "explanation": "The letter says students may bring an owl, a cat, or a toad.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Obligation & Possibility",
+          "options": [
+            "A dog",
+            "An owl",
+            "A rabbit"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch05_p006_q04",
+          "type": "true_false",
+          "prompt": "Hagrid knows the place where they can buy the school supplies.",
+          "explanation": "When Harry asks if they can buy everything in London, Hagrid says yes, 'if yeh know where to go.'",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Defining Relative Clauses",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch05_p007",
+      "pageNumber": 7,
+      "sourceText": "He got stuck in the ticket barrier on the Underground, and complained loudly that the seats were too small and the trains too slow. \n\n\"I don't know how the Muggles manage without magic,\" he said as they climbed a broken-down escalator that led up to a bustling road lined with shops. \n\nHagrid was so huge that he parted the crowd easily; all Harry had to do was keep close behind him. They passed book shops and music stores, hamburger restaurants and cinemas, but nowhere that looked as if it could sell you a magic wand. This was just an ordinary street full of ordinary people. Could there really be piles of wizard gold buried miles beneath them? Were there really shops that sold spell books and broomsticks? Might this not all be some huge joke that the Dursleys had cooked up? If Harry hadn't known that the Dursleys had no sense of humor, he might have thought so; yet somehow, even though everything Hagrid had told him so far was unbelievable, Harry couldn't help trusting him. \n\n\"This is it,\" said Hagrid, coming to a halt, \"the Leaky Cauldron. It's a famous place.\" \n\nIt was a tiny, grubby-looking pub. If Hagrid hadn't pointed it out, Harry wouldn't have noticed it was there. The people hurrying by didn't glance at it. Their eyes slid from the big book shop on one side to the record shop on the other as if they couldn't see the Leaky Cauldron at all.",
+      "approxWordCount": 247,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 1441,
+        "sourceWordEnd": 1687,
+        "sourceCharStart": 95904,
+        "sourceCharEnd": 97271
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch05_p007_q01",
+          "type": "multiple_choice",
+          "prompt": "What did Harry have to do when Hagrid walked through the crowd?",
+          "explanation": "The story says all Harry had to do was keep close behind Hagrid because he was so big.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Obligation & Possibility",
+          "options": [
+            "A. Buy a magic wand",
+            "B. Stay close behind Hagrid",
+            "C. Find a book shop"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch05_p007_q02",
+          "type": "true_false",
+          "prompt": "Hagrid understands how Muggles live every day without magic.",
+          "explanation": "Hagrid says, 'I don't know how the Muggles manage without magic.'",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "answer": false
+        },
+        {
+          "id": "hp_ep1_ch05_p007_q03",
+          "type": "multiple_choice",
+          "prompt": "They climbed a broken escalator that led to a busy road. Which word gives more information about the escalator?",
+          "explanation": "We use 'that' or 'which' to give more information about a thing, like an escalator!",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Defining Relative Clauses",
+          "options": [
+            "A. that",
+            "B. who",
+            "C. where"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch05_p007_q04",
+          "type": "multiple_choice",
+          "prompt": "The ordinary people looked from the book shop to the record shop. Which word shows where their eyes started looking?",
+          "explanation": "The word 'from' shows the starting point of a movement or action.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. into",
+            "B. from",
+            "C. towards"
+          ],
+          "answerIndex": 1
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch05_p008",
+      "pageNumber": 8,
+      "sourceText": "In fact, Harry had the most peculiar feeling that only he and Hagrid could see it. Before he could mention this, Hagrid had steered him inside. \n\nFor a famous place, it was very dark and shabby. A few old women were sitting in a corner, drinking tiny glasses of sherry. One of them was smoking a long pipe. A little man in a top hat was talking to the old bartender, who was quite bald and looked like a toothless walnut. The low buzz of chatter stopped when they walked in. Everyone seemed to know Hagrid; they waved and smiled at him, and the bartender reached for a glass, saying, \"The usual, Hagrid?\" \n\n\"Can't, Tom, I'm on Hogwarts business,\" said Hagrid, clapping his great hand on Harry's shoulder and making Harry's knees buckle. \n\n\"Good Lord,\" said the bartender, peering at Harry, \"is this -- can this be --?\" \n\nThe Leaky Cauldron had suddenly gone completely still and silent. \n\n\"Bless my soul,\" whispered the old bartender, \"Harry Potter... what an honor.\" \n\nHe hurried out from behind the bar, rushed toward Harry and seized his hand, tears in his eyes. \n\n\"Welcome back, Mr. Potter, welcome back.\" \n\nHarry didn't know what to say. Everyone was looking at him. The old woman with the pipe was puffing on it without realizing it had gone out. \n\nHagrid was beaming. \n\nThen there was a great scraping of chairs and the next moment, Harry found himself shaking hands with everyone in the Leaky Cauldron. \n\n\"Doris Crockford, Mr.",
+      "approxWordCount": 250,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 1688,
+        "sourceWordEnd": 1937,
+        "sourceCharStart": 97272,
+        "sourceCharEnd": 98706
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch05_p008_q01",
+          "type": "multiple_choice",
+          "prompt": "What were the old women doing in the corner?",
+          "explanation": "The story uses the past continuous 'were sitting' to show an action that was happening in the past.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Past Continuous",
+          "options": [
+            "They were sitting and drinking.",
+            "They are sitting and drinking.",
+            "They sit and drink."
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch05_p008_q02",
+          "type": "true_false",
+          "prompt": "The old bartender looked like a toothless walnut.",
+          "explanation": "The word 'like' is used to show that the bartender's face was similar to a walnut.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Like & About",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch05_p008_q03",
+          "type": "multiple_choice",
+          "prompt": "The bartender rushed toward Harry. Which word shows the direction he moved?",
+          "explanation": "The word 'toward' is a preposition that shows he moved in the direction of Harry.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "rushed",
+            "toward",
+            "Harry"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch05_p008_q04",
+          "type": "true_false",
+          "prompt": "The word 'who' in the story is used to give more information about the old bartender.",
+          "explanation": "We use 'who' to give extra information about a person. Here, it tells us the bartender was bald.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Defining Relative Clauses",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch05_p009",
+      "pageNumber": 9,
+      "sourceText": "Potter, can't believe I'm meeting you at last.\" \n\n\"So proud, Mr. Potter, I'm just so proud.\" \n\n\"Always wanted to shake your hand -- I'm all of a flutter.\" \n\n\"Delighted, Mr. Potter, just can't tell you, Diggle's the name, Dedalus Diggle.\" \n\n\"I've seen you before!\" said Harry, as Dedalus Diggle's top hat fell off in his excitement. \"You bowed to me once in a shop.\" \n\n\"He remembers!\" cried Dedalus Diggle, looking around at everyone. \"Did you hear that? He remembers me!\" Harry shook hands again and again -- Doris Crockford kept coming back for more. \n\nA pale young man made his way forward, very nervously. One of his eyes was twitching. \n\n\"Professor Quirrell!\" said Hagrid. \"Harry, Professor Quirrell will be one of your teachers at Hogwarts.\" \n\n\"P-P-Potter,\" stammered Professor Quirrell, grasping Harry's hand, \"c-can't t-tell you how p- pleased I am to meet you.\" \n\n\"What sort of magic do you teach, Professor Quirrell?\" \n\n\"D-Defense Against the D-D-Dark Arts,\" muttered Professor Quirrell, as though he'd rather not think about it. \"N-not that you n-need it, eh, P-P-Potter?\" He laughed nervously. \"You'll be g-getting all your equipment, I suppose? I've g-got to p-pick up a new b-book on vampires, m-myself.\" He looked terrified at the very thought. \n\nBut the others wouldn't let Professor Quirrell keep Harry to himself. It took almost ten minutes to get away from them all. At last, Hagrid managed to make himself heard over the babble. \n\n\"Must get on -- lots ter buy. Come on, Harry.\"",
+      "approxWordCount": 247,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 1938,
+        "sourceWordEnd": 2184,
+        "sourceCharStart": 98707,
+        "sourceCharEnd": 100203
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch05_p009_q01",
+          "type": "true_false",
+          "prompt": "Harry has seen Dedalus Diggle before.",
+          "explanation": "Harry remembers that Dedalus bowed to him in a shop.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Perfect",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch05_p009_q02",
+          "type": "multiple_choice",
+          "prompt": "Who will be one of Harry's teachers at Hogwarts?",
+          "explanation": "Hagrid tells Harry that Professor Quirrell will be a teacher at Hogwarts.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Future Forms",
+          "options": [
+            "A. Dedalus Diggle",
+            "B. Doris Crockford",
+            "C. Professor Quirrell"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": "hp_ep1_ch05_p009_q03",
+          "type": "multiple_choice",
+          "prompt": "What does Professor Quirrell teach?",
+          "explanation": "Professor Quirrell tells Harry he teaches Defense Against the Dark Arts.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "options": [
+            "A. Defense Against the Dark Arts",
+            "B. How to fly",
+            "C. Potions"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch05_p009_q04",
+          "type": "true_false",
+          "prompt": "Professor Quirrell has to buy a new book about dragons.",
+          "explanation": "He says he has to pick up a new book about vampires, not dragons.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Obligation & Possibility",
+          "answer": false
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch05_p010",
+      "pageNumber": 10,
+      "sourceText": "Doris Crockford shook Harry's hand one last time, and Hagrid led them through the bar and out into a small, walled courtyard, where there was nothing but a trash can and a few weeds. \n\nHagrid grinned at Harry. \n\n\"Told yeh, didn't I? Told yeh you was famous. Even Professor Quirrell was tremblin' ter meet yeh -- mind you, he's usually tremblin'.\" \n\n\"Is he always that nervous?\" \n\n\"Oh, yeah. Poor bloke. Brilliant mind. He was fine while he was studyin' outta books but then he took a year off ter get some firsthand experience.... They say he met vampires in the Black Forest, and there was a nasty bit o' trouble with a hag -- never been the same since. \n\nScared of the students, scared of his own subject now, where's me umbrella?\" \n\nVampires? Hags? Harry's head was swimming. Hagrid, meanwhile, was counting bricks in the wall above the trash can. \n\n\"Three up... two across he muttered. \"Right, stand back, Harry.\" \n\nHe tapped the wall three times with the point of his umbrella. \n\nThe brick he had touched quivered -- it wriggled -- in the middle, a small hole appeared -- it grew wider and wider -- a second later they were facing an archway large enough even for Hagrid, an archway onto a cobbled street that twisted and turned out of sight. \n\n\"Welcome,\" said Hagrid, \"to Diagon Alley.\" \n\nHe grinned at Harry's amazement. They stepped through the archway.",
+      "approxWordCount": 238,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 2185,
+        "sourceWordEnd": 2422,
+        "sourceCharStart": 100206,
+        "sourceCharEnd": 101567
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch05_p010_q01",
+          "type": "multiple_choice",
+          "prompt": "Where did Hagrid lead Harry after they went through the bar?",
+          "explanation": "The text says Hagrid led them 'out into a small, walled courtyard.' The words 'out into' show the direction they moved!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "Out into a courtyard",
+            "Towards a dark forest",
+            "From a big castle"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch05_p010_q02",
+          "type": "true_false",
+          "prompt": "Professor Quirrell is always nervous.",
+          "explanation": "When Harry asks 'Is he always that nervous?', Hagrid answers 'Oh, yeah.' The word 'always' shows this is a general fact about him.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch05_p010_q03",
+          "type": "multiple_choice",
+          "prompt": "What was Hagrid doing while Harry was thinking about vampires?",
+          "explanation": "The story says Hagrid 'was counting bricks' in the wall. This shows an action that was in progress in the past!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "options": [
+            "He was reading a book.",
+            "He was counting bricks.",
+            "He was shaking hands."
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch05_p010_q04",
+          "type": "true_false",
+          "prompt": "Hagrid says 'Told yeh, didn't I?' to check if Harry agrees with him.",
+          "explanation": "Hagrid uses the tag question 'didn't I?' to check information and ask Harry to agree that he is famous.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Tag Questions",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch05_p011",
+      "pageNumber": 11,
+      "sourceText": "Harry looked quickly over his shoulder and saw the archway shrink instantly back into solid wall. \n\nThe sun shone brightly on a stack of cauldrons outside the nearest shop. \n\nCauldrons -- All Sizes - Copper, Brass, Pewter, Silver -- Self-Stirring -- Collapsible, said a sign hanging over them. \n\n\"Yeah, you'll be needin' one,\" said Hagrid, \"but we gotta get yer money first.\" \n\nHarry wished he had about eight more eyes. He turned his head in every direction as they walked up the street, trying to look at everything at once: the shops, the things outside them, the people doing their shopping. A plump woman outside an Apothecary was shaking her head as they passed, saying, \"Dragon liver, seventeen Sickles an ounce, they're mad....\" \n\nA low, soft hooting came from a dark shop with a sign saying Eeylops Owl Emporium -- Tawny, Screech, Barn, Brown, and Snowy. Several boys of about Harry's age had their noses pressed against a window with broomsticks in it. \"Look,\" Harry heard one of them say, \"the new Nimbus Two Thousand -- fastest ever --\" There were shops selling robes, shops selling telescopes and strange silver instruments Harry had never seen before, windows stacked with barrels of bat spleens and eels' eyes, tottering piles of spell books, quills, and rolls of parchment, potion bottles, globes of the moon.... \n\n\"Gringotts,\" said Hagrid. \n\nThey had reached a snowy white building that towered over the other little shops.",
+      "approxWordCount": 239,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 2423,
+        "sourceWordEnd": 2661,
+        "sourceCharStart": 101568,
+        "sourceCharEnd": 103008
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch05_p011_q01",
+          "type": "multiple_choice",
+          "prompt": "Where did the archway shrink back to?",
+          "explanation": "The text says the archway shrank back 'into' a solid wall. The word 'into' shows movement!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "Into a solid wall",
+            "Out of a shop",
+            "Towards the sun"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch05_p011_q02",
+          "type": "true_false",
+          "prompt": "A woman was shaking her head when Harry and Hagrid passed by.",
+          "explanation": "The story says she 'was shaking her head as they passed'. This shows an action that was happening in the past.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Past Continuous",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch05_p011_q03",
+          "type": "multiple_choice",
+          "prompt": "What kind of building is Gringotts?",
+          "explanation": "The text says Gringotts is a 'snowy white building that towered over the other little shops.' The word 'that' gives us extra information about the building.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Defining Relative Clauses",
+          "options": [
+            "A dark shop where owls live",
+            "A snowy white building that is very tall",
+            "A small shop that sells cauldrons"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch05_p011_q04",
+          "type": "true_false",
+          "prompt": "Hagrid says they will get Harry's money first before buying a cauldron.",
+          "explanation": "Hagrid tells Harry they need a cauldron, but says 'we gotta get yer money first.' This is their plan for the future!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Future Forms",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch05_p012",
+      "pageNumber": 12,
+      "sourceText": "Standing beside its burnished bronze doors, wearing a uniform of scarlet and gold, was - \"Yeah, that's a goblin,\" said Hagrid quietly as they walked up the white stone steps toward him. The goblin was about a head shorter than Harry. \n\nHe had a swarthy, clever face, a pointed beard and, Harry noticed, very long fingers and feet. He bowed as they walked inside. Now they were facing a second pair of doors, silver this time, with words engraved upon them: Enter, stranger, but take heed Of what awaits the sin of greed, For those who take, but do not earn, Must pay most dearly in their turn. \n\nSo if you seek beneath our floors A treasure that was never yours, Thief, you have been warned, beware Of finding more than treasure there. \n\n\"Like I said, Yeh'd be mad ter try an' rob it,\" said Hagrid. \n\nA pair of goblins bowed them through the silver doors and they were in a vast marble hall. About a hundred more goblins were sitting on high stools behind a long counter, scribbling in large ledgers, weighing coins in brass scales, examining precious stones through eyeglasses. \n\nThere were too many doors to count leading off the hall, and yet more goblins were showing people in and out of these. Hagrid and Harry made for the counter. \n\n\"Morning,\" said Hagrid to a free goblin. \"We've come ter take some money outta Mr. Harry Potter's safe.\" \n\n\"You have his key, Sir?\"",
+      "approxWordCount": 245,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 2662,
+        "sourceWordEnd": 2906,
+        "sourceCharStart": 103009,
+        "sourceCharEnd": 104381
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch05_p012_q01",
+          "type": "multiple_choice",
+          "prompt": "What were the goblins doing in the marble hall?",
+          "explanation": "The story says the goblins were sitting on high stools behind a long counter.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "options": [
+            "They were sitting on high stools.",
+            "They were running outside.",
+            "They were sleeping on the floor."
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch05_p012_q02",
+          "type": "multiple_choice",
+          "prompt": "Hagrid and Harry walked up the white stone steps _____ the goblin.",
+          "explanation": "\"Toward\" means moving in the direction of someone or something.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "into",
+            "toward",
+            "out of"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch05_p012_q03",
+          "type": "true_false",
+          "prompt": "Hagrid tells the goblin, \"We have come to take some money.\"",
+          "explanation": "Hagrid uses the present perfect \"have come\" to show they are at the bank to get Harry's money.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Perfect",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch05_p012_q04",
+          "type": "multiple_choice",
+          "prompt": "The poem on the doors warns people _____ take things that are not theirs.",
+          "explanation": "We use \"who\" to give more information about people!",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Defining Relative Clauses",
+          "options": [
+            "who",
+            "where",
+            "which"
+          ],
+          "answerIndex": 0
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch05_p013",
+      "pageNumber": 13,
+      "sourceText": "\"Got it here somewhere,\" said Hagrid, and he started emptying his pockets onto the counter, scattering a handful of moldy dog biscuits over the goblin's book of numbers. The goblin wrinkled his nose. Harry watched the goblin on their right weighing a pile of rubies as big as glowing coals. \n\n\"Got it,\" said Hagrid at last, holding up a tiny golden key. \n\nThe goblin looked at it closely. \n\n\"That seems to be in order.\" \n\n\"An' I've also got a letter here from Professor Dumbledore,\" said Hagrid importantly, throwing out his chest. \"It's about the YouKnow-What in vault seven hundred and thirteen.\" \n\nThe goblin read the letter carefully. \n\n\"Very well,\" he said, handing it back to Hagrid, \"I will have Someone take you down to both vaults. Griphook!\" \n\nGriphook was yet another goblin. Once Hagrid had crammed all the dog biscuits back inside his pockets, he and Harry followed Griphook toward one of the doors leading off the hall. \n\n\"What's the You-Know-What in vault seven hundred and thirteen?\" Harry asked. \n\n\"Can't tell yeh that,\" said Hagrid mysteriously. \"Very secret. Hogwarts business. Dumbledore's trusted me. More'n my job's worth ter tell yeh that.\" \n\nGriphook held the door open for them. Harry, who had expected more marble, was surprised. They were in a narrow stone passageway lit with flaming torches. It sloped steeply downward and there were little railway tracks on the floor. Griphook whistled and a small cart came hurtling up the tracks toward them.",
+      "approxWordCount": 243,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 2907,
+        "sourceWordEnd": 3149,
+        "sourceCharStart": 104384,
+        "sourceCharEnd": 105858
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch05_p013_q01",
+          "type": "multiple_choice",
+          "prompt": "What is Hagrid's letter from Professor Dumbledore about?",
+          "explanation": "Hagrid says the letter is about the You-Know-What in vault seven hundred and thirteen.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Like & About",
+          "options": [
+            "A. A golden key",
+            "B. The You-Know-What",
+            "C. Dog biscuits"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch05_p013_q02",
+          "type": "true_false",
+          "prompt": "Read this sentence: 'Harry, who had expected more marble, was surprised.' The word 'who' gives us more information about Harry.",
+          "explanation": "We use 'who' to give extra information about a person. Here, it tells us what Harry was thinking!",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Defining Relative Clauses",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch05_p013_q03",
+          "type": "multiple_choice",
+          "prompt": "The story says a small cart came hurtling up the tracks 'toward' them. What does 'toward' mean?",
+          "explanation": "The preposition 'toward' shows movement in the direction of someone or something.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. In their direction",
+            "B. Away from them",
+            "C. Underneath them"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch05_p013_q04",
+          "type": "true_false",
+          "prompt": "The goblin says, 'I will have Someone take you down.' This means the action is happening right now.",
+          "explanation": "The word 'will' is used to talk about the future, so it will happen soon, not right now.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Future Forms",
+          "answer": false
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch05_p014",
+      "pageNumber": 14,
+      "sourceText": "They climbed in -- Hagrid with some difficulty -- and were off. \n\nAt first they just hurtled through a maze of twisting passages. Harry tried to remember, left, right, right, left, middle fork, right, left, but it was impossible. The rattling cart seemed to know its own way, because Griphook wasn't steering. \n\nHarry's eyes stung as the cold air rushed past them, but he kept them wide open. Once, he thought he saw a burst of fire at the end of a passage and twisted around to see if it was a dragon, but too late - - they plunged even deeper, passing an underground lake where huge stalactites and stalagmites grew from the ceiling and floor. \n\nI never know,\" Harry called to Hagrid over the noise of the cart, \"what's the difference between a stalagmite and a stalactite?\" \n\n\"Stalagmite's got an 'm' in it,\" said Hagrid. \"An' don' ask me questions just now, I think I'm gonna be sick.\" \n\nHe did look very green, and when the cart stopped at last beside a small door in the passage wall, Hagrid got out and had to lean against the wall to stop his knees from trembling. \n\nGriphook unlocked the door. A lot of green smoke came billowing out, and as it cleared, Harry gasped. Inside were mounds of gold coins. Columns of silver. Heaps of little bronze Knuts. \n\n\"All yours,\" smiled Hagrid. \n\nAll Harry's -- it was incredible.",
+      "approxWordCount": 238,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 3150,
+        "sourceWordEnd": 3387,
+        "sourceCharStart": 105859,
+        "sourceCharEnd": 107184
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch05_p014_q01",
+          "type": "true_false",
+          "prompt": "Griphook wasn't steering the cart.",
+          "explanation": "The text says the cart knew its own way because Griphook wasn't steering.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch05_p014_q02",
+          "type": "multiple_choice",
+          "prompt": "Where did the green smoke go when Griphook unlocked the door?",
+          "explanation": "The text says a lot of green smoke came billowing out of the door.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "It went into the cart.",
+            "It came billowing out.",
+            "It went towards the lake."
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch05_p014_q03",
+          "type": "multiple_choice",
+          "prompt": "Why did Hagrid have to lean against the wall?",
+          "explanation": "Hagrid felt sick from the ride and had to lean on the wall to stop his knees from shaking.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Obligation & Possibility",
+          "options": [
+            "To look at the gold coins.",
+            "To stop his knees from trembling.",
+            "To open the small door."
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch05_p014_q04",
+          "type": "multiple_choice",
+          "prompt": "Hagrid says, 'I think I'm gonna be sick.' What does this mean?",
+          "explanation": "'I'm gonna' means 'I am going to'. We use this to talk about something that will happen soon!",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Future Forms",
+          "options": [
+            "He is sick every day.",
+            "He was sick yesterday.",
+            "He is going to be sick soon."
+          ],
+          "answerIndex": 2
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch05_p015",
+      "pageNumber": 15,
+      "sourceText": "The Dursleys couldn't have known about this or they'd have had it from him faster than blinking. How often had they complained how much Harry cost them to keep? And all the time there had been a small fortune belonging to him, buried deep under London. \n\nHagrid helped Harry pile some of it into a bag. \n\n\"The gold ones are Galleons,\" he explained. \"Seventeen silver Sickles to a Galleon and twenty-nine Knuts to a Sickle, it's easy enough. Right, that should be enough fer a couple o' terms, we'll keep the rest safe for yeh.\" He turned to Griphook. \"Vault seven hundred and thirteen now, please, and can we go more slowly?\" \n\n\"One speed only,\" said Griphook. \n\nThey were going even deeper now and gathering speed. The air became colder and colder as they hurtled round tight corners. They went rattling over an underground ravine, and Harry leaned over the side to try to see what was down at the dark bottom, but Hagrid groaned and pulled him back by the scruff of his neck. \n\nVault seven hundred and thirteen had no keyhole. \n\n\"Stand back,\" said Griphook importantly. He stroked the door gently with one of his long fingers and it simply melted away. \n\n\"If anyone but a Gringotts goblin tried that, they'd be sucked through the door and trapped in there,\" said Griphook. \n\n\"How often do you check to see if anyone's inside?\" Harry asked. \n\n\"About once every ten years,\" said Griphook with a rather nasty grin.",
+      "approxWordCount": 248,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 3388,
+        "sourceWordEnd": 3635,
+        "sourceCharStart": 107185,
+        "sourceCharEnd": 108598
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch05_p015_q01",
+          "type": "multiple_choice",
+          "prompt": "Where did Hagrid help Harry put the gold?",
+          "explanation": "The story says Hagrid helped Harry pile some of the money into a bag. 'Into' shows movement to the inside of something.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "Into a bag",
+            "Out of a box",
+            "Towards a door"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch05_p015_q02",
+          "type": "true_false",
+          "prompt": "Harry asks Griphook how often he checks the vault.",
+          "explanation": "Harry asks, 'How often do you check...?' This asks about a routine or habit.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch05_p015_q03",
+          "type": "multiple_choice",
+          "prompt": "What does Griphook say when Harry asks how often they check the vault?",
+          "explanation": "Griphook says 'About once every ten years.' Here, 'about' means around or close to that time.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Like & About",
+          "options": [
+            "About once every ten years",
+            "Exactly every ten years",
+            "About once a year"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch05_p015_q04",
+          "type": "true_false",
+          "prompt": "Hagrid says they will keep the rest of Harry's money safe.",
+          "explanation": "Hagrid says 'we'll keep the rest safe,' which is short for 'we will keep.'",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Future Forms",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch05_p016",
+      "pageNumber": 16,
+      "sourceText": "Something really extraordinary had to be inside this top security vault, Harry was sure, and he leaned forward eagerly, expecting to see fabulous jewels at the very least -- but at first he thought it was empty. Then he noticed a grubby little package wrapped up in brown paper lying on the floor. Hagrid picked it up and tucked it deep inside his coat. Harry longed to know what it was, but knew better than to ask. \n\n\"Come on, back in this infernal cart, and don't talk to me on the way back, it's best if I keep me mouth shut,\" said Hagrid. \n\nOne wild cart ride later they stood blinking in the sunlight outside Gringotts. Harry didn't know where to run first now that he had a bag full of money. He didn't have to know how many Galleons there were to a pound to know that he was holding more money than he'd had in his whole life -- more money than even Dudley had ever had. \n\n\"Might as well get yer uniform,\" said Hagrid, nodding toward Madam Malkin's Robes for All Occasions. \"Listen, Harry, would yeh mind if I slipped off fer a pick-me-up in the Leaky Cauldron? I hate them Gringotts carts.\" He did still look a bit sick, so Harry entered Madam Malkin's shop alone, feeling nervous. \n\nMadam Malkin was a squat, smiling witch dressed all in mauve. \n\n\"Hogwarts, clear?\" she said, when Harry started to speak.",
+      "approxWordCount": 242,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 3636,
+        "sourceWordEnd": 3877,
+        "sourceCharStart": 108601,
+        "sourceCharEnd": 109915
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch05_p016_q01",
+          "type": "multiple_choice",
+          "prompt": "Where did Hagrid put the little package?",
+          "explanation": "Hagrid picked up the package and tucked it deep inside (into) his coat.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "Into his coat",
+            "Out of the bank",
+            "Towards the door"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch05_p016_q02",
+          "type": "true_false",
+          "prompt": "Hagrid likes riding in the Gringotts carts.",
+          "explanation": "Hagrid says 'I hate them Gringotts carts' and looks a bit sick.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "answer": false
+        },
+        {
+          "id": "hp_ep1_ch05_p016_q03",
+          "type": "multiple_choice",
+          "prompt": "Who is Madam Malkin?",
+          "explanation": "Madam Malkin is a witch who makes uniforms and robes for all occasions.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Defining Relative Clauses",
+          "options": [
+            "A witch who drives carts",
+            "A witch who sells robes",
+            "A witch who works at the bank"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch05_p016_q04",
+          "type": "true_false",
+          "prompt": "Harry had to count all his money to know he was rich.",
+          "explanation": "The story says he didn't have to know exactly how much money he had to know he was holding a lot of it!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Obligation & Possibility",
+          "answer": false
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch05_p017",
+      "pageNumber": 17,
+      "sourceText": "\"Got the lot here -- another young man being fitted up just now, in fact. � \n\nIn the back of the shop, a boy with a pale, pointed face was standing on a footstool while a second witch pinned up his long black robes. Madam Malkin stood Harry on a stool next to him) slipped a long robe over his head, and began to pin it to the right length. \n\n\"Hello,\" said the boy, \"Hogwarts, too?\" \n\n\"Yes,\" said Harry. \n\n\"My father's next door buying my books and mother's up the street looking at wands,\" said the boy. He had a bored, drawling voice. \"Then I'm going to drag them off to took at racing brooms. I don't see why first years can't have their own. I think I'll bully father into getting me one and I'll smuggle it in somehow.\" \n\nHarry was strongly reminded of Dudley. \n\n\"Have you got your own broom?\" the boy went on. \n\n\"No,\" said Harry. \n\n\"Play Quidditch at all?\" \n\n\"No,\" Harry said again, wondering what on earth Quidditch could be. \n\n\"I do -- Father says it's a crime if I'm not picked to play for my house, and I must say, I agree. Know what house you'll be in yet?\" \n\n\"No,\" said Harry, feeling more stupid by the minute. \n\n\"Well, no one really knows until they get there, do they, but I know I'll be in Slytherin, all our family have been -- imagine being in Hufflepuff, I think I'd leave, wouldn't you?\"",
+      "approxWordCount": 247,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 3878,
+        "sourceWordEnd": 4124,
+        "sourceCharStart": 109916,
+        "sourceCharEnd": 111223
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch05_p017_q01",
+          "type": "true_false",
+          "prompt": "The boy with the pale face was sitting on a chair when Harry saw him.",
+          "explanation": "The story says he was standing on a footstool, not sitting. We use 'was standing' for an action happening in the past.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "answer": false
+        },
+        {
+          "id": "hp_ep1_ch05_p017_q02",
+          "type": "multiple_choice",
+          "prompt": "What is the pale boy planning to do next?",
+          "explanation": "The boy says, 'I'm going to drag them off to look at racing brooms.' We use 'going to' to talk about planned actions!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Future Forms",
+          "options": [
+            "He is going to buy a wand.",
+            "He is going to look at racing brooms.",
+            "He is going to play Quidditch."
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch05_p017_q03",
+          "type": "multiple_choice",
+          "prompt": "The boy says, 'no one really knows until they get there, do they'. Why does he add 'do they' at the end?",
+          "explanation": "'Do they?' is a tag question. We use it to check information or ask if someone agrees with us!",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Tag Questions",
+          "options": [
+            "To ask if Harry agrees.",
+            "To say no to Harry.",
+            "To talk about the past."
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch05_p017_q04",
+          "type": "true_false",
+          "prompt": "Madam Malkin slipped a long robe over Harry's head.",
+          "explanation": "Yes! The word 'over' is a preposition that shows the direction the robe moved.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Prepositions of Direction",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch05_p018",
+      "pageNumber": 18,
+      "sourceText": "\"Mmm,\" said Harry, wishing he could say something a bit more interesting. \n\n\"I say, look at that man!\" said the boy suddenly, nodding toward the front window. Hagrid was standing there, grinning at Harry and pointing at two large ice creams to show he couldn't come in. \n\n\"That's Hagrid,\" said Harry, pleased to know something the boy didn't. \n\n\"He works at Hogwarts.\" \n\n\"Oh,\" said the boy, \"I've heard of him. He's a sort of servant, isn't he?\" \n\n\"He's the gamekeeper,\" said Harry. He was liking the boy less and less every second. \n\n\"Yes, exactly. I heard he's a sort of savage -- lives in a hut on the school grounds and every now and then he gets drunk, tries to do magic, and ends up setting fire to his bed.\" \n\n\"I think he's brilliant,\" said Harry coldly. \n\n\"Do you?\" said the boy, with a slight sneer. \"Why is he with you? Where are your parents?\" \n\n\"They're dead,\" said Harry shortly. He didn't feel much like going into the matter with this boy. \n\n\"Oh, sorry,\" said the other,. not sounding sorry at all. \"But they were our kind, weren't they?\" \n\n\"They were a witch and wizard, if that's what you mean.\" \n\n\"I really don't think they should let the other sort in, do you? They're just not the same, they've never been brought up to know our ways. Some of them have never even heard of Hogwarts until they get the letter, imagine.",
+      "approxWordCount": 242,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 4125,
+        "sourceWordEnd": 4366,
+        "sourceCharStart": 111224,
+        "sourceCharEnd": 112561
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch05_p018_q01",
+          "type": "multiple_choice",
+          "prompt": "The boy says, \"But they were our kind, weren't they?\" Why does he add \"weren't they?\" at the end?",
+          "explanation": "\"Weren't they?\" is a tag question used to check information or ask for agreement.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Tag Questions",
+          "options": [
+            "A. To check information",
+            "B. To make a polite offer",
+            "C. To talk about the future"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch05_p018_q02",
+          "type": "multiple_choice",
+          "prompt": "The boy nods \"toward the front window.\" What does \"toward\" mean here?",
+          "explanation": "\"Toward\" is a preposition that means looking or moving in the direction of something.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. In the direction of the window",
+            "B. Moving outside the window",
+            "C. Starting from the window"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch05_p018_q03",
+          "type": "true_false",
+          "prompt": "Hagrid was standing outside the window and pointing at two large ice creams.",
+          "explanation": "The text says Hagrid was standing there and pointing at two large ice creams to show he couldn't come in.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch05_p018_q04",
+          "type": "true_false",
+          "prompt": "The boy says some people \"have never even heard of Hogwarts.\" This means they already know everything about it.",
+          "explanation": "If you \"have never heard of\" something, it means you have no experience with it and do not know about it at all.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Present Perfect",
+          "answer": false
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch05_p019",
+      "pageNumber": 19,
+      "sourceText": "I think they should keep it in the old wizarding families. \n\nWhat's your surname, anyway?\" \n\nBut before Harry could answer, Madam Malkin said, \"That's you done, my dear,\" and Harry, not sorry for an excuse to stop talking to the boy, hopped down from the footstool. \n\n\"Well, I'll see you at Hogwarts, I suppose,\" said the drawling boy. \n\nHarry was rather quiet as he ate the ice cream Hagrid had bought him (chocolate and raspberry with chopped nuts). \n\n\"What's up?\" said Hagrid. \n\n\"Nothing,\" Harry lied. They stopped to buy parchment and quills. Harry cheered up a bit when he found a bottle of ink that changed color as you wrote. When they had left the shop, he said, \"Hagrid, what's Quidditch?\" \n\n\"Blimey, Harry, I keep forgettin' how little yeh know -- not knowin' about Quidditch!\" \n\n\"Don't make me feel worse,\" said Harry. He told Hagrid about the pate boy in Madam Malkin's. \n\n\"--and he said people from Muggle families shouldn't even be allowed in.\" \n\n\"Yer not from a Muggle family. If he'd known who yeh were -- he's grown up knowin' yer name if his parents are wizardin' folk. You saw what everyone in the Leaky Cauldron was like when they saw yeh. Anyway, what does he know about it, some o' the best I ever saw were the only ones with magic in 'em in a long line 0' Muggles -- look at yer mum! Look what she had fer a sister!\" \n\n\"So what is Quidditch?\" \n\n\"It's our sport.",
+      "approxWordCount": 250,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 4367,
+        "sourceWordEnd": 4616,
+        "sourceCharStart": 112562,
+        "sourceCharEnd": 113946
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch05_p019_q01",
+          "type": "true_false",
+          "prompt": "Harry found a bottle of ink that changed color. The word 'that' tells us more about the ink.",
+          "explanation": "We use 'that' to give extra information about a thing, like the bottle of ink!",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Defining Relative Clauses",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch05_p019_q02",
+          "type": "multiple_choice",
+          "prompt": "Harry told Hagrid _____ the pale boy.",
+          "explanation": "We use 'about' to show the topic we are talking or telling someone about.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Like & About",
+          "options": [
+            "A. about",
+            "B. like",
+            "C. into"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch05_p019_q03",
+          "type": "true_false",
+          "prompt": "The pale boy says he will see Harry at Hogwarts.",
+          "explanation": "The boy says 'I'll see you at Hogwarts', which means he plans to see him there in the future.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Future Forms",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch05_p019_q04",
+          "type": "multiple_choice",
+          "prompt": "What is Quidditch?",
+          "explanation": "Hagrid tells Harry that Quidditch is their sport.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "options": [
+            "A. A magic wand",
+            "B. A wizard sport",
+            "C. A type of ice cream"
+          ],
+          "answerIndex": 1
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch05_p020",
+      "pageNumber": 20,
+      "sourceText": "Wizard sport. It's like -- like soccer in the Muggle world -- everyone follows Quidditch -- played up in the air on broomsticks and there's four balls -- sorta hard ter explain the rules.\" \n\n\"And what are Slytherin and Hufflepuff?\" \n\n\"School houses. There's four. Everyone says Hufflepuff are a lot o' duffers, but --\" \n\n\"I bet I'm in Hufflepuff\" said Harry gloomily. \n\n\"Better Hufflepuff than Slytherin,\" said Hagrid darkly. \"There's not a single witch or wizard who went bad who wasn't in Slytherin. \n\nYou-Know-Who was one.\" \n\n\"Vol-, sorry - You-Know-Who was at Hogwarts?\" \n\n\"Years an' years ago,\" said Hagrid. \n\nThey bought Harry's school books in a shop called Flourish and Blotts where the shelves were stacked to the ceiling with books as large as paving stones bound in leather; books the size of postage stamps in covers of silk; books full of peculiar symbols and a few books with nothing in them at all. Even Dudley, who never read anything, would have been wild to get his hands on some of these. Hagrid almost had to drag Harry away from Curses and Countercurses (Bewitch Your Friends and Befuddle Your Enemies with the Latest Revenges: Hair Loss, Jelly-Legs, Tongue- Tying and Much, Much More) by Professor Vindictus Viridian. \n\n\"I was trying to find out how to curse Dudley.\" \n\n\"I'm not sayin' that's not a good idea, but yer not ter use magic in the Muggle world except in very special circumstances,\" said Hagrid.",
+      "approxWordCount": 242,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 4617,
+        "sourceWordEnd": 4858,
+        "sourceCharStart": 113947,
+        "sourceCharEnd": 115376
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch05_p020_q01",
+          "type": "true_false",
+          "prompt": "Hagrid says the wizard sport Quidditch is like soccer.",
+          "explanation": "Hagrid uses the word 'like' to show that Quidditch and soccer are similar sports.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Like & About",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch05_p020_q02",
+          "type": "multiple_choice",
+          "prompt": "Who is the boy that never reads anything?",
+          "explanation": "The story says 'Dudley, who never read anything'. The word 'who' gives us extra information about Dudley.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Defining Relative Clauses",
+          "options": [
+            "A. Harry",
+            "B. Dudley",
+            "C. Hagrid"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch05_p020_q03",
+          "type": "multiple_choice",
+          "prompt": "What was Harry doing when Hagrid pulled him away from the book?",
+          "explanation": "Harry says, 'I was trying to find out how to curse Dudley.' This shows an action that was happening in the past.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "options": [
+            "A. He was trying to find a curse.",
+            "B. He was playing soccer.",
+            "C. He was buying a broomstick."
+          ],
+          "answerIndex": 0
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch05_p021",
+      "pageNumber": 21,
+      "sourceText": "\"An' anyway, yeh couldn' work any of them curses yet, yeh'll need a lot more study before yeh get ter that level.\" \n\nHagrid wouldn't let Harry buy a solid gold cauldron, either (\"It says pewter on yer list\"), but they got a nice set of scales for weighing potion ingredients and a collapsible brass telescope. Then they visited the Apothecary, which was fascinating enough to make up for its horrible smell, a mixture of bad eggs and rotted cabbages. Barrels of slimy stuff stood on the floor; jars of herbs, dried roots, and bright powders lined the walls; bundles of feathers, strings of fangs, and snarled claws hung from the ceiling. While Hagrid asked the man behind the counter for a supply of some basic potion ingredients for Harry, Harry himself examined silver unicorn horns at twenty-one Galleons each and minuscule, glittery-black beetle eyes (five Knuts a scoop). \n\nOutside the Apothecary, Hagrid checked Harry's list again. \n\n\"Just yer wand left - A yeah, an' I still haven't got yeh a birthday present.\" \n\nHarry felt himself go red. \n\n\"You don't have to --\" \n\n\"I know I don't have to. Tell yeh what, I'll get yer animal. Not a toad, toads went outta fashion years ago, yeh'd be laughed at - an' I don' like cats, they make me sneeze. I'll get yer an owl. All the kids want owls, they're dead useful, carry yer mail an' everythin'.\"",
+      "approxWordCount": 236,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 4859,
+        "sourceWordEnd": 5094,
+        "sourceCharStart": 115377,
+        "sourceCharEnd": 116723
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch05_p021_q01",
+          "type": "true_false",
+          "prompt": "Harry tells Hagrid that he doesn't have to buy him a birthday present.",
+          "explanation": "Harry says 'You don't have to' when Hagrid talks about a present. We use 'have to' to talk about things we must do!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Obligation & Possibility",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch05_p021_q02",
+          "type": "multiple_choice",
+          "prompt": "What animal will Hagrid get for Harry?",
+          "explanation": "Hagrid says 'I'll get yer an owl.' He uses 'will' (I'll) to make a quick decision about the gift!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Future Forms",
+          "options": [
+            "A. A toad",
+            "B. A cat",
+            "C. An owl"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": "hp_ep1_ch05_p021_q03",
+          "type": "multiple_choice",
+          "prompt": "Why doesn't Hagrid want to buy a cat?",
+          "explanation": "Hagrid says 'they make me sneeze.' We use the Present Simple tense to talk about general facts like this!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "options": [
+            "A. They are too small.",
+            "B. They make him sneeze.",
+            "C. They are out of fashion."
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch05_p021_q04",
+          "type": "true_false",
+          "prompt": "The Apothecary is a shop which smells like bad eggs and rotted cabbages.",
+          "explanation": "The text says the shop has a horrible smell of bad eggs and cabbages. We use 'which' to give more information about a thing!",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Defining Relative Clauses",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch05_p022",
+      "pageNumber": 22,
+      "sourceText": "Twenty minutes later, they left Eeylops Owl Emporium, which had been dark and full of rustling and flickering, jewel-bright eyes. Harry now carried a large cage that held a beautiful snowy owl, fast asleep with her head under her wing. He couldn't stop stammering his thanks, sounding just like Professor Quirrell. \n\n\"Don' mention it,\" said Hagrid gruffly. \"Don' expect you've had a lotta presents from them Dursleys. Just Ollivanders left now - only place fer wands, Ollivanders, and yeh gotta have the best wand.\" \n\nA magic wand... this was what Harry had been really looking forward to. \n\nThe last shop was narrow and shabby. Peeling gold letters over the door read Ollivanders: Makers of Fine Wands since 382 B.C. A single wand lay on a faded purple cushion in the dusty window. \n\nA tinkling bell rang somewhere in the depths of the shop as they stepped inside. It was a tiny place, empty except for a single, spindly chair that Hagrid sat on to wait. Harry felt strangely as though he had entered a very strict library; he swallowed a lot of new questions that had just occurred to him and looked instead at the thousands of narrow boxes piled neatly right up to the ceiling. For some reason, the back of his neck prickled. The very dust and silence in here seemed to tingle with some secret magic. \n\n\"Good afternoon,\" said a soft voice. Harry jumped.",
+      "approxWordCount": 237,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 5095,
+        "sourceWordEnd": 5331,
+        "sourceCharStart": 116726,
+        "sourceCharEnd": 118082
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch05_p022_q01",
+          "type": "multiple_choice",
+          "prompt": "Harry sounded _____ Professor Quirrell when he said thank you.",
+          "explanation": "We use 'like' to show that two things or people are similar. Harry sounded similar to Professor Quirrell!",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Like & About",
+          "options": [
+            "A. like",
+            "B. about",
+            "C. into"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch05_p022_q02",
+          "type": "true_false",
+          "prompt": "The cage that Harry carried held a beautiful snowy owl.",
+          "explanation": "The text says Harry carried a large cage that held a snowy owl. The word 'that' gives us more information about the cage!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Defining Relative Clauses",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch05_p022_q03",
+          "type": "multiple_choice",
+          "prompt": "Where did Harry and Hagrid step when the bell rang?",
+          "explanation": "They stepped inside the shop, which means they moved into it!",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. Out of the shop",
+            "B. Into the shop",
+            "C. Towards the owl"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch05_p022_q04",
+          "type": "multiple_choice",
+          "prompt": "Hagrid tells Harry that he _____ have the best wand.",
+          "explanation": "Hagrid says Harry 'gotta have' (has to have) the best wand. This shows it is something he needs to do!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Obligation & Possibility",
+          "options": [
+            "A. has to",
+            "B. might",
+            "C. doesn't have to"
+          ],
+          "answerIndex": 0
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch05_p023",
+      "pageNumber": 23,
+      "sourceText": "Hagrid must have jumped, too, because there was a loud crunching noise and he got quickly off the spindly chair. \n\nAn old man was standing before them, his wide, pale eyes shining like moons through the gloom of the shop. \n\n\"Hello,\" said Harry awkwardly. \n\n\"Ah yes,\" said the man. \"Yes, yes. I thought I'd be seeing you soon. \n\nHarry Potter.\" It wasn't a question. \"You have your mother's eyes. It seems only yesterday she was in here herself, buying her first wand. Ten and a quarter inches long, swishy, made of willow. Nice wand for charm work.\" \n\nMr. Ollivander moved closer to Harry. Harry wished he would blink. Those silvery eyes were a bit creepy. \n\n\"Your father, on the other hand, favored a mahogany wand. Eleven inches. \n\nPliable. A little more power and excellent for transfiguration. Well, I say your father favored it -- it's really the wand that chooses the wizard, of course.\" \n\nMr. Ollivander had come so close that he and Harry were almost nose to nose. Harry could see himself reflected in those misty eyes. \n\n\"And that's where...\" \n\nMr. Ollivander touched the lightning scar on Harry's forehead with a long, white finger. \n\n\"I'm sorry to say I sold the wand that did it,\" he said softly. \n\n\"Thirteen-and-a-half inches. Yew. Powerful wand, very powerful, and in the wrong hands... well, if I'd known what that wand was going out into the world to do....\" \n\nHe shook his head and then, to Harry's relief, spotted Hagrid. \n\n\"Rubeus! Rubeus Hagrid!",
+      "approxWordCount": 250,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 5332,
+        "sourceWordEnd": 5581,
+        "sourceCharStart": 118083,
+        "sourceCharEnd": 119547
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch05_p023_q01",
+          "type": "multiple_choice",
+          "prompt": "The old man's eyes were \"shining like moons.\" What does this mean?",
+          "explanation": "We use the word \"like\" to show that two things look similar.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Like & About",
+          "options": [
+            "A. They looked similar to moons.",
+            "B. They were talking about moons.",
+            "C. They were looking at the moon."
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch05_p023_q02",
+          "type": "true_false",
+          "prompt": "The old man was standing before Harry and Hagrid.",
+          "explanation": "The story says, \"An old man was standing before them.\" This describes an action happening in the past.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch05_p023_q03",
+          "type": "multiple_choice",
+          "prompt": "Complete Mr. Ollivander's sentence: \"It's really the wand ______ chooses the wizard.\"",
+          "explanation": "We use \"that\" to give more information about a thing, like a wand!",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Defining Relative Clauses",
+          "options": [
+            "A. who",
+            "B. that",
+            "C. where"
+          ],
+          "answerIndex": 1
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch05_p024",
+      "pageNumber": 24,
+      "sourceText": "How nice to see you again.... Oak, sixteen inches, rather bendy, wasn't it?\" \n\n\"It was, sir, yes,\" said Hagrid. \n\n\"Good wand, that one. But I suppose they snapped it in half when you got expelled?\" said Mr. Ollivander, suddenly stern. \n\n\"Er -- yes, they did, yes,\" said Hagrid, shuffling his feet. \"I've still got the pieces, though,\" he added brightly. \n\n\"But you don't use them?\" said Mr. Ollivander sharply. \n\n\"Oh, no, sit,\" said Hagrid quickly. Harry noticed he gripped his pink umbrella very tightly as he spoke. \n\n\"Hmmm,\" said Mr. Ollivander, giving Hagrid a piercing look. \"Well, now -- Mr. Potter. Let me see.\" He pulled a long tape measure with silver markings out of his pocket. \"Which is your wand arm?\" \n\n\"Er -- well, I'm right-handed,\" said Harry. \n\n\"Hold out your arm. That's it.\" He measured Harry from shoulder to finger, then wrist to elbow, shoulder to floor, knee to armpit and round his head. As he measured, he said, \"Every Ollivander wand has a core of a powerful magical substance, Mr. Potter. We use unicorn hairs, phoenix tail feathers, and the heartstrings of dragons. No two Ollivander wands are the same, just as no two unicorns, dragons, or phoenixes are quite the same. And of course, you will never get such good results with another wizard's wand.\" \n\nHarry suddenly realized that the tape measure, which was measuring between his nostrils, was doing this on its own. Mr. Ollivander was flitting around the shelves, taking down boxes.",
+      "approxWordCount": 248,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 5582,
+        "sourceWordEnd": 5829,
+        "sourceCharStart": 119548,
+        "sourceCharEnd": 121013
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch05_p024_q01",
+          "type": "true_false",
+          "prompt": "Mr. Ollivander says, \"Oak, sixteen inches, rather bendy, wasn't it?\" He uses \"wasn't it?\" to check if he remembers Hagrid's wand correctly.",
+          "explanation": "He uses a tag question at the end of the sentence to check information.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Tag Questions",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch05_p024_q02",
+          "type": "multiple_choice",
+          "prompt": "Where does Mr. Ollivander pull the tape measure from?",
+          "explanation": "The text says he pulled the tape measure \"out of his pocket,\" which shows movement outside.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. Into his pocket",
+            "B. Out of his pocket",
+            "C. Towards his pocket"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch05_p024_q03",
+          "type": "multiple_choice",
+          "prompt": "What do they use inside the wands?",
+          "explanation": "Mr. Ollivander says they use unicorn hairs, phoenix tail feathers, and the heartstrings of dragons.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "options": [
+            "A. Only dragon heartstrings",
+            "B. Unicorn hairs, phoenix feathers, and dragon heartstrings",
+            "C. Pieces of Hagrid's pink umbrella"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch05_p024_q04",
+          "type": "multiple_choice",
+          "prompt": "What was the tape measure doing on its own?",
+          "explanation": "Harry realized the tape measure was measuring between his nostrils all by itself!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "options": [
+            "A. It was measuring Harry.",
+            "B. It was taking down boxes.",
+            "C. It was talking to Hagrid."
+          ],
+          "answerIndex": 0
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch05_p025",
+      "pageNumber": 25,
+      "sourceText": "\"That will do,\" he said, and the tape measure crumpled into a heap on the floor. \"Right then, Mr. Potter. Try this one. Beechwood and dragon heartstring. Nine inches. Nice and flexible. just take it and give it a wave.\" \n\nHarry took the wand and (feeling foolish) waved it around a bit, but Mr. Ollivander snatched it out of his hand almost at once. \n\n\"Maple and phoenix feather. Seven inches. Quite whippy. Try --\" \n\nHarry tried -- but he had hardly raised the wand when it, too, was snatched back by Mr. Ollivander. \n\n\"No, no -here, ebony and unicorn hair, eight and a half inches, springy. \n\nGo on, go on, try it out.\" \n\nHarry tried. And tried. He had no idea what Mr. Ollivander was waiting for. The pile of tried wands was mounting higher and higher on the spindly chair, but the more wands Mr. Ollivander pulled from the shelves, the happier he seemed to become. \n\n\"Tricky customer, eh? Not to worry, we'll find the perfect match here somewhere -- I wonder, now - - yes, why not -- unusual combination -- holly and phoenix feather, eleven inches, nice and supple.\" \n\nHarry took the wand. He felt a sudden warmth in his fingers. He raised the wand above his head, brought it swishing down through the dusty air and a stream of red and gold sparks shot from the end like a firework, throwing dancing spots of light on to the walls. Hagrid whooped and clapped and Mr.",
+      "approxWordCount": 249,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 5830,
+        "sourceWordEnd": 6078,
+        "sourceCharStart": 121016,
+        "sourceCharEnd": 122386
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch05_p025_q01",
+          "type": "true_false",
+          "prompt": "Mr. Ollivander thinks they will find the perfect wand for Harry.",
+          "explanation": "He says 'we'll find the perfect match', which means 'we will find' it!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Future Forms",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch05_p025_q02",
+          "type": "multiple_choice",
+          "prompt": "Where does Mr. Ollivander pull the wands from?",
+          "explanation": "The story says he pulled the wands from the shelves.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "From the shelves",
+            "Out of a box",
+            "Into a bag"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch05_p025_q03",
+          "type": "multiple_choice",
+          "prompt": "What did the sparks from the wand look like?",
+          "explanation": "The text says the sparks shot from the end 'like a firework'.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Like & About",
+          "options": [
+            "Like a firework",
+            "Like a dragon",
+            "Like a bird"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch05_p025_q04",
+          "type": "true_false",
+          "prompt": "The pile of tried wands was getting smaller and smaller.",
+          "explanation": "The pile of tried wands was mounting higher and higher!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "answer": false
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch05_p026",
+      "pageNumber": 26,
+      "sourceText": "Ollivander cried, \"Oh, bravo! Yes, indeed, oh, very good. Well, well, well... how curious... how very curious... � \n\nHe put Harry's wand back into its box and wrapped it in brown paper, still muttering, \"Curious... curious.. \n\n\"Sorry,\" said Harry, \"but what's curious?\" \n\nMr. Ollivander fixed Harry with his pale stare. \n\n\"I remember every wand I've ever sold, Mr. Potter. Every single wand. It so happens that the phoenix whose tail feather is in your wand, gave another feather -- just one other. It is very curious indeed that you should be destined for this wand when its brother why, its brother gave you that scar.\" \n\nHarry swallowed. \n\n\"Yes, thirteen-and-a-half inches. Yew. Curious indeed how these things happen. The wand chooses the wizard, remember.... I think we must expect great things from you, Mr. Potter.... After all, He- Who-Must-Not-Be-Named did great things -- terrible, yes, but great.\" \n\nHarry shivered. He wasn't sure he liked Mr. Ollivander too much. He paid seven gold Galleons for his wand, and Mr. Ollivander bowed them from his shop. \n\nThe late afternoon sun hung low in the sky as Harry and Hagrid made their way back down Diagon Alley, back through the wall, back through the Leaky Cauldron, now empty. Harry didn't speak at all as they walked down the road; he didn't even notice how much people were gawking at them on the Underground, laden as they were with all their funny-shaped packages, with the snowy owl asleep in its cage on Harry's lap.",
+      "approxWordCount": 249,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 6079,
+        "sourceWordEnd": 6327,
+        "sourceCharStart": 122387,
+        "sourceCharEnd": 123866
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch05_p026_q01",
+          "type": "true_false",
+          "prompt": "Mr. Ollivander has forgotten many of the wands he has sold.",
+          "explanation": "He tells Harry, \"I remember every wand I've ever sold.\"",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Perfect",
+          "answer": false
+        },
+        {
+          "id": "hp_ep1_ch05_p026_q02",
+          "type": "multiple_choice",
+          "prompt": "Where did Mr. Ollivander put Harry's new wand?",
+          "explanation": "The story says he put the wand \"back into its box\" before wrapping it.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. Into its box",
+            "B. Out of the window",
+            "C. Towards the door"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch05_p026_q03",
+          "type": "true_false",
+          "prompt": "Mr. Ollivander says that the wand chooses the wizard.",
+          "explanation": "He tells Harry, \"The wand chooses the wizard, remember.\"",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch05_p026_q04",
+          "type": "multiple_choice",
+          "prompt": "What were the people doing on the Underground?",
+          "explanation": "The text says people \"were gawking\" (staring or looking) at them because of their funny packages and the owl.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "options": [
+            "A. They were sleeping.",
+            "B. They were looking at Harry and Hagrid.",
+            "C. They were talking loudly."
+          ],
+          "answerIndex": 1
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch05_p027",
+      "pageNumber": 27,
+      "sourceText": "Up another escalator, out into Paddington station; Harry only realized where they were when Hagrid tapped him on the shoulder. \n\n\"Got time fer a bite to eat before yer train leaves,\" he said. \n\nHe bought Harry a hamburger and they sat down on plastic seats to eat them. Harry kept looking around. Everything looked so strange, somehow. \n\n\"You all right, Harry? Yer very quiet,\" said Hagrid. \n\nHarry wasn't sure he could explain. He'd just had the best birthday of his life -- and yet -- he chewed his hamburger, trying to find the words. \n\n\"Everyone thinks I'm special,\" he said at last. \"All those people in the Leaky Cauldron, Professor Quirrell, Mr. Ollivander... but I don't know anything about magic at all. How can they expect great things? I'm famous and I can't even remember what I'm famous for. I don't know what happened when Vol-, sorry -- I mean, the night my parents died.\" \n\nHagrid leaned across the table. Behind the wild beard and eyebrows he wore a very kind smile. \n\n\"Don' you worry, Harry. You'll learn fast enough. Everyone starts at the beginning at Hogwarts, you'll be just fine. just be yerself. I know it's hard. Yeh've been singled out, an' that's always hard. But yeh'll have a great time at Hogwarts -- I did -- still do, 'smatter of fact.\" \n\nHagrid helped Harry on to the train that would take him back to the Dursleys, then handed him an envelope. \n\n\"Yer ticket fer Hogwarts, \" he said.",
+      "approxWordCount": 250,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 6328,
+        "sourceWordEnd": 6577,
+        "sourceCharStart": 123867,
+        "sourceCharEnd": 125283
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch05_p027_q01",
+          "type": "multiple_choice",
+          "prompt": "Where did Harry and Hagrid go after going up the escalator?",
+          "explanation": "The story says they went 'out into Paddington station'. 'Into' is a preposition that shows direction!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "Out into Paddington station",
+            "Into the Leaky Cauldron",
+            "Towards Hogwarts"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch05_p027_q02",
+          "type": "multiple_choice",
+          "prompt": "Harry says, 'I don't know anything _____ magic at all.' Which word is missing?",
+          "explanation": "Harry is talking about the topic of magic, so we use the word 'about'.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Like & About",
+          "options": [
+            "like",
+            "about",
+            "into"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch05_p027_q03",
+          "type": "true_false",
+          "prompt": "Hagrid tells Harry that he will learn fast and be just fine at Hogwarts.",
+          "explanation": "Hagrid says 'You'll learn fast enough' and 'you'll be just fine.' 'Will' is used to talk about the future!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Future Forms",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch05_p027_q04",
+          "type": "multiple_choice",
+          "prompt": "Hagrid helped Harry onto the train _____ would take him back to the Dursleys. Which word is missing?",
+          "explanation": "We use 'that' to give more information about a thing, like a train!",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Defining Relative Clauses",
+          "options": [
+            "who",
+            "where",
+            "that"
+          ],
+          "answerIndex": 2
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch05_p028",
+      "pageNumber": 28,
+      "sourceText": "\"First o' September -- King's Cross -- it's all on yer ticket. Any problems with the Dursleys, send me a letter with yer owl, she'll know where to find me.... See yeh soon, Harry.\" \n\nThe train pulled out of the station. Harry wanted to watch Hagrid until he was out of sight; he rose in his seat and pressed his nose against the window, but he blinked and Hagrid had gone.",
+      "approxWordCount": 71,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 6578,
+        "sourceWordEnd": 6648,
+        "sourceCharStart": 125284,
+        "sourceCharEnd": 125656
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch05_p028_q01",
+          "type": "multiple_choice",
+          "prompt": "Where did the train go?",
+          "explanation": "The story says 'The train pulled out of the station.' 'Out of' shows that the train is leaving!",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. Into the station",
+            "B. Out of the station",
+            "C. Towards the station"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch05_p028_q02",
+          "type": "true_false",
+          "prompt": "Hagrid says the owl will know where to find him.",
+          "explanation": "Hagrid says 'she'll know where to find me'. 'She'll' is short for 'she will'!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Future Forms",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch05_p028_q03",
+          "type": "multiple_choice",
+          "prompt": "What does Harry do to try and see Hagrid?",
+          "explanation": "The story says Harry 'pressed his nose against the window' to watch Hagrid.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "options": [
+            "A. He presses his nose against the window.",
+            "B. He opens the train door.",
+            "C. He runs out of the train."
+          ],
+          "answerIndex": 0
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    }
+  ]
+}

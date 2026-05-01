@@ -1,0 +1,182 @@
+{
+  "id": "harrypotter_episode1",
+  "title": "Harry Potter Episode 1 ESL Reading",
+  "version": 1,
+  "sourceTextIncluded": true,
+  "source": {
+    "privateSourcePath": "docs/requirements/study-materials/grade3/esl/stories/harrypotter-episode1.txt",
+    "sourceTextIncluded": true
+  },
+  "alignment": {
+    "reviewDoc": "docs/requirements/study-materials/grade3/esl/ESL-Review.md",
+    "topics": [
+      "Tag Questions",
+      "Would You Like",
+      "Present Simple",
+      "Present Continuous",
+      "Past Continuous",
+      "Present Perfect",
+      "Future Forms",
+      "Obligation & Possibility",
+      "Defining Relative Clauses",
+      "Like & About",
+      "Prepositions of Direction"
+    ]
+  },
+  "chapters": [
+    {
+      "chapterId": "chapter_01",
+      "chapterNumber": 1,
+      "title": "The Boy Who Lived",
+      "dateLabel": "1 November 1981",
+      "file": "chapters/chapter_01.json",
+      "pageCount": 20,
+      "questionCount": 77
+    },
+    {
+      "chapterId": "chapter_02",
+      "chapterNumber": 2,
+      "title": "The Vanishing Glass",
+      "dateLabel": "23 June 1991",
+      "file": "chapters/chapter_02.json",
+      "pageCount": 15,
+      "questionCount": 58
+    },
+    {
+      "chapterId": "chapter_03",
+      "chapterNumber": 3,
+      "title": "The Letters from No One",
+      "dateLabel": "23 July 1991",
+      "file": "chapters/chapter_03.json",
+      "pageCount": 17,
+      "questionCount": 63
+    },
+    {
+      "chapterId": "chapter_04",
+      "chapterNumber": 4,
+      "title": "The Keeper of the Keys",
+      "dateLabel": "31 July 1991",
+      "file": "chapters/chapter_04.json",
+      "pageCount": 16,
+      "questionCount": 58
+    },
+    {
+      "chapterId": "chapter_05",
+      "chapterNumber": 5,
+      "title": "Diagon Alley",
+      "dateLabel": "31 July 1991",
+      "file": "chapters/chapter_05.json",
+      "pageCount": 28,
+      "questionCount": 107
+    },
+    {
+      "chapterId": "chapter_06",
+      "chapterNumber": 6,
+      "title": "The Journey from Platform Nine and Three-Quarters",
+      "dateLabel": "1 August 1991",
+      "file": "chapters/chapter_06.json",
+      "pageCount": 27,
+      "questionCount": 97
+    },
+    {
+      "chapterId": "chapter_07",
+      "chapterNumber": 7,
+      "title": "The Sorting Hat",
+      "dateLabel": "1 September 1991",
+      "file": "chapters/chapter_07.json",
+      "pageCount": 19,
+      "questionCount": 70
+    },
+    {
+      "chapterId": "chapter_08",
+      "chapterNumber": 8,
+      "title": "The Potions Master",
+      "dateLabel": "2 September 1991",
+      "file": "chapters/chapter_08.json",
+      "pageCount": 14,
+      "questionCount": 50
+    },
+    {
+      "chapterId": "chapter_09",
+      "chapterNumber": 9,
+      "title": "The Midnight Duel",
+      "dateLabel": "12 September 1991",
+      "file": "chapters/chapter_09.json",
+      "pageCount": 21,
+      "questionCount": 79
+    },
+    {
+      "chapterId": "chapter_10",
+      "chapterNumber": 10,
+      "title": "Hallowe'en",
+      "dateLabel": "13 September 1991",
+      "file": "chapters/chapter_10.json",
+      "pageCount": 18,
+      "questionCount": 65
+    },
+    {
+      "chapterId": "chapter_11",
+      "chapterNumber": 11,
+      "title": "Quidditch",
+      "dateLabel": "8 November 1991",
+      "file": "chapters/chapter_11.json",
+      "pageCount": 15,
+      "questionCount": 53
+    },
+    {
+      "chapterId": "chapter_12",
+      "chapterNumber": 12,
+      "title": "The Mirror of Erised",
+      "dateLabel": "21 December 1991",
+      "file": "chapters/chapter_12.json",
+      "pageCount": 23,
+      "questionCount": 87
+    },
+    {
+      "chapterId": "chapter_13",
+      "chapterNumber": 13,
+      "title": "Nicolas Flamel",
+      "dateLabel": "5 January 1992",
+      "file": "chapters/chapter_13.json",
+      "pageCount": 14,
+      "questionCount": 55
+    },
+    {
+      "chapterId": "chapter_14",
+      "chapterNumber": 14,
+      "title": "Norbert the Norwegian Ridgeback",
+      "dateLabel": "23 March 1992",
+      "file": "chapters/chapter_14.json",
+      "pageCount": 15,
+      "questionCount": 57
+    },
+    {
+      "chapterId": "chapter_15",
+      "chapterNumber": 15,
+      "title": "The Forbidden Forest",
+      "dateLabel": "10 May 1992",
+      "file": "chapters/chapter_15.json",
+      "pageCount": 22,
+      "questionCount": 88
+    },
+    {
+      "chapterId": "chapter_16",
+      "chapterNumber": 16,
+      "title": "Through the Trapdoor",
+      "dateLabel": "4 June 1992",
+      "file": "chapters/chapter_16.json",
+      "pageCount": 27,
+      "questionCount": 104
+    },
+    {
+      "chapterId": "chapter_17",
+      "chapterNumber": 17,
+      "title": "The Man with Two Faces",
+      "dateLabel": "4 June 1992",
+      "file": "chapters/chapter_17.json",
+      "pageCount": 23,
+      "questionCount": 85
+    }
+  ],
+  "storyDirName": "harrypotter_episode1"
+}

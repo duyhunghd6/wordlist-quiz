@@ -18,6 +18,7 @@ function parseArgs(argv) {
     out: DEFAULT_OUT,
     model: DEFAULT_MODEL,
     pageWords: 200,
+    batchSize: 5,
     chapter: null,
     dryRun: false,
     force: false,
@@ -32,6 +33,7 @@ function parseArgs(argv) {
     else if (arg === '--out') args.out = path.resolve(argv[++i]);
     else if (arg === '--model') args.model = argv[++i];
     else if (arg === '--page-words') args.pageWords = Number(argv[++i]);
+    else if (arg === '--batch-size') args.batchSize = Number(argv[++i]);
     else if (arg === '--chapter') args.chapter = argv[++i];
     else if (arg === '--dry-run') args.dryRun = true;
     else if (arg === '--force') args.force = true;
@@ -42,6 +44,9 @@ function parseArgs(argv) {
 
   if (!Number.isFinite(args.pageWords) || args.pageWords < 80) {
     throw new Error('--page-words must be a number >= 80');
+  }
+  if (!Number.isInteger(args.batchSize) || args.batchSize < 1 || args.batchSize > 8) {
+    throw new Error('--batch-size must be an integer from 1 to 8');
   }
   if (args.includeSourceText && !args.ownsRights) {
     throw new Error('--include-source-text requires --i-own-rights-to-source-text');
@@ -110,7 +115,7 @@ function validateQuestions(pageId, questions) {
   });
 }
 
-function buildQuestionPrompt({ page, chapter, reviewText }) {
+function buildQuestionPrompt({ pages, chapter, reviewText }) {
   return `You are creating inline questions for a Grade 3 ESL reading app.
 
 Curriculum reference:
@@ -118,19 +123,17 @@ ${reviewText}
 
 Chapter: ${chapter.chapterNumber}. ${chapter.title}
 Chapter date label: ${chapter.dateLabel}
-Page id: ${page.pageId}
 
-Story page text:
-"""
-${page.sourceText}
-"""
+Story pages:
+${pages.map((page) => `Page id: ${page.pageId}\nStory page text:\n"""\n${page.sourceText}\n"""`).join('\n\n')}
 
-Create 2 to 4 inline questions for this page. Use only these types:
+For EACH page, create 2 to 4 inline questions. Use only these types:
 1. true_false with a boolean answer field.
 2. multiple_choice with exactly 3 options and answerIndex 0, 1, or 2.
 
 Rules:
-- Questions must be answerable from this page.
+- Return one page result for every page id provided, in the same order.
+- Questions must be answerable from that page only.
 - Keep prompts short and clear for Grade 3 ESL learners.
 - Use a mix of literal reading comprehension, vocabulary in context, and grammar noticing.
 - Align each question to one topic from the curriculum reference.
@@ -140,38 +143,57 @@ Rules:
 
 Return strict JSON in this shape:
 {
-  "questions": [
+  "pages": [
     {
-      "type": "true_false",
-      "prompt": "Short statement.",
-      "answer": true,
-      "explanation": "One short child-friendly explanation.",
-      "skill": "Reading comprehension",
-      "reviewTopic": "Present Simple"
-    },
-    {
-      "type": "multiple_choice",
-      "prompt": "Short question?",
-      "options": ["A. first", "B. second", "C. third"],
-      "answerIndex": 1,
-      "explanation": "One short child-friendly explanation.",
-      "skill": "Vocabulary in context",
-      "reviewTopic": "Prepositions of Direction"
+      "pageId": "provided_page_id",
+      "questions": [
+        {
+          "type": "true_false",
+          "prompt": "Short statement.",
+          "answer": true,
+          "explanation": "One short child-friendly explanation.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple"
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Short question?",
+          "options": ["A. first", "B. second", "C. third"],
+          "answerIndex": 1,
+          "explanation": "One short child-friendly explanation.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Prepositions of Direction"
+        }
+      ]
     }
   ]
 }`;
 }
 
-async function generatePageQuestions({ page, chapter, reviewText, model }) {
-  const result = await generateJson({
-    model,
-    prompt: buildQuestionPrompt({ page, chapter, reviewText }),
-    temperature: 0.25,
-    maxOutputTokens: 2048,
-  });
-  const questions = (result.questions || []).map((question, index) => normalizeQuestion(page.pageId, question, index));
-  validateQuestions(page.pageId, questions);
-  return questions;
+async function generatePageBatchQuestions({ pages, chapter, reviewText, model }) {
+  let lastError;
+  for (let attempt = 1; attempt <= 3; attempt++) {
+    try {
+      const result = await generateJson({
+        model,
+        prompt: buildQuestionPrompt({ pages, chapter, reviewText }),
+        temperature: attempt === 1 ? 0.25 : 0.1,
+        maxOutputTokens: 8192,
+      });
+      const pageResults = result.pages || [];
+      const byPageId = new Map(pageResults.map((pageResult) => [pageResult.pageId, pageResult.questions || []]));
+      return pages.map((page) => {
+        const questions = (byPageId.get(page.pageId) || []).map((question, index) => normalizeQuestion(page.pageId, question, index));
+        validateQuestions(page.pageId, questions);
+        return { page, inlineQuestions: questions };
+      });
+    } catch (error) {
+      lastError = error;
+      console.warn(`  batch ${pages[0].pageId}-${pages[pages.length - 1].pageId} attempt ${attempt} failed: ${error.message}`);
+      await sleep(1500 * attempt);
+    }
+  }
+  throw lastError;
 }
 
 function buildStoryIndex({ storyDirName, chapters, args }) {
@@ -301,18 +323,20 @@ async function run() {
       console.log(`  Resuming at page ${pages.length + 1} of ${chapter.pages.length}.`);
     }
 
-    for (let pageIndex = pages.length; pageIndex < chapter.pages.length; pageIndex++) {
-      const page = chapter.pages[pageIndex];
-      console.log(`  ${page.pageId} (${page.approxWordCount} words)`);
-      const inlineQuestions = await generatePageQuestions({ page, chapter, reviewText, model: args.model });
-      pages.push({
-        pageId: page.pageId,
-        pageNumber: page.pageNumber,
-        sourceText: page.sourceText,
-        approxWordCount: page.approxWordCount,
-        sourceRef: page.sourceRef,
-        inlineQuestions,
-        unlockRule: { mustAnswerAllInlineQuestions: true },
+    for (let pageIndex = pages.length; pageIndex < chapter.pages.length; pageIndex += args.batchSize) {
+      const pageBatch = chapter.pages.slice(pageIndex, pageIndex + args.batchSize);
+      console.log(`  ${pageBatch[0].pageId}..${pageBatch[pageBatch.length - 1].pageId} (${pageBatch.length} pages)`);
+      const generatedPages = await generatePageBatchQuestions({ pages: pageBatch, chapter, reviewText, model: args.model });
+      generatedPages.forEach(({ page, inlineQuestions }) => {
+        pages.push({
+          pageId: page.pageId,
+          pageNumber: page.pageNumber,
+          sourceText: page.sourceText,
+          approxWordCount: page.approxWordCount,
+          sourceRef: page.sourceRef,
+          inlineQuestions,
+          unlockRule: { mustAnswerAllInlineQuestions: true },
+        });
       });
 
       writeJson(chapterPath, {

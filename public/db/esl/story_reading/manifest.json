@@ -1,0 +1,20 @@
+{
+  "name": "ESL Story Reading",
+  "version": 1,
+  "basePath": "db/esl/story_reading",
+  "stories": [
+    {
+      "id": "harrypotter_episode1",
+      "title": "Harry Potter Episode 1 ESL Reading",
+      "file": "harrypotter_episode1/story.json",
+      "chapterCount": 17,
+      "approxWordsPerPage": 200,
+      "sourceTextIncluded": true,
+      "rights": {
+        "sourceTextIncluded": true,
+        "confirmationRequired": true,
+        "confirmedByFlag": true
+      }
+    }
+  ]
+}

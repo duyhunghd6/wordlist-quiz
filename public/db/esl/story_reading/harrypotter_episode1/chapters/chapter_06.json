@@ -1,0 +1,1654 @@
+{
+  "storyId": "harrypotter_episode1",
+  "chapterId": "chapter_06",
+  "chapterNumber": 6,
+  "title": "The Journey from Platform Nine and Three-Quarters",
+  "dateLabel": "1 August 1991",
+  "sourceTextIncluded": true,
+  "pages": [
+    {
+      "pageId": "hp_ep1_ch06_p001",
+      "pageNumber": 1,
+      "sourceText": "CHAPTER SIX \n\nTHE JOURNEY FROM PLATFORM NINE AND THREE-QUARTERS \n\nHarry's last month with the Dursleys wasn't fun. True, Dudley was now so scared of Harry he wouldn't stay in the same room, while Aunt Petunia and Uncle Vernon didn't shut Harry in his cupboard, force him to do anything, or shout at him -- in fact, they didn't speak to him at all. \n\nHalf terrified, half furious, they acted as though any chair with Harry in it were empty. Although this was an improvement in many ways, it did become a bit depressing after a while. \n\nHarry kept to his room, with his new owl for company. He had decided to call her Hedwig, a name he had found in A History of Magic. His school books were very interesting. He lay on his bed reading late into the night, Hedwig swooping in and out of the open window as she pleased. It was lucky that Aunt Petunia didn't come in to vacuum anymore, because Hedwig kept bringing back dead mice. Every night before he went to sleep, Harry ticked off another day on the piece of paper he had pinned to the wall, counting down to September the first. \n\nOn the last day of August he thought he'd better speak to his aunt and uncle about getting to King's Cross station the next day, so he went down to the living room where they were watching a quiz show on television.",
+      "approxWordCount": 242,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 1,
+        "sourceWordEnd": 242,
+        "sourceCharStart": 125659,
+        "sourceCharEnd": 126955
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch06_p001_q01",
+          "type": "multiple_choice",
+          "prompt": "What were Aunt Petunia and Uncle Vernon doing when Harry went to the living room?",
+          "explanation": "The story says they were watching a quiz show on television.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "options": [
+            "They were watching a quiz show.",
+            "They were cleaning the house.",
+            "They were reading a book."
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch06_p001_q02",
+          "type": "multiple_choice",
+          "prompt": "How did Hedwig move through the open window?",
+          "explanation": "The text says Hedwig was swooping in and out of the open window as she pleased.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "She swooped in and out.",
+            "She walked towards it.",
+            "She stayed away from it."
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch06_p001_q03",
+          "type": "true_false",
+          "prompt": "Harry needed to talk to his aunt and uncle about getting to King's Cross station.",
+          "explanation": "He wanted to speak to them about how to get to the station the next day.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Like & About",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch06_p001_q04",
+          "type": "true_false",
+          "prompt": "Harry found the name Hedwig in a book that was about the history of magic.",
+          "explanation": "He found the name in his school book called 'A History of Magic'.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Defining Relative Clauses",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch06_p002",
+      "pageNumber": 2,
+      "sourceText": "He cleared his throat to let them know he was there, and Dudley screamed and ran from the room. \n\n\"Er -- Uncle Vernon?\" \n\nUncle Vernon grunted to show he was listening. \n\n\"Er -- I need to be at King's Cross tomorrow to -- to go to Hogwarts.\" \n\nUncle Vernon grunted again. \n\n\"Would it be all right if you gave me a lift?\" \n\nGrunt. Harry supposed that meant yes. \n\n\"Thank you.\" \n\nHe was about to go back upstairs when Uncle Vernon actually spoke. \n\n\"Funny way to get to a wizards' school, the train. Magic carpets all got punctures, have they?\" \n\nHarry didn't say anything. \n\n\"Where is this school, anyway?\" \n\n\"I don't know,\" said Harry, realizing this for the first time. He pulled the ticket Hagrid had given him out of his pocket. \n\n\"I just take the train from platform nine and three-quarters at eleven o'clock,\" he read. \n\nHis aunt and uncle stared. \n\n\"Platform what?\" \n\n\"Nine and three-quarters.\" \n\n\"Don't talk rubbish,\" said Uncle Vernon. \"There is no platform nine and three-quarters.\" \n\n\"It's on my ticket.\" \n\n\"Barking,\" said Uncle Vernon, \"howling mad, the lot of them. You'll see. \n\nYou just wait. All right, we'll take you to King's Cross. We're going up to London tomorrow anyway, or I wouldn't bother.\" \n\n\"Why are you going to London?\" Harry asked, trying to keep things friendly. \n\n\"Taking Dudley to the hospital,\" growled Uncle Vernon. \"Got to have that ruddy tail removed before he goes to Smeltings.\"",
+      "approxWordCount": 240,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 243,
+        "sourceWordEnd": 482,
+        "sourceCharStart": 126956,
+        "sourceCharEnd": 128372
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch06_p002_q01",
+          "type": "multiple_choice",
+          "prompt": "Dudley screamed and ran _____ the room.",
+          "explanation": "The story says Dudley ran 'from' the room, which means he ran out of it.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. into",
+            "B. out of",
+            "C. towards"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch06_p002_q02",
+          "type": "true_false",
+          "prompt": "Uncle Vernon and his family are going to London tomorrow.",
+          "explanation": "Uncle Vernon says, 'We're going up to London tomorrow anyway.'",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Continuous (Future Meaning)",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch06_p002_q03",
+          "type": "multiple_choice",
+          "prompt": "Does Harry know where Hogwarts is?",
+          "explanation": "When Uncle Vernon asks where the school is, Harry says, 'I don't know.'",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "options": [
+            "A. Yes, he knows.",
+            "B. No, he doesn't know.",
+            "C. He thinks it is in London."
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch06_p002_q04",
+          "type": "multiple_choice",
+          "prompt": "Why does Dudley have to go to the hospital?",
+          "explanation": "Uncle Vernon says Dudley has to have his tail removed before he goes to his new school.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Obligation & Possibility",
+          "options": [
+            "A. He has to get his tail removed.",
+            "B. He has to get a train ticket.",
+            "C. He has to see a wizard."
+          ],
+          "answerIndex": 0
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch06_p003",
+      "pageNumber": 3,
+      "sourceText": "Harry woke at five o'clock the next morning and was too excited and nervous to go back to sleep. He got up and pulled on his jeans because he didn't want to walk into the station in his wizard's robes -- he'd change on the train. He checked his Hogwarts list yet again to make sure he had everything he needed, saw that Hedwig was shut safely in her cage, and then paced the room, waiting for the Dursleys to get up. Two hours later, Harry's huge, heavy trunk had been loaded into the Dursleys' car, Aunt Petunia had talked Dudley into sitting next to Harry, and they had set off. \n\nThey reached King's Cross at half past ten. Uncle Vernon dumped Harry's trunk onto a cart and wheeled it into the station for him. Harry thought this was strangely kind until Uncle Vernon stopped dead, facing the platforms with a nasty grin on his face. \n\n\"Well, there you are, boy. Platform nine -- platform ten. Your platform should be somewhere in the middle, but they don't seem to have built it yet, do they?\" \n\nHe was quite right, of course. There was a big plastic number nine over one platform and a big plastic number ten over the one next to it, and in the middle, nothing at all. \n\n\"Have a good term,\" said Uncle Vernon with an even nastier smile. He left without another word. Harry turned and saw the Dursleys drive away.",
+      "approxWordCount": 245,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 483,
+        "sourceWordEnd": 727,
+        "sourceCharStart": 128375,
+        "sourceCharEnd": 129692
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch06_p003_q01",
+          "type": "multiple_choice",
+          "prompt": "Uncle Vernon wheeled Harry's trunk _____ the station.",
+          "explanation": "The word 'into' is a preposition of direction that shows movement inside the station.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "into",
+            "out of",
+            "from"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch06_p003_q02",
+          "type": "true_false",
+          "prompt": "Uncle Vernon says, '...they don't seem to have built it yet, do they?' The phrase 'do they?' is a tag question.",
+          "explanation": "A tag question is a short question added to the end of a sentence to check information or ask for agreement.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Tag Questions",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch06_p003_q03",
+          "type": "multiple_choice",
+          "prompt": "What does Uncle Vernon mean when he says they haven't built the platform 'yet'?",
+          "explanation": "The word 'yet' is used to show that an action has not happened before now.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Present Perfect",
+          "options": [
+            "It was built a long time ago.",
+            "It is not built up to this time.",
+            "It will never be built."
+          ],
+          "answerIndex": 1
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch06_p004",
+      "pageNumber": 4,
+      "sourceText": "All three of them were laughing. Harry's mouth went rather dry. What on earth was he going to do? He was starting to attract a lot of funny looks, because of Hedwig. He'd have to ask someone. \n\nHe stopped a passing guard, but didn't dare mention platform nine and three-quarters. The guard had never heard of Hogwarts and when Harry couldn't even tell him what part of the country it was in, he started to get annoyed, as though Harry was being stupid on purpose. Getting desperate, Harry asked for the train that left at eleven o'clock, but the guard said there wasn't one. In the end the guard strode away, muttering about time wasters. Harry was now trying hard not to panic. \n\nAccording to the large clock over the arrivals board, he had ten minutes left to get on the train to Hogwarts and he had no idea how to do it; he was stranded in the middle of a station with a trunk he could hardly lift, a pocket full of wizard money, and a large owl. \n\nHagrid must have forgotten to tell him something you had to do, like tapping the third brick on the left to get into Diagon Alley. He wondered if he should get out his wand and start tapping the ticket inspector's stand between platforms nine and ten. \n\nAt that moment a group of people passed just behind him and he caught a few words of what they were saying.",
+      "approxWordCount": 247,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 728,
+        "sourceWordEnd": 974,
+        "sourceCharStart": 129695,
+        "sourceCharEnd": 131008
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch06_p004_q01",
+          "type": "true_false",
+          "prompt": "Harry had to ask someone for help because he didn't know how to find his train.",
+          "explanation": "Harry was lost and didn't know what to do, so he had to ask a guard.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Obligation & Possibility",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch06_p004_q02",
+          "type": "multiple_choice",
+          "prompt": "Which train did Harry ask the guard about?",
+          "explanation": "Harry asked for the train that left at eleven o'clock, but the guard said there wasn't one.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Defining Relative Clauses",
+          "options": [
+            "The train that left at ten o'clock",
+            "The train that left at eleven o'clock",
+            "The train that left at twelve o'clock"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch06_p004_q03",
+          "type": "multiple_choice",
+          "prompt": "Harry remembered tapping a brick to get _____ Diagon Alley.",
+          "explanation": "The word 'into' shows movement inside a place, like going into Diagon Alley.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "out of",
+            "into",
+            "from"
+          ],
+          "answerIndex": 1
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch06_p005",
+      "pageNumber": 5,
+      "sourceText": "\"-- packed with Muggles, of course --\" \n\nHarry swung round. The speaker was a plump woman who was talking to four boys, all with flaming red hair. Each of them was pushing a trunk like Harry's in front of him -- and they had an owl. \n\nHeart hammering, Harry pushed his cart after them. They stopped and so did he, just near enough to hear what they were saying. \n\n\"Now, what's the platform number?\" said the boys' mother. \n\n\"Nine and three-quarters!\" piped a small girl, also red-headed, who was holding her hand, \"Mom, can't I go... � \n\n\"You're not old enough, Ginny, now be quiet. All right, Percy, you go first.\" \n\nWhat looked like the oldest boy marched toward platforms nine and ten. \n\nHarry watched, careful not to blink in case he missed it -- but just as the boy reached the dividing barrier between the two platforms, a large crowd of tourists came swarming in front of him and by the time the last backpack had cleared away, the boy had vanished. \n\n\"Fred, you next,\" the plump woman said. \n\n\"I'm not Fred, I'm George,\" said the boy. \"Honestly, woman, you call yourself our mother? CarA you tell I'm George?\" \n\n\"Sorry, George, dear.\" \n\n\"Only joking, I am Fred,\" said the boy, and off he went. His twin called after him to hurry up, and he must have done so, because a second later, he had gone -- but how had he done it?",
+      "approxWordCount": 243,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 975,
+        "sourceWordEnd": 1217,
+        "sourceCharStart": 131011,
+        "sourceCharEnd": 132340
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch06_p005_q01",
+          "type": "multiple_choice",
+          "prompt": "What was the plump woman doing when Harry saw her?",
+          "explanation": "The story says she was a plump woman who was talking to four boys.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "options": [
+            "She was talking to four boys.",
+            "She was running to the train.",
+            "She was looking for Harry."
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch06_p005_q02",
+          "type": "multiple_choice",
+          "prompt": "The oldest boy marched \"toward\" platforms nine and ten. What does \"toward\" mean?",
+          "explanation": "The word \"toward\" means moving in the direction of something.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "Away from the platforms",
+            "In the direction of the platforms",
+            "Out of the platforms"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch06_p005_q03",
+          "type": "true_false",
+          "prompt": "The boys had trunks that looked similar to Harry's trunk.",
+          "explanation": "The story says each boy was pushing a trunk \"like Harry's\", which means they looked the same.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Like & About",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch06_p005_q04",
+          "type": "true_false",
+          "prompt": "In the sentence \"a small girl... who was holding her hand\", the word \"who\" gives us more information about the girl.",
+          "explanation": "We use the word \"who\" to give extra information about a person!",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Defining Relative Clauses",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch06_p006",
+      "pageNumber": 6,
+      "sourceText": "Now the third brother was walking briskly toward the barrier he was almost there -- and then, quite suddenly, he wasn't anywhere. \n\nThere was nothing else for it. \n\n\"Excuse me,\" Harry said to the plump woman. \n\n\"Hello, dear,\" she said. \"First time at Hogwarts? Ron's new, too.\" \n\nShe pointed at the last and youngest of her sons. He was tall, thin, and gangling, with freckles, big hands and feet, and a long nose. \n\n\"Yes,\" said Harry. \"The thing is -- the thing is, I don't know how to --\" \n\n\"How to get onto the platform?\" she said kindly, and Harry nodded. \n\n\"Not to worry,\" she said. \"All you have to do is walk straight at the barrier between platforms nine and ten. Don't stop and don't be scared you'll crash into it, that's very important. Best do it at a bit of a run if you're nervous. Go on, go now before Ron.\" \n\n\"Er -- okay,\" said Harry. \n\nHe pushed his trolley around and stared at the barrier. It looked very solid. \n\nHe started to walk toward it. People jostled him on their way to platforms nine and ten. Harry walked more quickly.",
+      "approxWordCount": 193,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 1218,
+        "sourceWordEnd": 1410,
+        "sourceCharStart": 132341,
+        "sourceCharEnd": 133389
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch06_p006_q01",
+          "type": "multiple_choice",
+          "prompt": "Which word shows the direction the third brother was walking?",
+          "explanation": "The text says he was walking 'toward' the barrier. 'Toward' means moving in the direction of something.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "Into",
+            "Toward",
+            "Out of"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch06_p006_q02",
+          "type": "true_false",
+          "prompt": "The woman tells Harry that he has to walk straight at the barrier.",
+          "explanation": "She says, 'All you have to do is walk straight at the barrier.' We use 'have to' to show something we need to do.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Obligation & Possibility",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch06_p006_q03",
+          "type": "multiple_choice",
+          "prompt": "Read this part: 'Now the third brother was walking briskly...' What tense is 'was walking'?",
+          "explanation": "'Was walking' is the Past Continuous tense. It shows an action that was happening in the past.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Past Continuous",
+          "options": [
+            "Present Simple",
+            "Past Continuous",
+            "Future Form"
+          ],
+          "answerIndex": 1
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch06_p007",
+      "pageNumber": 7,
+      "sourceText": "He was going to smash right into that barrier and then he'd be in trouble -- leaning forward on his cart, he broke into a heavy run -- the barrier was coming nearer and nearer -- he wouldn't be able to stop -- the cart was out of control -- he was a foot away -- he closed his eyes ready for the crash -- It didn't come... he kept on running... he opened his eyes. A scarlet steam engine was waiting next to a platform packed with people. A sign overhead said Hogwarts Express, eleven O'clock. Harry looked behind him and saw a wrought-iron archway where the barrier had been, with the words Platform Nine and Three-Quarters on it, He had done it. \n\nSmoke from the engine drifted over the heads of the chattering crowd, while cats of every color wound here and there between their legs. Owls hooted to one another in a disgruntled sort of way over the babble and the scraping of heavy trunks. \n\nThe first few carriages were already packed with students, some hanging out of the window to talk to their families, some fighting over seats. \n\nHarry pushed his cart off down the platform in search of an empty seat. \n\nHe passed a round-faced boy who was saying, \"Gran, I've lost my toad again.\" \n\n\"Oh, Neville,\" he heard the old woman sigh. \n\nA boy with dreadlocks was surrounded by a small crowd. \n\n\"Give us a look, Lee, go on.\"",
+      "approxWordCount": 245,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 1411,
+        "sourceWordEnd": 1655,
+        "sourceCharStart": 133390,
+        "sourceCharEnd": 134715
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch06_p007_q01",
+          "type": "multiple_choice",
+          "prompt": "What does the round-faced boy say to his Gran?",
+          "explanation": "He says 'I've lost my toad', which means 'I have lost'. This is the present perfect tense!",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Present Perfect",
+          "options": [
+            "A. I lose my toad.",
+            "B. I have lost my toad.",
+            "C. I will lose my toad."
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch06_p007_q02",
+          "type": "true_false",
+          "prompt": "Harry thought he was going to smash into the barrier.",
+          "explanation": "The text says he was going to smash right into the barrier, but he safely went through it instead!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Prepositions of Direction",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch06_p007_q03",
+          "type": "multiple_choice",
+          "prompt": "Read this sentence from the story: 'He passed a round-faced boy ___ was saying...' Which word fills the blank?",
+          "explanation": "We use 'who' to give more information about a person, like the boy.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Defining Relative Clauses",
+          "options": [
+            "A. which",
+            "B. where",
+            "C. who"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": "hp_ep1_ch06_p007_q04",
+          "type": "true_false",
+          "prompt": "A blue steam engine was waiting next to the platform.",
+          "explanation": "The text says a scarlet (red) steam engine was waiting, not a blue one.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "answer": false
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch06_p008",
+      "pageNumber": 8,
+      "sourceText": "The boy lifted the lid of a box in his arms, and the people around him shrieked and yelled as something inside poked out a long, hairy leg. \n\nHarry pressed on through the crowd until he found an empty compartment near the end of the train. He put Hedwig inside first and then started to shove and heave his trunk toward the train door. He tried to lift it up the steps but could hardly raise one end and twice he dropped it painfully on his foot. \n\n\"Want a hand?\" It was one of the red-haired twins he'd followed through the barrier. \n\n\"Yes, please,\" Harry panted. \n\n\"Oy, Fred! C'mere and help!\" \n\nWith the twins' help, Harry's trunk was at last tucked away in a corner of the compartment. \n\n\"Thanks,\" said Harry, pushing his sweaty hair out of his eyes. \n\n\"What's that?\" said one of the twins suddenly, pointing at Harry's lightning scar. \n\n\"Blimey,\" said the other twin. \"Are you \"He is,\" said the first twin. \"Aren't you?\" he added to Harry. \n\n\"What?\" said Harry. \n\n\"Harry Potter, \"chorused the twins. \n\n\"Oh, him,\" said Harry. \"I mean, yes, I am.\" \n\nThe two boys gawked at him, and Harry felt himself turning red. Then, to his relief, a voice came floating in through the train's open door. \n\n\"Fred? George? Are you there?\" \n\n\"Coming, Mom.\" \n\nWith a last look at Harry, the twins hopped off the train.",
+      "approxWordCount": 233,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 1656,
+        "sourceWordEnd": 1888,
+        "sourceCharStart": 134718,
+        "sourceCharEnd": 136022
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch06_p008_q01",
+          "type": "multiple_choice",
+          "prompt": "Where did Harry push his heavy trunk?",
+          "explanation": "The story says Harry started to shove and heave his trunk toward the train door.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. Toward the train door",
+            "B. Out of the window",
+            "C. Away from the train"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch06_p008_q02",
+          "type": "true_false",
+          "prompt": "The twin says, \"Aren't you?\" to check if the boy is really Harry Potter.",
+          "explanation": "We use tag questions like \"Aren't you?\" to check if information is true!",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Tag Questions",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch06_p008_q03",
+          "type": "multiple_choice",
+          "prompt": "What does Harry say when the twin offers to help him?",
+          "explanation": "Harry accepts the offer for help by politely saying, \"Yes, please.\"",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Would You Like (Offers & Invitations)",
+          "options": [
+            "A. No, thank you.",
+            "B. Yes, please.",
+            "C. Sorry, I can't."
+          ],
+          "answerIndex": 1
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch06_p009",
+      "pageNumber": 9,
+      "sourceText": "Harry sat down next to the window where, half hidden, he could watch the red-haired family on the platform and hear what they were saying. Their mother had just taken out her handkerchief. \n\n\"Ron, you've got something on your nose.\" \n\nThe youngest boy tried to jerk out of the way, but she grabbed him and began rubbing the end of his nose. \n\n\"Mom -- geroff\" He wriggled free. \n\n\"Aaah, has ickle Ronnie got somefink on his nosie?\" said one of the twins. \n\n\"Shut up,\" said Ron. \n\n\"Where's Percy?\" said their mother. \n\n\"He's coming now.\" \n\nThe oldest boy came striding into sight. He had already changed into his billowing black Hogwarts robes, and Harry noticed a shiny silver badge on his chest with the letter P on it. \n\n\"Can't stay long, Mother,\" he said. \"I'm up front, the prefects have got two compartments to themselves --\" \n\n\"Oh, are you a prefect, Percy?\" said one of the twins, with an air of great surprise. \"You should have said something, we had no idea.\" \n\n\"Hang on, I think I remember him saying something about it,\" said the other twin. \"Once --\" \n\n\"Or twice --\" \n\n\"A minute --\" \n\n\"All summer --\" \n\n\"Oh, shut up,\" said Percy the Prefect. \n\n\"How come Percy gets new robes, anyway?\" said one of the twins. \n\n\"Because he's a prefect,\" said their mother fondly. \"All right, dear, well, have a good term -- send me an owl when you get there.\" \n\nShe kissed Percy on the cheek and he left.",
+      "approxWordCount": 250,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 1889,
+        "sourceWordEnd": 2138,
+        "sourceCharStart": 136025,
+        "sourceCharEnd": 137422
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch06_p009_q01",
+          "type": "multiple_choice",
+          "prompt": "The oldest boy came striding _____ sight. Which word shows the direction he moved?",
+          "explanation": "The word 'into' shows movement. He moved closer so they could see him!",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. into",
+            "B. out of",
+            "C. from"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch06_p009_q02",
+          "type": "true_false",
+          "prompt": "Percy gets new robes because he is a prefect.",
+          "explanation": "His mother says he gets new robes because he is a prefect.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch06_p009_q03",
+          "type": "multiple_choice",
+          "prompt": "Harry sat next to the window _____ he could watch the family. Which word talks about the place?",
+          "explanation": "We use 'where' to give more information about a place, like the window!",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Defining Relative Clauses",
+          "options": [
+            "A. who",
+            "B. which",
+            "C. where"
+          ],
+          "answerIndex": 2
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch06_p010",
+      "pageNumber": 10,
+      "sourceText": "Then she turned to the twins. \n\n\"Now, you two -- this year, you behave yourselves. If I get one more owl telling me you've -- you've blown up a toilet or --\" \n\n\"Blown up a toilet? We've never blown up a toilet.\" \n\n\"Great idea though, thanks, Mom.\" \n\n\"It's not funny. And look after Ron.\" \n\n\"Don't worry, ickle Ronniekins is safe with us.\" \n\n\"Shut up,\" said Ron again. He was almost as tall as the twins already and his nose was still pink where his mother had rubbed it. \n\n\"Hey, Mom, guess what? Guess who we just met on the train?\" \n\nHarry leaned back quickly so they couldn't see him looking. \n\n\"You know that black-haired boy who was near us in the station? Know who he is?\" \n\n\"Who?\" \n\n\"Harry Potter!\" \n\nHarry heard the little girl's voice. \n\n\"Oh, Mom, can I go on the train and see him, Mom, eh please....\" \n\n\"You've already seen him, Ginny, and the poor boy isn't something you goggle at in a zoo. Is he really, Fred? How do you know?\" \n\n\"Asked him. Saw his scar. It's really there - like lightning.\" \n\n\"Poor dear - no wonder he was alone, I wondered. He was ever so polite when he asked how to get onto the platform.\" \n\n\"Never mind that, do you think he remembers what You-Know-Who looks like?\" \n\nTheir mother suddenly became very stern. \n\n\"I forbid you to ask him, Fred. No, don't you dare.",
+      "approxWordCount": 238,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 2139,
+        "sourceWordEnd": 2376,
+        "sourceCharStart": 137423,
+        "sourceCharEnd": 138720
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch06_p010_q01",
+          "type": "true_false",
+          "prompt": "The twins have blown up a toilet before.",
+          "explanation": "The twins say, 'We've never blown up a toilet.' They use 'never' to talk about their past experiences.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Perfect",
+          "answer": false
+        },
+        {
+          "id": "hp_ep1_ch06_p010_q02",
+          "type": "multiple_choice",
+          "prompt": "Which word does the twin use to give more information about the black-haired boy?",
+          "explanation": "The twin says, 'that black-haired boy who was near us'. We use 'who' to give extra information about a person.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Defining Relative Clauses",
+          "options": [
+            "A. which",
+            "B. who",
+            "C. where"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch06_p010_q03",
+          "type": "multiple_choice",
+          "prompt": "What does Harry's scar look like?",
+          "explanation": "The text says his scar is 'like lightning'. The word 'like' is used to show that two things look similar.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Like & About",
+          "options": [
+            "A. A star",
+            "B. A zoo",
+            "C. Lightning"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": "hp_ep1_ch06_p010_q04",
+          "type": "true_false",
+          "prompt": "Harry asked the mother how to get onto the platform.",
+          "explanation": "The mother says Harry was very polite when he asked how to get onto the platform. 'Onto' is a preposition that shows movement.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Prepositions of Direction",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch06_p011",
+      "pageNumber": 11,
+      "sourceText": "As though he needs reminding of that on his first day at school.\" \n\n\"All right, keep your hair on.\" \n\nA whistle sounded. \n\n\"Hurry up!\" their mother said, and the three boys clambered onto the train. They leaned out of the window for her to kiss them good-bye, and their younger sister began to cry. \n\n\"Don't, Ginny, we'll send you loads of owls.\" \n\n\"We'll send you a Hogwarts toilet seat.\" \n\n\"George!\" \n\n\"Only joking, Mom.\" \n\nThe train began to move. Harry saw the boys' mother waving and their sister, half laughing, half crying, running to keep up with the train until it gathered too much speed, then she fell back and waved. \n\nHarry watched the girl and her mother disappear as the train rounded the corner. Houses flashed past the window. Harry felt a great leap of excitement. He didn't know what he was going to but it had to be better than what he was leaving behind. \n\nThe door of the compartment slid open and the youngest redheaded boy came in. \n\n\"Anyone sitting there?\" he asked, pointing at the seat opposite Harry. \n\n\"Everywhere else is full.\" \n\nHarry shook his head and the boy sat down. He glanced at Harry and then looked quickly out of the window, pretending he hadn't looked. Harry saw he still had a black mark on his nose. \n\n\"Hey, Ron.\" \n\nThe twins were back. \n\n\"Listen, we're going down the middle of the train -- Lee Jordan's got a giant tarantula down there.\" \n\n\"Right,\" mumbled Ron.",
+      "approxWordCount": 248,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 2377,
+        "sourceWordEnd": 2624,
+        "sourceCharStart": 138721,
+        "sourceCharEnd": 140128
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch06_p011_q01",
+          "type": "true_false",
+          "prompt": "The twins promise they will send Ginny a giant tarantula.",
+          "explanation": "They promise they will send her loads of owls and a toilet seat! Lee Jordan is the one with the tarantula.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Future Forms",
+          "answer": false
+        },
+        {
+          "id": "hp_ep1_ch06_p011_q02",
+          "type": "multiple_choice",
+          "prompt": "Why does the youngest redheaded boy sit with Harry?",
+          "explanation": "The boy asks to sit there because all the other seats on the train are full.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "options": [
+            "A. Everywhere else is full.",
+            "B. He wants to see Harry.",
+            "C. He has a tarantula."
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch06_p011_q03",
+          "type": "multiple_choice",
+          "prompt": "Where did the boys lean to say good-bye to their mother?",
+          "explanation": "The text says they leaned out of the window so their mother could kiss them good-bye.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. Into the train",
+            "B. Towards the door",
+            "C. Out of the window"
+          ],
+          "answerIndex": 2
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch06_p012",
+      "pageNumber": 12,
+      "sourceText": "\"Harry,\" said the other twin, \"did we introduce ourselves? Fred and George Weasley. And this is Ron, our brother. See you later, then. \n\n\"Bye,\" said Harry and Ron. The twins slid the compartment door shut behind them. \n\n\"Are you really Harry Potter?\" Ron blurted out. \n\nHarry nodded. \n\n\"Oh -well, I thought it might be one of Fred and George's jokes,\" said Ron. \"And have you really got -- you know...\" \n\nHe pointed at Harry's forehead. \n\nHarry pulled back his bangs to show the lightning scar. Ron stared. \n\n\"So that's where You-Know-Who \"Yes,\" said Harry, \"but I can't remember it.\" \n\n\"Nothing?\" said Ron eagerly. \n\n\"Well -- I remember a lot of green light, but nothing else.\" \n\n\"Wow,\" said Ron. He sat and stared at Harry for a few moments, then, as though he had suddenly realized what he was doing, he looked quickly out of the window again. \n\n\"Are all your family wizards?\" asked Harry, who found Ron just as interesting as Ron found him. \n\n\"Er -- Yes, I think so,\" said Ron. \"I think Mom's got a second cousin who's an accountant, but we never talk about him.\" \n\n\"So you must know loads of magic already.\" \n\nThe Weasleys were clearly one of those old wizarding families the pale boy in Diagon Alley had talked about. \n\n\"I heard you went to live with Muggles,\" said Ron. \"What are they like?\" \n\n\"Horrible -well, not all of them. My aunt and uncle and cousin are, though. Wish I'd had three wizard brothers.\"",
+      "approxWordCount": 249,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 2625,
+        "sourceWordEnd": 2873,
+        "sourceCharStart": 140131,
+        "sourceCharEnd": 141544
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch06_p012_q01",
+          "type": "multiple_choice",
+          "prompt": "Ron asks, \"What are they like?\" What does he want to know?",
+          "explanation": "When we ask \"What are they like?\", we want to know about their personality or how they act.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Like & About",
+          "options": [
+            "A. How Muggles act and behave",
+            "B. What Muggles like to eat",
+            "C. What Muggles like to play"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch06_p012_q02",
+          "type": "true_false",
+          "prompt": "Ron has a cousin who is an accountant.",
+          "explanation": "Ron says his mom has a second cousin who is an accountant.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Defining Relative Clauses",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch06_p012_q03",
+          "type": "multiple_choice",
+          "prompt": "Where did Ron look after staring at Harry?",
+          "explanation": "The story says Ron \"looked quickly out of the window again.\"",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. Into the room",
+            "B. Out of the window",
+            "C. Towards the door"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch06_p012_q04",
+          "type": "true_false",
+          "prompt": "Ron says, \"I thought it might be a joke.\" This means he was 100% sure it was a joke.",
+          "explanation": "The word \"might\" shows possibility. It means maybe it was a joke, but he wasn't completely sure!",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Obligation & Possibility",
+          "answer": false
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch06_p013",
+      "pageNumber": 13,
+      "sourceText": "\"Five,\" said Ron. For some reason, he was looking gloomy. \"I'm the sixth in our family to go to Hogwarts. You could say I've got a lot to live up to. Bill and Charlie have already left -- Bill was head boy and Charlie was captain of Quidditch. Now Percy's a prefect. Fred and George mess around a lot, but they still get really good marks and everyone thinks they're really funny. Everyone expects me to do as well as the others, but if I do, it's no big deal, because they did it first. You never get anything new, either, with five brothers. I've got Bill's old robes, Charlie's old wand, and Percy's old rat.\" \n\nRon reached inside his jacket and pulled out a fat gray rat, which was asleep. \n\n\"His name's Scabbers and he's useless, he hardly ever wakes up. Percy got an owl from my dad for being made a prefect, but they couldn't aff -- I mean, I got Scabbers instead.\" \n\nRon's ears went pink. He seemed to think he'd said too much, because he went back to staring out of the window. \n\nHarry didn't think there was anything wrong with not being able to afford an owl. After all, he'd never had any money in his life until a month ago, and he told Ron so, all about having to wear Dudley's old clothes and never getting proper birthday presents. This seemed to cheer Ron up. \n\n\"...",
+      "approxWordCount": 242,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 2874,
+        "sourceWordEnd": 3115,
+        "sourceCharStart": 141547,
+        "sourceCharEnd": 142830
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch06_p013_q01",
+          "type": "true_false",
+          "prompt": "Bill and Charlie have already left Hogwarts.",
+          "explanation": "Ron says, 'Bill and Charlie have already left.' This uses the present perfect tense to show they finished school!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Perfect",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch06_p013_q02",
+          "type": "multiple_choice",
+          "prompt": "Ron pulled out a fat gray rat which was...",
+          "explanation": "The story says he pulled out a fat gray rat, which was asleep.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Defining Relative Clauses",
+          "options": [
+            "eating.",
+            "running.",
+            "asleep."
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": "hp_ep1_ch06_p013_q03",
+          "type": "multiple_choice",
+          "prompt": "What did Harry have to wear before he got his own money?",
+          "explanation": "Harry told Ron about having to wear Dudley's old clothes.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Obligation & Possibility",
+          "options": [
+            "Dudley's old clothes",
+            "Bill's old robes",
+            "New school clothes"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch06_p013_q04",
+          "type": "true_false",
+          "prompt": "Ron went back to staring out of the window.",
+          "explanation": "After his ears went pink, Ron looked out of the window. 'Out of' shows the direction he was looking!",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Prepositions of Direction",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch06_p014",
+      "pageNumber": 14,
+      "sourceText": "and until Hagrid told me, I didn't know anything about be ing a wizard or about my parents or Voldemort\" \n\nRon gasped. \n\n\"What?\" said Harry. \n\n\"You said You-Know-Who's name!\" said Ron, sounding both shocked and impressed. \"I'd have thought you, of all people --\" \n\n\"I'm not trying to be brave or anything, saying the name,\" said Harry, I just never knew you shouldn't. See what I mean? I've got loads to learn.... I bet,\" he added, voicing for the first time something that had been worrying him a lot lately, \"I bet I'm the worst in the class.\" \n\n\"You won't be. There's loads of people who come from Muggle families and they learn quick enough.\" \n\nWhile they had been talking, the train had carried them out of London. \n\nNow they were speeding past fields full of cows and sheep. They were quiet for a time, watching the fields and lanes flick past. \n\nAround half past twelve there was a great clattering outside in the corridor and a smiling, dimpled woman slid back their door and said, \"Anything off the cart, dears?\" \n\nHarry, who hadn't had any breakfast, leapt to his feet, but Ron's ears went pink again and he muttered that he'd brought sandwiches. Harry went out into the corridor.",
+      "approxWordCount": 210,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 3116,
+        "sourceWordEnd": 3325,
+        "sourceCharStart": 142831,
+        "sourceCharEnd": 144021
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch06_p014_q01",
+          "type": "multiple_choice",
+          "prompt": "Read this sentence from the story: \"There's loads of people ___ come from Muggle families.\" Which word goes in the blank?",
+          "explanation": "We use 'who' to give more information about people!",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Defining Relative Clauses",
+          "options": [
+            "who",
+            "which",
+            "where"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch06_p014_q02",
+          "type": "true_false",
+          "prompt": "Ron thinks Harry will be the worst student in the class.",
+          "explanation": "Ron tells Harry, \"You won't be.\" He thinks Harry will learn quickly!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Future Forms",
+          "answer": false
+        },
+        {
+          "id": "hp_ep1_ch06_p014_q03",
+          "type": "multiple_choice",
+          "prompt": "When Harry wanted to buy food from the cart, where did he go?",
+          "explanation": "The story says Harry went out into the corridor to see the cart.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "He went into the corridor.",
+            "He went out of the train.",
+            "He went towards the fields."
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch06_p014_q04",
+          "type": "true_false",
+          "prompt": "Harry didn't know anything about being a wizard until Hagrid told him.",
+          "explanation": "Harry says he didn't know anything about being a wizard or about his parents before Hagrid told him.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Like & About",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch06_p015",
+      "pageNumber": 15,
+      "sourceText": "He had never had any money for candy with the Dursleys, and now that he had pockets rattling with gold and silver he was ready to buy as many Mars Bars as he could carry -- but the woman didn't have Mars Bars. What she did have were Bettie Bott's Every Flavor Beans, Drooble's Best Blowing Gum, Chocolate Frogs. Pumpkin Pasties, Cauldron Cakes, Licorice Wands, and a number of other strange things Harry had never seen in his life. Not wanting to miss anything, he got some of everything and paid the woman eleven silver Sickles and seven bronze Knuts. \n\nRon stared as Harry brought it all back in to the compartment and tipped it onto an empty seat. \n\n\"Hungry, are you?\" \n\n\"Starving,\" said Harry, taking a large bite out of a pumpkin pasty. \n\nRon had taken out a lumpy package and unwrapped it. There were four sandwiches inside. He pulled one of them apart and said, \"She always forgets I don't like corned beef.\" \n\n\"Swap you for one of these,\" said Harry, holding up a pasty. \"Go on --\" \n\n\"You don't want this, it's all dry,\" said Ron. \"She hasn't got much time,\" he added quickly, \"you know, with five of us.\" \n\n\"Go on, have a pasty,\" said Harry, who had never had anything to share before or, indeed, anyone to share it with. It was a nice feeling, sitting there with Ron, eating their way through all Harry's pasties, cakes, and candies (the sandwiches lay forgotten).",
+      "approxWordCount": 248,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 3326,
+        "sourceWordEnd": 3573,
+        "sourceCharStart": 144024,
+        "sourceCharEnd": 145398
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch06_p015_q01",
+          "type": "multiple_choice",
+          "prompt": "Ron says, \"She always forgets I don't like corned beef.\" What does the word \"always\" tell us?",
+          "explanation": "The word \"always\" is used in the Present Simple tense to show a routine or something that happens a lot.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Present Simple",
+          "options": [
+            "It happens a lot.",
+            "It happened only one time.",
+            "It will happen tomorrow."
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch06_p015_q02",
+          "type": "multiple_choice",
+          "prompt": "Where did Harry bring all the candy?",
+          "explanation": "The story says Harry brought it all back \"in to the compartment\" to sit with Ron.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "Out of the train",
+            "Into the compartment",
+            "Towards the woman"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch06_p015_q03",
+          "type": "true_false",
+          "prompt": "Harry has shared his candy with many friends before.",
+          "explanation": "The story says Harry had \"never had anything to share before.\" This is a brand new experience for him!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Perfect",
+          "answer": false
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch06_p016",
+      "pageNumber": 16,
+      "sourceText": "\"What are these?\" Harry asked Ron, holding up a pack of Chocolate Frogs. \n\n\"They're not really frogs, are they?\" He was starting to feel that nothing would surprise him. \n\n\"No,\" said Ron. \"But see what the card is. I'm missing Agrippa.\" \n\n\"What?\" \n\n\"Oh, of course, you wouldn't know -- Chocolate Frogs have cards, inside them, you know, to collect -- famous witches and wizards. I've got about five hundred, but I haven't got Agrippa or Ptolemy.\" \n\nHarry unwrapped his Chocolate Frog and picked up the card. It showed a man's face. He wore half- moon glasses, had a long, crooked nose, and flowing silver hair, beard, and mustache. Underneath the picture was the name Albus Dumbledore. \n\n\"So this is Dumbledore!\" said Harry. \n\n\"Don't tell me you'd never heard of Dumbledore!\" said Ron. \"Can I have a frog? I might get Agrippa -- thanks Harry turned over his card and read: ALBUS DUMBLEDORE CURRENTLY HEADMASTER OF HOGWARTS Considered by many the greatest wizard of modern times, Dumbledore is particularly famous for his defeat of the dark wizard Grindelwald in 1945, for the discovery of the twelve uses of dragon's blood, and his work on alchemy with his partner, Nicolas Flamel. Professor Dumbledore enjoys chamber music and tenpin bowling. \n\nHarry turned the card back over and saw, to his astonishment, that Dumbledore's face had disappeared. \n\n\"He's gone!\" \n\n\"Well, you can't expect him to hang around all day,\" said Ron. \"He'll be back.",
+      "approxWordCount": 240,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 3574,
+        "sourceWordEnd": 3813,
+        "sourceCharStart": 145401,
+        "sourceCharEnd": 146844
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch06_p016_q01",
+          "type": "multiple_choice",
+          "prompt": "Look at Harry's question: \"They're not really frogs, are they?\" Why does he add \"are they?\" at the end?",
+          "explanation": "Harry uses a tag question (\"are they?\") to check if the frogs are real or not.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Tag Questions",
+          "options": [
+            "A. To check information",
+            "B. To make a polite offer",
+            "C. To talk about the future"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch06_p016_q02",
+          "type": "true_false",
+          "prompt": "Professor Dumbledore enjoys chamber music and tenpin bowling.",
+          "explanation": "The card says Dumbledore enjoys chamber music and tenpin bowling. We use the Present Simple for general facts!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch06_p016_q03",
+          "type": "multiple_choice",
+          "prompt": "Ron says, \"I might get Agrippa.\" What does \"might\" mean here?",
+          "explanation": "The word \"might\" shows possibility. It means maybe it will happen!",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Obligation & Possibility",
+          "options": [
+            "A. He has to get Agrippa.",
+            "B. It is possible he will get Agrippa.",
+            "C. He is going to get Agrippa right now."
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch06_p016_q04",
+          "type": "multiple_choice",
+          "prompt": "Ron says, \"He'll be back.\" This means Dumbledore _____ be back.",
+          "explanation": "\"He'll\" is short for \"He will\". We use \"will\" to talk about the future!",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Future Forms",
+          "options": [
+            "A. will",
+            "B. was",
+            "C. has"
+          ],
+          "answerIndex": 0
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch06_p017",
+      "pageNumber": 17,
+      "sourceText": "No, I've got Morgana again and I've got about six of her... do you want it? You can start collecting.\" \n\nRon's eyes strayed to the pile of Chocolate Frogs waiting to be unwrapped. \n\n\"Help yourself,\" said Harry. \"But in, you know, the Muggle world, people just stay put in photos.\" \n\n\"Do they? What, they don't move at all?\" Ron sounded amazed. \"weird!\" \n\nHarry stared as Dumbledore sidled back into the picture on his card and gave him a small smile. Ron was more interested in eating the frogs than looking at the Famous Witches and Wizards cards, but Harry couldn't keep his eyes off them. Soon he had not only Dumbledore and Morgana, but Hengist of Woodcroft, Alberic Grunnion, Circe, Paracelsus, and Merlin. \n\nHe finally tore his eyes away from the druidess Cliodna, who was scratching her nose, to open a bag of Bertie Bott's Every Flavor Beans. \n\n\"You want to be careful with those,\" Ron warned Harry. \"When they say every flavor, they mean every flavor -- you know, you get all the ordinary ones like chocolate and peppermint and mar- malade, but then you can get spinach and liver and tripe. George reckons he had a boogerflavored one once.\" \n\nRon picked up a green bean, looked at it carefully, and bit into a corner. \n\n\"Bleaaargh -- see? Sprouts.\" \n\nThey had a good time eating the Every Flavor Beans.",
+      "approxWordCount": 230,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 3814,
+        "sourceWordEnd": 4043,
+        "sourceCharStart": 146845,
+        "sourceCharEnd": 148156
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch06_p017_q01",
+          "type": "true_false",
+          "prompt": "In the Muggle world, people in photos do not move.",
+          "explanation": "Harry tells Ron that in the Muggle world, people just stay put in photos.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch06_p017_q02",
+          "type": "multiple_choice",
+          "prompt": "Dumbledore moved back _____ the picture on his card.",
+          "explanation": "The word 'into' shows that Dumbledore moved inside the picture.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "into",
+            "out of",
+            "from"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch06_p017_q03",
+          "type": "multiple_choice",
+          "prompt": "What was the druidess Cliodna doing in the picture?",
+          "explanation": "The story says Cliodna was scratching her nose.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "options": [
+            "She was eating a frog.",
+            "She was scratching her nose.",
+            "She was opening a bag."
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch06_p017_q04",
+          "type": "multiple_choice",
+          "prompt": "Read this part: '...the druidess Cliodna, who was scratching her nose...' Which word gives extra information about the person?",
+          "explanation": "We use 'who' to give more information about a person.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Defining Relative Clauses",
+          "options": [
+            "who",
+            "which",
+            "where"
+          ],
+          "answerIndex": 0
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch06_p018",
+      "pageNumber": 18,
+      "sourceText": "Harry got toast, coconut, baked bean, strawberry, curry, grass, coffee, sardine, and was even brave enough to nibble the end off a funny gray one Ron wouldn't touch, which turned out to be pepper. \n\nThe countryside now flying past the window was becoming wilder. The neat fields had gone. Now there were woods, twisting rivers, and dark green hills. \n\nThere was a knock on the door of their compartment and the round-faced boy Harry had passed on platform nine and threequarters came in. He looked tearful. \n\n\"Sorry,\" he said, \"but have you seen a toad at all?\" \n\nWhen they shook their heads, he wailed, \"I've lost him! He keeps getting away from me!\" \n\n\"He'll turn up,\" said Harry. \n\n\"Yes,\" said the boy miserably. \"Well, if you see him...\" \n\nHe left. \n\n\"Don't know why he's so bothered,\" said Ron. \"If I'd brought a toad I'd lose it as quick as I could. Mind you, I brought Scabbers, so I can't talk.\" \n\nThe rat was still snoozing on Ron's lap. \n\n\"He might have died and you wouldn't know the difference,\" said Ron in disgust. \"I tried to turn him yellow yesterday to make him more interesting, but the spell didn't work. I'll show you, look...\" \n\nHe rummaged around in his trunk and pulled out a very battered-looking wand. It was chipped in places and something white was glinting at the end. \n\n\"Unicorn hair's nearly poking out. Anyway He had just raised his 'wand when the compartment door slid open again.",
+      "approxWordCount": 248,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 4044,
+        "sourceWordEnd": 4291,
+        "sourceCharStart": 148157,
+        "sourceCharEnd": 149569
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch06_p018_q01",
+          "type": "true_false",
+          "prompt": "The round-faced boy has lost his toad.",
+          "explanation": "The boy says, \"I've lost him!\" when asking about his toad.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Perfect",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch06_p018_q02",
+          "type": "multiple_choice",
+          "prompt": "What was the rat doing on Ron's lap?",
+          "explanation": "The story says the rat was still snoozing (sleeping) on Ron's lap.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "options": [
+            "It was eating.",
+            "It was snoozing.",
+            "It was running."
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch06_p018_q03",
+          "type": "true_false",
+          "prompt": "Harry thinks the toad will never come back.",
+          "explanation": "Harry says \"He'll turn up,\" which means he thinks the toad will be found.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Future Forms",
+          "answer": false
+        },
+        {
+          "id": "hp_ep1_ch06_p018_q04",
+          "type": "multiple_choice",
+          "prompt": "What does Ron say about his sleeping rat?",
+          "explanation": "Ron says, \"He might have died,\" because the rat is so boring and sleepy.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Obligation & Possibility",
+          "options": [
+            "He might be a toad.",
+            "He might be magic.",
+            "He might be dead."
+          ],
+          "answerIndex": 2
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch06_p019",
+      "pageNumber": 19,
+      "sourceText": "The toadless boy was back, but this time he had a girl with him. She was already wearing her new Hogwarts robes. \n\n\"Has anyone seen a toad? Neville's lost one,\" she said. She had a bossy sort of voice, lots of bushy brown hair, and rather large front teeth. \n\n\"We've already told him we haven't seen it,\" said Ron, but the girl wasn't listening, she was looking at the wand in his hand. \n\n\"Oh, are you doing magic? Let's see it, then.\" \n\nShe sat down. Ron looked taken aback. \n\n\"Er -- all right.\" \n\nHe cleared his throat. \n\n\"Sunshine, daisies, butter mellow, Turn this stupid, fat rat yellow.\" \n\nHe waved his wand, but nothing happened. Scabbers stayed gray and fast asleep. \n\n\"Are you sure that's a real spell?\" said the girl. \"Well, it's not very good, is it? I've tried a few simple spells just for practice and it's all worked for me. Nobody in my family's magic at all, it was ever such a surprise when I got my letter, but I was ever so pleased, of course, I mean, it's the very best school of witchcraft there is, I've heard -- I've learned all our course books by heart, of course, I just hope it will be enough -- I'm Hermione Granger, by the way, who are you. \n\nShe said all this very fast. \n\nHarry looked at Ron, and was relieved to see by his stunned face that he hadn't learned all the course books by heart either.",
+      "approxWordCount": 249,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 4292,
+        "sourceWordEnd": 4540,
+        "sourceCharStart": 149572,
+        "sourceCharEnd": 150900
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch06_p019_q01",
+          "type": "true_false",
+          "prompt": "Ron has seen Neville's toad.",
+          "explanation": "Ron says, 'We haven't seen it,' which means he has not seen the toad.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Perfect",
+          "answer": false
+        },
+        {
+          "id": "hp_ep1_ch06_p019_q02",
+          "type": "multiple_choice",
+          "prompt": "What was the girl doing while Ron was talking?",
+          "explanation": "The story says 'she was looking at the wand in his hand.'",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "options": [
+            "A. She was looking at Ron's wand.",
+            "B. She was looking for a toad.",
+            "C. She was reading a book."
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch06_p019_q03",
+          "type": "multiple_choice",
+          "prompt": "The girl says, 'Well, it's not very good, is it?' Why does she use the tag question 'is it?'",
+          "explanation": "Tag questions like 'is it?' are used to check information or ask for agreement.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Tag Questions",
+          "options": [
+            "A. To ask for agreement.",
+            "B. To say hello.",
+            "C. To make a polite offer."
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch06_p019_q04",
+          "type": "true_false",
+          "prompt": "Hermione has already learned all her course books by heart.",
+          "explanation": "She tells the boys, 'I've learned all our course books by heart.'",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Perfect",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch06_p020",
+      "pageNumber": 20,
+      "sourceText": "\"I'm Ron Weasley,\" Ron muttered. \n\n\"Harry Potter,\" said Harry. \n\n\"Are you really?\" said Hermione. \"I know all about you, of course -- I got a few extra books. for background reading, and you're in Modern Magical History and The Rise and Fall of the Dark Arts and Great Wizarding Events of the Twentieth Century. \n\n\"Am I?\" said Harry, feeling dazed. \n\n\"Goodness, didn't you know, I'd have found out everything I could if it was me,\" said Hermione. \"Do either of you know what house you'll be in? I've been asking around, and I hope I'm in Gryffindor, it sounds by far the best; I hear Dumbledore himself was in it, but I suppose Ravenclaw wouldn't be too bad.... Anyway, we'd better go and look for Neville's toad. You two had better change, you know, I expect we'll be there soon.\" \n\nAnd she left, taking the toadless boy with her. \n\n\"Whatever house I'm in, I hope she's not in it,\" said Ron. He threw his wand back into his trunk. \"Stupid spell -- George gave it to me, bet he knew it was a dud.\" \n\n\"What house are your brothers in?\" asked Harry. \n\n\"Gryffindor,\" said Ron. Gloom seemed to be settling on him again. \"Mom and Dad were in it, too. I don't know what they'll say if I'm not. I don't suppose Ravenclaw would be too bad, but imagine if they put me in Slytherin.\" \n\n\"That's the house Vol-, I mean, You-Know-Who was in?\" \n\n\"Yeah,\" said Ron.",
+      "approxWordCount": 247,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 4541,
+        "sourceWordEnd": 4787,
+        "sourceCharStart": 150903,
+        "sourceCharEnd": 152252
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch06_p020_q01",
+          "type": "multiple_choice",
+          "prompt": "Hermione read books to learn _____ Harry Potter.",
+          "explanation": "We use 'about' to talk about a topic. Hermione read books with information about Harry!",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Like & About",
+          "options": [
+            "A. like",
+            "B. about",
+            "C. into"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch06_p020_q02",
+          "type": "multiple_choice",
+          "prompt": "Ron threw his wand back _____ his trunk.",
+          "explanation": "The word 'into' shows movement to the inside of something. Ron put his wand inside his trunk.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. into",
+            "B. out of",
+            "C. from"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch06_p020_q03",
+          "type": "true_false",
+          "prompt": "Ron wants to be in Slytherin house.",
+          "explanation": "Ron is worried about being in Slytherin. He hopes he is in Gryffindor like his parents and brothers.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "answer": false
+        },
+        {
+          "id": "hp_ep1_ch06_p020_q04",
+          "type": "true_false",
+          "prompt": "Hermione thinks they will arrive soon.",
+          "explanation": "Hermione says 'I expect we'll be there soon,' which means she thinks they will arrive in a short time.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Future Forms",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch06_p021",
+      "pageNumber": 21,
+      "sourceText": "He flopped back into his seat, looking depressed. \n\n\"You know, I think the ends of Scabbers' whiskers are a bit lighter,\" \n\nsaid Harry, trying to take Ron's mind off houses. \"So what do your oldest brothers do now that they've left, anyway?\" \n\nHarry was wondering what a wizard did once he'd finished school. \n\n\"Charlie's in Romania studying dragons, and Bill's in Africa doing something for Gringotts,\" said Ron. \"Did you hear about Gringotts? It's been all over the Daily Prophet, but I don't suppose you get that with the Muggles -- someone tried to rob a high security vault.\" \n\nHarry stared. \n\n\"Really? What happened to them?\" \n\n\"Nothing, that's why it's such big news. They haven't been caught. My dad says it must've been a powerful Dark wizard to get round Gringotts, but they don't think they took anything, that's what's odd. 'Course, everyone gets scared when something like this happens in case You-Know-Who's behind it.\" \n\nHarry turned this news over in his mind. He was starting to get a prickle of fear every time You- Know-Who was mentioned. He supposed this was all part of entering the magical world, but it had been a lot more comfortable saying \"Voldemort\" without worrying. \n\n\"What's your Quidditch team?\" Ron asked. \n\n\"Er -- I don't know any,\" Harry confessed. \n\n\"What!\" Ron looked dumbfounded.",
+      "approxWordCount": 219,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 4788,
+        "sourceWordEnd": 5006,
+        "sourceCharStart": 152253,
+        "sourceCharEnd": 153569
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch06_p021_q01",
+          "type": "multiple_choice",
+          "prompt": "Where did Ron flop back?",
+          "explanation": "The text says 'He flopped back into his seat.' The word 'into' shows movement to the inside of something.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "Into his seat",
+            "Out of his seat",
+            "Towards the door"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch06_p021_q02",
+          "type": "true_false",
+          "prompt": "Ron asks Harry if he heard about Gringotts.",
+          "explanation": "Ron says, 'Did you hear about Gringotts?' We use 'about' to show the topic they are talking about.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Like & About",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch06_p021_q03",
+          "type": "multiple_choice",
+          "prompt": "Did the people who tried to rob Gringotts get caught?",
+          "explanation": "Ron says 'They haven't been caught.' This uses the present perfect tense to talk about something that has not happened yet.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Perfect",
+          "options": [
+            "Yes, they are in jail.",
+            "No, they haven't been caught.",
+            "Yes, Harry caught them."
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch06_p021_q04",
+          "type": "true_false",
+          "prompt": "Harry knows a lot of Quidditch teams.",
+          "explanation": "Harry says 'I don't know any.' This uses the present simple tense to share a general fact.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "answer": false
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch06_p022",
+      "pageNumber": 22,
+      "sourceText": "\"Oh, you wait, it's the best game in the world --\" And he was off, explaining all about the four balls and the positions of the seven players, describing famous games he'd been to with his brothers and the broomstick he'd like to get if he had the money. He was just taking Harry through the finer points of the game when the compartment door slid open yet again, but it wasn't Neville the toadless boy, or Hermione Granger this time. \n\nThree boys entered, and Harry recognized the middle one at once: it was the pale boy from Madam Malkin's robe shop. He was looking at Harry with a lot more interest than he'd shown back in Diagon Alley. \n\n\"Is it true?\" he said. \"They're saying all down the train that Harry Potter's in this compartment. So it's you, is it?\" \n\n\"Yes,\" said Harry. He was looking at the other boys. Both of them were thickset and looked extremely mean. Standing on either side of the pale boy, they looked like bodyguards. \n\n\"Oh, this is Crabbe and this is Goyle,\" said the pale boy carelessly, noticing where Harry was looking. \"And my name's Malfoy, Draco Malfoy.\" \n\nRon gave a slight cough, which might have been hiding a snigget. Draco Malfoy looked at him. \n\n\"Think my name's funny, do you? No need to ask who you are. My father told me all the Weasleys have red hair, freckles, and more children than they can afford.\" \n\nHe turned back to Harry.",
+      "approxWordCount": 249,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 5007,
+        "sourceWordEnd": 5255,
+        "sourceCharStart": 153570,
+        "sourceCharEnd": 154939
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch06_p022_q01",
+          "type": "true_false",
+          "prompt": "Ron was explaining a game to Harry when the door opened.",
+          "explanation": "The text says Ron was explaining the game when the compartment door slid open.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch06_p022_q02",
+          "type": "multiple_choice",
+          "prompt": "Who did Crabbe and Goyle look like?",
+          "explanation": "The text says they looked like bodyguards because they were big and stood next to Draco.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Like & About",
+          "options": [
+            "Bodyguards",
+            "Teachers",
+            "Brothers"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch06_p022_q03",
+          "type": "multiple_choice",
+          "prompt": "What does Draco say the Weasley family has?",
+          "explanation": "Draco says his father told him all the Weasleys have red hair and freckles.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "options": [
+            "Black hair and glasses",
+            "Red hair and freckles",
+            "Brown hair and toads"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch06_p022_q04",
+          "type": "true_false",
+          "prompt": "Draco says, \"So it's you, is it?\" to check if the boy is really Harry Potter.",
+          "explanation": "Draco uses a tag question to check if the information he heard on the train is true.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Tag Questions",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch06_p023",
+      "pageNumber": 23,
+      "sourceText": "\"You'll soon find out some wizarding families are much better than others, Potter. You don't want to go making friends with the wrong sort. I can help you there.\" \n\nHe held out his hand to shake Harry's, but Harry didn't take it. \n\n\"I think I can tell who the wrong sort are for myself, thanks,\" he said coolly. \n\nDraco Malfoy didn't go red, but a pink tinge appeared in his pale cheeks. \n\n\"I'd be careful if I were you, Potter,\" he said slowly. \"Unless you're a bit politer you'll go the same way as your parents. They didn't know what was good for them, either. You hang around with riffraff like the Weasleys and that Hagrid, and it'll rub off on you.\" \n\nBoth Harry and Ron stood up. \n\n\"Say that again,\" Ron said, his face as red as his hair. \n\n\"Oh, you're going to fight us, are you?\" Malfoy sneered. \n\n\"Unless you get out now,\" said Harry, more bravely than he felt, because Crabbe and Goyle were a lot bigger than him or Ron. \n\n\"But we don't feet like leaving, do we, boys? We've eaten all our food and you still seem to have some.\" \n\nGoyle reached toward the Chocolate Frogs next to Ron - Ron leapt forward, but before he'd so much as touched Goyle, Goyle let out a horrible yell.",
+      "approxWordCount": 222,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 5256,
+        "sourceWordEnd": 5477,
+        "sourceCharStart": 154940,
+        "sourceCharEnd": 156127
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch06_p023_q01",
+          "type": "multiple_choice",
+          "prompt": "Malfoy says, \"But we don't feel like leaving, _____ boys?\" What are the missing words?",
+          "explanation": "Because the first part is negative (\"don't feel\"), the tag question must be positive (\"do we\").",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Tag Questions",
+          "options": [
+            "A. do we,",
+            "B. don't we,",
+            "C. are we,"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch06_p023_q02",
+          "type": "multiple_choice",
+          "prompt": "Where does Goyle reach his hand?",
+          "explanation": "The story says Goyle reached toward the Chocolate Frogs. \"Toward\" shows the direction his hand moved!",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. Into his pocket",
+            "B. Toward the Chocolate Frogs",
+            "C. Out of the window"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch06_p023_q03",
+          "type": "true_false",
+          "prompt": "Malfoy thinks Harry and Ron are going to fight them.",
+          "explanation": "When Harry and Ron stand up, Malfoy asks, \"Oh, you're going to fight us, are you?\"",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Future Forms",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch06_p024",
+      "pageNumber": 24,
+      "sourceText": "Scabbers the rat was hanging off his finger, sharp little teeth sunk deep into Goyle's knuckle - Crabbe and Malfoy backed away as Goyle swung Scabbers round and round, howling, and when Scabbets finally flew off and hit the window, all three of them disappeared at once. Perhaps they thought there were more rats lurking among the sweets, or perhaps they'd heard footsteps, because a second later, Hermione Granger had come in. \n\n\"What has been going on?\" she said, looking at the sweets all over the floor and Ron picking up Scabbers by his tail. \n\nI think he's been knocked out,\" Ron said to Harry. He looked closer at Scabbers. \"No -- I don't believe it -- he's gone back to sleep-\" \n\nAnd so he had. \n\n\"You've met Malfoy before?\" \n\nHarry explained about their meeting in Diagon Alley. \n\n\"I've heard of his family,\" said Ron darkly. \"They were some of the first to come back to our side after You-Know-Who disappeared. Said they'd been bewitched. My dad doesn't believe it. He says Malfoy's father didn't need an excuse to go over to the Dark Side.\" He turned to Hermione. \"Can we help you with something?\" \n\n\"You'd better hurry up and put your robes on, I've just been up to the front to ask the conductor, and he says we're nearly there. You haven't been fighting, have you? You'll be in trouble before we even get there!\" \n\n\"Scabbers has been fighting, not us,\" said Ron, scowling at her.",
+      "approxWordCount": 247,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 5478,
+        "sourceWordEnd": 5724,
+        "sourceCharStart": 156130,
+        "sourceCharEnd": 157523
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch06_p024_q01",
+          "type": "true_false",
+          "prompt": "Ron says, \"I've heard of his family.\" This means he heard about them in the past, but we don't know exactly when.",
+          "explanation": "\"I've heard\" is the present perfect tense. We use it for experiences when we don't say the exact time!",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Present Perfect",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch06_p024_q02",
+          "type": "multiple_choice",
+          "prompt": "Hermione says, \"You haven't been fighting, have you?\" Why does she add \"have you?\" at the end?",
+          "explanation": "A tag question like \"have you?\" is used to check information or ask if someone agrees.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Tag Questions",
+          "options": [
+            "A. To ask for a new pet",
+            "B. To check information",
+            "C. To say hello"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch06_p024_q03",
+          "type": "multiple_choice",
+          "prompt": "Does Ron's dad believe that the Malfoy family was bewitched?",
+          "explanation": "Ron says, \"My dad doesn't believe it.\" This is a fact in the present simple tense.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "options": [
+            "A. Yes, he always believes it.",
+            "B. No, he doesn't believe it.",
+            "C. He sometimes believes it."
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch06_p024_q04",
+          "type": "multiple_choice",
+          "prompt": "What was Scabbers doing to Goyle's finger at the start of the page?",
+          "explanation": "The text says Scabbers \"was hanging off his finger.\" We use \"was + verb-ing\" for an action in progress in the past.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "options": [
+            "A. He was sleeping on it.",
+            "B. He was hanging off it.",
+            "C. He was hiding under it."
+          ],
+          "answerIndex": 1
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch06_p025",
+      "pageNumber": 25,
+      "sourceText": "\"Would you mind leaving while we change?\" \n\n\"All right -- I only came in here because people outside are behaving very childishly, racing up and down the corridors,\" said Hermione in a sniffy voice. \"And you've got dirt on your nose, by the way, did you know?\" \n\nRon glared at her as she left. Harry peered out of the window. It was getting dark. He could see mountains and forests under a deep purple sky. The train did seem to be slowing down. \n\nHe and Ron took off their jackets and pulled on their long black robes. \n\nRon's were a bit short for him, you could see his sneakers underneath them. \n\nA voice echoed through the train: \"We will be reaching Hogwarts in five minutes' time. Please leave your luggage on the train, it will be taken to the school separately.\" \n\nHarry's stomach lurched with nerves and Ron, he saw, looked pale under his freckles. They crammed their pockets with the last of the sweets and joined the crowd thronging the corridor. \n\nThe train slowed right down and finally stopped. People pushed their way toward the door and out on to a tiny, dark platform. Harry shivered in the cold night air. Then a lamp came bobbing over the heads of the students, and Harry heard a familiar voice: \"Firs' years! Firs' years over here! All right there, Harry?\" \n\nHagrid's big hairy face beamed over the sea of heads. \n\n\"C'mon, follow me -- any more firs' years?",
+      "approxWordCount": 247,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 5725,
+        "sourceWordEnd": 5971,
+        "sourceCharStart": 157524,
+        "sourceCharEnd": 158901
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch06_p025_q01",
+          "type": "multiple_choice",
+          "prompt": "Where did the people push their way when the train stopped?",
+          "explanation": "The story says people pushed their way 'toward the door' to get out onto the platform.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. Into the train",
+            "B. Toward the door",
+            "C. Out of the window"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch06_p025_q02",
+          "type": "true_false",
+          "prompt": "The voice on the train says the luggage will be taken to the school separately.",
+          "explanation": "The voice tells the students to leave their bags on the train because they will be taken to the school for them.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Future Forms",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch06_p025_q03",
+          "type": "true_false",
+          "prompt": "The sky was getting bright and sunny when Harry looked outside.",
+          "explanation": "The story says 'It was getting dark' and the sky was deep purple.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "answer": false
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch06_p026",
+      "pageNumber": 26,
+      "sourceText": "Mind yer step, now! Firs' years follow me!\" \n\nSlipping and stumbling, they followed Hagrid down what seemed to be a steep, narrow path. It was so dark on either side of them that Harry thought there must be thick trees there. Nobody spoke much. Neville, the boy who kept losing his toad, sniffed once or twice. \n\n\"Ye' all get yer firs' sight o' Hogwarts in a sec,\" Hagrid called over his shoulder, \"jus' round this bend here.\" \n\nThere was a loud \"Oooooh!\" \n\nThe narrow path had opened suddenly onto the edge of a great black take. \n\nPerched atop a high mountain on the other side, its windows sparkling in the starry sky, was a vast castle with many turrets and towers. \n\n\"No more'n four to a boat!\" Hagrid called, pointing to a fleet of little boats sitting in the water by the shore. Harry and Ron were followed into their boat by Neville and Hermione. \"Everyone in?\" shouted Hagrid, who had a boat to himself. \"Right then -- FORWARD!\" \n\nAnd the fleet of little boats moved off all at once, gliding across the lake, which was as smooth as glass. Everyone was silent, staring up at the great castle overhead. It towered over them as they sailed nearer and nearer to the cliff on which it stood. \n\n\"Heads down!\"",
+      "approxWordCount": 219,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 5972,
+        "sourceWordEnd": 6190,
+        "sourceCharStart": 158902,
+        "sourceCharEnd": 160113
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch06_p026_q01",
+          "type": "multiple_choice",
+          "prompt": "Fill in the missing word: \"Neville, the boy _____ kept losing his toad...\"",
+          "explanation": "We use 'who' to give more information about a person, like the boy Neville.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Defining Relative Clauses",
+          "options": [
+            "A. which",
+            "B. who",
+            "C. where"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch06_p026_q02",
+          "type": "multiple_choice",
+          "prompt": "Which word shows where the children went? \"Harry and Ron were followed _____ their boat...\"",
+          "explanation": "The word 'into' shows that they moved inside the boat.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. into",
+            "B. out of",
+            "C. from"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch06_p026_q03",
+          "type": "true_false",
+          "prompt": "Hagrid shared his little boat with some of the students.",
+          "explanation": "The story says Hagrid 'had a boat to himself', which means he was in a boat all alone.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Defining Relative Clauses",
+          "answer": false
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch06_p027",
+      "pageNumber": 27,
+      "sourceText": "yelled Hagrid as the first boats reached the cliff; they all bent their heads and the little boats carried them through a curtain of ivy that hid a wide opening in the cliff face. They were carried along a dark tunnel, which seemed to be taking them right underneath the castle, until they reached a kind of underground harbor, where they clambered out onto rocks and pebbles. \n\n\"Oy, you there! Is this your toad?\" said Hagrid, who was checking the boats as people climbed out of them. \n\n\"Trevor!\" cried Neville blissfully, holding out his hands. Then they clambered up a passageway in the rock after Hagrid's lamp, coming out at last onto smooth, damp grass right in the shadow of the castle. \n\nThey walked up a flight of stone steps and crowded around the huge, Oak front door. \n\n\"Everyone here? You there, still got yer toad?\" \n\nHagrid raised a gigantic fist and knocked three times on the castle door.",
+      "approxWordCount": 159,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 6191,
+        "sourceWordEnd": 6349,
+        "sourceCharStart": 160114,
+        "sourceCharEnd": 161019
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch06_p027_q01",
+          "type": "multiple_choice",
+          "prompt": "The children walked _____ a flight of stone steps.",
+          "explanation": "The text says they 'walked up a flight of stone steps' to get to the door.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "up",
+            "out of",
+            "into"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch06_p027_q02",
+          "type": "true_false",
+          "prompt": "Hagrid was checking the boats as people climbed out.",
+          "explanation": "The story says Hagrid 'was checking the boats', which shows an action happening in the past.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch06_p027_q03",
+          "type": "multiple_choice",
+          "prompt": "Read this part: '...said Hagrid, who was checking the boats...' Who does the word 'who' mean here?",
+          "explanation": "The word 'who' is used to give more information about the person just mentioned, which is Hagrid.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Defining Relative Clauses",
+          "options": [
+            "Neville",
+            "Hagrid",
+            "Trevor"
+          ],
+          "answerIndex": 1
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    }
+  ]
+}

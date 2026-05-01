@@ -1,0 +1,1314 @@
+{
+  "storyId": "harrypotter_episode1",
+  "chapterId": "chapter_09",
+  "chapterNumber": 9,
+  "title": "The Midnight Duel",
+  "dateLabel": "12 September 1991",
+  "sourceTextIncluded": true,
+  "pages": [
+    {
+      "pageId": "hp_ep1_ch09_p001",
+      "pageNumber": 1,
+      "sourceText": "THE MIDNIGHT DUEL \n\nHarry had never believed he would meet a boy he hated more than Dudley, but that was before he met Draco Malfoy. Still, first-year Gryffindors only had Potions with the Slytherins, so they didn't have to put up with Malfoy much. Or at least, they didn't until they spotted a notice pinned up in the Gryffindor common room that made them all groan. \n\nFlying lessons would be starting on Thursday -- and Gryffindor and Slytherin would be learning together. \n\n\"Typical,\" said Harry darkly. \"Just what I always wanted. To make a fool of myself on a broomstick in front of Malfoy.\" \n\nHe had been looking forward to learning to fly more than anything else. \n\n\"You don't know that you'll make a fool of yourself,\" said Ron reasonably. \"Anyway, I know Malfoy's always going on about how good he is at Quidditch, but I bet that's all talk.\" \n\nMalfay certainly did talk about flying a lot. He complained loudly about first years never getting on the house Quidditch teams and told long, boastful stories that always seemed to end with him narrowly escaping Muggles in helicopters. He wasn't the only one, though: the way Seamus Finnigan told it, he'd spent most of his childhood zooming around the countryside on his broomstick. Even Ron would tell anyone who'd listen about the time he'd almost hit a hang glider on Charlie's old broom. \n\nEveryone from wizarding families talked about Quidditch constantly.",
+      "approxWordCount": 241,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 1,
+        "sourceWordEnd": 241,
+        "sourceCharStart": 203870,
+        "sourceCharEnd": 205287
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch09_p001_q01",
+          "type": "multiple_choice",
+          "prompt": "What did everyone from wizarding families talk about constantly?",
+          "explanation": "The text says everyone from wizarding families talked about Quidditch constantly. We use 'about' to show the topic of a conversation!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Like & About",
+          "options": [
+            "A. Potions",
+            "B. Quidditch",
+            "C. Muggles"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch09_p001_q02",
+          "type": "true_false",
+          "prompt": "The Gryffindors had to see Malfoy all the time.",
+          "explanation": "They didn't have to see him much because they only had Potions class together. 'Have to' shows obligation!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Obligation & Possibility",
+          "answer": false
+        },
+        {
+          "id": "hp_ep1_ch09_p001_q03",
+          "type": "multiple_choice",
+          "prompt": "Read this sentence: 'Ron would tell anyone _____ would listen about his flying story.' Which word fits best?",
+          "explanation": "We use 'who' to give more information about a person (anyone).",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Defining Relative Clauses",
+          "options": [
+            "A. which",
+            "B. where",
+            "C. who"
+          ],
+          "answerIndex": 2
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch09_p002",
+      "pageNumber": 2,
+      "sourceText": "Ron had already had a big argument with Dean Thomas, who shared their dormitory, about soccer. Ron couldn't see what was exciting about a game with only one ball where no one was allowed to fly. Harry had caught Ron prodding Dean's poster of West Ham soccer team, trying to make the players move. \n\nNeville had never been on a broomstick in his life, because his grandmother had never let him near one. Privately, Harry felt she'd had good reason, because Neville managed to have an extraordinary number of accidents even with both feet on the ground. \n\nHermione Granger was almost as nervous about flying as Neville was. This was something you couldn't learn by heart out of a book -- not that she hadn't tried. At breakfast on Thursday she bored them all stupid with flying tips she'd gotten out of a library book called Quidditch Through the Ages. Neville was hanging on to her every word, desperate for anything that might help him hang on to his broomstick later, but everybody else was very pleased when Hermione's lecture was interrupted by the arrival of the mail. \n\nHarry hadn't had a single letter since Hagrid's note, something that Malfoy had been quick to notice, of course. Malfoy's eagle owl was always bringing him packages of sweets from home, which he opened gloatingly at the Slytherin table. \n\nA barn owl brought Neville a small package from his grandmother.",
+      "approxWordCount": 238,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 242,
+        "sourceWordEnd": 479,
+        "sourceCharStart": 205288,
+        "sourceCharEnd": 206666
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch09_p002_q01",
+          "type": "multiple_choice",
+          "prompt": "Who is Dean Thomas?",
+          "explanation": "The text says Dean Thomas is someone 'who shared their dormitory.'",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Defining Relative Clauses",
+          "options": [
+            "A boy who shares Ron's dormitory",
+            "A player for the West Ham team",
+            "A teacher who teaches flying"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch09_p002_q02",
+          "type": "true_false",
+          "prompt": "Neville has never flown on a broomstick before.",
+          "explanation": "The story says Neville had never been on a broomstick in his life because his grandmother didn't let him.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Perfect",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch09_p002_q03",
+          "type": "multiple_choice",
+          "prompt": "What did Ron and Dean Thomas argue about?",
+          "explanation": "Ron and Dean had a big argument about soccer.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Like & About",
+          "options": [
+            "About flying on a broomstick",
+            "About a game called soccer",
+            "About a library book"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch09_p002_q04",
+          "type": "multiple_choice",
+          "prompt": "Where did Neville's small package come from?",
+          "explanation": "An owl brought Neville a package from his grandmother.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "From Hermione",
+            "From Malfoy",
+            "From his grandmother"
+          ],
+          "answerIndex": 2
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch09_p003",
+      "pageNumber": 3,
+      "sourceText": "He opened it excitedly and showed them a glass ball the size of a large marble, which seemed to be full of white smoke. \n\n\"It's a Remembrall!\" he explained. \"Gran knows I forget things -- this tells you if there's something you've forgotten to do. Look, you hold it tight like this and if it turns red -- oh...\" His face fell, because the Remembrall had suddenly glowed scarlet, \"You've forgotten something...\" \n\nNeville was trying to remember what he'd forgotten when Draco Malfoy, who was passing the Gryffindor table, snatched the Remembrall out of his hand. \n\nHarry and Ron jumped to their feet. They were half hoping for a reason to fight Malfay, but Professor McGonagall, who could spot trouble quicker than any teacher in the school, was there in a flash. \n\n\"What's going on?\" \n\n\"Malfoy's got my Remembrall, Professor.\" \n\nScowling, Malfoy quickly dropped the Remembrall back on the table. \n\n\"Just looking,\" he said, and he sloped away with Crabbe and Goyle behind him. \n\nAt three-thirty that afternoon, Harry, Ron, and the other Gryffindors hurried down the front steps onto the grounds for their first flying lesson. It was a clear, breezy day, and the grass rippled under their feet as they marched down the sloping lawns toward a smooth, flat lawn on the opposite side of the grounds to the forbidden forest, whose trees were swaying darkly in the distance. \n\nThe Slytherins were already there, and so were twenty broomsticks lying in neat lines on the ground.",
+      "approxWordCount": 248,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 480,
+        "sourceWordEnd": 727,
+        "sourceCharStart": 206667,
+        "sourceCharEnd": 208137
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch09_p003_q01",
+          "type": "multiple_choice",
+          "prompt": "What was Neville doing when Malfoy snatched the Remembrall?",
+          "explanation": "The story says Neville was trying to remember what he forgot when Malfoy took the ball.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "options": [
+            "A. He was eating lunch.",
+            "B. He was trying to remember something.",
+            "C. He was fighting with Ron."
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch09_p003_q02",
+          "type": "multiple_choice",
+          "prompt": "Where did Malfoy take the Remembrall from?",
+          "explanation": "The text says Malfoy snatched the Remembrall out of Neville's hand.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. Out of Neville's hand",
+            "B. Into Neville's bag",
+            "C. Towards the table"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch09_p003_q03",
+          "type": "true_false",
+          "prompt": "Professor McGonagall is a teacher who can spot trouble very quickly.",
+          "explanation": "The story says she could spot trouble quicker than any teacher in the school.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Defining Relative Clauses",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch09_p003_q04",
+          "type": "true_false",
+          "prompt": "Neville's Gran knows that he often forgets things.",
+          "explanation": "Neville says, 'Gran knows I forget things.' This is a general fact about Neville.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch09_p004",
+      "pageNumber": 4,
+      "sourceText": "Harry had heard Fred and George Weasley complain about the school brooms, saying that some of them started to vibrate if you flew too high, or always flew slightly to the left. \n\nTheir teacher, Madam Hooch, arrived. She had short, gray hair, and yellow eyes like a hawk. \n\n\"Well, what are you all waiting for?\" she barked. \"Everyone stand by a broomstick. Come on, hurry up.\" \n\nHarry glanced down at his broom. It was old and some of the twigs stuck out at odd angles. \n\n\"Stick out your right hand over your broom,\" called Madam Hooch at the front, \"and say 'Up!\"' \"UPF everyone shouted. \n\nHarry's broom jumped into his hand at once, but it was one of the few that did. Hermione Granger's had simply rolled over on the ground, and Neville's hadn't moved at all. Perhaps brooms, like horses, could tell when you were afraid, thought Harry; there was a quaver in Neville's voice that said only too clearly that he wanted to keep his feet on the ground. \n\nMadam Hooch then showed them how to mount their brooms without sliding off the end, and walked up and down the rows correcting their grips. \n\nHarry and Ron were delighted when she told Malfoy he'd been doing it wrong for years. \n\n\"Now, when I blow my whistle, you kick off from the ground, hard,\" said Madam Hooch. \"Keep your brooms steady, rise a few feet, and then come straight back down by leaning forward slightly.",
+      "approxWordCount": 246,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 728,
+        "sourceWordEnd": 973,
+        "sourceCharStart": 208138,
+        "sourceCharEnd": 209510
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch09_p004_q01",
+          "type": "multiple_choice",
+          "prompt": "What do Madam Hooch's eyes look like?",
+          "explanation": "The story says she has 'yellow eyes like a hawk.' We use 'like' to show two things are similar!",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Like & About",
+          "options": [
+            "A hawk",
+            "A broom",
+            "A horse"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch09_p004_q02",
+          "type": "true_false",
+          "prompt": "Harry's broom jumped into his hand right away.",
+          "explanation": "The text says his broom 'jumped into his hand at once.' The word 'into' shows movement!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Prepositions of Direction",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch09_p004_q03",
+          "type": "multiple_choice",
+          "prompt": "What do some of the school brooms always do?",
+          "explanation": "Fred and George say the brooms 'always flew slightly to the left.' 'Always' is a word we use for things that happen a lot!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "options": [
+            "Fly to the right",
+            "Fly to the left",
+            "Stay on the ground"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch09_p004_q04",
+          "type": "true_false",
+          "prompt": "Fred and George Weasley complain about the teachers.",
+          "explanation": "They complain ABOUT the school brooms. We use 'about' to show the topic we are talking about!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Like & About",
+          "answer": false
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch09_p005",
+      "pageNumber": 5,
+      "sourceText": "On my whistle -- three -- two --\" \n\nBut Neville, nervous and jumpy and frightened of being left on the ground, pushed off hard before the whistle had touched Madam Hooch's lips. \n\n\"Come back, boy!\" she shouted, but Neville was rising straight up like a cork shot out of a bottle -- twelve feet -- twenty feet. Harry saw his scared white face look down at the ground falling away, saw him gasp, slip sideways off the broom and -- WHAM -- a thud and a nasty crack and Neville lay facedown on the grass in a heap. His broomstick was still rising higher and higher, and started to drift lazily toward the forbidden forest and out of sight. \n\nMadam Hooch was bending over Neville, her face as white as his. \n\n\"Broken wrist,\" Harry heard her mutter. \"Come on, boy -- it's all right, up you get.\". \n\nShe turned to the rest of the class. \n\n\"None of you is to move while I take this boy to the hospital wing! You leave those brooms where they are or you'll be out of Hogwarts before you can say 'Quidditch.' Come on, dear.\" \n\nNeville, his face tear-streaked, clutching his wrist, hobbled off with Madam Hooch, who had her arm around him. \n\nNo sooner were they out of earshot than Malfoy burst into laughter. \n\n\"Did you see his face, the great lump?\" \n\nThe other Slytherins joined in. \n\n\"Shut up, Malfoy,\" snapped Parvati Patil. \n\n\"Ooh, sticking up for Longbottom?\"",
+      "approxWordCount": 245,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 974,
+        "sourceWordEnd": 1218,
+        "sourceCharStart": 209511,
+        "sourceCharEnd": 210866
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch09_p005_q01",
+          "type": "multiple_choice",
+          "prompt": "What was Madam Hooch doing after Neville fell?",
+          "explanation": "The story says Madam Hooch was bending over Neville to check on him.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "options": [
+            "She was laughing at him.",
+            "She was bending over him.",
+            "She was flying away."
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch09_p005_q02",
+          "type": "multiple_choice",
+          "prompt": "Where did Neville's broomstick go?",
+          "explanation": "The text says the broomstick started to drift toward the forbidden forest.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "Toward the forbidden forest",
+            "Into the hospital wing",
+            "Out of the school"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch09_p005_q03",
+          "type": "true_false",
+          "prompt": "Madam Hooch says the students will have to leave Hogwarts if they move.",
+          "explanation": "She warns them that they will be out of Hogwarts if they don't leave their brooms on the ground.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Future Forms",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch09_p005_q04",
+          "type": "true_false",
+          "prompt": "Neville went up into the air like a bird flying away.",
+          "explanation": "The story says he went straight up \"like a cork shot out of a bottle.\"",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Like & About",
+          "answer": false
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch09_p006",
+      "pageNumber": 6,
+      "sourceText": "said Pansy Parkinson, a hard-faced Slytherin girl. \"Never thought you'd like fat little crybabies, Parvati.\" \n\n\"Look!\" said Malfoy, darting forward and snatching something out of the grass. \"It's that stupid thing Longbottom's gran sent him.\" \n\nThe Remembrall glittered in the sun as he held it up. \n\n\"Give that here, Malfoy,\" said Harry quietly. Everyone stopped talking to watch. \n\nMalfoy smiled nastily. \n\n\"I think I'll leave it somewhere for Longbottom to find -- how about -- up a tree?\" \n\n\"Give it here!\" Harry yelled, but Malfoy had leapt onto his broomstick and taken off. He hadn't been lying, he could fly well. Hovering level with the topmost branches of an oak he called, \"Come and get it, Potter!\" \n\nHarry grabbed his broom. \n\n\"No!\" shouted Hermione Granger. \"Madam Hooch told us not to move -- you'll get us all into trouble.\" \n\nHarry ignored her. Blood was pounding in his ears. He mounted the broom and kicked hard against the ground and up, up he soared; air rushed through his hair, and his robes whipped out behind him -and in a rush of fierce joy he realized he'd found something he could do without being taught -- this was easy, this was wonderful. He pulled his broomstick up a little to take it even higher, and heard screams and gasps of girls back on the ground and an admiring whoop from Ron. \n\nHe turned his broomstick sharply to face Malfoy in midair. Malfoy looked stunned.",
+      "approxWordCount": 242,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 1219,
+        "sourceWordEnd": 1460,
+        "sourceCharStart": 210867,
+        "sourceCharEnd": 212270
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch09_p006_q01",
+          "type": "multiple_choice",
+          "prompt": "Where does Malfoy snatch the Remembrall from?",
+          "explanation": "The story says Malfoy snatches something 'out of the grass'. 'Out of' is a preposition that shows movement.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "Out of the grass",
+            "Into the tree",
+            "Towards the sky"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch09_p006_q02",
+          "type": "true_false",
+          "prompt": "Malfoy says he will leave the Remembrall up a tree.",
+          "explanation": "Malfoy says, 'I think I'll leave it somewhere... up a tree?' He uses 'will' to talk about his decision.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Future Forms",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch09_p006_q03",
+          "type": "multiple_choice",
+          "prompt": "What does Hermione say the students have to do?",
+          "explanation": "Hermione says Madam Hooch told them 'not to move'. They have to stay on the ground.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Obligation & Possibility",
+          "options": [
+            "They have to fly up high.",
+            "They have to stay and not move.",
+            "They have to catch Malfoy."
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch09_p006_q04",
+          "type": "true_false",
+          "prompt": "Blood was pounding in Harry's ears before he flew up on his broom.",
+          "explanation": "The story says 'Blood was pounding in his ears' right before he kicked hard against the ground. This describes an action happening in the past.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch09_p007",
+      "pageNumber": 7,
+      "sourceText": "\"Give it here,\" Harry called, \"or I'll knock you off that broom!\" \"Oh, yeah?\" said Malfoy, trying to sneer, but looking worried. \n\nHarry knew, somehow, what to do. He leaned forward and grasped the broom tightly in both hands, and it shot toward Malfay like a javelin. Malfoy only just got out of the way in time; Harry made a sharp about-face and held the broom steady. A few people below were clapping. \n\n\"No Crabbe and Goyle up here to save your neck, Malfoy,\" Harry called. \n\nThe same thought seemed to have struck Malfoy. \n\n\"Catch it if you can, then!\" he shouted, and he threw the glass ball high into the air and streaked back toward the ground. \n\nHarry saw, as though in slow motion, the ball rise up in the air and then start to fall. He leaned forward and pointed his broom handle down -- next second he was gathering speed in a steep dive, racing the ball -- wind whistled in his ears, mingled with the screams of people watching -- he stretched out his hand -- a foot from the ground he caught it, just in time to pull his broom straight, and he toppled gently onto the grass with the Remembrall clutched safely in his fist. \n\n\"HARRY POTTER!\" \n\nHis heart sank faster than he'd just dived. Professor McGonagall was running toward them. He got to his feet, trembling.",
+      "approxWordCount": 233,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 1461,
+        "sourceWordEnd": 1693,
+        "sourceCharStart": 212273,
+        "sourceCharEnd": 213550
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch09_p007_q01",
+          "type": "multiple_choice",
+          "prompt": "What does Harry say he will do if Malfoy doesn't give the ball back?",
+          "explanation": "Harry says 'I'll knock you off that broom!' to make Malfoy give the ball back.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Future Forms",
+          "options": [
+            "A. He will fly away.",
+            "B. He will knock Malfoy off his broom.",
+            "C. He will tell a teacher."
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch09_p007_q02",
+          "type": "multiple_choice",
+          "prompt": "Where does Malfoy throw the glass ball?",
+          "explanation": "The story says Malfoy threw the glass ball high into the air.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. High into the air",
+            "B. Out of the window",
+            "C. Towards the trees"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch09_p007_q03",
+          "type": "true_false",
+          "prompt": "Professor McGonagall was walking slowly toward the boys.",
+          "explanation": "The story says she was running toward them, not walking slowly.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "answer": false
+        },
+        {
+          "id": "hp_ep1_ch09_p007_q04",
+          "type": "multiple_choice",
+          "prompt": "The broom shot toward Malfoy 'like a javelin'. What does 'like' mean here?",
+          "explanation": "We use 'like' to show that two things are similar. The broom moved just like a fast javelin!",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Like & About",
+          "options": [
+            "A. The broom enjoys being a javelin.",
+            "B. The broom moved fast and straight, similar to a javelin.",
+            "C. The broom wanted to talk about a javelin."
+          ],
+          "answerIndex": 1
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch09_p008",
+      "pageNumber": 8,
+      "sourceText": "\"Never -- in all my time at Hogwarts --\" \n\nProfessor McGonagall was almost speechless with shock, and her glasses flashed furiously, \"-- how dare you -- might have broken your neck --\" \n\n\"It wasn't his fault, Professor --\" \n\n\"Be quiet, Miss Patil \"But Malfoy --\" \n\n\"That's enough, Mr. Weasley. Potter, follow me, now.\" \n\nHarry caught sight of Malfoy, Crabbe, and Goyle's triumphant faces as he left, walking numbly in Professor McGonagall's wake as she strode toward the castle. He was going to be expelled, he just knew it. He wanted to say something to defend himself, but there seemed to be something wrong with his voice. Professor McGonagall was sweeping along without even looking at him; he had to jog to keep up. Now he'd done it. He hadn't even lasted two weeks. He'd be packing his bags in ten minutes. What would the Dursleys say when he turned up on the doorstep? Up the front steps, up the marble staircase inside, and still Professor McGonagall didn't say a word to him. She wrenched open doors and marched along corridors with Harry trotting miserably behind her. Maybe she was taking him to Dumbledore. He thought of Hagrid, expelled but allowed to stay on as gamekeeper. Perhaps he could be Hagrid's assistant. His stomach twisted as he imagined it, watching Ron and the others becoming wizards, while he stumped around the grounds carrying Hagrid's bag. \n\nProfessor McGonagall stopped outside a classroom. She opened the door and poked her head inside.",
+      "approxWordCount": 249,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 1694,
+        "sourceWordEnd": 1942,
+        "sourceCharStart": 213553,
+        "sourceCharEnd": 215023
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch09_p008_q01",
+          "type": "multiple_choice",
+          "prompt": "What does Harry think is going to happen to him?",
+          "explanation": "Harry thinks he is going to be expelled because Professor McGonagall is very angry.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Future Forms",
+          "options": [
+            "He is going to be expelled.",
+            "He is going to get a prize.",
+            "He is going to play a game."
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch09_p008_q02",
+          "type": "multiple_choice",
+          "prompt": "Which word shows the direction Professor McGonagall is walking? \"She strode _____ the castle.\"",
+          "explanation": "The text says she strode \"toward\" the castle, which means she is walking in the direction of the castle.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "toward",
+            "out of",
+            "under"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch09_p008_q03",
+          "type": "true_false",
+          "prompt": "Professor McGonagall was looking at Harry while she was walking.",
+          "explanation": "The story says she was walking \"without even looking at him.\"",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "answer": false
+        },
+        {
+          "id": "hp_ep1_ch09_p008_q04",
+          "type": "true_false",
+          "prompt": "Harry thinks he might become Hagrid's assistant.",
+          "explanation": "Harry thinks that if he has to leave school, perhaps he could stay and help Hagrid.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Obligation & Possibility",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch09_p009",
+      "pageNumber": 9,
+      "sourceText": "\"Excuse me, Professor Flitwick, could I borrow Wood for a moment?\" \n\nWood? thought Harry, bewildered; was Wood a cane she was going to use on him? But Wood turned out to be a person, a burly fifth-year boy who came out of Flitwicles class looking confused. \n\n\"Follow me, you two,\" said Professor McGonagall, and they marched on up the corridor, Wood looking curiously at Harry. \n\n\"In here.\" \n\nProfessor McGonagall pointed them into a classroom that was empty except for Peeves, who was busy writing rude words on the blackboard. \n\n\"Out, Peeves!\" she barked. Peeves threw the chalk into a bin, which clanged loudly, and he swooped out cursing. Professor McGonagall slammed the door behind him and turned to face the two boys. \n\n\"Potter, this is Oliver Wood. Wood -- I've found you a Seeker.\" \n\nWood's expression changed from puzzlement to delight. \n\n\"Are you serious, Professor?\" \n\n\"Absolutely,\" said Professor McGonagall crisply. \"The boy's a natural. \n\nI've never seen anything like it. Was that your first time on a broomstick, Potter?\" \n\nHarry nodded silently. He didn't have a clue what was going on, but he didn't seem to be being expelled, and some of the feeling started coming back to his legs. \n\n\"He caught that thing in his hand after a fifty-foot dive,\" Professor McGonagall told Wood. \"Didn't even scratch himself. Charlie Weasley couldn't have done it.\" \n\nWood was now looking as though all his dreams had come true at once. \n\n\"Ever seen a game of Quidditch, Potter?\" he asked excitedly.",
+      "approxWordCount": 249,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 1943,
+        "sourceWordEnd": 2191,
+        "sourceCharStart": 215026,
+        "sourceCharEnd": 216526
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch09_p009_q01",
+          "type": "multiple_choice",
+          "prompt": "Read this: '...Peeves, who was busy writing rude words...' Who does the word 'who' talk about?",
+          "explanation": "The word 'who' gives us more information about the person right before it, which is Peeves!",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Defining Relative Clauses",
+          "options": [
+            "Professor McGonagall",
+            "Peeves",
+            "Oliver Wood"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch09_p009_q02",
+          "type": "true_false",
+          "prompt": "Professor McGonagall has seen many boys fly as well as Harry before.",
+          "explanation": "She says, 'I've never seen anything like it.' She has never seen anyone fly so well!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Perfect",
+          "answer": false
+        },
+        {
+          "id": "hp_ep1_ch09_p009_q03",
+          "type": "multiple_choice",
+          "prompt": "Where did Peeves throw the chalk?",
+          "explanation": "The story says he threw the chalk into a bin. The word 'into' shows movement inside!",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "Into a bin",
+            "Out of the window",
+            "Towards the door"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch09_p009_q04",
+          "type": "true_false",
+          "prompt": "When they went into the classroom, Peeves was writing on the blackboard.",
+          "explanation": "Yes! The story says Peeves 'was busy writing' when they walked in. This shows an action happening in the past.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch09_p010",
+      "pageNumber": 10,
+      "sourceText": "\"Wood's captain of the Gryffindor team,\" Professor McGonagall explained. \n\n\"He's just the build for a Seeker, too,\" said Wood, now walking around Harry and staring at him. \"Light -- speedy -- we'll have to get him a decent broom, Professor -- a Nimbus Two Thousand or a Cleansweep Seven, I'd say.\" \n\nI shall speak to Professor Dumbledore and see if we can't bend the first-year rule. Heaven knows, we need a better team than last year. \n\nFlattened in that last match by Slytherin, I couldn't look Severus Snape in the face for weeks....\" \n\nProfessor McGonagall peered sternly over her glasses at Harry. \n\n\"I want to hear you're training hard, Potter, or I may change my mind about punishing you.\" \n\nThen she suddenly smiled. \n\n\"Your father would have been proud,\" she said. \"He was an excellent Quidditch player himself.\" \n\n\"You're joking.\" \n\nIt was dinnertime. Harry had just finished telling Ron what had happened when he'd left the grounds with Professor McGonagall. Ron had a piece of steak and kidney pie halfway to his mouth, but he'd forgotten all about it. \n\n\"Seeker?\" he said. \"But first years never -- you must be the youngest house player in about a century, said Harry, shoveling pie into his mouth. He felt particularly hungry after the excitement of the afternoon. \"Wood told me.\" \n\nRon was so amazed, so impressed, he just sat and gaped at Harry. \n\n\"I start training next week,\" said Harry. \"Only don't tell anyone, Wood wants to keep it a secret.\"",
+      "approxWordCount": 249,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 2192,
+        "sourceWordEnd": 2440,
+        "sourceCharStart": 216529,
+        "sourceCharEnd": 217992
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch09_p010_q01",
+          "type": "true_false",
+          "prompt": "Professor McGonagall says she may punish Harry if he does not train hard.",
+          "explanation": "She tells Harry to train hard, or she 'may change her mind' about punishing him. 'May' shows possibility!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Obligation & Possibility",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch09_p010_q02",
+          "type": "multiple_choice",
+          "prompt": "Harry is very hungry. He is shoveling pie _____ his mouth. Which word shows the direction?",
+          "explanation": "The word 'into' is a preposition of direction. It shows the pie is moving inside his mouth!",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. into",
+            "B. out of",
+            "C. from"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch09_p010_q03",
+          "type": "multiple_choice",
+          "prompt": "What does Wood say they will have to get for Harry?",
+          "explanation": "Wood says, 'we'll have to get him a decent broom' so Harry can fly fast.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Future Forms",
+          "options": [
+            "A. A new wand",
+            "B. A decent broom",
+            "C. A pet owl"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch09_p010_q04",
+          "type": "true_false",
+          "prompt": "First-year students usually play on the Quidditch team.",
+          "explanation": "Ron says 'first years never' play. Harry is the youngest player in a hundred years!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "answer": false
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch09_p011",
+      "pageNumber": 11,
+      "sourceText": "Fred and George Weasley now came into the hall, spotted Harry, and hurried over. \n\n\"Well done,\" said George in a low voice. \"Wood told us. We're on the team too -- Beaters.\" \n\n\"I tell you, we're going to win that Quidditch cup for sure this year,\" \n\nsaid Fred. \"We haven't won since Charlie left, but this year's team is going to be brilliant. You must be good, Harry, Wood was almost skipping when he told us.\" \n\n\"Anyway, we've got to go, Lee Jordan reckons he's found a new secret passageway out of the school.\" \n\n\"Bet it's that one behind the statue of Gregory the Smarmy that we found in our first week. See you.\" \n\nFred and George had hardly disappeared when someone far less welcome turned up: Malfoy, flanked by Crabbe and Goyle. \n\n\"Having a last meal, Potter? When are you getting the train back to the Muggles?\" \n\n\"You're a lot braver now that you're back on the ground and you've got your little friends with you,\" said Harry coolly. There was of course nothing at all little about Crabbe and Goyle, but as the High Table was full of teachers, neither of them could do more than crack their knuckles and scowl. \n\n\"I'd take you on anytime on my own,\" said Malfoy. \"Tonight, if you want. \n\nWizard's duel. Wands only -- no contact. What's the matter? Never heard of a wizard's duel before, I suppose?\" \n\n\"Of course he has,\" said Ron, wheeling around. \"I'm his second, who's yours?\"",
+      "approxWordCount": 249,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 2441,
+        "sourceWordEnd": 2689,
+        "sourceCharStart": 217995,
+        "sourceCharEnd": 219383
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch09_p011_q01",
+          "type": "true_false",
+          "prompt": "Fred thinks his team is going to win the Quidditch cup this year.",
+          "explanation": "Fred says, 'we're going to win that Quidditch cup for sure this year.'",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Future Forms",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch09_p011_q02",
+          "type": "multiple_choice",
+          "prompt": "Lee Jordan found a secret passageway ________ the school.",
+          "explanation": "The text says Lee Jordan found a secret passageway 'out of' the school.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "out of",
+            "into",
+            "towards"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch09_p011_q03",
+          "type": "true_false",
+          "prompt": "Fred says, 'We haven't won since Charlie left.' This means they won the cup last year.",
+          "explanation": "They haven't won for a long time, not since Charlie left the school!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Perfect",
+          "answer": false
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch09_p012",
+      "pageNumber": 12,
+      "sourceText": "Malfoy looked at Crabbe and Goyle, sizing them up. \n\n\"Crabbe,\" he said. \"Midnight all right? We'll meet you in the trophy room; that's always unlocked.\" \n\nWhen Malfoy had gone, Ron and Harry looked at each other. \"What is a wizard's duel?\" said Harry. \"And what do you mean, you're my second?\" \n\n\"Well, a second's there to take over if you die,\" said Ron casually, getting started at last on his cold pie. Catching the look on Harry's face, he added quickly, \"But people only die in proper duels, you know, with real wizards. The most you and Malfoy'll be able to do is send sparks at each other. Neither of you knows enough magic to do any real damage. I bet he expected you to refuse, anyway.\" \n\n\"And what if I wave my wand and nothing happens?\" \n\n\"Throw it away and punch him on the nose,\" Ron suggested. \"Excuse me.\" \n\nThey both looked up. It was Hermione Granger. \n\n\"Can't a person eat in peace in this place?\" said Ron. \n\nHermione ignored him and spoke to Harry. \n\n\"I couldn't help overhearing what you and Malfoy were saying --\" \n\n\"Bet you could,\" Ron muttered. \n\n\"--and you mustn't go wandering around the school at night, think of the points you'll lose Gryffindor if you're caught, and you're bound to be. \n\nIt's really very selfish of you.\" \n\n\"And it's really none of your business,\" said Harry. \n\n\"Good-bye,\" said Ron.",
+      "approxWordCount": 235,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 2690,
+        "sourceWordEnd": 2924,
+        "sourceCharStart": 219386,
+        "sourceCharEnd": 220716
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch09_p012_q01",
+          "type": "multiple_choice",
+          "prompt": "What will happen if Harry and Ron are caught at night?",
+          "explanation": "Hermione says they will lose points for Gryffindor if they are caught.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Future Forms",
+          "options": [
+            "They will lose points.",
+            "They will win a trophy.",
+            "They will get a new wand."
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch09_p012_q02",
+          "type": "true_false",
+          "prompt": "Hermione says Harry and Ron must not walk around the school at night.",
+          "explanation": "Hermione tells them they 'mustn't go wandering around the school at night.'",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Obligation & Possibility",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch09_p012_q03",
+          "type": "true_false",
+          "prompt": "The trophy room is always locked.",
+          "explanation": "Malfoy says the trophy room is 'always unlocked,' which means it is open.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Present Simple",
+          "answer": false
+        },
+        {
+          "id": "hp_ep1_ch09_p012_q04",
+          "type": "multiple_choice",
+          "prompt": "Hermione heard what Harry and Malfoy _______.",
+          "explanation": "Hermione was listening while they were talking in the past, so we use 'were saying'.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Past Continuous",
+          "options": [
+            "are saying",
+            "were saying",
+            "will say"
+          ],
+          "answerIndex": 1
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch09_p013",
+      "pageNumber": 13,
+      "sourceText": "All the same, it wasn't what you'd call the perfect end to the day, Harry thought, as he lay awake much later listening to Dean and Seamus falling asleep (Neville wasn't back from the hospital wing). Ron had spent all evening giving him advice such as \"If he tries to curse you, you'd better dodge it, because I can't remember how to block them.\" \n\nThere was a very good chance they were going to get caught by Filch or Mrs. Norris, and Harry felt he was pushing his luck, breaking another school rule today. On the other hand, Malfoys sneering face kept looming up out of the darkness - this was his big chance to beat Malfoy face-to-face. He couldn't miss it. \n\n\"Half-past eleven,\" Ron muttered at last, \"we'd better go.\" \n\nThey pulled on their bathrobes, picked up their wands, and crept across the tower room, down the spiral staircase, and into the Gryffindor common room. A few embers were still glowing in the fireplace, turning all the armchairs into hunched black shadows. They had almost reached the portrait hole when a voice spoke from the chair nearest them, \"I can't believe you're going to do this, Harry.\" \n\nA lamp flickered on. It was Hermione Granger, wearing a pink bathrobe and a frown. \n\n\"You!\" said Ron furiously. \"Go back to bed!\" \n\n\"I almost told your brother,\" Hermione snapped, \"Percy -- he's a prefect, he'd put a stop to this.\" \n\nHarry couldn't believe anyone could be so interfering.",
+      "approxWordCount": 247,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 2925,
+        "sourceWordEnd": 3171,
+        "sourceCharStart": 220719,
+        "sourceCharEnd": 222131
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch09_p013_q01",
+          "type": "multiple_choice",
+          "prompt": "Where did Harry and Ron go after walking down the stairs?",
+          "explanation": "The story says they crept down the spiral staircase and into the Gryffindor common room.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "Out of the castle",
+            "Into the common room",
+            "Towards the hospital wing"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch09_p013_q02",
+          "type": "true_false",
+          "prompt": "Hermione is happy that Harry and Ron are going to sneak out.",
+          "explanation": "Hermione is frowning and says she almost told Percy to stop them.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Future Forms",
+          "answer": false
+        },
+        {
+          "id": "hp_ep1_ch09_p013_q03",
+          "type": "true_false",
+          "prompt": "A few embers in the fireplace were still glowing when the boys walked in.",
+          "explanation": "The text says 'A few embers were still glowing in the fireplace'.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Past Continuous",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch09_p013_q04",
+          "type": "multiple_choice",
+          "prompt": "Harry felt he was 'pushing his luck'. What does this mean?",
+          "explanation": "'Pushing your luck' means taking a risk by doing something dangerous or against the rules.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Present Continuous",
+          "options": [
+            "He was taking a big risk.",
+            "He was feeling very lucky.",
+            "He was pushing Ron."
+          ],
+          "answerIndex": 0
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch09_p014",
+      "pageNumber": 14,
+      "sourceText": "\"Come on,\" he said to Ron. He pushed open the portrait of the Fat Lady and climbed through the hole. \n\nHermione wasn't going to give up that easily. She followed Ron through the portrait hole, hissing at them like an angry goose. \n\n\"Don't you care about Gryffindor, do you only care about yourselves, I don't want Slytherin to win the house cup, and you'll lose all the points I got from Professor McGonagall for knowing about Switching Spells.\" \n\n\"Go away.\" \"All right, but I warned you, you just remember what I said when you're on the train home tomorrow, you're so --\" \n\nBut what they were, they didn't find out. Hermione had turned to the portrait of the Fat Lady to get back inside and found herself facing an empty painting. The Fat Lady had gone on a nighttime visit and Hermione was locked out of Gryffindor tower. \n\n\"Now what am I going to do?\" she asked shrilly. \n\n\"That's your problem,\" said Ron. \"We've got to go, we 3 re going to be late.\" \n\nThey hadn't even reached the end of the corridor when Hermione caught up with them. \n\n\"I'm coming with you,\" she said. \n\n\"You are not.\" \n\n\"D'you think I'm going to stand out here and wait for Filch to catch me? If he finds all three of us I'll tell him the truth, that I was trying to stop you, and you can back me up.\" \n\n\"You've got some nerve --\" said Ron loudly.",
+      "approxWordCount": 246,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 3172,
+        "sourceWordEnd": 3417,
+        "sourceCharStart": 222134,
+        "sourceCharEnd": 223455
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch09_p014_q01",
+          "type": "multiple_choice",
+          "prompt": "How did Hermione sound when she followed Ron?",
+          "explanation": "The story says she was hissing at them like an angry goose.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Like & About",
+          "options": [
+            "Like an angry goose",
+            "Like a quiet mouse",
+            "Like a happy cat"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch09_p014_q02",
+          "type": "true_false",
+          "prompt": "Hermione is going to stand in the corridor and wait for Filch.",
+          "explanation": "She says she is not going to wait for Filch, so she decides to go with the boys instead.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Future Forms",
+          "answer": false
+        },
+        {
+          "id": "hp_ep1_ch09_p014_q03",
+          "type": "true_false",
+          "prompt": "Ron tells Hermione that they have to go because they will be late.",
+          "explanation": "Ron says 'We've got to go, we're going to be late.' 'Got to' means the same as 'have to'.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Obligation & Possibility",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch09_p014_q04",
+          "type": "multiple_choice",
+          "prompt": "Where did Hermione want to go when she turned to the portrait?",
+          "explanation": "She wanted to get back inside, but the Fat Lady was gone and she was locked out!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "Out of the castle",
+            "Back inside the tower",
+            "Towards the train"
+          ],
+          "answerIndex": 1
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch09_p015",
+      "pageNumber": 15,
+      "sourceText": "\"Shut up, both of you!\" said Harry sharply. I heard something.\" \n\nIt was a sort of snuffling. \n\n\"Mrs. Norris?\" breathed Ron, squinting through the dark. \n\nIt wasn't Mrs. Norris. It was Neville. He was curled up on the floor, fast asleep, but jerked suddenly awake as they crept nearer. \n\n\"Thank goodness you found me! I've been out here for hours, I couldn't remember the new password to get in to bed.\" \n\n\"Keep your voice down, Neville. The password's 'Pig snout' but it won't help you now, the Fat Lady's gone off somewhere.\" \n\n\"How's your arm?\" said Harry. \n\n\"Fine,\" said Neville, showing them. \"Madam Pomfrey mended it in about a minute.\" \n\n\"Good - well, look, Neville, we've got to be somewhere, we'll see you later --\" \n\n\"Don't leave me!\" said Neville, scrambling to his feet, \"I don't want to stay here alone, the Bloody Baron's been past twice already.\" \n\nRon looked at his watch and then glared furiously at Hermione and Neville. \n\n\"If either of you get us caught, I'll never rest until I've learned that Curse of the Bogies Quirrell told us about, and used it on you. \n\nHermione opened her mouth, perhaps to tell Ron exactly how to use the Curse of the Bogies, but Harry hissed at her to be quiet and beckoned them all forward. \n\nThey flitted along corridors striped with bars of moonlight from the high windows. At every turn Harry expected to run into Filch or Mrs. Norris, but they were lucky.",
+      "approxWordCount": 247,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 3418,
+        "sourceWordEnd": 3664,
+        "sourceCharStart": 223458,
+        "sourceCharEnd": 224864
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch09_p015_q01",
+          "type": "true_false",
+          "prompt": "Neville has seen the Bloody Baron twice already.",
+          "explanation": "Neville says the Bloody Baron has been past twice already while he was waiting.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Perfect",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch09_p015_q02",
+          "type": "true_false",
+          "prompt": "Neville wants to stay in the dark corridor alone.",
+          "explanation": "Neville says, 'I don't want to stay here alone!' and asks them not to leave him.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "answer": false
+        },
+        {
+          "id": "hp_ep1_ch09_p015_q03",
+          "type": "multiple_choice",
+          "prompt": "What will Ron do if Neville or Hermione gets them caught?",
+          "explanation": "Ron says he will learn the Curse of the Bogies and use it on them if they get caught.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Future Forms",
+          "options": [
+            "A. He will cry loudly.",
+            "B. He will use a curse on them.",
+            "C. He will run away."
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch09_p015_q04",
+          "type": "multiple_choice",
+          "prompt": "Harry was worried that they would run ____ Filch or Mrs. Norris.",
+          "explanation": "The story says Harry expected to run 'into' Filch or Mrs. Norris. 'Into' shows movement towards someone or something.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. out of",
+            "B. into",
+            "C. from"
+          ],
+          "answerIndex": 1
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch09_p016",
+      "pageNumber": 16,
+      "sourceText": "They sped up a staircase to the third floor and tiptoed toward the trophy room. \n\nMalfoy and Crabbe weren't there yet. The crystal trophy cases glimmered where the moonlight caught them. Cups, shields, plates, and statues winked silver and gold in the darkness. They edged along the walls, keeping their eyes on the doors at either end of the room. Harry took out his wand in case Malfoy leapt in and started at once. The minutes crept by. \n\n\"He's late, maybe he's chickened out,\" Ron whispered. \n\nThen a noise in the next room made them jump. Harry had only just raised his wand when they heard someone speak -and it wasn't Malfoy. \n\n\"Sniff around, my sweet, they might be lurking in a corner.\" \n\nIt was Filch speaking to Mrs. Norris. Horror-struck, Harry waved madly at the other three to follow him as quickly as possible; they scurried silently toward the door, away from Filch's voice. Neville's robes had barely whipped round the corner when they heard Filch enter the trophy room. \n\n\"They're in here somewhere,\" they heard him mutter, \"probably hiding.\" \n\n\"This way!\" Harry mouthed to the others and, petrified, they began to creep down a long gallery full of suits of armor. They could hear Filch getting nearer. Neville suddenly let out a frightened squeak and broke into a run -he tripped, grabbed Ron around the waist, and the pair of them toppled right into a suit of armor.",
+      "approxWordCount": 240,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 3665,
+        "sourceWordEnd": 3904,
+        "sourceCharStart": 224865,
+        "sourceCharEnd": 226251
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch09_p016_q01",
+          "type": "multiple_choice",
+          "prompt": "Which room did the children tiptoe toward?",
+          "explanation": "The text says they sped up the stairs and tiptoed toward the trophy room.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "The trophy room",
+            "The potions classroom",
+            "The library"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch09_p016_q02",
+          "type": "multiple_choice",
+          "prompt": "Filch says, 'they might be lurking in a corner.' What does 'might' mean here?",
+          "explanation": "The word 'might' shows possibility. Filch thinks it is possible they are hiding there!",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Obligation & Possibility",
+          "options": [
+            "They have to be in the corner.",
+            "It is possible they are in the corner.",
+            "They will never be in the corner."
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch09_p016_q03",
+          "type": "true_false",
+          "prompt": "Neville and Ron fell into a suit of armor.",
+          "explanation": "Neville tripped, grabbed Ron, and they both toppled right into the armor!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Prepositions of Direction",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch09_p017",
+      "pageNumber": 17,
+      "sourceText": "The clanging and crashing were enough to wake the whole castle. \n\n\"RUN!\" Harry yelled, and the four of them sprinted down the gallery, not looking back to see whether Filch was following -- they swung around the doorpost and galloped down one corridor then another, Harry in the lead, without any idea where they were or where they were going -- they ripped through a tapestry and found themselves in a hidden passageway, hurtled along it and came out near their Charms classroom, which they knew was miles from the trophy room. \n\n\"I think we've lost him,\" Harry panted, leaning against the cold wall and wiping his forehead. Neville was bent double, wheezing and spluttering. \n\nI -- told -you,\" Hermione gasped, clutching at the stitch in her chest, \"I -- told -- you.\" \n\n\"We've got to get back to Gryffindor tower,\" said Ron, \"quickly as possible.\" \n\n\"Malfoy tricked you,\" Hermione said to Harry. \"You realize that, don't you? He was never going to meet you -- Filch knew someone was going to be in the trophy room, Malfoy must have tipped him off.\" \n\nHarry thought she was probably right, but he wasn't going to tell her that. \n\n\"Let's go.\" \n\nIt wasn't going to be that simple. They hadn't gone more than a dozen paces when a doorknob rattled and something came shooting out of a classroom in front of them. \n\nIt was Peeves. He caught sight of them and gave a squeal of delight.",
+      "approxWordCount": 244,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 3905,
+        "sourceWordEnd": 4148,
+        "sourceCharStart": 226254,
+        "sourceCharEnd": 227635
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch09_p017_q01",
+          "type": "multiple_choice",
+          "prompt": "Where did Peeves come shooting from?",
+          "explanation": "The text says something came shooting 'out of' a classroom, moving from the inside to the outside.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. Into a classroom",
+            "B. Out of a classroom",
+            "C. Towards a classroom"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch09_p017_q02",
+          "type": "true_false",
+          "prompt": "Hermione says, \"You realize that, don't you?\" to check if Harry agrees with her.",
+          "explanation": "Hermione uses a tag question (\"don't you?\") to check information and see if Harry understands the trick.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Tag Questions",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch09_p017_q03",
+          "type": "true_false",
+          "prompt": "Hermione believes that Malfoy was going to meet Harry for the duel.",
+          "explanation": "Hermione says, \"He was never going to meet you.\" She thinks Malfoy tricked them!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Future Forms",
+          "answer": false
+        },
+        {
+          "id": "hp_ep1_ch09_p017_q04",
+          "type": "multiple_choice",
+          "prompt": "Harry says, \"I think we've lost him.\" What does he mean?",
+          "explanation": "\"We have lost him\" means they ran fast enough to escape, and the person chasing them is gone.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Present Perfect",
+          "options": [
+            "A. Filch is lost in the castle.",
+            "B. Filch is not chasing them anymore.",
+            "C. They lost their friend."
+          ],
+          "answerIndex": 1
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch09_p018",
+      "pageNumber": 18,
+      "sourceText": "\"Shut up, Peeves -- please -- you'll get us thrown out.\" \n\nPeeves cackled. \n\n\"Wandering around at midnight, Ickle Firsties? Tut, tut, tut. Naughty, naughty, you'll get caughty.\" \n\n\"Not if you don't give us away, Peeves, please.\" \n\n\"Should tell Filch, I should,\" said Peeves in a saintly voice, but his eyes glittered wickedly. \"It's for your own good, you know.\" \n\n\"Get out of the way,\" snapped Ron, taking a swipe at Peeves this was a big mistake. \n\n\"STUDENTS OUT OF BED!\" Peeves bellowed, \"STUDENTS OUT OF BED DOWN THE CHARMS CORRIDOR\" \n\nDucking under Peeves, they ran for their lives, right to the end of the corridor where they slammed into a door -- and it was locked. \n\n\"This is it!\" Ron moaned, as they pushed helplessly at the door, \"We're done for! This is the end!\" They could hear footsteps, Filch running as fast as he could toward Peeves's shouts. \n\n\"Oh, move over,\" Hermione snarled. She grabbed Harry's wand, tapped the lock, and whispered, 'Alohomora!\" \n\nThe lock clicked and the door swung open -- they piled through it, shut it quickly, and pressed their ears against it, listening. \n\n\"Which way did they go, Peeves?\" Filch was saying. \"Quick, tell me.\" \n\n\"Say 'please.\"' \"Don't mess with me, Peeves, now where did they go?\" \n\n\"Shan't say nothing if you don't say please,\" said Peeves in his annoying singsong voice. \n\n\"All right -please.\" \n\n\"NOTHING! Ha haaa! Told you I wouldn't say nothing if you didn't say please! Ha ha! Haaaaaa!\"",
+      "approxWordCount": 246,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 4149,
+        "sourceWordEnd": 4394,
+        "sourceCharStart": 227638,
+        "sourceCharEnd": 229091
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch09_p018_q01",
+          "type": "multiple_choice",
+          "prompt": "Where do the students run when Peeves yells?",
+          "explanation": "They run to the end of the corridor and slam into a locked door.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. Out of the window",
+            "B. Into a locked door",
+            "C. Towards the stairs"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch09_p018_q02",
+          "type": "true_false",
+          "prompt": "The students think Peeves will get them in trouble.",
+          "explanation": "They tell Peeves to be quiet so they don't get caught and thrown out.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Future Forms",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch09_p018_q03",
+          "type": "multiple_choice",
+          "prompt": "What was Filch doing when he talked to Peeves?",
+          "explanation": "Filch was asking Peeves, 'Which way did they go?'",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Past Continuous",
+          "options": [
+            "A. He was opening the door.",
+            "B. He was asking which way they went.",
+            "C. He was running away."
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch09_p018_q04",
+          "type": "true_false",
+          "prompt": "Hermione opens the locked door with a magic spell.",
+          "explanation": "She taps the lock with Harry's wand and says 'Alohomora!' to open it.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch09_p019",
+      "pageNumber": 19,
+      "sourceText": "And they heard the sound of Peeves whooshing away and Filch cursing in rage. \n\n\"He thinks this door is locked,\" Harry whispered. \"I think we'll be okay -- get off, Neville!\" For Neville had been tugging on the sleeve of Harry's bathrobe for the last minute. \"What?\" \n\nHarry turned around -- and saw, quite clearly, what. For a moment, he was sure he'd walked into a nightmare -- this was too much, on top of everything that had happened so far. \n\nThey weren't in a room, as he had supposed. They were in a corridor. The forbidden corridor on the third floor. And now they knew why it was forbidden. \n\nThey were looking straight into the eyes of a monstrous dog, a dog that filled the whole space between ceiling and floor. It had three heads. \n\nThree pairs of rolling, mad eyes; three noses, twitching and quivering in their direction; three drooling mouths, saliva hanging in slippery ropes from yellowish fangs. \n\nIt was standing quite still, all six eyes staring at them, and Harry knew that the only reason they weren't already dead was that their sudden appearance had taken it by surprise, but it was quickly getting over that, there was no mistaking what those thunderous growls meant. \n\nHarry groped for the doorknob -- between Filch and death, he'd take Filch. \n\nThey fell backward -- Harry slammed the door shut, and they ran, they almost flew, back down the corridor.",
+      "approxWordCount": 241,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 4395,
+        "sourceWordEnd": 4635,
+        "sourceCharStart": 229092,
+        "sourceCharEnd": 230470
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch09_p019_q01",
+          "type": "multiple_choice",
+          "prompt": "What was the three-headed dog doing when they first saw it?",
+          "explanation": "The story says, 'It was standing quite still, all six eyes staring at them.'",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "options": [
+            "It was standing quite still.",
+            "It was running away.",
+            "It was sleeping."
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch09_p019_q02",
+          "type": "true_false",
+          "prompt": "The children saw a monstrous dog that had three heads.",
+          "explanation": "The text says they looked at a monstrous dog and 'It had three heads.'",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Defining Relative Clauses",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch09_p019_q03",
+          "type": "multiple_choice",
+          "prompt": "The children ran back down the corridor. What is a corridor?",
+          "explanation": "A corridor is a long hallway that connects different rooms.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A long hallway",
+            "A large bedroom",
+            "A locked door"
+          ],
+          "answerIndex": 0
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch09_p020",
+      "pageNumber": 20,
+      "sourceText": "Filch must have hurried off to look for them somewhere else, because they didn't see him anywhere, but they hardly cared -- all they wanted to do was put as much space as possible between them and that monster. They didn't stop running until they reached the portrait of the Fat Lady on the seventh floor. \n\n\"Where on earth have you all been?\" she asked, looking at their bathrobes hanging off their shoulders and their flushed, sweaty faces. \n\n\"Never mind that -- pig snout, pig snout,\" panted Harry, and the portrait swung forward. They scrambled into the common room and collapsed, trembling, into armchairs. \n\nIt was a while before any of them said anything. Neville, indeed, looked as if he'd never speak again. \n\n\"What do they think they're doing, keeping a thing like that locked up in a school?\" said Ron finally. \"If any dog needs exercise, that one does.\" \n\nHermione had got both her breath and her bad temper back again. \"You don't use your eyes, any of you, do you?\" she snapped. \"Didn't you see what it was standing on. \n\n\"The floor?\" Harry suggested. \"I wasn't looking at its feet, I was too busy with its heads.\" \n\n\"No, not the floor. It was standing on a trapdoor. It's obviously guarding something.\" \n\nShe stood up, glaring at them. \n\nI hope you're pleased with yourselves. We could all have been killed -- or worse, expelled. Now, if you don't mind, I'm going to bed.\"",
+      "approxWordCount": 244,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 4636,
+        "sourceWordEnd": 4879,
+        "sourceCharStart": 230471,
+        "sourceCharEnd": 231857
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch09_p020_q01",
+          "type": "multiple_choice",
+          "prompt": "Where did the children go after Harry said the password?",
+          "explanation": "The text says they scrambled into the common room. The word 'into' shows movement inside!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "Out of the school",
+            "Into the common room",
+            "Towards the monster"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch09_p020_q02",
+          "type": "true_false",
+          "prompt": "Hermione says, \"You don't use your eyes, any of you, do you?\" This is an example of a tag question.",
+          "explanation": "Yes! A negative sentence (\"don't use\") is followed by a positive tag (\"do you?\") to check if they agree.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Tag Questions",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch09_p020_q03",
+          "type": "multiple_choice",
+          "prompt": "What was Harry looking at when they saw the monster?",
+          "explanation": "Harry says he wasn't looking at its feet because he was too busy looking at its heads!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "options": [
+            "The trapdoor",
+            "The monster's feet",
+            "The monster's heads"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": "hp_ep1_ch09_p020_q04",
+          "type": "true_false",
+          "prompt": "Hermione says she is going to stay and talk with the boys.",
+          "explanation": "Hermione says, \"I'm going to bed.\" She uses \"going to\" for her planned action!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Future Forms",
+          "answer": false
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch09_p021",
+      "pageNumber": 21,
+      "sourceText": "Ron stared after her, his mouth open. \n\n\"No, we don't mind,\" he said. \"You'd think we dragged her along, wouldn't you. \n\nBut Hermione had given Harry something else to think about as he climbed back into bed. The dog was guarding something.... What had Hagrid said? Gringotts was the safest place in the world for something you wanted to hide -- except perhaps Hogwarts. \n\nIt looked as though Harry had found out where the grubby littie package from vault seven hundred and thirteen was.",
+      "approxWordCount": 84,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 4880,
+        "sourceWordEnd": 4963,
+        "sourceCharStart": 231860,
+        "sourceCharEnd": 232347
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch09_p021_q01",
+          "type": "true_false",
+          "prompt": "Ron asks for agreement by saying, \"You'd think we dragged her along, wouldn't you.\"",
+          "explanation": "\"Wouldn't you\" is a tag question. We use it to check information or ask if someone agrees!",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Tag Questions",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch09_p021_q02",
+          "type": "multiple_choice",
+          "prompt": "Which word shows the direction Harry moved when he went to sleep?",
+          "explanation": "The text says Harry climbed back \"into\" bed. \"Into\" shows movement inside!",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. into",
+            "B. out of",
+            "C. towards"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch09_p021_q03",
+          "type": "multiple_choice",
+          "prompt": "What was the dog doing?",
+          "explanation": "The text says, \"The dog was guarding something.\" This shows an action that was happening in the past.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "options": [
+            "A. It was sleeping.",
+            "B. It was guarding something.",
+            "C. It was running away."
+          ],
+          "answerIndex": 1
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,987 @@
+{
+  "storyId": "harrypotter_episode1",
+  "chapterId": "chapter_02",
+  "chapterNumber": 2,
+  "title": "The Vanishing Glass",
+  "dateLabel": "23 June 1991",
+  "sourceTextIncluded": true,
+  "pages": [
+    {
+      "pageId": "hp_ep1_ch02_p001",
+      "pageNumber": 1,
+      "sourceText": "CHAPTER TWO \n\nTHE VANISHING GLASS \n\nNearly ten years had passed since the Dursleys had woken up to find their nephew on the front step, but Privet Drive had hardly changed at all. The sun rose on the same tidy front gardens and lit up the brass number four on the Dursleys' front door; it crept into their living room, which was almost exactly the same as it had been on the night when Mr. Dursley had seen that fateful news report about the owls. Only the photographs on the mantelpiece really showed how much time had passed. \n\nTen years ago, there had been lots of pictures of what looked like a large pink beach ball wearing different-colored bonnets -- but Dudley Dursley was no longer a baby, and now the photographs showed a large blond boy riding his first bicycle, on a carousel at the fair, playing a computer game with his father, being hugged and kissed by his mother. \n\nThe room held no sign at all that another boy lived in the house, too. \n\nYet Harry Potter was still there, asleep at the moment, but not for long. His Aunt Petunia was awake and it was her shrill voice that made the first noise of the day. \n\n\"Up! Get up! Now!\" \n\nHarry woke with a start. His aunt rapped on the door again. \n\n\"Up!\" she screeched. Harry heard her walking toward the kitchen and then the sound of the frying pan being put on the stove.",
+      "approxWordCount": 247,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 1,
+        "sourceWordEnd": 247,
+        "sourceCharStart": 26113,
+        "sourceCharEnd": 27445
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch02_p001_q01",
+          "type": "multiple_choice",
+          "prompt": "In the old pictures, baby Dudley looked _____ a large pink beach ball.",
+          "explanation": "We use 'like' to say two things look similar. Baby Dudley was round and pink like a beach ball!",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Like & About",
+          "options": [
+            "A. like",
+            "B. about",
+            "C. into"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch02_p001_q02",
+          "type": "multiple_choice",
+          "prompt": "Where was Aunt Petunia walking when Harry woke up?",
+          "explanation": "The story says Harry heard her walking toward the kitchen to put the frying pan on the stove.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. Out of the house",
+            "B. Toward the kitchen",
+            "C. Into the garden"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch02_p001_q03",
+          "type": "true_false",
+          "prompt": "Nearly ten years have passed since Harry arrived at the Dursleys' house.",
+          "explanation": "The text says 'nearly ten years had passed' since they found their nephew on the front step.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Perfect",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch02_p001_q04",
+          "type": "multiple_choice",
+          "prompt": "The sun crept into the living room, _____ was almost exactly the same as ten years ago.",
+          "explanation": "We use 'which' to give more information about a thing, like a living room.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Defining Relative Clauses",
+          "options": [
+            "A. who",
+            "B. where",
+            "C. which"
+          ],
+          "answerIndex": 2
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch02_p002",
+      "pageNumber": 2,
+      "sourceText": "He rolled onto his back and tried to remember the dream he had been having. It had been a good one. There had been a flying motorcycle in it. He had a funny feeling he'd had the same dream before. \n\nHis aunt was back outside the door. \n\n\"Are you up yet?\" she demanded. \n\n\"Nearly,\" said Harry. \n\n\"Well, get a move on, I want you to look after the bacon. And don't you dare let it burn, I want everything perfect on Duddy's birthday.\" \n\nHarry groaned. \n\n\"What did you say?\" his aunt snapped through the door. \n\n\"Nothing, nothing...\" \n\nDudley's birthday -- how could he have forgotten? Harry got slowly out of bed and started looking for socks. He found a pair under his bed and, after pulling a spider off one of them, put them on. Harry was used to spiders, because the cupboard under the stairs was full of them, and that was where he slept. \n\nWhen he was dressed he went down the hall into the kitchen. The table was almost hidden beneath all Dudley's birthday presents. It looked as though Dudley had gotten the new computer he wanted, not to mention the second television and the racing bike. Exactly why Dudley wanted a racing bike was a mystery to Harry, as Dudley was very fat and hated exercise -- unless of course it involved punching somebody. Dudley's favorite punching bag was Harry, but he couldn't often catch him. Harry didn't look it, but he was very fast.",
+      "approxWordCount": 249,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 248,
+        "sourceWordEnd": 496,
+        "sourceCharStart": 27446,
+        "sourceCharEnd": 28817
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch02_p002_q01",
+          "type": "multiple_choice",
+          "prompt": "Where did Harry go after he got dressed?",
+          "explanation": "The story says he went down the hall into the kitchen. 'Into' shows movement inside a place.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "He went out of the house.",
+            "He went into the kitchen.",
+            "He went towards the stairs."
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch02_p002_q02",
+          "type": "true_false",
+          "prompt": "Dudley usually likes to exercise every day.",
+          "explanation": "The story says Dudley hated exercise. We use the Present Simple to talk about habits, and his habit is not exercising!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "answer": false
+        },
+        {
+          "id": "hp_ep1_ch02_p002_q03",
+          "type": "multiple_choice",
+          "prompt": "The cupboard under the stairs is the place _____ Harry sleeps. Which word completes the sentence?",
+          "explanation": "We use 'where' to give more information about a place.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Defining Relative Clauses",
+          "options": [
+            "who",
+            "where",
+            "which"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch02_p002_q04",
+          "type": "true_false",
+          "prompt": "Aunt Petunia asks, 'Are you up yet?' The word 'yet' is used to ask if an action has happened by now.",
+          "explanation": "We often use 'yet' in questions to check if something has already happened.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Present Perfect",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch02_p003",
+      "pageNumber": 3,
+      "sourceText": "Perhaps it had something to do with living in a dark cupboard, but Harry had always been small and skinny for his age. He looked even smaller and skinnier than he really was because all he had to wear were old clothes of Dudley's, and Dudley was about four times bigger than he was. Harry had a thin face, knobbly knees, black hair, and bright green eyes. He wore round glasses held together with a lot of Scotch tape because of all the times Dudley had punched him on the nose. The only thing Harry liked about his own appearance was a very thin scar on his forehead that was shaped like a bolt of lightning. He had had it as long as he could remember, and the first question he could ever remember asking his Aunt Petunia was how he had gotten it. \n\n\"In the car crash when your parents died,\" she had said. \"And don't ask questions.\" \n\nDon't ask questions -- that was the first rule for a quiet life with the Dursleys. \n\nUncle Vernon entered the kitchen as Harry was turning over the bacon. \n\n\"Comb your hair!\" he barked, by way of a morning greeting. \n\nAbout once a week, Uncle Vernon looked over the top of his newspaper and shouted that Harry needed a haircut.",
+      "approxWordCount": 218,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 497,
+        "sourceWordEnd": 714,
+        "sourceCharStart": 28820,
+        "sourceCharEnd": 29985
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch02_p003_q01",
+          "type": "multiple_choice",
+          "prompt": "What was Harry doing when Uncle Vernon entered the kitchen?",
+          "explanation": "The story says Uncle Vernon entered the kitchen as Harry was turning over the bacon.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "options": [
+            "He was combing his hair.",
+            "He was turning over the bacon.",
+            "He was reading a newspaper."
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch02_p003_q02",
+          "type": "multiple_choice",
+          "prompt": "What is Harry's scar shaped like?",
+          "explanation": "The text says his scar was shaped like a bolt of lightning. We use the word 'like' to show similarity!",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Like & About",
+          "options": [
+            "Like a star",
+            "Like a bolt of lightning",
+            "Like a round glass"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch02_p003_q03",
+          "type": "true_false",
+          "prompt": "Uncle Vernon shouts that Harry needs a haircut every day.",
+          "explanation": "He shouts about it 'about once a week,' not every day.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "answer": false
+        },
+        {
+          "id": "hp_ep1_ch02_p003_q04",
+          "type": "true_false",
+          "prompt": "Harry has a thin scar on his forehead that is shaped like a bolt of lightning.",
+          "explanation": "This is true! The word 'that' gives us extra information about his scar.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Defining Relative Clauses",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch02_p004",
+      "pageNumber": 4,
+      "sourceText": "Harry must have had more haircuts than the rest of the boys in his class put together, but it made no difference, his hair simply grew that way -- all over the place. \n\nHarry was frying eggs by the time Dudley arrived in the kitchen with his mother. Dudley looked a lot like Uncle Vernon. He had a large pink face, not much neck, small, watery blue eyes, and thick blond hair that lay smoothly on his thick, fat head. Aunt Petunia often said that Dudley looked like a baby angel -- Harry often said that Dudley looked like a pig in a wig. \n\nHarry put the plates of egg and bacon on the table, which was difficult as there wasn't much room. Dudley, meanwhile, was counting his presents. \n\nHis face fell. \n\n\"Thirty-six,\" he said, looking up at his mother and father. \"That's two less than last year.\" \n\n\"Darling, you haven't counted Auntie Marge's present, see, it's here under this big one from Mommy and Daddy.\" \n\n\"All right, thirty-seven then,\" said Dudley, going red in the face. \n\nHarry, who could see a huge Dudley tantrum coming on, began wolfing down his bacon as fast as possible in case Dudley turned the table over. \n\nAunt Petunia obviously scented danger, too, because she said quickly, \"And we'll buy you another two presents while we're out today. How's that, popkin? Two more presents. Is that all right'' Dudley thought for a moment. It looked like hard work.",
+      "approxWordCount": 244,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 715,
+        "sourceWordEnd": 958,
+        "sourceCharStart": 29986,
+        "sourceCharEnd": 31359
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch02_p004_q01",
+          "type": "multiple_choice",
+          "prompt": "What was Harry doing when Dudley arrived in the kitchen?",
+          "explanation": "The story says 'Harry was frying eggs' when Dudley came in.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "options": [
+            "A. He was frying eggs.",
+            "B. He was counting presents.",
+            "C. He was cutting his hair."
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch02_p004_q02",
+          "type": "true_false",
+          "prompt": "Aunt Petunia said that Dudley looked like a baby angel.",
+          "explanation": "Aunt Petunia thought Dudley looked like a sweet angel, but Harry thought he looked like a pig in a wig!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Like & About",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch02_p004_q03",
+          "type": "multiple_choice",
+          "prompt": "What will Aunt Petunia do to stop Dudley from being angry?",
+          "explanation": "She says 'we'll buy you another two presents' to make him happy. 'We'll' means 'we will'.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Future Forms",
+          "options": [
+            "A. She will make him eggs.",
+            "B. She will buy him two more presents.",
+            "C. She will give him a haircut."
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch02_p004_q04",
+          "type": "true_false",
+          "prompt": "Dudley's mom says, 'you haven't counted Auntie Marge's present'. This means Dudley has already counted it.",
+          "explanation": "'Haven't counted' means he did not count it yet.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Present Perfect",
+          "answer": false
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch02_p005",
+      "pageNumber": 5,
+      "sourceText": "Finally he said slowly, \"So I'll have thirty ... thirty...\" \n\n\"Thirty-nine, sweetums,\" said Aunt Petunia. \n\n\"Oh.\" Dudley sat down heavily and grabbed the nearest parcel. \"All right then.\" \n\nUncle Vernon chuckled. \"Little tyke wants his money's worth, just like his father. 'Atta boy, Dudley!\" He ruffled Dudley's hair. \n\nAt that moment the telephone rang and Aunt Petunia went to answer it while Harry and Uncle Vernon watched Dudley unwrap the racing bike, a video camera, a remote control airplane, sixteen new computer games, and a VCR. He was ripping the paper off a gold wristwatch when Aunt Petunia came back from the telephone looking both angry and worried. \n\n\"Bad news, Vernon,\" she said. \"Mrs. Figg's broken her leg. She can't take him.\" She jerked her head in Harry's direction. \n\nDudley's mouth fell open in horror, but Harry's heart gave a leap. Every year on Dudley's birthday, his parents took him and a friend out for the day, to adventure parks, hamburger restaurants, or the movies. Every year, Harry was left behind with Mrs. Figg, a mad old lady who lived two streets away. Harry hated it there. The whole house smelled of cabbage and Mrs. Figg made him look at photographs of all the cats she'd ever owned. \n\n\"Now what?\" said Aunt Petunia, looking furiously at Harry as though he'd planned this. Harry knew he ought to feel sorry that Mrs.",
+      "approxWordCount": 231,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 959,
+        "sourceWordEnd": 1189,
+        "sourceCharStart": 31360,
+        "sourceCharEnd": 32720
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch02_p005_q01",
+          "type": "multiple_choice",
+          "prompt": "What was Dudley doing when Aunt Petunia came back from the telephone?",
+          "explanation": "The story says he was ripping the paper off a gold wristwatch when she came back.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "options": [
+            "He was eating a hamburger.",
+            "He was ripping paper off a watch.",
+            "He was playing a computer game."
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch02_p005_q02",
+          "type": "true_false",
+          "prompt": "Mrs. Figg can't watch Harry because she has broken her leg.",
+          "explanation": "Aunt Petunia says, 'Mrs. Figg's broken her leg. She can't take him.'",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Perfect",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch02_p005_q03",
+          "type": "multiple_choice",
+          "prompt": "The story says Mrs. Figg is a lady 'who lived two streets away.' What does the word 'who' talk about?",
+          "explanation": "We use the word 'who' to give more information about a person.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Defining Relative Clauses",
+          "options": [
+            "A place",
+            "A thing",
+            "A person"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": "hp_ep1_ch02_p005_q04",
+          "type": "true_false",
+          "prompt": "Every year, Harry goes to adventure parks for Dudley's birthday.",
+          "explanation": "Every year, Dudley goes to adventure parks, but Harry is left behind with Mrs. Figg.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "answer": false
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch02_p006",
+      "pageNumber": 6,
+      "sourceText": "Figg had broken her leg, but it wasn't easy when he reminded himself it would be a whole year before he had to look at Tibbles, Snowy, Mr. Paws, and Tufty again. \n\n\"We could phone Marge,\" Uncle Vernon suggested. \n\n\"Don't be silly, Vernon, she hates the boy.\" \n\nThe Dursleys often spoke about Harry like this, as though he wasn't there -- or rather, as though he was something very nasty that couldn't understand them, like a slug. \n\n\"What about what's-her-name, your friend -- Yvonne?\" \n\n\"On vacation in Majorca,\" snapped Aunt Petunia. \n\n\"You could just leave me here,\" Harry put in hopefully (he'd be able to watch what he wanted on television for a change and maybe even have a go on Dudley's computer). \n\nAunt Petunia looked as though she'd just swallowed a lemon. \n\n\"And come back and find the house in ruins?\" she snarled. \n\n\"I won't blow up the house,\" said Harry, but they weren't listening. \n\n\"I suppose we could take him to the zoo,\" said Aunt Petunia slowly, \"... \n\nand leave him in the car....\" \n\n\"That car's new, he's not sitting in it alone....\" \n\nDudley began to cry loudly. In fact, he wasn't really crying -- it had been years since he'd really cried -- but he knew that if he screwed up his face and wailed, his mother would give him anything he wanted. \n\n\"Dinky Duddydums, don't cry, Mummy won't let him spoil your special day!\" she cried, flinging her arms around him. \n\n\"I... don't... want... him...",
+      "approxWordCount": 249,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 1190,
+        "sourceWordEnd": 1438,
+        "sourceCharStart": 32721,
+        "sourceCharEnd": 34140
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch02_p006_q01",
+          "type": "multiple_choice",
+          "prompt": "Who do the Dursleys often speak about?",
+          "explanation": "The story says, 'The Dursleys often spoke about Harry like this...'",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Like & About",
+          "options": [
+            "A. Harry",
+            "B. Yvonne",
+            "C. Marge"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch02_p006_q02",
+          "type": "multiple_choice",
+          "prompt": "Harry promises, 'I won't blow up the house.' What does 'won't' mean?",
+          "explanation": "'Won't' is the short way to say 'will not', which we use to talk about the future!",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Future Forms",
+          "options": [
+            "A. will",
+            "B. will not",
+            "C. would not"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch02_p006_q03",
+          "type": "multiple_choice",
+          "prompt": "What is one possible idea Uncle Vernon suggests?",
+          "explanation": "Uncle Vernon suggests a possibility by saying, 'We could phone Marge.'",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Obligation & Possibility",
+          "options": [
+            "A. They could phone Marge.",
+            "B. They could leave Harry at home.",
+            "C. They could go to Majorca."
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch02_p006_q04",
+          "type": "true_false",
+          "prompt": "Aunt Petunia says that Marge hates Harry.",
+          "explanation": "Aunt Petunia tells Vernon, 'she hates the boy.' This is a general fact in the present simple tense.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch02_p007",
+      "pageNumber": 7,
+      "sourceText": "t-t-to come!\" Dudley yelled between huge, pretend sobs. \"He always sp- spoils everything!\" He shot Harry a nasty grin through the gap in his mother's arms. \n\nJust then, the doorbell rang -- \"Oh, good Lord, they're here!\" said Aunt Petunia frantically -- and a moment later, Dudley's best friend, Piers Polkiss, walked in with his mother. Piers was a scrawny boy with a face like a rat. He was usually the one who held people's arms behind their backs while Dudley hit them. Dudley stopped pretending to cry at once. \n\nHalf an hour later, Harry, who couldn't believe his luck, was sitting in the back of the Dursleys' car with Piers and Dudley, on the way to the zoo for the first time in his life. His aunt and uncle hadn't been able to think of anything else to do with him, but before they'd left, Uncle Vernon had taken Harry aside. \n\n\"I'm warning you,\" he had said, putting his large purple face right up close to Harry's, \"I'm warning you now, boy -- any funny business, anything at all -- and you'll be in that cupboard from now until Christmas.\" \n\n\"I'm not going to do anything,\" said Harry, \"honestly.. \n\nBut Uncle Vernon didn't believe him. No one ever did. \n\nThe problem was, strange things often happened around Harry and it was just no good telling the Dursleys he didn't make them happen.",
+      "approxWordCount": 233,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 1439,
+        "sourceWordEnd": 1671,
+        "sourceCharStart": 34141,
+        "sourceCharEnd": 35442
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch02_p007_q01",
+          "type": "multiple_choice",
+          "prompt": "The story says Piers has a face \"like a rat.\" What does this mean?",
+          "explanation": "We use the word 'like' to show that two things look similar.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Like & About",
+          "options": [
+            "He looks similar to a rat.",
+            "He likes to talk about rats.",
+            "He has a pet rat."
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch02_p007_q02",
+          "type": "multiple_choice",
+          "prompt": "Read this sentence: \"He was usually the one who held people's arms...\" The word \"who\" gives us more information about:",
+          "explanation": "We use 'who' to give more information about people.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Defining Relative Clauses",
+          "options": [
+            "a place",
+            "a person",
+            "a thing"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch02_p007_q03",
+          "type": "true_false",
+          "prompt": "Harry says, \"I'm not going to do anything.\" This means he plans to be good at the zoo.",
+          "explanation": "Harry uses 'going to' to talk about his plan for the future.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Future Forms",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch02_p007_q04",
+          "type": "multiple_choice",
+          "prompt": "Dudley says Harry \"always spoils everything.\" The word \"always\" shows that Dudley thinks this happens:",
+          "explanation": "The word 'always' is a signal word used for things that happen all the time.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Present Simple",
+          "options": [
+            "only today",
+            "never",
+            "every time"
+          ],
+          "answerIndex": 2
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch02_p008",
+      "pageNumber": 8,
+      "sourceText": "Once, Aunt Petunia, tired of Harry coming back from the barbers looking as though he hadn't been at all, had taken a pair of kitchen scissors and cut his hair so short he was almost bald except for his bangs, which she left \"to hide that horrible scar.\" Dudley had laughed himself silly at Harry, who spent a sleepless night imagining school the next day, where he was already laughed at for his baggy clothes and taped glasses. \n\nNext morning, however, he had gotten up to find his hair exactly as it had been before Aunt Petunia had sheared it off He had been given a week in his cupboard for this, even though he had tried to explain that he couldn't explain how it had grown back so quickly. \n\nAnother time, Aunt Petunia had been trying to force him into a revolting old sweater of Dudley's (brown with orange puff balls) -- The harder she tried to pull it over his head, the smaller it seemed to become, until finally it might have fitted a hand puppet, but certainly wouldn't fit Harry. Aunt Petunia had decided it must have shrunk in the wash and, to his great relief, Harry wasn't punished. \n\nOn the other hand, he'd gotten into terrible trouble for being found on the roof of the school kitchens. Dudley's gang had been chasing him as usual when, as much to Harry's surprise as anyone else's, there he was sitting on the chimney.",
+      "approxWordCount": 245,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 1672,
+        "sourceWordEnd": 1916,
+        "sourceCharStart": 35445,
+        "sourceCharEnd": 36783
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch02_p008_q01",
+          "type": "multiple_choice",
+          "prompt": "Aunt Petunia tried to force Harry _____ an ugly old sweater.",
+          "explanation": "The word 'into' shows movement inside the sweater.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "into",
+            "out of",
+            "from"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch02_p008_q02",
+          "type": "true_false",
+          "prompt": "The boy who laughed at Harry's short haircut was Dudley.",
+          "explanation": "The story says Dudley laughed himself silly at Harry's new haircut.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Defining Relative Clauses",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch02_p008_q03",
+          "type": "multiple_choice",
+          "prompt": "What was Dudley's gang doing when Harry suddenly appeared on the roof?",
+          "explanation": "The story says Dudley's gang had been chasing him right before he ended up on the chimney.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "options": [
+            "They were chasing Harry.",
+            "They were eating lunch.",
+            "They were cutting his hair."
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch02_p008_q04",
+          "type": "true_false",
+          "prompt": "The sweater shrank so much that it might fit a hand puppet.",
+          "explanation": "The sweater became very small, so it might only fit a tiny hand puppet!",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Obligation & Possibility",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch02_p009",
+      "pageNumber": 9,
+      "sourceText": "The Dursleys had received a very angry letter from Harry's headmistress telling them Harry had been climbing school buildings. But all he'd tried to do (as he shouted at Uncle Vernon through the locked door of his cupboard) was jump behind the big trash cans outside the kitchen doors. Harry supposed that the wind must have caught him in mid- jump. \n\nBut today, nothing was going to go wrong. It was even worth being with Dudley and Piers to be spending the day somewhere that wasn't school, his cupboard, or Mrs. Figg's cabbage-smelling living room. \n\nWhile he drove, Uncle Vernon complained to Aunt Petunia. He liked to complain about things: people at work, Harry, the council, Harry, the bank, and Harry were just a few of his favorite subjects. This morning, it was motorcycles. \n\n\"... roaring along like maniacs, the young hoodlums,\" he said, as a motorcycle overtook them. \n\nI had a dream about a motorcycle,\" said Harry, remembering suddenly. \"It was flying.\" \n\nUncle Vernon nearly crashed into the car in front. He turned right around in his seat and yelled at Harry, his face like a gigantic beet with a mustache: \"MOTORCYCLES DON'T FLY!\" \n\nDudley and Piers sniggered. \n\nI know they don't,\" said Harry. \"It was only a dream.\" \n\nBut he wished he hadn't said anything.",
+      "approxWordCount": 217,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 1917,
+        "sourceWordEnd": 2133,
+        "sourceCharStart": 36784,
+        "sourceCharEnd": 38061
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch02_p009_q01",
+          "type": "multiple_choice",
+          "prompt": "Uncle Vernon's face looked _____ a gigantic beet.",
+          "explanation": "We use 'like' to show that two things look similar. Uncle Vernon's red face looked similar to a beet!",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Like & About",
+          "options": [
+            "A. like",
+            "B. about",
+            "C. into"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch02_p009_q02",
+          "type": "true_false",
+          "prompt": "Uncle Vernon often complains about Harry.",
+          "explanation": "The story says Harry is one of Uncle Vernon's favorite subjects to complain about!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch02_p009_q03",
+          "type": "multiple_choice",
+          "prompt": "Uncle Vernon almost crashed _____ the car in front of him.",
+          "explanation": "The word 'into' shows movement. He almost hit the car!",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. out of",
+            "B. into",
+            "C. from"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch02_p009_q04",
+          "type": "true_false",
+          "prompt": "Harry thinks that everything is going to go wrong today.",
+          "explanation": "The text says 'nothing was going to go wrong.' Harry hopes it will be a good day!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Future Forms",
+          "answer": false
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch02_p010",
+      "pageNumber": 10,
+      "sourceText": "If there was one thing the Dursleys hated even more than his asking questions, it was his talking about anything acting in a way it shouldn't, no matter if it was in a dream or even a cartoon -- they seemed to think he might get dangerous ideas. \n\nIt was a very sunny Saturday and the zoo was crowded with families. The Dursleys bought Dudley and Piers large chocolate ice creams at the entrance and then, because the smiling lady in the van had asked Harry what he wanted before they could hurry him away, they bought him a cheap lemon ice pop. It wasn't bad, either, Harry thought, licking it as they watched a gorilla scratching its head who looked remarkably like Dudley, except that it wasn't blond. \n\nHarry had the best morning he'd had in a long time. He was careful to walk a little way apart from the Dursleys so that Dudley and Piers, who were starting to get bored with the animals by lunchtime, wouldn't fall back on their favorite hobby of hitting him. They ate in the zoo restaurant, and when Dudley had a tantrum because his knickerbocker glory didn't have enough ice cream on top, Uncle Vernon bought him another one and Harry was allowed to finish the first. \n\nHarry felt, afterward, that he should have known it was all too good to last. \n\nAfter lunch they went to the reptile house.",
+      "approxWordCount": 238,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 2134,
+        "sourceWordEnd": 2371,
+        "sourceCharStart": 38062,
+        "sourceCharEnd": 39363
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch02_p010_q01",
+          "type": "multiple_choice",
+          "prompt": "The gorilla looked _____ Dudley.",
+          "explanation": "We use 'like' to say two things or people look similar. The gorilla looked like Dudley!",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Like & About",
+          "options": [
+            "A. like",
+            "B. about",
+            "C. into"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch02_p010_q02",
+          "type": "true_false",
+          "prompt": "The Dursleys thought Harry might get dangerous ideas.",
+          "explanation": "The story says the Dursleys thought Harry might get dangerous ideas if he talked about strange things.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Obligation & Possibility",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch02_p010_q03",
+          "type": "multiple_choice",
+          "prompt": "Who was starting to get bored with the animals?",
+          "explanation": "The story says Dudley and Piers, who were starting to get bored, wanted to hit Harry.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Defining Relative Clauses",
+          "options": [
+            "A. Harry and Uncle Vernon",
+            "B. Dudley and Piers",
+            "C. The smiling lady"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch02_p010_q04",
+          "type": "multiple_choice",
+          "prompt": "Where did they go after lunch?",
+          "explanation": "The last sentence says, 'After lunch they went to the reptile house.'",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. Out of the zoo",
+            "B. To the reptile house",
+            "C. Into the van"
+          ],
+          "answerIndex": 1
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch02_p011",
+      "pageNumber": 11,
+      "sourceText": "It was cool and dark in there, with lit windows all along the walls. Behind the glass, all sorts of lizards and snakes were crawling and slithering over bits of wood and stone. Dudley and Piers wanted to see huge, poisonous cobras and thick, man-crushing pythons. Dudley quickly found the largest snake in the place. It could have wrapped its body twice around Uncle Vernon's car and crushed it into a trash can -- but at the moment it didn't look in the mood. In fact, it was fast asleep. \n\nDudley stood with his nose pressed against the glass, staring at the glistening brown coils. \n\n\"Make it move,\" he whined at his father. Uncle Vernon tapped on the glass, but the snake didn't budge. \n\n\"Do it again,\" Dudley ordered. Uncle Vernon rapped the glass smartly with his knuckles, but the snake just snoozed on. \n\n\"This is boring,\" Dudley moaned. He shuffled away. \n\nHarry moved in front of the tank and looked intently at the snake. He wouldn't have been surprised if it had died of boredom itself -- no company except stupid people drumming their fingers on the glass trying to disturb it all day long. It was worse than having a cupboard as a bedroom, where the only visitor was Aunt Petunia hammering on the door to wake you up; at least he got to visit the rest of the house. \n\nThe snake suddenly opened its beady eyes.",
+      "approxWordCount": 239,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 2372,
+        "sourceWordEnd": 2610,
+        "sourceCharStart": 39364,
+        "sourceCharEnd": 40687
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch02_p011_q01",
+          "type": "multiple_choice",
+          "prompt": "What were the lizards and snakes doing behind the glass?",
+          "explanation": "The story says the lizards and snakes 'were crawling and slithering' over the wood and stone.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Past Continuous",
+          "options": [
+            "They were sleeping.",
+            "They were crawling and slithering.",
+            "They were eating."
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch02_p011_q02",
+          "type": "multiple_choice",
+          "prompt": "The big snake could crush Uncle Vernon's car _____ a trash can.",
+          "explanation": "The word 'into' shows the movement of the car being crushed to fit inside a trash can!",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "into",
+            "out of",
+            "towards"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch02_p011_q03",
+          "type": "true_false",
+          "prompt": "The snake moves when Uncle Vernon taps on the glass.",
+          "explanation": "The story says the snake 'didn't budge', which means it did not move at all.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "answer": false
+        },
+        {
+          "id": "hp_ep1_ch02_p011_q04",
+          "type": "multiple_choice",
+          "prompt": "Harry's bedroom is a cupboard _____ Aunt Petunia visits to wake him up.",
+          "explanation": "We use 'where' to give more information about a place, like Harry's cupboard bedroom.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Defining Relative Clauses",
+          "options": [
+            "who",
+            "where",
+            "which"
+          ],
+          "answerIndex": 1
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch02_p012",
+      "pageNumber": 12,
+      "sourceText": "Slowly, very slowly, it raised its head until its eyes were on a level with Harry's. \n\nIt winked. \n\nHarry stared. Then he looked quickly around to see if anyone was watching. They weren't. He looked back at the snake and winked, too. \n\nThe snake jerked its head toward Uncle Vernon and Dudley, then raised its eyes to the ceiling. It gave Harry a look that said quite plainly: \"I get that all the time. \n\n\"I know,\" Harry murmured through the glass, though he wasn't sure the snake could hear him. \"It must be really annoying.\" \n\nThe snake nodded vigorously. \n\n\"Where do you come from, anyway?\" Harry asked. \n\nThe snake jabbed its tail at a little sign next to the glass. Harry peered at it. \n\nBoa Constrictor, Brazil. \n\n\"Was it nice there?\" \n\nThe boa constrictor jabbed its tail at the sign again and Harry read on: This specimen was bred in the zoo. \"Oh, I see -- so you've never been to Brazil?\" \n\nAs the snake shook its head, a deafening shout behind Harry made both of them jump. \n\n\"DUDLEY! MR. DURSLEY! COME AND LOOK AT THIS SNAKE! YOU WON'T BELIEVE WHAT IT'S DOING!\" \n\nDudley came waddling toward them as fast as he could. \n\n\"Out of the way, you,\" he said, punching Harry in the ribs. Caught by surprise, Harry fell hard on the concrete floor.",
+      "approxWordCount": 225,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 2611,
+        "sourceWordEnd": 2835,
+        "sourceCharStart": 40688,
+        "sourceCharEnd": 41937
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch02_p012_q01",
+          "type": "true_false",
+          "prompt": "The snake has visited Brazil before.",
+          "explanation": "The sign says the snake was born in the zoo, so it has never been to Brazil.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Perfect",
+          "answer": false
+        },
+        {
+          "id": "hp_ep1_ch02_p012_q02",
+          "type": "multiple_choice",
+          "prompt": "Fill in the blank: The snake jerked its head _____ Uncle Vernon and Dudley.",
+          "explanation": "The word 'toward' shows that the snake moved its head in the direction of Uncle Vernon and Dudley.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. toward",
+            "B. out of",
+            "C. into"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch02_p012_q03",
+          "type": "multiple_choice",
+          "prompt": "Why did Harry look quickly around the room?",
+          "explanation": "Harry wanted to check if anyone was watching him look at the snake.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "options": [
+            "A. To see if anyone was sleeping.",
+            "B. To see if anyone was watching.",
+            "C. To see if anyone was running."
+          ],
+          "answerIndex": 1
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch02_p013",
+      "pageNumber": 13,
+      "sourceText": "What came next happened so fast no one saw how it happened -- one second, Piers and Dudley were leaning right up close to the glass, the next, they had leapt back with howls of horror. \n\nHarry sat up and gasped; the glass front of the boa constrictor's tank had vanished. The great snake was uncoiling itself rapidly, slithering out onto the floor. People throughout the reptile house screamed and started running for the exits. \n\nAs the snake slid swiftly past him, Harry could have sworn a low, hissing voice said, \"Brazil, here I come.... Thanksss, amigo.\" \n\nThe keeper of the reptile house was in shock. \n\n\"But the glass,\" he kept saying, \"where did the glass go?\" \n\nThe zoo director himself made Aunt Petunia a cup of strong, sweet tea while he apologized over and over again. Piers and Dudley could only gibber. As far as Harry had seen, the snake hadn't done anything except snap playfully at their heels as it passed, but by the time they were all back in Uncle Vernon's car, Dudley was telling them how it had nearly bitten off his leg, while Piers was swearing it had tried to squeeze him to death. But worst of all, for Harry at least, was Piers calming down enough to say, \"Harry was talking to it, weren't you, Harry?\" \n\nUncle Vernon waited until Piers was safely out of the house before starting on Harry. He was so angry he could hardly speak.",
+      "approxWordCount": 245,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 2836,
+        "sourceWordEnd": 3080,
+        "sourceCharStart": 41938,
+        "sourceCharEnd": 43296
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch02_p013_q01",
+          "type": "true_false",
+          "prompt": "Piers and Dudley were leaning close to the glass before it vanished.",
+          "explanation": "The story says they were leaning right up close to the glass before they jumped back.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch02_p013_q02",
+          "type": "multiple_choice",
+          "prompt": "Where did the snake go when the glass vanished?",
+          "explanation": "The text says the snake was uncoiling and slithering out onto the floor.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. It slithered out onto the floor.",
+            "B. It climbed into a tree.",
+            "C. It ran towards the door."
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch02_p013_q03",
+          "type": "multiple_choice",
+          "prompt": "Piers says, \"Harry was talking to it, weren't you, Harry?\" Why does Piers add \"weren't you\" at the end?",
+          "explanation": "Adding \"weren't you?\" is a tag question. We use it to check if something is true or to see if someone agrees.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Tag Questions",
+          "options": [
+            "A. To invite Harry to play.",
+            "B. To check information and ask for agreement.",
+            "C. To talk about a routine."
+          ],
+          "answerIndex": 1
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch02_p014",
+      "pageNumber": 14,
+      "sourceText": "He managed to say, \"Go -- cupboard -- stay -- no meals,\" before he collapsed into a chair, and Aunt Petunia had to run and get him a large brandy. \n\nHarry lay in his dark cupboard much later, wishing he had a watch. He didn't know what time it was and he couldn't be sure the Dursleys were asleep yet. Until they were, he couldn't risk sneaking to the kitchen for some food. \n\nHe'd lived with the Dursleys almost ten years, ten miserable years, as long as he could remember, ever since he'd been a baby and his parents had died in that car crash. He couldn't remember being in the car when his parents had died. Sometimes, when he strained his memory during long hours in his cupboard, he came up with a strange vision: a blinding flash of green light and a burn- ing pain on his forehead. This, he supposed, was the crash, though he couldn't imagine where all the green light came from. He couldn't remember his parents at all. His aunt and uncle never spoke about them, and of course he was forbidden to ask questions. There were no photographs of them in the house. \n\nWhen he had been younger, Harry had dreamed and dreamed of some unknown relation coming to take him away, but it had never happened; the Dursleys were his only family. Yet sometimes he thought (or maybe hoped) that strangers in the street seemed to know him.",
+      "approxWordCount": 246,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 3081,
+        "sourceWordEnd": 3326,
+        "sourceCharStart": 43297,
+        "sourceCharEnd": 44626
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch02_p014_q01",
+          "type": "multiple_choice",
+          "prompt": "Aunt Petunia _____ run and get him a large drink.",
+          "explanation": "The text says she 'had to run', which means she needed to do it right away.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Obligation & Possibility",
+          "options": [
+            "had to",
+            "might",
+            "will"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch02_p014_q02",
+          "type": "multiple_choice",
+          "prompt": "Uncle Vernon collapsed _____ a chair.",
+          "explanation": "The word 'into' shows movement. He fell down into the chair to sit.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "out of",
+            "into",
+            "from"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch02_p014_q03",
+          "type": "true_false",
+          "prompt": "Harry's aunt and uncle often talk about his parents.",
+          "explanation": "The story says his aunt and uncle never spoke about them.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Like & About",
+          "answer": false
+        },
+        {
+          "id": "hp_ep1_ch02_p014_q04",
+          "type": "multiple_choice",
+          "prompt": "How long has Harry lived with the Dursleys?",
+          "explanation": "The text says he lived with them for almost ten miserable years.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Perfect",
+          "options": [
+            "Almost ten years",
+            "Only one year",
+            "Five years"
+          ],
+          "answerIndex": 0
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch02_p015",
+      "pageNumber": 15,
+      "sourceText": "Very strange strangers they were, too. A tiny man in a violet top hat had bowed to him once while out shopping with Aunt Petunia and Dudley. After asking Harry furiously if he knew the man, Aunt Petunia had rushed them out of the shop without buying anything. A wild-looking old woman dressed all in green had waved merrily at him once on a bus. A bald man in a very long purple coat had actually shaken his hand in the street the other day and then walked away without a word. The weirdest thing about all these people was the way they seemed to vanish the second Harry tried to get a closer look. \n\nAt school, Harry had no one. Everybody knew that Dudley's gang hated that odd Harry Potter in his baggy old clothes and broken glasses, and nobody liked to disagree with Dudley's gang.",
+      "approxWordCount": 147,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 3327,
+        "sourceWordEnd": 3473,
+        "sourceCharStart": 44627,
+        "sourceCharEnd": 45412
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch02_p015_q01",
+          "type": "multiple_choice",
+          "prompt": "Where did Aunt Petunia rush Harry and Dudley?",
+          "explanation": "The text says Aunt Petunia rushed them out of the shop. 'Out of' shows movement outside.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. Into the shop",
+            "B. Out of the shop",
+            "C. Towards the shop"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch02_p015_q02",
+          "type": "true_false",
+          "prompt": "Dudley's gang likes Harry Potter.",
+          "explanation": "The text says Dudley's gang hated Harry Potter.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "answer": false
+        },
+        {
+          "id": "hp_ep1_ch02_p015_q03",
+          "type": "multiple_choice",
+          "prompt": "The text says, 'The weirdest thing _____ all these people...' Which word is missing?",
+          "explanation": "We use 'about' to talk about a topic or a group of people.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Like & About",
+          "options": [
+            "A. like",
+            "B. about",
+            "C. where"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch02_p015_q04",
+          "type": "multiple_choice",
+          "prompt": "The old woman _____ waved at Harry was dressed in green. Which word is best to fill in the blank?",
+          "explanation": "We use 'who' to give more information about a person.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Defining Relative Clauses",
+          "options": [
+            "A. who",
+            "B. which",
+            "C. where"
+          ],
+          "answerIndex": 0
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    }
+  ]
+}

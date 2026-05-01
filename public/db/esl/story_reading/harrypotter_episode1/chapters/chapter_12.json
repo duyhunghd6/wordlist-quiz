@@ -1,0 +1,1452 @@
+{
+  "storyId": "harrypotter_episode1",
+  "chapterId": "chapter_12",
+  "chapterNumber": 12,
+  "title": "The Mirror of Erised",
+  "dateLabel": "21 December 1991",
+  "sourceTextIncluded": true,
+  "pages": [
+    {
+      "pageId": "hp_ep1_ch12_p001",
+      "pageNumber": 1,
+      "sourceText": "CHAPTER TWELVE \n\nTHE MIRROR OF ERISED \n\nChristmas was coming. One morning in mid-December, Hogwarts woke to find itself covered in several feet of snow. The lake froze solid and the Weasley twins were punished for bewitching several snowballs so that they followed Quirrell around, bouncing off the back of his turban. The few owls that managed to battle their way through the stormy sky to deliver mail had to be nursed back to health by Hagrid before they could fly off again. \n\nNo one could wait for the holidays to start. While the Gryffindor common room and the Great Hall had roaring fires, the drafty corridors had become icy and a bitter wind rattled the windows in the classrooms. \n\nWorst of all were Professor Snape's classes down in the dungeons, where their breath rose in a mist before them and they kept as close as possible to their hot cauldrons. \n\n\"I do feel so sorry,\" said Draco Malfoy, one Potions class, \"for all those people who have to stay at Hogwarts for Christmas because they're not wanted at home.\" \n\nHe was looking over at Harry as he spoke. Crabbe and Goyle chuckled. \n\nHarry, who was measuring out powdered spine of lionfish, ignored them. \n\nMalfoy had been even more unpleasant than usual since the Quidditch match. Disgusted that the Slytherins had lost, he had tried to get everyone laughing at how a wide-mouthed tree frog would be replacing Harry as Seeker next.",
+      "approxWordCount": 241,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 1,
+        "sourceWordEnd": 241,
+        "sourceCharStart": 276130,
+        "sourceCharEnd": 277528
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch12_p001_q01",
+          "type": "multiple_choice",
+          "prompt": "What was Harry doing when Malfoy was talking?",
+          "explanation": "The story says Harry was measuring out powdered spine of lionfish.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "options": [
+            "A. He was measuring powder.",
+            "B. He was throwing snowballs.",
+            "C. He was sleeping in class."
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch12_p001_q02",
+          "type": "true_false",
+          "prompt": "Hagrid had to help the owls get better after they flew through the storm.",
+          "explanation": "The text says the owls 'had to be nursed back to health by Hagrid' because the sky was so stormy.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Obligation & Possibility",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch12_p001_q03",
+          "type": "multiple_choice",
+          "prompt": "Which word completes this sentence from the story: \"Malfoy feels sorry for the people ___ have to stay at Hogwarts.\"",
+          "explanation": "We use the word 'who' to give more information about people!",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Defining Relative Clauses",
+          "options": [
+            "A. which",
+            "B. where",
+            "C. who"
+          ],
+          "answerIndex": 2
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch12_p002",
+      "pageNumber": 2,
+      "sourceText": "Then he'd realized that nobody found this funny, because they were all so impressed at the way Harry had managed to stay on his bucking broomstick. So Malfoy, jealous and angry, had gone back to taunting Harry about having no proper family. \n\nIt was true that Harry wasn't going back to Privet Drive for Christmas. \n\nProfessor McGonagall had come around the week before, making a list of students who would be staying for the holidays, and Harry had signed up at once. He didn't feel sorry for himself at all; this would probably be the best Christmas he'd ever had. Ron and his brothers were staying, too, because Mr. and Mrs. Weasley were going to Romania to visit Charlie. \n\nWhen they left the dungeons at the end of Potions, they found a large fir tree blocking the corridor ahead. Two enormous feet sticking out at the bottom and a loud puffing sound told them that Hagrid was behind it. \n\n\"Hi, Hagrid, want any help?\" Ron asked, sticking his head through the branches. \n\n\"Nah, I'm all right, thanks, Ron.\" \n\n\"Would you mind moving out of the way?\" came Malfoys cold drawl from behind them. \"Are you trying to earn some extra money, Weasley? Hoping to be gamekeeper yourself when you leave Hogwarts, I suppose -- that hut of Hagrid's must seem like a palace compared to what your family's used to.\" \n\nRon dived at Malfoy just as Snape came up the stairs. \n\n\"WEASLEY!\"",
+      "approxWordCount": 242,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 242,
+        "sourceWordEnd": 483,
+        "sourceCharStart": 277529,
+        "sourceCharEnd": 278901
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch12_p002_q01",
+          "type": "multiple_choice",
+          "prompt": "What does Malfoy tell Ron to do? \"Would you mind moving ______ the way?\"",
+          "explanation": "Malfoy wants Ron to move \"out of\" the way so he can walk past.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "into",
+            "out of",
+            "towards"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch12_p002_q02",
+          "type": "true_false",
+          "prompt": "Professor McGonagall made a list of students who are staying at school for the holidays.",
+          "explanation": "The story says she made a list of students who would be staying, and Harry signed his name!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Defining Relative Clauses",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch12_p002_q03",
+          "type": "multiple_choice",
+          "prompt": "Malfoy is mean to Ron. He says Hagrid's hut must seem _____ a palace compared to Ron's house.",
+          "explanation": "The word \"like\" is used to compare two things. Malfoy is comparing Hagrid's hut to a palace.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Like & About",
+          "options": [
+            "like",
+            "about",
+            "where"
+          ],
+          "answerIndex": 0
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch12_p003",
+      "pageNumber": 3,
+      "sourceText": "Ron let go of the front of Malfoy's robes. \n\n\"He was provoked, Professor Snape,\" said Hagrid, sticking his huge hairy face out from behind the tree. \"Malfoy was insultin' his family.\" \n\n\"Be that as it may, fighting is against Hogwarts rules, Hagrid,\" said Snape silkily. \"Five points from Gryffindor, Weasley, and be grateful it isn't more. Move along, all of you.\" \n\nMalfoy, Crabbe, and Goyle pushed roughly past the tree, scattering needles everywhere and smirking. \n\n\"I'll get him,\" said Ron, grinding his teeth at Malfoy's back, \"one of these days, I'll get him --\" \n\n\"I hate them both,\" said Harry, \"Malfoy and Snape.\" \n\n\"Come on, cheer up, it's nearly Christmas,\" said Hagrid. \"Tell yeh what, come with me an' see the Great Hall, looks a treat.\" \n\nSo the three of them followed Hagrid and his tree off to -the Great Hall, where Professor McGonagall and Professor Flitwick were busy with the Christmas decorations. \n\n\"Ah, Hagrid, the last tree -- put it in the far corner, would you?\" \n\nThe hall looked spectacular. Festoons of holly and mistletoe hung all around the walls, and no less than twelve towering Christmas trees stood around the room, some sparkling with tiny icicles, some glittering with hundreds of candles. \n\n\"How many days you got left until yer holidays?\" Hagrid asked. \n\n\"Just one,\" said Hermione. \"And that reminds me -Harry, Ron, we've got half an hour before lunch, we should be in the library.\"",
+      "approxWordCount": 238,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 484,
+        "sourceWordEnd": 721,
+        "sourceCharStart": 278904,
+        "sourceCharEnd": 280326
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch12_p003_q01",
+          "type": "true_false",
+          "prompt": "Hagrid says that Malfoy was insulting Ron's family.",
+          "explanation": "Hagrid tells Professor Snape that Malfoy was saying bad things about Ron's family.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch12_p003_q02",
+          "type": "multiple_choice",
+          "prompt": "What does Ron say he will do to Malfoy?",
+          "explanation": "Ron is very angry and says 'I'll get him' while looking at Malfoy.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Future Forms",
+          "options": [
+            "He will get him.",
+            "He will help him.",
+            "He will give him a gift."
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch12_p003_q03",
+          "type": "multiple_choice",
+          "prompt": "Who is busy decorating the Great Hall where Hagrid takes the children?",
+          "explanation": "The text says Professor McGonagall and Professor Flitwick were busy with the Christmas decorations in the Great Hall.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Defining Relative Clauses",
+          "options": [
+            "Malfoy and Crabbe",
+            "Professor McGonagall and Professor Flitwick",
+            "Ron and Hermione"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch12_p003_q04",
+          "type": "true_false",
+          "prompt": "Harry says he likes Malfoy and Snape.",
+          "explanation": "Harry says 'I hate them both,' which means he does not like them at all.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Present Simple",
+          "answer": false
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch12_p004",
+      "pageNumber": 4,
+      "sourceText": "\"Oh yeah, you're right,\" said Ron, tearing his eyes away from Professor Flitwick, who had golden bubbles blossoming out of his wand and was trailing them over the branches of the new tree. \n\n\"The library?\" said Hagrid, following them out of the hall. \"Just before the holidays? Bit keen, aren't yeh?\" \n\n\"Oh, we're not working,\" Harry told him brightly. \"Ever since you mentioned Nicolas Flamel we've been trying to find out who he is.\" \n\n\"You what?\" Hagrid looked shocked. \"Listen here -- I've told yeh -- drop it. It's nothin' to you what that dog's guardin'.\" \n\n\"We just want to know who Nicolas Flamel is, that's all,\" said Hermione. \n\n\"Unless you'd like to tell us and save us the trouble?\" Harry added. \"We must've been through hundreds of books already and we can't find him anywhere -- just give us a hint -- I know I've read his name somewhere.\" \n\n\"I'm sayin' nothin, said Hagrid flatly. \n\n\"Just have to find out for ourselves, then,\" said Ron, and they left Hagrid looking disgruntled and hurried off to the library. \n\nThey had indeed been searching books for Flamel's name ever since Hagrid had let it slip, because how else were they going to find out what Snape was trying to steal? The trouble was, it was very hard to know where to begin, not knowing what Flamel might have done to get himself into a book.",
+      "approxWordCount": 234,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 722,
+        "sourceWordEnd": 955,
+        "sourceCharStart": 280329,
+        "sourceCharEnd": 281649
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch12_p004_q01",
+          "type": "multiple_choice",
+          "prompt": "The story says: '...Professor Flitwick, who had golden bubbles blossoming out of his wand...' Who does the word 'who' give us more information about?",
+          "explanation": "The word 'who' is used right after 'Professor Flitwick' to tell us more about him!",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Defining Relative Clauses",
+          "options": [
+            "A. Ron",
+            "B. Professor Flitwick",
+            "C. Hagrid"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch12_p004_q02",
+          "type": "true_false",
+          "prompt": "Hagrid says, 'Bit keen, aren't yeh?' He uses the tag question 'aren't yeh?' to check if the children are eager to go to the library.",
+          "explanation": "Hagrid uses a tag question to check information. He is surprised they want to study right before the holidays!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Tag Questions",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch12_p004_q03",
+          "type": "multiple_choice",
+          "prompt": "Which direction are the children and Hagrid moving when they talk about the library?",
+          "explanation": "The story says Hagrid is 'following them out of the hall'. 'Out of' shows they are leaving the room.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. Into the hall",
+            "B. Out of the hall",
+            "C. Towards the tree"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch12_p004_q04",
+          "type": "true_false",
+          "prompt": "Harry says, 'Unless you'd like to tell us...' to politely invite Hagrid to share the secret about Nicolas Flamel.",
+          "explanation": "Harry uses 'would like to' as a polite way to ask Hagrid to tell them the answer.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Would You Like (Offers & Invitations)",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch12_p005",
+      "pageNumber": 5,
+      "sourceText": "He wasn't in Great Wizards of the Twentieth Century, or Notable Magical Names of Our Time; he was missing, too, from Important Modern Magical Discoveries, and A Study of Recent Developments in Wizardry. And then, of course, there was the sheer size of the library; tens of thousands of books; thousands of shelves; hundreds of narrow rows. \n\nHermione took out a list of subjects and titles she had decided to search while Ron strode off down a row of books and started pulling them off the shelves at random. Harry wandered over to the Restricted Section. He had been wondering for a while if Flamel wasn't somewhere in there. Unfortunately, you needed a specially signed note from one of the teachers to look in any of the restricted books, and he knew he'd never get one. These were the books containing powerful Dark Magic never taught at Hogwarts, and only read by older students studying advanced Defense Against the Dark Arts. \n\n\"What are you looking for, boy?\" \n\n\"Nothing,\" said Harry. \n\nMadam Pince the librarian brandished a feather duster at him. \n\n\"You'd better get out, then. Go on -- out!\" \n\nWishing he'd been a bit quicker at thinking up some story, Harry left the library. He, Ron, and Hermione had already agreed they'd better not ask Madam Pince where they could find Flamel. They were sure she'd be able to tell them, but they couldn't risk Snape hearing what they were up to.",
+      "approxWordCount": 242,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 956,
+        "sourceWordEnd": 1197,
+        "sourceCharStart": 281650,
+        "sourceCharEnd": 283044
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch12_p005_q01",
+          "type": "multiple_choice",
+          "prompt": "Where did Madam Pince tell Harry to go?",
+          "explanation": "Madam Pince tells Harry to get 'out' and he leaves the library.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. Into the Restricted Section",
+            "B. Out of the library",
+            "C. Towards the shelves"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch12_p005_q02",
+          "type": "true_false",
+          "prompt": "Harry has to get a signed note from a teacher to look at the restricted books.",
+          "explanation": "The story says you need a specially signed note from a teacher to look in those books.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Obligation & Possibility",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch12_p005_q03",
+          "type": "multiple_choice",
+          "prompt": "Who are the only people that read the books in the Restricted Section?",
+          "explanation": "The restricted books are only read by older students studying advanced magic.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Defining Relative Clauses",
+          "options": [
+            "A. Older students",
+            "B. Young children",
+            "C. Madam Pince"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch12_p005_q04",
+          "type": "true_false",
+          "prompt": "Harry, Ron, and Hermione always ask Madam Pince for help when they want to find a book.",
+          "explanation": "They decided not to ask her because they did not want Snape to hear their secret.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "answer": false
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch12_p006",
+      "pageNumber": 6,
+      "sourceText": "Harry waited outside in the corridor to see if the other two had found anything, but he wasn't very hopeful. They had been looking for two weeks, after A, but as they only had odd moments between lessons it wasn't surprising they'd found nothing. What they really needed was a nice long search without Madam Pince breathing down their necks. \n\nFive minutes later, Ron and Hermione joined him, shaking their heads. \n\nThey went off to lunch. \n\n\"You will keep looking while I'm away, won't you?\" said Hermione. \"And send me an owl if you find anything.\" \n\n\"And you could ask your parents if they know who Flamel is,\" said Ron. \n\n\"It'd be safe to ask them.\" \n\n\"Very safe, as they're both dentists,\" said Hermione. \n\nOnce the holidays had started, Ron and Harry were having too good a time to think much about Flamel. They had the dormitory to themselves and the common room was far emptier than usual, so they were able to get the good armchairs by the fire. They sat by the hour eating anything they could spear on a toasting fork -- bread, English muffins, marshmallows -- and plotting ways of getting Malfoy expelled, which were fun to talk about even if they wouldn't work. \n\nRon also started teaching Harry wizard chess. This was exactly like Muggle chess except that the figures were alive, which made it a lot like directing troops in battle. Ron's set was very old and battered.",
+      "approxWordCount": 244,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 1198,
+        "sourceWordEnd": 1441,
+        "sourceCharStart": 283047,
+        "sourceCharEnd": 284429
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch12_p006_q01",
+          "type": "multiple_choice",
+          "prompt": "Hermione says, 'You will keep looking while I'm away, won't you?' Why does she add 'won't you?'",
+          "explanation": "We use tag questions like 'won't you?' to check information or ask someone to agree.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Tag Questions",
+          "options": [
+            "A. To ask for agreement",
+            "B. To say no",
+            "C. To talk about the past"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch12_p006_q02",
+          "type": "multiple_choice",
+          "prompt": "Wizard chess is exactly _____ Muggle chess, but the figures are alive.",
+          "explanation": "The word 'like' is used to show that two things are similar.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Like & About",
+          "options": [
+            "A. about",
+            "B. like",
+            "C. into"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch12_p006_q03",
+          "type": "true_false",
+          "prompt": "Ron and Harry were having a bad time during the holidays.",
+          "explanation": "The story says they 'were having too good a time' sitting by the fire and eating.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "answer": false
+        },
+        {
+          "id": "hp_ep1_ch12_p006_q04",
+          "type": "multiple_choice",
+          "prompt": "Ron tells Hermione she _____ ask her parents about Flamel.",
+          "explanation": "Ron says 'you could ask' to show it is a possibility, not a rule.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Obligation & Possibility",
+          "options": [
+            "A. could",
+            "B. has to",
+            "C. will"
+          ],
+          "answerIndex": 0
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch12_p007",
+      "pageNumber": 7,
+      "sourceText": "Like everything else he owned, it had once belonged to someone else in his family -- in this case, his grandfather. However, old chessmen weren't a drawback at all. Ron knew them so well he never had trouble getting them to do what he wanted. \n\nHarry played with chessmen Seamus Finnigan had lent him, and they didn't trust him at all. He wasn't a very good player yet and they kept shouting different bits of advice at him, which was confusing. \"Don't send me there, can't you see his knight? Send him, we can afford to lose him.\" On Christmas Eve, Harry went to bed looking forward to the next day for the food and the fun, but not expecting any presents at all. \n\nWhen he woke early in the morning, however, the first thing he saw was a small pile of packages at the foot of his bed. \n\n\"Merry Christmas,\" said Ron sleepily as Harry scrambled out of bed and pulled on his bathrobe. \n\n\"You, too,\" said Harry. \"Will you look at this? I've got some presents!\" \n\n\"What did you expect, turnips?\" said Ron, turning to his own pile, which was a lot bigger than Harry's. \n\nHarry picked up the top parcel. It was wrapped in thick brown paper and scrawled across it was To Harry, from Hagrid. Inside was a roughly cut wooden flute. Hagrid had obviously whittled it himself. Harry blew it -- it sounded a bit like an owl.",
+      "approxWordCount": 243,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 1442,
+        "sourceWordEnd": 1684,
+        "sourceCharStart": 284432,
+        "sourceCharEnd": 285744
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch12_p007_q01",
+          "type": "multiple_choice",
+          "prompt": "Harry scrambled _____ bed to see his presents.",
+          "explanation": "The story says Harry scrambled 'out of' bed when he woke up.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. into",
+            "B. out of",
+            "C. towards"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch12_p007_q02",
+          "type": "true_false",
+          "prompt": "The wooden flute from Hagrid sounded like an owl.",
+          "explanation": "When Harry blew the flute, it made a sound like an owl.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Like & About",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch12_p007_q03",
+          "type": "true_false",
+          "prompt": "Harry usually gets a lot of presents for Christmas.",
+          "explanation": "Harry went to bed not expecting any presents at all.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "answer": false
+        },
+        {
+          "id": "hp_ep1_ch12_p007_q04",
+          "type": "multiple_choice",
+          "prompt": "What does Harry say when he sees his packages?",
+          "explanation": "Harry is very surprised and says, 'I've got some presents!'",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Perfect",
+          "options": [
+            "A. I have to do my homework!",
+            "B. I've got some presents!",
+            "C. I will play chess!"
+          ],
+          "answerIndex": 1
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch12_p008",
+      "pageNumber": 8,
+      "sourceText": "A second, very small parcel contained a note. \n\nWe received your message and enclose your Christmas present. From Uncle Vernon and Aunt Petunia. Taped to the note was a fifty-pence piece. \n\n\"That's friendly,\" said Harry. \n\nRon was fascinated by the fifty pence. \n\n\"Weird!\" he said, 'NMat a shape! This is money?\" \n\n\"You can keep it,\" said Harry, laughing at how pleased Ron was. \"Hagrid and my aunt and uncle -- so who sent these?\" \n\n\"I think I know who that one's from,\" said Ron, turning a bit pink and pointing to a very lumpy parcel. \"My mom. I told her you didn't expect any presents and -- oh, no,\" he groaned, \"she's made you a Weasley sweater.\" \n\nHarry had torn open the parcel to find a thick, hand-knitted sweater in emerald green and a large box of homemade fudge. \n\n\"Every year she makes us a sweater,\" said Ron, unwrapping his own, \"and mine's always maroon.\" \n\n\"That's really nice of her,\" said Harry, trying the fudge, which was very tasty. \n\nHis next present also contained candy -- a large box of Chocolate Frogs from Hermione. \n\nThis only left one parcel. Harry picked it up and felt it. It was very light. He unwrapped it. \n\nSomething fluid and silvery gray went slithering to the floor where it lay in gleaming folds. Ron gasped. \n\n\"I've heard of those,\" he said in a hushed voice, dropping the box of Every Flavor Beans he'd gotten from Hermione.",
+      "approxWordCount": 242,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 1685,
+        "sourceWordEnd": 1926,
+        "sourceCharStart": 285747,
+        "sourceCharEnd": 287114
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch12_p008_q01",
+          "type": "true_false",
+          "prompt": "Ron's mom makes him a sweater every year.",
+          "explanation": "The text says, 'Every year she makes us a sweater.' This is a routine!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch12_p008_q02",
+          "type": "multiple_choice",
+          "prompt": "Harry tries the fudge, 'which was very tasty.' What does the word 'which' give us more information about?",
+          "explanation": "The word 'which' is used to give extra information about a thing. Here, it tells us the fudge was tasty!",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Defining Relative Clauses",
+          "options": [
+            "The fudge",
+            "The sweater",
+            "The parcel"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch12_p008_q03",
+          "type": "multiple_choice",
+          "prompt": "Who is the lumpy parcel from?",
+          "explanation": "Ron says the lumpy parcel is from his mom. 'From' shows where the present started!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "Hermione",
+            "Ron's mom",
+            "Uncle Vernon"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch12_p008_q04",
+          "type": "true_false",
+          "prompt": "Ron has never heard of the silvery gray thing before.",
+          "explanation": "Ron says, 'I've heard of those.' This means he already knows about them!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Perfect",
+          "answer": false
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch12_p009",
+      "pageNumber": 9,
+      "sourceText": "\"If that's what I think it is -- they're really rare, and really valuable.\" \n\n\"What is it?\" \n\nHarry picked the shining, silvery cloth off the floor. It was strange to the touch, like water woven into material. \n\n\"It's an invisibility cloak,\" said Ron, a look of awe on his face. \"I'm sure it is -- try it on.\" \n\nHarry threw the cloak around his shoulders and Ron gave a yell. \n\n\"It is! Look down!\" \n\nHarry looked down at his feet, but they were gone. He dashed to the mirror. Sure enough, his reflection looked back at him, just his head suspended in midair, his body completely invisible. He pulled the cloak over his head and his reflection vanished completely. \n\n\"There's a note!\" said Ron suddenly. \"A note fell out of it!\" \n\nHarry pulled off the cloak and seized the letter. Written in narrow, loopy writing he had never seen before were the following words: Your father left this in my possession before he died. It is time it was returned to you. Use it well. \n\nA Very Merry Christmas to you. \n\nThere was no signature. Harry stared at the note. Ron was admiring the cloak. \n\n\"I'd give anything for one of these,\" he said. \"Anything. What's the matter?\" \n\n\"Nothing,\" said Harry. He felt very strange. Who had sent the cloak? Had it really once belonged to his father? Before he could say or think anything else, the dormitory door was flung open and Fred and George Weasley bounded in.",
+      "approxWordCount": 249,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 1927,
+        "sourceWordEnd": 2175,
+        "sourceCharStart": 287115,
+        "sourceCharEnd": 288506
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch12_p009_q01",
+          "type": "multiple_choice",
+          "prompt": "What does the silvery cloth feel like?",
+          "explanation": "The story says the cloth is strange to the touch, 'like water woven into material.'",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Like & About",
+          "options": [
+            "A. Like water",
+            "B. Like glass",
+            "C. Like ice"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch12_p009_q02",
+          "type": "true_false",
+          "prompt": "A note fell out of the invisibility cloak.",
+          "explanation": "Ron suddenly sees the note and says, 'A note fell out of it!'",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Prepositions of Direction",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch12_p009_q03",
+          "type": "multiple_choice",
+          "prompt": "What was Ron doing while Harry stared at the note?",
+          "explanation": "The text says, 'Ron was admiring the cloak.'",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "options": [
+            "A. He was opening the door.",
+            "B. He was admiring the cloak.",
+            "C. He was writing a letter."
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch12_p009_q04",
+          "type": "true_false",
+          "prompt": "Ron thinks the cloak is very rare and valuable.",
+          "explanation": "At the beginning of the page, Ron says, 'they're really rare, and really valuable.'",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch12_p010",
+      "pageNumber": 10,
+      "sourceText": "Harry stuffed the cloak quickly out of sight. He didn't feel like sharing it with anyone else yet. \n\n\"Merry Christmas!\" \n\n\"Hey, look -- Harry's got a Weasley sweater, too!\" \n\nFred and George were wearing blue sweaters, one with a large yellow F on it, the other a G. \n\n\"Harry's is better than ours, though,\" said Fred, holding up Harry's sweater. \"She obviously makes more of an effort if you're not family.\" \n\n\"Why aren't you wearing yours, Ron?\" George demanded. \"Come on, get it on, they're lovely and warm.\" \n\n\"I hate maroon,\" Ron moaned halfheartedly as he pulled it over his head. \n\n\"You haven't got a letter on yours,\" George observed. \"I suppose she thinks you don't forget your name. But we're not stupid -- we know we're called Gred and Forge.\" \n\n\"What's all th is noise. \n\nPercy Weasley stuck his head through the door, looking disapproving. He had clearly gotten halfway through unwrapping his presents as he, too, carried a lumpy sweater over his arm, which Fred seized. \n\n\"P for prefect! Get it on, Percy, come on, we're all wearing ours, even Harry got one.\" \n\n\"I -- don't -- want said Percy thickly, as the twins forced the sweater over his head, knocking his glasses askew. \n\n\"And you're not sitting with the prefects today, either,\" said George. \"Christmas is a time for family.\" \n\nThey frog-marched Percy from the room, his arms pinned to his side by his sweater. \n\nHarry had never in all his life had such a Christmas dinner.",
+      "approxWordCount": 250,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 2176,
+        "sourceWordEnd": 2425,
+        "sourceCharStart": 288507,
+        "sourceCharEnd": 289952
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch12_p010_q01",
+          "type": "multiple_choice",
+          "prompt": "What were Fred and George wearing?",
+          "explanation": "The story says Fred and George were wearing blue sweaters.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "options": [
+            "A. Red hats",
+            "B. Blue sweaters",
+            "C. Yellow coats"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch12_p010_q02",
+          "type": "true_false",
+          "prompt": "Ron likes the color maroon.",
+          "explanation": "Ron says 'I hate maroon,' which means he does not like it!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "answer": false
+        },
+        {
+          "id": "hp_ep1_ch12_p010_q03",
+          "type": "multiple_choice",
+          "prompt": "Where did Harry put his cloak?",
+          "explanation": "Harry stuffed the cloak 'out of sight' so no one could see it.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. Out of sight",
+            "B. Into a box",
+            "C. Towards the door"
+          ],
+          "answerIndex": 0
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch12_p011",
+      "pageNumber": 11,
+      "sourceText": "A hundred fat, roast turkeys; mountains of roast and boiled potatoes; platters of chipolatas; tureens of buttered peas, silver boats of thick, rich gravy and cranberry sauce -- and stacks of wizard crackers every few feet along the table. These fantastic party favors were nothing like the feeble Muggle ones the Dursleys usually bought, with their little plastic toys and their flimsy paper hats inside. Harry pulled a wizard cracker with Fred and it didn't just bang, it went off with a blast like a cannon and engulfed them all in a cloud of blue smoke, while from the inside exploded a rear admiral's hat and several live, white mice. Up at the High Table, Dumbledore had swapped his pointed wizard's hat for a flowered bonnet, and was chuckling merrily at a joke Professor Flitwick had just read him. \n\nFlaming Christmas puddings followed the turkey. Percy nearly broke his teeth on a silver sickle embedded in his slice. Harry watched Hagrid getting redder and redder in the face as he called for more wine, finally kissing Professor McGonagall on the cheek, who, to Harry's amazement, giggled and blushed, her top hat lopsided. \n\nWhen Harry finally left the table, he was laden down with a stack of things out of the crackers, including a pack of nonexplodable, luminous balloons, a Grow-Your-Own-Warts kit, and his own new wizard chess set. \n\nThe white mice had disappeared and Harry had a nasty feeling they were going to end up as Mrs. Norris's Christmas dinner.",
+      "approxWordCount": 250,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 2426,
+        "sourceWordEnd": 2675,
+        "sourceCharStart": 289953,
+        "sourceCharEnd": 291425
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch12_p011_q01",
+          "type": "multiple_choice",
+          "prompt": "The wizard cracker made a very loud noise. What was the noise like?",
+          "explanation": "The story says the cracker went off with a blast 'like a cannon'.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Like & About",
+          "options": [
+            "A. Like a bell",
+            "B. Like a cannon",
+            "C. Like a bird"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch12_p011_q02",
+          "type": "true_false",
+          "prompt": "Harry thinks the white mice are going to be Mrs. Norris's dinner.",
+          "explanation": "Harry had a feeling the mice were going to end up as her Christmas dinner.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Future Forms",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch12_p011_q03",
+          "type": "multiple_choice",
+          "prompt": "Where did Harry's new toys come out of?",
+          "explanation": "Harry got a stack of fun things out of the wizard crackers.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. Out of the crackers",
+            "B. Out of the pudding",
+            "C. Out of his pocket"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch12_p011_q04",
+          "type": "true_false",
+          "prompt": "Dumbledore was crying at a joke Professor Flitwick read to him.",
+          "explanation": "Dumbledore was chuckling (laughing) merrily at the joke, not crying!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "answer": false
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch12_p012",
+      "pageNumber": 12,
+      "sourceText": "Harry and the Weasleys spent a happy afternoon having a furious snowball fight on the grounds. Then, cold, wet, and gasping for breath, they returned to the fire in the Gryffindor common room, where Harry broke in his new chess set by losing spectacularly to Ron. He suspected he wouldn't have lost so badly if Percy hadn't tried to help him so much. \n\nAfter a meal of turkey sandwiches, crumpets, trifle, and Christmas cake, everyone felt too full and sleepy to do much before bed except sit and watch Percy chase Fred and George all over Gryffindor tower because they'd stolen his prefect badge. \n\nIt had been Harry's best Christmas day ever. Yet something had been nagging at the back of his mind all day. Not until he climbed into bed was he free to think about it: the invisibility cloak and whoever had sent it. \n\nRon, full of turkey and cake and with nothing mysterious to bother him, fell asleep almost as soon as he'd drawn the curtains of his four-poster. Harry leaned over the side of his own bed and pulled the cloak out from under it. \n\nHis father's... this had been his father's. He let the material flow over his hands, smoother than silk, light as air. Use it well, the note had said. \n\nHe had to try it, now. He slipped out of bed and wrapped the cloak around himself. Looking down at his legs, he saw only moonlight and shadows.",
+      "approxWordCount": 245,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 2676,
+        "sourceWordEnd": 2920,
+        "sourceCharStart": 291428,
+        "sourceCharEnd": 292774
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch12_p012_q01",
+          "type": "multiple_choice",
+          "prompt": "What was Harry thinking about when he got into bed?",
+          "explanation": "The story says Harry was finally free to think about the invisibility cloak when he climbed into bed.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Like & About",
+          "options": [
+            "A. The invisibility cloak",
+            "B. The snowball fight",
+            "C. The turkey sandwiches"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch12_p012_q02",
+          "type": "true_false",
+          "prompt": "Harry pulled the cloak out from under his bed.",
+          "explanation": "The text says Harry leaned over and pulled the cloak out from under his bed.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Prepositions of Direction",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch12_p012_q03",
+          "type": "true_false",
+          "prompt": "Harry felt that he had to try the cloak on right away.",
+          "explanation": "The story says 'He had to try it, now.' This shows a strong feeling of obligation to do it!",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Obligation & Possibility",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch12_p012_q04",
+          "type": "multiple_choice",
+          "prompt": "The Gryffindor common room is the place where Harry...",
+          "explanation": "They returned to the common room, where Harry played his new chess set with Ron.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Defining Relative Clauses",
+          "options": [
+            "A. played his new chess set.",
+            "B. had a snowball fight.",
+            "C. ate turkey sandwiches."
+          ],
+          "answerIndex": 0
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch12_p013",
+      "pageNumber": 13,
+      "sourceText": "It was a very funny feeling. \n\nUse it well. \n\nSuddenly, Harry felt wide-awake. The whole of Hogwarts was open to him in this cloak. Excitement flooded through him as he stood there in the dark and silence. He could go anywhere in this, anywhere, and Filch would never know. \n\nRon grunted in his sleep. Should Harry wake him? Something held him back -- his father's cloak -- he felt that this time -- the first time -- he wanted to use it alone. \n\nHe crept out of the dormitory, down the stairs, across the common room, and climbed through the portrait hole. \n\n\"Who's there?\" squawked the Fat Lady. Harry said nothing. He walked quickly down the corridor. \n\nWhere should he go? He stopped, his heart racing, and thought. And then it came to him. The Restricted Section in the library. He'd be able to read as long as he liked, as long as it took to find out who Flamel was. \n\nHe set off, drawing the invisibility cloak tight around him as he walked. \n\nThe library was pitch-black and very eerie. Harry lit a lamp to see his way along the rows of books. The lamp looked as if it was floating along in midair, and even though Harry could feel his arm supporting it, the sight gave him the creeps. \n\nThe Restricted Section was right at the back of the library.",
+      "approxWordCount": 232,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 2921,
+        "sourceWordEnd": 3152,
+        "sourceCharStart": 292775,
+        "sourceCharEnd": 294031
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch12_p013_q01",
+          "type": "multiple_choice",
+          "prompt": "Harry crept _____ the dormitory.",
+          "explanation": "The text says Harry crept 'out of' the dormitory to go explore the school.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. out of",
+            "B. into",
+            "C. towards"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch12_p013_q02",
+          "type": "true_false",
+          "prompt": "Because of the cloak, Harry could go anywhere in the school.",
+          "explanation": "The text says 'He could go anywhere in this' because the cloak hides him.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Obligation & Possibility",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch12_p013_q03",
+          "type": "multiple_choice",
+          "prompt": "Harry went to the library to find out _____ Flamel was.",
+          "explanation": "Flamel is a person, so we use the word 'who' to talk about him.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Defining Relative Clauses",
+          "options": [
+            "A. which",
+            "B. where",
+            "C. who"
+          ],
+          "answerIndex": 2
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch12_p014",
+      "pageNumber": 14,
+      "sourceText": "Step ping carefully over the rope that separated these books from the rest of the library, he held up his lamp to read the titles. \n\nThey didn't tell him much. Their peeling, faded gold letters spelled words in languages Harry couldn't understand. Some had no title at all. \n\nOne book had a dark stain on it that looked horribly like blood. The hairs on the back of Harry's neck prickled. Maybe he was imagining it, maybe not, but he thought a faint whispering was coming from the books, as though they knew someone was there who shouldn't be. \n\nHe had to start somewhere. Setting the lamp down carefully on the floor, he looked along the bottom shelf for an interestinglooking book. A large black and silver volume caught his eye. He pulled it out with difficulty, because it was very heavy, and, balancing it on his knee, let it fall open. \n\nA piercing, bloodcurdling shriek split the silence -- the book was screaming! Harry snapped it shut, but the shriek went on and on, one high, unbroken, earsplitting note. He stumbled backward and knocked over his lamp, which went out at once. Panicking, he heard footsteps coming down the corridor outside -- stuffing the shrieking book back on the shelf, he ran for it. He passed Filch in the doorway; Filch's pale, wild eyes looked straight through him, and Harry slipped under Filch's outstretched arm and streaked off up the corridor, the book's shrieks still ringing in his ears.",
+      "approxWordCount": 249,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 3153,
+        "sourceWordEnd": 3401,
+        "sourceCharStart": 294032,
+        "sourceCharEnd": 295460
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch12_p014_q01",
+          "type": "true_false",
+          "prompt": "The dark stain on the book looked like water.",
+          "explanation": "The story says the stain looked horribly like blood, not water!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Like & About",
+          "answer": false
+        },
+        {
+          "id": "hp_ep1_ch12_p014_q02",
+          "type": "multiple_choice",
+          "prompt": "Read this: '...the rope that separated these books...' What does the word 'that' give us more information about?",
+          "explanation": "The word 'that' tells us more about the rope. It was a rope that separated the books.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Defining Relative Clauses",
+          "options": [
+            "A. the rope",
+            "B. the books",
+            "C. the lamp"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch12_p014_q03",
+          "type": "multiple_choice",
+          "prompt": "How did Harry get past Filch?",
+          "explanation": "The story says Harry slipped under Filch's outstretched arm to get away.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. He jumped over Filch.",
+            "B. He slipped under Filch's arm.",
+            "C. He ran into the room."
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch12_p014_q04",
+          "type": "true_false",
+          "prompt": "Harry felt that he had to start looking somewhere.",
+          "explanation": "The text says 'He had to start somewhere' because he needed to find a book to read.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Obligation & Possibility",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch12_p015",
+      "pageNumber": 15,
+      "sourceText": "He came to a sudden halt in front of a tall suit of armor. He had been so busy getting away from the library, he hadn't paid attention to where he was going. Perhaps because it was dark, he didn't recognize where he was at all. There was a suit of armor near the kitchens, he knew, but he must be five floors above there. \n\n\"You asked me to come directly to you, Professor, if anyone was wandering around at night, and somebody's been in the library Restricted Section.\" \n\nHarry felt the blood drain out of his face. Wherever he was, Filch must know a shortcut, because his soft, greasy voice was getting nearer, and to his horror, it was Snape who replied, \"The Restricted Section? Well, they can't be far, we'll catch them.\" \n\nHarry stood rooted to the spot as Filch and Snape came around the corner ahead. They couldn't see him, of course, but it was a narrow corridor and if they came much nearer they'd knock right into him -- the cloak didn't stop him from being solid. \n\nHe backed away as quietly as he could. A door stood ajar to his left. It was his only hope. He squeezed through it, holding his breath, trying not to move it, and to his relief he managed to get inside the room without their noticing anything. They walked straight past, and Harry leaned against the wall, breathing deeply, listening to their footsteps dying away.",
+      "approxWordCount": 246,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 3402,
+        "sourceWordEnd": 3647,
+        "sourceCharStart": 295463,
+        "sourceCharEnd": 296805
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch12_p015_q01",
+          "type": "multiple_choice",
+          "prompt": "Where did Harry go to hide from Filch and Snape?",
+          "explanation": "Harry squeezed through a door and got inside the room to hide.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "Into a room",
+            "Out of the castle",
+            "Towards the library"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch12_p015_q02",
+          "type": "true_false",
+          "prompt": "Snape thinks they will catch the person who was in the library.",
+          "explanation": "Snape says 'we'll catch them', which means he is sure they will find the person.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Future Forms",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch12_p015_q03",
+          "type": "multiple_choice",
+          "prompt": "What was happening to Filch's voice?",
+          "explanation": "The story says his voice 'was getting nearer' as he walked toward Harry.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "options": [
+            "It was going away.",
+            "It was getting nearer.",
+            "It was stopping."
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch12_p015_q04",
+          "type": "true_false",
+          "prompt": "Filch tells Snape that nobody has been in the library.",
+          "explanation": "Filch says 'somebody's been in the library', which means someone was there!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Perfect",
+          "answer": false
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch12_p016",
+      "pageNumber": 16,
+      "sourceText": "That had been close, very close. It was a few seconds before he noticed anything about the room he had hidden in. \n\nIt looked like an unused classroom. The dark shapes of desks and chairs were piled against the walls, and there was an upturned wastepaper basket -- but propped against the wall facing him was something that didn't look as if it belonged there, something that looked as if someone had just put it there to keep it out of the way. \n\nIt was a magnificent mirror, as high as the ceiling, with an ornate gold frame, standing on two clawed feet. There was an inscription carved around the top: Erised stra ehru oyt ube cafru oyt on wohsi. His panic fading now that there was no sound of Filch and Snape, Harry moved nearer to the mirror, wanting to look at himself but see no reflection again. He stepped in front of it. \n\nHe had to clap his hands to his mouth to stop himself from screaming. He whirled around. His heart was pounding far more furiously than when the book had screamed -- for he had seen not only himself in the mirror, but a whole crowd of people standing right behind him. \n\nBut the room was empty. Breathing very fast, he turned slowly back to the mirror. \n\nThere he was, reflected in it, white and scared-looking, and there, reflected behind him, were at least ten others.",
+      "approxWordCount": 240,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 3648,
+        "sourceWordEnd": 3887,
+        "sourceCharStart": 296806,
+        "sourceCharEnd": 298110
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch12_p016_q01",
+          "type": "multiple_choice",
+          "prompt": "What did the room look like?",
+          "explanation": "The story says, 'It looked like an unused classroom.'",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Like & About",
+          "options": [
+            "An unused classroom",
+            "A busy library",
+            "A dark forest"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch12_p016_q02",
+          "type": "true_false",
+          "prompt": "Harry had to clap his hands to his mouth to stop himself from screaming.",
+          "explanation": "The text says he had to do this because he was so surprised by what he saw.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Obligation & Possibility",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch12_p016_q03",
+          "type": "multiple_choice",
+          "prompt": "Where did Harry step to look at himself?",
+          "explanation": "The story says, 'He stepped in front of it.'",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "Out of the room",
+            "Into a basket",
+            "In front of the mirror"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": "hp_ep1_ch12_p016_q04",
+          "type": "true_false",
+          "prompt": "Harry's heart was pounding very fast when he saw the people in the mirror.",
+          "explanation": "The story says his heart was pounding furiously because he saw a crowd of people behind him.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch12_p017",
+      "pageNumber": 17,
+      "sourceText": "Harry looked over his shoulder -- but still, no one was there. Or were they all invisible, too? Was he in fact in a room full of invisible people and this mirror's trick was that it reflected them, invisible or not? He looked in the mirror again. A woman standing right behind his reflection was smiling at him and waving. He reached out a hand and felt the air behind him. If she was really there, he'd touch her, their reflections were so close together, but he felt only air -- she and the others existed only in the mirror. \n\nShe was a very pretty woman. She had dark red hair and her eyes -- her eyes are just like mine, Harry thought, edging a little closer to the glass. Bright green -- exactly the same shape, but then he noticed that she was crying; smiling, but crying at the same time. The tall, thin, black-haired man standing next to her put his arm around her. He wore glasses, and his hair was very untidy. It stuck up at the back, just as Harry's did. \n\nHarry was so close to the mirror now that his nose was nearly touching that of his reflection. \n\n\"Mom?\" he whispered. \"Dad?\" \n\nThey just looked at him, smiling.",
+      "approxWordCount": 213,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 3888,
+        "sourceWordEnd": 4100,
+        "sourceCharStart": 298111,
+        "sourceCharEnd": 299241
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch12_p017_q01",
+          "type": "multiple_choice",
+          "prompt": "Harry thinks, \"her eyes are just like mine.\" What does \"like\" mean here?",
+          "explanation": "We use the word \"like\" to show that two things are similar.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Like & About",
+          "options": [
+            "A. They look the same.",
+            "B. They are talking about eyes.",
+            "C. They enjoy looking at eyes."
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch12_p017_q02",
+          "type": "multiple_choice",
+          "prompt": "What was the woman in the mirror doing when Harry looked at her?",
+          "explanation": "The story says the woman was smiling at him and waving.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "options": [
+            "A. She was sleeping.",
+            "B. She was smiling and waving.",
+            "C. She was running away."
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch12_p017_q03",
+          "type": "true_false",
+          "prompt": "The man who stood next to the woman had blonde hair and no glasses.",
+          "explanation": "The story says the man had black hair and wore glasses.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Defining Relative Clauses",
+          "answer": false
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch12_p018",
+      "pageNumber": 18,
+      "sourceText": "And slowly, Harry looked into the faces of the other people in the mirror, and saw other pairs of green eyes like his, other noses like his, even a little old man who looked as though he had Harry's knobbly knees -- Harry was looking at his family, for the first time in his life. \n\nThe Potters smiled and waved at Harry and he stared hungrily back at them, his hands pressed flat against the glass as though he was hoping to fall right through it and reach them. He had a powerful kind of ache inside him, half joy, half terrible sadness. \n\nHow long he stood there, he didn't know. The reflections did not fade and he looked and looked until a distant noise brought him back to his senses. He couldn't stay here, he had to find his way back to bed. He tore his eyes away from his mother's face, whispered, \"I'll come back,\" \n\nand hurried from the room. \n\n\"You could have woken me up,\" said Ron, crossly. \n\n\"You can come tonight, I'm going back, I want to show you the mirror. \n\n\"I'd like to see your mom and dad,\" Ron said eagerly. \n\n\"And I want to see all your family, all the Weasleys, you'll be able to show me your other brothers and everyone.\" \n\n\"You can see them any old time,\" said Ron. \"Just come round my house this summer. Anyway, maybe it only shows dead people. Shame about not finding Flamel, though.",
+      "approxWordCount": 247,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 4101,
+        "sourceWordEnd": 4347,
+        "sourceCharStart": 299242,
+        "sourceCharEnd": 300556
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch12_p018_q01",
+          "type": "multiple_choice",
+          "prompt": "Harry saw people in the mirror with green eyes _____ his.",
+          "explanation": "We use 'like' to show that two things are similar. Harry's family has green eyes just like him!",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Like & About",
+          "options": [
+            "A. like",
+            "B. about",
+            "C. into"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch12_p018_q02",
+          "type": "true_false",
+          "prompt": "Harry stayed in front of the mirror all night because he didn't have to go to bed.",
+          "explanation": "The story says 'he had to find his way back to bed.' 'Had to' means he needed to do it!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Obligation & Possibility",
+          "answer": false
+        },
+        {
+          "id": "hp_ep1_ch12_p018_q03",
+          "type": "multiple_choice",
+          "prompt": "What does Harry promise before he leaves the room?",
+          "explanation": "Harry says 'I'll come back.' He uses 'will' to make a promise for the future!",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Future Forms",
+          "options": [
+            "A. I come back.",
+            "B. I'll come back.",
+            "C. I came back."
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch12_p018_q04",
+          "type": "multiple_choice",
+          "prompt": "Harry saw a little old man _____ had knobbly knees.",
+          "explanation": "We use 'who' to give more information about a person.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Defining Relative Clauses",
+          "options": [
+            "A. which",
+            "B. where",
+            "C. who"
+          ],
+          "answerIndex": 2
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch12_p019",
+      "pageNumber": 19,
+      "sourceText": "Have some bacon or something, why aren't you eating anything?\" \n\nHarry couldn't eat. He had seen his parents and would be seeing them again tonight. He had almost forgotten about Flamel. It didn't seem very important anymore. Who cared what the three headed dog was guarding? What did it matter if Snape stole it, really? \"Are you all right?\" said Ron. \"You look odd.\" \n\nWhat Harry feared most was that he might not be able to find the mirror room again. With Ron covered in the cloak, too, they had to walk much more slowly the next night. They tried retracing Harry's route from the library, wandering around the dark passageways for nearly an hour. \n\n\"I'm freezing,\" said Ron. \"Let's forget it and go back.\" \n\n\"No!\" Harry hissed. I know it's here somewhere.\" \n\nThey passed the ghost of a tall witch gliding in the opposite direction, but saw no one else. just as Ron started moaning that his feet were dead with cold, Harry spotted the suit of armor. \n\n\"It's here -- just here -- yes!\" \n\nThey pushed the door open. Harry dropped the cloak from around his shoulders and ran to the mirror. \n\nThere they were. His mother and father beamed at the sight of him. \n\n\"See?\" Harry whispered. \n\n\"I can't see anything.\" \n\n\"Look! Look at them all... there are loads of them....\" \n\n\"I can only see you.\" \n\n\"Look in it properly, go on, stand where I am.\"",
+      "approxWordCount": 239,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 4348,
+        "sourceWordEnd": 4586,
+        "sourceCharStart": 300557,
+        "sourceCharEnd": 301900
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch12_p019_q01",
+          "type": "multiple_choice",
+          "prompt": "What did Harry fear he might not be able to do?",
+          "explanation": "Harry was afraid he might not find the room with the mirror again.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Obligation & Possibility",
+          "options": [
+            "A. Find the mirror room again",
+            "B. Eat his breakfast",
+            "C. See the tall witch"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch12_p019_q02",
+          "type": "multiple_choice",
+          "prompt": "When they pushed the door open, where did Harry run?",
+          "explanation": "Harry dropped his cloak and ran straight to the mirror.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. Out of the room",
+            "B. To the mirror",
+            "C. From the library"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch12_p019_q03",
+          "type": "true_false",
+          "prompt": "Ron sees Harry's parents in the mirror.",
+          "explanation": "Ron says, \"I can only see you.\" He does not see Harry's parents.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "answer": false
+        },
+        {
+          "id": "hp_ep1_ch12_p019_q04",
+          "type": "true_false",
+          "prompt": "The three-headed dog was guarding something.",
+          "explanation": "The text asks, \"Who cared what the three headed dog was guarding?\" This shows the dog was guarding something.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Past Continuous",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch12_p020",
+      "pageNumber": 20,
+      "sourceText": "Harry stepped aside, but with Ron in front of the mirror, he couldn't see his family anymore, just Ron in his paisley pajamas. \n\nRon, though, was staring transfixed at his image. \n\n\"Look at me!\" he said. \n\n\"Can you see all your family standing around you?\" \n\n\"No -- I'm alone -- but I'm different -- I look older -- and I'm head boy!\" \n\n\"What?\" \n\n\"I am -- I'm wearing the badge like Bill used to -- and I'm holding the house cup and the Quidditch cup -- I'm Quidditch captain, too. \n\nRon tore his eyes away from this splendid sight to look excitedly at Harry. \n\n\"Do you think this mirror shows the future?\" \n\n\"How can it? All my family are dead -- let me have another look --\" \n\n\"You had it to yourself all last night, give me a bit more time.\" \n\n\"You're only holding the Quidditch cup, what's interesting about that? I want to see my parents.\" \n\n\"Don't push me --\" \n\nA sudden noise outside in the corridor put an end to their discussion. \n\nThey hadn't realized how loudly they had been talking. \n\n\"Quick!\" \n\nRon threw the cloak back over them as the luminous eyes of Mrs. Norris came round the door. Ron and Harry stood quite still, both thinking the same thing -- did the cloak work on cats? After what seemed an age, she turned and left. \n\n\"This isn't safe -- she might have gone for Filch, I bet she heard us. \n\nCome on.\"",
+      "approxWordCount": 246,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 4587,
+        "sourceWordEnd": 4832,
+        "sourceCharStart": 301903,
+        "sourceCharEnd": 303228
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch12_p020_q01",
+          "type": "multiple_choice",
+          "prompt": "What does Ron think the cat might do?",
+          "explanation": "Ron says, 'she might have gone for Filch' because they are not safe.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Obligation & Possibility",
+          "options": [
+            "A. She might go to sleep.",
+            "B. She might get Filch.",
+            "C. She might play with them."
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch12_p020_q02",
+          "type": "true_false",
+          "prompt": "In the mirror, Ron sees himself wearing a badge like Bill used to wear.",
+          "explanation": "Ron says he is wearing the badge 'like Bill used to'.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Like & About",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch12_p020_q03",
+          "type": "multiple_choice",
+          "prompt": "Where does the sudden noise come from?",
+          "explanation": "The story says there was a 'sudden noise outside in the corridor'.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. Inside the mirror",
+            "B. Outside in the corridor",
+            "C. Under the cloak"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch12_p020_q04",
+          "type": "true_false",
+          "prompt": "Ron was looking at his family in the mirror.",
+          "explanation": "Ron says, 'I'm alone', so he was not looking at his family.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "answer": false
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch12_p021",
+      "pageNumber": 21,
+      "sourceText": "And Ron pulled Harry out of the room. \n\nThe snow still hadn't melted the next morning. \n\n\"Want to play chess, Harry?\" said Ron. \n\n\"No.\" \n\n\"Why don't we go down and visit Hagrid?\" \n\n\"No... you go...\" \n\n\"I know what you're thinking about, Harry, that mirror. Don't go back tonight.\" \n\n\"Why not?\" \n\n\"I dunno, I've just got a bad feeling about it -- and anyway, you've had too many close shaves already. Filch, Snape, and Mrs. Norris are wandering around. So what if they can't see you? What if they walk into you? What if you knock something over?\" \n\n\"You sound like Hermione.\" \n\n\"I'm serious, Harry, don't go.\" \n\nBut Harry only had one thought in his head, which was to get back in front of the mirror, and Ron wasn't going to stop him. \n\nThat third night he found his way more quickly than before. He was walking so fast he knew he was making more noise than was wise, but he didn't meet anyone. \n\nAnd there were his mother and father smiling at him again, and one of his grandfathers nodding happily. Harry sank down to sit on the floor in front of the mirror. There was nothing to stop him from staying here all night with his family. Nothing at all. \n\nExcept -- \"So -- back again, Harry?\" \n\nHarry felt as though his insides had turned to ice. He looked behind him. Sitting on one of the desks by the wall was none other than Albus Dumbledore.",
+      "approxWordCount": 247,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 4833,
+        "sourceWordEnd": 5079,
+        "sourceCharStart": 303231,
+        "sourceCharEnd": 304575
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch12_p021_q01",
+          "type": "multiple_choice",
+          "prompt": "Where did Ron pull Harry at the beginning of the page?",
+          "explanation": "The story says, 'And Ron pulled Harry out of the room.'",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "Into the room",
+            "Out of the room",
+            "Towards the room"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch12_p021_q02",
+          "type": "true_false",
+          "prompt": "Harry tells Ron, 'You sound like Hermione.'",
+          "explanation": "Harry says this because Ron is worrying about getting caught, just like Hermione usually does!",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Like & About",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch12_p021_q03",
+          "type": "multiple_choice",
+          "prompt": "What was Harry doing on the third night?",
+          "explanation": "The text says, 'He was walking so fast he knew he was making more noise...'",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "options": [
+            "He was walking very fast.",
+            "He was playing chess with Ron.",
+            "He was visiting Hagrid."
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch12_p021_q04",
+          "type": "true_false",
+          "prompt": "Ron was going to stop Harry from going back to the mirror.",
+          "explanation": "The story says that Ron wasn't going to stop him.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Future Forms",
+          "answer": false
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch12_p022",
+      "pageNumber": 22,
+      "sourceText": "Harry must have walked straight past him, so desperate to get to the mirror he hadn't noticed him. \n\n\" -- I didn't see you, sir.\" \n\n\"Strange how nearsighted being invisible can make you,\" said Dumbledore, and Harry was relieved to see that he was smiling. \n\n\"So,\" said Dumbledore, slipping off the desk to sit on the floor with Harry, \"you, like hundreds before you, have discovered the delights of the Mirror of Erised.\" \n\n\"I didn't know it was called that, Sir.\" \n\n\"But I expect you've realized by now what it does?\" \n\n\"It -- well -- it shows me my family --\" \n\n\"And it showed your friend Ron himself as head boy.\" \n\n\"How did you know --?\" \n\n\"I don't need a cloak to become invisible,\" said Dumbledore gently. \n\n\"Now, can you think what the Mirror of Erised shows us all?\" \n\nHarry shook his head. \n\n\"Let me explain. The happiest man on earth would be able to use the Mirror of Erised like a normal mirror, that is, he would look into it and see himself exactly as he is. Does that help?\" \n\nHarry thought. Then he said slowly, \"It shows us what we want... \n\nwhatever we want...\" \n\n\"Yes and no,\" said Dumbledore quietly. \"It shows us nothing more or less than the deepest, most desperate desire of our hearts. You, who have never known your family, see them standing around you. Ronald Weasley, who has always been overshadowed by his brothers, sees himself standing alone, the best of all of them.",
+      "approxWordCount": 250,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 5080,
+        "sourceWordEnd": 5329,
+        "sourceCharStart": 304576,
+        "sourceCharEnd": 305974
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch12_p022_q01",
+          "type": "multiple_choice",
+          "prompt": "\"Ronald Weasley, _____ has always been overshadowed by his brothers...\" Which word completes the sentence?",
+          "explanation": "We use 'who' to give extra information about a person, like Ronald Weasley!",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Defining Relative Clauses",
+          "options": [
+            "who",
+            "which",
+            "where"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch12_p022_q02",
+          "type": "true_false",
+          "prompt": "Dumbledore says that hundreds of people have discovered the mirror before Harry.",
+          "explanation": "Dumbledore tells Harry that hundreds of people have found the mirror before him.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Perfect",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch12_p022_q03",
+          "type": "multiple_choice",
+          "prompt": "What does the Mirror of Erised show?",
+          "explanation": "Dumbledore explains that the mirror shows the deepest desire of our hearts, which means what we want the most.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "options": [
+            "It shows us exactly how we look.",
+            "It shows us what we want the most.",
+            "It shows us the future."
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch12_p022_q04",
+          "type": "multiple_choice",
+          "prompt": "The happiest man on earth would look _____ the mirror and see himself exactly as he is.",
+          "explanation": "We use 'into' to show looking inside something, like a mirror!",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "into",
+            "out of",
+            "from"
+          ],
+          "answerIndex": 0
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch12_p023",
+      "pageNumber": 23,
+      "sourceText": "However, this mirror will give us neither knowledge or truth. Men have wasted away before it, entranced by what they have seen, or been driven mad, not knowing if what it shows is real or even possible. \n\n\"The Mirror will be moved to a new home tomorrow, Harry, and I ask you not to go looking for it again. If you ever do run across it, you will now be prepared. It does not do to dwell on dreams and forget to live, remember that. Now, why don't you put that admirable cloak back on and get off to bed?\" \n\nHarry stood up. \n\n\"Sir -- Professor Dumbledore? Can I ask you something?\" \n\n\"Obviously, you've just done so,\" Dumbledore smiled. \"You may ask me one more thing, however.\" \n\n\"What do you see when you look in the mirror?\" \n\n\"I? I see myself holding a pair of thick, woolen socks.\" \n\nHarry stared. \n\n\"One can never have enough socks,\" said Dumbledore. \"Another Christmas has come and gone and I didn't get a single pair. People will insist on giving me books.\" \n\nIt was only when he was back in bed that it struck Harry that Dumbledore might not have been quite truthful. But then, he thought, as he shoved Scabbers off his pillow, it had been quite a personal question.",
+      "approxWordCount": 217,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 5330,
+        "sourceWordEnd": 5546,
+        "sourceCharStart": 305975,
+        "sourceCharEnd": 307150
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch12_p023_q01",
+          "type": "multiple_choice",
+          "prompt": "What will happen to the mirror tomorrow?",
+          "explanation": "Dumbledore tells Harry that the mirror will be moved to a new home tomorrow.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Future Forms",
+          "options": [
+            "It will be broken.",
+            "It will be moved to a new home.",
+            "It will be given to Harry."
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch12_p023_q02",
+          "type": "true_false",
+          "prompt": "Dumbledore says he sees himself holding a pair of socks.",
+          "explanation": "When Harry asks what he sees, Dumbledore answers that he sees himself holding thick, woolen socks.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch12_p023_q03",
+          "type": "true_false",
+          "prompt": "Harry thinks Dumbledore might not be telling the truth.",
+          "explanation": "Harry thinks Dumbledore might not have been truthful because it was a very personal question.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Obligation & Possibility",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch12_p023_q04",
+          "type": "multiple_choice",
+          "prompt": "Where does Harry push Scabbers?",
+          "explanation": "The story says Harry shoved Scabbers off his pillow when he was back in bed.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "Into his pocket",
+            "Off his pillow",
+            "Towards the door"
+          ],
+          "answerIndex": 1
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    }
+  ]
+}

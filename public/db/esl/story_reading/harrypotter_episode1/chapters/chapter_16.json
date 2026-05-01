@@ -1,0 +1,1717 @@
+{
+  "storyId": "harrypotter_episode1",
+  "chapterId": "chapter_16",
+  "chapterNumber": 16,
+  "title": "Through the Trapdoor",
+  "dateLabel": "4 June 1992",
+  "sourceTextIncluded": true,
+  "pages": [
+    {
+      "pageId": "hp_ep1_ch16_p001",
+      "pageNumber": 1,
+      "sourceText": "CHAPTER SIXTEEN \n\nTHROUGH THE TRAPDOOR \n\nIn years to come, Harry would never quite remember how he had managed to get through his exams when he half expected Voldemort to come bursting through the door at any moment. Yet the days crept by, and there could be no doubt that Fluffy was still alive and well behind the locked door. \n\nIt was sweltering hot, especially in the large classroom where they did their written papers. They had been given special, new quills for the exams, which had been bewitched with an AntiCheating spell. \n\nThey had practical exams as well. Professor Flitwick called them one by one into his class to see if they could make a pineapple tapdance across a desk. Professor McGonagall watched them turn a mouse into a snuffbox -- points were given for how pretty the snuffbox was, but taken away if it had whiskers. Snape made them all nervous, breathing down their necks while they tried to remember how to make a Forgetfulness potion. \n\nHarry did the best he could, trying to ignore the stabbing pains in his forehead, which had been bothering him ever since his trip into the forest. Neville thought Harry had a bad case of exam nerves because Harry couldn't sleep, but the truth was that Harry kept being woken by his old nightmare, except that it was now worse than ever because there was a hooded figure dripping blood in it.",
+      "approxWordCount": 239,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 1,
+        "sourceWordEnd": 239,
+        "sourceCharStart": 374605,
+        "sourceCharEnd": 375960
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch16_p001_q01",
+          "type": "true_false",
+          "prompt": "Harry expected Voldemort to come through the door.",
+          "explanation": "Harry was worried Voldemort might appear at any moment.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Future Forms",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch16_p001_q02",
+          "type": "multiple_choice",
+          "prompt": "What does 'sweltering hot' mean?",
+          "explanation": "The classroom was very hot during the exams.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Present Simple",
+          "options": [
+            "A. very cold",
+            "B. very hot",
+            "C. very dark"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch16_p001_q03",
+          "type": "multiple_choice",
+          "prompt": "Which sentence shows an action happening in the past?",
+          "explanation": "'Was studying' is past continuous.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Past Continuous",
+          "options": [
+            "A. Harry was studying when she called.",
+            "B. Harry likes exams.",
+            "C. Harry will sleep."
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch16_p001_q04",
+          "type": "true_false",
+          "prompt": "Snape made the students feel nervous.",
+          "explanation": "Snape stood close while they tried to remember the potion.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch16_p002",
+      "pageNumber": 2,
+      "sourceText": "Maybe it was because they hadn't seen what Harry had seen in the forest, or because they didn't have scars burning on their foreheads, but Ron and Hermione didn't seem as worried about the Stone as Harry. The idea of Voldemort certainly scared them, but he didn't keep visiting them in dreams, and they were so busy with their studying they didn't have much time to fret about what Snape or anyone else might be up to. \n\nTheir very last exam was History of Magic. One hour of answering questions about batty old wizards who'd invented selfstirring cauldrons and they'd be free, free for a whole wonderful week until their exam results came out. When the ghost of Professor Binns told them to put down their quills and roll up their parchment, Harry couldn't help cheering with the rest. \n\n\"That was far easier than I thought it would be,\" said Hermione as they joined the crowds flocking out onto the sunny grounds. \"I needn't have learned about the 1637 Werewolf Code of Conduct or the uprising of Elfric the Eager.\" \n\nHermione always liked to go through their exam papers afterward, but Ron said this made him feel ill, so they wandered down to the lake and flopped under a tree. The Weasley twins and Lee Jordan were tickling the tentacles of a giant squid, which was basking in the warm shallows. \"No more studying,\" Ron sighed happily, stretching out on the grass.",
+      "approxWordCount": 242,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 240,
+        "sourceWordEnd": 481,
+        "sourceCharStart": 375963,
+        "sourceCharEnd": 377332
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch16_p002_q01",
+          "type": "true_false",
+          "prompt": "Ron and Hermione seemed less worried than Harry.",
+          "explanation": "They were busy studying and did not worry as much.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch16_p002_q02",
+          "type": "multiple_choice",
+          "prompt": "What was their last exam?",
+          "explanation": "The page says their very last exam was History of Magic.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "options": [
+            "A. Potions",
+            "B. History of Magic",
+            "C. Transfiguration"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch16_p002_q03",
+          "type": "multiple_choice",
+          "prompt": "What does 'flocked out' mean here?",
+          "explanation": "The students moved out onto the sunny grounds together.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. moved out together",
+            "B. slept outside",
+            "C. wrote quietly"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch16_p002_q04",
+          "type": "true_false",
+          "prompt": "The twins and Lee Jordan were playing near the lake.",
+          "explanation": "They were tickling the giant squid in the warm shallows.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch16_p003",
+      "pageNumber": 3,
+      "sourceText": "\"You could look more cheerful, Harry, we've got a week before we find out how badly we've done, there's no need to worry yet.\" \n\nHarry was rubbing his forehead. \n\n\"I wish I knew what this means!\" he burst out angrily. \"My scar keeps hurting -- it's happened before, but never as often as this.\" \n\n\"Go to Madam Pomfrey,\" Hermione suggested. \n\n\"I'm not ill,\" said Harry. \"I think it's a warning... it means danger's coming....\" \n\nRon couldn't get worked up, it was too hot. \n\n\"Harry, relax, Hermione's right, the Stone's safe as long as Dumbledore's around. Anyway, we've never had any proof Snape found out how to get past Fluffy. He nearly had his leg ripped off once, he's not going to try it again in a hurry. And Neville will play Quidditch for England before Hagrid lets Dumbledore down.\" \n\nHarry nodded, but he couldn't shake off a lurking feeling that there was something he'd forgotten to do, something important. When he tried to explain this, Hermione said, \"That's just the exams. I woke up last night and was halfway through my Transfiguration notes before I remembered we'd done that one.\" \n\nHarry was quite sure the unsettled feeling didn't have anything to do with work, though. He watched an owl flutter toward the school across the bright blue sky, a note clamped in its mouth. Hagrid was the only one who ever sent him letters. Hagrid would never betray Dumbledore. \n\nHagrid would never tell anyone how to get past Fluffy... never...",
+      "approxWordCount": 250,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 482,
+        "sourceWordEnd": 731,
+        "sourceCharStart": 377333,
+        "sourceCharEnd": 378783
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch16_p003_q01",
+          "type": "true_false",
+          "prompt": "Harry's scar keeps hurting.",
+          "explanation": "Harry says his scar keeps hurting often.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch16_p003_q02",
+          "type": "multiple_choice",
+          "prompt": "Who suggests Harry should go to Madam Pomfrey?",
+          "explanation": "Hermione tells Harry, 'Go to Madam Pomfrey.'",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Obligation & Possibility",
+          "options": [
+            "A. Ron",
+            "B. Hermione",
+            "C. Hagrid"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch16_p003_q03",
+          "type": "multiple_choice",
+          "prompt": "In 'an owl flutter toward the school,' what does 'toward' show?",
+          "explanation": "'Toward' means moving in the direction of something.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. movement away from the school",
+            "B. movement in the direction of the school",
+            "C. movement inside the school"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch16_p003_q04",
+          "type": "true_false",
+          "prompt": "Ron thinks the Stone is safe while Dumbledore is around.",
+          "explanation": "Ron says the Stone is safe as long as Dumbledore is around.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch16_p004",
+      "pageNumber": 4,
+      "sourceText": "but -- Harry suddenly jumped to his feet. \n\n\"Where're you going?\" said Ron sleepily. \n\n\"I've just thought of something,\" said Harry. He had turned white. \n\n\"We've got to go and see Hagrid, now.\" \n\n\"Why?\" panted Hermione, hurrying to keep up. \n\n\"Don't you think it's a bit odd,\" said Harry, scrambling up the grassy slope, \"that what Hagrid wants more than anything else is a dragon, and a stranger turns up who just happens to have an egg in his pocket? How many people wander around with dragon eggs if it's against wizard law? Lucky they found Hagrid, don't you think? Why didn't I see it before?\" \n\n\"What are you talking about?\" said Ron, but Harry, sprinting across the grounds toward the forest, didn't answer. \n\nHagrid was sitting in an armchair outside his house; his trousers and sleeves were rolled up, and he was shelling peas into a large bowl. \n\n\"Hullo,\" he said, smiling. \"Finished yer exams? Got time fer a drink?\" \n\n\"Yes, please,\" said Ron, but Harry cut him off. \n\n\"No, we're in a hurry. Hagrid, I've got to ask you something. You know that night you won Norbert? What did the stranger you were playing cards with look like?\" \n\n\"Dunno,\" said Hagrid casually, \"he wouldn' take his cloak off.\" \n\nHe saw the three of them look stunned and raised his eyebrows. \n\n\"It's not that unusual, yeh get a lot o' funny folk in the Hog's Head -- that's the pub down in the village.",
+      "approxWordCount": 245,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 732,
+        "sourceWordEnd": 976,
+        "sourceCharStart": 378784,
+        "sourceCharEnd": 380167
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch16_p004_q01",
+          "type": "true_false",
+          "prompt": "Harry wants to go and see Hagrid right away.",
+          "explanation": "Harry says they have got to see Hagrid now.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Obligation & Possibility",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch16_p004_q02",
+          "type": "multiple_choice",
+          "prompt": "Where is Harry running?",
+          "explanation": "Harry sprints across the grounds toward the forest.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. toward the forest",
+            "B. into the lake",
+            "C. out of the classroom"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch16_p004_q03",
+          "type": "multiple_choice",
+          "prompt": "What was Hagrid doing outside his house?",
+          "explanation": "Hagrid was sitting outside and shelling peas into a bowl.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "options": [
+            "A. shelling peas",
+            "B. writing a letter",
+            "C. playing cards"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch16_p004_q04",
+          "type": "true_false",
+          "prompt": "Ron accepts Hagrid's offer of a drink.",
+          "explanation": "Ron says, 'Yes, please,' when Hagrid offers a drink.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Would You Like",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch16_p005",
+      "pageNumber": 5,
+      "sourceText": "Mighta bin a dragon dealer, mightn' he? I never saw his face, he kept his hood up.\" \n\nHarry sank down next to the bowl of peas. \"What did you talk to him about, Hagrid? Did you mention Hogwarts at all?\" \n\n\"Mighta come up,\" said Hagrid, frowning as he tried to remember. \n\n\"Yeah... he asked what I did, an' I told him I was gamekeeper here.... \n\nHe asked a bit about the sorta creatures I took after... so I told him... an' I said what I'd always really wanted was a dragon... an' then... I can' remember too well, 'cause he kept buyin' me drinks.... \n\nLet's see... yeah, then he said he had the dragon egg an' we could play cards fer it if I wanted... but he had ter be sure I could handle it, he didn' want it ter go ter any old home.... So I told him, after Fluffy, a dragon would be easy...\" \n\n\"And did he -- did he seem interested in Fluffy?\" Harry asked, try ing to keep his voice calm. \n\n\"Well -- yeah -- how many three-headed dogs d'yeh meet, even around Hogwarts? So I told him, Fluffy's a piece o' cake if yeh know how to calm him down, jus' play him a bit o' music an' he'll go straight off ter sleep --\" \n\nHagrid suddenly looked horrified. \n\n\"I shouldn'ta told yeh that!\" he blurted out. \"Forget I said it! Hey -- where're yeh goin'?\"",
+      "approxWordCount": 241,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 977,
+        "sourceWordEnd": 1217,
+        "sourceCharStart": 380168,
+        "sourceCharEnd": 381413
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch16_p005_q01",
+          "type": "true_false",
+          "prompt": "Hagrid saw the stranger's face clearly.",
+          "explanation": "Hagrid says he never saw the stranger's face.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "answer": false
+        },
+        {
+          "id": "hp_ep1_ch16_p005_q02",
+          "type": "multiple_choice",
+          "prompt": "What did Hagrid tell the stranger about Fluffy?",
+          "explanation": "Hagrid says playing music makes Fluffy go to sleep.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "options": [
+            "A. Fluffy likes peas.",
+            "B. Music can make Fluffy sleep.",
+            "C. Fluffy lives in the lake."
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch16_p005_q03",
+          "type": "multiple_choice",
+          "prompt": "What does 'a piece o' cake' mean here?",
+          "explanation": "Hagrid means Fluffy is easy to calm if you know how.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Like & About",
+          "options": [
+            "A. very easy",
+            "B. very hungry",
+            "C. very loud"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch16_p005_q04",
+          "type": "true_false",
+          "prompt": "The stranger asked Hagrid about the creatures he looked after.",
+          "explanation": "Hagrid says the stranger asked about the creatures he took care of.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Defining Relative Clauses",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch16_p006",
+      "pageNumber": 6,
+      "sourceText": "Harry, Ron, and Hermione didn't speak to each other at all until they came to a halt in the entrance hall, which seemed very cold and gloomy after the grounds. \n\n\"We've got to go to Dumbledore,\" said Harry. \"Hagrid told that stranger how to get past Fluffy, and it was either Snape or Voldemort under that cloak -- it must've been easy, once he'd got Hagrid drunk. I just hope Dumbledore believes us. Firenze might back us up if Bane doesn't stop him. Where's Dumbledore's office?\" \n\nThey looked around, as if hoping to see a sign pointing them in the right direction. They had never been told where Dumbledore lived, nor did they know anyone who had been sent to see him. \n\n\"We'll just have to --\" Harry began, but a voice suddenly rang across the hall. \n\n\"What are you three doing inside?\" \n\nIt was Professor McGonagall, carrying a large pile of books. \n\n\"We want to see Professor Dumbledore,\" said Hermione, rather bravely, Harry and Ron thought. \n\n\"See Professor Dumbledore?\" Professor McGonagall repeated, as though this was a very fishy thing to want to do. \"Why?\" \n\nHarry swallowed -- now what? \"It's sort of secret,\" he said, but he wished at once he hadn't, because Professor McGonagall's nostrils flared. \n\n\"Professor Dumbledore left ten minutes ago,\" she said coldly. \"He received an urgent owl from the Ministry of Magic and flew off for London at once.\" \n\n\"He's gone?\" said Harry frantically. \"Now?\"",
+      "approxWordCount": 241,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 1218,
+        "sourceWordEnd": 1458,
+        "sourceCharStart": 381416,
+        "sourceCharEnd": 382828
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch16_p006_q01",
+          "type": "true_false",
+          "prompt": "Harry, Ron, and Hermione want to see Dumbledore.",
+          "explanation": "Hermione says they want to see Professor Dumbledore.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch16_p006_q02",
+          "type": "multiple_choice",
+          "prompt": "Where does the group stop?",
+          "explanation": "They come to a halt in the entrance hall.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. In the entrance hall",
+            "B. In Dumbledore's office",
+            "C. In the library"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch16_p006_q03",
+          "type": "multiple_choice",
+          "prompt": "What does Harry hope Dumbledore will do?",
+          "explanation": "Harry says, 'I just hope Dumbledore believes us.'",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Future Forms",
+          "options": [
+            "A. Leave school",
+            "B. Believe them",
+            "C. Carry books"
+          ],
+          "answerIndex": 1
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch16_p007",
+      "pageNumber": 7,
+      "sourceText": "\"Professor Dumbledore is a very great wizard, Potter, he has many demands on his time -- \"But this is important.\" \n\n\"Something you have to say is more important than the Ministry of Magic, Potter. \n\n\"Look,\" said Harry, throwing caution to the winds, \"Professor -- it's about the Sorcerer's tone --\" \n\nWhatever Professor McGonagall had expected, it wasn't that. The books she was carrying tumbled out of her arms, but she didn't pick them up. \n\n\"How do you know --?\" she spluttered. \n\n\"Professor, I think -- I know -- that Sn- that someone's going to try and steal the Stone. I've got to talk to Professor Dumbledore.\" \n\nShe eyed him with a mixture of shock and suspicion. \n\n\"Professor Dumbledore will be back tomorrow,\" she said finally. I don't know how you found out about the Stone, but rest assured, no one can possibly steal it, it's too well protected.\" \n\n\"But Professor --\" \n\n\"Potter, I know what I'm talking about,\" she said shortly. She bent down and gathered up the fallen books. I suggest you all go back outside and enjoy the sunshine.\" \n\nBut they didn't. \n\n\"It's tonight,\" said Harry, once he was sure Professor McGonagall was out of earshot. \"Snape's going through the trapdoor tonight. He's found out everything he needs, and now he's got Dumbledore out of the way. He sent that note, I bet the Ministry of Magic will get a real shock when Dumbledore turns up.\" \n\n\"But what can we --\" \n\nHermione gasped. Harry and Ron wheeled round.",
+      "approxWordCount": 250,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 1459,
+        "sourceWordEnd": 1708,
+        "sourceCharStart": 382831,
+        "sourceCharEnd": 384278
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch16_p007_q01",
+          "type": "true_false",
+          "prompt": "Professor Dumbledore will be back tomorrow.",
+          "explanation": "Professor McGonagall says Dumbledore will be back tomorrow.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Future Forms",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch16_p007_q02",
+          "type": "multiple_choice",
+          "prompt": "What falls from Professor McGonagall's arms?",
+          "explanation": "The books she was carrying tumbled out of her arms.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "options": [
+            "A. Books",
+            "B. Stones",
+            "C. Owls"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch16_p007_q03",
+          "type": "multiple_choice",
+          "prompt": "What is Harry worried someone will steal?",
+          "explanation": "Harry says someone is going to try and steal the Stone.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Future Forms",
+          "options": [
+            "A. A cloak",
+            "B. The Stone",
+            "C. A book"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch16_p007_q04",
+          "type": "true_false",
+          "prompt": "Harry thinks Snape is going through the trapdoor tonight.",
+          "explanation": "Harry says Snape is going through the trapdoor tonight.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Continuous (Future Meaning)",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch16_p008",
+      "pageNumber": 8,
+      "sourceText": "Snape was standing there. \n\n\"Good afternoon,\" he said smoothly. \n\nThey stared at him. \n\n\"You shouldn't be inside on a day like this,\" he said, with an odd, twisted smile. \n\n\"We were --\" Harry began, without any idea what he was going to say. \n\n\"You want to be more careful,\" said Snape. \"Hanging around like this, people will think you're up to something. And Gryffindor really can't afford to lose any more points, can it?\" \n\nHarry flushed. They turned to go outside, but Snape called them back. \n\n\"Be warned, Potter -- any more nighttime wanderings and I will personally make sure you are expelled. Good day to you.\" \n\nHe strode off in the direction of the staffroom. \n\nOut on the stone steps, Harry turned to the others. \n\n\"Right, here's what we've got to do,\" he whispered urgently. \"One of us has got to keep an eye on Snape -- wait outside the staff room and follow him if he leaves it. Hermione, you'd better do that.\" \n\n\"Why me?\" \n\n\"It's obvious,\" said Ron. \"You can pretend to be waiting for Professor Flitwick, you know.\" He put on a high voice, \"'Oh Professor Flitwick, I'm so worried, I think I got question fourteen b wrong....'� \n\n\"Oh, shut up,\" said Hermione, but she agreed to go and watch out for Snape. \n\n\"And we'd better stay outside the third-floor corridor,\" Harry told Ron. \n\n\"Come on.\" \n\nBut that part of the plan didn't work.",
+      "approxWordCount": 238,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 1709,
+        "sourceWordEnd": 1946,
+        "sourceCharStart": 384281,
+        "sourceCharEnd": 385630
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch16_p008_q01",
+          "type": "true_false",
+          "prompt": "Snape tells them they should be inside.",
+          "explanation": "Snape says they shouldn't be inside on a day like this.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Obligation & Possibility",
+          "answer": false
+        },
+        {
+          "id": "hp_ep1_ch16_p008_q02",
+          "type": "multiple_choice",
+          "prompt": "Where does Snape go?",
+          "explanation": "Snape strode off in the direction of the staffroom.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. Towards the staffroom",
+            "B. Into the forest",
+            "C. Out of the school"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch16_p008_q03",
+          "type": "multiple_choice",
+          "prompt": "What does Harry say one of them has got to do?",
+          "explanation": "Harry says one of them has got to keep an eye on Snape.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Obligation & Possibility",
+          "options": [
+            "A. Keep an eye on Snape",
+            "B. Find Dumbledore's office",
+            "C. Read a book outside"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch16_p008_q04",
+          "type": "true_false",
+          "prompt": "Hermione agrees to watch out for Snape.",
+          "explanation": "The page says Hermione agreed to go and watch out for Snape.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch16_p009",
+      "pageNumber": 9,
+      "sourceText": "No sooner had they reached the door separating Fluffy from the rest of the school than Professor McGonagall turned up again and this time, she lost her temper. \n\n\"I suppose you think you're harder to get past than a pack of enchantments!\" she stormed. \"Enough of this nonsense! If I hear you 've come anywhere near here again, I'll take another fifty points from Gryffindor! Yes, Weasley, from my own house!\" Harry and Ron went back to the common room, Harry had just said, \"At least Hermione's on Snape's tail,\" when the portrait of the Fat Lady swung open and Hermione came in. \n\n\"I'm sorry, Harry!\" she wailed. \"Snape came out and asked me what I was doing, so I said I was waiting for Flitwick, and Snape went to get him, and I've only just got away, I don't know where Snape went.\" \n\n\"Well, that's it then, isn't it?\" Harry said. \n\nThe other two stared at him. He was pale and his eyes were glittering. \n\n\"I'm going out of here tonight and I'm going to try and get to the Stone first.\" \n\n\"You're mad!\" said Ron. \n\n\"You can't!\" said Hermione. \"After what McGonagall and Snape have said? You'll be expelled!\" \n\n\"SO WHAP\" Harry shouted. \"Don't you understand? If Snape gets hold of the Stone, Voldemort's coming back! Haven't you heard what it was like when he was trying to take over? There won't be any Hogwarts to get expelled from!",
+      "approxWordCount": 241,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 1947,
+        "sourceWordEnd": 2187,
+        "sourceCharStart": 385631,
+        "sourceCharEnd": 386968
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch16_p009_q01",
+          "type": "multiple_choice",
+          "prompt": "Who stops Harry and Ron near the door?",
+          "explanation": "Professor McGonagall turns up again near the door.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "options": [
+            "A. Professor McGonagall",
+            "B. Professor Flitwick",
+            "C. The Fat Lady"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch16_p009_q02",
+          "type": "true_false",
+          "prompt": "Hermione knows where Snape went.",
+          "explanation": "Hermione says she doesn't know where Snape went.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "answer": false
+        },
+        {
+          "id": "hp_ep1_ch16_p009_q03",
+          "type": "multiple_choice",
+          "prompt": "What is Harry going to try to get first?",
+          "explanation": "Harry says he is going to try and get to the Stone first.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Be Going To",
+          "options": [
+            "A. The house cup",
+            "B. The Stone",
+            "C. Flitwick's exam"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch16_p009_q04",
+          "type": "true_false",
+          "prompt": "Ron thinks Harry is mad.",
+          "explanation": "Ron says, 'You're mad!'",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch16_p010",
+      "pageNumber": 10,
+      "sourceText": "He'll flatten it, or turn it into a school for the Dark Arts! Losing points doesn't matter anymore, can't you see? D'you think he'll leave you and your families alone if Gryffindor wins the house cup? If I get caught before I can get to the Stone, well, I'll have to go back to the Dursleys and wait for Voldemort to find me there, it's only dying a bit later than I would have, because I'm never going over to the Dark Side! I'm going through that trapdoor tonight and nothing you two say is going to stop me! Voldemort killed my parents, remember?\" \n\nHe glared at them. \n\n\"You're right Harry,\" said Hermione in a small voice. \n\n\"I'll use the invisibility cloak,\" said Harry. \"It's just lucky I got it back.\" \n\n\"But will it cover all three of us?\" said Ron. \n\n\"All -- all three of us?\" \n\n\"Oh, come off it, you don't think we'd let you go alone?\" \n\n\"Of course not,\" said Hermione briskly. \"How do you think you'd get to the Stone without us? I'd better go and took through my books, there might be something useful...\" \n\n\"But if we get caught, you two will be expelled, too.\" \n\n\"Not if I can help it,\" said Hermione grimly. \"Flitwick told me in secret that I got a hundred and twelve percent on his exam. They're not throwing me out after that.\" \n\nAfter dinner the three of them sat nervously apart in the common room.",
+      "approxWordCount": 245,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 2188,
+        "sourceWordEnd": 2432,
+        "sourceCharStart": 386969,
+        "sourceCharEnd": 388287
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch16_p010_q01",
+          "type": "true_false",
+          "prompt": "Harry says he is never going over to the Dark Side.",
+          "explanation": "Harry says, 'I'm never going over to the Dark Side!'",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Continuous (Future Meaning)",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch16_p010_q02",
+          "type": "multiple_choice",
+          "prompt": "What will Harry use?",
+          "explanation": "Harry says he will use the invisibility cloak.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Future Forms",
+          "options": [
+            "A. A magic book",
+            "B. The invisibility cloak",
+            "C. A school cup"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch16_p010_q03",
+          "type": "multiple_choice",
+          "prompt": "Who wants to go with Harry?",
+          "explanation": "Ron and Hermione do not want Harry to go alone.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "options": [
+            "A. Ron and Hermione",
+            "B. Snape and Flitwick",
+            "C. McGonagall and Hagrid"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch16_p010_q04",
+          "type": "true_false",
+          "prompt": "Hermione might find something useful in her books.",
+          "explanation": "Hermione says there might be something useful in her books.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Obligation & Possibility",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch16_p011",
+      "pageNumber": 11,
+      "sourceText": "Nobody bothered them; none of the Gryffindors had anything to say to Harry any more, after all. This was the first night he hadn't been upset by it. Hermione was skimming through all her notes, hoping to come across one of the enchantments they were about to try to break. Harry and Ron didn't talk much. Both of them were thinking about what they were about to do. \n\nSlowly, the room emptied as people drifted off to bed. \n\n\"Better get the cloak,\" Ron muttered, as Lee Jordan finally left, stretching and yawning. Harry ran upstairs to their dark dormitory. He putted out the cloak and then his eyes fell on the flute Hagrid had given him for Christmas. He pocketed it to use on Fluffy -- he didn't feel much like singing. \n\nHe ran back down to the common room. \n\n\"We'd better put the cloak on here, and make sure it covers all three of us -- if Filch spots one of our feet wandering along on its own --\" \n\n\"What are you doing?\" said a voice from the corner of the room. Neville appeared from behind an armchair, clutching Trevor the toad, who looked as though he'd been making another bid for freedom. \n\n\"Nothing, Neville, nothing,\" said Harry, hurriedly putting the cloak behind his back. \n\nNeville stared at their guilty faces. \n\n\"You're going out again,\" he said. \n\n\"No, no, no,\" said Hermione. \"No, we're not. Why don't you go to bed, Neville?\"",
+      "approxWordCount": 243,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 2433,
+        "sourceWordEnd": 2675,
+        "sourceCharStart": 388290,
+        "sourceCharEnd": 389640
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch16_p011_q01",
+          "type": "true_false",
+          "prompt": "Hermione was looking through her notes.",
+          "explanation": "The page says Hermione was skimming through all her notes.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch16_p011_q02",
+          "type": "multiple_choice",
+          "prompt": "What did Harry take from the dormitory?",
+          "explanation": "Harry pocketed the flute Hagrid had given him.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Perfect",
+          "options": [
+            "A. A flute",
+            "B. A book",
+            "C. A broom"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch16_p011_q03",
+          "type": "multiple_choice",
+          "prompt": "In “Harry ran upstairs,” which word shows direction?",
+          "explanation": "“Upstairs” tells where Harry moved.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. ran",
+            "B. upstairs",
+            "C. Harry"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch16_p011_q04",
+          "type": "true_false",
+          "prompt": "Neville was holding Trevor the toad.",
+          "explanation": "Neville appeared clutching Trevor the toad.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch16_p012",
+      "pageNumber": 12,
+      "sourceText": "Harry looked at the grandfather clock by the door. They couldn't afford to waste any more time, Snape might even now be playing Fluffy to sleep. \n\n\"You can't go out,\" said Neville, \"you'll be caught again. Gryffindor will be in even more trouble.\" \n\n\"You don't understand,\" said Harry, \"this is important.\" \n\nBut Neville was clearly steeling himself to do something desperate. \n\nI won't let you do it,\" he said, hurrying to stand in front of the portrait hole. \"I'll -- I'll fight you!\" \n\n\"Neville, \"Ron exploded, \"get away from that hole and don't be an idiot --\" \n\n\"Don't you call me an idiot!\" said Neville. I don't think you should be breaking any more rules! And you were the one who told me to stand up to people!\" \n\n\"Yes, but not to us,\" said Ron in exasperation. \"Neville, you don't know what you're doing.\" \n\nHe took a step forward and Neville dropped Trevor the toad, who leapt out of sight. \n\n\"Go on then, try and hit me!\" said Neville, raising his fists. \"I'm ready!\" \n\nHarry turned to Hermione. \n\n\"Do something,\" he said desperately. \n\nHermione stepped forward. \n\n\"Neville,\" she said, \"I'm really, really sorry about this.\" \n\nShe raised her wand. \n\n\"Petrificus Totalus!\" she cried, pointing it at Neville. \n\nNeville's arms snapped to his sides. His legs sprang together. His whole body rigid, he swayed where he stood and then fell flat on his face, stiff as a board. \n\nHermione ran to turn him over.",
+      "approxWordCount": 243,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 2676,
+        "sourceWordEnd": 2918,
+        "sourceCharStart": 389643,
+        "sourceCharEnd": 391056
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch16_p012_q01",
+          "type": "true_false",
+          "prompt": "Neville wanted to stop them from going out.",
+          "explanation": "Neville stood in front of the portrait hole to stop them.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch16_p012_q02",
+          "type": "multiple_choice",
+          "prompt": "What did Neville say he would do?",
+          "explanation": "Neville said, “I’ll fight you!”",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Future Forms",
+          "options": [
+            "A. Fight them",
+            "B. Help them",
+            "C. Go to bed"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch16_p012_q03",
+          "type": "multiple_choice",
+          "prompt": "What does “hurrying to stand in front of the portrait hole” show?",
+          "explanation": "Neville moved to the portrait hole.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. Moving to a place",
+            "B. Sleeping quietly",
+            "C. Reading a note"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch16_p012_q04",
+          "type": "true_false",
+          "prompt": "Hermione used her wand on Neville.",
+          "explanation": "Hermione raised her wand and cried a spell.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch16_p013",
+      "pageNumber": 13,
+      "sourceText": "Neville's jaws were jammed together so he couldn't speak. Only his eyes were moving, looking at them in horror. \n\n\"What've you done to him?\" Harry whispered. \n\n\"It's the full Body-Bind,\" said Hermione miserably. \"Oh, Neville, I'm so sorry.\" \n\n\"We had to, Neville, no time to explain,\" said Harry. \n\n\"You'll understand later, Neville,\" said Ron as they stepped over him and pulled on the invisibility cloak. \n\nBut leaving Neville lying motionless on the floor didn't feel like a very good omen. In their nervous state, every statue's shadow looked like Filch, every distant breath of wind sounded like Peeves swooping down on them. At the foot of the first set of stairs, they spotted Mrs. Norris skulking near the top. \n\n\"Oh, let's kick her, just this once,\" Ron whispered in Harry's ear, but Harry shook his head. As they climbed carefully around her, Mrs. Norris turned her lamplike eyes on them, but didn't do anything. \n\nThey didn't meet anyone else until they reached the staircase up to the third floor. Peeves was bobbing halfway up, loosening the carpet so that people would trip. \n\n\"Who's there?\" he said suddenly as they climbed toward him. He narrowed his wicked black eyes. \"Know you're there, even if I can't see you. Are you ghoulie or ghostie or wee student beastie?\" \n\nHe rose up in the air and floated there, squinting at them. \n\n\"Should call Filch, I should, if something's a-creeping around unseen.\" \n\nHarry had a sudden idea.",
+      "approxWordCount": 243,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 2919,
+        "sourceWordEnd": 3161,
+        "sourceCharStart": 391057,
+        "sourceCharEnd": 392502
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch16_p013_q01",
+          "type": "multiple_choice",
+          "prompt": "Why couldn’t Neville speak?",
+          "explanation": "The page says Neville’s jaws were jammed together.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "options": [
+            "A. His jaws were jammed together",
+            "B. He was asleep",
+            "C. He was singing"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch16_p013_q02",
+          "type": "true_false",
+          "prompt": "Harry, Ron, and Hermione pulled on the invisibility cloak.",
+          "explanation": "They stepped over Neville and pulled on the cloak.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Prepositions of Direction",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch16_p013_q03",
+          "type": "multiple_choice",
+          "prompt": "Who was near the top of the stairs?",
+          "explanation": "They spotted Mrs. Norris near the top.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Defining Relative Clauses",
+          "options": [
+            "A. Mrs. Norris",
+            "B. Hagrid",
+            "C. Lee Jordan"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch16_p013_q04",
+          "type": "multiple_choice",
+          "prompt": "In “Peeves was bobbing halfway up,” what tense is used?",
+          "explanation": "“Was bobbing” is past continuous.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Past Continuous",
+          "options": [
+            "A. Present simple",
+            "B. Past continuous",
+            "C. Present perfect"
+          ],
+          "answerIndex": 1
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch16_p014",
+      "pageNumber": 14,
+      "sourceText": "\"Peeves,\" he said, in a hoarse whisper, \"the Bloody Baron has his own reasons for being invisible.\" \n\nPeeves almost fell out of the air in shock. He caught himself in time and hovered about a foot off the stairs. \n\n\"So sorry, your bloodiness, Mr. Baron, Sir,\" he said greasily. \"My mistake, my mistake -- I didn't see you -- of course I didn't, you're invisible -- forgive old Peevsie his little joke, sir.\" \n\n\"I have business here, Peeves,\" croaked Harry. \"Stay away from this place tonight.\" \n\n\"I will, sir, I most certainly will,\" said Peeves, rising up in the air again. \"Hope your business goes well, Baron, I'll not bother you.\" \n\nAnd he scooted off \"Brilliant, Harry!\" whispered Ron. \n\nA few seconds later, they were there, outside the third-floor corridor -- and the door was already ajar. \n\n\"Well, there you are,\" Harry said quietly, \"Snape's already got past Fluffy.\" \n\nSeeing the open door somehow seemed to impress upon all three of them what was facing them. Underneath the cloak, Harry turned to the other two. \n\n\"If you want to go back, I won't blame you,\" he said. \"You can take the cloak, I won't need it now.\" \n\n\"Don't be stupid,\" said Ron. \n\n\"We're coming,\" said Hermione. \n\nHarry pushed the door open. \n\nAs the door creaked, low, rumbling growls met their ears. All three of the dog's noses sniffed madly in their direction, even though it couldn't see them. \n\n\"What's that at its feet?\" Hermione whispered.",
+      "approxWordCount": 245,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 3162,
+        "sourceWordEnd": 3406,
+        "sourceCharStart": 392505,
+        "sourceCharEnd": 393932
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch16_p014_q01",
+          "type": "true_false",
+          "prompt": "Harry pretended to be the Bloody Baron.",
+          "explanation": "Harry spoke like the Bloody Baron to scare Peeves.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Like & About",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch16_p014_q02",
+          "type": "multiple_choice",
+          "prompt": "What did Peeves promise to do?",
+          "explanation": "Peeves said he would not bother Harry.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Future Forms",
+          "options": [
+            "A. Stay away",
+            "B. Call Filch",
+            "C. Open the door"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch16_p014_q03",
+          "type": "multiple_choice",
+          "prompt": "What was already ajar?",
+          "explanation": "The page says the door was already ajar.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Present Simple",
+          "options": [
+            "A. The door",
+            "B. The cloak",
+            "C. The flute"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch16_p014_q04",
+          "type": "true_false",
+          "prompt": "Hermione said she was coming with Harry.",
+          "explanation": "Hermione said, “We’re coming.”",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Continuous",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch16_p015",
+      "pageNumber": 15,
+      "sourceText": "\"Looks like a harp,\" said Ron. \"Snape must have left it there.\" \n\n\"It must wake up the moment you stop playing,\" said Harry. \"Well, here goes...\" \n\nHe put Hagrid's flute to his lips and blew. It wasn't really a tune, but from the first note the beast's eyes began to droop. Harry hardly drew breath. Slowly, the dog's growls ceased -- it tottered on its paws and fell to its knees, then it slumped to the ground, fast asleep. \n\n\"Keep playing,\" Ron warned Harry as they slipped out of the cloak and crept toward the trapdoor. They could feel the dog's hot, smelly breath as they approached the giant heads. \"I think we'll be able to pull the door open,\" said Ron, peering over the dog's back. \"Want to go first, Hermione?\" \n\n\"No, I don't!\" \n\n\"All right.\" Ron gritted his teeth and stepped carefully over the dog's legs. He bent and pulled the ring of the trapdoor, which swung up and open. \n\n\"What can you see?\" Hermione said anxiously. \n\n\"Nothing -- just black -- there's no way of climbing down, we'll just have to drop.\" \n\nHarry, who was still playing the flute, waved at Ron to get his attention and pointed at himself. \n\n\"You want to go first? Are you sure?\" said Ron. \"I don't know how deep this thing goes. Give the flute to Hermione so she can keep him asleep.\" \n\nHarry handed the flute over.",
+      "approxWordCount": 237,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 3407,
+        "sourceWordEnd": 3643,
+        "sourceCharStart": 393935,
+        "sourceCharEnd": 395234
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch16_p015_q01",
+          "type": "multiple_choice",
+          "prompt": "What was at the dog’s feet?",
+          "explanation": "Ron said it looked like a harp.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Like & About",
+          "options": [
+            "A. A harp",
+            "B. A hat",
+            "C. A key"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch16_p015_q02",
+          "type": "true_false",
+          "prompt": "Harry played the flute to make the dog sleep.",
+          "explanation": "When Harry played, the beast’s eyes began to droop.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch16_p015_q03",
+          "type": "multiple_choice",
+          "prompt": "What did Ron have to do at the trapdoor?",
+          "explanation": "Ron pulled the ring of the trapdoor.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Obligation & Possibility",
+          "options": [
+            "A. Pull the ring",
+            "B. Read a book",
+            "C. Call Filch"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch16_p015_q04",
+          "type": "multiple_choice",
+          "prompt": "In “they slipped out of the cloak,” what does “out of” show?",
+          "explanation": "“Out of” shows moving from inside to outside.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. Movement outside",
+            "B. Movement inside",
+            "C. A topic"
+          ],
+          "answerIndex": 0
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch16_p016",
+      "pageNumber": 16,
+      "sourceText": "In the few seconds' silence, the dog growled and twitched, but the moment Hermione began to play, it fell back into its deep sleep. \n\nHarry climbed over it and looked down through the trapdoor. There was no sign of the bottom. \n\nHe lowered himself through the hole until he was hanging on by his fingertips. Then he looked up at Ron and said, \"If anything happens to me, don't follow. Go straight to the owlery and send Hedwig to Dumbledore, right?\" \n\n\"Right,\" said Ron. \n\n\"See you in a minute, I hope... \n\nAnd Harry let go. Cold, damp air rushed past him as he fell down, down, down and -- FLUMP. With a funny, muffled sort of thump he landed on something soft. He sat up and felt around, his eyes not used to the gloom. It felt as though he was sitting on some sort of plant. \n\n\"It's okay!\" he called up to the light the size of a postage stamp, which was the open trapdoor, \"it's a soft landing, you can jump!\" \n\nRon followed right away. He landed, sprawled next to Harry. \n\n\"What's this stuff?\" were his first words. \n\n\"Dunno, some sort of plant thing. I suppose it's here to break the fall. \n\nCome on, Hermione!\" \n\nThe distant music stopped. There was a loud bark from the dog, but Hermione had already jumped. She landed on Harry's other side. \n\n\"We must be miles under the school , she said. \n\n\"Lucky this plant thing's here, really,\" said Ron. \n\n\"Lucky!\"",
+      "approxWordCount": 249,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 3644,
+        "sourceWordEnd": 3892,
+        "sourceCharStart": 395235,
+        "sourceCharEnd": 396597
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch16_p016_q01",
+          "type": "true_false",
+          "prompt": "Hermione plays music, and the dog falls asleep.",
+          "explanation": "The dog sleeps when Hermione begins to play.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch16_p016_q02",
+          "type": "multiple_choice",
+          "prompt": "Where does Harry go?",
+          "explanation": "Harry lowers himself through the trapdoor and falls down.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. Into the trapdoor",
+            "B. Out of the school",
+            "C. Towards the dog"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch16_p016_q03",
+          "type": "multiple_choice",
+          "prompt": "What does Harry land on?",
+          "explanation": "Harry lands with a soft thump on some kind of plant.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Like & About",
+          "options": [
+            "A. A hard floor",
+            "B. Something soft",
+            "C. A wooden chair"
+          ],
+          "answerIndex": 1
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch16_p017",
+      "pageNumber": 17,
+      "sourceText": "shrieked Hermione. \"Look at you both!\" \n\nShe leapt up and struggled toward a damp wall. She had to struggle because the moment she had landed, the plant had started to twist snakelike tendrils around her ankles. As for Harry and Ron, their legs had already been bound tightly in long creepers without their noticing. \n\nHermione had managed to free herself before the plant got a firm grip on her. Now she watched in horror as the two boys fought to pull the plant off them, but the more they strained against it, the tighter and faster the plant wound around them. \n\n\"Stop moving!\" Hermione ordered them. \"I know what this is -- it's Devil's Snare!\" \n\n\"Oh, I'm so glad we know what it's called, that's a great help,\" snarled Ron, leaning back, trying to stop the plant from curling around his neck. \"Shut up, I'm trying to remember how to kill it!\" said Hermione. \n\n\"Well, hurry up, I can't breathe!\" Harry gasped, wrestling with it as it curled around his chest. \n\n\"Devil's Snare, Devil's Snare... what did Professor Sprout say? -- it likes the dark and the damp \"So light a fire!\" Harry choked. \n\n\"Yes -- of course -- but there's no wood!\" Hermione cried, wringing her hands. \n\n\"HAVE YOU GONE MAD?\" Ron bellowed. \"ARE YOU A WITCH OR NOT?\" \n\n\"Oh, right!\"",
+      "approxWordCount": 222,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 3893,
+        "sourceWordEnd": 4114,
+        "sourceCharStart": 396598,
+        "sourceCharEnd": 397853
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch16_p017_q01",
+          "type": "true_false",
+          "prompt": "The plant starts to twist around Hermione's ankles.",
+          "explanation": "The plant wraps snakelike tendrils around her ankles.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch16_p017_q02",
+          "type": "multiple_choice",
+          "prompt": "What is the plant called?",
+          "explanation": "Hermione says the plant is Devil's Snare.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "options": [
+            "A. Devil's Snare",
+            "B. Bluebell Flame",
+            "C. Professor Sprout"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch16_p017_q03",
+          "type": "multiple_choice",
+          "prompt": "What does Devil's Snare like?",
+          "explanation": "Hermione remembers that it likes the dark and the damp.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "options": [
+            "A. The light and warmth",
+            "B. The dark and the damp",
+            "C. The wind and the snow"
+          ],
+          "answerIndex": 1
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch16_p018",
+      "pageNumber": 18,
+      "sourceText": "said Hermione, and she whipped out her wand, waved it, muttered something, and sent a jet of the same bluebell flames she had used on Snape at the plant. In a matter of seconds, the two boys felt it loosening its grip as it cringed away from the light and warmth. \n\nWriggling and flailing, it unraveled itself from their bodies, and they were able to pull free. \n\n\"Lucky you pay attention in Herbology, Hermione,\" said Harry as he joined her by the wall, wiping sweat off his face. \n\n\"Yeah,\" said Ron, \"and lucky Harry doesn't lose his head in a crisis -- 'there's no wood,' honestly.\" \n\n\"This way,\" said Harry, pointing down a stone passageway, which was the only way forward. \n\nAll they could hear apart from their footsteps was the gentle drip of water trickling down the walls. The passageway sloped downward, and Harry was reminded of Gringotts. With an unpleasant jolt of the heart, he remembered the dragons said to be guarding vaults in the wizards' bank. If they met a dragon, a fully-grown dragon -- Norbert had been bad enough... \n\n\"Can you hear something?\" Ron whispered. \n\nHarry listened. A soft rustling and clinking seemed to be coming from up ahead. \n\n\"Do you think it's a ghost?\" \n\n\"I don't know... sounds like wings to me.\" \n\n\"There's light ahead -- I can see something moving.\" \n\nThey reached the end of the passageway and saw before them a brilliantly lit chamber, its ceiling arching high above them.",
+      "approxWordCount": 247,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 4115,
+        "sourceWordEnd": 4361,
+        "sourceCharStart": 397854,
+        "sourceCharEnd": 399275
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch16_p018_q01",
+          "type": "true_false",
+          "prompt": "Hermione uses her wand to make flames.",
+          "explanation": "She waves her wand and sends bluebell flames at the plant.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch16_p018_q02",
+          "type": "multiple_choice",
+          "prompt": "Why does the plant let the boys go?",
+          "explanation": "The plant cringes away from the light and warmth.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "options": [
+            "A. It likes water.",
+            "B. It moves away from light and warmth.",
+            "C. It wants to sleep."
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch16_p018_q03",
+          "type": "multiple_choice",
+          "prompt": "Which way do they go next?",
+          "explanation": "Harry points down a stone passageway, the only way forward.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. Down a stone passageway",
+            "B. Out of the trapdoor",
+            "C. Into the owlery"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch16_p018_q04",
+          "type": "true_false",
+          "prompt": "Ron thinks the sound might be wings.",
+          "explanation": "Harry says the sound seems like wings.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Obligation & Possibility",
+          "answer": false
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch16_p019",
+      "pageNumber": 19,
+      "sourceText": "It was full of small, jewel-bright birds, fluttering and tumbling all around the room. On the opposite side of the chamber was a heavy wooden door. \n\n\"Do you think they'll attack us if we cross the room?\" said Ron. \n\n\"Probably,\" said Harry. \"They don't look very vicious, but I suppose if they all swooped down at once... well, there's no other choice... I'll run.\" \n\nHe took a deep breath, covered his face with his arms, and sprinted across the room. He expected to feel sharp beaks and claws tearing at him any second, but nothing happened. He reached the door untouched. He pulled the handle, but it was locked. \n\nThe other two followed him. They tugged and heaved at the door, but it wouldn't budge, not even when Hermione tried her Alohomora charm. \n\n\"Now what?\" said Ron. \n\n\"These birds... they can't be here just for decoration,\" said Hermione. \n\nThey watched the birds soaring overhead, glittering -- glittering? \"They're not birds!\" Harry said suddenly. \"They're keys! Winged keys -- look carefully. So that must mean...\" he looked around the chamber while the other two squinted up at the flock of keys. \"... yes -- look! Broomsticks! We've got to catch the key to the door!\" \n\n\"But there are hundreds of them!\" \n\nRon examined the lock on the door. \n\n\"We're looking for a big, old-fashioned one -- probably silver, like the handle.\" \n\nThey each seized a broomstick and kicked off into the air, soaring into the midst of the cloud of keys.",
+      "approxWordCount": 250,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 4362,
+        "sourceWordEnd": 4611,
+        "sourceCharStart": 399276,
+        "sourceCharEnd": 400725
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch16_p019_q01",
+          "type": "multiple_choice",
+          "prompt": "What is flying around the room?",
+          "explanation": "Harry sees that they are keys with wings, not birds.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Defining Relative Clauses",
+          "options": [
+            "A. Small dragons",
+            "B. Winged keys",
+            "C. Owls"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch16_p019_q02",
+          "type": "true_false",
+          "prompt": "The door opens when Hermione uses Alohomora.",
+          "explanation": "The door does not open, even with Hermione's charm.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "answer": false
+        },
+        {
+          "id": "hp_ep1_ch16_p019_q03",
+          "type": "multiple_choice",
+          "prompt": "What do they have to catch?",
+          "explanation": "Harry says they have got to catch the key to the door.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Obligation & Possibility",
+          "options": [
+            "A. The key to the door",
+            "B. A small bird",
+            "C. A broomstick"
+          ],
+          "answerIndex": 0
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch16_p020",
+      "pageNumber": 20,
+      "sourceText": "They grabbed and snatched, but the bewitched keys darted and dived so quickly it was almost impossible to catch one. \n\nNot for nothing, though, was Harry the youngest Seeker in a century. He had a knack for spotting things other people didn't. After a minute's weaving about through the whirl of rainbow feathers, he noticed a large silver key that had a bent wing, as if it had already been caught and stuffed roughly into the keyhole. \n\n\"That one!\" he called to the others. \"That big one -- there -- no, there -- with bright blue wings -- the feathers are all crumpled on one side.\" \n\nRon went speeding in the direction that Harry was pointing, crashed into the ceiling, and nearly fell off his broom. \n\n\"We've got to close in on it!\" Harry called, not taking his eyes off the key with the damaged wing. \"Ron, you come at it from above -- Hermione, stay below and stop it from going down and I'll try and catch it. Right, NOW!\" \n\nRon dived, Hermione rocketed upward, the key dodged them both, and Harry streaked after it; it sped toward the wall, Harry leaned forward and with a nasty, crunching noise, pinned it against the stone with one hand. Ron and Hermione's cheers echoed around the high chamber. \n\nThey landed quickly, and Harry ran to the door, the key struggling in his hand. He rammed it into the lock and turned -- it worked.",
+      "approxWordCount": 243,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 4612,
+        "sourceWordEnd": 4854,
+        "sourceCharStart": 400726,
+        "sourceCharEnd": 402065
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch16_p020_q01",
+          "type": "multiple_choice",
+          "prompt": "Which key does Harry notice?",
+          "explanation": "Harry notices a large silver key with a bent wing.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Defining Relative Clauses",
+          "options": [
+            "A. A small gold key with no wings",
+            "B. A large silver key with a bent wing",
+            "C. A red key on the floor"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch16_p020_q02",
+          "type": "true_false",
+          "prompt": "Ron crashes into the ceiling.",
+          "explanation": "Ron speeds toward the key and crashes into the ceiling.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch16_p020_q03",
+          "type": "multiple_choice",
+          "prompt": "Where does Harry pin the key?",
+          "explanation": "Harry pins the key against the stone with one hand.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. Against the stone wall",
+            "B. Under the broomstick",
+            "C. Into his pocket"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch16_p020_q04",
+          "type": "true_false",
+          "prompt": "The key works in the lock.",
+          "explanation": "Harry puts the key in the lock, turns it, and it works.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch16_p021",
+      "pageNumber": 21,
+      "sourceText": "The moment the lock had clicked open, the key took flight again, looking very battered now that it had been caught twice. \n\n\"Ready?\" Harry asked the other two, his hand on the door handle. They nodded. He pulled the door open. \n\nThe next chamber was so dark they couldn't see anything at all. But as they stepped into it, light suddenly flooded the room to reveal an astonishing sight. \n\nThey were standing on the edge of a huge chessboard, behind the black chessmen, which were all taller than they were and carved from what looked like black stone. Facing them, way across the chamber, were the white pieces. Harry, Ron and Hermione shivered slightly -- the towering white chessmen had no faces. \n\n\"Now what do we do?\" Harry whispered. \n\n\"It's obvious, isn't it?\" said Ron. \"We've got to play our way across the room.\" \n\nBehind the white pieces they could see another door. \n\n\"How?\" said Hermione nervously. \n\n\"I think,\" said Ron, \"we're going to have to be chessmen.\" \n\nHe walked up to a black knight and put his hand out to touch the knight's horse. At once, the stone sprang to life. The horse pawed the ground and the knight turned his helmeted head to look down at Ron. \n\n\"Do we -- er -- have to join you to get across?\" The black knight nodded. Ron turned to the other two. \n\n\"This needs thinking about he said.",
+      "approxWordCount": 237,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 4855,
+        "sourceWordEnd": 5091,
+        "sourceCharStart": 402066,
+        "sourceCharEnd": 403385
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch16_p021_q01",
+          "type": "true_false",
+          "prompt": "Harry opens the door after the key flies away.",
+          "explanation": "Harry pulls the door open after the key takes flight again.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch16_p021_q02",
+          "type": "multiple_choice",
+          "prompt": "Where do Harry, Ron, and Hermione step?",
+          "explanation": "They step into a very dark chamber.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. Into a dark chamber",
+            "B. Out of the castle",
+            "C. Towards the lake"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch16_p021_q03",
+          "type": "multiple_choice",
+          "prompt": "The chessmen are taller than _____.",
+          "explanation": "The page says the chessmen were all taller than they were.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Defining Relative Clauses",
+          "options": [
+            "A. the door",
+            "B. Harry, Ron, and Hermione",
+            "C. the key"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch16_p021_q04",
+          "type": "true_false",
+          "prompt": "Ron thinks they have to be chessmen.",
+          "explanation": "Ron says they are going to have to be chessmen.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Obligation & Possibility",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch16_p022",
+      "pageNumber": 22,
+      "sourceText": "I suppose we've got to take the place of three of the black pieces....\" \n\nHarry and Hermione stayed quiet, watching Ron think. Finally he said, \"Now, don't be offended or anything, but neither of you are that good at chess --\" \n\n\"We're not offended,\" said Harry quickly. \"Just tell us what to do.\" \n\n\"Well, Harry, you take the place of that bishop, and Hermione, YOU 90 next to him instead of that castle.\" \n\n\"What about you?\" \n\n\"I'm going to be a knight,\" said Ron. \n\nThe chessmen seemed to have been listening, because at these words a knight, a bishop, and a castle turned their backs on the white pieces and walked off the board, leaving three empty squares that Harry, Ron, and Hermione took. \n\n\"White always plays first in chess,\" said Ron, peering across the board. \n\n\"Yes... look...\" \n\nA white pawn had moved forward two squares. \n\nRon started to direct the black pieces. They moved silently wherever he sent them. Harry's knees were trembling. What if they lost? \"Harry -- move diagonally four squares to the right.\" \n\nTheir first real shock came when their other knight was taken. The white queen smashed him to the floor and dragged him off the board, where he lay quite still, facedown. \n\n\"Had to let that happen,\" said Ron, looking shaken. \"Leaves you free to take that bishop, Hermione, go on.\" \n\nEvery time one of their men was lost, the white pieces showed no mercy.",
+      "approxWordCount": 241,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 5092,
+        "sourceWordEnd": 5332,
+        "sourceCharStart": 403386,
+        "sourceCharEnd": 404768
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch16_p022_q01",
+          "type": "multiple_choice",
+          "prompt": "What place does Harry take on the board?",
+          "explanation": "Ron tells Harry to take the place of that bishop.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "options": [
+            "A. A bishop",
+            "B. A castle",
+            "C. A pawn"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch16_p022_q02",
+          "type": "true_false",
+          "prompt": "White plays first in chess.",
+          "explanation": "Ron says, “White always plays first in chess.”",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch16_p022_q03",
+          "type": "multiple_choice",
+          "prompt": "What does the word “diagonally” mean here?",
+          "explanation": "On a chessboard, diagonally means moving slanting across the squares.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. In a straight line forward",
+            "B. Sideways only",
+            "C. Slanting across the squares"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": "hp_ep1_ch16_p022_q04",
+          "type": "true_false",
+          "prompt": "The white queen takes one of the black knights.",
+          "explanation": "The white queen smashes the knight and drags him off the board.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch16_p023",
+      "pageNumber": 23,
+      "sourceText": "Soon there was a huddle of limp black players slumped along the wall. \n\nTwice, Ron only just noticed in time that Harry and Hermione were in danger. He himself darted around the board, taking almost as many white pieces as they had lost black ones. \n\n\"We're nearly there,\" he muttered suddenly. \"Let me think let me think...\" \n\nThe white queen turned her blank face toward him. \n\n\"Yes...\" said Ron softly, \"It's the only way... I've got to be taken.\" \n\n\"NOF Harry and Hermione shouted. \n\n\"That's chess!\" snapped Ron. \"You've got to make some sacrifices! I take one step forward and she'll take me -- that leaves you free to checkmate the king, Harry!\" \n\n\"But --\" \n\n\"Do you want to stop Snape or not?\" \n\n\"Ron --\" \n\n\"Look, if you don't hurry up, he'll already have the Stone!\" \n\nThere was no alternative. \n\n\"Ready?\" Ron called, his face pale but determined. \"Here I go - now, don't hang around once you've won.\" \n\nHe stepped forward, and the white queen pounced. She struck Ron hard across the head with her stone arm, and he crashed to the floor - Hermione screamed but stayed on her square - the white queen dragged Ron to one side. He looked as if he'd been knocked out. \n\nShaking, Harry moved three spaces to the left. \n\nThe white king took off his crown and threw it at Harry's feet. They had won. The chessmen parted and bowed, leaving the door ahead clear.",
+      "approxWordCount": 243,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 5333,
+        "sourceWordEnd": 5575,
+        "sourceCharStart": 404771,
+        "sourceCharEnd": 406132
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch16_p023_q01",
+          "type": "multiple_choice",
+          "prompt": "Why does Ron say he must be taken?",
+          "explanation": "Ron says his move will leave Harry free to checkmate the king.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Future Forms",
+          "options": [
+            "A. To help Harry checkmate the king",
+            "B. To stop playing chess",
+            "C. To run back to the first room"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch16_p023_q02",
+          "type": "true_false",
+          "prompt": "Harry and Hermione want Ron to be taken.",
+          "explanation": "They shout “NO!” because they do not want Ron to be taken.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Would You Like",
+          "answer": false
+        },
+        {
+          "id": "hp_ep1_ch16_p023_q03",
+          "type": "multiple_choice",
+          "prompt": "What is the white queen doing when she attacks Ron?",
+          "explanation": "The white queen pounces and strikes Ron hard.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Past Continuous",
+          "options": [
+            "A. She is sleeping",
+            "B. She is pouncing and striking him",
+            "C. She is giving him a crown"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch16_p023_q04",
+          "type": "true_false",
+          "prompt": "The chessmen bow after Harry wins.",
+          "explanation": "The chessmen part and bow, leaving the door clear.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch16_p024",
+      "pageNumber": 24,
+      "sourceText": "With one last desperate look back at Ron, Harry and Hermione charged through the door and up the next passageway. \n\n\"What if he's --?\" \n\n\"He'll be all right,\" said Harry, trying to convince himself. \"What do you reckon's next?\" \n\n\"We've had Sprout's, that was the Devil's Snare; Flitwick must've put charms on the keys; McGonagall transfigured the chessmen to make them alive; that leaves Quirrell's spell, and Snape's.\" \n\nThey had reached another door. \n\n\"All right?\" Harry whispered. \n\n\"Go on.\" \n\nHarry pushed it open. \n\nA disgusting smell filled their nostrils, making both of them pull their robes up over their noses. Eyes watering, they saw, flat on the floor in front of them, a troll even larger than the one they had tackled, out cold with a bloody lump on its head. \n\n\"I'm glad we didn't have to fight that one,\" Harry whispered as they stepped carefully over one of its massive legs. \"Come on, I can't breathe.\" \n\nHe pulled open the next door, both of them hardly daring to look at what came next - but there was nothing very frightening in here, just a table with seven differently shaped bottles standing on it in a line. \n\n\"Snape's,\" said Harry. \"What do we have to do?\" \n\nThey stepped over the threshold, and immediately a fire sprang up behind them in the doorway. It wasn't ordinary fire either; it was purple. At the same instant, black flames shot up in the doorway leading onward. \n\nThey were trapped. \n\n\"Look!\"",
+      "approxWordCount": 247,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 5576,
+        "sourceWordEnd": 5822,
+        "sourceCharStart": 406133,
+        "sourceCharEnd": 407564
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch16_p024_q01",
+          "type": "multiple_choice",
+          "prompt": "Where do Harry and Hermione go after the chess room?",
+          "explanation": "They charge through the door and up the next passageway.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. Through the door and up the passageway",
+            "B. Into the lake",
+            "C. Out of the school"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch16_p024_q02",
+          "type": "true_false",
+          "prompt": "Harry is sure Ron will be all right.",
+          "explanation": "Harry says Ron will be all right, but he is trying to convince himself.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Obligation & Possibility",
+          "answer": false
+        },
+        {
+          "id": "hp_ep1_ch16_p024_q03",
+          "type": "multiple_choice",
+          "prompt": "What is on the floor in front of them?",
+          "explanation": "They see a troll lying flat on the floor, out cold.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "options": [
+            "A. A sleeping dragon",
+            "B. A troll out cold",
+            "C. A chess king"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch16_p024_q04",
+          "type": "multiple_choice",
+          "prompt": "What does “towards” mean in “leading onward”?",
+          "explanation": "Onward means going forward in a direction.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. Moving in the direction of something",
+            "B. Moving out of something",
+            "C. Moving inside a box"
+          ],
+          "answerIndex": 0
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch16_p025",
+      "pageNumber": 25,
+      "sourceText": "Hermione seized a roll of paper lying next to the bottles. Harry looked over her shoulder to read it: Danger lies before you, while safety lies behind, Two of us will help you, which ever you would find, One among us seven will let you move ahead, Another will transport the drinker back instead, Two among our number hold only nettle wine, Three of us are killers, waiting bidden in line. \n\nChoose, unless you wish to stay here forevermore, To help you in your choice, we give you these clues four: First, however slyly the poison tries to hide You will always find some on nettle wine's left side; Second, different are those who stand at either end, But if you would move onward, neither is your friend; Third, as you see clearly, all are different size, Neither dwarf nor giant holds death in their insides; Fourth, the second left and the second on the right Are twins once you taste them, though different at first sight. \n\nHermione let out a great sigh and Harry, amazed, saw that she was smiling, the very last thing he felt like doing. \n\n\"Brilliant,\" said Hermione. \"This isn't magic -- it's logic -- a puzzle. \n\nA lot of the greatest wizards haven't got an ounce of logic, they'd be stuck in here forever.\" \n\n\"But so will we, won't we?\" \"Of course not,\" said Hermione. \"Everything we need is here on this paper.",
+      "approxWordCount": 238,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 5823,
+        "sourceWordEnd": 6060,
+        "sourceCharStart": 407565,
+        "sourceCharEnd": 408886
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch16_p025_q01",
+          "type": "multiple_choice",
+          "prompt": "What does Hermione pick up?",
+          "explanation": "Hermione seizes a roll of paper next to the bottles.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "options": [
+            "A. A bottle",
+            "B. A chess piece",
+            "C. A roll of paper"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": "hp_ep1_ch16_p025_q02",
+          "type": "true_false",
+          "prompt": "The puzzle has seven bottles.",
+          "explanation": "The paper says there are seven bottles.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch16_p025_q03",
+          "type": "multiple_choice",
+          "prompt": "What is the puzzle about?",
+          "explanation": "The clues help them choose which bottle to drink.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Like & About",
+          "options": [
+            "A. Choosing the right bottle",
+            "B. Playing chess again",
+            "C. Finding a flying key"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch16_p025_q04",
+          "type": "true_false",
+          "prompt": "Hermione thinks the puzzle needs logic, not magic.",
+          "explanation": "Hermione says, “This isn't magic -- it's logic.”",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch16_p026",
+      "pageNumber": 26,
+      "sourceText": "Seven bottles: three are poison; two are wine; one will get us safely through the black fire, and one will get us back through the purple.\" \n\n\"But how do we know which to drink?\" \n\n\"Give me a minute.\" \n\nHermione read the paper several times. Then she walked up and down the line of bottles, muttering to herself and pointing at them. At last, she clapped her hands. \n\n\"Got it,\" she said. \"The smallest bottle will get us through the black fire -- toward the Stone.\" \n\nHarry looked at the tiny bottle. \n\n\"There's only enough there for one of us,\" he said. \"That's hardly one swallow.\" \n\nThey looked at each other. \n\n\"Which one will get you back through the purple flames?\" \n\nHermione pointed at a rounded bottle at the right end of the line. \n\n\"You drink that,\" said Harry. \"No, listen, get back and get Ron. Grab brooms from the flying- key room, they'll get you out of the trapdoor and past Fluffy -- go straight to the owlery and send Hedwig to Dumbledore, we need him. I might be able to hold Snape off for a while, but I'm no match for him, really.\" \n\n\"But Harry -- what if You-Know-Who's with him?\" \n\n\"Well -- I was lucky once, wasn't I?\" said Harry, pointing at his scar. \n\n\"I might get lucky again.\" \n\nHermione's lip trembled, and she suddenly dashed at Harry and threw her arms around him. \n\n\"Hermione!\" \n\n\"Harry -- you're a great wizard, you know.\"",
+      "approxWordCount": 245,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 6061,
+        "sourceWordEnd": 6305,
+        "sourceCharStart": 408887,
+        "sourceCharEnd": 410244
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch16_p026_q01",
+          "type": "multiple_choice",
+          "prompt": "Which bottle will get them through the black fire?",
+          "explanation": "Hermione says the smallest bottle will get them through the black fire.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Future Forms",
+          "options": [
+            "A. The smallest bottle",
+            "B. The rounded bottle",
+            "C. The purple bottle"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch16_p026_q02",
+          "type": "true_false",
+          "prompt": "Harry tells Hermione to get Ron.",
+          "explanation": "Harry says, “Get back and get Ron.”",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch16_p026_q03",
+          "type": "multiple_choice",
+          "prompt": "In “walked up and down the line of bottles,” what does “up and down” show?",
+          "explanation": "Hermione moves along the line of bottles.",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Prepositions of Direction",
+          "options": [
+            "A. Sleeping",
+            "B. Movement",
+            "C. Drinking"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch16_p026_q04",
+          "type": "true_false",
+          "prompt": "Harry says he might be able to hold Snape off for a while.",
+          "explanation": "Harry uses “might” to show it is possible.",
+          "skill": "Grammar noticing",
+          "reviewTopic": "Obligation & Possibility",
+          "answer": true
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    },
+    {
+      "pageId": "hp_ep1_ch16_p027",
+      "pageNumber": 27,
+      "sourceText": "\"I'm not as good as you,\" said Harry, very embarrassed, as she let go of him. \n\n\"Me!\" said Hermione. \"Books! And cleverness! There are more important things -- friendship and bravery and -- oh Harry -- be careful!\" \n\n\"You drink first,\" said Harry. \"You are sure which is which, aren't you?\" \n\n\"Positive,\" said Hermione. She took a long drink from the round bottle at the end, and shuddered. \n\n\"It's not poison?\" said Harry anxiously. \n\n\"No -- but it's like ice.\" \n\n\"Quick, go, before it wears off.\" \n\n\"Good luck -- take care.\" \n\n\"GO!\" \n\nHermione turned and walked straight through the purple fire. \n\nHarry took a deep breath and picked up the smallest bottle. He turned to face the black flames. \n\n\"Here I come,\" he said, and he drained the little bottle in one gulp. \n\nIt was indeed as though ice was flooding his body. He put the bottle down and walked forward; he braced himself, saw the black flames licking his body, but couldn't feel them -- for a moment he could see nothing but dark fire -- then he was on the other side, in the last chamber. \n\nThere was already someone there -- but it wasn't Snape. It wasn't even Voldemort.",
+      "approxWordCount": 202,
+      "sourceRef": {
+        "sourceTextIncluded": true,
+        "sourceWordStart": 6306,
+        "sourceWordEnd": 6507,
+        "sourceCharStart": 410247,
+        "sourceCharEnd": 411381
+      },
+      "inlineQuestions": [
+        {
+          "id": "hp_ep1_ch16_p027_q01",
+          "type": "multiple_choice",
+          "prompt": "What does Hermione say is more important than books and cleverness?",
+          "explanation": "Hermione says friendship and bravery are more important.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Like & About",
+          "options": [
+            "A. Poison and fire",
+            "B. Friendship and bravery",
+            "C. Bottles and keys"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "hp_ep1_ch16_p027_q02",
+          "type": "true_false",
+          "prompt": "Hermione walks through the purple fire.",
+          "explanation": "The page says Hermione walked straight through the purple fire.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Prepositions of Direction",
+          "answer": true
+        },
+        {
+          "id": "hp_ep1_ch16_p027_q03",
+          "type": "multiple_choice",
+          "prompt": "What is the drink like?",
+          "explanation": "Hermione says, “It’s like ice.”",
+          "skill": "Vocabulary in context",
+          "reviewTopic": "Like & About",
+          "options": [
+            "A. Like ice",
+            "B. Like juice",
+            "C. Like milk"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "hp_ep1_ch16_p027_q04",
+          "type": "true_false",
+          "prompt": "Harry finds Snape in the last chamber.",
+          "explanation": "The page says it was not Snape in the last chamber.",
+          "skill": "Reading comprehension",
+          "reviewTopic": "Present Simple",
+          "answer": false
+        }
+      ],
+      "unlockRule": {
+        "mustAnswerAllInlineQuestions": true
+      }
+    }
+  ]
+}
