@@ -87,6 +87,11 @@ const SwipeCards = ({ words, onAnswer, onComplete, onHome, gameId = 'swipe' }) =
   const handleDragStart = (e) => {
     if (showFeedback) return;
     setIsDragging(true);
+    
+    if (e.target && e.target.setPointerCapture && e.pointerId != null) {
+      e.target.setPointerCapture(e.pointerId);
+    }
+    
     const clientX = e.touches ? e.touches[0].clientX : e.clientX;
     const clientY = e.touches ? e.touches[0].clientY : e.clientY;
     startPosRef.current = { x: clientX, y: clientY };
@@ -101,9 +106,13 @@ const SwipeCards = ({ words, onAnswer, onComplete, onHome, gameId = 'swipe' }) =
     setDragOffset({ x: deltaX, y: deltaY * 0.3 });
   };
 
-  const handleDragEnd = () => {
+  const handleDragEnd = (e) => {
     if (!isDragging) return;
     setIsDragging(false);
+    
+    if (e && e.target && e.target.releasePointerCapture && e.pointerId != null) {
+      try { e.target.releasePointerCapture(e.pointerId); } catch (err) {}
+    }
     
     const threshold = 100;
     if (dragOffset.x > threshold) {

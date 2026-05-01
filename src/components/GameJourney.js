@@ -122,6 +122,7 @@ const GameJourney = ({
         else if (i === 1) { state = "completed"; stars = 2; }
         else if (i === 2) { state = "active"; stars = 1; }
         else if (i === 3) { state = "active"; stars = 0; }
+        else if (i === 4) { state = "active"; stars = 0; } // Reading Mission unlocked
         else { state = "locked"; stars = 0; }
 
         return { ...node, state, stars };
@@ -224,7 +225,10 @@ const GameJourney = ({
         let matchedKey = Object.keys(GAME_ICONS).find(k => gameObj.name.includes(k)) || "Quiz";
         const config = GAME_ICONS[matchedKey] || GAME_ICONS["Quiz"];
         const Icon = config.icon || BookOpen;
-        const isDisabled = selectedUnits.length === 0;
+        
+        // Story Reading Mission and Reading Explorer don't require vocab units (they load their own chapters)
+        const noUnitsRequired = ["storyReadingMission", "readingExplorer"].includes(gameObj.id);
+        const isDisabled = !noUnitsRequired && selectedUnits.length === 0;
 
         return (
             <div 
