@@ -14,8 +14,8 @@ const answerOptions = (question) =>
 
 /**
  * Inline scroll-picker blank — sits within the text like a small slot machine.
- * The kid scrolls/swipes within the blank to browse options, then taps to confirm.
- * The text flow is NEVER broken.
+ * All 3 states (blank, picker, answered) use the SAME fixed width
+ * so the surrounding text never shifts.
  */
 const InlinePickerBlank = ({ question, picked, onPick }) => {
   const [selectedIdx, setSelectedIdx] = useState(0);
@@ -23,6 +23,14 @@ const InlinePickerBlank = ({ question, picked, onPick }) => {
   const options = answerOptions(question);
   const viewportRef = useRef(null);
   const itemH = 40;
+
+  // Calculate a stable width based on the longest option text
+  // ~11px per char + 130px for arrows + confirm button + padding
+  const longestLen = useMemo(
+    () => Math.max(...options.map((o) => o.replace(/^[A-Z]\.\s*/, '').length), 6),
+    [options]
+  );
+  const stableWidth = Math.min(Math.max(longestLen * 11 + 130, 220), 500);
 
   // Scroll to selected item
   useEffect(() => {
@@ -50,11 +58,16 @@ const InlinePickerBlank = ({ question, picked, onPick }) => {
     return () => { vp.removeEventListener('scroll', onScroll); clearTimeout(timer); };
   }, [active, options.length]);
 
+  // Stable container style — same width for all states
+  const containerStyle = { display: 'inline-block', width: stableWidth, textAlign: 'center', verticalAlign: 'middle' };
+
   // Already answered
   if (picked) {
     return (
-      <span className={`srm-answered ${picked.correct ? 'srm-correct' : 'srm-wrong'}`}>
-        {options[picked.selectedIndex]}
+      <span style={containerStyle}>
+        <span className={`srm-answered ${picked.correct ? 'srm-correct' : 'srm-wrong'}`}>
+          {options[picked.selectedIndex]}
+        </span>
       </span>
     );
   }
@@ -62,32 +75,36 @@ const InlinePickerBlank = ({ question, picked, onPick }) => {
   // Inactive — show tappable blank
   if (!active) {
     return (
-      <span className="srm-blank" onClick={() => setActive(true)}>
-        ______
+      <span style={containerStyle}>
+        <span className="srm-blank" onClick={() => setActive(true)}>
+          ______
+        </span>
       </span>
     );
   }
 
   // Active — inline scroll picker
   return (
-    <span className="srm-picker" onClick={(e) => e.stopPropagation()}>
-      <span className="srm-picker-arrow" onClick={() => setSelectedIdx(Math.max(0, selectedIdx - 1))}>▲</span>
-      <span className="srm-picker-vp" ref={viewportRef}>
-        <span className="srm-picker-track">
-          {options.map((opt, i) => (
-            <span
-              key={`${question.id}_${i}`}
-              className={`srm-picker-opt ${i === selectedIdx ? 'srm-picker-sel' : ''}`}
-              style={{ minHeight: itemH }}
-              onClick={() => setSelectedIdx(i)}
-            >
-              {opt}
-            </span>
-          ))}
+    <span style={containerStyle}>
+      <span className="srm-picker" onClick={(e) => e.stopPropagation()}>
+        <span className="srm-picker-arrow" onClick={() => setSelectedIdx(Math.max(0, selectedIdx - 1))}>▲</span>
+        <span className="srm-picker-vp" ref={viewportRef}>
+          <span className="srm-picker-track">
+            {options.map((opt, i) => (
+              <span
+                key={`${question.id}_${i}`}
+                className={`srm-picker-opt ${i === selectedIdx ? 'srm-picker-sel' : ''}`}
+                style={{ minHeight: itemH }}
+                onClick={() => setSelectedIdx(i)}
+              >
+                {opt}
+              </span>
+            ))}
+          </span>
         </span>
+        <span className="srm-picker-arrow" onClick={() => setSelectedIdx(Math.min(options.length - 1, selectedIdx + 1))}>▼</span>
+        <span className="srm-picker-ok" onClick={() => onPick(selectedIdx)}>✓</span>
       </span>
-      <span className="srm-picker-arrow" onClick={() => setSelectedIdx(Math.min(options.length - 1, selectedIdx + 1))}>▼</span>
-      <span className="srm-picker-ok" onClick={() => onPick(selectedIdx)}>✓</span>
     </span>
   );
 };
