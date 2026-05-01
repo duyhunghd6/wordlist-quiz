@@ -16,7 +16,7 @@ const SUBJECTS = [
 
 const VERBS = ['playing', 'eating', 'running', 'sleeping', 'reading', 'jumping', 'studying', 'swimming'];
 
-const ShapeBuilderGame = ({ words, onAnswer, onComplete, onHome }) => {
+const ShapeBuilderGame = ({ words, isAllQuestions = false, onAnswer, onComplete, onHome }) => {
   const [questions, setQuestions] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [options] = useState(['am', 'is', 'are']);
@@ -27,24 +27,23 @@ const ShapeBuilderGame = ({ words, onAnswer, onComplete, onHome }) => {
   const [wrongWords, setWrongWords] = useState([]);
 
   useEffect(() => {
-    // Generate questions based on the number of words in the round
-    const numQuestions = Math.min(words.length, 10) || 5;
-    const generated = [];
-    
-    for (let i = 0; i < numQuestions; i++) {
-      const subject = SUBJECTS[Math.floor(Math.random() * SUBJECTS.length)];
-      const verb = VERBS[Math.floor(Math.random() * VERBS.length)];
-      generated.push({
+    const combinations = SUBJECTS.flatMap(subject => VERBS.map(verb => ({ subject, verb })));
+    const count = isAllQuestions
+      ? combinations.length
+      : Math.min(words.length || 5, 10, combinations.length);
+    const generated = combinations
+      .sort(() => 0.5 - Math.random())
+      .slice(0, count)
+      .map(({ subject, verb }, i) => ({
         subject: subject.text,
-        verb: verb,
+        verb,
         correctBe: subject.be,
-        // we map it to the actual word from the wordlist to count score appropriately
         targetWord: words[i]?.word || `q${i}`
-      });
-    }
+      }));
+
     setQuestions(generated);
     setStartTime(Date.now());
-  }, [words]);
+  }, [words, isAllQuestions]);
 
   const handleSelect = (choice) => {
     if (selectedWord !== null) return; // Prevent multiple clicks

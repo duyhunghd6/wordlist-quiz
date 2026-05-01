@@ -223,7 +223,7 @@ const DARK_WORLDS = ['past_continuous', 'future_simple', 'future_perfect_cont', 
 // COMPONENT
 // ═══════════════════════════════════════════════════════════
 
-const MarioTenseRunner = ({ words, onAnswer, onComplete, onHome }) => {
+const MarioTenseRunner = ({ words, isAllQuestions = false, onAnswer, onComplete, onHome }) => {
   // ─── Game phase: worldSelect → running → questioning → jumping → feedback → (running | worldComplete | gameOver)
   const [phase, setPhase] = useState('worldSelect');
   const [selectedWorld, setSelectedWorld] = useState(null);
@@ -273,21 +273,19 @@ const MarioTenseRunner = ({ words, onAnswer, onComplete, onHome }) => {
   const startWorld = useCallback((world) => {
     let qs;
     if (world.id === 'mix_all') {
-      // Pull 1 random question from each of the 12 tense worlds
-      const allQs = [];
-      TENSE_WORLDS.forEach(w => {
-        const pick = shuffle(w.templates)[0];
-        allQs.push({
-          sentence: pick.sentence,
-          answer: pick.answer,
-          options: shuffle([pick.answer, ...pick.distractors]),
+      const allQs = TENSE_WORLDS.flatMap(w =>
+        w.templates.map(t => ({
+          sentence: t.sentence,
+          answer: t.answer,
+          options: shuffle([t.answer, ...t.distractors]),
           category: w.category,
           tenseName: w.name,
-        });
-      });
-      qs = shuffle(allQs);
+        }))
+      );
+      const count = isAllQuestions ? allQs.length : Math.min(words?.length || TENSE_WORLDS.length, allQs.length);
+      qs = shuffle(allQs).slice(0, count);
     } else {
-      const numQ = Math.min(10, world.templates.length);
+      const numQ = isAllQuestions ? world.templates.length : Math.min(words?.length || 10, 10, world.templates.length);
       const picked = shuffle(world.templates).slice(0, numQ);
       qs = picked.map(t => ({
         sentence: t.sentence,
@@ -311,7 +309,7 @@ const MarioTenseRunner = ({ words, onAnswer, onComplete, onHome }) => {
     setPlatformAnim('');
     setShowBanner(false);
     setPhase('running');
-  }, []);
+  }, [isAllQuestions, words]);
 
   // ─── Running phase timer → transition to questioning ───
   useEffect(() => {

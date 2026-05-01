@@ -83,10 +83,11 @@ const generateRandomQuickfire = (numQuestions = 5) => {
    return questions;
 };
 
-export default function MathWeatherStation({ onComplete, onHome }) {
+export default function MathWeatherStation({ words, numQuestions, isAllQuestions = false, onComplete, onHome }) {
   const { dynamicL1, dynamicL2 } = React.useMemo(() => {
-    const l1Data = generateRandomSortData(6);
-    const l2Questions = generateRandomQuickfire(5);
+    const requestedCount = isAllQuestions ? CITIES.length : words?.length || numQuestions || 5;
+    const l1Data = generateRandomSortData(Math.min(requestedCount, CITIES.length));
+    const l2Questions = generateRandomQuickfire(Math.min(requestedCount, CITIES.length));
     return {
       dynamicL1: {
         ...M1_WEATHER_STATION_MODULE.levels[0],
@@ -99,7 +100,7 @@ export default function MathWeatherStation({ onComplete, onHome }) {
         questions: l2Questions
       }
     };
-  }, []);
+  }, [words, numQuestions, isAllQuestions]);
 
   const [currentLevelIdx, setCurrentLevelIdx] = useState(0);
   const [l2QuestionIdx, setL2QuestionIdx] = useState(0);
@@ -176,7 +177,7 @@ export default function MathWeatherStation({ onComplete, onHome }) {
   };
 
   const handleClear = () => {
-    setSortedValues(new Array(6).fill(null));
+    setSortedValues(new Array(dynamicL1.data_pool.length).fill(null));
     setAvailableItems(level.data_pool);
     setFeedback(null);
   };

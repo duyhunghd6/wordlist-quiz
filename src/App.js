@@ -548,6 +548,8 @@ function App() {
       // Render the appropriate game based on selection
       const gameProps = {
         words: questions,
+        numQuestions,
+        isAllQuestions: numQuestions === 999,
         tenseSentences: tenseSentences, // Pass down the grammar DB for Boss Levels!
         eslReviewQuestions: eslReviewQuestions,
         selectedUnits: selectedUnits && selectedUnits.length > 0 ? selectedUnits : units, // Pass all units if none selected

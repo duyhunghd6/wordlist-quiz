@@ -92,6 +92,7 @@ function pickWeightedQuestions(pool, count) {
 const AngryTensesGame = ({
   words,
   tenseSentences,
+  isAllQuestions = false,
   onAnswer,
   onComplete,
   onHome,
@@ -117,7 +118,10 @@ const AngryTensesGame = ({
   const lastTapRef = useRef(0);
   const wrongAnswersRef = useRef([]);
 
-  const numQuestions = Math.min(words?.length || 5, 10);
+  const availableQuestionCount = tenseSentences?.length || words?.length || 5;
+  const numQuestions = isAllQuestions
+    ? availableQuestionCount
+    : Math.min(words?.length || 5, 10, availableQuestionCount);
 
   useEffect(() => {
     // Use centralized TOON database with weighted SRS shuffle

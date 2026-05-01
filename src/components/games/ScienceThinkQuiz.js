@@ -17,7 +17,7 @@ const DIFFICULTY_META = {
   hard: { label: 'Hard', color: '#ef4444', bg: '#fee2e2', emoji: '🧠' }
 };
 
-const ScienceThinkQuiz = ({ words, selectedUnits, onAnswer, onComplete, onHome, gameId }) => {
+const ScienceThinkQuiz = ({ words, selectedUnits, isAllQuestions = false, onAnswer, onComplete, onHome, gameId }) => {
   const [allQuestions, setAllQuestions] = useState([]);
   const [questions, setQuestions] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -74,8 +74,7 @@ const ScienceThinkQuiz = ({ words, selectedUnits, onAnswer, onComplete, onHome, 
 
     // Shuffle questions
     const shuffledQs = filtered.sort(() => Math.random() - 0.5);
-    // Take up to numQuestions (from words.length) or all available
-    const count = Math.min(words?.length || 10, shuffledQs.length);
+    const count = isAllQuestions ? shuffledQs.length : Math.min(words?.length || 10, shuffledQs.length);
     
     // Select and shuffle options for each selected question
     const finalQuestions = shuffledQs.slice(0, count).map(q => {
@@ -99,7 +98,7 @@ const ScienceThinkQuiz = ({ words, selectedUnits, onAnswer, onComplete, onHome, 
     setCorrectCount(0);
     setWrongWords([]);
     setStartTime(Date.now());
-  }, [allQuestions, words]);
+  }, [allQuestions, words, isAllQuestions]);
 
   const handleSelect = (optionIndex) => {
     if (selectedOption !== null) return;
@@ -214,7 +213,7 @@ const ScienceThinkQuiz = ({ words, selectedUnits, onAnswer, onComplete, onHome, 
               { key: 'hard', emoji: '🧠', title: 'Hard', desc: 'Reason & analyze', count: allQuestions.filter(q => q.difficulty === 'hard').length },
               { key: 'mixed', emoji: '🎲', title: 'Mixed', desc: 'All levels!', count: allQuestions.length }
             ].map(d => {
-              const numToPlay = Math.min(words?.length || 10, d.count);
+              const numToPlay = isAllQuestions ? d.count : Math.min(words?.length || 10, d.count);
               return (
               <button
                 key={d.key}

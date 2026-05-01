@@ -61,10 +61,16 @@ const M2_MYSTERY_SAFE_MODULE = {
   ]
 };
 
-export default function MathMysterySafe({ onComplete, onHome }) {
+export default function MathMysterySafe({ words, numQuestions, isAllQuestions = false, onComplete, onHome }) {
+  const levelsToPlay = React.useMemo(() => {
+    const allLevels = M2_MYSTERY_SAFE_MODULE.levels;
+    const count = isAllQuestions ? allLevels.length : Math.min(words?.length || numQuestions || allLevels.length, allLevels.length);
+    return allLevels.slice(0, count);
+  }, [words, numQuestions, isAllQuestions]);
+
   const [currentLevelIdx, setCurrentLevelIdx] = useState(0);
   const [score, setScore] = useState(0);
-  const level = M2_MYSTERY_SAFE_MODULE.levels[currentLevelIdx];
+  const level = levelsToPlay[currentLevelIdx];
   
   const [safeInput, setSafeInput] = useState([null, null, null]);
   const [availableDigits, setAvailableDigits] = useState(level.available_digits);
@@ -101,7 +107,7 @@ export default function MathMysterySafe({ onComplete, onHome }) {
       setScore(score + level.reward_points);
       setTimeout(() => {
           setFeedback(null);
-          if (currentLevelIdx + 1 < M2_MYSTERY_SAFE_MODULE.levels.length) {
+          if (currentLevelIdx + 1 < levelsToPlay.length) {
             setCurrentLevelIdx(currentLevelIdx + 1);
           } else {
             if (onComplete) onComplete({ score: score + level.reward_points });

@@ -95,15 +95,17 @@ const generateL2Question = (levelIdx) => {
    };
 };
 
-export default function MathSortingFactory({ onComplete, onHome }) {
+export default function MathSortingFactory({ words, numQuestions, isAllQuestions = false, onComplete, onHome }) {
   const { levels } = React.useMemo(() => {
+     const maxGeneratedLevels = 20;
+     const levelCount = isAllQuestions ? maxGeneratedLevels : Math.min(words?.length || numQuestions || 5, maxGeneratedLevels);
      const genLevels = [];
-     for(let i=0; i<5; i++) {
+     for(let i=0; i<levelCount; i++) {
         if (i % 2 === 0) genLevels.push(generateL1Question(i+1));
         else genLevels.push(generateL2Question(i+1));
      }
      return { levels: genLevels };
-  }, []);
+  }, [words, numQuestions, isAllQuestions]);
 
   const [levelIdx, setLevelIdx] = useState(0);
   const [score, setScore] = useState(0);

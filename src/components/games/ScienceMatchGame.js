@@ -16,7 +16,7 @@ const shuffle = (array) => {
     return newArr;
 };
 
-const ScienceMatchGame = ({ words, onAnswer, onComplete, onHome, gameId }) => {
+const ScienceMatchGame = ({ words, isAllQuestions = false, onAnswer, onComplete, onHome, gameId }) => {
     const [rounds, setRounds] = useState([]);
     const [currentRoundIndex, setCurrentRoundIndex] = useState(0);
     
@@ -51,33 +51,24 @@ const ScienceMatchGame = ({ words, onAnswer, onComplete, onHome, gameId }) => {
     useEffect(() => {
         if (!words || words.length === 0) return;
         
-        // Task 2: 5 rounds (plays), max 5 pairs per play
-        const numRounds = 5;
-        const pairsPerRound = Math.min(5, words.length);
-        
-        // Initial pool of words to draw from without repetition immediately
-        let availableWords = shuffle([...words]);
+        const pairsPerRound = 5;
+        const selectedWords = shuffle([...words]);
         const generatedRounds = [];
-        
-        for (let i = 0; i < numRounds; i++) {
-            if (availableWords.length < pairsPerRound) {
-                // If we run out, restock with shuffled words and continue
-                availableWords = availableWords.concat(shuffle([...words]));
-            }
-            
-            const roundItems = availableWords.splice(0, pairsPerRound).map((item, idx) => ({
+
+        for (let i = 0; i < selectedWords.length; i += pairsPerRound) {
+            const roundItems = selectedWords.slice(i, i + pairsPerRound).map((item) => ({
                 id: item.word + '_' + Math.random().toString(36).substring(7),
                 word: item.word,
                 definition: item.definition || item.translation || 'No definition'
             }));
-            
+
             generatedRounds.push(roundItems);
         }
         
         setRounds(generatedRounds);
         setupRound(generatedRounds[0]);
         // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [words]);
+    }, [words, isAllQuestions]);
 
     const setupRound = (roundItems) => {
         if (!roundItems) return;
@@ -285,10 +276,11 @@ const ScienceMatchGame = ({ words, onAnswer, onComplete, onHome, gameId }) => {
                         setupRound(rounds[currentRoundIndex + 1]);
                     } else {
                         if (onComplete) {
-                            onComplete({ 
-                                score, 
+                            const totalQuestions = rounds.reduce((sum, round) => sum + round.length, 0);
+                            onComplete({
+                                score,
                                 totalCorrect: score > 0 ? score/10 : 0,
-                                totalQuestions: rounds.length * 5
+                                totalQuestions
                             });
                         }
                     }

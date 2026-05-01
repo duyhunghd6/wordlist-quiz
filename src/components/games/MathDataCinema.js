@@ -28,11 +28,30 @@ const M4_DATA_CINEMA_MODULE = {
   ]
 };
 
-export default function MathDataCinema({ onComplete, onHome }) {
+export default function MathDataCinema({ words, numQuestions, isAllQuestions = false, onComplete, onHome }) {
+  const moduleToPlay = React.useMemo(() => {
+    let remaining = isAllQuestions ? Infinity : words?.length || numQuestions || 5;
+    const levels = M4_DATA_CINEMA_MODULE.levels.map(level => {
+      if (level.questions) {
+        const count = isAllQuestions ? level.questions.length : Math.min(remaining, level.questions.length);
+        remaining -= count;
+        return { ...level, questions: level.questions.slice(0, count) };
+      }
+      if (level.pairs) {
+        const count = isAllQuestions ? level.pairs.length : Math.min(remaining, level.pairs.length);
+        remaining -= count;
+        return { ...level, pairs: level.pairs.slice(0, count) };
+      }
+      return level;
+    }).filter(level => (level.questions && level.questions.length) || (level.pairs && level.pairs.length));
+
+    return { ...M4_DATA_CINEMA_MODULE, levels };
+  }, [words, numQuestions, isAllQuestions]);
+
   const [levelIdx, setLevelIdx] = useState(0);
   const [score, setScore] = useState(0);
 
-  const level = M4_DATA_CINEMA_MODULE.levels[levelIdx];
+  const level = moduleToPlay.levels[levelIdx];
   
   // L1 State
   const [l1QuestionIdx, setL1QuestionIdx] = useState(0);
@@ -59,8 +78,10 @@ export default function MathDataCinema({ onComplete, onHome }) {
           if (l1QuestionIdx + 1 < level.questions.length) {
             setL1QuestionIdx(l1QuestionIdx + 1);
             setKeypadInput("");
-          } else {
-            setLevelIdx(1);
+          } else if (levelIdx + 1 < moduleToPlay.levels.length) {
+            setLevelIdx(levelIdx + 1);
+          } else if (onComplete) {
+            onComplete({ score: score + 50 });
           }
       }, 1500);
     } else {

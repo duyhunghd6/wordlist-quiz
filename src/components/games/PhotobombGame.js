@@ -29,7 +29,7 @@ const QUESTIONS = [
   }
 ];
 
-const PhotobombGame = ({ words, onAnswer, onComplete, onHome }) => {
+const PhotobombGame = ({ words, isAllQuestions = false, onAnswer, onComplete, onHome }) => {
   const [questions, setQuestions] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState({ background: null, interruption: null });
@@ -40,17 +40,15 @@ const PhotobombGame = ({ words, onAnswer, onComplete, onHome }) => {
   const [wrongWords, setWrongWords] = useState([]);
 
   useEffect(() => {
-    // Generate questions
-    const numQuestions = Math.min(words.length, 4) || 3;
+    const numQuestions = isAllQuestions ? QUESTIONS.length : Math.min(words.length || 3, QUESTIONS.length);
     const shuffled = [...QUESTIONS].sort(() => 0.5 - Math.random()).slice(0, numQuestions);
     setQuestions(shuffled.map((q, i) => ({
       ...q,
       targetWord: words[i]?.word || `q${i}`,
-      // shuffle options
       options: [...q.options].sort(() => 0.5 - Math.random())
     })));
     setStartTime(Date.now());
-  }, [words]);
+  }, [words, isAllQuestions]);
 
   const handleSelectOption = (option) => {
     if (isCorrect !== null) return; // Prevent clicks while animating

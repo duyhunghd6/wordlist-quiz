@@ -17,7 +17,7 @@ const DIFFICULTY_META = {
   hard: { label: 'Hard', color: '#ef4444', bg: '#fee2e2', emoji: '🧠' }
 };
 
-const ScienceTrueFalseGame = ({ words, selectedUnits, onAnswer, onComplete, onHome, gameId }) => {
+const ScienceTrueFalseGame = ({ words, selectedUnits, isAllQuestions = false, onAnswer, onComplete, onHome, gameId }) => {
   const [allStatements, setAllStatements] = useState([]);
   const [statements, setStatements] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -71,17 +71,15 @@ const ScienceTrueFalseGame = ({ words, selectedUnits, onAnswer, onComplete, onHo
       filtered = allStatements.filter(s => s.difficulty === diff);
     }
 
-    // Shuffle statements
     const shuffledQs = filtered.sort(() => Math.random() - 0.5);
-    // Take up to words.length or default to 10
-    const count = Math.min(words?.length || 10, shuffledQs.length);
-    
+    const count = isAllQuestions ? shuffledQs.length : Math.min(words?.length || 10, shuffledQs.length);
+
     setStatements(shuffledQs.slice(0, count));
     setCurrentIndex(0);
     setCorrectCount(0);
     setWrongWords([]);
     setStartTime(Date.now());
-  }, [allStatements, words]);
+  }, [allStatements, words, isAllQuestions]);
 
   const handleSelect = (answerTrueOrFalse) => {
     if (selectedAnswer !== null) return;
@@ -190,7 +188,7 @@ const ScienceTrueFalseGame = ({ words, selectedUnits, onAnswer, onComplete, onHo
               { key: 'hard', emoji: '🧠', title: 'Hard', desc: 'Tricky logic', count: allStatements.filter(q => q.difficulty === 'hard').length },
               { key: 'mixed', emoji: '🎲', title: 'Mixed', desc: 'All levels!', count: allStatements.length }
             ].map(d => {
-              const numToPlay = Math.min(words?.length || 10, d.count);
+              const numToPlay = isAllQuestions ? d.count : Math.min(words?.length || 10, d.count);
               return (
               <button
                 key={d.key}

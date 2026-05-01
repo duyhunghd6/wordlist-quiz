@@ -4,8 +4,12 @@ import './EslReviewGames.css';
 
 const shuffle = (items) => [...items].sort(() => Math.random() - 0.5);
 
-const EslMatchingGame = ({ eslReviewQuestions, onAnswer, onComplete, onHome }) => {
-  const questions = useMemo(() => shuffle(eslReviewQuestions?.banks?.matching || []).slice(0, 10), [eslReviewQuestions]);
+const EslMatchingGame = ({ words, numQuestions, isAllQuestions = false, eslReviewQuestions, onAnswer, onComplete, onHome }) => {
+  const questions = useMemo(() => {
+    const bank = eslReviewQuestions?.banks?.matching || [];
+    const count = isAllQuestions ? bank.length : Math.min(words?.length || numQuestions || 10, bank.length);
+    return shuffle(bank).slice(0, count);
+  }, [eslReviewQuestions, words, numQuestions, isAllQuestions]);
   const answers = useMemo(() => shuffle(questions.map((q) => ({ id: q.id, text: q.correctAnswer }))), [questions]);
   const [activeTermId, setActiveTermId] = useState(null);
   const [matchedIds, setMatchedIds] = useState([]);

@@ -35,7 +35,7 @@ const tokenize = (sentence, signalWord) => {
   return tokens;
 };
 
-const TenseSignalGame = ({ words, onAnswer, onComplete, onHome }) => {
+const TenseSignalGame = ({ words, isAllQuestions = false, onAnswer, onComplete, onHome }) => {
   const [phase, setPhase] = useState('worldSelect');
   const [selectedWorld, setSelectedWorld] = useState(null);
   const [questions, setQuestions] = useState([]);
@@ -62,14 +62,14 @@ const TenseSignalGame = ({ words, onAnswer, onComplete, onHome }) => {
   const startWorld = useCallback((world) => {
     let qs;
     if (world.id === 'mix_all') {
-      const allQs = [];
-      TENSE_SIGNAL_WORLDS.forEach(w => {
-        const pick = shuffle(w.questions)[0];
-        allQs.push({ sentence: pick.sentence, signalWord: pick.signalWord, category: w.category, tenseName: w.name });
-      });
-      qs = shuffle(allQs);
+      const allQs = TENSE_SIGNAL_WORLDS.flatMap(w =>
+        w.questions.map(q => ({ sentence: q.sentence, signalWord: q.signalWord, category: w.category, tenseName: w.name }))
+      );
+      const count = isAllQuestions ? allQs.length : Math.min(words?.length || TENSE_SIGNAL_WORLDS.length, allQs.length);
+      qs = shuffle(allQs).slice(0, count);
     } else {
-      const picked = shuffle(world.questions).slice(0, 8);
+      const count = isAllQuestions ? world.questions.length : Math.min(words?.length || 8, 8, world.questions.length);
+      const picked = shuffle(world.questions).slice(0, count);
       qs = picked.map(q => ({ sentence: q.sentence, signalWord: q.signalWord, category: world.category, tenseName: world.name }));
     }
     setQuestions(qs);
@@ -81,7 +81,7 @@ const TenseSignalGame = ({ words, onAnswer, onComplete, onHome }) => {
     setIsCorrect(null);
     setQuestionStartTime(Date.now());
     setPhase('playing');
-  }, []);
+  }, [isAllQuestions, words]);
 
   // ─── Handle token tap ───
   const handleTokenTap = useCallback((tokenIdx) => {
