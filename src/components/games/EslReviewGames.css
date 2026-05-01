@@ -350,27 +350,27 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 26px;
-  height: 26px;
+  width: 22px;
+  height: 22px;
   color: #3b82f6;
-  font-size: 0.75rem;
+  font-size: 0.65rem;
   cursor: pointer;
   flex-shrink: 0;
   user-select: none;
 }
 .srm-picker-arrow:active { opacity: 0.5; }
 
-/* Scroll viewport — shows one option at a time, auto-width */
+/* Scroll viewport — 30px to fit in 36px container */
 .srm-picker-vp {
   display: inline-block;
-  height: 40px;
+  height: 30px;
   overflow-y: auto;
   overflow-x: hidden;
   scroll-snap-type: y mandatory;
   scrollbar-width: none;
   -ms-overflow-style: none;
   flex: 1;
-  min-width: 100px;
+  min-width: 60px;
 }
 .srm-picker-vp::-webkit-scrollbar { display: none; }
 
@@ -379,20 +379,20 @@
   flex-direction: column;
 }
 
-/* Each option — auto height, full text visible */
+/* Each option — 30px height to match viewport */
 .srm-picker-opt {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-size: 0.9rem;
+  height: 30px;
+  font-size: 0.85rem;
   font-weight: 900;
   color: #64748b;
   scroll-snap-align: start;
-  padding: 4px 8px;
+  padding: 0 6px;
   cursor: pointer;
   flex-shrink: 0;
-  line-height: 1.3;
 }
 .srm-picker-sel {
   color: #1d4ed8;
@@ -405,12 +405,12 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 32px;
-  height: 32px;
+  width: 26px;
+  height: 26px;
   background: #3b82f6;
   color: white;
-  border-radius: 8px;
-  font-size: 0.9rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
   font-weight: 900;
   cursor: pointer;
   flex-shrink: 0;

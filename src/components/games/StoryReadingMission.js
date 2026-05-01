@@ -22,7 +22,7 @@ const InlinePickerBlank = ({ question, picked, onPick }) => {
   const [active, setActive] = useState(false);
   const options = answerOptions(question);
   const viewportRef = useRef(null);
-  const itemH = 40;
+  const itemH = 30;
 
   // Calculate a stable width based on the longest option text
   // ~11px per char + 130px for arrows + confirm button + padding
@@ -58,8 +58,9 @@ const InlinePickerBlank = ({ question, picked, onPick }) => {
     return () => { vp.removeEventListener('scroll', onScroll); clearTimeout(timer); };
   }, [active, options.length]);
 
-  // Stable container style — same width for all states
-  const containerStyle = { display: 'inline-block', width: stableWidth, textAlign: 'center', verticalAlign: 'middle' };
+  // Stable container style — same width AND height for all states
+  const stableHeight = 36;
+  const containerStyle = { display: 'inline-block', width: stableWidth, height: stableHeight, lineHeight: `${stableHeight}px`, textAlign: 'center', verticalAlign: 'middle', overflow: 'hidden' };
 
   // Already answered
   if (picked) {
