@@ -14,31 +14,20 @@ const answerOptions = (question) =>
 
 /**
  * A single inline blank that lives inside the flowing text.
- * When active, it opens a scroll-picker popup (like Angry Tenses).
- * When answered, it shows the chosen word highlighted green/red.
- * When not yet active, it shows a simple underline blank.
+ * ALL blanks are interactive at all times — the kid taps whichever one they want.
+ * Tapping opens a scroll-picker popup right below the blank.
  */
-const InlineBlank = ({ question, isActive, picked, onConfirm }) => {
+const InlineBlank = ({ question, picked, onConfirm, openBlankId, setOpenBlankId }) => {
   const [activeOption, setActiveOption] = useState(0);
-  const [pickerOpen, setPickerOpen] = useState(false);
   const viewportRef = useRef(null);
   const blankRef = useRef(null);
 
   const options = answerOptions(question);
+  const isOpen = openBlankId === question.id && !picked;
 
-  // Open picker when this blank becomes active
+  // Keyboard: arrows + enter (only when THIS blank's picker is open)
   useEffect(() => {
-    if (isActive && !picked) {
-      setPickerOpen(true);
-      setActiveOption(0);
-    } else {
-      setPickerOpen(false);
-    }
-  }, [isActive, picked]);
-
-  // Keyboard: arrows + enter
-  useEffect(() => {
-    if (!pickerOpen) return;
+    if (!isOpen) return;
     const handler = (e) => {
       if (e.key === 'ArrowUp') {
         e.preventDefault();
@@ -49,23 +38,26 @@ const InlineBlank = ({ question, isActive, picked, onConfirm }) => {
       } else if (e.key === 'Enter') {
         e.preventDefault();
         onConfirm(activeOption);
+      } else if (e.key === 'Escape') {
+        e.preventDefault();
+        setOpenBlankId(null);
       }
     };
     window.addEventListener('keydown', handler);
     return () => window.removeEventListener('keydown', handler);
-  }, [pickerOpen, activeOption, options, onConfirm]);
+  }, [isOpen, activeOption, options, onConfirm, setOpenBlankId]);
 
   // Scroll viewport to active item
   useEffect(() => {
-    if (pickerOpen && viewportRef.current && !viewportRef.current._userScrolling) {
+    if (isOpen && viewportRef.current && !viewportRef.current._userScrolling) {
       const itemH = 48;
       viewportRef.current.scrollTo({ top: activeOption * itemH, behavior: 'smooth' });
     }
-  }, [pickerOpen, activeOption]);
+  }, [isOpen, activeOption]);
 
-  // Detect which item is centered when user scrolls
+  // Detect which item is centered when user scrolls the picker
   useEffect(() => {
-    if (!pickerOpen) return;
+    if (!isOpen) return;
     const vp = viewportRef.current;
     if (!vp) return;
     let scrollTimer = null;
@@ -86,54 +78,38 @@ const InlineBlank = ({ question, isActive, picked, onConfirm }) => {
       vp.removeEventListener('scroll', handleScroll);
       clearTimeout(scrollTimer);
     };
-  }, [pickerOpen, options]);
+  }, [isOpen, options]);
 
-  // Scroll the blank into view when it becomes active
-  useEffect(() => {
-    if (isActive && !picked && blankRef.current) {
-      blankRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    }
-  }, [isActive, picked]);
-
-  // Already answered
+  // Already answered — show the chosen word inline
   if (picked) {
     return (
-      <span
-        className="srm-answered-blank"
-        style={{
-          background: picked.correct ? '#dcfce7' : '#fee2e2',
-          color: picked.correct ? '#166534' : '#991b1b',
-          padding: '2px 10px',
-          borderRadius: '8px',
-          fontWeight: 900,
-          border: `2px solid ${picked.correct ? '#86efac' : '#fca5a5'}`,
-        }}
-      >
+      <span className={`srm-answered-blank ${picked.correct ? 'srm-correct' : 'srm-wrong'}`}>
         {options[picked.selectedIndex]}
       </span>
     );
   }
 
-  // Not yet active — just a plain blank
-  if (!isActive) {
-    return (
-      <span className="srm-blank-placeholder" ref={blankRef}>
-        {'_______'}
-      </span>
-    );
-  }
+  // Unanswered blank — always tappable
+  const handleTap = () => {
+    if (isOpen) {
+      setOpenBlankId(null);
+    } else {
+      setActiveOption(0);
+      setOpenBlankId(question.id);
+      // Scroll into view after a tick so picker is visible
+      setTimeout(() => {
+        blankRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }, 50);
+    }
+  };
 
-  // Active — show the picker
   return (
-    <span className="srm-active-blank-wrapper" ref={blankRef} style={{ position: 'relative', display: 'inline-block' }}>
-      <span
-        className="srm-blank-active"
-        onClick={() => setPickerOpen(!pickerOpen)}
-      >
-        {options[activeOption]}
+    <span className="srm-active-blank-wrapper" ref={blankRef}>
+      <span className={`srm-blank-tap ${isOpen ? 'srm-blank-open' : ''}`} onClick={handleTap}>
+        {isOpen ? options[activeOption] : '______'}
       </span>
 
-      {pickerOpen && (
+      {isOpen && (
         <div className="srm-picker-popup">
           <div className="srm-picker-popup-arrow-up">▲</div>
           <div className="srm-picker-popup-viewport" ref={viewportRef}>
@@ -164,55 +140,49 @@ const InlineBlank = ({ question, isActive, picked, onConfirm }) => {
 
 /**
  * Renders a question prompt as inline flowing text with an interactive blank.
- * The prompt text like "Grunnings is a company _____ makes drills."
- * becomes flowing text with the _____ replaced by <InlineBlank />.
- *
- * For true_false questions (no _____), the entire prompt is shown
- * with a blank at the end for True/False selection.
+ * Blends seamlessly into the story text — no cards, no borders, no visual break.
  */
-const InlineQuestionText = ({ question, isActive, picked, onConfirm }) => {
+const InlineQuestionText = ({ question, picked, onConfirm, openBlankId, setOpenBlankId }) => {
+  const options = answerOptions(question);
   const parts = question.prompt.split('_____');
 
-  // If there's no blank in the prompt (e.g. true/false), put blank at end
+  const blankElement = (
+    <InlineBlank
+      question={question}
+      picked={picked}
+      onConfirm={onConfirm}
+      openBlankId={openBlankId}
+      setOpenBlankId={setOpenBlankId}
+    />
+  );
+
+  const feedbackElement = picked && (
+    <span className={`srm-inline-feedback ${picked.correct ? 'srm-fb-correct' : 'srm-fb-wrong'}`}>
+      {picked.correct ? ' ✓' : ` ✗ ${question.explanation}`}
+    </span>
+  );
+
+  // true_false or no blank in prompt — put blank at end
   if (parts.length === 1) {
     return (
-      <span className="srm-inline-question-text">
-        <span>{question.prompt} </span>
-        <InlineBlank
-          question={question}
-          isActive={isActive}
-          picked={picked}
-          onConfirm={onConfirm}
-        />
-        {picked && (
-          <span className="srm-inline-feedback" style={{ color: picked.correct ? '#166534' : '#991b1b', fontSize: '0.85em' }}>
-            {picked.correct ? ' ✓' : ` ✗ ${question.explanation}`}
-          </span>
-        )}
+      <span className="srm-inline-q">
+        {question.prompt}{' '}
+        {blankElement}
+        {feedbackElement}
       </span>
     );
   }
 
+  // Fill-in-the-blank — replace _____ with interactive blank
   return (
-    <span className="srm-inline-question-text">
+    <span className="srm-inline-q">
       {parts.map((part, i) => (
         <React.Fragment key={i}>
-          <span>{part}</span>
-          {i < parts.length - 1 && (
-            <InlineBlank
-              question={question}
-              isActive={isActive}
-              picked={picked}
-              onConfirm={onConfirm}
-            />
-          )}
+          {part}
+          {i < parts.length - 1 && blankElement}
         </React.Fragment>
       ))}
-      {picked && (
-        <span className="srm-inline-feedback" style={{ color: picked.correct ? '#166534' : '#991b1b', fontSize: '0.85em' }}>
-          {picked.correct ? ' ✓' : ` ✗ ${question.explanation}`}
-        </span>
-      )}
+      {feedbackElement}
     </span>
   );
 };
@@ -228,10 +198,11 @@ const StoryReadingMission = ({ onAnswer, onComplete, onHome }) => {
   const [totalAnswered, setTotalAnswered] = useState(0);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  // Which blank's picker is currently open (only one at a time)
+  const [openBlankId, setOpenBlankId] = useState(null);
 
   useEffect(() => {
     let cancelled = false;
-
     async function loadInitialStory() {
       try {
         setLoading(true);
@@ -246,14 +217,12 @@ const StoryReadingMission = ({ onAnswer, onComplete, onHome }) => {
         if (!cancelled) setLoading(false);
       }
     }
-
     loadInitialStory();
     return () => { cancelled = true; };
   }, []);
 
   useEffect(() => {
     let cancelled = false;
-
     async function loadChapter() {
       if (!story || !storyBasePath) return;
       try {
@@ -263,13 +232,13 @@ const StoryReadingMission = ({ onAnswer, onComplete, onHome }) => {
         setChapter(loadedChapter);
         setPageIndex(0);
         setAnswers({});
+        setOpenBlankId(null);
       } catch (err) {
         if (!cancelled) setError(err.message);
       } finally {
         if (!cancelled) setLoading(false);
       }
     }
-
     loadChapter();
     return () => { cancelled = true; };
   }, [story, storyBasePath, chapterIndex]);
@@ -277,7 +246,6 @@ const StoryReadingMission = ({ onAnswer, onComplete, onHome }) => {
   const page = chapter?.pages?.[pageIndex];
   const pageQuestions = useMemo(() => page?.inlineQuestions || [], [page]);
   const pageAnswered = pageQuestions.length > 0 && pageQuestions.every((q) => answers[q.id]);
-  const activeQuestionIndex = pageQuestions.findIndex((q) => !answers[q.id]);
   const totalQuestions = useMemo(
     () => story?.chapters?.reduce((sum, item) => sum + (item.questionCount || 0), 0) || totalAnswered,
     [story, totalAnswered]
@@ -290,9 +258,7 @@ const StoryReadingMission = ({ onAnswer, onComplete, onHome }) => {
       const correct = isCorrectChoice(question, index);
       const selectedLabel =
         question.type === 'true_false'
-          ? index === 0
-            ? 'True'
-            : 'False'
+          ? index === 0 ? 'True' : 'False'
           : question.options[index];
 
       setAnswers((current) => ({
@@ -301,6 +267,7 @@ const StoryReadingMission = ({ onAnswer, onComplete, onHome }) => {
       }));
       setTotalAnswered((current) => current + 1);
       setCorrectCount((current) => current + (correct ? 1 : 0));
+      setOpenBlankId(null); // Close picker after answering
 
       onAnswer(
         question.id,
@@ -330,16 +297,15 @@ const StoryReadingMission = ({ onAnswer, onComplete, onHome }) => {
     if (chapter && pageIndex < chapter.pages.length - 1) {
       setPageIndex((current) => current + 1);
       setAnswers({});
+      setOpenBlankId(null);
       window.scrollTo({ top: 0, behavior: 'smooth' });
       return;
     }
-
     if (story && chapterIndex < story.chapters.length - 1) {
       setChapterIndex((current) => current + 1);
       window.scrollTo({ top: 0, behavior: 'smooth' });
       return;
     }
-
     finishMission();
   };
 
@@ -368,23 +334,15 @@ const StoryReadingMission = ({ onAnswer, onComplete, onHome }) => {
   const chapterProgress = story ? `Chapter ${chapterIndex + 1} of ${story.chapters.length}` : '';
   const pageProgress = `Page ${pageIndex + 1} of ${chapter.pages.length}`;
 
-  // Build the mixed content: story paragraphs with question prompts distributed inline
+  // Distribute questions evenly among paragraphs
   const paragraphs = page.sourceText.split(/\n\s*\n/);
   const numQs = pageQuestions.length;
   const numParas = paragraphs.length;
-
-  // Assign each question to appear after a paragraph
-  // Evenly distribute across the paragraphs
   const questionsByParagraph = Array.from({ length: numParas }, () => []);
   if (numQs > 0 && numParas > 0) {
     pageQuestions.forEach((q, i) => {
-      // Spread evenly: question i goes after paragraph at proportional position
-      const pos = Math.min(
-        Math.floor(((i + 1) / numQs) * numParas) - 1,
-        numParas - 1
-      );
-      const safePos = Math.max(0, pos);
-      questionsByParagraph[safePos].push(q);
+      const pos = Math.min(Math.floor(((i + 1) / numQs) * numParas) - 1, numParas - 1);
+      questionsByParagraph[Math.max(0, pos)].push(q);
     });
   }
 
@@ -394,7 +352,7 @@ const StoryReadingMission = ({ onAnswer, onComplete, onHome }) => {
         <button className="esl-review-back" onClick={onHome}>←</button>
         <div className="esl-review-title">
           <h1>Story Reading Mission</h1>
-          <p>Read the story. Fill in the blanks to unlock the next page.</p>
+          <p>Read the story. Tap any blank to answer!</p>
         </div>
       </header>
 
@@ -407,33 +365,38 @@ const StoryReadingMission = ({ onAnswer, onComplete, onHome }) => {
         <h2 className="story-reading-chapter-title">{chapter.title}</h2>
         <p className="story-reading-date">{chapter.dateLabel}</p>
 
-        {/* Story text with inline questions */}
+        {/* Story text flows continuously — questions blend in as sentences */}
         <div className="story-reading-page-text">
           {paragraphs.map((para, pIdx) => (
             <React.Fragment key={`p${pIdx}`}>
-              <p>{para}</p>
-              {questionsByParagraph[pIdx].map((question) => {
-                const qIdx = pageQuestions.indexOf(question);
-                const picked = answers[question.id];
-                const isActive = qIdx === activeQuestionIndex;
-                return (
-                  <p key={question.id} className="srm-question-line">
-                    <InlineQuestionText
-                      question={question}
-                      isActive={isActive}
-                      picked={picked}
-                      onConfirm={(optIndex) => handlePick(question, optIndex)}
-                    />
-                  </p>
-                );
-              })}
+              <p>
+                {para}
+                {/* Questions for this paragraph appear as continuing sentences */}
+                {questionsByParagraph[pIdx].map((question) => {
+                  const picked = answers[question.id];
+                  return (
+                    <React.Fragment key={question.id}>
+                      {' '}
+                      <InlineQuestionText
+                        question={question}
+                        picked={picked}
+                        onConfirm={(optIndex) => handlePick(question, optIndex)}
+                        openBlankId={openBlankId}
+                        setOpenBlankId={setOpenBlankId}
+                      />
+                    </React.Fragment>
+                  );
+                })}
+              </p>
             </React.Fragment>
           ))}
         </div>
 
         <div className="story-reading-nav">
           <div className="story-reading-lock-note">
-            {pageAnswered ? '✅ Next page unlocked!' : `Answer all blanks to unlock the next page (${Object.keys(answers).length}/${pageQuestions.length})`}
+            {pageAnswered
+              ? '✅ Next page unlocked!'
+              : `Tap the blanks to answer (${Object.keys(answers).length}/${pageQuestions.length})`}
           </div>
           <button
             className={`esl-review-action story-reading-next ${pageAnswered ? '' : 'locked'}`}

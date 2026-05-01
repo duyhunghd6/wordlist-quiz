@@ -289,57 +289,81 @@
 }
 
 /* ================================================ */
-/* Story Reading Mission — Inline Blanks & Picker   */
+/* Story Reading Mission — Seamless Inline Blanks   */
 /* ================================================ */
 
-/* Question line flows as a normal paragraph within the story */
-.srm-question-line {
-  background: #fef3c7;
-  border-left: 4px solid #f59e0b;
-  padding: 6px 12px;
-  border-radius: 0 12px 12px 0;
-  margin: 8px 0;
-  line-height: 2;
+/* Question text blends into story — no visual break */
+.srm-inline-q {
+  /* Inherits story text styling — no separate background or border */
 }
 
-.srm-inline-question-text {
-  line-height: 2;
+/* Wrapper for the blank and its popup */
+.srm-active-blank-wrapper {
+  position: relative;
+  display: inline;
 }
 
-/* Blank placeholder (not yet active) */
-.srm-blank-placeholder {
+/* Tappable blank — looks like a natural gap in the text */
+.srm-blank-tap {
   display: inline-block;
-  min-width: 80px;
-  border-bottom: 3px solid #94a3b8;
-  color: #94a3b8;
-  text-align: center;
-  margin: 0 4px;
-  font-weight: 800;
-  vertical-align: baseline;
-}
-
-/* Active blank — shows the currently selected option as a button */
-.srm-blank-active {
-  display: inline-block;
-  min-width: 80px;
-  padding: 2px 14px;
-  background: #dbeafe;
-  color: #1d4ed8;
-  border: 3px solid #3b82f6;
-  border-radius: 10px;
+  min-width: 70px;
+  padding: 1px 8px;
+  margin: 0 2px;
+  border-bottom: 3px dashed #3b82f6;
+  color: #3b82f6;
   font-weight: 900;
   cursor: pointer;
   text-align: center;
-  animation: srm-pulse 1.5s ease-in-out infinite;
   vertical-align: baseline;
+  transition: all 0.2s;
+  border-radius: 4px;
+}
+
+.srm-blank-tap:hover {
+  background: #eff6ff;
+}
+
+/* When picker is open, blank gets a solid look */
+.srm-blank-tap.srm-blank-open {
+  background: #dbeafe;
+  border-bottom: 3px solid #3b82f6;
+  animation: srm-pulse 1.5s ease-in-out infinite;
 }
 
 @keyframes srm-pulse {
   0%, 100% { box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.4); }
-  50% { box-shadow: 0 0 0 6px rgba(59, 130, 246, 0); }
+  50% { box-shadow: 0 0 0 5px rgba(59, 130, 246, 0); }
 }
 
-/* Popup picker that appears below the active blank */
+/* Answered blank — inline highlighted word */
+.srm-answered-blank {
+  display: inline;
+  padding: 1px 8px;
+  border-radius: 6px;
+  font-weight: 900;
+  margin: 0 2px;
+}
+.srm-answered-blank.srm-correct {
+  background: #dcfce7;
+  color: #166534;
+  border-bottom: 3px solid #86efac;
+}
+.srm-answered-blank.srm-wrong {
+  background: #fee2e2;
+  color: #991b1b;
+  border-bottom: 3px solid #fca5a5;
+}
+
+/* Inline feedback text after the blank */
+.srm-inline-feedback {
+  font-weight: 800;
+  font-size: 0.85em;
+  margin-left: 4px;
+}
+.srm-fb-correct { color: #166534; }
+.srm-fb-wrong { color: #991b1b; }
+
+/* ---- Popup Picker (appears below tapped blank) ---- */
 .srm-picker-popup {
   position: absolute;
   top: calc(100% + 8px);
@@ -424,10 +448,4 @@
 .srm-picker-confirm-btn:active {
   transform: translateY(2px);
   box-shadow: 0 2px 0 #2563eb;
-}
-
-/* Inline feedback after answering */
-.srm-inline-feedback {
-  margin-left: 6px;
-  font-weight: 800;
 }
