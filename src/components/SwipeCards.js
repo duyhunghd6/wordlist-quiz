@@ -122,16 +122,15 @@ const SwipeCards = ({ words, onAnswer, onComplete, onHome, gameId = 'swipe' }) =
   const swipeIndicator = dragOffset.x > 50 ? 'right' : dragOffset.x < -50 ? 'left' : null;
 
   return (
-    <div className="swipe-board" style={{ width: '100%', height: '100%', flex: 1 }}>
-      <div style={{ maxWidth: '600px', width: '100%', display: 'flex', flexDirection: 'column', gap: 'var(--space-lg)', flex: 1 }}>
+    <div className="swipe-board" style={{ width: '100%', height: '100dvh', maxHeight: '100dvh', overflow: 'hidden', boxSizing: 'border-box' }}>
+      <div style={{ maxWidth: '600px', width: '100%', display: 'flex', flexDirection: 'column', gap: 'var(--space-sm)', flex: 1, minHeight: 0 }}>
         {/* HUD Header */}
-        <div className="game-hud" style={{ width: '100%', maxWidth: '100%' }}>
+        <div className="game-hud" style={{ width: '100%', maxWidth: '100%', flexShrink: 0 }}>
           <button className="hud-btn" onClick={onHome} aria-label="Go home">
             <Home size={20} />
           </button>
           
           <div style={{ flex: 1, margin: '0 var(--space-md)' }}>
-            {/* Progress display instead of timer */}
             <span className="badge badge-neutral" style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
               Card {currentIndex + 1} of {cards.length}
             </span>
@@ -144,20 +143,20 @@ const SwipeCards = ({ words, onAnswer, onComplete, onHome, gameId = 'swipe' }) =
         </div>
 
       {/* Swipe Instructions */}
-      <div style={{ display: 'flex', justifyContent: 'space-between', padding: '0 var(--space-md)' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--color-danger)', fontWeight: 700 }}>
-          <ThumbsDown size={20} /> Wrong
+      <div style={{ display: 'flex', justifyContent: 'space-between', padding: '0 var(--space-md)', flexShrink: 0 }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '6px', color: 'var(--color-danger)', fontWeight: 700, fontSize: '0.9rem' }}>
+          <ThumbsDown size={16} /> Wrong
         </div>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--color-success)', fontWeight: 700 }}>
-          Correct <ThumbsUp size={20} />
+        <div style={{ display: 'flex', alignItems: 'center', gap: '6px', color: 'var(--color-success)', fontWeight: 700, fontSize: '0.9rem' }}>
+          Correct <ThumbsUp size={16} />
         </div>
       </div>
 
-      {/* Card Area */}
-      <div className="swipe-card-container" style={{ margin: 'auto' }}>
+      {/* Card Area — fills remaining space */}
+      <div className="swipe-card-container" style={{ margin: '0 auto', flex: 1, minHeight: 0 }}>
         {/* Next Card */}
         {currentIndex + 1 < cards.length && (
-          <div className="swipe-card" style={{ opacity: 0.6, transform: 'scale(0.95) translateY(20px)', zIndex: 1 }}>
+          <div className="swipe-card" style={{ opacity: 0.6, transform: 'scale(0.95) translateY(10px)', zIndex: 1 }}>
             <div className="card-content">
               <h2>{cards[currentIndex + 1].word}</h2>
             </div>
@@ -187,7 +186,7 @@ const SwipeCards = ({ words, onAnswer, onComplete, onHome, gameId = 'swipe' }) =
           </div>
 
           <div className="card-content" style={{ width: '100%', wordBreak: 'break-word' }}>
-            <h2 style={{ color: 'var(--color-info)', marginBottom: currentCard?.sourceWord?.image ? 'var(--space-xs)' : 'var(--space-md)' }}>
+            <h2 style={{ color: 'var(--color-info)', marginBottom: currentCard?.sourceWord?.image ? '2px' : 'var(--space-xs)' }}>
               {currentCard?.word}
             </h2>
             {currentCard?.sourceWord?.image && (
@@ -195,13 +194,13 @@ const SwipeCards = ({ words, onAnswer, onComplete, onHome, gameId = 'swipe' }) =
                 <img src={currentCard.sourceWord.image} alt={currentCard.word} className="vocab-image" />
               </div>
             )}
-            <hr style={{ width: '60%', margin: 'var(--space-md) auto', borderColor: 'var(--color-border-default)', borderStyle: 'solid', borderWidth: '2px 0 0 0', opacity: 0.5 }} />
-            <p style={{ fontWeight: 700, fontSize: '1.2rem', color: 'var(--color-text-primary)' }}>
+            <hr style={{ width: '50%', margin: 'var(--space-xs) auto', borderColor: 'var(--color-border-default)', borderStyle: 'solid', borderWidth: '1px 0 0 0', opacity: 0.4, flexShrink: 0 }} />
+            <p style={{ fontWeight: 700, fontSize: '1rem', color: 'var(--color-text-primary)' }}>
               {currentCard?.shownDefinition}
             </p>
           </div>
 
-          <div style={{ marginTop: 'auto', marginBottom: 'var(--space-lg)', fontSize: '0.9rem', color: 'var(--color-text-secondary)', fontWeight: 600 }}>
+          <div style={{ flexShrink: 0, padding: '4px 0 var(--space-sm)', fontSize: '0.8rem', color: 'var(--color-text-secondary)', fontWeight: 600 }}>
             Does this definition match?
           </div>
         </div>
@@ -209,20 +208,20 @@ const SwipeCards = ({ words, onAnswer, onComplete, onHome, gameId = 'swipe' }) =
 
       {/* Button Controls */}
       {!showFeedback && (
-        <div style={{ display: 'flex', justifyContent: 'space-evenly', padding: '0 40px', marginBottom: 'var(--space-xl)' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-evenly', padding: '0 40px', flexShrink: 0 }}>
           <button 
-            style={{ width: '80px', height: '80px', borderRadius: '50%', backgroundColor: 'white', border: 'none', boxShadow: 'var(--shadow-md)', color: 'var(--color-danger)', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', transition: 'all 0.2s' }}
+            style={{ width: '56px', height: '56px', borderRadius: '50%', backgroundColor: 'white', border: 'none', boxShadow: 'var(--shadow-md)', color: 'var(--color-danger)', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', transition: 'all 0.2s' }}
             onClick={() => handleSwipe('left')}
             aria-label="Wrong match"
           >
-            <ThumbsDown size={40} />
+            <ThumbsDown size={28} />
           </button>
           <button 
-            style={{ width: '80px', height: '80px', borderRadius: '50%', backgroundColor: 'white', border: 'none', boxShadow: 'var(--shadow-md)', color: 'var(--color-success)', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', transition: 'all 0.2s' }}
+            style={{ width: '56px', height: '56px', borderRadius: '50%', backgroundColor: 'white', border: 'none', boxShadow: 'var(--shadow-md)', color: 'var(--color-success)', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', transition: 'all 0.2s' }}
             onClick={() => handleSwipe('right')}
             aria-label="Correct match"
           >
-            <ThumbsUp size={40} />
+            <ThumbsUp size={28} />
           </button>
         </div>
       )}
@@ -230,35 +229,37 @@ const SwipeCards = ({ words, onAnswer, onComplete, onHome, gameId = 'swipe' }) =
       {/* Feedback Overlay */}
       {showFeedback && lastAnswer && (
         <div style={{ 
-          marginTop: 'var(--space-md)', 
-          padding: 'var(--space-md)', 
+          padding: 'var(--space-sm)', 
           borderRadius: 'var(--radius-lg)',
           background: lastAnswer.isCorrect ? '#F0FDF4' : '#FEF2F2',
           border: `3px solid ${lastAnswer.isCorrect ? 'var(--color-success)' : 'var(--color-danger)'}`,
-          textAlign: 'left'
+          textAlign: 'left',
+          flexShrink: 0,
+          overflow: 'auto',
+          maxHeight: '30vh'
         }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: lastAnswer.isCorrect ? 'var(--color-success-hover)' : 'var(--color-danger-hover)' }}>
-            {lastAnswer.isCorrect ? <CheckCircle size={24} /> : <XCircle size={24} />}
-            <span style={{ fontSize: '1.2rem', fontWeight: 700 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '6px', color: lastAnswer.isCorrect ? 'var(--color-success-hover)' : 'var(--color-danger-hover)' }}>
+            {lastAnswer.isCorrect ? <CheckCircle size={20} /> : <XCircle size={20} />}
+            <span style={{ fontSize: '1rem', fontWeight: 700 }}>
               {lastAnswer.isCorrect ? 'Correct!' : `The pair was ${lastAnswer.card.correctAnswer ? 'a MATCH' : 'NOT a match'}`}
             </span>
           </div>
           
           {!lastAnswer.isCorrect && (
-            <div style={{ marginTop: 'var(--space-sm)' }}>
-              <div style={{ marginTop: 'var(--space-md)', padding: 'var(--space-sm)', background: 'white', borderRadius: 'var(--radius-md)' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '6px', color: 'var(--color-info)', marginBottom: '4px', fontWeight: 700 }}>
-                  <BookOpen size={16} /> Learn: {lastAnswer.card.word}
+            <div style={{ marginTop: '4px' }}>
+              <div style={{ padding: '4px var(--space-sm)', background: 'white', borderRadius: 'var(--radius-md)' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '4px', color: 'var(--color-info)', marginBottom: '2px', fontWeight: 700, fontSize: '0.85rem' }}>
+                  <BookOpen size={14} /> Learn: {lastAnswer.card.word}
                 </div>
-                <p style={{ margin: '0 0 4px', fontSize: '0.9rem' }}>
+                <p style={{ margin: '0 0 2px', fontSize: '0.85rem' }}>
                   <strong>Correct definition:</strong> {lastAnswer.card.sourceWord.definition || lastAnswer.card.sourceWord.vietnamese}
                 </p>
-                {lastAnswer.card.example && <p style={{ margin: '0 0 4px', fontSize: '0.9rem', fontStyle: 'italic' }}>"{lastAnswer.card.example}"</p>}
+                {lastAnswer.card.example && <p style={{ margin: '0', fontSize: '0.85rem', fontStyle: 'italic' }}>"{lastAnswer.card.example}"</p>}
               </div>
             </div>
           )}
-          <div style={{ marginTop: 'var(--space-sm)', textAlign: 'center', opacity: 0.6, fontSize: '0.9rem', fontWeight: 600 }}>
-            Loading next card <ChevronRight size={16} style={{ display: 'inline', verticalAlign: 'middle' }} />
+          <div style={{ marginTop: '4px', textAlign: 'center', opacity: 0.6, fontSize: '0.8rem', fontWeight: 600 }}>
+            Loading next card <ChevronRight size={14} style={{ display: 'inline', verticalAlign: 'middle' }} />
           </div>
         </div>
       )}

@@ -323,8 +323,7 @@
 
 /* Swipe Cards */
 .swipe-card-container {
-    width: 280px;
-    height: 380px;
+    width: 300px;
     perspective: 1000px;
     position: relative;
 }
@@ -336,6 +335,8 @@
     border-radius: var(--radius-xl);
     box-shadow: var(--shadow-bouncy);
     position: absolute;
+    top: 0;
+    left: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -354,21 +355,30 @@
 }
 .swipe-hint {
     position: absolute;
-    top: 20px;
-    padding: var(--space-xs) var(--space-md);
+    top: 12px;
+    padding: var(--space-xs) var(--space-sm);
     border: 3px solid;
     border-radius: var(--radius-md);
     font-weight: 800;
-    font-size: 1.25rem;
+    font-size: 1rem;
     text-transform: uppercase;
-    opacity: 0.5; /* Keeping visible for static design system showcase */
+    opacity: 0.5;
     transform: rotate(-15deg);
 }
-.swipe-hint.left { left: 20px; color: var(--color-danger); border-color: var(--color-danger); }
-.swipe-hint.right { right: 20px; color: var(--color-success); border-color: var(--color-success); transform: rotate(15deg); }
-.card-content { text-align: center; padding: var(--space-xl); }
-.card-content h2 { margin: 0 0 var(--space-md); font-size: 2rem; color: var(--color-text-primary); line-height: 1.2;}
-.card-content p { color: var(--color-text-secondary); font-size: 1.1rem; margin:0;}
+.swipe-hint.left { left: 12px; color: var(--color-danger); border-color: var(--color-danger); }
+.swipe-hint.right { right: 12px; color: var(--color-success); border-color: var(--color-success); transform: rotate(15deg); }
+.card-content { text-align: center; padding: var(--space-sm) var(--space-md); flex: 1; display: flex; flex-direction: column; justify-content: center; overflow: hidden; }
+.card-content h2 { margin: 0 0 var(--space-xs); font-size: 1.5rem; color: var(--color-text-primary); line-height: 1.2;}
+.card-content p { color: var(--color-text-secondary); font-size: 1rem; margin:0;}
+
+/* Scoped: smaller images inside swipe cards */
+.swipe-card .vocab-image-container {
+    max-height: 100px;
+    margin: var(--space-xs) 0;
+}
+.swipe-card .vocab-image {
+    max-height: 100px;
+}
 
 /* Vocab Image Support */
 .vocab-image-container {
