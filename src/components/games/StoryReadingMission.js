@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState, useCallback } from 'react';
+import React, { useEffect, useMemo, useState, useRef, useCallback } from 'react';
 import { loadStoryChapter, loadStoryIndex, loadStoryReadingManifest } from '../../utils/storyReadingLoader';
 import './EslReviewGames.css';
 
@@ -13,43 +13,36 @@ const answerOptions = (question) =>
   question.type === 'true_false' ? ['True', 'False'] : question.options || [];
 
 /**
- * Simple inline blank — just a tappable span within the text.
- * No popup. Tapping sets the active question for the bottom panel.
+ * Inline blank + expandable options that appear RIGHT below the sentence.
+ * The kid's eyes never leave the reading position.
+ * - Tap blank → options expand inline (pushing text down)
+ * - Tap an option → answer fills in, options collapse
+ * - Tapping story text does NOT collapse the options
  */
-const InlineBlank = ({ question, picked, isSelected, onSelect }) => {
+const InlineQuestionBlock = ({ question, picked, onPick, isExpanded, onExpand }) => {
   const options = answerOptions(question);
+  const blockRef = useRef(null);
+  const parts = question.prompt.split('_____');
 
-  if (picked) {
-    return (
-      <span className={`srm-answered-blank ${picked.correct ? 'srm-correct' : 'srm-wrong'}`}>
-        {options[picked.selectedIndex]}
-      </span>
-    );
-  }
+  // Scroll the block into comfortable view when expanded
+  useEffect(() => {
+    if (isExpanded && !picked && blockRef.current) {
+      blockRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  }, [isExpanded, picked]);
 
-  return (
+  // Build the inline sentence with blank
+  const blankEl = picked ? (
+    <span className={`srm-answered-blank ${picked.correct ? 'srm-correct' : 'srm-wrong'}`}>
+      {options[picked.selectedIndex]}
+    </span>
+  ) : (
     <span
-      className={`srm-blank-tap ${isSelected ? 'srm-blank-selected' : ''}`}
-      onClick={(e) => { e.stopPropagation(); onSelect(); }}
+      className={`srm-blank-tap ${isExpanded ? 'srm-blank-selected' : ''}`}
+      onClick={(e) => { e.stopPropagation(); onExpand(); }}
     >
       ______
     </span>
-  );
-};
-
-/**
- * Renders a question prompt as inline text with an interactive blank.
- */
-const InlineQuestionText = ({ question, picked, isSelected, onSelect }) => {
-  const parts = question.prompt.split('_____');
-
-  const blankEl = (
-    <InlineBlank
-      question={question}
-      picked={picked}
-      isSelected={isSelected}
-      onSelect={onSelect}
-    />
   );
 
   const feedback = picked && (
@@ -58,49 +51,42 @@ const InlineQuestionText = ({ question, picked, isSelected, onSelect }) => {
     </span>
   );
 
+  // Render sentence
+  let sentenceContent;
   if (parts.length === 1) {
-    return (
-      <span className="srm-inline-q">
-        {question.prompt}{' '}{blankEl}{feedback}
-      </span>
+    sentenceContent = <>{question.prompt}{' '}{blankEl}{feedback}</>;
+  } else {
+    sentenceContent = (
+      <>
+        {parts.map((part, i) => (
+          <React.Fragment key={i}>
+            {part}
+            {i < parts.length - 1 && blankEl}
+          </React.Fragment>
+        ))}
+        {feedback}
+      </>
     );
   }
 
   return (
-    <span className="srm-inline-q">
-      {parts.map((part, i) => (
-        <React.Fragment key={i}>
-          {part}
-          {i < parts.length - 1 && blankEl}
-        </React.Fragment>
-      ))}
-      {feedback}
+    <span className="srm-question-block" ref={blockRef}>
+      <span className="srm-inline-q">{sentenceContent}</span>
+      {/* Options expand RIGHT HERE — inline in the text flow */}
+      {isExpanded && !picked && (
+        <span className="srm-inline-options" onClick={(e) => e.stopPropagation()}>
+          {options.map((opt, i) => (
+            <button
+              key={`${question.id}_${i}`}
+              className="srm-inline-option-btn"
+              onClick={() => onPick(i)}
+            >
+              {opt}
+            </button>
+          ))}
+        </span>
+      )}
     </span>
-  );
-};
-
-/**
- * Fixed bottom panel showing the answer options for the selected blank.
- * Big tappable buttons — stays visible, never covers the story text.
- */
-const AnswerBottomPanel = ({ question, onPick }) => {
-  const options = answerOptions(question);
-
-  return (
-    <div className="srm-bottom-panel">
-      <div className="srm-bottom-prompt">{question.prompt.replace('_____', '______')}</div>
-      <div className="srm-bottom-options">
-        {options.map((opt, i) => (
-          <button
-            key={`${question.id}_${i}`}
-            className="srm-bottom-option"
-            onClick={() => onPick(i)}
-          >
-            {opt}
-          </button>
-        ))}
-      </div>
-    </div>
   );
 };
 
@@ -115,7 +101,7 @@ const StoryReadingMission = ({ onAnswer, onComplete, onHome }) => {
   const [totalAnswered, setTotalAnswered] = useState(0);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [selectedQuestionId, setSelectedQuestionId] = useState(null);
+  const [expandedId, setExpandedId] = useState(null);
 
   useEffect(() => {
     let cancelled = false;
@@ -148,7 +134,7 @@ const StoryReadingMission = ({ onAnswer, onComplete, onHome }) => {
         setChapter(loadedChapter);
         setPageIndex(0);
         setAnswers({});
-        setSelectedQuestionId(null);
+        setExpandedId(null);
       } catch (err) {
         if (!cancelled) setError(err.message);
       } finally {
@@ -167,12 +153,6 @@ const StoryReadingMission = ({ onAnswer, onComplete, onHome }) => {
     [story, totalAnswered]
   );
 
-  // The question object for the currently selected blank
-  const selectedQuestion = useMemo(
-    () => pageQuestions.find((q) => q.id === selectedQuestionId && !answers[q.id]),
-    [pageQuestions, selectedQuestionId, answers]
-  );
-
   const handlePick = useCallback(
     (question, index) => {
       if (answers[question.id]) return;
@@ -189,7 +169,7 @@ const StoryReadingMission = ({ onAnswer, onComplete, onHome }) => {
       }));
       setTotalAnswered((current) => current + 1);
       setCorrectCount((current) => current + (correct ? 1 : 0));
-      setSelectedQuestionId(null);
+      setExpandedId(null);
 
       onAnswer(
         question.id,
@@ -219,7 +199,7 @@ const StoryReadingMission = ({ onAnswer, onComplete, onHome }) => {
     if (chapter && pageIndex < chapter.pages.length - 1) {
       setPageIndex((current) => current + 1);
       setAnswers({});
-      setSelectedQuestionId(null);
+      setExpandedId(null);
       window.scrollTo({ top: 0, behavior: 'smooth' });
       return;
     }
@@ -278,7 +258,7 @@ const StoryReadingMission = ({ onAnswer, onComplete, onHome }) => {
         </div>
       </header>
 
-      <main className="esl-review-card story-reading-card" style={{ paddingBottom: selectedQuestion ? '180px' : undefined }}>
+      <main className="esl-review-card story-reading-card">
         <div className="esl-review-progress">
           <span>{chapterProgress}</span>
           <span>{correctCount} / {totalQuestions || '?'} correct</span>
@@ -297,11 +277,12 @@ const StoryReadingMission = ({ onAnswer, onComplete, onHome }) => {
                   return (
                     <React.Fragment key={question.id}>
                       {' '}
-                      <InlineQuestionText
+                      <InlineQuestionBlock
                         question={question}
                         picked={picked}
-                        isSelected={selectedQuestionId === question.id}
-                        onSelect={() => setSelectedQuestionId(question.id)}
+                        isExpanded={expandedId === question.id}
+                        onExpand={() => setExpandedId(question.id)}
+                        onPick={(optIndex) => handlePick(question, optIndex)}
                       />
                     </React.Fragment>
                   );
@@ -326,14 +307,6 @@ const StoryReadingMission = ({ onAnswer, onComplete, onHome }) => {
           </button>
         </div>
       </main>
-
-      {/* Fixed bottom panel — only shows when a blank is selected */}
-      {selectedQuestion && (
-        <AnswerBottomPanel
-          question={selectedQuestion}
-          onPick={(index) => handlePick(selectedQuestion, index)}
-        />
-      )}
     </div>
   );
 };
