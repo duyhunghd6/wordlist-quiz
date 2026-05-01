@@ -106,7 +106,7 @@ const InlineBlank = ({ question, picked, onConfirm, openBlankId, setOpenBlankId 
   return (
     <span className="srm-active-blank-wrapper" ref={blankRef}>
       <span className={`srm-blank-tap ${isOpen ? 'srm-blank-open' : ''}`} onClick={handleTap}>
-        {isOpen ? options[activeOption] : '______'}
+        {isOpen ? '▼ pick' : '______'}
       </span>
 
       {isOpen && (
