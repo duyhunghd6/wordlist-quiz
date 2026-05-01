@@ -13,79 +13,106 @@ const answerOptions = (question) =>
   question.type === 'true_false' ? ['True', 'False'] : question.options || [];
 
 /**
- * Inline blank + expandable options that appear RIGHT below the sentence.
- * The kid's eyes never leave the reading position.
- * - Tap blank → options expand inline (pushing text down)
- * - Tap an option → answer fills in, options collapse
- * - Tapping story text does NOT collapse the options
+ * Inline scroll-picker blank — sits within the text like a small slot machine.
+ * The kid scrolls/swipes within the blank to browse options, then taps to confirm.
+ * The text flow is NEVER broken.
  */
-const InlineQuestionBlock = ({ question, picked, onPick, isExpanded, onExpand }) => {
+const InlinePickerBlank = ({ question, picked, onPick }) => {
+  const [selectedIdx, setSelectedIdx] = useState(0);
+  const [active, setActive] = useState(false);
   const options = answerOptions(question);
-  const blockRef = useRef(null);
-  const parts = question.prompt.split('_____');
+  const viewportRef = useRef(null);
+  const itemH = 36;
 
-  // Scroll the block into comfortable view when expanded
+  // Scroll to selected item
   useEffect(() => {
-    if (isExpanded && !picked && blockRef.current) {
-      blockRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    if (active && viewportRef.current && !viewportRef.current._userScrolling) {
+      viewportRef.current.scrollTo({ top: selectedIdx * itemH, behavior: 'smooth' });
     }
-  }, [isExpanded, picked]);
+  }, [active, selectedIdx]);
 
-  // Build the inline sentence with blank
-  const blankEl = picked ? (
-    <span className={`srm-answered-blank ${picked.correct ? 'srm-correct' : 'srm-wrong'}`}>
-      {options[picked.selectedIndex]}
-    </span>
-  ) : (
-    <span
-      className={`srm-blank-tap ${isExpanded ? 'srm-blank-selected' : ''}`}
-      onClick={(e) => { e.stopPropagation(); onExpand(); }}
-    >
-      ______
+  // Detect scroll position
+  useEffect(() => {
+    if (!active) return;
+    const vp = viewportRef.current;
+    if (!vp) return;
+    let timer = null;
+    const onScroll = () => {
+      vp._userScrolling = true;
+      clearTimeout(timer);
+      timer = setTimeout(() => {
+        vp._userScrolling = false;
+        const idx = Math.round(vp.scrollTop / itemH);
+        if (idx >= 0 && idx < options.length) setSelectedIdx(idx);
+      }, 60);
+    };
+    vp.addEventListener('scroll', onScroll, { passive: true });
+    return () => { vp.removeEventListener('scroll', onScroll); clearTimeout(timer); };
+  }, [active, options.length]);
+
+  // Already answered
+  if (picked) {
+    return (
+      <span className={`srm-answered ${picked.correct ? 'srm-correct' : 'srm-wrong'}`}>
+        {options[picked.selectedIndex]}
+      </span>
+    );
+  }
+
+  // Inactive — show tappable blank
+  if (!active) {
+    return (
+      <span className="srm-blank" onClick={() => setActive(true)}>
+        ______
+      </span>
+    );
+  }
+
+  // Active — inline scroll picker
+  return (
+    <span className="srm-picker" onClick={(e) => e.stopPropagation()}>
+      <span className="srm-picker-arrow" onClick={() => setSelectedIdx(Math.max(0, selectedIdx - 1))}>▲</span>
+      <span className="srm-picker-vp" ref={viewportRef}>
+        <span className="srm-picker-track" style={{ paddingTop: 0, paddingBottom: 0 }}>
+          {options.map((opt, i) => (
+            <span
+              key={`${question.id}_${i}`}
+              className={`srm-picker-opt ${i === selectedIdx ? 'srm-picker-sel' : ''}`}
+              style={{ height: itemH }}
+              onClick={() => setSelectedIdx(i)}
+            >
+              {opt}
+            </span>
+          ))}
+        </span>
+      </span>
+      <span className="srm-picker-arrow" onClick={() => setSelectedIdx(Math.min(options.length - 1, selectedIdx + 1))}>▼</span>
+      <span className="srm-picker-ok" onClick={() => onPick(selectedIdx)}>✓</span>
     </span>
   );
+};
 
-  const feedback = picked && (
-    <span className={`srm-inline-feedback ${picked.correct ? 'srm-fb-correct' : 'srm-fb-wrong'}`}>
+/**
+ * Renders a question prompt as inline text with the picker blank.
+ */
+const InlineQ = ({ question, picked, onPick }) => {
+  const parts = question.prompt.split('_____');
+  const picker = <InlinePickerBlank question={question} picked={picked} onPick={onPick} />;
+  const fb = picked && (
+    <span className={`srm-fb ${picked.correct ? 'srm-fb-ok' : 'srm-fb-no'}`}>
       {picked.correct ? ' ✓' : ` ✗ ${question.explanation}`}
     </span>
   );
 
-  // Render sentence
-  let sentenceContent;
   if (parts.length === 1) {
-    sentenceContent = <>{question.prompt}{' '}{blankEl}{feedback}</>;
-  } else {
-    sentenceContent = (
-      <>
-        {parts.map((part, i) => (
-          <React.Fragment key={i}>
-            {part}
-            {i < parts.length - 1 && blankEl}
-          </React.Fragment>
-        ))}
-        {feedback}
-      </>
-    );
+    return <span className="srm-q">{question.prompt} {picker}{fb}</span>;
   }
-
   return (
-    <span className="srm-question-block" ref={blockRef}>
-      <span className="srm-inline-q">{sentenceContent}</span>
-      {/* Options expand RIGHT HERE — inline in the text flow */}
-      {isExpanded && !picked && (
-        <span className="srm-inline-options" onClick={(e) => e.stopPropagation()}>
-          {options.map((opt, i) => (
-            <button
-              key={`${question.id}_${i}`}
-              className="srm-inline-option-btn"
-              onClick={() => onPick(i)}
-            >
-              {opt}
-            </button>
-          ))}
-        </span>
-      )}
+    <span className="srm-q">
+      {parts.map((p, i) => (
+        <React.Fragment key={i}>{p}{i < parts.length - 1 && picker}</React.Fragment>
+      ))}
+      {fb}
     </span>
   );
 };
@@ -101,11 +128,10 @@ const StoryReadingMission = ({ onAnswer, onComplete, onHome }) => {
   const [totalAnswered, setTotalAnswered] = useState(0);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [expandedId, setExpandedId] = useState(null);
 
   useEffect(() => {
     let cancelled = false;
-    async function loadInitialStory() {
+    async function load() {
       try {
         setLoading(true);
         const manifest = await loadStoryReadingManifest();
@@ -113,138 +139,88 @@ const StoryReadingMission = ({ onAnswer, onComplete, onHome }) => {
         if (cancelled) return;
         setStory(loaded.story);
         setStoryBasePath(loaded.storyBasePath);
-      } catch (err) {
-        if (!cancelled) setError(err.message);
-      } finally {
-        if (!cancelled) setLoading(false);
-      }
+      } catch (err) { if (!cancelled) setError(err.message); }
+      finally { if (!cancelled) setLoading(false); }
     }
-    loadInitialStory();
+    load();
     return () => { cancelled = true; };
   }, []);
 
   useEffect(() => {
     let cancelled = false;
-    async function loadChapter() {
+    async function load() {
       if (!story || !storyBasePath) return;
       try {
         setLoading(true);
-        const loadedChapter = await loadStoryChapter(storyBasePath, story.chapters[chapterIndex]);
+        const ch = await loadStoryChapter(storyBasePath, story.chapters[chapterIndex]);
         if (cancelled) return;
-        setChapter(loadedChapter);
+        setChapter(ch);
         setPageIndex(0);
         setAnswers({});
-        setExpandedId(null);
-      } catch (err) {
-        if (!cancelled) setError(err.message);
-      } finally {
-        if (!cancelled) setLoading(false);
-      }
+      } catch (err) { if (!cancelled) setError(err.message); }
+      finally { if (!cancelled) setLoading(false); }
     }
-    loadChapter();
+    load();
     return () => { cancelled = true; };
   }, [story, storyBasePath, chapterIndex]);
 
   const page = chapter?.pages?.[pageIndex];
-  const pageQuestions = useMemo(() => page?.inlineQuestions || [], [page]);
-  const pageAnswered = pageQuestions.length > 0 && pageQuestions.every((q) => answers[q.id]);
-  const totalQuestions = useMemo(
-    () => story?.chapters?.reduce((sum, item) => sum + (item.questionCount || 0), 0) || totalAnswered,
+  const pageQs = useMemo(() => page?.inlineQuestions || [], [page]);
+  const allDone = pageQs.length > 0 && pageQs.every((q) => answers[q.id]);
+  const totalQ = useMemo(
+    () => story?.chapters?.reduce((s, c) => s + (c.questionCount || 0), 0) || totalAnswered,
     [story, totalAnswered]
   );
 
-  const handlePick = useCallback(
-    (question, index) => {
-      if (answers[question.id]) return;
-
-      const correct = isCorrectChoice(question, index);
-      const selectedLabel =
-        question.type === 'true_false'
-          ? index === 0 ? 'True' : 'False'
-          : question.options[index];
-
-      setAnswers((current) => ({
-        ...current,
-        [question.id]: { selectedIndex: index, correct },
-      }));
-      setTotalAnswered((current) => current + 1);
-      setCorrectCount((current) => current + (correct ? 1 : 0));
-      setExpandedId(null);
-
-      onAnswer(
-        question.id,
-        correct,
-        3000,
-        {
-          word: question.id,
-          definition: question.prompt,
-          example: page?.sourceText,
-          explanation: question.explanation,
-          category: question.reviewTopic,
-          type: question.type,
-        },
-        selectedLabel
-      );
-    },
-    [answers, onAnswer, page]
-  );
-
-  const finishMission = (nextCorrectCount = correctCount, nextTotalAnswered = totalAnswered) => {
-    const score = nextTotalAnswered > 0 ? Math.round((nextCorrectCount / nextTotalAnswered) * 100) : 0;
-    onComplete({ score, totalQuestions: nextTotalAnswered, correctCount: nextCorrectCount });
-  };
+  const handlePick = useCallback((question, index) => {
+    if (answers[question.id]) return;
+    const correct = isCorrectChoice(question, index);
+    const label = question.type === 'true_false'
+      ? (index === 0 ? 'True' : 'False') : question.options[index];
+    setAnswers((c) => ({ ...c, [question.id]: { selectedIndex: index, correct } }));
+    setTotalAnswered((c) => c + 1);
+    setCorrectCount((c) => c + (correct ? 1 : 0));
+    onAnswer(question.id, correct, 3000, {
+      word: question.id, definition: question.prompt,
+      example: page?.sourceText, explanation: question.explanation,
+      category: question.reviewTopic, type: question.type,
+    }, label);
+  }, [answers, onAnswer, page]);
 
   const handleNext = () => {
-    if (!pageAnswered) return;
+    if (!allDone) return;
     if (chapter && pageIndex < chapter.pages.length - 1) {
-      setPageIndex((current) => current + 1);
-      setAnswers({});
-      setExpandedId(null);
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-      return;
+      setPageIndex((c) => c + 1); setAnswers({});
+      window.scrollTo({ top: 0, behavior: 'smooth' }); return;
     }
     if (story && chapterIndex < story.chapters.length - 1) {
-      setChapterIndex((current) => current + 1);
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-      return;
+      setChapterIndex((c) => c + 1);
+      window.scrollTo({ top: 0, behavior: 'smooth' }); return;
     }
-    finishMission();
+    const s = totalAnswered > 0 ? Math.round((correctCount / totalAnswered) * 100) : 0;
+    onComplete({ score: s, totalQuestions: totalAnswered, correctCount });
   };
 
-  if (loading && !page) {
-    return (
-      <div className="esl-review-game story-reading-shell">
-        <div className="esl-review-card">
-          <p className="esl-review-prompt">Loading your story mission...</p>
-        </div>
-      </div>
-    );
-  }
+  if (loading && !page) return (
+    <div className="esl-review-game"><div className="esl-review-card">
+      <p className="esl-review-prompt">Loading story...</p>
+    </div></div>
+  );
+  if (error || !page) return (
+    <div className="esl-review-game"><div className="esl-review-card">
+      <p className="esl-review-prompt">Story not ready.</p>
+      {error && <div className="esl-review-feedback wrong">{error}</div>}
+      <button className="esl-review-action" onClick={onHome}>Back</button>
+    </div></div>
+  );
 
-  if (error || !page) {
-    return (
-      <div className="esl-review-game story-reading-shell">
-        <div className="esl-review-card">
-          <p className="esl-review-prompt">Story mission is not ready yet.</p>
-          {error && <div className="esl-review-feedback wrong">{error}</div>}
-          <button className="esl-review-action" onClick={onHome}>Back home</button>
-        </div>
-      </div>
-    );
-  }
-
-  const chapterProgress = story ? `Chapter ${chapterIndex + 1} of ${story.chapters.length}` : '';
-  const pageProgress = `Page ${pageIndex + 1} of ${chapter.pages.length}`;
-
-  // Distribute questions evenly among paragraphs
-  const paragraphs = page.sourceText.split(/\n\s*\n/);
-  const numQs = pageQuestions.length;
-  const numParas = paragraphs.length;
-  const questionsByParagraph = Array.from({ length: numParas }, () => []);
-  if (numQs > 0 && numParas > 0) {
-    pageQuestions.forEach((q, i) => {
-      const pos = Math.min(Math.floor(((i + 1) / numQs) * numParas) - 1, numParas - 1);
-      questionsByParagraph[Math.max(0, pos)].push(q);
+  // Distribute questions among paragraphs
+  const paras = page.sourceText.split(/\n\s*\n/);
+  const qByP = Array.from({ length: paras.length }, () => []);
+  if (pageQs.length > 0) {
+    pageQs.forEach((q, i) => {
+      const p = Math.min(Math.floor(((i + 1) / pageQs.length) * paras.length) - 1, paras.length - 1);
+      qByP[Math.max(0, p)].push(q);
     });
   }
 
@@ -254,56 +230,37 @@ const StoryReadingMission = ({ onAnswer, onComplete, onHome }) => {
         <button className="esl-review-back" onClick={onHome}>←</button>
         <div className="esl-review-title">
           <h1>Story Reading Mission</h1>
-          <p>Read the story. Tap any blank to answer!</p>
+          <p>Read & fill the blanks!</p>
         </div>
       </header>
-
       <main className="esl-review-card story-reading-card">
         <div className="esl-review-progress">
-          <span>{chapterProgress}</span>
-          <span>{correctCount} / {totalQuestions || '?'} correct</span>
+          <span>{story ? `Ch ${chapterIndex + 1}/${story.chapters.length}` : ''}</span>
+          <span>{correctCount}/{totalQ || '?'}</span>
         </div>
-        <span className="esl-review-category">{pageProgress}</span>
+        <span className="esl-review-category">Page {pageIndex + 1}/{chapter.pages.length}</span>
         <h2 className="story-reading-chapter-title">{chapter.title}</h2>
         <p className="story-reading-date">{chapter.dateLabel}</p>
-
         <div className="story-reading-page-text">
-          {paragraphs.map((para, pIdx) => (
-            <React.Fragment key={`p${pIdx}`}>
-              <p>
-                {para}
-                {questionsByParagraph[pIdx].map((question) => {
-                  const picked = answers[question.id];
-                  return (
-                    <React.Fragment key={question.id}>
-                      {' '}
-                      <InlineQuestionBlock
-                        question={question}
-                        picked={picked}
-                        isExpanded={expandedId === question.id}
-                        onExpand={() => setExpandedId(question.id)}
-                        onPick={(optIndex) => handlePick(question, optIndex)}
-                      />
-                    </React.Fragment>
-                  );
-                })}
-              </p>
-            </React.Fragment>
+          {paras.map((para, pi) => (
+            <p key={pi}>
+              {para}
+              {qByP[pi].map((q) => (
+                <React.Fragment key={q.id}>
+                  {' '}
+                  <InlineQ question={q} picked={answers[q.id]} onPick={(idx) => handlePick(q, idx)} />
+                </React.Fragment>
+              ))}
+            </p>
           ))}
         </div>
-
         <div className="story-reading-nav">
           <div className="story-reading-lock-note">
-            {pageAnswered
-              ? '✅ Next page unlocked!'
-              : `Tap the blanks to answer (${Object.keys(answers).length}/${pageQuestions.length})`}
+            {allDone ? '✅ Next page unlocked!' : `${Object.keys(answers).length}/${pageQs.length} answered`}
           </div>
-          <button
-            className={`esl-review-action story-reading-next ${pageAnswered ? '' : 'locked'}`}
-            disabled={!pageAnswered}
-            onClick={handleNext}
-          >
-            {story && chapterIndex === story.chapters.length - 1 && pageIndex === chapter.pages.length - 1 ? 'Finish Mission' : 'Next Page →'}
+          <button className={`esl-review-action story-reading-next ${allDone ? '' : 'locked'}`}
+            disabled={!allDone} onClick={handleNext}>
+            {story && chapterIndex === story.chapters.length - 1 && pageIndex === chapter.pages.length - 1 ? 'Finish' : 'Next →'}
           </button>
         </div>
       </main>

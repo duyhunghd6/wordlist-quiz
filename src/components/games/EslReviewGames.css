@@ -289,113 +289,129 @@
 }
 
 /* ================================================ */
-/* Story Reading Mission — Inline Expanding Options */
+/* Story Reading Mission — True Inline Picker       */
 /* ================================================ */
 
-.srm-inline-q { /* inherits story text — no visual break */ }
+.srm-q { /* inherits story text */ }
 
-/* Question block wrapper — allows options to expand below the sentence */
-.srm-question-block {
-  display: inline;
-}
-
-/* Tappable blank in the story text */
-.srm-blank-tap {
+/* Tappable blank — sits inline in the text */
+.srm-blank {
   display: inline-block;
-  min-width: 70px;
-  padding: 2px 10px;
+  min-width: 80px;
+  padding: 2px 12px;
   margin: 0 3px;
-  border-bottom: 3px dashed #3b82f6;
-  color: #3b82f6;
+  background: #fef3c7;
+  border: 2px solid #f59e0b;
+  border-radius: 8px;
+  color: #92400e;
   font-weight: 900;
   cursor: pointer;
   text-align: center;
-  vertical-align: baseline;
-  transition: background 0.2s;
-  border-radius: 4px;
+  vertical-align: middle;
 }
-.srm-blank-tap:hover { background: #eff6ff; }
-
-/* Selected blank — its options are visible below */
-.srm-blank-tap.srm-blank-selected {
-  background: #dbeafe;
-  border-bottom: 3px solid #2563eb;
-  animation: srm-pulse 1.5s ease-in-out infinite;
-}
-
-@keyframes srm-pulse {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.4); }
-  50% { box-shadow: 0 0 0 5px rgba(59, 130, 246, 0); }
-}
+.srm-blank:hover { background: #fde68a; }
 
 /* Answered blank */
-.srm-answered-blank {
+.srm-answered {
   display: inline;
-  padding: 1px 8px;
-  border-radius: 6px;
+  padding: 2px 10px;
+  border-radius: 8px;
   font-weight: 900;
-  margin: 0 2px;
+  margin: 0 3px;
+  vertical-align: middle;
 }
-.srm-answered-blank.srm-correct {
-  background: #dcfce7;
-  color: #166534;
-  border-bottom: 3px solid #86efac;
-}
-.srm-answered-blank.srm-wrong {
-  background: #fee2e2;
-  color: #991b1b;
-  border-bottom: 3px solid #fca5a5;
+.srm-correct { background: #dcfce7; color: #166534; border: 2px solid #86efac; }
+.srm-wrong { background: #fee2e2; color: #991b1b; border: 2px solid #fca5a5; }
+
+/* Feedback */
+.srm-fb { font-weight: 800; font-size: 0.85em; margin-left: 3px; }
+.srm-fb-ok { color: #166534; }
+.srm-fb-no { color: #991b1b; }
+
+/* ---- Inline Scroll Picker ---- */
+/* Sits within the text line like a small slot machine */
+.srm-picker {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  vertical-align: middle;
+  margin: 0 3px;
+  background: #dbeafe;
+  border: 2px solid #3b82f6;
+  border-radius: 10px;
+  padding: 2px 4px;
+  max-width: min(65vw, 280px);
 }
 
-/* Inline feedback */
-.srm-inline-feedback {
-  font-weight: 800;
-  font-size: 0.85em;
-  margin-left: 4px;
+/* Arrow buttons */
+.srm-picker-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  color: #3b82f6;
+  font-size: 0.7rem;
+  cursor: pointer;
+  flex-shrink: 0;
+  user-select: none;
 }
-.srm-fb-correct { color: #166534; }
-.srm-fb-wrong { color: #991b1b; }
+.srm-picker-arrow:active { opacity: 0.5; }
 
-/* ---- Inline Expanding Options ---- */
-/* Options appear as a block of buttons right below the question sentence */
-.srm-inline-options {
+/* Scroll viewport — shows one option at a time */
+.srm-picker-vp {
+  display: inline-block;
+  height: 36px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scroll-snap-type: y mandatory;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  flex: 1;
+  min-width: 60px;
+}
+.srm-picker-vp::-webkit-scrollbar { display: none; }
+
+.srm-picker-track {
   display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin: 8px 0 10px;
-  padding: 10px 12px;
-  background: #f0f9ff;
-  border: 2px solid #bfdbfe;
-  border-radius: 14px;
-  animation: srm-expand-in 0.2s ease-out;
+  flex-direction: column;
 }
 
-@keyframes srm-expand-in {
-  from { opacity: 0; max-height: 0; padding: 0 12px; }
-  to { opacity: 1; max-height: 300px; padding: 10px 12px; }
+/* Each option — fixed height, one visible at a time */
+.srm-picker-opt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.85rem;
+  font-weight: 900;
+  color: #64748b;
+  scroll-snap-align: start;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 6px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.srm-picker-sel {
+  color: #1d4ed8;
+  font-size: 0.95rem;
 }
 
-.srm-inline-option-btn {
-  flex: 1 1 auto;
-  min-width: 80px;
-  padding: 12px 16px;
-  border: none;
-  border-radius: 12px;
-  background: #e0f2fe;
-  color: #075985;
-  font-size: 1rem;
+/* Confirm button */
+.srm-picker-ok {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background: #3b82f6;
+  color: white;
+  border-radius: 8px;
+  font-size: 0.85rem;
   font-weight: 900;
   cursor: pointer;
-  box-shadow: 0 4px 0 #bae6fd;
-  touch-action: manipulation;
-  transition: transform 0.1s;
-  text-align: center;
-  line-height: 1.3;
+  flex-shrink: 0;
 }
-.srm-inline-option-btn:hover {
-  background: #bae6fd;
-}
-.srm-inline-option-btn:active {
-  transform: translateY(2px);
-  box-shadow: 0 2px 0 #bae6fd;
-}
+.srm-picker-ok:active { background: #2563eb; }
