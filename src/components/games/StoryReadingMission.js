@@ -24,13 +24,13 @@ const InlinePickerBlank = ({ question, picked, onPick }) => {
   const viewportRef = useRef(null);
   const itemH = 30;
 
-  // Calculate a stable width based on the longest option text
-  // ~11px per char + 130px for arrows + confirm button + padding
+  // Calculate a stable width — tight fit for short options, scales for long ones
+  // ~8px per char + 100px for arrows + confirm + padding/gaps
   const longestLen = useMemo(
-    () => Math.max(...options.map((o) => o.replace(/^[A-Z]\.\s*/, '').length), 6),
+    () => Math.max(...options.map((o) => o.length), 4),
     [options]
   );
-  const stableWidth = Math.min(Math.max(longestLen * 11 + 130, 220), 500);
+  const stableWidth = Math.min(Math.max(longestLen * 8 + 100, 140), 450);
 
   // Scroll to selected item
   useEffect(() => {
