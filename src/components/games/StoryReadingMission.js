@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState, useRef, useCallback } from 'react';
+import React, { useEffect, useMemo, useState, useCallback } from 'react';
 import { loadStoryChapter, loadStoryIndex, loadStoryReadingManifest } from '../../utils/storyReadingLoader';
 import './EslReviewGames.css';
 
@@ -13,74 +13,12 @@ const answerOptions = (question) =>
   question.type === 'true_false' ? ['True', 'False'] : question.options || [];
 
 /**
- * A single inline blank that lives inside the flowing text.
- * ALL blanks are interactive at all times — the kid taps whichever one they want.
- * Tapping opens a scroll-picker popup right below the blank.
+ * Simple inline blank — just a tappable span within the text.
+ * No popup. Tapping sets the active question for the bottom panel.
  */
-const InlineBlank = ({ question, picked, onConfirm, openBlankId, setOpenBlankId }) => {
-  const [activeOption, setActiveOption] = useState(0);
-  const viewportRef = useRef(null);
-  const blankRef = useRef(null);
-
+const InlineBlank = ({ question, picked, isSelected, onSelect }) => {
   const options = answerOptions(question);
-  const isOpen = openBlankId === question.id && !picked;
 
-  // Keyboard: arrows + enter (only when THIS blank's picker is open)
-  useEffect(() => {
-    if (!isOpen) return;
-    const handler = (e) => {
-      if (e.key === 'ArrowUp') {
-        e.preventDefault();
-        setActiveOption((prev) => Math.max(0, prev - 1));
-      } else if (e.key === 'ArrowDown') {
-        e.preventDefault();
-        setActiveOption((prev) => Math.min(options.length - 1, prev + 1));
-      } else if (e.key === 'Enter') {
-        e.preventDefault();
-        onConfirm(activeOption);
-      } else if (e.key === 'Escape') {
-        e.preventDefault();
-        setOpenBlankId(null);
-      }
-    };
-    window.addEventListener('keydown', handler);
-    return () => window.removeEventListener('keydown', handler);
-  }, [isOpen, activeOption, options, onConfirm, setOpenBlankId]);
-
-  // Scroll viewport to active item
-  useEffect(() => {
-    if (isOpen && viewportRef.current && !viewportRef.current._userScrolling) {
-      const itemH = 48;
-      viewportRef.current.scrollTo({ top: activeOption * itemH, behavior: 'smooth' });
-    }
-  }, [isOpen, activeOption]);
-
-  // Detect which item is centered when user scrolls the picker
-  useEffect(() => {
-    if (!isOpen) return;
-    const vp = viewportRef.current;
-    if (!vp) return;
-    let scrollTimer = null;
-    const handleScroll = () => {
-      vp._userScrolling = true;
-      clearTimeout(scrollTimer);
-      scrollTimer = setTimeout(() => {
-        vp._userScrolling = false;
-        const itemH = 48;
-        const centered = Math.round(vp.scrollTop / itemH);
-        if (centered >= 0 && centered < options.length) {
-          setActiveOption(centered);
-        }
-      }, 80);
-    };
-    vp.addEventListener('scroll', handleScroll, { passive: true });
-    return () => {
-      vp.removeEventListener('scroll', handleScroll);
-      clearTimeout(scrollTimer);
-    };
-  }, [isOpen, options]);
-
-  // Already answered — show the chosen word inline
   if (picked) {
     return (
       <span className={`srm-answered-blank ${picked.correct ? 'srm-correct' : 'srm-wrong'}`}>
@@ -89,101 +27,80 @@ const InlineBlank = ({ question, picked, onConfirm, openBlankId, setOpenBlankId 
     );
   }
 
-  // Unanswered blank — always tappable
-  const handleTap = () => {
-    if (isOpen) {
-      setOpenBlankId(null);
-    } else {
-      setActiveOption(0);
-      setOpenBlankId(question.id);
-      // Scroll into view after a tick so picker is visible
-      setTimeout(() => {
-        blankRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      }, 50);
-    }
-  };
-
   return (
-    <span className="srm-active-blank-wrapper" ref={blankRef}>
-      <span className={`srm-blank-tap ${isOpen ? 'srm-blank-open' : ''}`} onClick={handleTap}>
-        {isOpen ? '▼ pick' : '______'}
-      </span>
-
-      {isOpen && (
-        <div className="srm-picker-popup">
-          <div className="srm-picker-popup-arrow-up">▲</div>
-          <div className="srm-picker-popup-viewport" ref={viewportRef}>
-            <div className="srm-picker-popup-track">
-              {options.map((opt, i) => (
-                <div
-                  key={`${question.id}_${i}`}
-                  className={`srm-picker-popup-item ${i === activeOption ? 'srm-picker-popup-active' : ''}`}
-                  onClick={() => setActiveOption(i)}
-                >
-                  {opt}
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className="srm-picker-popup-arrow-down">▼</div>
-          <button
-            className="srm-picker-confirm-btn"
-            onClick={() => onConfirm(activeOption)}
-          >
-            ✓ Enter
-          </button>
-        </div>
-      )}
+    <span
+      className={`srm-blank-tap ${isSelected ? 'srm-blank-selected' : ''}`}
+      onClick={(e) => { e.stopPropagation(); onSelect(); }}
+    >
+      ______
     </span>
   );
 };
 
 /**
- * Renders a question prompt as inline flowing text with an interactive blank.
- * Blends seamlessly into the story text — no cards, no borders, no visual break.
+ * Renders a question prompt as inline text with an interactive blank.
  */
-const InlineQuestionText = ({ question, picked, onConfirm, openBlankId, setOpenBlankId }) => {
-  const options = answerOptions(question);
+const InlineQuestionText = ({ question, picked, isSelected, onSelect }) => {
   const parts = question.prompt.split('_____');
 
-  const blankElement = (
+  const blankEl = (
     <InlineBlank
       question={question}
       picked={picked}
-      onConfirm={onConfirm}
-      openBlankId={openBlankId}
-      setOpenBlankId={setOpenBlankId}
+      isSelected={isSelected}
+      onSelect={onSelect}
     />
   );
 
-  const feedbackElement = picked && (
+  const feedback = picked && (
     <span className={`srm-inline-feedback ${picked.correct ? 'srm-fb-correct' : 'srm-fb-wrong'}`}>
       {picked.correct ? ' ✓' : ` ✗ ${question.explanation}`}
     </span>
   );
 
-  // true_false or no blank in prompt — put blank at end
   if (parts.length === 1) {
     return (
       <span className="srm-inline-q">
-        {question.prompt}{' '}
-        {blankElement}
-        {feedbackElement}
+        {question.prompt}{' '}{blankEl}{feedback}
       </span>
     );
   }
 
-  // Fill-in-the-blank — replace _____ with interactive blank
   return (
     <span className="srm-inline-q">
       {parts.map((part, i) => (
         <React.Fragment key={i}>
           {part}
-          {i < parts.length - 1 && blankElement}
+          {i < parts.length - 1 && blankEl}
         </React.Fragment>
       ))}
-      {feedbackElement}
+      {feedback}
     </span>
+  );
+};
+
+/**
+ * Fixed bottom panel showing the answer options for the selected blank.
+ * Big tappable buttons — stays visible, never covers the story text.
+ */
+const AnswerBottomPanel = ({ question, onPick }) => {
+  const options = answerOptions(question);
+
+  return (
+    <div className="srm-bottom-panel">
+      <div className="srm-bottom-prompt">{question.prompt.replace('_____', '______')}</div>
+      <div className="srm-bottom-options">
+        {options.map((opt, i) => (
+          <button
+            key={`${question.id}_${i}`}
+            className="srm-bottom-option"
+            onClick={() => onPick(i)}
+          >
+            {opt}
+          </button>
+        ))}
+      </div>
+    </div>
   );
 };
 
@@ -198,8 +115,7 @@ const StoryReadingMission = ({ onAnswer, onComplete, onHome }) => {
   const [totalAnswered, setTotalAnswered] = useState(0);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  // Which blank's picker is currently open (only one at a time)
-  const [openBlankId, setOpenBlankId] = useState(null);
+  const [selectedQuestionId, setSelectedQuestionId] = useState(null);
 
   useEffect(() => {
     let cancelled = false;
@@ -232,7 +148,7 @@ const StoryReadingMission = ({ onAnswer, onComplete, onHome }) => {
         setChapter(loadedChapter);
         setPageIndex(0);
         setAnswers({});
-        setOpenBlankId(null);
+        setSelectedQuestionId(null);
       } catch (err) {
         if (!cancelled) setError(err.message);
       } finally {
@@ -251,6 +167,12 @@ const StoryReadingMission = ({ onAnswer, onComplete, onHome }) => {
     [story, totalAnswered]
   );
 
+  // The question object for the currently selected blank
+  const selectedQuestion = useMemo(
+    () => pageQuestions.find((q) => q.id === selectedQuestionId && !answers[q.id]),
+    [pageQuestions, selectedQuestionId, answers]
+  );
+
   const handlePick = useCallback(
     (question, index) => {
       if (answers[question.id]) return;
@@ -267,7 +189,7 @@ const StoryReadingMission = ({ onAnswer, onComplete, onHome }) => {
       }));
       setTotalAnswered((current) => current + 1);
       setCorrectCount((current) => current + (correct ? 1 : 0));
-      setOpenBlankId(null); // Close picker after answering
+      setSelectedQuestionId(null);
 
       onAnswer(
         question.id,
@@ -297,7 +219,7 @@ const StoryReadingMission = ({ onAnswer, onComplete, onHome }) => {
     if (chapter && pageIndex < chapter.pages.length - 1) {
       setPageIndex((current) => current + 1);
       setAnswers({});
-      setOpenBlankId(null);
+      setSelectedQuestionId(null);
       window.scrollTo({ top: 0, behavior: 'smooth' });
       return;
     }
@@ -356,7 +278,7 @@ const StoryReadingMission = ({ onAnswer, onComplete, onHome }) => {
         </div>
       </header>
 
-      <main className="esl-review-card story-reading-card">
+      <main className="esl-review-card story-reading-card" style={{ paddingBottom: selectedQuestion ? '180px' : undefined }}>
         <div className="esl-review-progress">
           <span>{chapterProgress}</span>
           <span>{correctCount} / {totalQuestions || '?'} correct</span>
@@ -365,13 +287,11 @@ const StoryReadingMission = ({ onAnswer, onComplete, onHome }) => {
         <h2 className="story-reading-chapter-title">{chapter.title}</h2>
         <p className="story-reading-date">{chapter.dateLabel}</p>
 
-        {/* Story text flows continuously — questions blend in as sentences */}
         <div className="story-reading-page-text">
           {paragraphs.map((para, pIdx) => (
             <React.Fragment key={`p${pIdx}`}>
               <p>
                 {para}
-                {/* Questions for this paragraph appear as continuing sentences */}
                 {questionsByParagraph[pIdx].map((question) => {
                   const picked = answers[question.id];
                   return (
@@ -380,9 +300,8 @@ const StoryReadingMission = ({ onAnswer, onComplete, onHome }) => {
                       <InlineQuestionText
                         question={question}
                         picked={picked}
-                        onConfirm={(optIndex) => handlePick(question, optIndex)}
-                        openBlankId={openBlankId}
-                        setOpenBlankId={setOpenBlankId}
+                        isSelected={selectedQuestionId === question.id}
+                        onSelect={() => setSelectedQuestionId(question.id)}
                       />
                     </React.Fragment>
                   );
@@ -407,6 +326,14 @@ const StoryReadingMission = ({ onAnswer, onComplete, onHome }) => {
           </button>
         </div>
       </main>
+
+      {/* Fixed bottom panel — only shows when a blank is selected */}
+      {selectedQuestion && (
+        <AnswerBottomPanel
+          question={selectedQuestion}
+          onPick={(index) => handlePick(selectedQuestion, index)}
+        />
+      )}
     </div>
   );
 };

@@ -289,44 +289,32 @@
 }
 
 /* ================================================ */
-/* Story Reading Mission — Seamless Inline Blanks   */
+/* Story Reading Mission — Inline Blanks + Bottom Panel */
 /* ================================================ */
 
-/* Question text blends into story — no visual break */
-.srm-inline-q {
-  /* Inherits story text styling — no separate background or border */
-}
+.srm-inline-q { /* inherits story text — no visual break */ }
 
-/* Wrapper for the blank and its popup */
-.srm-active-blank-wrapper {
-  position: relative;
-  display: inline;
-}
-
-/* Tappable blank — looks like a natural gap in the text */
+/* Tappable blank in the story text */
 .srm-blank-tap {
   display: inline-block;
   min-width: 70px;
-  padding: 1px 8px;
-  margin: 0 2px;
+  padding: 2px 10px;
+  margin: 0 3px;
   border-bottom: 3px dashed #3b82f6;
   color: #3b82f6;
   font-weight: 900;
   cursor: pointer;
   text-align: center;
   vertical-align: baseline;
-  transition: all 0.2s;
+  transition: background 0.2s;
   border-radius: 4px;
 }
+.srm-blank-tap:hover { background: #eff6ff; }
 
-.srm-blank-tap:hover {
-  background: #eff6ff;
-}
-
-/* When picker is open, blank gets a solid look */
-.srm-blank-tap.srm-blank-open {
+/* Currently selected blank (its options are shown in bottom panel) */
+.srm-blank-tap.srm-blank-selected {
   background: #dbeafe;
-  border-bottom: 3px solid #3b82f6;
+  border-bottom: 3px solid #2563eb;
   animation: srm-pulse 1.5s ease-in-out infinite;
 }
 
@@ -335,7 +323,7 @@
   50% { box-shadow: 0 0 0 5px rgba(59, 130, 246, 0); }
 }
 
-/* Answered blank — inline highlighted word */
+/* Answered blank */
 .srm-answered-blank {
   display: inline;
   padding: 1px 8px;
@@ -354,7 +342,7 @@
   border-bottom: 3px solid #fca5a5;
 }
 
-/* Inline feedback text after the blank */
+/* Inline feedback */
 .srm-inline-feedback {
   font-weight: 800;
   font-size: 0.85em;
@@ -363,94 +351,60 @@
 .srm-fb-correct { color: #166534; }
 .srm-fb-wrong { color: #991b1b; }
 
-/* ---- Popup Picker (appears below tapped blank) ---- */
-.srm-picker-popup {
-  position: absolute;
-  top: calc(100% + 8px);
-  left: 50%;
-  transform: translateX(-50%);
-  min-width: 200px;
-  max-width: min(85vw, 380px);
-  width: max-content;
+/* ---- Fixed Bottom Answer Panel ---- */
+.srm-bottom-panel {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
   background: #ffffff;
-  border: 3px solid #3b82f6;
-  border-radius: 16px;
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
-  z-index: 500;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 4px 0;
-  animation: srm-popup-in 0.25s ease-out;
+  border-top: 3px solid #3b82f6;
+  box-shadow: 0 -8px 32px rgba(0, 0, 0, 0.12);
+  padding: 12px 16px max(12px, env(safe-area-inset-bottom));
+  z-index: 900;
+  animation: srm-panel-in 0.25s ease-out;
 }
 
-@keyframes srm-popup-in {
-  from { opacity: 0; transform: translateX(-50%) translateY(-8px) scale(0.95); }
-  to { opacity: 1; transform: translateX(-50%) translateY(0) scale(1); }
+@keyframes srm-panel-in {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
 }
 
-.srm-picker-popup-arrow-up,
-.srm-picker-popup-arrow-down {
-  color: #3b82f6;
+.srm-bottom-prompt {
   font-size: 0.9rem;
-  pointer-events: none;
-  opacity: 0.6;
-  text-align: center;
-  width: 100%;
-  padding: 2px 0;
-}
-
-.srm-picker-popup-viewport {
-  width: 100%;
-  max-height: 200px;
-  overflow-y: auto;
-  scroll-snap-type: y mandatory;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-.srm-picker-popup-viewport::-webkit-scrollbar { display: none; }
-
-.srm-picker-popup-track {
-  padding: 0;
-}
-
-.srm-picker-popup-item {
-  min-height: 44px;
-  padding: 8px 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-size: 0.95rem;
   font-weight: 800;
-  color: #94a3b8;
+  color: #475569;
+  margin-bottom: 10px;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.srm-bottom-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.srm-bottom-option {
+  flex: 1 1 auto;
+  min-width: 100px;
+  max-width: 300px;
+  padding: 14px 18px;
+  border: none;
+  border-radius: 14px;
+  background: #e0f2fe;
+  color: #075985;
+  font-size: 1.05rem;
+  font-weight: 900;
   cursor: pointer;
-  transition: all 0.15s;
-  scroll-snap-align: center;
+  box-shadow: 0 4px 0 #bae6fd;
+  touch-action: manipulation;
+  transition: transform 0.1s;
+  text-align: center;
   line-height: 1.3;
 }
-
-.srm-picker-popup-item.srm-picker-popup-active {
-  color: #1d4ed8;
-  font-size: 1.25rem;
-  background: #dbeafe;
-  border-radius: 8px;
-}
-
-.srm-picker-confirm-btn {
-  margin: 6px 0 8px;
-  padding: 8px 24px;
-  border: none;
-  border-radius: 12px;
-  background: #3b82f6;
-  color: white;
-  font-weight: 900;
-  font-size: 1rem;
-  cursor: pointer;
-  box-shadow: 0 4px 0 #2563eb;
-  transition: transform 0.1s;
-}
-.srm-picker-confirm-btn:active {
+.srm-bottom-option:active {
   transform: translateY(2px);
-  box-shadow: 0 2px 0 #2563eb;
+  box-shadow: 0 2px 0 #bae6fd;
 }
