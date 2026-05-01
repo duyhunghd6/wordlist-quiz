@@ -60,7 +60,7 @@ const InlinePickerBlank = ({ question, picked, onPick }) => {
 
   // Stable container style — same width AND height for all states
   const stableHeight = 36;
-  const containerStyle = { display: 'inline-block', width: stableWidth, height: stableHeight, lineHeight: `${stableHeight}px`, textAlign: 'center', verticalAlign: 'middle', overflow: 'hidden' };
+  const containerStyle = { display: 'inline-flex', justifyContent: 'center', alignItems: 'center', width: stableWidth, height: stableHeight, margin: '0 4px', verticalAlign: 'middle', boxSizing: 'border-box' };
 
   // Already answered
   if (picked) {
