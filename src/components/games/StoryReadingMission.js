@@ -22,7 +22,7 @@ const InlinePickerBlank = ({ question, picked, onPick }) => {
   const [active, setActive] = useState(false);
   const options = answerOptions(question);
   const viewportRef = useRef(null);
-  const itemH = 36;
+  const itemH = 40;
 
   // Scroll to selected item
   useEffect(() => {
@@ -73,12 +73,12 @@ const InlinePickerBlank = ({ question, picked, onPick }) => {
     <span className="srm-picker" onClick={(e) => e.stopPropagation()}>
       <span className="srm-picker-arrow" onClick={() => setSelectedIdx(Math.max(0, selectedIdx - 1))}>▲</span>
       <span className="srm-picker-vp" ref={viewportRef}>
-        <span className="srm-picker-track" style={{ paddingTop: 0, paddingBottom: 0 }}>
+        <span className="srm-picker-track">
           {options.map((opt, i) => (
             <span
               key={`${question.id}_${i}`}
               className={`srm-picker-opt ${i === selectedIdx ? 'srm-picker-sel' : ''}`}
-              style={{ height: itemH }}
+              style={{ minHeight: itemH }}
               onClick={() => setSelectedIdx(i)}
             >
               {opt}
