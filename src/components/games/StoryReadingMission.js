@@ -12,6 +12,13 @@ const isCorrectChoice = (question, index) => {
 const answerOptions = (question) =>
   question.type === 'true_false' ? ['True', 'False'] : question.options || [];
 
+const getProgress = (storyId) => JSON.parse(localStorage.getItem(`story_progress_${storyId}`) || '{}');
+const saveProgress = (storyId, chapterId, result) => {
+  const p = getProgress(storyId);
+  p[chapterId] = result;
+  localStorage.setItem(`story_progress_${storyId}`, JSON.stringify(p));
+};
+
 /**
  * Inline scroll-picker blank — sits within the text like a small slot machine.
  * All 3 states (blank, picker, answered) use the SAME fixed width
@@ -136,6 +143,7 @@ const InlineQ = ({ question, picked, onPick }) => {
 };
 
 const StoryReadingMission = ({ onAnswer, onComplete, onHome }) => {
+  const [view, setView] = useState('selection');
   const [story, setStory] = useState(null);
   const [storyBasePath, setStoryBasePath] = useState('');
   const [chapter, setChapter] = useState(null);
@@ -146,6 +154,7 @@ const StoryReadingMission = ({ onAnswer, onComplete, onHome }) => {
   const [totalAnswered, setTotalAnswered] = useState(0);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [chapterProgress, setChapterProgress] = useState({});
 
   useEffect(() => {
     let cancelled = false;
@@ -157,6 +166,7 @@ const StoryReadingMission = ({ onAnswer, onComplete, onHome }) => {
         if (cancelled) return;
         setStory(loaded.story);
         setStoryBasePath(loaded.storyBasePath);
+        setChapterProgress(getProgress(loaded.story.id));
       } catch (err) { if (!cancelled) setError(err.message); }
       finally { if (!cancelled) setLoading(false); }
     }
@@ -167,7 +177,7 @@ const StoryReadingMission = ({ onAnswer, onComplete, onHome }) => {
   useEffect(() => {
     let cancelled = false;
     async function load() {
-      if (!story || !storyBasePath) return;
+      if (!story || !storyBasePath || view !== 'reading') return;
       try {
         setLoading(true);
         const ch = await loadStoryChapter(storyBasePath, story.chapters[chapterIndex]);
@@ -175,19 +185,21 @@ const StoryReadingMission = ({ onAnswer, onComplete, onHome }) => {
         setChapter(ch);
         setPageIndex(0);
         setAnswers({});
+        setTotalAnswered(0);
+        setCorrectCount(0);
       } catch (err) { if (!cancelled) setError(err.message); }
       finally { if (!cancelled) setLoading(false); }
     }
     load();
     return () => { cancelled = true; };
-  }, [story, storyBasePath, chapterIndex]);
+  }, [story, storyBasePath, chapterIndex, view]);
 
   const page = chapter?.pages?.[pageIndex];
   const pageQs = useMemo(() => page?.inlineQuestions || [], [page]);
   const allDone = pageQs.length > 0 && pageQs.every((q) => answers[q.id]);
   const totalQ = useMemo(
-    () => story?.chapters?.reduce((s, c) => s + (c.questionCount || 0), 0) || totalAnswered,
-    [story, totalAnswered]
+    () => chapter?.questionCount || totalAnswered,
+    [chapter, totalAnswered]
   );
 
   const handlePick = useCallback((question, index) => {
@@ -211,79 +223,137 @@ const StoryReadingMission = ({ onAnswer, onComplete, onHome }) => {
       setPageIndex((c) => c + 1); setAnswers({});
       window.scrollTo({ top: 0, behavior: 'smooth' }); return;
     }
-    if (story && chapterIndex < story.chapters.length - 1) {
-      setChapterIndex((c) => c + 1);
-      window.scrollTo({ top: 0, behavior: 'smooth' }); return;
-    }
+    
+    // Chapter Complete
     const s = totalAnswered > 0 ? Math.round((correctCount / totalAnswered) * 100) : 0;
+    if (story && chapter) {
+        saveProgress(story.id, chapter.chapterId, { score: s, correct: correctCount, total: totalAnswered });
+    }
     onComplete({ score: s, totalQuestions: totalAnswered, correctCount });
   };
 
-  if (loading && !page) return (
+  if (loading && view !== 'selection') return (
     <div className="esl-review-game"><div className="esl-review-card">
-      <p className="esl-review-prompt">Loading story...</p>
+      <p className="esl-review-prompt">Loading...</p>
     </div></div>
   );
-  if (error || !page) return (
+  if (error) return (
     <div className="esl-review-game"><div className="esl-review-card">
-      <p className="esl-review-prompt">Story not ready.</p>
-      {error && <div className="esl-review-feedback wrong">{error}</div>}
+      <p className="esl-review-prompt">Error loading story.</p>
+      <div className="esl-review-feedback wrong">{error}</div>
       <button className="esl-review-action" onClick={onHome}>Back</button>
     </div></div>
   );
 
-  // Distribute questions among paragraphs
-  const paras = page.sourceText.split(/\n\s*\n/);
-  const qByP = Array.from({ length: paras.length }, () => []);
-  if (pageQs.length > 0) {
-    pageQs.forEach((q, i) => {
-      const p = Math.min(Math.floor(((i + 1) / pageQs.length) * paras.length) - 1, paras.length - 1);
-      qByP[Math.max(0, p)].push(q);
-    });
+  if (view === 'selection' && story) {
+    const totalChapters = story.chapters.length;
+    const completedChapters = story.chapters.filter(c => chapterProgress[c.chapterId]).length;
+    let totalQs = 0;
+    let totalCs = 0;
+    Object.values(chapterProgress).forEach(p => { totalQs += p.total; totalCs += p.correct; });
+    const overallScore = totalQs > 0 ? Math.round((totalCs / totalQs) * 100) : 0;
+
+    return (
+      <div className="esl-review-game story-reading-shell">
+        <header className="esl-review-header">
+          <button className="esl-review-back" onClick={onHome}>←</button>
+          <div className="esl-review-title">
+            <h1>Story Reading Mission</h1>
+            <p>{story.title}</p>
+          </div>
+        </header>
+        <main className="esl-review-card story-reading-card" style={{ maxWidth: '600px', margin: '0 auto' }}>
+          <div className="esl-review-progress" style={{ marginBottom: '20px' }}>
+            <span>Progress: {completedChapters}/{totalChapters} Chapters</span>
+            <span>Overall Score: {overallScore}%</span>
+          </div>
+          <div className="story-chapter-list" style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+            {story.chapters.map((ch, idx) => {
+              const p = chapterProgress[ch.chapterId];
+              return (
+                <button 
+                  key={ch.chapterId}
+                  className="esl-review-action"
+                  style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', textAlign: 'left', padding: '15px', height: 'auto', opacity: 1 }}
+                  onClick={() => {
+                    setChapterIndex(idx);
+                    setView('reading');
+                  }}
+                >
+                  <div style={{ flex: 1 }}>
+                    <strong style={{ display: 'block', fontSize: '1.1em', marginBottom: '4px' }}>Ch {ch.chapterNumber}: {ch.title}</strong>
+                    <div style={{ fontSize: '0.85em', opacity: 0.8 }}>{ch.dateLabel} • {ch.questionCount} Qs</div>
+                  </div>
+                  {p && (
+                    <div style={{ fontWeight: 'bold', fontSize: '1.2em', color: p.score >= 80 ? '#4caf50' : (p.score >= 50 ? '#ff9800' : '#f44336'), marginLeft: '15px' }}>
+                      {p.score}%
+                    </div>
+                  )}
+                </button>
+              );
+            })}
+          </div>
+        </main>
+      </div>
+    );
   }
 
-  return (
-    <div className="esl-review-game story-reading-shell">
-      <header className="esl-review-header">
-        <button className="esl-review-back" onClick={onHome}>←</button>
-        <div className="esl-review-title">
-          <h1>Story Reading Mission</h1>
-          <p>Read & fill the blanks!</p>
-        </div>
-      </header>
-      <main className="esl-review-card story-reading-card">
-        <div className="esl-review-progress">
-          <span>{story ? `Ch ${chapterIndex + 1}/${story.chapters.length}` : ''}</span>
-          <span>{correctCount}/{totalQ || '?'}</span>
-        </div>
-        <span className="esl-review-category">Page {pageIndex + 1}/{chapter.pages.length}</span>
-        <h2 className="story-reading-chapter-title">{chapter.title}</h2>
-        <p className="story-reading-date">{chapter.dateLabel}</p>
-        <div className="story-reading-page-text">
-          {paras.map((para, pi) => (
-            <p key={pi}>
-              {para}
-              {qByP[pi].map((q) => (
-                <React.Fragment key={q.id}>
-                  {' '}
-                  <InlineQ question={q} picked={answers[q.id]} onPick={(idx) => handlePick(q, idx)} />
-                </React.Fragment>
-              ))}
-            </p>
-          ))}
-        </div>
-        <div className="story-reading-nav">
-          <div className="story-reading-lock-note">
-            {allDone ? '✅ Next page unlocked!' : `${Object.keys(answers).length}/${pageQs.length} answered`}
+  if (view === 'reading' && chapter && page) {
+    // Distribute questions among paragraphs
+    const paras = page.sourceText.split(/\n\s*\n/);
+    const qByP = Array.from({ length: paras.length }, () => []);
+    if (pageQs.length > 0) {
+      pageQs.forEach((q, i) => {
+        const p = Math.min(Math.floor(((i + 1) / pageQs.length) * paras.length) - 1, paras.length - 1);
+        qByP[Math.max(0, p)].push(q);
+      });
+    }
+
+    return (
+      <div className="esl-review-game story-reading-shell">
+        <header className="esl-review-header">
+          <button className="esl-review-back" onClick={() => setView('selection')}>←</button>
+          <div className="esl-review-title">
+            <h1>Story Reading Mission</h1>
+            <p>Ch {chapter.chapterNumber}: Read & fill the blanks!</p>
           </div>
-          <button className={`esl-review-action story-reading-next ${allDone ? '' : 'locked'}`}
-            disabled={!allDone} onClick={handleNext}>
-            {story && chapterIndex === story.chapters.length - 1 && pageIndex === chapter.pages.length - 1 ? 'Finish' : 'Next →'}
-          </button>
-        </div>
-      </main>
-    </div>
-  );
+        </header>
+        <main className="esl-review-card story-reading-card">
+          <div className="esl-review-progress">
+            <span>{story ? `Ch ${chapterIndex + 1}/${story.chapters.length}` : ''}</span>
+            <span>{correctCount}/{totalQ || '?'}</span>
+          </div>
+          <span className="esl-review-category">Page {pageIndex + 1}/{chapter.pages.length}</span>
+          <h2 className="story-reading-chapter-title">{chapter.title}</h2>
+          <p className="story-reading-date">{chapter.dateLabel}</p>
+          <div className="story-reading-page-text">
+            {paras.map((para, pi) => (
+              <p key={pi}>
+                {para}
+                {qByP[pi].map((q) => (
+                  <React.Fragment key={q.id}>
+                    {' '}
+                    <InlineQ question={q} picked={answers[q.id]} onPick={(idx) => handlePick(q, idx)} />
+                  </React.Fragment>
+                ))}
+              </p>
+            ))}
+          </div>
+          <div className="story-reading-nav">
+            <div className="story-reading-lock-note">
+              {allDone ? '✅ Next page unlocked!' : `${Object.keys(answers).length}/${pageQs.length} answered`}
+            </div>
+            <button className={`esl-review-action story-reading-next ${allDone ? '' : 'locked'}`}
+              disabled={!allDone} onClick={handleNext}>
+              {pageIndex === chapter.pages.length - 1 ? 'Finish Chapter' : 'Next →'}
+            </button>
+          </div>
+        </main>
+      </div>
+    );
+  }
+
+  return null;
 };
 
 export default StoryReadingMission;
