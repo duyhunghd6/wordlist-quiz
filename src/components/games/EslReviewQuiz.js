@@ -103,7 +103,7 @@ const InlinePickerBlank = ({ options, selectedOption, active, onToggleActive, on
   );
 };
 
-const InlineQ = ({ question, index, selectedOption, active, onToggleActive, onPick, isSubmitted }) => {
+const InlineQ = ({ question, index, selectedOption, active, onToggleActive, onPick, isSubmitted, hidePassage }) => {
   const parts = question.prompt.split('_____');
   const picker = (
     <InlinePickerBlank 
@@ -138,9 +138,9 @@ const InlineQ = ({ question, index, selectedOption, active, onToggleActive, onPi
   }
 
   return (
-    <div className="esl-review-list-item" style={{ marginBottom: '24px', padding: '16px', background: 'rgba(255,255,255,0.5)', borderRadius: '12px', border: '2px solid rgba(0,0,0,0.1)' }}>
+    <div className="esl-review-list-item" style={{ padding: '16px', background: 'rgba(255,255,255,0.5)', borderRadius: '12px', border: '2px solid rgba(0,0,0,0.1)' }}>
       <div style={{ fontWeight: 'bold', marginBottom: '8px', color: '#666' }}>{index + 1}. {question.category}</div>
-      {question.passage && <div className="esl-review-passage" style={{ marginBottom: '12px' }}>{question.passage}</div>}
+      {!hidePassage && question.passage && <div className="esl-review-passage" style={{ marginBottom: '12px' }}>{question.passage}</div>}
       {content}
       {fb}
     </div>
@@ -160,7 +160,34 @@ const EslReviewQuiz = ({ eslReviewQuestions, onAnswer, onComplete, onHome, selec
           : grammarItems.map((grammarItem) => grammarItem.correctAnswer).filter((answer) => answer !== item.correctAnswer);
         return { ...item, options: shuffle([...new Set([item.correctAnswer, ...distractors])]).slice(0, 4) };
       });
-    return shuffle([...multipleChoice, ...simpleGrammar]).slice(0, 30); // Show up to 30 as requested
+      
+    let mixed = shuffle([...multipleChoice, ...simpleGrammar]).slice(0, 30); // Show up to 30 as requested
+    
+    // Group them so passages are together
+    const grouped = [];
+    const passageGroups = new Map();
+    const nonPassages = [];
+    
+    mixed.forEach(q => {
+      if (q.passage) {
+        if (!passageGroups.has(q.passage)) {
+          passageGroups.set(q.passage, []);
+        }
+        passageGroups.get(q.passage).push(q);
+      } else {
+        nonPassages.push(q);
+      }
+    });
+    
+    // We can shuffle the groups themselves to keep randomness while keeping passages together
+    const allGroups = [
+      ...Array.from(passageGroups.values()),
+      ...nonPassages.map(q => [q]) // each non-passage is its own group
+    ];
+    
+    shuffle(allGroups).forEach(group => grouped.push(...group));
+    
+    return grouped;
   }, [eslReviewQuestions]);
 
   const [answers, setAnswers] = useState({});
@@ -209,6 +236,48 @@ const EslReviewQuiz = ({ eslReviewQuestions, onAnswer, onComplete, onHome, selec
 
   const allAnswered = Object.keys(answers).length === questions.length;
 
+  const renderList = () => {
+    const groups = [];
+    let currentPassage = null;
+    let currentGroup = [];
+
+    questions.forEach((q, idx) => {
+      if (q.passage !== currentPassage) {
+        if (currentGroup.length > 0) {
+          groups.push({ passage: currentPassage, questions: currentGroup });
+        }
+        currentPassage = q.passage;
+        currentGroup = [{ q, idx }];
+      } else {
+        currentGroup.push({ q, idx });
+      }
+    });
+    if (currentGroup.length > 0) {
+      groups.push({ passage: currentPassage, questions: currentGroup });
+    }
+
+    return groups.map((g, gIdx) => (
+      <div key={gIdx} className="esl-review-group" style={{ marginBottom: '32px' }}>
+        {g.passage && <div className="esl-review-passage" style={{ marginBottom: '16px' }}>{g.passage}</div>}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+          {g.questions.map(({ q, idx }) => (
+            <InlineQ 
+              key={idx} 
+              index={idx}
+              question={q} 
+              selectedOption={answers[idx]}
+              active={activePickerIdx === idx}
+              onToggleActive={(e) => { e.stopPropagation(); setActivePickerIdx(activePickerIdx === idx ? null : idx); }}
+              onPick={(option) => handlePick(idx, option)}
+              isSubmitted={isSubmitted}
+              hidePassage={true}
+            />
+          ))}
+        </div>
+      </div>
+    ));
+  };
+
   return (
     <div className="esl-review-game">
       <header className="esl-review-header">
@@ -234,18 +303,7 @@ const EslReviewQuiz = ({ eslReviewQuestions, onAnswer, onComplete, onHome, selec
         )}
 
         <div className="esl-review-list">
-          {questions.map((q, idx) => (
-            <InlineQ 
-              key={idx} 
-              index={idx}
-              question={q} 
-              selectedOption={answers[idx]}
-              active={activePickerIdx === idx}
-              onToggleActive={(e) => { e.stopPropagation(); setActivePickerIdx(activePickerIdx === idx ? null : idx); }}
-              onPick={(option) => handlePick(idx, option)}
-              isSubmitted={isSubmitted}
-            />
-          ))}
+          {renderList()}
         </div>
 
         {!isSubmitted && (
@@ -265,3 +323,4 @@ const EslReviewQuiz = ({ eslReviewQuestions, onAnswer, onComplete, onHome, selec
 };
 
 export default EslReviewQuiz;
+
