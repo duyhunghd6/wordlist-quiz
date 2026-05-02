@@ -524,70 +524,80 @@
     "source": "Grammar Exercise 11: Prepositions of Direction - Fill in the blanks with into, out of, from, towards",
     "question_number": 1,
     "question": "The dog ran ___________________ the house when it started raining.",
-    "answer": "into"
+    "answer": "into",
+    "word_bank": "into, out of, from, towards"
   },
   {
     "category": "Grammar - Completion - Prepositions of Direction",
     "source": "Grammar Exercise 11: Prepositions of Direction - Fill in the blanks with into, out of, from, towards",
     "question_number": 2,
     "question": "She took her books ___________________ her bag.",
-    "answer": "out of"
+    "answer": "out of",
+    "word_bank": "into, out of, from, towards"
   },
   {
     "category": "Grammar - Completion - Prepositions of Direction",
     "source": "Grammar Exercise 11: Prepositions of Direction - Fill in the blanks with into, out of, from, towards",
     "question_number": 3,
     "question": "The train is coming ___________________ London.",
-    "answer": "from"
+    "answer": "from",
+    "word_bank": "into, out of, from, towards"
   },
   {
     "category": "Grammar - Completion - Prepositions of Direction",
     "source": "Grammar Exercise 11: Prepositions of Direction - Fill in the blanks with into, out of, from, towards",
     "question_number": 4,
     "question": "We are walking ___________________ the park.",
-    "answer": "towards"
+    "answer": "towards",
+    "word_bank": "into, out of, from, towards"
   },
   {
     "category": "Grammar - Completion - Prepositions of Direction",
     "source": "Grammar Exercise 11: Prepositions of Direction - Fill in the blanks with into, out of, from, towards",
     "question_number": 5,
     "question": "He jumped ___________________ the swimming pool.",
-    "answer": "into"
+    "answer": "into",
+    "word_bank": "into, out of, from, towards"
   },
   {
     "category": "Grammar - Completion - Prepositions of Direction",
     "source": "Grammar Exercise 11: Prepositions of Direction - Fill in the blanks with into, out of, from, towards",
     "question_number": 6,
     "question": "Please take the milk ___________________ the fridge.",
-    "answer": "out of"
+    "answer": "out of",
+    "word_bank": "into, out of, from, towards"
   },
   {
     "category": "Grammar - Completion - Prepositions of Direction",
     "source": "Grammar Exercise 11: Prepositions of Direction - Fill in the blanks with into, out of, from, towards",
     "question_number": 7,
     "question": "They traveled all the way ___________________ the city center.",
-    "answer": "from"
+    "answer": "from",
+    "word_bank": "into, out of, from, towards"
   },
   {
     "category": "Grammar - Completion - Prepositions of Direction",
     "source": "Grammar Exercise 11: Prepositions of Direction - Fill in the blanks with into, out of, from, towards",
     "question_number": 8,
     "question": "The bird flew ___________________ the window and landed on the table.",
-    "answer": "into"
+    "answer": "into",
+    "word_bank": "into, out of, from, towards"
   },
   {
     "category": "Grammar - Completion - Prepositions of Direction",
     "source": "Grammar Exercise 11: Prepositions of Direction - Fill in the blanks with into, out of, from, towards",
     "question_number": 9,
     "question": "The kids ran ___________________ the playground as fast as they could.",
-    "answer": "towards"
+    "answer": "towards",
+    "word_bank": "into, out of, from, towards"
   },
   {
     "category": "Grammar - Completion - Prepositions of Direction",
     "source": "Grammar Exercise 11: Prepositions of Direction - Fill in the blanks with into, out of, from, towards",
     "question_number": 10,
     "question": "He pulled a coin ___________________ his pocket.",
-    "answer": "out of"
+    "answer": "out of",
+    "word_bank": "into, out of, from, towards"
   },
   {
     "category": "Grammar - Completion - Mixed Grammar",
@@ -600,7 +610,7 @@
     "category": "Grammar - Completion - Mixed Grammar",
     "source": "Grammar Exercise 12: Mixed Grammar",
     "question_number": 2,
-    "question": "She ____________________ already ____________________ (finish) her homework, ____________________?",
+    "question": "She ____________________ (already / finish) her homework, ____________________?",
     "answer": "has already finished; hasn’t she"
   },
   {
