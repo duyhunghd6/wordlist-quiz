@@ -36,6 +36,31 @@
     letter-spacing: 1px;
 }
 
+.er-home-btn {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.55);
+    background: rgba(255, 255, 255, 0.9);
+    color: #0F172A;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+    transition: transform 0.16s ease, background 0.16s ease, box-shadow 0.16s ease;
+}
+
+.er-home-btn:hover {
+    background: #FFFFFF;
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.22);
+}
+
+.er-home-btn:active {
+    transform: scale(0.96);
+}
+
 .er-health {
     display: flex;
     gap: 8px;

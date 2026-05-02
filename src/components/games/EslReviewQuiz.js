@@ -1,8 +1,151 @@
-import React, { useMemo, useState } from 'react';
+import React, { useMemo, useState, useRef, useEffect } from 'react';
 import { makeReviewResultQuestion } from '../../utils/eslReviewNormalizer';
 import './EslReviewGames.css';
 
 const shuffle = (items) => [...items].sort(() => Math.random() - 0.5);
+
+/**
+ * Inline scroll-picker blank — sits within the text like a small slot machine.
+ */
+const InlinePickerBlank = ({ options, selectedOption, active, onToggleActive, onPick, isSubmitted, correctAnswer }) => {
+  const [selectedIdx, setSelectedIdx] = useState(
+    selectedOption ? options.indexOf(selectedOption) : 0
+  );
+  const viewportRef = useRef(null);
+  const itemH = 30;
+
+  const longestLen = useMemo(
+    () => Math.max(...options.map((o) => (o ? o.length : 0)), 4),
+    [options]
+  );
+  const stableWidth = Math.min(Math.max(longestLen * 8 + 100, 140), 450);
+
+  useEffect(() => {
+    if (active && viewportRef.current && !viewportRef.current._userScrolling) {
+      viewportRef.current.scrollTo({ top: selectedIdx * itemH, behavior: 'smooth' });
+    }
+  }, [active, selectedIdx]);
+
+  useEffect(() => {
+    if (!active) return;
+    const vp = viewportRef.current;
+    if (!vp) return;
+    let timer = null;
+    const onScroll = () => {
+      vp._userScrolling = true;
+      clearTimeout(timer);
+      timer = setTimeout(() => {
+        vp._userScrolling = false;
+        const idx = Math.round(vp.scrollTop / itemH);
+        if (idx >= 0 && idx < options.length) setSelectedIdx(idx);
+      }, 60);
+    };
+    vp.addEventListener('scroll', onScroll, { passive: true });
+    return () => { vp.removeEventListener('scroll', onScroll); clearTimeout(timer); };
+  }, [active, options.length]);
+
+  const stableHeight = 36;
+  const containerStyle = { display: 'inline-flex', justifyContent: 'center', alignItems: 'center', width: stableWidth, height: stableHeight, margin: '0 4px', verticalAlign: 'middle', boxSizing: 'border-box' };
+
+  if (isSubmitted) {
+    const isCorrect = selectedOption === correctAnswer;
+    return (
+      <span style={containerStyle}>
+        <span className={`srm-answered ${isCorrect ? 'srm-correct' : 'srm-wrong'}`}>
+          {selectedOption || 'No answer'}
+        </span>
+      </span>
+    );
+  }
+
+  if (selectedOption && !active) {
+    return (
+      <span style={containerStyle}>
+        <span className="srm-answered srm-correct" style={{ background: '#e0e0e0', color: '#333' }} onClick={onToggleActive}>
+          {selectedOption}
+        </span>
+      </span>
+    );
+  }
+
+  if (!active) {
+    return (
+      <span style={containerStyle}>
+        <span className="srm-blank" onClick={onToggleActive}>
+          ______
+        </span>
+      </span>
+    );
+  }
+
+  return (
+    <span style={containerStyle}>
+      <span className="srm-picker" onClick={(e) => e.stopPropagation()}>
+        <span className="srm-picker-arrow" onClick={() => setSelectedIdx(Math.max(0, selectedIdx - 1))}>▲</span>
+        <span className="srm-picker-vp" ref={viewportRef}>
+          <span className="srm-picker-track">
+            {options.map((opt, i) => (
+              <span
+                key={`${opt}_${i}`}
+                className={`srm-picker-opt ${i === selectedIdx ? 'srm-picker-sel' : ''}`}
+                style={{ minHeight: itemH }}
+                onClick={() => setSelectedIdx(i)}
+              >
+                {opt}
+              </span>
+            ))}
+          </span>
+        </span>
+        <span className="srm-picker-arrow" onClick={() => setSelectedIdx(Math.min(options.length - 1, selectedIdx + 1))}>▼</span>
+        <span className="srm-picker-ok" onClick={() => onPick(options[selectedIdx])}>✓</span>
+      </span>
+    </span>
+  );
+};
+
+const InlineQ = ({ question, index, selectedOption, active, onToggleActive, onPick, isSubmitted }) => {
+  const parts = question.prompt.split('_____');
+  const picker = (
+    <InlinePickerBlank 
+      options={question.options} 
+      selectedOption={selectedOption}
+      active={active}
+      onToggleActive={onToggleActive}
+      onPick={onPick}
+      isSubmitted={isSubmitted}
+      correctAnswer={question.correctAnswer}
+    />
+  );
+  
+  const isCorrect = selectedOption === question.correctAnswer;
+  const fb = isSubmitted && (
+    <span className={`srm-fb ${isCorrect ? 'srm-fb-ok' : 'srm-fb-no'}`}>
+      {isCorrect ? ' ✓' : ` ✗ (Correct: ${question.correctAnswer})`}
+    </span>
+  );
+
+  let content;
+  if (parts.length === 1) {
+    content = <span className="srm-q">{question.prompt} {picker}</span>;
+  } else {
+    content = (
+      <span className="srm-q">
+        {parts.map((p, i) => (
+          <React.Fragment key={i}>{p}{i < parts.length - 1 && picker}</React.Fragment>
+        ))}
+      </span>
+    );
+  }
+
+  return (
+    <div className="esl-review-list-item" style={{ marginBottom: '24px', padding: '16px', background: 'rgba(255,255,255,0.5)', borderRadius: '12px', border: '2px solid rgba(0,0,0,0.1)' }}>
+      <div style={{ fontWeight: 'bold', marginBottom: '8px', color: '#666' }}>{index + 1}. {question.category}</div>
+      {question.passage && <div className="esl-review-passage" style={{ marginBottom: '12px' }}>{question.passage}</div>}
+      {content}
+      {fb}
+    </div>
+  );
+};
 
 const EslReviewQuiz = ({ eslReviewQuestions, onAnswer, onComplete, onHome, selectedUnits = [], words = [] }) => {
   const questions = useMemo(() => {
@@ -17,15 +160,15 @@ const EslReviewQuiz = ({ eslReviewQuestions, onAnswer, onComplete, onHome, selec
           : grammarItems.map((grammarItem) => grammarItem.correctAnswer).filter((answer) => answer !== item.correctAnswer);
         return { ...item, options: shuffle([...new Set([item.correctAnswer, ...distractors])]).slice(0, 4) };
       });
-    return shuffle([...multipleChoice, ...simpleGrammar]).slice(0, words.length || 20);
-  }, [eslReviewQuestions, words.length]);
+    return shuffle([...multipleChoice, ...simpleGrammar]).slice(0, 30); // Show up to 30 as requested
+  }, [eslReviewQuestions]);
 
-  const [index, setIndex] = useState(0);
-  const [selected, setSelected] = useState(null);
+  const [answers, setAnswers] = useState({});
+  const [activePickerIdx, setActivePickerIdx] = useState(null);
+  const [isSubmitted, setIsSubmitted] = useState(false);
   const [score, setScore] = useState(0);
-  const current = questions[index];
 
-  if (!current) {
+  if (!questions || questions.length === 0) {
     return (
       <div className="esl-review-game">
         <div className="esl-review-card">
@@ -36,26 +179,35 @@ const EslReviewQuiz = ({ eslReviewQuestions, onAnswer, onComplete, onHome, selec
     );
   }
 
-  const finish = (nextScore) => {
-    onComplete({ score: Math.round((nextScore / questions.length) * 100), totalQuestions: questions.length, correctCount: nextScore });
+  const handlePick = (index, option) => {
+    setAnswers(prev => ({ ...prev, [index]: option }));
+    setActivePickerIdx(null);
   };
 
-  const handleSelect = (option) => {
-    if (selected) return;
-    const isCorrect = option === current.correctAnswer;
-    const nextScore = isCorrect ? score + 1 : score;
-    setSelected(option);
-    setScore(nextScore);
-    onAnswer(current.correctAnswer, isCorrect, 3000, makeReviewResultQuestion(current), option);
-    setTimeout(() => {
-      if (index < questions.length - 1) {
-        setIndex(index + 1);
-        setSelected(null);
-      } else {
-        finish(nextScore);
+  const handleSubmit = () => {
+    let nextScore = 0;
+    questions.forEach((q, idx) => {
+      const isCorrect = answers[idx] === q.correctAnswer;
+      if (isCorrect) nextScore++;
+      
+      // If we want to record each answer tracking
+      if (answers[idx]) {
+        onAnswer(q.correctAnswer, isCorrect, 3000, makeReviewResultQuestion(q), answers[idx]);
       }
-    }, isCorrect ? 900 : 1700);
+    });
+    setScore(nextScore);
+    setIsSubmitted(true);
   };
+
+  const handleFinish = () => {
+    onComplete({ 
+      score: Math.round((score / questions.length) * 100), 
+      totalQuestions: questions.length, 
+      correctCount: score 
+    });
+  };
+
+  const allAnswered = Object.keys(answers).length === questions.length;
 
   return (
     <div className="esl-review-game">
@@ -67,27 +219,44 @@ const EslReviewQuiz = ({ eslReviewQuestions, onAnswer, onComplete, onHome, selec
         </div>
       </header>
 
-      <main className="esl-review-card">
-        <div className="esl-review-progress">
-          <span>Question {index + 1} of {questions.length}</span>
-          <span>{score} correct</span>
+      <main className="esl-review-card" style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'left', maxHeight: '75vh', overflowY: 'auto' }} onClick={() => setActivePickerIdx(null)}>
+        {!isSubmitted && (
+          <div className="esl-review-progress" style={{ marginBottom: '20px' }}>
+            <span>{Object.keys(answers).length} of {questions.length} answered</span>
+          </div>
+        )}
+        
+        {isSubmitted && (
+          <div className="esl-review-progress" style={{ marginBottom: '20px', background: '#e8f5e9', padding: '16px', borderRadius: '12px' }}>
+            <span style={{ fontSize: '1.2em', fontWeight: 'bold', color: '#2e7d32' }}>Score: {score} / {questions.length}</span>
+            <button className="esl-review-action" style={{ padding: '8px 16px', fontSize: '1em' }} onClick={handleFinish}>Finish Quiz</button>
+          </div>
+        )}
+
+        <div className="esl-review-list">
+          {questions.map((q, idx) => (
+            <InlineQ 
+              key={idx} 
+              index={idx}
+              question={q} 
+              selectedOption={answers[idx]}
+              active={activePickerIdx === idx}
+              onToggleActive={(e) => { e.stopPropagation(); setActivePickerIdx(activePickerIdx === idx ? null : idx); }}
+              onPick={(option) => handlePick(idx, option)}
+              isSubmitted={isSubmitted}
+            />
+          ))}
         </div>
-        <span className="esl-review-category">{current.category}</span>
-        {current.passage && <div className="esl-review-passage">{current.passage}</div>}
-        <h2 className="esl-review-prompt">{current.prompt}</h2>
-        <div className="esl-review-options">
-          {current.options.map((option) => {
-            const state = selected && (option === current.correctAnswer ? 'correct' : option === selected ? 'wrong' : '');
-            return (
-              <button key={option} className={`esl-review-option ${state}`} onClick={() => handleSelect(option)}>
-                {option}
-              </button>
-            );
-          })}
-        </div>
-        {selected && (
-          <div className={`esl-review-feedback ${selected === current.correctAnswer ? 'correct' : 'wrong'}`}>
-            {selected === current.correctAnswer ? 'Great choice!' : `Good try. Correct answer: ${current.correctAnswer}`}
+
+        {!isSubmitted && (
+          <div style={{ textAlign: 'center', marginTop: '20px' }}>
+            <button 
+              className={`esl-review-action ${!allAnswered ? 'locked' : ''}`} 
+              style={{ fontSize: '1.2em', padding: '12px 32px' }}
+              onClick={handleSubmit}
+            >
+              {allAnswered ? 'Submit Quiz' : 'Please answer all questions'}
+            </button>
           </div>
         )}
       </main>

@@ -1,8 +1,9 @@
 import React, { useState, useEffect, useCallback } from 'react';
+import { Home } from 'lucide-react';
 import { useRunnerEngine } from './RunnerQuestionEngine';
 import './EndlessRunner.css';
 
-const EndlessRunner = ({ onComplete, words = [], tenseSentences = [] }) => {
+const EndlessRunner = ({ onComplete, onHome, words = [], tenseSentences = [] }) => {
     const [score, setScore] = useState(0);
     const [gameActive, setGameActive] = useState(true);
     const [selectedId, setSelectedId] = useState(null);
@@ -125,6 +126,17 @@ const EndlessRunner = ({ onComplete, words = [], tenseSentences = [] }) => {
                     <span style={{ color: '#FCD34D' }}>LVL {level}</span>
                     <span>SCORE: {score}</span>
                 </div>
+                {onHome && (
+                    <button
+                        type="button"
+                        className="er-home-btn"
+                        onClick={onHome}
+                        aria-label="Go home"
+                        title="Home"
+                    >
+                        <Home size={22} />
+                    </button>
+                )}
                 {/* Visual Timer Progress Bar Hidden */}
                 <div className="er-timer" style={{ display: 'none' }}></div>
             </div>

@@ -416,3 +416,204 @@
   flex-shrink: 0;
 }
 .srm-picker-ok:active { background: #2563eb; }
+
+.esl-review-blank.filled {
+  background: #e0f2fe;
+  color: #0369a1;
+}
+
+.esl-review-blank.correct {
+  background: #dcfce7;
+  color: #166534;
+  box-shadow: 0 0 0 2px #22c55e;
+}
+
+.esl-review-blank.wrong {
+  background: #fee2e2;
+  color: #991b1b;
+  box-shadow: 0 0 0 2px #ef4444;
+}
+
+.esl-review-chip.active {
+  background: #bfdbfe;
+  box-shadow: 0 0 0 3px #3b82f6;
+  border-color: #3b82f6;
+}
+
+/* ================================================ */
+/* Word Bank Builder — Angry Tenses-style Picker    */
+/* ================================================ */
+
+.word-bank-builder {
+  background: linear-gradient(180deg, #f0f9ff 0%, #fff7ed 56%, #ecfccb 100%);
+}
+
+.wbb-card {
+  max-width: 960px;
+}
+
+.wbb-sentence-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 18px 0 16px;
+  padding: clamp(16px, 4vw, 24px);
+  background: #fffef7;
+  border: 3px dashed #f97316;
+  border-radius: 18px;
+  color: #301a0f;
+  font-size: clamp(1.15rem, 3.8vw, 1.55rem);
+  font-weight: 900;
+  line-height: 1.35;
+  text-align: center;
+  box-shadow: inset 0 0 14px rgba(15, 23, 42, 0.06);
+}
+
+.wbb-passage-display {
+  justify-content: flex-start;
+  text-align: left;
+  font-size: clamp(1.05rem, 3.4vw, 1.35rem);
+}
+
+.wbb-scroll-picker {
+  position: relative;
+  display: inline-flex;
+  width: min(270px, 72vw);
+  height: 122px;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+
+.wbb-picker-viewport {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scroll-snap-type: y mandatory;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.wbb-picker-viewport::-webkit-scrollbar {
+  display: none;
+}
+
+.wbb-picker-track {
+  display: flex;
+  flex-direction: column;
+  padding: 36px 0;
+}
+
+.wbb-picker-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  min-height: 50px;
+  padding: 0 14px;
+  color: #94a3b8;
+  font-size: 1.05rem;
+  font-weight: 900;
+  line-height: 1.1;
+  opacity: 0.35;
+  text-align: center;
+  cursor: pointer;
+  scroll-snap-align: center;
+  transition: color 0.18s ease, font-size 0.18s ease, opacity 0.18s ease, transform 0.18s ease;
+  overflow-wrap: anywhere;
+}
+
+.wbb-picker-active {
+  color: #d35400;
+  font-size: 1.45rem;
+  opacity: 1;
+  text-shadow: 1px 1px 0 #fff;
+}
+
+.wbb-picker-correct,
+.wbb-picker-answer {
+  color: #166534 !important;
+}
+
+.wbb-picker-correct {
+  transform: scale(1.12);
+}
+
+.wbb-picker-wrong {
+  color: #dc2626 !important;
+  animation: wbbShake 0.4s ease;
+}
+
+.wbb-picker-highlight {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  z-index: 2;
+  width: 90%;
+  height: 50px;
+  border-top: 3px solid #f97316;
+  border-bottom: 3px solid #f97316;
+  border-radius: 10px;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+
+.wbb-scroll-arrow {
+  position: absolute;
+  left: 50%;
+  z-index: 3;
+  color: #f97316;
+  font-size: 1rem;
+  opacity: 0.75;
+  pointer-events: none;
+  transform: translateX(-50%);
+}
+
+.wbb-arrow-up {
+  top: 2px;
+}
+
+.wbb-arrow-down {
+  bottom: 2px;
+}
+
+.wbb-confirm {
+  display: block;
+  width: min(360px, 100%);
+  margin: 18px auto 0;
+  background: #fb923c;
+  color: #7c2d12;
+  box-shadow: 0 6px 0 #fdba74;
+}
+
+.wbb-selected-answer {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+@keyframes wbbShake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-10px); }
+  75% { transform: translateX(10px); }
+}
+
+@media (max-width: 640px) {
+  .wbb-sentence-display {
+    align-items: center;
+    padding: 14px;
+  }
+
+  .wbb-scroll-picker {
+    width: min(250px, 86vw);
+  }
+
+  .wbb-picker-active {
+    font-size: 1.25rem;
+  }
+}
