@@ -5,10 +5,11 @@ import { RELATIVE_DETECTIVE_QUESTIONS } from './relativeDetectiveData';
 
 const ALL_PRONOUNS = ['who', 'which', 'whose', 'that', 'where'];
 
-const RelativeDetectiveGame = ({ onHome }) => {
+const RelativeDetectiveGame = ({ onHome, onComplete }) => {
   const [questions, setQuestions] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [score, setScore] = useState(0);
+  const [startTime, setStartTime] = useState(0);
 
   // Phases: 'spotting' (finding the noun) -> 'answering' (picking pronoun) -> 'finished'
   const [phase, setPhase] = useState('spotting');
@@ -24,11 +25,12 @@ const RelativeDetectiveGame = ({ onHome }) => {
 
   useEffect(() => {
     // Initialize questions (shuffle them)
-    const shuffled = [...RELATIVE_DETECTIVE_QUESTIONS].sort(() => Math.random() - 0.5);
+    const shuffled = [...RELATIVE_DETECTIVE_QUESTIONS].sort(() => Math.random() - 0.5).slice(0, 10); // Let's limit to 10 for a standard session length
     setQuestions(shuffled);
     setCurrentIndex(0);
     setScore(0);
     setPhase('spotting');
+    setStartTime(Date.now());
     
     // Init audio context
     audioContextRef.current = new (window.AudioContext || window.webkitAudioContext)();
@@ -72,20 +74,7 @@ const RelativeDetectiveGame = ({ onHome }) => {
 
   if (!currentQ) return null;
 
-  // Split sentence into words and identify the target noun and the gap
-  // The sentence string contains the correctPronoun.
-  // We need to replace the correctPronoun with a blank if it's the spotting phase.
-  // Wait, the data has "Find the dog that has spots."
-  // We split by space.
-  
-  // A simple tokenizer to keep punctuation separate or just match the target noun exactly.
-  // To keep it simple, let's process the sentence string into an array of word objects.
-  
   const buildSentenceNodes = () => {
-    // Regex to split by space but keep punctuation attached to words for display,
-    // though we need to carefully identify the target noun and the relative pronoun.
-    // Given sentences like: "Find the dog that has spots."
-    
     const words = currentQ.sentence.split(' ');
     
     return words.map((rawWord, idx) => {
@@ -120,7 +109,9 @@ const RelativeDetectiveGame = ({ onHome }) => {
   const handleOptionClick = (option) => {
     if (phase !== 'answering' || selectedPronoun !== null) return;
     
-    if (option === currentQ.correctPronoun) {
+    const isCorrect = option === currentQ.correctPronoun;
+    
+    if (isCorrect) {
       playTone('correct');
       setSelectedPronoun(option); // marks correct
       setScore(s => s + 1);
@@ -132,6 +123,14 @@ const RelativeDetectiveGame = ({ onHome }) => {
           setSelectedPronoun(null);
         } else {
           setPhase('finished');
+          if (onComplete) {
+            onComplete({
+              gameId: 'relativeDetective',
+              totalQuestions: questions.length,
+              correctAnswers: score + 1,
+              averageResponseTime: Date.now() - startTime
+            });
+          }
         }
       }, 1500);
     } else {
