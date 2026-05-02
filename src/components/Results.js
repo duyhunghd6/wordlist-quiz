@@ -2,14 +2,19 @@ import React from 'react';
 import { XCircle, CheckCircle, RotateCcw, Home, Zap } from 'lucide-react';
 import './Results.css';
 
-const Results = ({ score, questions, userAnswers, playAgain, saveResult, playerName }) => {
-  const correctCount = userAnswers.filter(a => a.isCorrect).length;
-  const wrongCount = userAnswers.filter(a => !a.isCorrect).length;
-  const totalAnswered = correctCount + wrongCount;
-  
-  const percentage = totalAnswered > 0 
-    ? Math.round((correctCount / totalAnswered) * 100)
-    : Math.min(100, Math.round((score / Math.max(1, questions.length)) * 100));
+const Results = ({ score, questions, userAnswers, resultSummary, playAgain, saveResult, playerName }) => {
+  const answerCorrectCount = userAnswers.filter(a => a.isCorrect).length;
+  const answerWrongCount = userAnswers.filter(a => !a.isCorrect).length;
+  const answerTotal = answerCorrectCount + answerWrongCount;
+  const correctCount = resultSummary?.correctAnswers ?? answerCorrectCount;
+  const totalAnswered = resultSummary?.totalQuestions ?? answerTotal;
+  const wrongCount = Math.max(0, totalAnswered - correctCount);
+
+  const percentage = resultSummary
+    ? resultSummary.score
+    : answerTotal > 0
+      ? Math.round((answerCorrectCount / answerTotal) * 100)
+      : Math.min(100, Math.round((score / Math.max(1, questions.length)) * 100));
   
   let performanceEmoji, performanceText, performanceColor, performanceBg;
   if (percentage >= 90) {

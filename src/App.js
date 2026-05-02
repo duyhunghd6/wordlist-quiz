@@ -91,6 +91,7 @@ function App() {
   const [questions, setQuestions] = useState([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [score, setScore] = useState(0);
+  const [resultSummary, setResultSummary] = useState(null);
   const [showResults, setShowResults] = useState(false);
   const [history, setHistory] = useState({});
   const [userAnswers, setUserAnswers] = useState([]);
@@ -306,6 +307,7 @@ function App() {
     setShowResults(false);
     setCurrentQuestionIndex(0);
     setScore(0);
+    setResultSummary(null);
     setUserAnswers([]);
   };
 
@@ -325,6 +327,7 @@ function App() {
     setShowResults(false);
     setCurrentQuestionIndex(0);
     setScore(0);
+    setResultSummary(null);
     setUserAnswers([]);
   };
 
@@ -486,6 +489,7 @@ function App() {
   const playAgain = () => {
     setQuizStarted(false);
     setShowResults(false);
+    setResultSummary(null);
   };
 
   const handleProfileComplete = (newProfile) => {
@@ -540,6 +544,7 @@ function App() {
           score={score}
           questions={questions}
           userAnswers={userAnswers}
+          resultSummary={resultSummary}
           playAgain={playAgain}
           saveResult={saveResult}
           playerName={profile.name}
@@ -558,8 +563,22 @@ function App() {
         selectedUnits: selectedUnits && selectedUnits.length > 0 ? selectedUnits : units, // Pass all units if none selected
         onAnswer: handleGameAnswer,
         onComplete: (results) => {
-          if (results && typeof results.score !== 'undefined') {
-            setScore(results.score);
+          if (results) {
+            const hasAnswerCounts = results.correctCount !== undefined
+              || results.correctAnswers !== undefined
+              || results.totalCorrect !== undefined;
+            const totalQuestions = results.totalQuestions || questions.length || 10;
+            const correctAnswers = results.correctCount ?? results.correctAnswers ?? results.totalCorrect ?? 0;
+            const displayScore = results.score !== undefined
+              ? results.score
+              : hasAnswerCounts
+                ? Math.round((correctAnswers / totalQuestions) * 100)
+                : undefined;
+
+            if (displayScore !== undefined) {
+              setScore(displayScore);
+            }
+            setResultSummary(hasAnswerCounts && results.score === undefined ? { totalQuestions, correctAnswers, score: displayScore } : null);
           }
           saveResult(profile.name, results || null);
           setShowResults(true);
