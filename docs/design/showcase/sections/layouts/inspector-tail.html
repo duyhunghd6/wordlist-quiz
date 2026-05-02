@@ -1,0 +1,42 @@
+<div id="ds-lay-arcade-inspector" class="layout-card">
+  <div class="layout-header">
+    <h3>Inspector Tail Game</h3>
+    <span class="badge">ds-lay-arcade-inspector</span>
+  </div>
+  <div class="layout-preview" style="height: 600px; background: var(--color-background-app); padding: var(--space-md); display: flex; flex-direction: column;">
+    <!-- Game Header -->
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-xl);">
+      <button class="btn btn-icon" style="background: white; border-radius: 50%; border: 2px solid var(--color-border-default);">⬅</button>
+      <h2 style="margin: 0;">Inspector Tail</h2>
+      <div class="badge badge-warning">1 / 10</div>
+    </div>
+    
+    <!-- Step 1: Prompt -->
+    <div style="background: white; border: 3px solid var(--color-border-default); border-radius: var(--radius-lg); padding: var(--space-lg); font-size: 1.5rem; font-weight: 600; text-align: center; box-shadow: 0 4px 0 var(--color-border-default); margin-bottom: var(--space-2xl);">
+      She is happy, <span style="border-bottom: 3px dashed var(--color-text-tertiary); padding: 0 20px;">_______</span>?
+    </div>
+    
+    <!-- Step 1: Polarity Selector -->
+    <div style="display: flex; justify-content: center; gap: var(--space-lg); margin-bottom: var(--space-2xl);">
+      <button class="btn" style="flex: 1; max-width: 150px; background: #fee2e2; border: 3px solid #ef4444; color: #b91c1c; font-size: 1.2rem;">
+        [+] Positive
+      </button>
+      <button class="btn" style="flex: 1; max-width: 150px; background: #e0f2fe; border: 3px solid #3b82f6; color: #1d4ed8; font-size: 1.2rem;">
+        [-] Negative
+      </button>
+    </div>
+    
+    <!-- Step 2: Tag Drawer (Hidden initially, shown here for preview) -->
+    <div style="flex: 1; background: #f8fafc; border-radius: var(--radius-lg) var(--radius-lg) 0 0; padding: var(--space-lg); border-top: 3px solid var(--color-border-default); display: flex; flex-direction: column; align-items: center;">
+      <h3 style="margin-bottom: var(--space-md); color: var(--color-text-secondary);">Attach the tail:</h3>
+      <div style="display: flex; flex-direction: column; gap: var(--space-md); width: 100%; max-width: 300px;">
+        <button class="btn" style="background: #e0f2fe; border: 3px solid #3b82f6; color: #1d4ed8; font-size: 1.2rem; width: 100%;">
+          isn't she
+        </button>
+        <button class="btn btn-outline" style="font-size: 1.2rem; width: 100%;">
+          is she
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

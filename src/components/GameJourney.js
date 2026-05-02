@@ -16,7 +16,7 @@ const JOURNEY_DATA = {
         nodes: [
             { id: "esl_1", label: "Vocab Warm-up", sub: "Swipe, Quiz, Bubble", icon: "stack", type: "vocab", games: ["swipe", "quiz", "bubble"] },
             { id: "esl_2", label: "Word Meaning & Form", sub: "Word Search, Scramble, ESL Matching", icon: "squares-four", type: "grammar", games: ["wordSearch", "scramble", "eslMatching"] },
-            { id: "esl_3", label: "Grammar Noticing", sub: "Shape Builder, Signal Spotter, Review Quiz", icon: "keyboard", type: "grammar", games: ["shapeBuilder", "tenseSignal", "eslReviewQuiz"] },
+            { id: "esl_3", label: "Grammar Noticing", sub: "Shape Builder, Signal Spotter, Review Quiz", icon: "keyboard", type: "grammar", games: ["shapeBuilder", "tenseSignal", "eslReviewQuiz", "relativeDetective", "inspectorTail"] },
             { id: "esl_4", label: "Grammar Building", sub: "Word Bank Builder, Angry Tenses, Timeline Detective", icon: "text-align-left", type: "grammar", games: ["wordBankBuilder", "angryTenses", "timelineDetective"] },
             { id: "esl_5", label: "Reading Mission", sub: "Story Reading Mission, Reading Explorer, Word Runner", icon: "lightbulb", type: "both", games: ["storyReadingMission", "readingExplorer", "endlessRunner"] }
         ]

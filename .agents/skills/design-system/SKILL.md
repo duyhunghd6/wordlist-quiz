@@ -213,6 +213,7 @@ All showcase IDs follow `ds-{category}-{name}`:
 | `ds-lay-arcade-timeline`      | Timeline Detective   |
 | `ds-lay-arcade-mario`         | Mario Runner         |
 | `ds-lay-arcade-signal`        | Tense Signal Spotter |
+| `ds-lay-arcade-inspector`     | Inspector Tail Game  |
 
 ---
 

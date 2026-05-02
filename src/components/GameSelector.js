@@ -10,6 +10,8 @@ const GAME_ICONS = {
   bubble: Circle,
   shapeBuilder: Blocks,
   timelineDetective: History,
+  relativeDetective: Search,
+  inspectorTail: Search,
   photobomb: Camera,
   marioTense: Gamepad2,
   tenseSignal: Search,
@@ -27,6 +29,8 @@ const GAME_COLORS = {
   bubble: '#10B981', // success
   shapeBuilder: '#3B82F6',
   timelineDetective: '#FBBF24',
+  relativeDetective: '#1e1b4b',
+  inspectorTail: '#3b82f6',
   photobomb: '#EC4899',
   marioTense: '#22C55E',
   tenseSignal: '#A855F7',

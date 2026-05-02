@@ -1,0 +1,269 @@
+/* Relative Detective Game Styles */
+
+.rdg-game {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background: linear-gradient(180deg, #1e1b4b 0%, #312e81 100%); /* Detective dark blue */
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ─── HUD ─── */
+.rdg-hud {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-sm) var(--space-md);
+  z-index: 10;
+}
+
+.rdg-hud-left {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.rdg-back-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: white;
+  color: #1e1b4b;
+  border: 2px solid #cbd5e1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 0 #cbd5e1;
+  transition: all 0.15s;
+}
+
+.rdg-back-btn:active {
+  transform: translateY(2px);
+  box-shadow: none;
+}
+
+.rdg-score-pill {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+/* ─── STAGE ─── */
+.rdg-stage {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xl);
+  padding: var(--space-md);
+  z-index: 5;
+}
+
+.rdg-clue-board {
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+.rdg-instruction {
+  font-size: 1.5rem;
+  color: #fbbf24;
+  margin-bottom: var(--space-md);
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.rdg-sentence {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  background: white;
+  padding: var(--space-lg);
+  border-radius: var(--radius-lg);
+  color: #1e1b4b;
+  box-shadow: 0 8px 0 rgba(0,0,0,0.2);
+}
+
+.rdg-word {
+  padding: 4px 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  user-select: none;
+}
+
+.rdg-word.clickable:hover {
+  background: #f1f5f9;
+}
+
+.rdg-word.clickable:active {
+  transform: scale(0.95);
+}
+
+.rdg-word.target.spotted {
+  background: #fbbf24;
+  color: #78350f;
+  font-weight: bold;
+}
+
+.rdg-word.error {
+  animation: rdg-shake 0.4s;
+  background: #fecaca;
+  color: #991b1b;
+}
+
+.rdg-blank {
+  padding: 4px 16px;
+  border-bottom: 4px solid #cbd5e1;
+  color: transparent;
+  min-width: 60px;
+  display: inline-block;
+}
+
+.rdg-blank.filled {
+  border-bottom: none;
+  color: #22c55e;
+  font-weight: bold;
+}
+
+/* ─── SELECTION BOARD (STEP 2) ─── */
+.rdg-selection-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  animation: rdg-fade-in 0.3s ease-out;
+}
+
+.rdg-options-scroll {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-height: 250px;
+  overflow-y: auto;
+  padding-right: 8px;
+}
+
+/* Custom scrollbar for options */
+.rdg-options-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+.rdg-options-scroll::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+.rdg-options-scroll::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+}
+
+.rdg-option-btn {
+  padding: 16px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 12px;
+  background: white;
+  border: 2px solid #cbd5e1;
+  color: #1e1b4b;
+  cursor: pointer;
+  box-shadow: 0 4px 0 #cbd5e1;
+  transition: all 0.1s;
+  text-align: center;
+  user-select: none;
+}
+
+.rdg-option-btn:active {
+  transform: translateY(4px);
+  box-shadow: none;
+}
+
+.rdg-option-btn.correct {
+  background: #22c55e;
+  color: white;
+  border-color: #16a34a;
+  box-shadow: 0 4px 0 #16a34a;
+}
+
+.rdg-option-btn.error {
+  animation: rdg-shake 0.4s;
+  background: #ef4444;
+  color: white;
+  border-color: #b91c1c;
+  box-shadow: 0 4px 0 #b91c1c;
+}
+
+/* ─── ANIMATIONS ─── */
+@keyframes rdg-shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-5px); }
+  40%, 80% { transform: translateX(5px); }
+}
+
+@keyframes rdg-fade-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ─── WORLD SELECT (Copied from Tense Signal style if needed) ─── */
+.rdg-world-select {
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-md);
+  z-index: 10;
+  width: 100%;
+}
+
+.rdg-ws-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: white;
+  margin: 0;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.rdg-ws-sub {
+  color: #cbd5e1;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.rdg-ws-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.rdg-ws-card {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: var(--space-md);
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  border: 2px solid var(--color-border-default);
+  box-shadow: 0 4px 0 var(--color-border-default);
+  cursor: pointer;
+  transition: transform 0.1s, box-shadow 0.1s;
+  text-align: left;
+}
+
+.rdg-ws-card:active {
+  transform: translateY(4px);
+  box-shadow: 0 0 0 var(--color-border-default);
+}

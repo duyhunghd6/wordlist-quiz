@@ -1,0 +1,128 @@
+<!-- Relative Detective Game Showcase -->
+<div class="rdg-game" id="ds-lay-relative-detective">
+  <!-- HUD -->
+  <div class="rdg-hud">
+    <div class="rdg-hud-left">
+      <button class="rdg-back-btn">
+        <i data-lucide="arrow-left"></i>
+      </button>
+      <div class="rdg-score-pill">
+        ⭐ 1 / 10
+      </div>
+    </div>
+  </div>
+
+  <!-- Stage Area -->
+  <div class="rdg-stage">
+    <!-- Step 1: Spot the Clue -->
+    <div class="rdg-clue-board">
+      <h2 class="rdg-instruction">🔍 Find the Clue Word!</h2>
+      <div class="rdg-sentence">
+        <span class="rdg-word">Find</span>
+        <span class="rdg-word">the</span>
+        <span class="rdg-word rdg-word-target">dog</span>
+        <span class="rdg-blank">___</span>
+        <span class="rdg-word">has</span>
+        <span class="rdg-word">spots.</span>
+      </div>
+    </div>
+
+    <!-- Step 2: Select the Pronoun (Overlay or below) -->
+    <div class="rdg-selection-board">
+      <h2 class="rdg-instruction">Which relative pronoun?</h2>
+      <div class="rdg-options-scroll">
+        <button class="rdg-option-btn">who</button>
+        <button class="rdg-option-btn rdg-option-correct">which</button>
+        <button class="rdg-option-btn">where</button>
+        <button class="rdg-option-btn">whose</button>
+        <button class="rdg-option-btn">that</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+/* Relative Detective Game Showcase Styles */
+.rdg-game {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: linear-gradient(180deg, #1e1b4b 0%, #312e81 100%); /* Detective dark blue */
+  color: white;
+  font-family: var(--font-family-base, sans-serif);
+}
+
+.rdg-hud {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.rdg-back-btn {
+  width: 40px; height: 40px; border-radius: 50%;
+  background: white; color: #1e1b4b; border: none; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+}
+
+.rdg-score-pill {
+  background: rgba(255, 255, 255, 0.2); padding: 8px 16px; border-radius: 20px; font-weight: bold;
+}
+
+.rdg-stage {
+  flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 40px;
+}
+
+.rdg-clue-board {
+  text-align: center;
+}
+
+.rdg-instruction {
+  font-size: 1.5rem; color: #fbbf24; margin-bottom: 20px;
+}
+
+.rdg-sentence {
+  display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; font-size: 2rem;
+  background: white; padding: 20px; border-radius: 12px; color: #1e1b4b;
+  box-shadow: 0 8px 0 rgba(0,0,0,0.2);
+}
+
+.rdg-word {
+  padding: 4px 8px; border-radius: 8px; cursor: pointer; transition: 0.2s;
+}
+
+.rdg-word:hover {
+  background: #f1f5f9;
+}
+
+.rdg-word-target.active {
+  background: #fbbf24; color: #78350f; font-weight: bold;
+}
+
+.rdg-blank {
+  padding: 4px 16px; border-bottom: 4px solid #cbd5e1; color: transparent;
+}
+
+.rdg-selection-board {
+  display: flex; flex-direction: column; align-items: center;
+  width: 100%; max-width: 400px;
+}
+
+.rdg-options-scroll {
+  display: flex; flex-direction: column; gap: 12px; width: 100%;
+  max-height: 250px; overflow-y: auto; padding-right: 8px;
+}
+
+.rdg-option-btn {
+  padding: 16px; font-size: 1.5rem; font-weight: bold; border-radius: 12px;
+  background: white; border: 2px solid #cbd5e1; color: #1e1b4b; cursor: pointer;
+  box-shadow: 0 4px 0 #cbd5e1; transition: 0.1s; text-align: center;
+}
+
+.rdg-option-btn:active {
+  transform: translateY(4px); box-shadow: none;
+}
+
+.rdg-option-correct {
+  background: #22c55e; color: white; border-color: #16a34a; box-shadow: 0 4px 0 #16a34a;
+}
+</style>

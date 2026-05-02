@@ -1,0 +1,41 @@
+id|difficulty|sentence_prompt|polarity|correct_tag|wrong_tag_1|wrong_tag_2
+1|1|She is happy, _______?|pos|isn't she|is she|aren't they
+2|1|They are playing, _______?|pos|aren't they|are they|isn't he
+3|1|He isn't sad, _______?|neg|is he|isn't he|is she
+4|1|You aren't tired, _______?|neg|are you|aren't you|do you
+5|1|It is cold, _______?|pos|isn't it|is it|does it
+6|1|We are ready, _______?|pos|aren't we|are we|don't we
+7|1|I am late, _______?|pos|aren't I|am I|isn't I
+8|1|She isn't eating, _______?|neg|is she|isn't she|does she
+9|1|They aren't sleeping, _______?|neg|are they|aren't they|do they
+10|1|He is tall, _______?|pos|isn't he|is he|doesn't he
+11|2|The cat is sleeping, _______?|pos|isn't it|is it|isn't he
+12|2|Mary and Tom are friends, _______?|pos|aren't they|are they|aren't we
+13|2|My brother isn't here, _______?|neg|is he|isn't he|is she
+14|2|The dogs are barking, _______?|pos|aren't they|are they|isn't it
+15|2|Your sister is nice, _______?|pos|isn't she|is she|isn't he
+16|2|The book isn't boring, _______?|neg|is it|isn't it|is he
+17|2|The students are studying, _______?|pos|aren't they|are they|aren't you
+18|2|Mr. Smith isn't angry, _______?|neg|is he|isn't he|is it
+19|2|The girls aren't playing, _______?|neg|are they|aren't they|is she
+20|2|The apple is red, _______?|pos|isn't it|is it|isn't they
+21|3|He likes apples, _______?|pos|doesn't he|does he|isn't he
+22|3|They play soccer, _______?|pos|don't they|do they|aren't they
+23|3|She doesn't eat meat, _______?|neg|does she|doesn't she|is she
+24|3|We don't watch TV, _______?|neg|do we|don't we|are we
+25|3|You read books, _______?|pos|don't you|do you|aren't you
+26|3|The bird sings beautifully, _______?|pos|doesn't it|does it|isn't it
+27|3|My dad doesn't drive, _______?|neg|does he|doesn't he|is he
+28|3|The boys run fast, _______?|pos|don't they|do they|aren't they
+29|3|Your mom cooks well, _______?|pos|doesn't she|does she|isn't she
+30|3|I don't know the answer, _______?|neg|do I|don't I|am I
+31|4|You can swim, _______?|pos|can't you|can you|don't you
+32|4|She can't fly, _______?|neg|can she|can't she|is she
+33|4|They can help us, _______?|pos|can't they|can they|aren't they
+34|4|He can't jump high, _______?|neg|can he|can't he|does he
+35|4|We can go now, _______?|pos|can't we|can we|don't we
+36|4|The dog can run, _______?|pos|can't it|can it|isn't it
+37|4|Birds can't read, _______?|neg|can they|can't they|do they
+38|4|My sister can draw, _______?|pos|can't she|can she|doesn't she
+39|4|You can't see it, _______?|neg|can you|can't you|do you
+40|4|I can do this, _______?|pos|can't I|can I|don't I
