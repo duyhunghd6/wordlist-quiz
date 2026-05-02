@@ -448,11 +448,12 @@ function App() {
     
     // Handle standard quizzes vs custom game analytics 
     if (runnerData) {
-        finalScore = runnerData.score;
-        recordGameResult(selectedGame, finalScore);
-        // The Heatmap counts total questions & correct answers
         const totalQ = runnerData.totalQuestions || questions.length || 10;
         const correctQ = runnerData.correctCount ?? runnerData.correctAnswers ?? runnerData.totalCorrect ?? 0;
+        
+        finalScore = runnerData.score !== undefined ? runnerData.score : Math.round((correctQ / totalQ) * 100);
+        
+        recordGameResult(selectedGame, finalScore);
         recordActivity(selectedWordlist, finalScore, totalQ, correctQ);
     } else {
         // Legacy Game / Quiz logic
