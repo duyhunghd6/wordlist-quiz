@@ -155,7 +155,7 @@ const PhotobombGame = ({ words, isAllQuestions = false, onAnswer, onComplete, on
 
   // Helper to render sentence with interactive blanks
   const renderSentence = () => {
-    const parts = currentQ.context.split("______");
+    const parts = currentQ.context.split(/_{3,}/);
     return (
       <div className="sentence-container" style={{
         background: 'white',

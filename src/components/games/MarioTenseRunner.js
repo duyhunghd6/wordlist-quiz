@@ -605,7 +605,7 @@ const MarioTenseRunner = ({ words, isAllQuestions = false, onAnswer, onComplete,
 
   const q = questions[currentQ];
   const isDark = DARK_WORLDS.includes(selectedWorld?.id);
-  const parts = q?.sentence?.split('___') || ['', ''];
+  const parts = q?.sentence?.split(/_{3,}/) || ['', ''];
 
   return (
     <div className={`mtr-game world-${selectedWorld?.id} ${scrollClass}`}>

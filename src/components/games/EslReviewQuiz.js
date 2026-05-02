@@ -104,7 +104,7 @@ const InlinePickerBlank = ({ options, selectedOption, active, onToggleActive, on
 };
 
 const InlineQ = ({ question, index, selectedOption, active, onToggleActive, onPick, isSubmitted, hidePassage }) => {
-  const parts = question.prompt.split('_____');
+  const parts = question.prompt.split(/_{3,}/);
   const picker = (
     <InlinePickerBlank 
       options={question.options} 

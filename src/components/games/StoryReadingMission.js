@@ -121,7 +121,7 @@ const InlinePickerBlank = ({ question, picked, onPick }) => {
  * Renders a question prompt as inline text with the picker blank.
  */
 const InlineQ = ({ question, picked, onPick }) => {
-  const parts = question.prompt.split('_____');
+  const parts = question.prompt.split(/_{3,}/);
   const picker = <InlinePickerBlank question={question} picked={picked} onPick={onPick} />;
   const fb = picked && (
     <span className={`srm-fb ${picked.correct ? 'srm-fb-ok' : 'srm-fb-no'}`}>
