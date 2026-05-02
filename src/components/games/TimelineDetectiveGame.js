@@ -19,7 +19,7 @@ const QUESTIONS = [
 
 
 
-const TimelineDetectiveGame = ({ words, isAllQuestions = false, onAnswer, onComplete, onHome }) => {
+const TimelineDetectiveGame = ({ words, isAllQuestions = false, tenseSentences, onAnswer, onComplete, onHome }) => {
   const [questions, setQuestions] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedZone, setSelectedZone] = useState(null);
@@ -29,14 +29,62 @@ const TimelineDetectiveGame = ({ words, isAllQuestions = false, onAnswer, onComp
   const [wrongWords, setWrongWords] = useState([]);
 
   useEffect(() => {
-    const numQuestions = isAllQuestions ? QUESTIONS.length : Math.min(words.length || 4, QUESTIONS.length);
-    const shuffled = [...QUESTIONS].sort(() => 0.5 - Math.random()).slice(0, numQuestions);
+    let availableQuestions = [...QUESTIONS];
+
+    if (tenseSentences && tenseSentences.length > 0) {
+      const allowedTenses = {
+        'Past Simple': TENSES.SIMPLE_PAST,
+        'Present Perfect': TENSES.PRESENT_PERFECT,
+        'Past Perfect': TENSES.PAST_PERFECT
+      };
+      
+      const filtered = tenseSentences.filter(ts => allowedTenses[ts.tense]);
+      
+      if (filtered.length > 0) {
+        availableQuestions = filtered.map(ts => {
+          let highlighted = '';
+          if (ts.verb_choices && ts.verb_choices.trim()) {
+            highlighted = ts.verb_choices.split('|')[0].trim();
+          } else if (ts.correct_sentence && ts.wrong_sentence) {
+            const correctWords = ts.correct_sentence.split(' ');
+            const wrongWords = ts.wrong_sentence.split(' ');
+            const diffs = [];
+            for (let i = 0; i < Math.max(correctWords.length, wrongWords.length); i++) {
+              if (correctWords[i] !== wrongWords[i] && correctWords[i]) {
+                diffs.push(correctWords[i].replace(/[.,!?]$/, ''));
+              }
+            }
+            if (diffs.length > 0) {
+              const diffStr = diffs.join(' ');
+              if (ts.correct_sentence.includes(diffStr)) {
+                highlighted = diffStr;
+              } else if (diffs.length === 1 && ts.correct_sentence.includes(diffs[0])) {
+                highlighted = diffs[0];
+              }
+            }
+          }
+
+          if (highlighted && !ts.correct_sentence.includes(highlighted)) {
+            highlighted = '';
+          }
+
+          return {
+            text: ts.correct_sentence,
+            type: allowedTenses[ts.tense],
+            highlighted: highlighted
+          };
+        });
+      }
+    }
+
+    const numQuestions = isAllQuestions ? availableQuestions.length : Math.min(words?.length || 4, availableQuestions.length);
+    const shuffled = [...availableQuestions].sort(() => 0.5 - Math.random()).slice(0, numQuestions);
     setQuestions(shuffled.map((q, i) => ({
       ...q,
-      targetWord: words[i]?.word || `q${i}`
+      targetWord: words && words[i] ? words[i].word : `q${i}`
     })));
     setStartTime(Date.now());
-  }, [words, isAllQuestions]);
+  }, [words, isAllQuestions, tenseSentences]);
 
   const handleSelect = (zoneId) => {
     if (selectedZone !== null) return;
@@ -105,20 +153,33 @@ const TimelineDetectiveGame = ({ words, isAllQuestions = false, onAnswer, onComp
 
   // Helper to render sentence with highlight
   const renderSentence = () => {
-    const parts = currentQ.text.split(currentQ.highlighted);
+    const containerStyle = {
+      background: 'white',
+      border: '3px solid var(--color-border-default)',
+      borderRadius: 'var(--radius-lg)',
+      padding: 'var(--space-lg)',
+      fontSize: '1.5rem',
+      fontWeight: 600,
+      textAlign: 'center',
+      boxShadow: '0 4px 0 var(--color-border-default)',
+      marginBottom: 'var(--space-2xl)'
+    };
+
+    if (!currentQ.highlighted || !currentQ.text.includes(currentQ.highlighted)) {
+      return (
+        <div style={containerStyle}>
+          {currentQ.text}
+        </div>
+      );
+    }
+
+    const idx = currentQ.text.indexOf(currentQ.highlighted);
+    const before = currentQ.text.substring(0, idx);
+    const after = currentQ.text.substring(idx + currentQ.highlighted.length);
+
     return (
-      <div style={{
-        background: 'white',
-        border: '3px solid var(--color-border-default)',
-        borderRadius: 'var(--radius-lg)',
-        padding: 'var(--space-lg)',
-        fontSize: '1.5rem',
-        fontWeight: 600,
-        textAlign: 'center',
-        boxShadow: '0 4px 0 var(--color-border-default)',
-        marginBottom: 'var(--space-2xl)'
-      }}>
-        {parts[0]}
+      <div style={containerStyle}>
+        {before}
         <span style={{ 
           background: '#fef08a', 
           color: '#854d0e',
@@ -128,7 +189,7 @@ const TimelineDetectiveGame = ({ words, isAllQuestions = false, onAnswer, onComp
         }}>
           {currentQ.highlighted}
         </span>
-        {parts[1]}
+        {after}
       </div>
     );
   };
