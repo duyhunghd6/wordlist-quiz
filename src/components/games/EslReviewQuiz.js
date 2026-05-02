@@ -61,7 +61,7 @@ const InlinePickerBlank = ({ options, selectedOption, active, onToggleActive, on
   if (selectedOption && !active) {
     return (
       <span style={containerStyle}>
-        <span className="srm-answered srm-correct" style={{ background: '#e0e0e0', color: '#333' }} onClick={onToggleActive}>
+        <span className="srm-answered" style={{ background: '#e2e8f0', color: '#334155', border: '2px solid #cbd5e1' }} onClick={onToggleActive}>
           {selectedOption}
         </span>
       </span>
