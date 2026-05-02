@@ -141,14 +141,18 @@ const EslReviewQuiz = ({ eslReviewQuestions, onAnswer, onComplete, onHome, selec
   const questions = useMemo(() => {
     const banks = eslReviewQuestions?.banks || {};
     const multipleChoice = banks.multiple_choice || [];
-    const simpleGrammar = (banks.grammar_completion || [])
-      .filter((item) => !item.correctAnswer.includes(';'))
+    const simpleGrammar = shuffle((banks.grammar_completion || []).filter((item) => !item.correctAnswer.includes(';')))
       .slice(0, 20)
       .map((item, _, grammarItems) => {
-        const distractors = item.wordBank.length > 1
-          ? item.wordBank
-          : grammarItems.map((grammarItem) => grammarItem.correctAnswer).filter((answer) => answer !== item.correctAnswer);
-        return { ...item, options: shuffle([...new Set([item.correctAnswer, ...distractors])]).slice(0, 4) };
+        let distractors = item.wordBank?.length > 1
+          ? item.wordBank.filter(w => w !== item.correctAnswer)
+          : grammarItems.map(g => g.correctAnswer).filter(ans => ans !== item.correctAnswer);
+        
+        // Shuffle distractors and take exactly 3
+        distractors = shuffle([...new Set(distractors)]).slice(0, 3);
+        
+        // Combine with the correct answer and shuffle the final 4 options
+        return { ...item, options: shuffle([item.correctAnswer, ...distractors]) };
       });
       
     let mixed = shuffle([...multipleChoice, ...simpleGrammar]).slice(0, 30); // Show up to 30 as requested
