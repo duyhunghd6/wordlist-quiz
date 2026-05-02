@@ -47,21 +47,11 @@ const InlinePickerBlank = ({ options, selectedOption, active, onToggleActive, on
   const stableHeight = 36;
   const containerStyle = { display: 'inline-flex', justifyContent: 'center', alignItems: 'center', width: stableWidth, height: stableHeight, margin: '0 4px', verticalAlign: 'middle', boxSizing: 'border-box' };
 
-  if (isSubmitted) {
+  if (selectedOption) {
     const isCorrect = selectedOption === correctAnswer;
     return (
       <span style={containerStyle}>
         <span className={`srm-answered ${isCorrect ? 'srm-correct' : 'srm-wrong'}`}>
-          {selectedOption || 'No answer'}
-        </span>
-      </span>
-    );
-  }
-
-  if (selectedOption && !active) {
-    return (
-      <span style={containerStyle}>
-        <span className="srm-answered" style={{ background: '#e2e8f0', color: '#334155', border: '2px solid #cbd5e1' }} onClick={onToggleActive}>
           {selectedOption}
         </span>
       </span>
@@ -118,7 +108,7 @@ const InlineQ = ({ question, index, selectedOption, active, onToggleActive, onPi
   );
   
   const isCorrect = selectedOption === question.correctAnswer;
-  const fb = isSubmitted && (
+  const fb = selectedOption && (
     <span className={`srm-fb ${isCorrect ? 'srm-fb-ok' : 'srm-fb-no'}`}>
       {isCorrect ? ' ✓' : ` ✗ (Correct: ${question.correctAnswer})`}
     </span>
@@ -209,18 +199,17 @@ const EslReviewQuiz = ({ eslReviewQuestions, onAnswer, onComplete, onHome, selec
   const handlePick = (index, option) => {
     setAnswers(prev => ({ ...prev, [index]: option }));
     setActivePickerIdx(null);
+    
+    // Evaluate and record immediately to lock it in
+    const q = questions[index];
+    const isCorrect = option === q.correctAnswer;
+    onAnswer(q.correctAnswer, isCorrect, 3000, makeReviewResultQuestion(q), option);
   };
 
   const handleSubmit = () => {
     let nextScore = 0;
     questions.forEach((q, idx) => {
-      const isCorrect = answers[idx] === q.correctAnswer;
-      if (isCorrect) nextScore++;
-      
-      // If we want to record each answer tracking
-      if (answers[idx]) {
-        onAnswer(q.correctAnswer, isCorrect, 3000, makeReviewResultQuestion(q), answers[idx]);
-      }
+      if (answers[idx] === q.correctAnswer) nextScore++;
     });
     setScore(nextScore);
     setIsSubmitted(true);
