@@ -108,7 +108,7 @@ const WordBankBuilder = ({
 
     const count = isAllQuestions
       ? items.length
-      : Math.min(words?.length || numQuestions || 10, items.length);
+      : Math.min(numQuestions || words?.length || 10, items.length);
 
     return shuffle(items)
       .slice(0, count)

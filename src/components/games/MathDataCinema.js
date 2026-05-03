@@ -30,7 +30,7 @@ const M4_DATA_CINEMA_MODULE = {
 
 export default function MathDataCinema({ words, numQuestions, isAllQuestions = false, onComplete, onHome }) {
   const moduleToPlay = React.useMemo(() => {
-    let remaining = isAllQuestions ? Infinity : words?.length || numQuestions || 5;
+    let remaining = isAllQuestions ? Infinity : numQuestions || words?.length || 10;
     const levels = M4_DATA_CINEMA_MODULE.levels.map(level => {
       if (level.questions) {
         const count = isAllQuestions ? level.questions.length : Math.min(remaining, level.questions.length);

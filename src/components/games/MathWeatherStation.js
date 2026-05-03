@@ -85,7 +85,7 @@ const generateRandomQuickfire = (numQuestions = 5) => {
 
 export default function MathWeatherStation({ words, numQuestions, isAllQuestions = false, onComplete, onHome }) {
   const { dynamicL1, dynamicL2 } = React.useMemo(() => {
-    const requestedCount = isAllQuestions ? CITIES.length : words?.length || numQuestions || 5;
+    const requestedCount = isAllQuestions ? CITIES.length : numQuestions || words?.length || 10;
     const l1Data = generateRandomSortData(Math.min(requestedCount, CITIES.length));
     const l2Questions = generateRandomQuickfire(Math.min(requestedCount, CITIES.length));
     return {

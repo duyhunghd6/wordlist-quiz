@@ -10,7 +10,7 @@ const DIRECTIONS = [
   { dx: -1, dy: 1 },
 ];
 
-const WordSearch = ({ words, onAnswer, onComplete, onHome, gameId = 'wordSearch', isAllQuestions = false }) => {
+const WordSearch = ({ words, numQuestions = 10, onAnswer, onComplete, onHome, gameId = 'wordSearch', isAllQuestions = false }) => {
   const [grid, setGrid] = useState([]);
   const [wordList, setWordList] = useState([]);
   const [foundWords, setFoundWords] = useState([]);
@@ -28,8 +28,11 @@ const WordSearch = ({ words, onAnswer, onComplete, onHome, gameId = 'wordSearch'
 
   const filterWords = useCallback((allWords) => {
     const playableWords = allWords.filter(w => !w.word.includes(' ') && w.word.length <= GRID_SIZE);
-    return isAllQuestions ? playableWords : playableWords.slice(0, Math.min(10, playableWords.length));
-  }, [isAllQuestions]);
+    const count = isAllQuestions
+      ? playableWords.length
+      : Math.min(numQuestions || playableWords.length || 10, playableWords.length);
+    return playableWords.slice(0, count);
+  }, [isAllQuestions, numQuestions]);
 
   const generateGrid = useCallback((wordsToPlace) => {
     const newGrid = Array(GRID_SIZE).fill(null).map(() => 

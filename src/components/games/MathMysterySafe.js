@@ -64,7 +64,7 @@ const M2_MYSTERY_SAFE_MODULE = {
 export default function MathMysterySafe({ words, numQuestions, isAllQuestions = false, onComplete, onHome }) {
   const levelsToPlay = React.useMemo(() => {
     const allLevels = M2_MYSTERY_SAFE_MODULE.levels;
-    const count = isAllQuestions ? allLevels.length : Math.min(words?.length || numQuestions || allLevels.length, allLevels.length);
+    const count = isAllQuestions ? allLevels.length : Math.min(numQuestions || words?.length || 10, allLevels.length);
     return allLevels.slice(0, count);
   }, [words, numQuestions, isAllQuestions]);
 

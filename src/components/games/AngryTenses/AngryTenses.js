@@ -91,6 +91,7 @@ function pickWeightedQuestions(pool, count) {
 
 const AngryTensesGame = ({
   words,
+  numQuestions = 10,
   tenseSentences,
   isAllQuestions = false,
   onAnswer,
@@ -119,14 +120,14 @@ const AngryTensesGame = ({
   const wrongAnswersRef = useRef([]);
 
   const availableQuestionCount = tenseSentences?.length || words?.length || 5;
-  const numQuestions = isAllQuestions
+  const sessionQuestionCount = isAllQuestions
     ? availableQuestionCount
-    : Math.min(words?.length || 5, 10, availableQuestionCount);
+    : Math.min(numQuestions || words?.length || 10, availableQuestionCount);
 
   useEffect(() => {
     // Use centralized TOON database with weighted SRS shuffle
     if (tenseSentences && tenseSentences.length > 0) {
-      const picked = pickWeightedQuestions(tenseSentences, numQuestions);
+      const picked = pickWeightedQuestions(tenseSentences, sessionQuestionCount);
       const generated = picked.map(entry => toonToQuestion(entry)).filter(Boolean);
       if (generated.length > 0) {
         setQuestions(generated);
@@ -134,7 +135,7 @@ const AngryTensesGame = ({
       }
     }
     // Fallback: generate simple questions from words if no TOON data
-    const fallback = (words || []).slice(0, numQuestions).map((w, i) => ({
+    const fallback = (words || []).slice(0, sessionQuestionCount).map((w, i) => ({
       before: 'Choose the correct word:',
       after: '',
       options: [w.word, w.word + 's', w.word + 'ed', w.word + 'ing'].sort(() => Math.random() - 0.5),
@@ -142,7 +143,7 @@ const AngryTensesGame = ({
       targetWord: w.word || `q${i}`,
     }));
     setQuestions(fallback);
-  }, [words, tenseSentences, numQuestions]);
+  }, [words, tenseSentences, sessionQuestionCount]);
 
   // Keyboard handler for scroll picker
   useEffect(() => {

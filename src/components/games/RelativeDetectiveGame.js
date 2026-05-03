@@ -5,7 +5,7 @@ import { RELATIVE_DETECTIVE_QUESTIONS } from './relativeDetectiveData';
 
 const ALL_PRONOUNS = ['who', 'which', 'whose', 'that', 'where'];
 
-const RelativeDetectiveGame = ({ onHome, onComplete }) => {
+const RelativeDetectiveGame = ({ numQuestions = 10, isAllQuestions = false, onHome, onComplete }) => {
   const [questions, setQuestions] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [score, setScore] = useState(0);
@@ -24,8 +24,10 @@ const RelativeDetectiveGame = ({ onHome, onComplete }) => {
   const audioContextRef = useRef(null);
 
   useEffect(() => {
-    // Initialize questions (shuffle them)
-    const shuffled = [...RELATIVE_DETECTIVE_QUESTIONS].sort(() => Math.random() - 0.5).slice(0, 10); // Let's limit to 10 for a standard session length
+    const count = isAllQuestions
+      ? RELATIVE_DETECTIVE_QUESTIONS.length
+      : Math.min(numQuestions || 10, RELATIVE_DETECTIVE_QUESTIONS.length);
+    const shuffled = [...RELATIVE_DETECTIVE_QUESTIONS].sort(() => Math.random() - 0.5).slice(0, count);
     setQuestions(shuffled);
     setCurrentIndex(0);
     setScore(0);
@@ -34,7 +36,7 @@ const RelativeDetectiveGame = ({ onHome, onComplete }) => {
     
     // Init audio context
     audioContextRef.current = new (window.AudioContext || window.webkitAudioContext)();
-  }, []);
+  }, [isAllQuestions, numQuestions]);
 
   useEffect(() => {
     if (phase === 'answering') {

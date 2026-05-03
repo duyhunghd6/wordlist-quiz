@@ -64,7 +64,7 @@ const QUESTIONS = [
 
 
 
-const TimelineDetectiveGame = ({ words, isAllQuestions = false, tenseSentences, onAnswer, onComplete, onHome }) => {
+const TimelineDetectiveGame = ({ words, numQuestions = 10, isAllQuestions = false, tenseSentences, onAnswer, onComplete, onHome }) => {
   const [questions, setQuestions] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedZone, setSelectedZone] = useState(null);
@@ -132,14 +132,14 @@ const TimelineDetectiveGame = ({ words, isAllQuestions = false, tenseSentences, 
       }
     }
 
-    const numQuestions = isAllQuestions ? availableQuestions.length : Math.min(words?.length || 4, availableQuestions.length);
-    const shuffled = [...availableQuestions].sort(() => 0.5 - Math.random()).slice(0, numQuestions);
+    const count = isAllQuestions ? availableQuestions.length : Math.min(numQuestions || words?.length || 10, availableQuestions.length);
+    const shuffled = [...availableQuestions].sort(() => 0.5 - Math.random()).slice(0, count);
     setQuestions(shuffled.map((q, i) => ({
       ...q,
       targetWord: words && words[i] ? words[i].word : `q${i}`
     })));
     setStartTime(Date.now());
-  }, [words, isAllQuestions, tenseSentences]);
+  }, [words, numQuestions, isAllQuestions, tenseSentences]);
 
   const handleSelect = (zoneId) => {
     if (selectedZone !== null) return;

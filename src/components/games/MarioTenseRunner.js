@@ -223,7 +223,7 @@ const DARK_WORLDS = ['past_continuous', 'future_simple', 'future_perfect_cont', 
 // COMPONENT
 // ═══════════════════════════════════════════════════════════
 
-const MarioTenseRunner = ({ words, isAllQuestions = false, onAnswer, onComplete, onHome }) => {
+const MarioTenseRunner = ({ words, numQuestions = 10, isAllQuestions = false, onAnswer, onComplete, onHome }) => {
   // ─── Game phase: worldSelect → running → questioning → jumping → feedback → (running | worldComplete | gameOver)
   const [phase, setPhase] = useState('worldSelect');
   const [selectedWorld, setSelectedWorld] = useState(null);
@@ -282,10 +282,10 @@ const MarioTenseRunner = ({ words, isAllQuestions = false, onAnswer, onComplete,
           tenseName: w.name,
         }))
       );
-      const count = isAllQuestions ? allQs.length : Math.min(words?.length || TENSE_WORLDS.length, allQs.length);
+      const count = isAllQuestions ? allQs.length : Math.min(numQuestions || words?.length || 10, allQs.length);
       qs = shuffle(allQs).slice(0, count);
     } else {
-      const numQ = isAllQuestions ? world.templates.length : Math.min(words?.length || 10, 10, world.templates.length);
+      const numQ = isAllQuestions ? world.templates.length : Math.min(numQuestions || words?.length || 10, world.templates.length);
       const picked = shuffle(world.templates).slice(0, numQ);
       qs = picked.map(t => ({
         sentence: t.sentence,
@@ -309,7 +309,7 @@ const MarioTenseRunner = ({ words, isAllQuestions = false, onAnswer, onComplete,
     setPlatformAnim('');
     setShowBanner(false);
     setPhase('running');
-  }, [isAllQuestions, words]);
+  }, [isAllQuestions, numQuestions, words]);
 
   // ─── Running phase timer → transition to questioning ───
   useEffect(() => {

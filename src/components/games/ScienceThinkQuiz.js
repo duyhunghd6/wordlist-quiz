@@ -17,7 +17,7 @@ const DIFFICULTY_META = {
   hard: { label: 'Hard', color: '#ef4444', bg: '#fee2e2', emoji: '🧠' }
 };
 
-const ScienceThinkQuiz = ({ words, selectedUnits, isAllQuestions = false, onAnswer, onComplete, onHome, gameId }) => {
+const ScienceThinkQuiz = ({ words, numQuestions = 10, selectedUnits, isAllQuestions = false, onAnswer, onComplete, onHome, gameId }) => {
   const [allQuestions, setAllQuestions] = useState([]);
   const [questions, setQuestions] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -74,7 +74,7 @@ const ScienceThinkQuiz = ({ words, selectedUnits, isAllQuestions = false, onAnsw
 
     // Shuffle questions
     const shuffledQs = filtered.sort(() => Math.random() - 0.5);
-    const count = isAllQuestions ? shuffledQs.length : Math.min(words?.length || 10, shuffledQs.length);
+    const count = isAllQuestions ? shuffledQs.length : Math.min(numQuestions || words?.length || 10, shuffledQs.length);
     
     // Select and shuffle options for each selected question
     const finalQuestions = shuffledQs.slice(0, count).map(q => {
@@ -98,7 +98,7 @@ const ScienceThinkQuiz = ({ words, selectedUnits, isAllQuestions = false, onAnsw
     setCorrectCount(0);
     setWrongWords([]);
     setStartTime(Date.now());
-  }, [allQuestions, words, isAllQuestions]);
+  }, [allQuestions, numQuestions, words, isAllQuestions]);
 
   const handleSelect = (optionIndex) => {
     if (selectedOption !== null) return;

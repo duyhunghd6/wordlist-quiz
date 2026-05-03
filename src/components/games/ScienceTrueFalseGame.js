@@ -17,7 +17,7 @@ const DIFFICULTY_META = {
   hard: { label: 'Hard', color: '#ef4444', bg: '#fee2e2', emoji: '🧠' }
 };
 
-const ScienceTrueFalseGame = ({ words, selectedUnits, isAllQuestions = false, onAnswer, onComplete, onHome, gameId }) => {
+const ScienceTrueFalseGame = ({ words, numQuestions = 10, selectedUnits, isAllQuestions = false, onAnswer, onComplete, onHome, gameId }) => {
   const [allStatements, setAllStatements] = useState([]);
   const [statements, setStatements] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -72,14 +72,14 @@ const ScienceTrueFalseGame = ({ words, selectedUnits, isAllQuestions = false, on
     }
 
     const shuffledQs = filtered.sort(() => Math.random() - 0.5);
-    const count = isAllQuestions ? shuffledQs.length : Math.min(words?.length || 10, shuffledQs.length);
+    const count = isAllQuestions ? shuffledQs.length : Math.min(numQuestions || words?.length || 10, shuffledQs.length);
 
     setStatements(shuffledQs.slice(0, count));
     setCurrentIndex(0);
     setCorrectCount(0);
     setWrongWords([]);
     setStartTime(Date.now());
-  }, [allStatements, words, isAllQuestions]);
+  }, [allStatements, numQuestions, words, isAllQuestions]);
 
   const handleSelect = (answerTrueOrFalse) => {
     if (selectedAnswer !== null) return;

@@ -9,12 +9,14 @@ const sentenceOptions = (question, allQuestions) => {
   return [...new Set(answers)].slice(0, 4);
 };
 
-const ReadingExplorer = ({ eslReviewQuestions, onAnswer, onComplete, onHome, words = [] }) => {
+const ReadingExplorer = ({ eslReviewQuestions, onAnswer, onComplete, onHome, words = [], numQuestions = 10, isAllQuestions = false }) => {
   const questions = useMemo(() => {
     const banks = eslReviewQuestions?.banks || {};
     const readingChoices = (banks.multiple_choice || []).filter((q) => q.category?.startsWith('Reading'));
-    return shuffle([...(banks.reading_find_words || []), ...(banks.reading_short_answer || []), ...readingChoices]).slice(0, words.length || 15);
-  }, [eslReviewQuestions, words.length]);
+    const items = shuffle([...(banks.reading_find_words || []), ...(banks.reading_short_answer || []), ...readingChoices]);
+    const count = isAllQuestions ? items.length : Math.min(numQuestions || words.length || 10, items.length);
+    return items.slice(0, count);
+  }, [eslReviewQuestions, isAllQuestions, numQuestions, words.length]);
 
   const [index, setIndex] = useState(0);
   const [selected, setSelected] = useState(null);

@@ -579,7 +579,7 @@ function App() {
             if (displayScore !== undefined) {
               setScore(displayScore);
             }
-            setResultSummary(hasAnswerCounts && results.score === undefined ? { totalQuestions, correctAnswers, score: displayScore } : null);
+            setResultSummary(hasAnswerCounts ? { totalQuestions, correctAnswers, score: displayScore } : null);
           }
           saveResult(profile.name, results || null);
           setShowResults(true);

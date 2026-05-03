@@ -137,25 +137,27 @@ const InlineQ = ({ question, index, selectedOption, active, onToggleActive, onPi
   );
 };
 
-const EslReviewQuiz = ({ eslReviewQuestions, onAnswer, onComplete, onHome, selectedUnits = [], words = [] }) => {
+const EslReviewQuiz = ({ eslReviewQuestions, onAnswer, onComplete, onHome, selectedUnits = [], words = [], numQuestions = 10, isAllQuestions = false }) => {
   const questions = useMemo(() => {
     const banks = eslReviewQuestions?.banks || {};
     const multipleChoice = banks.multiple_choice || [];
-    const simpleGrammar = shuffle((banks.grammar_completion || []).filter((item) => !item.correctAnswer.includes(';')))
-      .slice(0, 20)
-      .map((item, _, grammarItems) => {
+    const grammarItems = (banks.grammar_completion || []).filter((item) => !item.correctAnswer.includes(';'));
+    const simpleGrammar = shuffle(grammarItems)
+      .map((item) => {
         let distractors = item.wordBank?.length > 1
           ? item.wordBank.filter(w => w !== item.correctAnswer)
           : grammarItems.map(g => g.correctAnswer).filter(ans => ans !== item.correctAnswer);
-        
+
         // Shuffle distractors and take exactly 3
         distractors = shuffle([...new Set(distractors)]).slice(0, 3);
-        
+
         // Combine with the correct answer and shuffle the final 4 options
         return { ...item, options: shuffle([item.correctAnswer, ...distractors]) };
       });
-      
-    let mixed = shuffle([...multipleChoice, ...simpleGrammar]).slice(0, 30); // Show up to 30 as requested
+
+    const available = shuffle([...multipleChoice, ...simpleGrammar]);
+    const count = isAllQuestions ? available.length : Math.min(numQuestions || words.length || 10, available.length);
+    let mixed = available.slice(0, count);
     
     // Group them so passages are together
     const grouped = [];
@@ -182,7 +184,7 @@ const EslReviewQuiz = ({ eslReviewQuestions, onAnswer, onComplete, onHome, selec
     shuffle(allGroups).forEach(group => grouped.push(...group));
     
     return grouped;
-  }, [eslReviewQuestions]);
+  }, [eslReviewQuestions, isAllQuestions, numQuestions, words.length]);
 
   const [answers, setAnswers] = useState({});
   const [activePickerIdx, setActivePickerIdx] = useState(null);

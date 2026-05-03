@@ -98,7 +98,7 @@ const generateL2Question = (levelIdx) => {
 export default function MathSortingFactory({ words, numQuestions, isAllQuestions = false, onComplete, onHome }) {
   const { levels } = React.useMemo(() => {
      const maxGeneratedLevels = 20;
-     const levelCount = isAllQuestions ? maxGeneratedLevels : Math.min(words?.length || numQuestions || 5, maxGeneratedLevels);
+     const levelCount = isAllQuestions ? maxGeneratedLevels : Math.min(numQuestions || words?.length || 10, maxGeneratedLevels);
      const genLevels = [];
      for(let i=0; i<levelCount; i++) {
         if (i % 2 === 0) genLevels.push(generateL1Question(i+1));

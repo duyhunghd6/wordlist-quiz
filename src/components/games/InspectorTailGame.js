@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { ArrowLeft, Check, X, Magnet } from 'lucide-react';
 import anime from 'animejs';
 
-const InspectorTailGame = ({ tagQuestions = [], onComplete, onHome }) => {
+const InspectorTailGame = ({ tagQuestions, words = [], numQuestions = 10, isAllQuestions = false, onComplete, onHome }) => {
   const [questions, setQuestions] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [step, setStep] = useState(1); // 1: Polarity, 2: Tag
@@ -45,14 +45,15 @@ const InspectorTailGame = ({ tagQuestions = [], onComplete, onHome }) => {
         ];
       }
 
-      // Shuffle and pick top 10 for a session
-      const shuffled = available.sort(() => 0.5 - Math.random()).slice(0, 10);
+      const count = isAllQuestions
+        ? available.length
+        : Math.min(numQuestions || words.length || 10, available.length);
+      const shuffled = [...available].sort(() => 0.5 - Math.random()).slice(0, count);
       setQuestions(shuffled);
       setStartTime(Date.now());
     };
     loadQuestions();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [isAllQuestions, numQuestions, tagQuestions, words.length]);
 
   const currentQ = questions[currentIndex];
 
