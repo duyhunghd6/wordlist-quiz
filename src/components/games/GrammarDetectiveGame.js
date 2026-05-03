@@ -173,20 +173,14 @@ export default function GrammarDetectiveGame({
       setWrongAnswerTaps(prev => prev + 1);
       setWrongAnswer(option);
       
-      let hintText = 'Not quite right. Try again!';
-      if (mode.id === 'modalDetective') {
-        if (currentQ.explanation.toLowerCase().includes('strong') || currentQ.explanation.toLowerCase().includes('rule') || currentQ.explanation.toLowerCase().includes('necessity')) {
-          hintText = 'This clue shows a rule or strong necessity, not just a possibility.';
-        } else {
-          hintText = 'This clue shows maybe or possibility, not a rule.';
-        }
-      } else if (mode.id === 'actionFreezeDetective') {
+      let hintText = currentQ.meaningHint || 'Not quite right. Try again!';
+      if (!currentQ.meaningHint && mode.id === 'actionFreezeDetective') {
         hintText = 'The action was happening in the past, so we need was/were + V-ing.';
-      } else if (mode.id === 'futureForecastDetective') {
-        if (currentQ.concept === 'be_going_to') {
+      } else if (!currentQ.meaningHint && mode.id === 'futureForecastDetective') {
+        if (currentQ.futureUse === 'plan' || currentQ.futureUse === 'visible_evidence') {
           hintText = 'This is visible evidence or a planned action, so use be going to.';
         } else {
-          hintText = 'This is a sudden decision or a promise, so use will.';
+          hintText = 'This is a sudden decision, promise, offer, or opinion, so use will.';
         }
       }
 
@@ -244,7 +238,19 @@ export default function GrammarDetectiveGame({
             {phase === 'answer' && mode.answerInstruction}
             {phase === 'explain' && 'Case Solved!'}
           </div>
-          
+
+          {mode.guideBoard && (
+            <div className="gdd-guide-board" aria-label="Modal meaning guide">
+              {mode.guideBoard.map(item => (
+                <div key={item.job} className="gdd-guide-card">
+                  <div className="gdd-guide-job">{item.job}</div>
+                  <div className="gdd-guide-clue">{item.clue}</div>
+                  <div className="gdd-guide-modal">{item.modal}</div>
+                </div>
+              ))}
+            </div>
+          )}
+
           <div className="gdd-sentence">
             {tokens.map(t => {
               if (t.type === 'space') return <span key={t.id}>{t.content}</span>;
