@@ -13,6 +13,7 @@ import ParentReport from "./components/ParentReport";
 import PhotobombGame from "./components/games/PhotobombGame";
 import ShapeBuilderGame from "./components/games/ShapeBuilderGame";
 import TimelineDetectiveGame from "./components/games/TimelineDetectiveGame";
+import GrammarDetectiveGame from "./components/games/GrammarDetectiveGame";
 import MarioTenseRunner from "./components/games/MarioTenseRunner";
 import TenseSignalGame from "./components/games/TenseSignalGame";
 import RelativeDetectiveGame from "./components/games/RelativeDetectiveGame";
@@ -603,6 +604,10 @@ function App() {
           return <ShapeBuilderGame {...gameProps} />;
         case 'timelineDetective':
           return <TimelineDetectiveGame {...gameProps} />;
+        case 'modalDetective':
+        case 'actionFreezeDetective':
+        case 'futureForecastDetective':
+          return <GrammarDetectiveGame {...gameProps} />;
         case 'photobomb':
           return <PhotobombGame {...gameProps} />;
         case 'marioTense':

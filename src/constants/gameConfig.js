@@ -26,6 +26,9 @@ export const GAMES = [
   // Tense & Grammar Games
   { id: 'shapeBuilder', emoji: '🧩', name: 'Shape Builder', available: true, isGrammar: true },
   { id: 'timelineDetective', emoji: '🕵️', name: 'Timeline Detective', available: true, isGrammar: true },
+  { id: 'modalDetective', emoji: '🕵️‍♀️', name: 'Modal Detective', available: true, isGrammar: true },
+  { id: 'actionFreezeDetective', emoji: '🧊', name: 'Action Freeze', available: true, isGrammar: true },
+  { id: 'futureForecastDetective', emoji: '🔮', name: 'Future Forecast', available: true, isGrammar: true },
   { id: 'photobomb', emoji: '📸', name: 'Photobomb', available: true, isGrammar: true },
   { id: 'marioTense', emoji: '🍄', name: 'Tense Runner', available: true, isGrammar: true },
   { id: 'tenseSignal', emoji: '🔍', name: 'Signal Spotter', available: true, isGrammar: true },

@@ -18,7 +18,10 @@ const GAME_ICONS = {
   endlessRunner: FastForward,
   scienceThinkQuiz: Search,
   scienceTrueFalseGame: Check,
-  scienceMatchGame: Layers
+  scienceMatchGame: Layers,
+  modalDetective: Search,
+  actionFreezeDetective: History,
+  futureForecastDetective: FastForward
 };
 
 const GAME_COLORS = {
@@ -37,7 +40,10 @@ const GAME_COLORS = {
   endlessRunner: '#14B8A6',
   scienceThinkQuiz: '#3B82F6',
   scienceTrueFalseGame: '#EC4899',
-  scienceMatchGame: '#10B981'
+  scienceMatchGame: '#10B981',
+  modalDetective: '#A855F7',
+  actionFreezeDetective: '#3B82F6',
+  futureForecastDetective: '#F59E0B'
 };
 
 const GameSelector = ({ selectedGame, onSelectGame, gameStats, selectedWordlist }) => {

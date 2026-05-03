@@ -16,8 +16,8 @@ const JOURNEY_DATA = {
         nodes: [
             { id: "esl_1", label: "Vocab Warm-up", sub: "Swipe, Quiz, Bubble", icon: "stack", type: "vocab", games: ["swipe", "quiz", "bubble"] },
             { id: "esl_2", label: "Word Meaning & Form", sub: "Word Search, Scramble, ESL Matching", icon: "squares-four", type: "grammar", games: ["wordSearch", "scramble", "eslMatching"] },
-            { id: "esl_3", label: "Grammar Noticing", sub: "Shape Builder, Signal Spotter, Review Quiz", icon: "keyboard", type: "grammar", games: ["shapeBuilder", "tenseSignal", "eslReviewQuiz", "relativeDetective", "inspectorTail"] },
-            { id: "esl_4", label: "Grammar Building", sub: "Word Bank Builder, Angry Tenses, Timeline Detective", icon: "text-align-left", type: "grammar", games: ["wordBankBuilder", "angryTenses", "timelineDetective"] },
+            { id: "esl_3", label: "Grammar Noticing", sub: "Shape Builder, Signal Spotter, Modal Detective", icon: "keyboard", type: "grammar", games: ["shapeBuilder", "tenseSignal", "modalDetective", "eslReviewQuiz", "relativeDetective", "inspectorTail"] },
+            { id: "esl_4", label: "Grammar Building", sub: "Action Freeze, Future Forecast, Timeline Detective", icon: "text-align-left", type: "grammar", games: ["actionFreezeDetective", "futureForecastDetective", "wordBankBuilder", "angryTenses", "timelineDetective"] },
             { id: "esl_5", label: "Reading Mission", sub: "Story Reading Mission, Reading Explorer, Word Runner", icon: "lightbulb", type: "both", games: ["storyReadingMission", "readingExplorer", "endlessRunner"] }
         ]
     },
@@ -62,6 +62,9 @@ const GAME_ICONS = {
     "Photobomb": { icon: Intersect, color: "gs-bg-pink", tags: ["Grammar", "Visual"] },
     "Tense Runner": { icon: Strategy, color: "gs-bg-orange", tags: ["Grammar", "Reflex"] },
     "Signal Spotter": { icon: BookOpen, color: "gs-bg-purple", tags: ["Grammar", "Reading"] },
+    "Modal Detective": { icon: MagnifyingGlass, color: "gs-bg-purple", tags: ["Grammar", "Modals"] },
+    "Action Freeze": { icon: ClockCounterClockwise, color: "gs-bg-blue", tags: ["Grammar", "Tenses"] },
+    "Future Forecast": { icon: Strategy, color: "gs-bg-orange", tags: ["Grammar", "Future"] },
     "Word Runner": { icon: Lightning, color: "gs-bg-blue", tags: ["Grammar", "Speed"] },
     "Angry Tenses": { icon: Strategy, color: "gs-bg-orange", tags: ["Grammar", "Physics"] },
     "Science Think Quiz": { icon: Brain, color: "gs-bg-purple", tags: ["Science", "Thinking"] },
