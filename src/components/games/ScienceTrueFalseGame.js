@@ -188,7 +188,7 @@ const ScienceTrueFalseGame = ({ words, numQuestions = 10, selectedUnits, isAllQu
               { key: 'hard', emoji: '🧠', title: 'Hard', desc: 'Tricky logic', count: allStatements.filter(q => q.difficulty === 'hard').length },
               { key: 'mixed', emoji: '🎲', title: 'Mixed', desc: 'All levels!', count: allStatements.length }
             ].map(d => {
-              const numToPlay = isAllQuestions ? d.count : Math.min(words?.length || 10, d.count);
+              const numToPlay = isAllQuestions ? d.count : Math.min(numQuestions || words?.length || 10, d.count);
               return (
               <button
                 key={d.key}

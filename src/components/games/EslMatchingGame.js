@@ -4,7 +4,7 @@ import './EslReviewGames.css';
 
 const shuffle = (items) => [...items].sort(() => Math.random() - 0.5);
 
-const EslMatchingGame = ({ words, numQuestions, isAllQuestions = false, eslReviewQuestions, onAnswer, onComplete, onHome }) => {
+const EslMatchingGame = ({ words, numQuestions = 10, isAllQuestions = false, eslReviewQuestions, onAnswer, onComplete, onHome }) => {
   const questions = useMemo(() => {
     const bank = eslReviewQuestions?.banks?.matching || [];
     const count = isAllQuestions ? bank.length : Math.min(numQuestions || words?.length || 10, bank.length);

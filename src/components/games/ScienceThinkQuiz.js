@@ -213,7 +213,7 @@ const ScienceThinkQuiz = ({ words, numQuestions = 10, selectedUnits, isAllQuesti
               { key: 'hard', emoji: '🧠', title: 'Hard', desc: 'Reason & analyze', count: allQuestions.filter(q => q.difficulty === 'hard').length },
               { key: 'mixed', emoji: '🎲', title: 'Mixed', desc: 'All levels!', count: allQuestions.length }
             ].map(d => {
-              const numToPlay = isAllQuestions ? d.count : Math.min(words?.length || 10, d.count);
+              const numToPlay = isAllQuestions ? d.count : Math.min(numQuestions || words?.length || 10, d.count);
               return (
               <button
                 key={d.key}

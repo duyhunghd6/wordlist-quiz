@@ -3,7 +3,7 @@ import { Home } from 'lucide-react';
 import { useRunnerEngine } from './RunnerQuestionEngine';
 import './EndlessRunner.css';
 
-const EndlessRunner = ({ onComplete, onHome, words = [], tenseSentences = [] }) => {
+const EndlessRunner = ({ onComplete, onHome, words = [], numQuestions = 10, isAllQuestions = false, tenseSentences = [] }) => {
     const [score, setScore] = useState(0);
     const [gameActive, setGameActive] = useState(true);
     const [selectedId, setSelectedId] = useState(null);
@@ -11,7 +11,8 @@ const EndlessRunner = ({ onComplete, onHome, words = [], tenseSentences = [] }) 
     const [actionText, setActionText] = useState(null);
     
     // Global Timer state based on selected questions (5 -> 2 mins, 10 -> 4 mins, 20 -> 5 mins)
-    const initialTime = words.length >= 20 ? 300 : (words.length >= 10 ? 240 : 120);
+    const questionLimit = Math.max(isAllQuestions ? words.length || 10 : numQuestions || words.length || 10, 1);
+    const initialTime = questionLimit >= 20 ? 300 : (questionLimit >= 10 ? 240 : 120);
     const [timeLeft, setTimeLeft] = useState(initialTime); 
     const [maxTimeLeft] = useState(initialTime);
     
@@ -76,9 +77,13 @@ const EndlessRunner = ({ onComplete, onHome, words = [], tenseSentences = [] }) 
             setSelectedId(null);
             setFeedback(null);
             setActionText(null);
-            generateNext();
+            if (sessionLogs.current.length >= questionLimit) {
+                setGameActive(false);
+            } else {
+                generateNext();
+            }
         }, 800);
-    }, [gameActive, selectedId, currentQuestion, timeLeft, maxTimeLeft, level, processAnswer, generateNext]);
+    }, [gameActive, selectedId, currentQuestion, timeLeft, maxTimeLeft, level, processAnswer, generateNext, questionLimit]);
 
     // Global Timer Logic - drains every second
     useEffect(() => {

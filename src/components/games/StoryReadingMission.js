@@ -38,6 +38,18 @@ const saveProgress = (storyId, chapterId, result) => {
 const getChapterQuestionCount = (chapter) =>
   chapter?.questionCount || chapter?.pages?.reduce((sum, page) => sum + (page.inlineQuestions?.length || 0), 0) || 0;
 
+const limitChapterQuestions = (chapter, limit) => {
+  if (!chapter || !Number.isFinite(limit)) return chapter;
+  let remaining = Math.max(0, limit);
+  const pages = (chapter.pages || []).map((page) => {
+    const inlineQuestions = page.inlineQuestions || [];
+    const keptQuestions = inlineQuestions.slice(0, remaining);
+    remaining -= keptQuestions.length;
+    return { ...page, inlineQuestions: keptQuestions };
+  });
+  return { ...chapter, pages, questionCount: Math.min(getChapterQuestionCount(chapter), limit) };
+};
+
 const getAnswerStats = (chapter, answers) => {
   const validIds = new Set(
     (chapter?.pages || []).flatMap((page) => (page.inlineQuestions || []).map((question) => question.id))
@@ -249,7 +261,7 @@ const InlineQ = ({ question, picked, onPick }) => {
   );
 };
 
-const StoryReadingMission = ({ onAnswer, onComplete, onHome }) => {
+const StoryReadingMission = ({ numQuestions = 10, isAllQuestions = false, onAnswer, onComplete, onHome }) => {
   const [view, setView] = useState('selection');
   const [story, setStory] = useState(null);
   const [storyBasePath, setStoryBasePath] = useState('');
@@ -286,8 +298,9 @@ const StoryReadingMission = ({ onAnswer, onComplete, onHome }) => {
       if (!story || !storyBasePath || view !== 'reading') return;
       try {
         setLoading(true);
-        const ch = await loadStoryChapter(storyBasePath, story.chapters[chapterIndex]);
+        const loadedChapter = await loadStoryChapter(storyBasePath, story.chapters[chapterIndex]);
         if (cancelled) return;
+        const ch = limitChapterQuestions(loadedChapter, isAllQuestions ? Infinity : numQuestions || 10);
         const savedProgress = getProgress(story.id)[ch.chapterId] || {};
         const savedAnswers = savedProgress.answers || {};
         const resumePageIndex = findResumePageIndex(ch, savedProgress);
@@ -304,7 +317,7 @@ const StoryReadingMission = ({ onAnswer, onComplete, onHome }) => {
     }
     load();
     return () => { cancelled = true; };
-  }, [story, storyBasePath, chapterIndex, view]);
+  }, [story, storyBasePath, chapterIndex, view, isAllQuestions, numQuestions]);
 
   const page = chapter?.pages?.[pageIndex];
   const pageQs = useMemo(() => page?.inlineQuestions || [], [page]);
