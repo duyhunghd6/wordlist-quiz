@@ -126,8 +126,11 @@ export default function GrammarDetectiveGame({
     if (tokenType === 'clue') {
       playTone('correct');
       setPhase('answer');
-      setFeedback({ type: 'success', text: 'Great! You found the clue.' });
-      setTimeout(() => setFeedback(null), 1500);
+      const successText = currentQ.meaningHint 
+        ? `Clue Found! ${currentQ.meaningHint}`
+        : 'Great! You found the clue.';
+      setFeedback({ type: 'success', text: successText });
+      // No timeout, leave the meaning hint visible while they choose an answer
     } else if (tokenType === 'word') {
       playTone('wrong');
       setWrongClueTaps(prev => prev + 1);
@@ -173,16 +176,12 @@ export default function GrammarDetectiveGame({
       setWrongAnswerTaps(prev => prev + 1);
       setWrongAnswer(option);
       
-      let hintText = currentQ.meaningHint || 'Not quite right. Try again!';
-      if (!currentQ.meaningHint && mode.id === 'actionFreezeDetective') {
-        hintText = 'The action was happening in the past, so we need was/were + V-ing.';
-      } else if (!currentQ.meaningHint && mode.id === 'futureForecastDetective') {
-        if (currentQ.futureUse === 'plan' || currentQ.futureUse === 'visible_evidence') {
-          hintText = 'This is visible evidence or a planned action, so use be going to.';
-        } else {
-          hintText = 'This is a sudden decision, promise, offer, or opinion, so use will.';
-        }
-      }
+      let specificRationale = currentQ.distractorRationale && currentQ.distractorRationale[option];
+      let formHint = currentQ.formHint || '';
+      
+      let hintText = specificRationale 
+        ? `${specificRationale} ${formHint}`.trim()
+        : `Not quite. ${formHint || 'Try again!'}`.trim();
 
       setFeedback({ 
         type: 'error', 
@@ -191,7 +190,7 @@ export default function GrammarDetectiveGame({
       setTimeout(() => {
         setFeedback(null);
         setWrongAnswer(null);
-      }, 2000);
+      }, 4000);
     }
   };
 
@@ -239,13 +238,32 @@ export default function GrammarDetectiveGame({
             {phase === 'explain' && 'Case Solved!'}
           </div>
 
+          {mode.guideIntro && (
+            <div className="gdd-guide-intro" aria-label={`${mode.title} grammar guide`}>
+              <div className="gdd-guide-intro-title">{mode.guideIntro.title}</div>
+              {mode.guideIntro.lines.map(line => (
+                <p key={line} className="gdd-guide-intro-line">{line}</p>
+              ))}
+              <div className="gdd-guide-structures">
+                {mode.guideIntro.structures.map(item => (
+                  <div key={item.label} className="gdd-guide-structure">
+                    <div className="gdd-guide-structure-label">{item.label}</div>
+                    <div className="gdd-guide-structure-formula">{item.formula}</div>
+                    <div className="gdd-guide-structure-example">{item.example}</div>
+                  </div>
+                ))}
+              </div>
+              <div className="gdd-guide-reminder">{mode.guideIntro.reminder}</div>
+            </div>
+          )}
+
           {mode.guideBoard && (
-            <div className="gdd-guide-board" aria-label="Modal meaning guide">
+            <div className="gdd-guide-board" aria-label={`${mode.title} quick guide`}>
               {mode.guideBoard.map(item => (
                 <div key={item.job} className="gdd-guide-card">
                   <div className="gdd-guide-job">{item.job}</div>
                   <div className="gdd-guide-clue">{item.clue}</div>
-                  <div className="gdd-guide-modal">{item.modal}</div>
+                  <div className="gdd-guide-modal">{item.modal || item.form}</div>
                 </div>
               ))}
             </div>

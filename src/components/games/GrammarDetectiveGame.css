@@ -62,6 +62,73 @@
   min-height: 2.4rem;
 }
 
+.gdd-guide-intro {
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 14px;
+  border-radius: 16px;
+  background-color: #F8FAFC;
+  border: 2px solid #CBD5E1;
+  text-align: left;
+}
+
+.gdd-guide-intro-title {
+  font-size: 1.05rem;
+  font-weight: bold;
+  color: #1E293B;
+  margin-bottom: 8px;
+}
+
+.gdd-guide-intro-line {
+  margin: 6px 0;
+  font-size: 0.95rem;
+  line-height: 1.35rem;
+  color: #334155;
+}
+
+.gdd-guide-structures {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.gdd-guide-structure {
+  padding: 8px;
+  border-radius: 12px;
+  background-color: white;
+  border: 1px solid #E2E8F0;
+}
+
+.gdd-guide-structure-label {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #334155;
+}
+
+.gdd-guide-structure-formula {
+  margin-top: 3px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: #0F172A;
+}
+
+.gdd-guide-structure-example {
+  margin-top: 3px;
+  font-size: 0.9rem;
+  color: #475569;
+}
+
+.gdd-guide-reminder {
+  margin-top: 10px;
+  padding: 8px;
+  border-radius: 12px;
+  background-color: #FEF3C7;
+  color: #92400E;
+  font-size: 0.95rem;
+  font-weight: bold;
+}
+
 .gdd-guide-board {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -78,11 +145,24 @@
   text-align: left;
 }
 
+.gdd-action-freeze .gdd-guide-card {
+  background-color: #E3F2FD;
+  border-color: #90CAF9;
+}
+
+.gdd-future-forecast .gdd-guide-card {
+  background-color: #FFF3E0;
+  border-color: #FFCC80;
+}
+
 .gdd-guide-job {
   font-size: 1rem;
   font-weight: bold;
   color: #4A148C;
 }
+
+.gdd-action-freeze .gdd-guide-job { color: #0D47A1; }
+.gdd-future-forecast .gdd-guide-job { color: #E65100; }
 
 .gdd-guide-clue {
   font-size: 0.9rem;
@@ -99,6 +179,9 @@
   color: #6A1B9A;
   font-weight: bold;
 }
+
+.gdd-action-freeze .gdd-guide-modal { color: #0D47A1; }
+.gdd-future-forecast .gdd-guide-modal { color: #E65100; }
 
 .gdd-sentence {
   font-size: 1.5rem;
