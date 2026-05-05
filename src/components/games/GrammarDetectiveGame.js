@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo, useRef } from 'react';
+import { useState, useEffect, useMemo, useRef, useCallback } from 'react';
 import './GrammarDetectiveGame.css';
 import { GRAMMAR_DETECTIVE_MODES } from './grammarDetectiveModes';
 import { grammarDetectiveData } from './grammarDetectiveData';
@@ -6,6 +6,7 @@ import { grammarDetectiveData } from './grammarDetectiveData';
 export default function GrammarDetectiveGame({
   gameId,
   numQuestions = 10,
+  autoAdvanceDelayMs = 3000,
   onComplete,
   onHome
 }) {
@@ -116,6 +117,41 @@ export default function GrammarDetectiveGame({
     return t;
   }, [currentQ]);
 
+  const nextQuestion = useCallback(() => {
+    if (currentIndex < questions.length - 1) {
+      setCurrentIndex(prev => prev + 1);
+      setPhase('clue');
+      setFeedback(null);
+      setSelectedAnswer(null);
+      setWrongAnswer(null);
+      setWrongClueTaps(0);
+      setWrongAnswerTaps(0);
+    } else {
+      setPhase('finished');
+      if (onComplete && mode) {
+        onComplete({
+          gameId: mode.id,
+          totalQuestions: questions.length,
+          correctAnswers: score,
+          perfectAnswers,
+          score: Math.round((perfectAnswers / questions.length) * 100),
+          averageResponseTime: (Date.now() - startTime) / questions.length,
+          attempts
+        });
+      }
+    }
+  }, [attempts, currentIndex, mode, onComplete, perfectAnswers, questions.length, score, startTime]);
+
+  const delayMs = Number(autoAdvanceDelayMs);
+  const canAutoAdvance = phase === 'explain' && wrongClueTaps === 0 && wrongAnswerTaps === 0 && Number.isFinite(delayMs) && delayMs >= 0;
+
+  useEffect(() => {
+    if (!canAutoAdvance) return undefined;
+
+    const timer = setTimeout(nextQuestion, delayMs);
+    return () => clearTimeout(timer);
+  }, [canAutoAdvance, delayMs, nextQuestion]);
+
   if (!mode || !currentQ) {
     return <div>Loading game...</div>;
   }
@@ -191,31 +227,6 @@ export default function GrammarDetectiveGame({
         setFeedback(null);
         setWrongAnswer(null);
       }, 4000);
-    }
-  };
-
-  const nextQuestion = () => {
-    if (currentIndex < questions.length - 1) {
-      setCurrentIndex(prev => prev + 1);
-      setPhase('clue');
-      setFeedback(null);
-      setSelectedAnswer(null);
-      setWrongAnswer(null);
-      setWrongClueTaps(0);
-      setWrongAnswerTaps(0);
-    } else {
-      setPhase('finished');
-      if (onComplete) {
-        onComplete({
-          gameId: mode.id,
-          totalQuestions: questions.length,
-          correctAnswers: score, // total solved
-          perfectAnswers: perfectAnswers, // first try correct
-          score: Math.round((perfectAnswers / questions.length) * 100),
-          averageResponseTime: (Date.now() - startTime) / questions.length,
-          attempts
-        });
-      }
     }
   };
 
@@ -327,9 +338,17 @@ export default function GrammarDetectiveGame({
               <div className="gdd-feedback success" style={{backgroundColor: '#E3F2FD', borderColor: '#64B5F6', color: '#0D47A1'}}>
                 {currentQ.explanation}
               </div>
-              <button className="gdd-next-button" onClick={nextQuestion}>
-                {currentIndex < questions.length - 1 ? 'Next Case ➡️' : 'Finish 🏁'}
-              </button>
+              {canAutoAdvance ? (
+                <div className="gdd-auto-next-message" aria-live="polite">
+                  {currentIndex < questions.length - 1
+                    ? `Next case starts in ${Math.ceil(delayMs / 1000)} seconds.`
+                    : `Finishing in ${Math.ceil(delayMs / 1000)} seconds.`}
+                </div>
+              ) : (
+                <button className="gdd-next-button" onClick={nextQuestion}>
+                  {currentIndex < questions.length - 1 ? 'Next Case' : 'Finish'}
+                </button>
+              )}
             </>
           )}
         </div>

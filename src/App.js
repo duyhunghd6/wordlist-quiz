@@ -589,6 +589,8 @@ function App() {
         gameId: selectedGame,
       };
 
+      const grammarDetectiveAutoAdvanceDelayMs = 3000;
+
       switch (selectedGame) {
         case 'typing':
           return <TypingQuiz {...gameProps} learningData={learningData} />;
@@ -607,7 +609,7 @@ function App() {
         case 'modalDetective':
         case 'actionFreezeDetective':
         case 'futureForecastDetective':
-          return <GrammarDetectiveGame {...gameProps} />;
+          return <GrammarDetectiveGame {...gameProps} autoAdvanceDelayMs={grammarDetectiveAutoAdvanceDelayMs} />;
         case 'photobomb':
           return <PhotobombGame {...gameProps} />;
         case 'marioTense':

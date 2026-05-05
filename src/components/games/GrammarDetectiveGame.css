@@ -332,6 +332,17 @@
   box-shadow: 0 0 0 transparent;
 }
 
+.gdd-auto-next-message {
+  margin-top: 15px;
+  padding: 10px 18px;
+  border-radius: 16px;
+  background-color: #F1F8E9;
+  color: #33691E;
+  font-size: 1rem;
+  font-weight: bold;
+  border: 2px solid #AED581;
+}
+
 @media (max-width: 520px) {
   .gdd-case-card {
     padding: 18px;
