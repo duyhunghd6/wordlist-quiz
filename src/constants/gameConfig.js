@@ -41,6 +41,7 @@ export const GAMES = [
   { id: 'wordBankBuilder', emoji: '🧱', name: 'Word Bank Builder', available: true, isGrammar: true },
   { id: 'storyReadingMission', emoji: '📚', name: 'Story Reading Mission', available: true, isGrammar: true },
   { id: 'readingExplorer', emoji: '📖', name: 'Reading Explorer', available: true, isGrammar: true },
+  { id: 'grammarQuestMysteryMix', emoji: '🕵️‍♂️', name: 'Mystery Mix', available: true, isGrammar: true },
 
   // Science Games
   { id: 'scienceThinkQuiz', emoji: '🧪', name: 'Science Think Quiz', available: true, isScience: true },

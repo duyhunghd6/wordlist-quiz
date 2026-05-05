@@ -17,7 +17,7 @@ const JOURNEY_DATA = {
             { id: "esl_1", label: "Vocab Warm-up", sub: "Swipe, Quiz, Bubble", icon: "stack", type: "vocab", games: ["swipe", "quiz", "bubble"] },
             { id: "esl_2", label: "Word Meaning & Form", sub: "Word Search, Scramble, ESL Matching", icon: "squares-four", type: "grammar", games: ["wordSearch", "scramble", "eslMatching"] },
             { id: "esl_3", label: "Grammar Noticing", sub: "Shape Builder, Signal Spotter, Modal Detective", icon: "keyboard", type: "grammar", games: ["shapeBuilder", "tenseSignal", "modalDetective", "eslReviewQuiz", "relativeDetective", "inspectorTail"] },
-            { id: "esl_4", label: "Grammar Building", sub: "Action Freeze, Future Forecast, Timeline Detective", icon: "text-align-left", type: "grammar", games: ["actionFreezeDetective", "futureForecastDetective", "wordBankBuilder", "angryTenses", "timelineDetective"] },
+            { id: "esl_4", label: "Grammar Building", sub: "Action Freeze, Future Forecast, Timeline Detective, Mystery Mix", icon: "text-align-left", type: "grammar", games: ["actionFreezeDetective", "futureForecastDetective", "wordBankBuilder", "angryTenses", "timelineDetective", "grammarQuestMysteryMix"] },
             { id: "esl_5", label: "Reading Mission", sub: "Story Reading Mission, Reading Explorer, Word Runner", icon: "lightbulb", type: "both", games: ["storyReadingMission", "readingExplorer", "endlessRunner"] }
         ]
     },
@@ -78,7 +78,8 @@ const GAME_ICONS = {
     "Math Weather Station": { icon: Hash, color: "gs-bg-blue", tags: ["Math", "Logic"] },
     "Math Mystery Safe": { icon: Calculator, color: "gs-bg-purple", tags: ["Math", "Logic"] },
     "Math Sorting Factory": { icon: Intersect, color: "gs-bg-pink", tags: ["Math", "Categories"] },
-    "Math Data Cinema": { icon: Cards, color: "gs-bg-orange", tags: ["Math", "Charts"] }
+    "Math Data Cinema": { icon: Cards, color: "gs-bg-orange", tags: ["Math", "Charts"] },
+    "Mystery Mix": { icon: MagnifyingGlass, color: "gs-bg-purple", tags: ["Grammar", "Review", "Mix"] }
 };
 
 

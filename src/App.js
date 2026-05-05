@@ -18,6 +18,7 @@ import MarioTenseRunner from "./components/games/MarioTenseRunner";
 import TenseSignalGame from "./components/games/TenseSignalGame";
 import RelativeDetectiveGame from "./components/games/RelativeDetectiveGame";
 import InspectorTailGame from "./components/games/InspectorTailGame";
+import GrammarQuestMysteryMixGame from "./components/games/GrammarQuestMysteryMixGame";
 import EndlessRunner from "./components/games/EndlessRunner/EndlessRunner";
 import AngryTensesGame from "./components/games/AngryTenses/AngryTenses";
 import ScienceThinkQuiz from "./components/games/ScienceThinkQuiz";
@@ -620,6 +621,8 @@ function App() {
           return <RelativeDetectiveGame {...gameProps} />;
         case 'inspectorTail':
           return <InspectorTailGame {...gameProps} />;
+        case 'grammarQuestMysteryMix':
+          return <GrammarQuestMysteryMixGame {...gameProps} />;
         case 'angryTenses':
           return <AngryTensesGame {...gameProps} />;
         case 'scienceThinkQuiz':
