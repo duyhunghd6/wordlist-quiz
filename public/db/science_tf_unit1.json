@@ -1,0 +1,164 @@
+[
+  {
+    "id": "tf_u1_1",
+    "unit": "1",
+    "topic": "Life Cycles of Flowering Plants",
+    "statement": "Petals attract busy bees.",
+    "is_true": true,
+    "explanation": "Correct: Cánh hoa thu hút ong thụ phấn.",
+    "vietnamese": "Cánh hoa thu hút ong thụ phấn."
+  },
+  {
+    "id": "tf_u1_2",
+    "unit": "1",
+    "topic": "Life Cycles of Flowering Plants",
+    "statement": "Sepals protect the flower bud.",
+    "is_true": true,
+    "explanation": "Correct: Lá đài bảo vệ nụ hoa khi chưa nở.",
+    "vietnamese": "Lá đài bảo vệ nụ hoa khi chưa nở."
+  },
+  {
+    "id": "tf_u1_3",
+    "unit": "1",
+    "topic": "Life Cycles of Flowering Plants",
+    "statement": "The anther makes yellow pollen.",
+    "is_true": true,
+    "explanation": "Correct: Bao phấn tạo ra hạt phấn màu vàng.",
+    "vietnamese": "Bao phấn tạo ra hạt phấn màu vàng."
+  },
+  {
+    "id": "tf_u1_4",
+    "unit": "1",
+    "topic": "Life Cycles of Flowering Plants",
+    "statement": "The sticky stigma catches pollen.",
+    "is_true": true,
+    "explanation": "Correct: Đầu nhụy dính giữ lại các hạt phấn.",
+    "vietnamese": "Đầu nhụy dính giữ lại các hạt phấn."
+  },
+  {
+    "id": "tf_u1_5",
+    "unit": "1",
+    "topic": "Life Cycles of Flowering Plants",
+    "statement": "Ferns make tiny spores instead of seeds.",
+    "is_true": true,
+    "explanation": "Correct: Dương xỉ tạo bào tử nhỏ thay vì hạt giống.",
+    "vietnamese": "Dương xỉ tạo bào tử nhỏ thay vì hạt giống."
+  },
+  {
+    "id": "tf_u1_6",
+    "unit": "1",
+    "topic": "Life Cycles of Flowering Plants",
+    "statement": "The ovary contains ovules and eggs.",
+    "is_true": true,
+    "explanation": "Correct: Bầu nhụy chứa các noãn và tế bào trứng.",
+    "vietnamese": "Bầu nhụy chứa các noãn và tế bào trứng."
+  },
+  {
+    "id": "tf_u1_7",
+    "unit": "1",
+    "topic": "Life Cycles of Flowering Plants",
+    "statement": "Mosses and ferns are non-flowering plants.",
+    "is_true": true,
+    "explanation": "Correct: Rêu và dương xỉ là thực vật không có hoa.",
+    "vietnamese": "Rêu và dương xỉ là thực vật không có hoa."
+  },
+  {
+    "id": "tf_u1_8",
+    "unit": "1",
+    "topic": "Life Cycles of Flowering Plants",
+    "statement": "A flower helps the plant reproduce.",
+    "is_true": true,
+    "explanation": "Correct: Bông hoa giúp cây sinh sản duy trì nòi giống.",
+    "vietnamese": "Bông hoa giúp cây sinh sản duy trì nòi giống."
+  },
+  {
+    "id": "tf_u1_9",
+    "unit": "1",
+    "topic": "Life Cycles of Flowering Plants",
+    "statement": "Insects visit flowers to drink sweet nectar.",
+    "is_true": true,
+    "explanation": "Correct: Côn trùng ghé thăm hoa để hút mật hoa ngọt.",
+    "vietnamese": "Côn trùng ghé thăm hoa để hút mật hoa ngọt."
+  },
+  {
+    "id": "tf_u1_10",
+    "unit": "1",
+    "topic": "Life Cycles of Flowering Plants",
+    "statement": "Pollen sticks to the hairy body of a bee.",
+    "is_true": true,
+    "explanation": "Correct: Hạt phấn dính vào cơ thể đầy lông của chú ong.",
+    "vietnamese": "Hạt phấn dính vào cơ thể đầy lông của chú ong."
+  },
+  {
+    "id": "tf_u1_11",
+    "unit": "1",
+    "topic": "Life Cycles of Flowering Plants",
+    "statement": "Bright petals guide insects to the nectar.",
+    "is_true": true,
+    "explanation": "Correct: Cánh hoa rực rỡ chỉ đường cho côn trùng tới chỗ mật.",
+    "vietnamese": "Cánh hoa rực rỡ chỉ đường cho côn trùng tới chỗ mật."
+  },
+  {
+    "id": "tf_u1_12",
+    "unit": "1",
+    "topic": "Life Cycles of Flowering Plants",
+    "statement": "Wind blows light pollen grains through the air.",
+    "is_true": true,
+    "explanation": "Correct: Gió thổi những hạt phấn nhẹ bay trong không khí.",
+    "vietnamese": "Gió thổi những hạt phấn nhẹ bay trong không khí."
+  },
+  {
+    "id": "tf_u1_f_1",
+    "unit": "1",
+    "topic": "Life Cycles of Flowering Plants",
+    "statement": "All plants produce colourful flowers to reproduce.",
+    "is_true": false,
+    "explanation": "Not all plants produce flowers. Non-flowering plants like ferns and mosses reproduce using spores.",
+    "vietnamese": "Không phải tất cả thực vật đều có hoa. Cây không hoa sinh sản bằng bào tử."
+  },
+  {
+    "id": "tf_u1_f_2",
+    "unit": "1",
+    "topic": "Life Cycles of Flowering Plants",
+    "statement": "The stamen is the female part of a flower that produces seeds.",
+    "is_true": false,
+    "explanation": "The stamen is the male part; the carpel is the female reproductive part.",
+    "vietnamese": "Nhị hoa là cơ quan đực; nhụy hoa mới là cơ quan sinh sản cái."
+  },
+  {
+    "id": "tf_u1_f_3",
+    "unit": "1",
+    "topic": "Life Cycles of Flowering Plants",
+    "statement": "Seeds do not need water to germinate.",
+    "is_true": false,
+    "explanation": "Seeds require water, warmth, and oxygen to break dormancy and germinate.",
+    "vietnamese": "Hạt giống bắt buộc cần nước, nhiệt độ ấm và không khí để nảy mầm."
+  },
+  {
+    "id": "tf_u1_f_4",
+    "unit": "1",
+    "topic": "Life Cycles of Flowering Plants",
+    "statement": "Wind-pollinated flowers always have brightly coloured petals and sweet nectar.",
+    "is_true": false,
+    "explanation": "Wind-pollinated flowers have small, dull petals with no nectar or scent.",
+    "vietnamese": "Hoa thụ phấn nhờ gió thường nhỏ, không có màu sặc sỡ và không có mật hoa."
+  },
+  {
+    "id": "tf_u1_f_5",
+    "unit": "1",
+    "topic": "Life Cycles of Flowering Plants",
+    "statement": "Dandelion seeds are dispersed by ocean water currents.",
+    "is_true": false,
+    "explanation": "Dandelion seeds have feathery parachutes and are dispersed by the wind.",
+    "vietnamese": "Hạt bồ công anh có túm lông dù và được phát tán nhờ gió, không phải nước."
+  },
+  {
+    "id": "tf_u1_f_6",
+    "unit": "1",
+    "topic": "Life Cycles of Flowering Plants",
+    "statement": "Ferns and mosses reproduce using large seeds enclosed in fleshy fruits.",
+    "is_true": false,
+    "explanation": "Ferns and mosses are non-flowering plants that reproduce via microscopic spores.",
+    "vietnamese": "Dương xỉ và rêu là cây không hoa sinh sản bằng bào tử, không có hạt."
+  }
+]

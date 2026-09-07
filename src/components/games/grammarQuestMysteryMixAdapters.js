@@ -1,9 +1,11 @@
 import { grammarDetectiveData } from './grammarDetectiveData';
 import { RELATIVE_DETECTIVE_QUESTIONS } from './relativeDetectiveData';
+import { shuffleArray } from '../../utils/shuffle.js';
 
 export async function fetchAndAdaptInspectorTailData() {
   try {
-    const res = await fetch('db/tag_questions_esl.toon');
+    const dbPath = (process.env.PUBLIC_URL ? `${process.env.PUBLIC_URL}/` : '') + 'db/tag_questions_esl.toon';
+    const res = await fetch(dbPath);
     if (!res.ok) {
       console.warn("Mystery Mix: Failed to load tag_questions_esl.toon");
       return [];
@@ -31,7 +33,7 @@ export async function fetchAndAdaptInspectorTailData() {
         clueText: clueText || obj.sentence_prompt,
         answer: obj.correct_tag,
         acceptedAnswers: [obj.correct_tag],
-        options: [obj.correct_tag, obj.wrong_tag_1, obj.wrong_tag_2].sort(() => 0.5 - Math.random()),
+        options: shuffleArray([obj.correct_tag, obj.wrong_tag_1, obj.wrong_tag_2]),
         explanation: obj.polarity === 'pos' 
           ? `The sentence is positive, so the tag becomes negative: ${obj.correct_tag}.`
           : `The sentence is negative, so the tag becomes positive: ${obj.correct_tag}.`,
@@ -90,7 +92,7 @@ export function getAdaptedRelativeDetectiveData() {
       clueText: q.targetNoun,
       answer: q.correctPronoun,
       acceptedAnswers: [q.correctPronoun],
-      options: [q.correctPronoun, ...(q.distractors || [])].sort(() => 0.5 - Math.random()),
+      options: shuffleArray([q.correctPronoun, ...(q.distractors || [])]),
       explanation: q.hint || `"${q.targetNoun}" is the clue. The correct pronoun is ${q.correctPronoun}.`,
       tags: ['relative_pronoun', 'relative_pronoun_risk'],
       difficulty: 1,

@@ -32,7 +32,7 @@ const ScienceThinkQuiz = ({ words, numQuestions = 10, selectedUnits, isAllQuesti
 
   // Load the question bank
   useEffect(() => {
-    const unitsToLoad = (selectedUnits && selectedUnits.length > 0) ? selectedUnits : ['5'];
+    const unitsToLoad = (selectedUnits && selectedUnits.length > 0) ? selectedUnits : ['1'];
     
     Promise.all(
       unitsToLoad.map(unit => 

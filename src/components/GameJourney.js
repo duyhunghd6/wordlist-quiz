@@ -12,7 +12,7 @@ const SUBJECTS = {
 // Hardcoded journey data for each subject (Mocking backend progression)
 const JOURNEY_DATA = {
     wordlist_esl: {
-        objective: "Objective: Describe daily routines and past experiences",
+        objective: "Objective: Describe personalities, role models, and qualities",
         nodes: [
             { id: "esl_1", label: "Vocab Warm-up", sub: "Swipe, Quiz, Bubble", icon: "stack", type: "vocab", games: ["swipe", "quiz", "bubble"] },
             { id: "esl_2", label: "Word Meaning & Form", sub: "Word Search, Scramble, ESL Matching", icon: "squares-four", type: "grammar", games: ["wordSearch", "scramble", "eslMatching"] },
@@ -22,7 +22,7 @@ const JOURNEY_DATA = {
         ]
     },
     wordlist_math: {
-        objective: "Objective: Master addition, subtraction and word problems",
+        objective: "Objective: Master place value, decimals, rounding, and arithmetic",
         nodes: [
             { id: "math_1", label: "Number Basics", sub: "Math Weather Station, Quiz", icon: "hash", type: "both", games: ["quiz", "math_weather_station"] },
             { id: "math_2", label: "Logic Puzzles", sub: "Math Mystery Safe", icon: "lock-key", type: "both", games: ["math_mystery_safe"] },
@@ -32,7 +32,7 @@ const JOURNEY_DATA = {
         ]
     },
     wordlist_science: {
-        objective: "Objective: Understand light, the solar system and critical thinking",
+        objective: "Objective: Explore flowering plant life cycles, pollination, and seed dispersal",
         nodes: [
             { id: "sci_1", label: "Science Vocab", sub: "Swipe, Quiz, Bubble", icon: "flask", type: "vocab", games: ["swipe", "quiz", "bubble"] },
             { id: "sci_2", label: "Classification", sub: "Word Search, Scramble", icon: "magnifying-glass", type: "vocab", games: ["wordSearch", "scramble"] },

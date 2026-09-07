@@ -133,13 +133,8 @@ export function getWordsForReview(allWords, learningData, count) {
       priority *= 1.5;
     }
     
-    // Boost overdue words significantly
-    if (data.lastReviewed) {
-      const daysSince = (now - data.lastReviewed) / (1000 * 60 * 60 * 24);
-      if (daysSince > data.interval) {
-        priority *= 2;
-      }
-    }
+    // Note: calculateEffectiveWeight(data) already applies smooth logarithmic decay
+    // for overdue words via (1 + Math.log(overdueFactor)), preventing new-word starvation.
     
     return { word, priority, data };
   });

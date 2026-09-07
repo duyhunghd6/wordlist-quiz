@@ -2,6 +2,7 @@ import { useState, useEffect, useMemo, useRef, useCallback } from 'react';
 import './GrammarDetectiveGame.css';
 import { GRAMMAR_DETECTIVE_MODES } from './grammarDetectiveModes';
 import { grammarDetectiveData } from './grammarDetectiveData';
+import { shuffleArray } from '../../utils/shuffle.js';
 
 export default function GrammarDetectiveGame({
   gameId,
@@ -33,7 +34,7 @@ export default function GrammarDetectiveGame({
     // Filter questions by gameId
     const available = grammarDetectiveData.filter(q => q.game === gameId);
     // Shuffle and pick
-    const shuffled = [...available].sort(() => 0.5 - Math.random());
+    const shuffled = shuffleArray(available);
     const selected = shuffled.slice(0, Math.min(numQuestions, shuffled.length));
     
     setQuestions(selected);
@@ -44,7 +45,16 @@ export default function GrammarDetectiveGame({
     setStartTime(Date.now());
     
     // Init audio context
-    audioContextRef.current = new (window.AudioContext || window.webkitAudioContext)();
+    const AudioCtx = window.AudioContext || window.webkitAudioContext;
+    if (AudioCtx) {
+      audioContextRef.current = new AudioCtx();
+    }
+
+    return () => {
+      if (audioContextRef.current && audioContextRef.current.state !== 'closed') {
+        audioContextRef.current.close().catch(() => {});
+      }
+    };
   }, [gameId, mode, numQuestions]);
 
   const playTone = (type) => {
@@ -83,39 +93,55 @@ export default function GrammarDetectiveGame({
     if (!currentQ) return [];
     
     const { sentence, clueText } = currentQ;
-    const parts = sentence.split(clueText);
-    
-    if (parts.length !== 2) {
-      // Fallback if split fails (should not happen with valid data)
-      return [{ id: 'fallback', type: 'text', content: sentence }];
-    }
-    
-    const beforeText = parts[0];
-    const afterText = parts[1];
-    
+    const cleanClue = clueText ? clueText.trim() : '';
+
     const t = [];
     let idCounter = 0;
     
     const processPart = (text) => {
-      // split by space, preserve empty strings if needed, but better to use regex to keep punctuation attached to words
       const words = text.split(/(\s+)/);
       words.forEach(w => {
         if (!w.trim() && w.length > 0) {
-           t.push({ id: `space-${idCounter++}`, type: 'space', content: w });
+          t.push({ id: `space-${idCounter++}`, type: 'space', content: w });
         } else if (w.includes('___')) {
-           t.push({ id: `blank-${idCounter++}`, type: 'blank', content: w });
+          t.push({ id: `blank-${idCounter++}`, type: 'blank', content: w });
         } else if (w.length > 0) {
-           t.push({ id: `word-${idCounter++}`, type: 'word', content: w });
+          t.push({ id: `word-${idCounter++}`, type: 'word', content: w });
         }
       });
     };
-    
+
+    if (!cleanClue) {
+      processPart(sentence);
+      return t;
+    }
+
+    const lowerSentence = sentence.toLowerCase();
+    const lowerClue = cleanClue.toLowerCase();
+    const clueIndex = lowerSentence.indexOf(lowerClue);
+
+    if (clueIndex === -1) {
+      processPart(sentence);
+      return t;
+    }
+
+    const beforeText = sentence.slice(0, clueIndex);
+    const matchedClue = sentence.slice(clueIndex, clueIndex + cleanClue.length);
+    const afterText = sentence.slice(clueIndex + cleanClue.length);
+
     processPart(beforeText);
-    t.push({ id: `clue-${idCounter++}`, type: 'clue', content: clueText });
+    t.push({ id: `clue-${idCounter++}`, type: 'clue', content: matchedClue });
     processPart(afterText);
-    
+
     return t;
   }, [currentQ]);
+
+  // Safety fallback: if in clue phase but no clue token exists, advance to answer phase
+  useEffect(() => {
+    if (phase === 'clue' && tokens.length > 0 && !tokens.some(t => t.type === 'clue')) {
+      setPhase('answer');
+    }
+  }, [phase, tokens]);
 
   const nextQuestion = useCallback(() => {
     if (currentIndex < questions.length - 1) {

@@ -1,8 +1,12 @@
-const STORAGE_KEY = 'grammarQuestMysteryMix:v1:weights';
+const BASE_STORAGE_KEY = 'grammarQuestMysteryMix:v1:weights';
 
-export function loadMysteryMixWeights() {
+const getStorageKey = (profileId) => 
+  profileId ? `kidData_${profileId}_mysteryMixWeights` : BASE_STORAGE_KEY;
+
+export function loadMysteryMixWeights(profileId) {
   try {
-    const data = localStorage.getItem(STORAGE_KEY);
+    const key = getStorageKey(profileId);
+    const data = localStorage.getItem(key);
     if (data) {
       return JSON.parse(data);
     }
@@ -17,9 +21,10 @@ export function loadMysteryMixWeights() {
   };
 }
 
-export function saveMysteryMixWeights(data) {
+export function saveMysteryMixWeights(data, profileId) {
   try {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+    const key = getStorageKey(profileId);
+    localStorage.setItem(key, JSON.stringify(data));
   } catch (e) {
     console.warn("Failed to save Mystery Mix weights", e);
   }

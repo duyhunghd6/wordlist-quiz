@@ -1,0 +1,170 @@
+[
+  {
+    "id": "quiz_u1_1",
+    "unit": "1",
+    "question": "Which statement about flowering plants is accurate?",
+    "options": [
+      "Grass flowers do not need bright petals or scent.",
+      "Roots are responsible for catching pollen from flying insects.",
+      "Seeds grow best in completely frozen ice without any oxygen.",
+      "Petals wither before the flower is even pollinated."
+    ],
+    "correct_answer": "Grass flowers do not need bright petals or scent.",
+    "explanation": "Hoa cỏ không cần cánh rực rỡ hay mùi thơm.",
+    "vietnamese": "Hoa cỏ không cần cánh rực rỡ hay mùi thơm."
+  },
+  {
+    "id": "quiz_u1_2",
+    "unit": "1",
+    "question": "Which statement about flowering plants is accurate?",
+    "options": [
+      "Fertilisation happens deep inside the flower ovary.",
+      "Roots are responsible for catching pollen from flying insects.",
+      "Seeds grow best in completely frozen ice without any oxygen.",
+      "Petals wither before the flower is even pollinated."
+    ],
+    "correct_answer": "Fertilisation happens deep inside the flower ovary.",
+    "explanation": "Sự thụ tinh diễn ra sâu bên trong bầu nhụy của hoa.",
+    "vietnamese": "Sự thụ tinh diễn ra sâu bên trong bầu nhụy của hoa."
+  },
+  {
+    "id": "quiz_u1_3",
+    "unit": "1",
+    "question": "Which statement about flowering plants is accurate?",
+    "options": [
+      "The pollinated ovary swells into a sweet fruit.",
+      "Roots are responsible for catching pollen from flying insects.",
+      "Seeds grow best in completely frozen ice without any oxygen.",
+      "Petals wither before the flower is even pollinated."
+    ],
+    "correct_answer": "The pollinated ovary swells into a sweet fruit.",
+    "explanation": "Bầu nhụy sau thụ phấn phình to thành trái cây ngọt ngào.",
+    "vietnamese": "Bầu nhụy sau thụ phấn phình to thành trái cây ngọt ngào."
+  },
+  {
+    "id": "quiz_u1_4",
+    "unit": "1",
+    "question": "Which statement about flowering plants is accurate?",
+    "options": [
+      "White flowers with strong scents attract night moths.",
+      "Roots are responsible for catching pollen from flying insects.",
+      "Seeds grow best in completely frozen ice without any oxygen.",
+      "Petals wither before the flower is even pollinated."
+    ],
+    "correct_answer": "White flowers with strong scents attract night moths.",
+    "explanation": "Hoa màu trắng thơm nồng thu hút bướm đêm thụ phấn.",
+    "vietnamese": "Hoa màu trắng thơm nồng thu hút bướm đêm thụ phấn."
+  },
+  {
+    "id": "quiz_u1_5",
+    "unit": "1",
+    "question": "Which statement about flowering plants is accurate?",
+    "options": [
+      "Seeds must spread far so seedlings get light.",
+      "Roots are responsible for catching pollen from flying insects.",
+      "Seeds grow best in completely frozen ice without any oxygen.",
+      "Petals wither before the flower is even pollinated."
+    ],
+    "correct_answer": "Seeds must spread far so seedlings get light.",
+    "explanation": "Hạt phải phát tán xa để cây con nhận đủ ánh sáng.",
+    "vietnamese": "Hạt phải phát tán xa để cây con nhận đủ ánh sáng."
+  },
+  {
+    "id": "quiz_u1_6",
+    "unit": "1",
+    "question": "Which statement about flowering plants is accurate?",
+    "options": [
+      "Dandelions have tiny hairs that float on the wind.",
+      "Roots are responsible for catching pollen from flying insects.",
+      "Seeds grow best in completely frozen ice without any oxygen.",
+      "Petals wither before the flower is even pollinated."
+    ],
+    "correct_answer": "Dandelions have tiny hairs that float on the wind.",
+    "explanation": "Bồ công anh có túm lông tơ nhỏ bay bồng bềnh trong gió.",
+    "vietnamese": "Bồ công anh có túm lông tơ nhỏ bay bồng bềnh trong gió."
+  },
+  {
+    "id": "quiz_u1_7",
+    "unit": "1",
+    "question": "Which statement about flowering plants is accurate?",
+    "options": [
+      "Sycamore seeds spin like helicopter wings.",
+      "Roots are responsible for catching pollen from flying insects.",
+      "Seeds grow best in completely frozen ice without any oxygen.",
+      "Petals wither before the flower is even pollinated."
+    ],
+    "correct_answer": "Sycamore seeds spin like helicopter wings.",
+    "explanation": "Hạt cây phong tiêu xoay tít như cánh quạt trực thăng.",
+    "vietnamese": "Hạt cây phong tiêu xoay tít như cánh quạt trực thăng."
+  },
+  {
+    "id": "quiz_u1_8",
+    "unit": "1",
+    "question": "Which statement about flowering plants is accurate?",
+    "options": [
+      "Animals eat juicy fruits and scatter seeds in droppings.",
+      "Roots are responsible for catching pollen from flying insects.",
+      "Seeds grow best in completely frozen ice without any oxygen.",
+      "Petals wither before the flower is even pollinated."
+    ],
+    "correct_answer": "Animals eat juicy fruits and scatter seeds in droppings.",
+    "explanation": "Động vật ăn quả mọng và phát tán hạt qua chất thải.",
+    "vietnamese": "Động vật ăn quả mọng và phát tán hạt qua chất thải."
+  },
+  {
+    "id": "quiz_u1_9",
+    "unit": "1",
+    "question": "Which statement about flowering plants is accurate?",
+    "options": [
+      "Seeds with sharp hooks cling to animal fur.",
+      "Roots are responsible for catching pollen from flying insects.",
+      "Seeds grow best in completely frozen ice without any oxygen.",
+      "Petals wither before the flower is even pollinated."
+    ],
+    "correct_answer": "Seeds with sharp hooks cling to animal fur.",
+    "explanation": "Hạt có móc sắc nhọn bám chặt vào lông động vật.",
+    "vietnamese": "Hạt có móc sắc nhọn bám chặt vào lông động vật."
+  },
+  {
+    "id": "quiz_u1_10",
+    "unit": "1",
+    "question": "Which statement about flowering plants is accurate?",
+    "options": [
+      "Coconuts float on ocean water to reach new shores.",
+      "Roots are responsible for catching pollen from flying insects.",
+      "Seeds grow best in completely frozen ice without any oxygen.",
+      "Petals wither before the flower is even pollinated."
+    ],
+    "correct_answer": "Coconuts float on ocean water to reach new shores.",
+    "explanation": "Quả dừa trôi nổi trên nước biển để tới bờ đất mới.",
+    "vietnamese": "Quả dừa trôi nổi trên nước biển để tới bờ đất mới."
+  },
+  {
+    "id": "quiz_u1_11",
+    "unit": "1",
+    "question": "Which statement about flowering plants is accurate?",
+    "options": [
+      "Dry bean pods explode to shoot seeds away.",
+      "Roots are responsible for catching pollen from flying insects.",
+      "Seeds grow best in completely frozen ice without any oxygen.",
+      "Petals wither before the flower is even pollinated."
+    ],
+    "correct_answer": "Dry bean pods explode to shoot seeds away.",
+    "explanation": "Vỏ đậu khô tự nổ tung để bắn hạt ra xa.",
+    "vietnamese": "Vỏ đậu khô tự nổ tung để bắn hạt ra xa."
+  },
+  {
+    "id": "quiz_u1_12",
+    "unit": "1",
+    "question": "Which statement about flowering plants is accurate?",
+    "options": [
+      "Heavy round fruits drop from branches and roll away.",
+      "Roots are responsible for catching pollen from flying insects.",
+      "Seeds grow best in completely frozen ice without any oxygen.",
+      "Petals wither before the flower is even pollinated."
+    ],
+    "correct_answer": "Heavy round fruits drop from branches and roll away.",
+    "explanation": "Những quả tròn nặng rụng từ cành cây rồi lăn ra xa.",
+    "vietnamese": "Những quả tròn nặng rụng từ cành cây rồi lăn ra xa."
+  }
+]

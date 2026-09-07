@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { ArrowLeft } from 'lucide-react';
 import './RelativeDetectiveGame.css';
 import { RELATIVE_DETECTIVE_QUESTIONS } from './relativeDetectiveData';
+import { shuffleArray } from '../../utils/shuffle.js';
 
 const ALL_PRONOUNS = ['who', 'which', 'whose', 'that', 'where'];
 
@@ -27,7 +28,7 @@ const RelativeDetectiveGame = ({ numQuestions = 10, isAllQuestions = false, onHo
     const count = isAllQuestions
       ? RELATIVE_DETECTIVE_QUESTIONS.length
       : Math.min(numQuestions || 10, RELATIVE_DETECTIVE_QUESTIONS.length);
-    const shuffled = [...RELATIVE_DETECTIVE_QUESTIONS].sort(() => Math.random() - 0.5).slice(0, count);
+    const shuffled = shuffleArray(RELATIVE_DETECTIVE_QUESTIONS).slice(0, count);
     setQuestions(shuffled);
     setCurrentIndex(0);
     setScore(0);
@@ -35,13 +36,22 @@ const RelativeDetectiveGame = ({ numQuestions = 10, isAllQuestions = false, onHo
     setStartTime(Date.now());
     
     // Init audio context
-    audioContextRef.current = new (window.AudioContext || window.webkitAudioContext)();
+    const AudioCtx = window.AudioContext || window.webkitAudioContext;
+    if (AudioCtx) {
+      audioContextRef.current = new AudioCtx();
+    }
+
+    return () => {
+      if (audioContextRef.current && audioContextRef.current.state !== 'closed') {
+        audioContextRef.current.close().catch(() => {});
+      }
+    };
   }, [isAllQuestions, numQuestions]);
 
   useEffect(() => {
     if (phase === 'answering') {
       // Shuffle options when entering phase 2
-      setOptions([...ALL_PRONOUNS].sort(() => Math.random() - 0.5));
+      setOptions(shuffleArray(ALL_PRONOUNS));
     }
   }, [phase, currentIndex]);
 

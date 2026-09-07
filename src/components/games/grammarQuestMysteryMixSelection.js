@@ -1,3 +1,5 @@
+import { shuffleArray } from '../../utils/shuffle.js';
+
 export function computeQuestionWeight(question, weights) {
   let baseWeight = 1.0;
   
@@ -18,13 +20,23 @@ export function computeQuestionWeight(question, weights) {
   tagBonus = Math.min(tagBonus, 2.0);
   
   let totalWeight = baseWeight + tagBonus;
-  return Math.max(0.5, Math.min(totalWeight, 6.0));
+
+  // Recency cooldown (Anti-repetition buffer from tasks/lessons.md):
+  // If this question was seen within the last 15 minutes, reduce weight to prevent loops
+  if (weights.attempts && weights.attempts[question.id] && weights.attempts[question.id].lastSeenAt) {
+    const minutesSince = (Date.now() - weights.attempts[question.id].lastSeenAt) / (1000 * 60);
+    if (minutesSince < 15) {
+      totalWeight *= 0.3;
+    }
+  }
+
+  return Math.max(0.3, Math.min(totalWeight, 6.0));
 }
 
 export function selectMysteryMixQuestions(allQuestions, numQuestions, weights) {
   if (numQuestions === 999 || allQuestions.length <= numQuestions) {
-    // Return all shuffled
-    return [...allQuestions].sort(() => 0.5 - Math.random());
+    // Return all uniformly shuffled
+    return shuffleArray(allQuestions);
   }
 
   const selected = [];

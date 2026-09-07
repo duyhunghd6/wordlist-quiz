@@ -2,7 +2,7 @@ import React from 'react';
 import { XCircle, CheckCircle, RotateCcw, Home, Zap } from 'lucide-react';
 import './Results.css';
 
-const Results = ({ score, questions, userAnswers, resultSummary, playAgain, saveResult, playerName }) => {
+const Results = ({ score, questions, userAnswers, resultSummary, playAgain, goHome, saveResult, playerName }) => {
   const answerCorrectCount = userAnswers.filter(a => a.isCorrect).length;
   const answerWrongCount = userAnswers.filter(a => !a.isCorrect).length;
   const answerTotal = answerCorrectCount + answerWrongCount;
@@ -69,7 +69,7 @@ const Results = ({ score, questions, userAnswers, resultSummary, playAgain, save
           <RotateCcw size={20} />
           <span>Play Again</span>
         </button>
-        <button className="btn btn-secondary results-action-btn" onClick={playAgain}>
+        <button className="btn btn-secondary results-action-btn" onClick={goHome || playAgain}>
           <Home size={20} />
           <span>Home</span>
         </button>

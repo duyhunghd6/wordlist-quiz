@@ -32,7 +32,7 @@ const ScienceTrueFalseGame = ({ words, numQuestions = 10, selectedUnits, isAllQu
 
   // Load the statement bank
   useEffect(() => {
-    const unitsToLoad = (selectedUnits && selectedUnits.length > 0) ? selectedUnits : ['5'];
+    const unitsToLoad = (selectedUnits && selectedUnits.length > 0) ? selectedUnits : ['1'];
     
     Promise.all(
       unitsToLoad.map(unit => 

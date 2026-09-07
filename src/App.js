@@ -43,6 +43,7 @@ import {
   migrateLegacyWeights,
   createDefaultLearning,
 } from "./learningAlgorithm";
+import { shuffleArray } from "./utils/shuffle.js";
 import {
   useKidProfile,
   usePreferences,
@@ -104,26 +105,46 @@ function App() {
 
   const wordlists = ["wordlist_esl", "wordlist_math", "wordlist_science"];
 
-  // Load saved data on mount
+  // Load saved data when active profile changes
   useEffect(() => {
-    const loadedHistory = JSON.parse(localStorage.getItem("quizHistory")) || {};
-    setHistory(loadedHistory);
+    const historyKey = activeId ? `kidData_${activeId}_quizHistory` : "quizHistory";
+    const learningKey = activeId ? `kidData_${activeId}_learningData` : "learningData";
+
+    try {
+      const storedHistory = localStorage.getItem(historyKey) || (!activeId ? localStorage.getItem("quizHistory") : null);
+      setHistory(storedHistory ? JSON.parse(storedHistory) : {});
+    } catch (e) {
+      console.warn("Failed to load quizHistory:", e);
+      setHistory({});
+    }
     
-    // Load learning data with migration from legacy format
-    const storedData = JSON.parse(localStorage.getItem("learningData"));
-    const legacyWeights = JSON.parse(localStorage.getItem("wordWeights"));
-    
-    if (storedData && storedData.version) {
-      setLearningData(storedData);
-    } else if (legacyWeights) {
-      const migrated = migrateLegacyWeights(legacyWeights);
-      setLearningData(migrated);
-      localStorage.setItem("learningData", JSON.stringify(migrated));
-      localStorage.removeItem("wordWeights");
-    } else {
+    try {
+      const storedData = localStorage.getItem(learningKey) || (!activeId ? localStorage.getItem("learningData") : null);
+      if (storedData) {
+        const parsed = JSON.parse(storedData);
+        if (parsed && parsed.version) {
+          setLearningData(parsed);
+          return;
+        }
+      }
+
+      if (!activeId) {
+        const legacyWeights = localStorage.getItem("wordWeights");
+        if (legacyWeights) {
+          const migrated = migrateLegacyWeights(JSON.parse(legacyWeights));
+          setLearningData(migrated);
+          localStorage.setItem("learningData", JSON.stringify(migrated));
+          localStorage.removeItem("wordWeights");
+          return;
+        }
+      }
+
+      setLearningData({ version: 1 });
+    } catch (e) {
+      console.warn("Failed to load learningData:", e);
       setLearningData({ version: 1 });
     }
-  }, []);
+  }, [activeId]);
 
   // Restore preferences ONLY for last subject, everything else is in handleWordlistChange
   useEffect(() => {
@@ -204,8 +225,9 @@ function App() {
             setEslReviewQuestions(null);
         }
 
+        const activeData = data.filter((item) => !item.disabled);
         const uniqueUnits = [
-          ...new Set(data.map((item) => item.unit.split(".")[0])),
+          ...new Set(activeData.map((item) => item.unit.split(".")[0])),
         ];
         uniqueUnits.sort((a, b) => {
           const numA = parseInt(a, 10);
@@ -232,10 +254,11 @@ function App() {
             if (validUnits.length > 0) {
                 setSelectedUnits(validUnits);
             } else {
-                setSelectedUnits(uniqueUnits);
+                setSelectedUnits(uniqueUnits.includes("1") ? ["1"] : uniqueUnits);
             }
         } else {
-            setSelectedUnits(uniqueUnits);
+            // Default to Unit 1 for Grade 4 active focus
+            setSelectedUnits(uniqueUnits.includes("1") ? ["1"] : uniqueUnits);
         }
 
         const savedCount = currentPrefs[`lastQuestionCount_${selected}`];
@@ -285,7 +308,8 @@ function App() {
   };
 
   const startQuiz = () => {
-    const filteredWords = wordlist.filter((word) =>
+    const activeWords = wordlist ? wordlist.filter((w) => !w.disabled) : [];
+    const filteredWords = activeWords.filter((word) =>
       selectedUnits.includes(word.unit.split(".")[0]),
     );
 
@@ -317,7 +341,8 @@ function App() {
     setSelectedGame(gameId);
     
     // Pick words for the grammar game (we still use words array for scoring context)
-    const filteredWords = wordlist ? wordlist.filter((word) =>
+    const activeWords = wordlist ? wordlist.filter((w) => !w.disabled) : [];
+    const filteredWords = activeWords.length > 0 ? activeWords.filter((word) =>
       selectedUnits.length > 0 ? selectedUnits.includes(word.unit.split(".")[0]) : true
     ) : [];
     
@@ -349,7 +374,8 @@ function App() {
       [correctAnswer]: updatedWordData,
     };
     setLearningData(updatedLearningData);
-    localStorage.setItem("learningData", JSON.stringify(updatedLearningData));
+    const learningKey = activeId ? `kidData_${activeId}_learningData` : "learningData";
+    localStorage.setItem(learningKey, JSON.stringify(updatedLearningData));
     
     setUserAnswers((prev) => [
       ...prev,
@@ -382,7 +408,8 @@ function App() {
       [word]: updatedWordData,
     };
     setLearningData(updatedLearningData);
-    localStorage.setItem("learningData", JSON.stringify(updatedLearningData));
+    const gameLearningKey = activeId ? `kidData_${activeId}_learningData` : "learningData";
+    localStorage.setItem(gameLearningKey, JSON.stringify(updatedLearningData));
     
     let questionObj = customQuestionObj;
     
@@ -485,13 +512,32 @@ function App() {
     updatedHistory[selectedWordlist].unshift(newResult);
     updatedHistory[selectedWordlist] = updatedHistory[selectedWordlist].slice(0, 5);
     setHistory(updatedHistory);
-    localStorage.setItem("quizHistory", JSON.stringify(updatedHistory));
+    const historyKey = activeId ? `kidData_${activeId}_quizHistory` : "quizHistory";
+    localStorage.setItem(historyKey, JSON.stringify(updatedHistory));
   };
 
   const playAgain = () => {
-    setQuizStarted(false);
-    setShowResults(false);
-    setResultSummary(null);
+    const activeWords = wordlist ? wordlist.filter((w) => !w.disabled) : [];
+    if (activeWords.length > 0) {
+      let filteredWords = activeWords;
+      if (selectedUnits && selectedUnits.length > 0) {
+        filteredWords = activeWords.filter(w => selectedUnits.includes(w.unit.split(".")[0]));
+      }
+      if (filteredWords.length === 0) filteredWords = activeWords;
+      const count = numQuestions === 999 ? filteredWords.length : Math.min(numQuestions, filteredWords.length);
+      const shuffled = shuffleArray(filteredWords).slice(0, count);
+      setQuestions(shuffled);
+      setCurrentQuestionIndex(0);
+      setScore(0);
+      setUserAnswers([]);
+      setResultSummary(null);
+      setShowResults(false);
+      setQuizStarted(true);
+    } else {
+      setQuizStarted(false);
+      setShowResults(false);
+      setResultSummary(null);
+    }
   };
 
   const handleProfileComplete = (newProfile) => {
@@ -548,6 +594,7 @@ function App() {
           userAnswers={userAnswers}
           resultSummary={resultSummary}
           playAgain={playAgain}
+          goHome={goHome}
           saveResult={saveResult}
           playerName={profile.name}
         />
@@ -564,6 +611,7 @@ function App() {
         eslReviewQuestions: eslReviewQuestions,
         selectedUnits: selectedUnits && selectedUnits.length > 0 ? selectedUnits : units, // Pass all units if none selected
         onAnswer: handleGameAnswer,
+        profileId: activeId,
         onComplete: (results) => {
           if (results) {
             const hasAnswerCounts = results.correctCount !== undefined

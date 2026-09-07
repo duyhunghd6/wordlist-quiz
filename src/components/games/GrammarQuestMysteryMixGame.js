@@ -7,9 +7,11 @@ import { selectMysteryMixQuestions } from './grammarQuestMysteryMixSelection';
 export default function GrammarQuestMysteryMixGame({
   numQuestions = 10,
   onComplete,
-  onHome
+  onHome,
+  profileId
 }) {
   const audioContextRef = useRef(null);
+  const feedbackTimeoutRef = useRef(null);
 
   const [questions, setQuestions] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -29,9 +31,13 @@ export default function GrammarQuestMysteryMixGame({
   const [tagBreakdown, setTagBreakdown] = useState({});
 
   useEffect(() => {
+    let isMounted = true;
+
     async function initGame() {
       const allQ = await loadAllMysteryMixQuestions();
-      const loadedWeights = loadMysteryMixWeights();
+      if (!isMounted) return;
+
+      const loadedWeights = loadMysteryMixWeights(profileId);
       setWeights(loadedWeights);
       
       const selected = selectMysteryMixQuestions(allQ, numQuestions, loadedWeights);
@@ -51,10 +57,23 @@ export default function GrammarQuestMysteryMixGame({
       setSourceBreakdown({});
       setTagBreakdown({});
 
-      audioContextRef.current = new (window.AudioContext || window.webkitAudioContext)();
+      const AudioCtx = window.AudioContext || window.webkitAudioContext;
+      if (AudioCtx) {
+        audioContextRef.current = new AudioCtx();
+      }
     }
     
     initGame();
+
+    return () => {
+      isMounted = false;
+      if (feedbackTimeoutRef.current) {
+        clearTimeout(feedbackTimeoutRef.current);
+      }
+      if (audioContextRef.current && audioContextRef.current.state !== 'closed') {
+        audioContextRef.current.close().catch(() => {});
+      }
+    };
   }, [numQuestions]);
 
   const playTone = (type) => {
@@ -92,54 +111,60 @@ export default function GrammarQuestMysteryMixGame({
     if (!currentQ || phase === 'loading' || phase === 'summary') return [];
     
     const { prompt, clueText } = currentQ;
-    if (!clueText) {
-      // If no clue text, just return the prompt with a blank
-      const parts = prompt.split('_______');
-      if (parts.length > 1) {
-         return [
-           { id: 't1', type: 'text', content: parts[0] },
-           { id: 'b1', type: 'blank', content: '___' },
-           { id: 't2', type: 'text', content: parts[1] }
-         ];
-      }
-      return [{ id: 't1', type: 'text', content: prompt }];
-    }
+    const cleanClue = clueText ? clueText.trim() : '';
 
-    const parts = prompt.split(clueText);
-    
-    if (parts.length !== 2) {
-      return [{ id: 'fallback', type: 'text', content: prompt }];
-    }
-    
-    const beforeText = parts[0];
-    const afterText = parts[1];
-    
     const t = [];
     let idCounter = 0;
-    
+
     const processPart = (text) => {
       const words = text.split(/(\s+)/);
       words.forEach(w => {
         if (!w.trim() && w.length > 0) {
-           t.push({ id: `space-${idCounter++}`, type: 'space', content: w });
+          t.push({ id: `space-${idCounter++}`, type: 'space', content: w });
         } else if (w.includes('___') || w.includes('_______')) {
-           t.push({ id: `blank-${idCounter++}`, type: 'blank', content: w });
+          t.push({ id: `blank-${idCounter++}`, type: 'blank', content: w });
         } else if (w.length > 0) {
-           t.push({ id: `word-${idCounter++}`, type: 'word', content: w });
+          t.push({ id: `word-${idCounter++}`, type: 'word', content: w });
         }
       });
     };
-    
+
+    if (!cleanClue) {
+      processPart(prompt);
+      return t;
+    }
+
+    const lowerPrompt = prompt.toLowerCase();
+    const lowerClue = cleanClue.toLowerCase();
+    const clueIndex = lowerPrompt.indexOf(lowerClue);
+
+    if (clueIndex === -1) {
+      // Fallback: clue text not found as substring
+      processPart(prompt);
+      return t;
+    }
+
+    const beforeText = prompt.slice(0, clueIndex);
+    const matchedClue = prompt.slice(clueIndex, clueIndex + cleanClue.length);
+    const afterText = prompt.slice(clueIndex + cleanClue.length);
+
     processPart(beforeText);
-    t.push({ id: `clue-${idCounter++}`, type: 'clue', content: clueText });
+    t.push({ id: `clue-${idCounter++}`, type: 'clue', content: matchedClue });
     processPart(afterText);
-    
+
     return t;
   }, [currentQ, phase]);
 
+  // Safety fallback: if in clue phase but no clue token exists, auto-advance to answer phase
+  useEffect(() => {
+    if (phase === 'clue' && tokens.length > 0 && !tokens.some(t => t.type === 'clue')) {
+      setPhase('answer');
+    }
+  }, [phase, tokens]);
+
   const handleCompleteSession = useCallback(() => {
     setPhase('summary');
-    saveMysteryMixWeights(weights);
+    saveMysteryMixWeights(weights, profileId);
 
     if (onComplete) {
       onComplete({
@@ -153,7 +178,7 @@ export default function GrammarQuestMysteryMixGame({
         attempts
       });
     }
-  }, [attempts, onComplete, questions.length, score, sourceBreakdown, startTime, tagBreakdown, weights]);
+  }, [attempts, onComplete, profileId, questions.length, score, sourceBreakdown, startTime, tagBreakdown, weights]);
 
   const nextQuestion = useCallback(() => {
     if (currentIndex < questions.length - 1) {
@@ -186,7 +211,8 @@ export default function GrammarQuestMysteryMixGame({
         type: 'error', 
         text: isSecondMiss ? `Hint: The clue is "${currentQ.clueText}"` : 'Not quite. Find the clue word first.'
       });
-      setTimeout(() => setFeedback(null), 2000);
+      if (feedbackTimeoutRef.current) clearTimeout(feedbackTimeoutRef.current);
+      feedbackTimeoutRef.current = setTimeout(() => setFeedback(null), 2000);
     }
   };
 
@@ -265,7 +291,8 @@ export default function GrammarQuestMysteryMixGame({
         type: 'error', 
         text: hintText
       });
-      setTimeout(() => {
+      if (feedbackTimeoutRef.current) clearTimeout(feedbackTimeoutRef.current);
+      feedbackTimeoutRef.current = setTimeout(() => {
         setFeedback(null);
         setWrongAnswer(null);
       }, 4000);

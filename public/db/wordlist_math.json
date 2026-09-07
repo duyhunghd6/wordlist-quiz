@@ -1,11 +1,346 @@
 [
   {
     "unit": "1.1",
+    "word": "Place value",
+    "definition": "The numerical worth of a numeral based on where it sits in a numeral sequence.",
+    "example": "In the number 450, the _____ of the digit 4 is four hundred.",
+    "vietnamese": "Giá trị hàng số (dựa trên vị trí đứng của chữ số).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1.1",
+    "word": "Million",
+    "definition": "The cardinal quantity equivalent to one thousand thousands (1,000,000).",
+    "example": "Over one _____ people live in the capital city.",
+    "vietnamese": "Một triệu (1.000.000).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1.1",
+    "word": "Tenths",
+    "definition": "The initial fractional column located immediately right of the point mark (0.1).",
+    "example": "In the number 3.7, the numeral 7 sits in the _____ column.",
+    "vietnamese": "Hàng phần mười (chữ số đầu tiên sau dấu phẩy - 0.1).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1.1",
+    "word": "Hundredths",
+    "definition": "The second fractional place situated two steps right of the decimal mark (0.01).",
+    "example": "In 4.28, the numeral 8 is placed in the _____ column.",
+    "vietnamese": "Hàng phần trăm (chữ số thứ hai sau dấu phẩy - 0.01).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1.1",
+    "word": "Decimal point",
+    "definition": "The small dot or punctuation separating full whole integers from parts.",
+    "example": "Never forget to write the _____ between dollars and cents.",
+    "vietnamese": "Dấu phẩy thập phân (dấu chấm ngăn cách phần nguyên và phần thập phân).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1.1",
+    "word": "Digit",
+    "definition": "Any single individual integer symbol chosen from zero through nine.",
+    "example": "The numeral 852 is composed of three individual _____s.",
+    "vietnamese": "Chữ số (từ 0 đến 9).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1.1",
+    "word": "Compose",
+    "definition": "To assemble or build up a larger value by putting parts together.",
+    "example": "We can _____ forty and five to form the total forty-five.",
+    "vietnamese": "Ghép số, hợp thành giá trị từ các hàng.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1.1",
+    "word": "Decompose",
+    "definition": "To separate or break apart a compound numerical quantity into place parts.",
+    "example": "When you _____ 35.2, you get 30 + 5 + 0.2.",
+    "vietnamese": "Tách số, phân tích số thành các thành phần hàng.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1.1",
+    "word": "Regroup",
+    "definition": "To reorganize values between adjacent columns, such as exchanging ten tenths for one whole.",
+    "example": "When adding 0.8 and 0.5, you must _____ ten tenths into 1 whole unit.",
+    "vietnamese": "Đổi nhóm hàng số, mượn/nhớ trong phép tính.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1.1",
+    "word": "Shift",
+    "definition": "To slide numerical figures to higher or lower column ranks during calculations.",
+    "example": "Multiplying by 10 makes all figures _____ one column to the left.",
+    "vietnamese": "Dịch chuyển vị trí hàng số.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1.2",
+    "word": "Round",
+    "definition": "To adjust a numerical measurement to a convenient nearby benchmark quantity.",
+    "example": "If the price is $9.95, it is helpful to _____ it to $10.",
+    "vietnamese": "Làm tròn số (đến hàng đơn vị, chục hoặc phần mười gần nhất).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1.2",
+    "word": "Nearest whole number",
+    "definition": "The closest complete integer that possesses zero fractional remainders.",
+    "example": "Rounding 6.8 to the _____ gives seven.",
+    "vietnamese": "Số nguyên gần nhất.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1.2",
+    "word": "Negative number",
+    "definition": "A mathematical quantity measuring less than zero, marked with a minus sign.",
+    "example": "Freezing sub-zero temperatures are represented by a _____ like -5°C.",
+    "vietnamese": "Số âm (nhỏ hơn 0, có dấu trừ phía trước).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1.2",
+    "word": "Approximate",
+    "definition": "Close to an exact amount or measure, though not completely precise.",
+    "example": "An _____ measurement of 2.98 metres is about 3 metres.",
+    "vietnamese": "Xấp xỉ, gần đúng.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "5.1",
+    "word": "Sum",
+    "definition": "The final total quantity calculated from joining two or more values.",
+    "example": "The _____ of twelve and eight equals twenty.",
+    "vietnamese": "Tổng số (kết quả của phép tính cộng).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "5.1",
+    "word": "Difference",
+    "definition": "The amount by which one quantity is larger or smaller than another.",
+    "example": "The _____ between fifty and thirty is twenty.",
+    "vietnamese": "Hiệu số (khoảng cách giữa hai số trong phép trừ).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "5.1",
+    "word": "Addend",
+    "definition": "Any single numerical quantity that is united with another in addition.",
+    "example": "In the calculation 14 + 6 = 20, both 14 and 6 serve as an _____.",
+    "vietnamese": "Số hạng trong phép cộng.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "5.1",
+    "word": "Column addition",
+    "definition": "The calculation method of arranging figures in upright vertical rows.",
+    "example": "Line up the dots carefully when using _____ with decimal fractions.",
+    "vietnamese": "Đặt tính cộng theo cột dọc.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "5.1",
+    "word": "Estimate",
+    "definition": "To determine a rough approximate answer beforehand to check reasonability.",
+    "example": "Always calculate a fast mental _____ before solving complex problems.",
+    "vietnamese": "Ước lượng, đoán trước kết quả xấp xỉ.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "5.1",
+    "word": "Inverse operation",
+    "definition": "A opposite mathematical process that undoes the action of another.",
+    "example": "Subtraction acts as the _____ of addition.",
+    "vietnamese": "Phép tính nghịch đảo (phép toán đảo ngược).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "2.1",
+    "word": "Polygon",
+    "definition": "A closed flat two-dimensional figure bounded by three or more straight segments.",
+    "example": "A flat hexagon with straight edges is an example of a _____.",
+    "vietnamese": "Hình đa giác phẳng có các cạnh thẳng.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "2.1",
+    "word": "Polyhedron",
+    "definition": "A solid three-dimensional body enclosed completely by flat polygonal faces.",
+    "example": "A cube with six square faces is a symmetrical 3D _____.",
+    "vietnamese": "Khối đa diện ba chiều.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "2.1",
+    "word": "Regular polygon",
+    "definition": "A planar shape in which all boundary segments and corner angles are equal.",
+    "example": "An equilateral triangle with equal lengths is a _____.",
+    "vietnamese": "Đa giác đều (tất cả các cạnh và các góc đều bằng nhau).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "2.1",
+    "word": "Net",
+    "definition": "An unfolded flat planar outline that folds up into a three-dimensional solid.",
+    "example": "Folding up the cardboard cross-shaped _____ created an open cube box.",
+    "vietnamese": "Hình trải phẳng của một khối hình học.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.1",
+    "word": "Prime number",
+    "definition": "A positive integer greater than one divisible solely by one and itself.",
+    "example": "The numeral seven is a _____ because only 1 and 7 divide it evenly.",
+    "vietnamese": "Số nguyên tố (chỉ chia hết cho 1 và chính nó).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.1",
+    "word": "Factor",
+    "definition": "An exact whole divisor that splits another quantity without any remainder.",
+    "example": "Three is an exact _____ of twelve because three times four is twelve.",
+    "vietnamese": "Ước số (số chia hết không dư).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.1",
+    "word": "Multiple",
+    "definition": "The product resulting from multiplying a given base number by any whole integer.",
+    "example": "Fifteen is a _____ of five because five times three is fifteen.",
+    "vietnamese": "Bội số (tích của một số với một số nguyên).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.1",
+    "word": "Square number",
+    "definition": "The resulting amount obtained when an integer is multiplied directly by itself.",
+    "example": "Sixteen is a _____ because four multiplied by four gives sixteen.",
+    "vietnamese": "Số chính phương (tích của một số tự nhân với chính nó).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "4.1",
+    "word": "Numerator",
+    "definition": "The top numeral in a fraction indicating how many designated parts are counted.",
+    "example": "In three quarters (3/4), the digit 3 represents the _____.",
+    "vietnamese": "Tử số (số nằm phía trên gạch ngang phân số).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "4.1",
+    "word": "Denominator",
+    "definition": "The bottom figure in a fraction denoting into how many equal pieces a whole is divided.",
+    "example": "In five eighths (5/8), the numeral 8 is the _____.",
+    "vietnamese": "Mẫu số (số nằm phía dưới gạch ngang phân số).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "4.1",
+    "word": "Improper fraction",
+    "definition": "A fractional expression whose top value is equal to or bigger than its lower base.",
+    "example": "Seven fourths (7/4) is an _____ greater than one full unit.",
+    "vietnamese": "Phân số không chính tắc (tử số lớn hơn hoặc bằng mẫu số).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "4.1",
+    "word": "Mixed number",
+    "definition": "A compound quantity composed of an integer whole alongside a fractional part.",
+    "example": "Two and a half (2 1/2) is written as a _____.",
+    "vietnamese": "Hỗn số (kết hợp giữa số nguyên và phân số).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "6.1",
+    "word": "Mode",
+    "definition": "The single statistical score appearing most frequently across a gathered dataset.",
+    "example": "In the series 4, 7, 7, 9, the number seven is the _____.",
+    "vietnamese": "Yếu vị / mốt (giá trị xuất hiện nhiều lần nhất trong dãy số).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "6.1",
+    "word": "Median",
+    "definition": "The middlemost rank score when all values are organized in ascending sequence.",
+    "example": "Arranging the test marks from low to high revealed a _____ of 85.",
+    "vietnamese": "Số trung vị (số nằm chính giữa dãy sau khi sắp xếp).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "6.1",
+    "word": "Range",
+    "definition": "The mathematical span between the maximum and minimum numbers in a dataset.",
+    "example": "Subtracting lowest height from tallest height calculated the data _____.",
+    "vietnamese": "Khoảng biến thiên (hiệu số giữa giá trị lớn nhất và nhỏ nhất).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "7.1",
+    "word": "Perimeter",
+    "definition": "The total continuous linear boundary distance encompassing a closed 2D outline.",
+    "example": "Adding the four fence sides gave a garden _____ of twenty metres.",
+    "vietnamese": "Chu vi hình học (tổng độ dài các cạnh bao quanh).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "7.1",
+    "word": "Area",
+    "definition": "The extent of two-dimensional surface space enclosed inside a boundary.",
+    "example": "Multiplying room length by width computed a carpet _____ of twelve square metres.",
+    "vietnamese": "Diện tích bề mặt (đo bằng đơn vị vuông).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1.1",
     "word": "Negative",
     "definition": "Less than zero",
     "example": "",
     "vietnamese": "Âm (Nhỏ hơn không)",
-    "image": "/db/math/Negative.png"
+    "image": "/db/math/Negative.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "1.1",
@@ -13,7 +348,9 @@
     "definition": "",
     "example": "Eight minus 6 is two",
     "vietnamese": "trừ",
-    "image": "/db/math/Minus.png"
+    "image": "/db/math/Minus.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "1.1",
@@ -21,7 +358,9 @@
     "definition": "the jump size between terms",
     "example": "The difference between 20 and 25 is 5",
     "vietnamese": "khoảng cách giữa các số (phép tính trừ)",
-    "image": "/db/math/Difference.png"
+    "image": "/db/math/Difference.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "1.1",
@@ -29,7 +368,9 @@
     "definition": "a number pattern which increases (or decreases) by the same amount each time",
     "example": "2,4,6,8,10",
     "vietnamese": "dãy số cách đều (dãy số cùng tăng hoặc giảm theo một mức cố định)",
-    "image": "/db/math/Linear_sequence.png"
+    "image": "/db/math/Linear_sequence.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "1.1",
@@ -37,7 +378,9 @@
     "definition": "a number less than zero",
     "example": "-3",
     "vietnamese": "số âm (những số <0)",
-    "image": "/db/math/Negative_number.png"
+    "image": "/db/math/Negative_number.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "1.1",
@@ -45,7 +388,9 @@
     "definition": "a pattern where the numbers don't increase or decrease by the same numbers each time.",
     "example": "2, 4, 8, 16, 32",
     "vietnamese": "Dãy số không tuyến tính (một quy luật mà các số không tăng hoặc giảm theo cùng một lượng mỗi lần.)",
-    "image": "/db/math/Nonlinear_sequence.png"
+    "image": "/db/math/Nonlinear_sequence.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "1.1",
@@ -53,7 +398,9 @@
     "definition": "A rule tells you how things or numbers are connected",
     "example": "2,4,6,8,10. The term to term rule is +2",
     "vietnamese": "Quy tắc (từ số hạng đến số hạng) (Một quy tắc cho bạn biết mọi thứ hoặc các con số được kết nối như thế nào)",
-    "image": "/db/math/term_to_term_Rule.png"
+    "image": "/db/math/term_to_term_Rule.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "1.1",
@@ -61,7 +408,9 @@
     "definition": "an ordered set of numbers, shapes or other mathematical objects that follow a rule.",
     "example": "",
     "vietnamese": "Dãy số (một tập hợp có thứ tự gồm các số, hình dạng hoặc đối tượng toán học khác tuân theo một quy tắc.)",
-    "image": "/db/math/Sequence.png"
+    "image": "/db/math/Sequence.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "1.2",
@@ -69,7 +418,9 @@
     "definition": "How cold or hot something is.",
     "example": "",
     "vietnamese": "Nhiệt độ",
-    "image": "/db/math/Temperature.png"
+    "image": "/db/math/Temperature.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "1.2",
@@ -77,7 +428,9 @@
     "definition": "another name for nothing",
     "example": "0",
     "vietnamese": "Số không (một tên gọi khác của 'không có gì')",
-    "image": "/db/math/Zero.png"
+    "image": "/db/math/Zero.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "1.2",
@@ -85,7 +438,9 @@
     "definition": "A device that measures temperature",
     "example": "",
     "vietnamese": "Nhiệt kế",
-    "image": "/db/math/Thermometer.png"
+    "image": "/db/math/Thermometer.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "1.3",
@@ -93,7 +448,9 @@
     "definition": "put together",
     "example": "300 + 50 = 350",
     "vietnamese": "Tổng hợp (gộp)",
-    "image": "/db/math/Compose.png"
+    "image": "/db/math/Compose.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "1.3",
@@ -101,7 +458,9 @@
     "definition": "break down",
     "example": "350 = 300 + 50",
     "vietnamese": "Phân tích (tách)",
-    "image": "/db/math/Decompose.png"
+    "image": "/db/math/Decompose.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "1.3",
@@ -109,7 +468,9 @@
     "definition": "Change the way a number is written",
     "example": "",
     "vietnamese": "nhóm",
-    "image": "/db/math/Regroup.png"
+    "image": "/db/math/Regroup.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "1.3",
@@ -117,7 +478,9 @@
     "definition": "Having the same value (equal)",
     "example": "",
     "vietnamese": "tương đương, bằng nhau",
-    "image": "/db/math/Equivalent.png"
+    "image": "/db/math/Equivalent.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "1.3",
@@ -125,7 +488,9 @@
     "definition": "a 4-digit number that is 10 times larger than a hundred",
     "example": "1,000",
     "vietnamese": "Nghìn",
-    "image": "/db/math/Thousand.png"
+    "image": "/db/math/Thousand.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "1.3",
@@ -133,7 +498,9 @@
     "definition": "a 5-digit number that is 10 times lager than a hundred",
     "example": "10,000",
     "vietnamese": "Chục nghìn",
-    "image": "/db/math/Ten_thousand.png"
+    "image": "/db/math/Ten_thousand.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "1.3",
@@ -141,7 +508,9 @@
     "definition": "",
     "example": "100,000",
     "vietnamese": "Trăm nghìn",
-    "image": "/db/math/Hundred_thousand.png"
+    "image": "/db/math/Hundred_thousand.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "1.3",
@@ -149,7 +518,9 @@
     "definition": "",
     "example": "1,000,000",
     "vietnamese": "Triệu",
-    "image": "/db/math/Million.png"
+    "image": "/db/math/Million.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "1.3",
@@ -157,7 +528,9 @@
     "definition": "Use of Zero to hold other digits in the correct position.",
     "example": "In 804, the place holder is 0",
     "vietnamese": "Chữ số giữ chỗ (Việc sử dụng số Không để giữ các chữ số khác ở đúng vị trí.)",
-    "image": "/db/math/Place_holder.png"
+    "image": "/db/math/Place_holder.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "1.3",
@@ -165,7 +538,9 @@
     "definition": "The value of a digit determined by it's position",
     "example": "The 7 in 3,755 has a place value of 700",
     "vietnamese": "Giá trị theo vị trí (Giá trị của một chữ số được xác định bởi vị trí của nó)",
-    "image": "/db/math/Place_value.png"
+    "image": "/db/math/Place_value.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "2.1",
@@ -173,7 +548,9 @@
     "definition": "A clock with an hour hand and a minute hand",
     "example": "",
     "vietnamese": "Đồng hồ kim (Một chiếc đồng hồ có kim giờ và kim phút)",
-    "image": "/db/math/Analogue_clock.png"
+    "image": "/db/math/Analogue_clock.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "2.1",
@@ -181,7 +558,9 @@
     "definition": "a clcok that uses numbers to tell the time",
     "example": "",
     "vietnamese": "Đồng hồ điện tử (một chiếc đồng hồ sử dụng các con số để báo giờ)",
-    "image": "/db/math/Digital_clock.png"
+    "image": "/db/math/Digital_clock.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "2.1",
@@ -189,7 +568,9 @@
     "definition": "a time in the morning between midnight and midday",
     "example": "",
     "vietnamese": "A.m (sáng) (thời gian vào buổi sáng, từ nửa đêm đến giữa trưa)",
-    "image": "/db/math/Am.png"
+    "image": "/db/math/Am.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "2.1",
@@ -197,7 +578,9 @@
     "definition": "a time in the afternoon or evening between midday and midnight",
     "example": "",
     "vietnamese": "P.m (chiều/tối) (thời gian vào buổi chiều hoặc buổi tối, từ giữa trưa đến nửa đêm)",
-    "image": "/db/math/Pm.png"
+    "image": "/db/math/Pm.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "2.1",
@@ -205,7 +588,9 @@
     "definition": "",
     "example": "",
     "vietnamese": "Giờ",
-    "image": "/db/math/Hour.png"
+    "image": "/db/math/Hour.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "2.1",
@@ -213,7 +598,9 @@
     "definition": "",
     "example": "",
     "vietnamese": "Phút",
-    "image": "/db/math/Minute.png"
+    "image": "/db/math/Minute.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "2.1",
@@ -221,7 +608,9 @@
     "definition": "",
     "example": "",
     "vietnamese": "Giây",
-    "image": "/db/math/Second.png"
+    "image": "/db/math/Second.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "2.2",
@@ -229,7 +618,9 @@
     "definition": "",
     "example": "",
     "vietnamese": "Lịch",
-    "image": "/db/math/Calender.png"
+    "image": "/db/math/Calender.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "2.2",
@@ -237,7 +628,9 @@
     "definition": "a year with 366 days",
     "example": "",
     "vietnamese": "Năm nhuận (một năm có 366 ngày)",
-    "image": "/db/math/Leap_year.png"
+    "image": "/db/math/Leap_year.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "2.2",
@@ -245,7 +638,9 @@
     "definition": "the lenght of time between two given times",
     "example": "",
     "vietnamese": "Khoảng thời gian (khoảng thời gian giữa hai thời điểm nhất định)",
-    "image": "/db/math/Time_interval.png"
+    "image": "/db/math/Time_interval.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "2.2",
@@ -253,7 +648,9 @@
     "definition": "a table of information showing when things will happen",
     "example": "",
     "vietnamese": "Thời khóa biểu (một bảng thông tin cho thấy khi nào mọi việc sẽ xảy ra)",
-    "image": "/db/math/Timetable.png"
+    "image": "/db/math/Timetable.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "3.1",
@@ -261,7 +658,9 @@
     "definition": "a thing that represents something esle",
     "example": "",
     "vietnamese": "Ký hiệu (một thứ đại diện cho một thứ gì đó khác)",
-    "image": "/db/math/Symbol.png"
+    "image": "/db/math/Symbol.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "3.1",
@@ -269,7 +668,9 @@
     "definition": "",
     "example": "",
     "vietnamese": "Viết",
-    "image": "/db/math/Write.png"
+    "image": "/db/math/Write.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "3.1",
@@ -277,7 +678,9 @@
     "definition": "",
     "example": "",
     "vietnamese": "Sử dụng",
-    "image": "/db/math/Use.png"
+    "image": "/db/math/Use.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "3.2",
@@ -285,7 +688,9 @@
     "definition": "Add, total, more, altogether, plus, count on, sum, increase",
     "example": "",
     "vietnamese": "Phép cộng (Các từ liên quan: Cộng, tổng, thêm, tất cả, cộng, đếm thêm, tổng, tăng)",
-    "image": "/db/math/Addition.png"
+    "image": "/db/math/Addition.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "3.2",
@@ -293,7 +698,9 @@
     "definition": "subtract, difference, take away, count back, minus, decrease, leave",
     "example": "",
     "vietnamese": "Phép trừ (Các từ liên quan: trừ, hiệu, lấy đi, đếm lùi, trừ, giảm, còn lại)",
-    "image": "/db/math/Subtraction.png"
+    "image": "/db/math/Subtraction.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "3.3",
@@ -301,7 +708,9 @@
     "definition": "",
     "example": "",
     "vietnamese": "Chẵn (số chẵn)",
-    "image": "/db/math/Even.png"
+    "image": "/db/math/Even.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "3.3",
@@ -309,7 +718,9 @@
     "definition": "",
     "example": "",
     "vietnamese": "Lẻ (số lẻ)",
-    "image": "/db/math/Odd.png"
+    "image": "/db/math/Odd.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "3.3",
@@ -317,7 +728,9 @@
     "definition": "A statement that works for all examples",
     "example": "",
     "vietnamese": "Khái quát hóa (phát biểu chung) (Một phát biểu đúng cho tất cả các ví dụ)",
-    "image": "/db/math/Generalisation_general_statement.png"
+    "image": "/db/math/Generalisation_general_statement.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "3.3",
@@ -325,7 +738,9 @@
     "definition": "an example which shows a general staement is wrong",
     "example": "",
     "vietnamese": "Phản ví dụ (một ví dụ cho thấy một phát biểu chung là sai)",
-    "image": "/db/math/Counterexample.png"
+    "image": "/db/math/Counterexample.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "4.1",
@@ -333,7 +748,9 @@
     "definition": "how likely something is to happen",
     "example": "",
     "vietnamese": "Xác suất (khả năng một điều gì đó xảy ra)",
-    "image": "/db/math/Probability.png"
+    "image": "/db/math/Probability.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "4.1",
@@ -341,7 +758,9 @@
     "definition": "an event that's impossible",
     "example": "",
     "vietnamese": "Không có cơ hội (một sự kiện không thể xảy ra)",
-    "image": "/db/math/No_chance.png"
+    "image": "/db/math/No_chance.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "4.1",
@@ -349,7 +768,9 @@
     "definition": "It is unlikely that an event will happen",
     "example": "",
     "vietnamese": "Cơ hội thấp (Một sự kiện không chắc sẽ xảy ra)",
-    "image": "/db/math/Poor_chance.png"
+    "image": "/db/math/Poor_chance.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "4.1",
@@ -357,7 +778,9 @@
     "definition": "It is equally likely and unlikely that an event will happen",
     "example": "",
     "vietnamese": "Cơ hội ngang nhau (Khả năng xảy ra và không xảy ra của một sự kiện là như nhau)",
-    "image": "/db/math/Even_chance.png"
+    "image": "/db/math/Even_chance.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "4.1",
@@ -365,7 +788,9 @@
     "definition": "It is likely that an event will happen",
     "example": "",
     "vietnamese": "Cơ hội cao (Một sự kiện có khả năng sẽ xảy ra)",
-    "image": "/db/math/Good_chance.png"
+    "image": "/db/math/Good_chance.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "4.1",
@@ -373,7 +798,9 @@
     "definition": "AN event will cdefinately happen",
     "example": "",
     "vietnamese": "Chắc chắn (Một sự kiện chắc chắn sẽ xảy ra)",
-    "image": "/db/math/Certain.png"
+    "image": "/db/math/Certain.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "4.1",
@@ -381,7 +808,9 @@
     "definition": "The result of an event in a probability expiriment",
     "example": "",
     "vietnamese": "Kết quả (Kết quả của một sự kiện trong một thí nghiệm xác suất)",
-    "image": "/db/math/Outcome.png"
+    "image": "/db/math/Outcome.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "4.1",
@@ -389,7 +818,9 @@
     "definition": "Poor chance",
     "example": "",
     "vietnamese": "Không chắc xảy ra (Cơ hội thấp)",
-    "image": "/db/math/Unlikely.png"
+    "image": "/db/math/Unlikely.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "4.1",
@@ -397,7 +828,9 @@
     "definition": "Good chance",
     "example": "",
     "vietnamese": "Có khả năng xảy ra (Cơ hội cao)",
-    "image": "/db/math/Likely.png"
+    "image": "/db/math/Likely.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "4.1",
@@ -405,7 +838,9 @@
     "definition": "no chance",
     "example": "",
     "vietnamese": "Không thể xảy ra (không có cơ hội)",
-    "image": "/db/math/Impossible.png"
+    "image": "/db/math/Impossible.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "4.1",
@@ -413,7 +848,9 @@
     "definition": "About 50% chance of happening",
     "example": "",
     "vietnamese": "Có thể (Khoảng 50% cơ hội xảy ra)",
-    "image": "/db/math/Maybe.png"
+    "image": "/db/math/Maybe.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "5.1",
@@ -421,7 +858,9 @@
     "definition": "objects or numbers arranged in rows and columns",
     "example": "",
     "vietnamese": "Mảng (các đối tượng hoặc số được sắp xếp theo hàng và cột)",
-    "image": "/db/math/Array.png"
+    "image": "/db/math/Array.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "5.1",
@@ -429,7 +868,9 @@
     "definition": "A whole number that divides exactly into another number.",
     "example": "2 x 3 = 6, so 2 and 3 are factors of 6",
     "vietnamese": "Ước số (Một số nguyên chia hết cho một số khác.)",
-    "image": "/db/math/Factor.png"
+    "image": "/db/math/Factor.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "5.1",
@@ -437,7 +878,9 @@
     "definition": "OPerations that are the opposite of each other.",
     "example": "The inverse of add 2 is subtract 2.",
     "vietnamese": "Phép toán ngược (Các phép toán trái ngược nhau.)",
-    "image": "/db/math/Inverse_operations.png"
+    "image": "/db/math/Inverse_operations.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "5.1",
@@ -445,7 +888,9 @@
     "definition": "Result of multiplying a number by a whole number.",
     "example": "Multiples of 3 are: 3,6,9,12,15. 1 x 3 = 3. 3 is a multiple of 3 and 1",
     "vietnamese": "Bội số (Kết quả của việc nhân một số với một số nguyên.)",
-    "image": "/db/math/Multiple.png"
+    "image": "/db/math/Multiple.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "5.1",
@@ -453,7 +898,9 @@
     "definition": "The answer when 2 or more numbers are multiplied together",
     "example": "The product of 3 and 5 is 15 because 3 x 5 = 15",
     "vietnamese": "Tích (Kết quả khi 2 hoặc nhiều số được nhân với nhau)",
-    "image": "/db/math/Product.png"
+    "image": "/db/math/Product.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "5.2",
@@ -461,7 +908,9 @@
     "definition": "when more than two numbers are added or multiplied you can do the calculations in any order",
     "example": "8+3+4=8+3+4 = 11+4=8+7",
     "vietnamese": "Tính chất kết hợp (khi cộng hoặc nhân nhiều hơn hai số, bạn có thể thực hiện các phép tính theo bất kỳ thứ tự nào)",
-    "image": "/db/math/Associative_law.png"
+    "image": "/db/math/Associative_law.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "5.2",
@@ -469,7 +918,9 @@
     "definition": "is the same as repeated adding",
     "example": "60+60+60+60=60 x 4",
     "vietnamese": "Phép nhân (Nhân) (giống như phép cộng lặp lại)",
-    "image": "/db/math/Multiplying_Multiply_Multiplied.png"
+    "image": "/db/math/Multiplying_Multiply_Multiplied.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "5.2",
@@ -477,7 +928,9 @@
     "definition": "the result when numbers are multiplied together.",
     "example": "60 x 4 = 240. The product of 60 and 4 is 240",
     "vietnamese": "Tích (kết quả khi các số được nhân với nhau.)",
-    "image": "/db/math/Product.png"
+    "image": "/db/math/Product.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "6.1",
@@ -485,7 +938,9 @@
     "definition": "A flat shape",
     "example": "A circle is a 2D shape",
     "vietnamese": "Hình 2D (Một hình phẳng)",
-    "image": "/db/math/2d_Shape.png"
+    "image": "/db/math/2d_Shape.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "6.1",
@@ -493,7 +948,9 @@
     "definition": "A flat shape with 3 or more straight sides and no curved sides",
     "example": "A triangle is a polygon",
     "vietnamese": "Đa giác (Một hình phẳng có 3 cạnh thẳng trở lên và không có cạnh cong)",
-    "image": "/db/math/Polygon.png"
+    "image": "/db/math/Polygon.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "6.1",
@@ -501,7 +958,9 @@
     "definition": "Lines that are the same distance apart all the way along their lenght",
     "example": "",
     "vietnamese": "Song song (Các đường thẳng cách đều nhau trên suốt chiều dài của chúng)",
-    "image": "/db/math/Parallel.png"
+    "image": "/db/math/Parallel.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "6.1",
@@ -509,7 +968,9 @@
     "definition": "Shapes fitting together without any gaps",
     "example": "",
     "vietnamese": "Phép lát hình (Các hình dạng khớp với nhau mà không có khoảng trống)",
-    "image": "/db/math/Tessellation.png"
+    "image": "/db/math/Tessellation.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "6.2",
@@ -517,7 +978,9 @@
     "definition": "One half of a shape is a mirror image of the other half",
     "example": "",
     "vietnamese": "Đối xứng (Một nửa của hình là hình ảnh phản chiếu của nửa còn lại)",
-    "image": "/db/math/Symmetrysymmetrical.png"
+    "image": "/db/math/Symmetrysymmetrical.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "6.2",
@@ -525,7 +988,9 @@
     "definition": "the line on a shape or pattern where the mirror could be placed to create the same image as the other half of the shape or pattern",
     "example": "",
     "vietnamese": "Trục đối xứng (đường trên một hình dạng hoặc hoa văn nơi có thể đặt gương để tạo ra hình ảnh giống như nửa còn lại)",
-    "image": "/db/math/Line_of_symmetry.png"
+    "image": "/db/math/Line_of_symmetry.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "6.2",
@@ -533,7 +998,9 @@
     "definition": "A straight line parallel to the horizon",
     "example": "",
     "vietnamese": "Ngang (Một đường thẳng song song với đường chân trời)",
-    "image": "/db/math/Horizontal.png"
+    "image": "/db/math/Horizontal.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "6.2",
@@ -541,7 +1008,9 @@
     "definition": "A straight line at a right angle to the horizon",
     "example": "",
     "vietnamese": "Dọc (Một đường thẳng tạo góc vuông với đường chân trời)",
-    "image": "/db/math/Vertical.png"
+    "image": "/db/math/Vertical.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "7.1",
@@ -549,7 +1018,9 @@
     "definition": "The numerator is the top number of a fraction. It tells you how many parts are needed.",
     "example": "1/2\n1 is numerator. You have 1 piece of the pizza, but there are two pieces.",
     "vietnamese": "Tử số là số ở trên cùng của một phân số. Nó cho bạn biết cần bao nhiêu phần.",
-    "image": "/db/math/Numerator.png"
+    "image": "/db/math/Numerator.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "7.1",
@@ -557,7 +1028,9 @@
     "definition": "the bottom number of the fraction. It tells you how many equal parts a shape has been divided into.",
     "example": "1/2\n2 is the demoniator. The pizza is divided into 2 parts",
     "vietnamese": "Mẫu số là số ở dưới cùng của phân số. Nó cho bạn biết một hình đã được chia thành bao nhiêu phần bằng nhau.",
-    "image": "/db/math/Denominator.png"
+    "image": "/db/math/Denominator.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "7.1",
@@ -565,7 +1038,9 @@
     "definition": "Any part of a group number or whole",
     "example": "1/2 and 3/4 are examples of fractions.",
     "vietnamese": "Bất kỳ phần nào của một nhóm, một số, hoặc một tổng thể.",
-    "image": "/db/math/Fraction.png"
+    "image": "/db/math/Fraction.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "7.2",
@@ -573,7 +1048,9 @@
     "definition": "To find the fraction of an amount you use the fraction as an operator on the amount.\nThe fraction acts like a division",
     "example": "1/4 of a pizza means a whole pizza divided by 4.",
     "vietnamese": "Để tìm phân số của một lượng, bạn sử dụng phân số như một toán tử trên lượng đó. Phân số hoạt động giống như một phép chia.",
-    "image": "/db/math/Operator.png"
+    "image": "/db/math/Operator.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "7.2",
@@ -581,7 +1058,9 @@
     "definition": "A fraction with a numerator of 1",
     "example": "1/2 or 1/5",
     "vietnamese": "Một phân số có tử số là 1.",
-    "image": "/db/math/Unit_fraction.png"
+    "image": "/db/math/Unit_fraction.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "8.1",
@@ -589,7 +1068,9 @@
     "definition": "The size of turn from one line to the other line where two lines meet",
     "example": "A square has four 90-degree angles.",
     "vietnamese": "Kích thước của độ xoay từ một đường này sang một đường khác tại điểm hai đường gặp nhau.",
-    "image": "/db/math/Angle.png"
+    "image": "/db/math/Angle.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "8.1",
@@ -597,7 +1078,9 @@
     "definition": "The Unit of measurement for angles.",
     "example": "A right angle is 90 degrees.",
     "vietnamese": "Đơn vị đo lường cho các góc.",
-    "image": "/db/math/Degrees.png"
+    "image": "/db/math/Degrees.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "8.1",
@@ -605,7 +1088,9 @@
     "definition": "To say what is the same and what is different, or to say which is greater or smaller.",
     "example": "Let's compare the two triangles to see which is bigger.",
     "vietnamese": "Để nói ra điều gì giống nhau và điều gì khác nhau, hoặc để nói cái nào lớn hơn hay nhỏ hơn.",
-    "image": "/db/math/Compare.png"
+    "image": "/db/math/Compare.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "8.2",
@@ -613,7 +1098,9 @@
     "definition": "An angle of 90 degrees",
     "example": "The corner of a book forms a right angle.",
     "vietnamese": "Một góc 90 độ.",
-    "image": "/db/math/Right_angle.png"
+    "image": "/db/math/Right_angle.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "8.2",
@@ -621,7 +1108,9 @@
     "definition": "An angle less than 90 degrees",
     "example": "An angle of 30 degrees is an acute angle.",
     "vietnamese": "Một góc nhỏ hơn 90 độ.",
-    "image": "/db/math/Acute.png"
+    "image": "/db/math/Acute.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "8.2",
@@ -629,7 +1118,9 @@
     "definition": "An angle greater than 90 degrees and less than 180 degrees",
     "example": "An angle of 110 degrees is an obtuse angle.",
     "vietnamese": "Một góc lớn hơn 90 độ và nhỏ hơn 180 độ.",
-    "image": "/db/math/Obtuse_angle.png"
+    "image": "/db/math/Obtuse_angle.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "8.3",
@@ -637,7 +1128,9 @@
     "definition": "Think carefully and guess based on what you already know",
     "example": "Estimate the number of candies in the jar.",
     "vietnamese": "Suy nghĩ cẩn thận và đoán dựa trên những gì bạn đã biết.",
-    "image": "/db/math/Estimate.png"
+    "image": "/db/math/Estimate.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "9.1",
@@ -645,7 +1138,9 @@
     "definition": "to compare two numbers you say which is bigger and which is smaller.",
     "example": "5 > 2 (5 is bigger than 2)",
     "vietnamese": "Để so sánh hai số, bạn xác định số nào lớn hơn và số nào nhỏ hơn.",
-    "image": "/db/math/Compare.png"
+    "image": "/db/math/Compare.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "9.1",
@@ -653,7 +1148,9 @@
     "definition": "arrange according to size, amount or value",
     "example": "1, 2, 3, 4",
     "vietnamese": "Sắp xếp theo kích thước, số lượng hoặc giá trị.",
-    "image": "/db/math/Order.png"
+    "image": "/db/math/Order.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "9.1",
@@ -661,7 +1158,9 @@
     "definition": "Change a number to a simpler value when an accurate answer isn't needed",
     "example": "19 rounded to the nearest 10 is 20",
     "vietnamese": "Thay đổi một số thành một giá trị đơn giản hơn khi không cần câu trả lời chính xác tuyệt đối.",
-    "image": "/db/math/Round.png"
+    "image": "/db/math/Round.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "9.1",
@@ -669,7 +1168,9 @@
     "definition": "You can round a number to the nearest 10, 100 or 1,000...",
     "example": "658 rounded to the nearest 10 = 660",
     "vietnamese": "Bạn có thể làm tròn một số đến hàng chục, hàng trăm hoặc hàng nghìn gần nhất...",
-    "image": "/db/math/Round_to_the_nearest.png"
+    "image": "/db/math/Round_to_the_nearest.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "9.2",
@@ -677,7 +1178,9 @@
     "definition": "sharing or grouping a number into equal parts",
     "example": "20 ÷ 4 = 5",
     "vietnamese": "Chia hoặc nhóm một số thành các phần bằng nhau.",
-    "image": "/db/math/Division.png"
+    "image": "/db/math/Division.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "9.2",
@@ -685,7 +1188,9 @@
     "definition": "the amount left over after dividing a number.",
     "example": "9 divided by 4 = 2 remainder 1 (r 1)",
     "vietnamese": "Số lượng còn lại sau khi chia một số (số dư).",
-    "image": "/db/math/Remainder.png"
+    "image": "/db/math/Remainder.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "9.2",
@@ -693,7 +1198,9 @@
     "definition": "A number that divides another",
     "example": "in 30 divided by 3, 3 is the divisor.",
     "vietnamese": "Một số dùng để chia số khác (số chia).",
-    "image": "/db/math/Divisor.png"
+    "image": "/db/math/Divisor.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "10.1",
@@ -701,7 +1208,9 @@
     "definition": "a collection of information.",
     "example": "A list of students' heights: 140cm, 142cm, 138cm",
     "vietnamese": "Một tập hợp các thông tin.",
-    "image": "/db/math/Data.png"
+    "image": "/db/math/Data.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "10.1",
@@ -709,7 +1218,9 @@
     "definition": "a way of recording data.",
     "example": "A chart showing dots above a number line to represent frequency",
     "vietnamese": "Một cách ghi lại dữ liệu (biểu đồ dấu chấm).",
-    "image": "/db/math/Dot_plot.png"
+    "image": "/db/math/Dot_plot.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "10.1",
@@ -717,7 +1228,9 @@
     "definition": "you need to collect data for this question.",
     "example": "How many pets does each student in the class have?",
     "vietnamese": "Bạn cần thu thập dữ liệu cho câu hỏi này (câu hỏi thống kê).",
-    "image": "/db/math/Statistical_question.png"
+    "image": "/db/math/Statistical_question.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "11.1",
@@ -725,7 +1238,9 @@
     "definition": "Fractions that are equal in vlaue, but look different.",
     "example": "2/4 and 1/2 are equivalent.",
     "vietnamese": "Các phân số có giá trị bằng nhau nhưng trông khác nhau.",
-    "image": "/db/math/Equivalent_fraction.png"
+    "image": "/db/math/Equivalent_fraction.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "11.1",
@@ -733,7 +1248,9 @@
     "definition": "A fraction that's smaller than a whole",
     "example": "1/2",
     "vietnamese": "Phân số nhỏ hơn một đơn vị (tử số nhỏ hơn mẫu số).",
-    "image": "/db/math/Proper_Fraction.png"
+    "image": "/db/math/Proper_Fraction.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "11.2",
@@ -741,7 +1258,9 @@
     "definition": "The number of parts in a hundred",
     "example": "50 percent means 50 parts per 100",
     "vietnamese": "Số phần trong một trăm (phần trăm).",
-    "image": "/db/math/Percent.png"
+    "image": "/db/math/Percent.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "11.2",
@@ -749,7 +1268,9 @@
     "definition": "Number of parts out of a hundred. The symbol is %.",
     "example": "25/100 = 25%",
     "vietnamese": "Số phần trên một trăm. Ký hiệu là %.",
-    "image": "/db/math/Percentage.png"
+    "image": "/db/math/Percentage.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "12.1",
@@ -757,7 +1278,9 @@
     "definition": "A flat surface of a 3D shape",
     "example": "A cube has 6 faces",
     "vietnamese": "Bề mặt phẳng của một hình 3D (mặt).",
-    "image": "/db/math/Face.png"
+    "image": "/db/math/Face.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "12.1",
@@ -765,7 +1288,9 @@
     "definition": "A line on a 3D shape where 2 or more faces meet",
     "example": "A cube has 12 edges",
     "vietnamese": "Đường trên hình 3D nơi 2 hoặc nhiều mặt gặp nhau (cạnh).",
-    "image": "/db/math/Edgeedges.png"
+    "image": "/db/math/Edgeedges.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "12.1",
@@ -773,7 +1298,9 @@
     "definition": "The point where two or more edges meet (like a corner)",
     "example": "A cube has 8 vertices",
     "vietnamese": "Điểm nơi hai hoặc nhiều cạnh gặp nhau (đỉnh).",
-    "image": "/db/math/Vertexvertices.png"
+    "image": "/db/math/Vertexvertices.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "12.1",
@@ -781,7 +1308,9 @@
     "definition": "A 3D shape with any 2D shape as a base. All the other faces are triangles. The triangular faces all meet at a vertx.",
     "example": "A square-based pyramid like the ones in Egypt",
     "vietnamese": "Hình 3D có đáy là bất kỳ hình 2D nào. Tất cả các mặt khác là hình tam giác. Các mặt tam giác đều gặp nhau tại một đỉnh (hình chóp).",
-    "image": "/db/math/Pyramid.png"
+    "image": "/db/math/Pyramid.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "12.1",
@@ -789,7 +1318,9 @@
     "definition": "A 3D shape with a circular base and a curved surface that goes to a vertex",
     "example": "An ice cream cone shape",
     "vietnamese": "Hình 3D có đáy hình tròn và bề mặt cong đi đến một đỉnh (hình nón).",
-    "image": "/db/math/Cone.png"
+    "image": "/db/math/Cone.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "12.1",
@@ -797,7 +1328,9 @@
     "definition": "A 3D shape with two identical faces at opposite ends of the shape. All of the other faces are rectangles.",
     "example": "A cereal box is a rectangular prism",
     "vietnamese": "Hình 3D có hai mặt giống hệt nhau ở hai đầu đối diện. Tất cả các mặt còn lại là hình chữ nhật (hình lăng trụ).",
-    "image": "/db/math/Prism.png"
+    "image": "/db/math/Prism.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "12.2",
@@ -805,7 +1338,9 @@
     "definition": "A 2D flat shape that can be folded up into 3D solid shape.",
     "example": "A cross shape on paper that folds into a cube",
     "vietnamese": "Hình phẳng 2D có thể gấp lại thành hình khối 3D (hình trải phẳng/lưới).",
-    "image": "/db/math/Net.png"
+    "image": "/db/math/Net.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "13.1",
@@ -813,7 +1348,9 @@
     "definition": "Lift a number and take it to another place, for example you carry numbers when you do column addition",
     "example": "In 18 + 5, you write 3 and carry the 1 to the tens column",
     "vietnamese": "Nhấc một số và đưa nó đến một vị trí khác, ví dụ bạn nhớ số khi thực hiện phép cộng theo cột (nhớ).",
-    "image": "/db/math/Carry.png"
+    "image": "/db/math/Carry.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "13.1",
@@ -821,7 +1358,9 @@
     "definition": "Put together",
     "example": "600+30+2 = 632",
     "vietnamese": "Gộp lại (tổng hợp).",
-    "image": "/db/math/Compose.png"
+    "image": "/db/math/Compose.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "13.1",
@@ -829,7 +1368,9 @@
     "definition": "Split",
     "example": "456 = 400+50+6",
     "vietnamese": "Tách ra (phân tích).",
-    "image": "/db/math/Decompose.png"
+    "image": "/db/math/Decompose.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "13.2",
@@ -837,7 +1378,9 @@
     "definition": "A fraction smaller than a whole. The numerator is smaller than the denominator.",
     "example": "1/5",
     "vietnamese": "Phân số nhỏ hơn một đơn vị. Tử số nhỏ hơn mẫu số.",
-    "image": "/db/math/Proper_fraction.png"
+    "image": "/db/math/Proper_fraction.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "13.2",
@@ -845,7 +1388,9 @@
     "definition": "A fraction where the numerator is greater than or equal to the denominator.",
     "example": "5/3",
     "vietnamese": "Phân số mà tử số lớn hơn hoặc bằng mẫu số (phân số không thực sự).",
-    "image": "/db/math/Improper_fraction.png"
+    "image": "/db/math/Improper_fraction.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "13.2",
@@ -853,7 +1398,9 @@
     "definition": "The numerator is the top number of a fraction. It tells you how many parts are needed.",
     "example": "1/2\n1 is numerator. You have 1 piece of the pizza, but there are two pieces.",
     "vietnamese": "Tử số là số ở trên của phân số. Nó cho biết có bao nhiêu phần được lấy.",
-    "image": "/db/math/Numerator.png"
+    "image": "/db/math/Numerator.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "13.2",
@@ -861,7 +1408,9 @@
     "definition": "the bottom number of the fraction. It tells you how many equal parts a shape has been divided into.",
     "example": "1/2\n2 is the demoniator. The pizza is divided into 2 parts",
     "vietnamese": "Mẫu số là số ở dưới của phân số. Nó cho biết hình đã được chia thành bao nhiêu phần bằng nhau.",
-    "image": "/db/math/Denominator.png"
+    "image": "/db/math/Denominator.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "14.1",
@@ -869,7 +1418,9 @@
     "definition": "the size a surface covers. It is measured in square units such as square centimeters and square metres.",
     "example": "The area of a 2m by 3m rug is 6 square metres",
     "vietnamese": "Kích thước mà một bề mặt bao phủ. Nó được đo bằng các đơn vị vuông như cm vuông và m vuông (diện tích).",
-    "image": "/db/math/Area.png"
+    "image": "/db/math/Area.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "14.2",
@@ -877,7 +1428,9 @@
     "definition": "the distance around the outside of a shape. It is measured in units of lenght such sa centimeters and metres.",
     "example": "The perimeter of a square with side 2cm is 2+2+2+2 = 8cm",
     "vietnamese": "Khoảng cách xung quanh bên ngoài của một hình. Nó được đo bằng các đơn vị chiều dài như cm và m (chu vi).",
-    "image": "/db/math/Perimeter.png"
+    "image": "/db/math/Perimeter.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "15.1",
@@ -885,7 +1438,9 @@
     "definition": "A number less than zero",
     "example": "-7",
     "vietnamese": "Một số nhỏ hơn không (số âm).",
-    "image": "/db/math/Negative_number.png"
+    "image": "/db/math/Negative_number.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "15.1",
@@ -893,7 +1448,9 @@
     "definition": "to compare two numbers you say which is bigger or smaller.",
     "example": "2 < 3",
     "vietnamese": "Để so sánh hai số, bạn xác định số nào lớn hơn hoặc nhỏ hơn.",
-    "image": "/db/math/Compare.png"
+    "image": "/db/math/Compare.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "15.1",
@@ -901,7 +1458,9 @@
     "definition": "Arrange according to size amount or value.",
     "example": "-3, -1, 0, 2, 5",
     "vietnamese": "Sắp xếp theo kích thước, số lượng hoặc giá trị.",
-    "image": "/db/math/Order.png"
+    "image": "/db/math/Order.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "15.2",
@@ -909,7 +1468,9 @@
     "definition": "The number you get when you multiply a whole number by itself.",
     "example": "4 x 4 = 16\n16 is a square number",
     "vietnamese": "Số bạn nhận được khi nhân một số nguyên với chính nó (số chính phương).",
-    "image": "/db/math/Square_number.png"
+    "image": "/db/math/Square_number.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "15.2",
@@ -917,7 +1478,9 @@
     "definition": "The result of multiplying a number by a whole number.",
     "example": "The first few multiples of 3 are: 3,6,9,12",
     "vietnamese": "Kết quả của việc nhân một số với một số nguyên (bội số).",
-    "image": "/db/math/Multiple.png"
+    "image": "/db/math/Multiple.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "15.2",
@@ -925,7 +1488,9 @@
     "definition": "a whole number that divides exactly into another number",
     "example": "2 x 3 = 6, so 2 and 3 are factors of 6.",
     "vietnamese": "Một số nguyên chia hết cho một số khác (ước số).",
-    "image": "/db/math/Factor.png"
+    "image": "/db/math/Factor.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "15.3",
@@ -933,7 +1498,9 @@
     "definition": "can be divided without a remainer.",
     "example": "14 is divisible by 2",
     "vietnamese": "Có thể chia hết mà không có số dư.",
-    "image": "/db/math/Divisible.png"
+    "image": "/db/math/Divisible.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "15.3",
@@ -941,7 +1508,9 @@
     "definition": "a rule for finding whether one whole number is divisible by another.",
     "example": "A number can be divided by:2 if the last digit is divisible by 2",
     "vietnamese": "Quy tắc để tìm xem một số nguyên có chia hết cho số khác hay không (dấu hiệu chia hết).",
-    "image": "/db/math/Divisibility_rule.png"
+    "image": "/db/math/Divisibility_rule.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "16.1",
@@ -949,7 +1518,9 @@
     "definition": "a two-way table used for sorting items such as objects, shapes or numbers.",
     "example": "A box sorting numbers into 'Even'/'Odd' and 'Less than 10'/'More than 10'",
     "vietnamese": "Bảng hai chiều được sử dụng để phân loại các mục như đồ vật, hình dạng hoặc con số (biểu đồ Carroll).",
-    "image": "/db/math/Carrol_diagram.png"
+    "image": "/db/math/Carrol_diagram.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "16.1",
@@ -957,7 +1528,9 @@
     "definition": "a diagram using circles to sort items such as objects, shapes or numbers. It can show the relationship between up to three sets of items.",
     "example": "Two overlapping circles sorting animals into 'Can fly' and 'Can swim'",
     "vietnamese": "Biểu đồ sử dụng các vòng tròn để phân loại các mục như đồ vật, hình dạng hoặc con số. Nó có thể hiển thị mối quan hệ giữa tối đa ba tập hợp (biểu đồ Venn).",
-    "image": "/db/math/Venn_diagram.png"
+    "image": "/db/math/Venn_diagram.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "16.1",
@@ -965,7 +1538,9 @@
     "definition": "A graph using bars to show quantities or numbers",
     "example": "Using apple symbols where 1 apple picture = 5 real apples",
     "vietnamese": "Biểu đồ sử dụng các thanh để hiển thị số lượng hoặc con số (biểu đồ tranh).",
-    "image": "/db/math/Pictogram.png"
+    "image": "/db/math/Pictogram.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "17.1",
@@ -973,7 +1548,9 @@
     "definition": "The answer when two or more numbers are multiplied together.",
     "example": "3 x 4 = 12 (12 is the product)",
     "vietnamese": "Kết quả khi nhân hai hoặc nhiều số với nhau (tích).",
-    "image": "/db/math/Product.png"
+    "image": "/db/math/Product.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "17.2",
@@ -981,7 +1558,9 @@
     "definition": "The number being divided",
     "example": "In 12 ÷ 3, 12 is the dividend",
     "vietnamese": "Số bị chia.",
-    "image": "/db/math/Dividend.png"
+    "image": "/db/math/Dividend.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "17.2",
@@ -989,7 +1568,9 @@
     "definition": "THe number you are dividing by",
     "example": "In 12 ÷ 3, 3 is the divisor",
     "vietnamese": "Số chia.",
-    "image": "/db/math/Divisor.png"
+    "image": "/db/math/Divisor.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "17.2",
@@ -997,7 +1578,9 @@
     "definition": "The result of a division.",
     "example": "In 12 ÷ 3 = 4, 4 is the quotient",
     "vietnamese": "Kết quả của phép chia (thương).",
-    "image": "/db/math/Quotient.png"
+    "image": "/db/math/Quotient.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "17.2",
@@ -1005,7 +1588,9 @@
     "definition": "The amount left over after dividing a number.",
     "example": "13 ÷ 4 = 3 remainder 1",
     "vietnamese": "Số lượng còn lại sau khi chia một số (số dư).",
-    "image": "/db/math/Remainder.png"
+    "image": "/db/math/Remainder.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "17.2",
@@ -1013,7 +1598,9 @@
     "definition": "A rough calculation based on rounding",
     "example": "Estimate 49 + 51 as 50 + 50 = 100",
     "vietnamese": "Tính toán sơ bộ dựa trên việc làm tròn (ước lượng).",
-    "image": "/db/math/Estimate.png"
+    "image": "/db/math/Estimate.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "18.1",
@@ -1021,7 +1608,9 @@
     "definition": "An instrument that shows direction",
     "example": "A tool pointing North, South, East, West",
     "vietnamese": "Dụng cụ chỉ phương hướng (la bàn).",
-    "image": "/db/math/Compass.png"
+    "image": "/db/math/Compass.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "18.1",
@@ -1029,7 +1618,9 @@
     "definition": "Pairs of numbers inside brackets, for example (2, 5). They are used to show a position on a grid.",
     "example": "(3, 4) shows a point 3 right and 4 up",
     "vietnamese": "Các cặp số trong ngoặc đơn, ví dụ (2, 5). Chúng được sử dụng để chỉ vị trí trên lưới (tọa độ).",
-    "image": "/db/math/Coordinates.png"
+    "image": "/db/math/Coordinates.png",
+    "grade": 3,
+    "disabled": true
   },
   {
     "unit": "18.1",
@@ -1037,6 +1628,8 @@
     "definition": "An area on a grid between two axes",
     "example": "The top-right section of a grid where x and y are positive",
     "vietnamese": "Một vùng trên lưới nằm giữa hai trục (góc phần tư).",
-    "image": "/db/math/Quadrant.png"
+    "image": "/db/math/Quadrant.png",
+    "grade": 3,
+    "disabled": true
   }
 ]
