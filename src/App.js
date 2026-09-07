@@ -148,8 +148,9 @@ function App() {
 
   // Restore preferences ONLY for last subject, everything else is in handleWordlistChange
   useEffect(() => {
-    if (preferences.lastSubject && !selectedWordlist) {
-      handleWordlistChange(preferences.lastSubject);
+    const initialSubject = preferences.lastSubject || "wordlist_esl";
+    if (!selectedWordlist) {
+      handleWordlistChange(initialSubject);
     }
     if (preferences.lastGame) {
       setSelectedGame(preferences.lastGame);
@@ -251,13 +252,13 @@ function App() {
         const savedUnits = currentPrefs[`lastUnits_${selected}`];
         if (savedUnits && Array.isArray(savedUnits) && savedUnits.length > 0) {
             const validUnits = savedUnits.filter(u => uniqueUnits.includes(u));
-            if (validUnits.length > 0) {
+            if (validUnits.length > 0 && validUnits.includes("1")) {
                 setSelectedUnits(validUnits);
             } else {
                 setSelectedUnits(uniqueUnits.includes("1") ? ["1"] : uniqueUnits);
             }
         } else {
-            // Default to Unit 1 for Grade 4 active focus
+            // Activate Grade 4 Unit 1 by default
             setSelectedUnits(uniqueUnits.includes("1") ? ["1"] : uniqueUnits);
         }
 
