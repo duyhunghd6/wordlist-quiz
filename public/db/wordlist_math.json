@@ -128,18 +128,18 @@
   {
     "unit": "5.1",
     "word": "Sum",
-    "definition": "The final total quantity calculated from joining two or more values.",
+    "definition": "The answer when two or more numbers are added.",
     "example": "The _____ of twelve and eight equals twenty.",
-    "vietnamese": "Tổng số (kết quả của phép tính cộng).",
+    "vietnamese": "Tổng số (Kết quả thu được từ phép tính cộng).",
     "grade": 4,
     "disabled": false
   },
   {
     "unit": "5.1",
     "word": "Difference",
-    "definition": "The amount by which one quantity is larger or smaller than another.",
+    "definition": "The answer when one number is subtracted from another.",
     "example": "The _____ between fifty and thirty is twenty.",
-    "vietnamese": "Hiệu số (khoảng cách giữa hai số trong phép trừ).",
+    "vietnamese": "Hiệu số (Kết quả thu được từ phép tính trừ).",
     "grade": 4,
     "disabled": false
   },
@@ -155,9 +155,9 @@
   {
     "unit": "5.1",
     "word": "Column addition",
-    "definition": "The calculation method of arranging figures in upright vertical rows.",
+    "definition": "Adding numbers written in vertical columns.",
     "example": "Line up the dots carefully when using _____ with decimal fractions.",
-    "vietnamese": "Đặt tính cộng theo cột dọc.",
+    "vietnamese": "Cộng đặt dọc (Đặt các số theo hàng dọc để thực hiện phép cộng).",
     "grade": 4,
     "disabled": false
   },
@@ -329,6 +329,267 @@
     "definition": "The extent of two-dimensional surface space enclosed inside a boundary.",
     "example": "Multiplying room length by width computed a carpet _____ of twelve square metres.",
     "vietnamese": "Diện tích bề mặt (đo bằng đơn vị vuông).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1",
+    "word": "Place value",
+    "definition": "The value of a digit depending on its position in a number.",
+    "example": "",
+    "vietnamese": "Giá trị theo hàng (Giá trị của từng chữ số dựa vào vị trí của nó trong một số).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1",
+    "word": "Digit",
+    "definition": "Any of the symbols 0, 1, 2, 3, 4, 5, 6, 7, 8, or 9 used to write numbers.",
+    "example": "",
+    "vietnamese": "Chữ số (Các ký hiệu từ 0 đến 9 được dùng để viết nên các số).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1",
+    "word": "Hundred thousands",
+    "definition": "The place value position worth 100,000.",
+    "example": "",
+    "vietnamese": "Hàng trăm nghìn (Hàng có giá trị 100,000 (gồm 6 chữ số)).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1",
+    "word": "Millions",
+    "definition": "The place value position worth 1,000,000.",
+    "example": "",
+    "vietnamese": "Hàng triệu (Hàng có giá trị 1,000,000 (gồm 7 chữ số)).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1",
+    "word": "Rounding",
+    "definition": "Changing a number to the nearest 10, 100, or 1000 to make it simpler.",
+    "example": "",
+    "vietnamese": "Làm tròn số (Điều chỉnh số đến hàng gần nhất (tròn chục, tròn trăm, tròn nghìn)).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1",
+    "word": "Estimate",
+    "definition": "To find a value that is close enough to the right answer.",
+    "example": "",
+    "vietnamese": "Ước lượng (Dự đoán hoặc tính nhanh kết quả xấp xỉ gần đúng).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1",
+    "word": "Compare",
+    "definition": "To check if numbers are greater than (>), less than (<), or equal (=).",
+    "example": "",
+    "vietnamese": "So sánh (Xem số nào lớn hơn, bé hơn hoặc bằng nhau).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1",
+    "word": "Order",
+    "definition": "Arranging numbers from smallest to largest or largest to smallest.",
+    "example": "",
+    "vietnamese": "Sắp xếp (Xếp các số theo thứ tự từ bé đến lớn hoặc ngược lại).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1",
+    "word": "Sequence",
+    "definition": "A list of numbers that follow a specific pattern or rule.",
+    "example": "",
+    "vietnamese": "Dãy số theo quy luật (Dãy các số được sắp xếp theo một quy luật nhất định).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1",
+    "word": "Interval",
+    "definition": "The distance between two numbers on a number line or scale.",
+    "example": "",
+    "vietnamese": "Khoảng cách / Khoảng chia (Khoảng cách giữa các vạch chia trên trục số).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1",
+    "word": "Positive number",
+    "definition": "Any number that is greater than zero (+1, +2, +5...).",
+    "example": "",
+    "vietnamese": "Số dương (Các số có giá trị lớn hơn 0).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1",
+    "word": "Negative number",
+    "definition": "Any number that is less than zero (-1, -2, -5...).",
+    "example": "",
+    "vietnamese": "Số âm (Các số có giá trị nhỏ hơn 0).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "5.1",
+    "word": "Decimal number",
+    "definition": "A number that contains a decimal point (e.g., 4.25).",
+    "example": "",
+    "vietnamese": "Số thập phân (Số có chứa dấu phẩy thập phân để chỉ phần lẻ).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "5.1",
+    "word": "Decimal point",
+    "definition": "A dot separating whole numbers from tenths and hundredths.",
+    "example": "",
+    "vietnamese": "Dấu phẩy thập phân (Dấu chấm phẩy phân tách phần nguyên và phần thập phân).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "5.1",
+    "word": "Tenths",
+    "definition": "The first place to the right of the decimal point (1/10).",
+    "example": "",
+    "vietnamese": "Hàng phần mười (Hàng đầu tiên ngay bên phải dấu thập phân).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "5.1",
+    "word": "Hundredths",
+    "definition": "The second place to the right of the decimal point (1/100).",
+    "example": "",
+    "vietnamese": "Hàng phần trăm (Hàng thứ hai bên phải dấu thập phân).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "5.1",
+    "word": "Align",
+    "definition": "Placing decimal points directly above each other before calculating.",
+    "example": "",
+    "vietnamese": "Căn thẳng hàng (Xếp các dấu thập phân thẳng hàng dọc trước khi cộng/trừ).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "5.1",
+    "word": "Column subtraction",
+    "definition": "Subtracting numbers vertically by place value.",
+    "example": "",
+    "vietnamese": "Trừ đặt dọc (Đặt các số theo hàng dọc để thực hiện phép trừ).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "5.1",
+    "word": "Regrouping",
+    "definition": "Carrying over when adding or borrowing when subtracting.",
+    "example": "",
+    "vietnamese": "Đổi nhóm / Nhớ (Vay) (Chuyển giá trị sang hàng kế bên khi cộng (nhớ) hoặc trừ (vay)).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "5.2",
+    "word": "Positive number",
+    "definition": "Any number greater than zero (+1, +5, +10).",
+    "example": "",
+    "vietnamese": "Số dương (Các số có giá trị lớn hơn 0).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "5.2",
+    "word": "Negative number",
+    "definition": "Any number less than zero (-1, -5, -10).",
+    "example": "",
+    "vietnamese": "Số âm (Các số có giá trị nhỏ hơn 0).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "5.2",
+    "word": "Number line",
+    "definition": "A line with numbers placed in order to help add and subtract.",
+    "example": "",
+    "vietnamese": "Trục số (Đường thẳng biểu diễn các số theo thứ tự để hỗ trợ tính toán).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "5.2",
+    "word": "Zero point",
+    "definition": "The starting point between positive and negative numbers.",
+    "example": "",
+    "vietnamese": "Điểm gốc số 0 (Điểm ranh giới giữa số dương và số âm).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "5.2",
+    "word": "Temperature",
+    "definition": "How hot or cold something is, often using negative degrees (°C).",
+    "example": "",
+    "vietnamese": "Nhiệt độ (Độ nóng hay lạnh, thường dùng số âm để chỉ nhiệt độ dưới 0°C).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "5.2",
+    "word": "Increase / Rise",
+    "definition": "To go up or add to a number (move right on number line).",
+    "example": "",
+    "vietnamese": "Tăng lên (Tăng thêm giá trị (di chuyển sang phải trên trục số)).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "5.2",
+    "word": "Decrease / Drop",
+    "definition": "To go down or subtract from a number (move left on number line).",
+    "example": "",
+    "vietnamese": "Giảm xuống (Giảm bớt giá trị (di chuyển sang trái trên trục số)).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "5.2",
+    "word": "Below zero",
+    "definition": "Values smaller than 0, written with a minus sign (-).",
+    "example": "",
+    "vietnamese": "Dưới 0 (Các giá trị bé hơn 0, viết kèm dấu trừ phía trước).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "5.2",
+    "word": "Opposite numbers",
+    "definition": "Numbers that are the same distance from zero (e.g., +5 and -5).",
+    "example": "",
+    "vietnamese": "Số đối nhau (Hai số có cùng khoảng cách đến số 0 (VD: +5 và -5)).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "5.2",
+    "word": "Count on / back",
+    "definition": "Counting forwards to add or backwards to subtract.",
+    "example": "",
+    "vietnamese": "Đếm tiến / Đếm lùi (Đếm tiến lên để cộng hoặc đếm lùi lại để trừ).",
     "grade": 4,
     "disabled": false
   }

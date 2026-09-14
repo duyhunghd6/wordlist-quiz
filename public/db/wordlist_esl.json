@@ -1,114 +1,6 @@
 [
   {
     "unit": "1.1",
-    "word": "Talkative",
-    "definition": "Fond of speaking a great deal and having conversations with others.",
-    "example": "He is very _____ and loves chatting with everyone in the classroom.",
-    "vietnamese": "Nói nhiều, hoạt ngôn, thích trò chuyện.",
-    "grade": 4,
-    "disabled": false
-  },
-  {
-    "unit": "1.1",
-    "word": "Generous",
-    "definition": "Willing to give money, help, or kindness freely to other people.",
-    "example": "She is always _____ and shares her snacks with friends at break time.",
-    "vietnamese": "Hào phóng, rộng lượng, sẵn lòng chia sẻ.",
-    "grade": 4,
-    "disabled": false
-  },
-  {
-    "unit": "1.1",
-    "word": "Hardworking",
-    "definition": "Putting a large amount of effort, care, and energy into tasks.",
-    "example": "The _____ student finished all his homework before dinner.",
-    "vietnamese": "Chăm chỉ, cần cù, siêng năng.",
-    "grade": 4,
-    "disabled": false
-  },
-  {
-    "unit": "1.1",
-    "word": "Outgoing",
-    "definition": "Friendly, energetic, and finding it easy to meet and talk to new people.",
-    "example": "Peter is an _____ boy who makes new friends wherever he goes.",
-    "vietnamese": "Cởi mở, hòa đồng, thân thiện.",
-    "grade": 4,
-    "disabled": false
-  },
-  {
-    "unit": "1.1",
-    "word": "Shy",
-    "definition": "Nervous and uncomfortable about meeting or speaking to others.",
-    "example": "She was too _____ to sing in front of the whole school.",
-    "vietnamese": "Nhút nhát, e thẹn, rụt rè.",
-    "grade": 4,
-    "disabled": false
-  },
-  {
-    "unit": "1.1",
-    "word": "Bad-tempered",
-    "definition": "Easily annoyed, grumpy, or becoming angry very quickly.",
-    "example": "He becomes _____ when he does not get enough sleep.",
-    "vietnamese": "Nóng tính, cáu kỉnh, dễ nổi giận.",
-    "grade": 4,
-    "disabled": false
-  },
-  {
-    "unit": "1.1",
-    "word": "Selfish",
-    "definition": "Caring only about oneself and not thinking about others' needs.",
-    "example": "It is _____ to keep all the playground toys for yourself.",
-    "vietnamese": "Ích kỷ, chỉ nghĩ đến bản thân.",
-    "grade": 4,
-    "disabled": false
-  },
-  {
-    "unit": "1.1",
-    "word": "Nervous",
-    "definition": "Worried and anxious about something that is happening or will happen.",
-    "example": "Linh felt _____ right before giving her English speech.",
-    "vietnamese": "Lo lắng, hồi hộp, bồn chồn.",
-    "grade": 4,
-    "disabled": false
-  },
-  {
-    "unit": "1.1",
-    "word": "Cheerful",
-    "definition": "Noticeably happy, optimistic, and showing good spirits.",
-    "example": "A smile appeared on his _____ face when he saw his puppy.",
-    "vietnamese": "Vui tươi, tươi cười rạng rỡ, yêu đời.",
-    "grade": 4,
-    "disabled": false
-  },
-  {
-    "unit": "1.1",
-    "word": "Lazy",
-    "definition": "Unwilling to work, exercise, or put in any mental or physical effort.",
-    "example": "The cat was too _____ to chase after the mouse.",
-    "vietnamese": "Lười biếng, ngại vận động.",
-    "grade": 4,
-    "disabled": false
-  },
-  {
-    "unit": "1.1",
-    "word": "Calm",
-    "definition": "Peaceful, quiet, and free from anger, fear, or strong excitement.",
-    "example": "The teacher remained _____ even during the noisy storm.",
-    "vietnamese": "Bình tĩnh, điềm đạm, không hoảng loạn.",
-    "grade": 4,
-    "disabled": false
-  },
-  {
-    "unit": "1.1",
-    "word": "Quiet",
-    "definition": "Making very little sound, or speaking rarely and softly.",
-    "example": "He is a _____ boy who prefers reading books in the library.",
-    "vietnamese": "Trầm tính, ít nói, yên lặng.",
-    "grade": 4,
-    "disabled": false
-  },
-  {
-    "unit": "1.1",
     "word": "Confident",
     "definition": "Feeling sure about your own abilities, qualities, and judgment.",
     "example": "She felt _____ that she would pass the science exam.",
@@ -289,24 +181,6 @@
   },
   {
     "unit": "2.1",
-    "word": "Calcium",
-    "definition": "A mineral present in dairy foods that builds strong bones and teeth.",
-    "example": "Drinking fresh milk provides your skeleton with healthy _____.",
-    "vietnamese": "Khoáng chất can-xi.",
-    "grade": 4,
-    "disabled": false
-  },
-  {
-    "unit": "2.1",
-    "word": "Protein",
-    "definition": "An organic compound in meat, fish, and beans needed for muscle repair.",
-    "example": "Eggs and lentils supply plenty of _____ for growing muscles.",
-    "vietnamese": "Chất đạm, protein.",
-    "grade": 4,
-    "disabled": false
-  },
-  {
-    "unit": "2.1",
     "word": "Symptom",
     "definition": "A physical change in the body indicating the presence of an illness.",
     "example": "A high fever and sore throat can be a _____ of the flu.",
@@ -329,15 +203,6 @@
     "definition": "Designed and operated in ways that do not harm nature or ecosystems.",
     "example": "Using solar panels on houses is an _____ way to generate electricity.",
     "vietnamese": "Thân thiện với môi trường.",
-    "grade": 4,
-    "disabled": false
-  },
-  {
-    "unit": "3.1",
-    "word": "Skyscraper",
-    "definition": "An exceptionally tall, multistory building found in modern cities.",
-    "example": "The glass _____ towered high above the clouds downtown.",
-    "vietnamese": "Tòa nhà chọc trời.",
     "grade": 4,
     "disabled": false
   },
@@ -518,6 +383,645 @@
     "definition": "A special physical or behavioral trait assisting an organism to survive.",
     "example": "Thick white fur is an essential Arctic _____ for polar bears.",
     "vietnamese": "Sự thích nghi tiến hóa.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1",
+    "word": "Talkative",
+    "definition": "Fond of speaking a great deal and having conversations with others.",
+    "example": "She is a talkative girl who loves telling stories.",
+    "vietnamese": "Hay nói, nói nhiều",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1",
+    "word": "Generous",
+    "definition": "Willing to give money, help, or kindness freely to other people.",
+    "example": "He is generous and always shares his toys.",
+    "vietnamese": "Hào phóng, rộng lượng",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1",
+    "word": "Hardworking",
+    "definition": "Putting a large amount of effort, care, and energy into tasks.",
+    "example": "The hardworking students got top marks.",
+    "vietnamese": "Chăm chỉ, cần cù",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1",
+    "word": "Outgoing",
+    "definition": "Friendly, energetic, and finding it easy to meet and talk to new people.",
+    "example": "An outgoing person makes friends easily.",
+    "vietnamese": "Cởi mở, hòa đồng",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1",
+    "word": "Shy",
+    "definition": "Nervous and uncomfortable about meeting or speaking to others.",
+    "example": "He felt shy when speaking in front of the class.",
+    "vietnamese": "Nhút nhát, e ấp",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1",
+    "word": "Bad-tempered",
+    "definition": "Easily annoyed, grumpy, or becoming angry very quickly.",
+    "example": "Don't be bad-tempered when things go wrong.",
+    "vietnamese": "Nóng tính, dễ nổi giận",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1",
+    "word": "Selfish",
+    "definition": "Caring only about oneself and not thinking about others' needs.",
+    "example": "It is selfish to keep all the sweets for yourself.",
+    "vietnamese": "Ích kỷ",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1",
+    "word": "Nervous",
+    "definition": "Worried and anxious about something that is happening or will happen.",
+    "example": "She was nervous before the big exam.",
+    "vietnamese": "Lo lắng, hồi hộp",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1",
+    "word": "Cheerful",
+    "definition": "Noticeably happy, optimistic, and showing good spirits.",
+    "example": "His cheerful smile brightened everyone's day.",
+    "vietnamese": "Vui vẻ, yêu đời",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1",
+    "word": "Lazy",
+    "definition": "Unwilling to work, exercise, or put in any mental or physical effort.",
+    "example": "He didn't do his homework because he was lazy.",
+    "vietnamese": "Lười biếng",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1",
+    "word": "Calm",
+    "definition": "Peaceful, quiet, and free from anger, fear, or strong excitement.",
+    "example": "Stay calm during the emergency test.",
+    "vietnamese": "Bình tĩnh, điềm tĩnh",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1",
+    "word": "Quiet",
+    "definition": "Making very little sound, or speaking rarely and softly.",
+    "example": "She is quiet and likes reading books.",
+    "vietnamese": "Trầm tính, yên lặng",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1",
+    "word": "Impressive",
+    "definition": "-",
+    "example": "Her performance was really impressive.",
+    "vietnamese": "Ấn tượng",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1",
+    "word": "Expert",
+    "definition": "-",
+    "example": "He is an expert in computer science.",
+    "vietnamese": "Chuyên gia",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1",
+    "word": "Champion",
+    "definition": "-",
+    "example": "She became the chess champion of our school.",
+    "vietnamese": "Nhà vô địch",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1",
+    "word": "Enormous",
+    "definition": "-",
+    "example": "They saw an enormous elephant in the safari.",
+    "vietnamese": "Khổng lồ, rất lớn",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1",
+    "word": "Juggle",
+    "definition": "-",
+    "example": "The performer can juggle four balls at once.",
+    "vietnamese": "Tung hứng",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1",
+    "word": "Carry",
+    "definition": "-",
+    "example": "Can you help me carry these heavy books?",
+    "vietnamese": "Mang, vác, bế",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1",
+    "word": "Hoist",
+    "definition": "-",
+    "example": "They hoist the flag early in the morning.",
+    "vietnamese": "Nâng lên, kéo lên",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1",
+    "word": "A dozen",
+    "definition": "-",
+    "example": "My mom bought a dozen eggs from the store.",
+    "vietnamese": "Một tá (12 cái)",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "2",
+    "word": "A cold",
+    "definition": "Feeling sick with a runny nose and cough.",
+    "example": "Drink warm water when you have a cold.",
+    "vietnamese": "Cảm lạnh",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "2",
+    "word": "A fever",
+    "definition": "When your body feels very hot.",
+    "example": "She has a high fever today.",
+    "vietnamese": "Cơn sốt",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "2",
+    "word": "Stomach ache",
+    "definition": "Pain in your stomach or tummy.",
+    "example": "Too much candy gives you a stomach ache.",
+    "vietnamese": "Đau bụng",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "2",
+    "word": "Sore throat",
+    "definition": "When your throat hurts to swallow.",
+    "example": "I have a sore throat and can't sing.",
+    "vietnamese": "Đau họng",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "2",
+    "word": "Runny/Blocked nose",
+    "definition": "Liquid from nose, or hard to breathe.",
+    "example": "He uses a tissue for his runny nose.",
+    "vietnamese": "Sổ mũi / Nghẹt mũi",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "2",
+    "word": "Cough/Chesty cough",
+    "definition": "Forcing air out of throat with sound.",
+    "example": "Cover your mouth when you cough.",
+    "vietnamese": "Ho / Ho có đờm",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "2",
+    "word": "Shivering",
+    "definition": "Shaking because you are cold or sick.",
+    "example": "He is shivering under the blanket.",
+    "vietnamese": "Run rẩy (vì lạnh/bệnh)",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "2",
+    "word": "Ear infection",
+    "definition": "An illness inside your ear that hurts.",
+    "example": "The doctor gave medicine for my ear infection.",
+    "vietnamese": "Viêm tai",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "2",
+    "word": "Skin rash/Reaction",
+    "definition": "Red spots or itchy skin from food/bugs.",
+    "example": "Strawberries give her a red skin rash.",
+    "vietnamese": "Phát ban / Dị ứng ngoài da",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "2",
+    "word": "Lost voice",
+    "definition": "Cannot speak loudly or clearly.",
+    "example": "The teacher lost her voice today.",
+    "vietnamese": "Mất tiếng / Khản tiếng",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "2",
+    "word": "Feel sick / weary",
+    "definition": "Feeling unwell, sleepy, or tired.",
+    "example": "I feel sick after eating three bags of sweets.",
+    "vietnamese": "Thấy mệt mỏi / Mệt lả",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "2",
+    "word": "A bar of...",
+    "definition": "Commonly Used With: Chocolate, soap",
+    "example": "Can I have a bar of dark chocolate?",
+    "vietnamese": "Một thanh / bánh...",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "2",
+    "word": "A head of...",
+    "definition": "Commonly Used With: Cabbage, lettuce",
+    "example": "Mom bought a fresh head of cabbage.",
+    "vietnamese": "Một bắp / cây (bắp cải)",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "2",
+    "word": "A pinch of...",
+    "definition": "Commonly Used With: Salt, pepper, spices",
+    "example": "Add a pinch of salt to the soup.",
+    "vietnamese": "Một nhúm (bằng ngón tay)",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "2",
+    "word": "A pot/bowl of...",
+    "definition": "Commonly Used With: Soup, rice, cereal, honey",
+    "example": "He ate a big bowl of cereal for breakfast.",
+    "vietnamese": "Một hũ / bát (tô)...",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "2",
+    "word": "A sack / bag of...",
+    "definition": "Commonly Used With: Potatoes, rice, flour, beans",
+    "example": "We bought a bag of sweet potatoes.",
+    "vietnamese": "Một bao / túi...",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "2",
+    "word": "A bunch of...",
+    "definition": "Commonly Used With: Bananas, grapes, carrots",
+    "example": "Look at that big bunch of carrots!",
+    "vietnamese": "Một nải / chùm / bó...",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "2",
+    "word": "A crumb/slice of...",
+    "definition": "Commonly Used With: Bread, cake",
+    "example": "Don't leave a single crumb of cake!",
+    "vietnamese": "Mẩu vụn / Lát (bánh)",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "2",
+    "word": "A jar of...",
+    "definition": "Commonly Used With: Jam, honey, peanut butter",
+    "example": "Open the new jar of honey.",
+    "vietnamese": "Một lọ / hũ thủy tinh...",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "2",
+    "word": "A box/can of...",
+    "definition": "Commonly Used With: Sweets, cereal, lemonade",
+    "example": "We bought a box of chocolates.",
+    "vietnamese": "Một hộp / lon...",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "2",
+    "word": "Protein",
+    "definition": "Helps your body grow and build muscles.",
+    "example": "Food Examples: Fish, chicken, eggs, beans, nuts",
+    "vietnamese": "Chất đạm",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "2",
+    "word": "Calcium",
+    "definition": "Keeps your bones and teeth strong.",
+    "example": "Food Examples: Milk, cheese, yogurt, broccoli",
+    "vietnamese": "Can-xi",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "2",
+    "word": "Vitamins & Minerals",
+    "definition": "Protects from sickness & gives energy.",
+    "example": "Food Examples: Apples, carrots, oranges, spinach",
+    "vietnamese": "Vitamin & Khoáng chất",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "2",
+    "word": "Carbohydrates",
+    "definition": "Gives your body long-lasting energy.",
+    "example": "Food Examples: Rice, bread, pasta, potatoes",
+    "vietnamese": "Chất bột đường",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "2",
+    "word": "Dairy products",
+    "definition": "Contains both protein and calcium.",
+    "example": "Food Examples: Milk, butter, cheese, yogurt",
+    "vietnamese": "Sản phẩm từ sữa",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "2",
+    "word": "Fats & Sugars",
+    "definition": "Gives quick energy, but eat a little!",
+    "example": "Food Examples: Sweets, oil, butter, cake",
+    "vietnamese": "Chất béo & Đường",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3",
+    "word": "Skyscraper",
+    "definition": "A continuously habitable high-rise building of many storeys.",
+    "example": "The city skyline is dominated by modern skyscrapers.",
+    "vietnamese": "Tòa nhà cao tầng / Tòa nhà chọc trời",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3",
+    "word": "Pedestrian zone / Street",
+    "definition": "An area of a city reserved exclusively for pedestrian traffic.",
+    "example": "Motor vehicles are prohibited in the central pedestrian zone.",
+    "vietnamese": "Phố đi bộ / Khu vực dành cho người đi bộ",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3",
+    "word": "Suburbs/ Outskirts",
+    "definition": "Residential districts situated on the outer fringes of a city.",
+    "example": "Many commuters reside in the green residential suburbs.",
+    "vietnamese": "Vùng ngoại ô / Ngoại thành",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3",
+    "word": "Harbour/Port",
+    "definition": "A sheltered body of water where vessels load or unload cargo.",
+    "example": "Commercial cargo vessels anchored safely inside the harbour.",
+    "vietnamese": "Bến cảng / Hải cảng",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3",
+    "word": "Town square / Plaza",
+    "definition": "An open public space located at the junction of urban streets.",
+    "example": "Citizens gathered at the town square for the official ceremony.",
+    "vietnamese": "Quảng trường thành phố",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3",
+    "word": "Marketplace",
+    "definition": "A public square or structure where merchandise is bought and sold.",
+    "example": "Local vendors display traditional handicrafts at the marketplace.",
+    "vietnamese": "Chợ trung tâm / Khu thương mại",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3",
+    "word": "Pedestrian crossing / Zebra crossing",
+    "definition": "A designated section of road giving pedestrians right of way.",
+    "example": "Drivers must stop when pedestrians use the zebra crossing.",
+    "vietnamese": "Vạch sang đường cho người đi bộ",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3",
+    "word": "Traffic light/Signals",
+    "definition": "Signalling devices positioned at road intersections to control traffic flow.",
+    "example": "The traffic lights manage vehicular flow across the junction.",
+    "vietnamese": "Hệ thống đèn giao thông",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3",
+    "word": "Monument/Landmark",
+    "definition": "A structure erected to commemorate a person or historical event.",
+    "example": "The national monument commemorates historical independence.",
+    "vietnamese": "Đài tưởng niệm / Di tích lịch sử",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3",
+    "word": "Transport hub / Bus station",
+    "definition": "A designated terminal where public transport routes originate or terminate.",
+    "example": "Intercity coaches depart regularly from the main transport hub.",
+    "vietnamese": "Bến xe / Trạm trung chuyển giao thông",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3",
+    "word": "Countryside / Rural area",
+    "definition": "Land outside towns and cities, characterized by agriculture or natural vegetation.",
+    "example": "Rural tourism supports the local economy of the countryside.",
+    "vietnamese": "Vùng nông thôn / Miền quê",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3",
+    "word": "Field/Meadow",
+    "definition": "An expanse of open land used for pasture or cultivation of crops.",
+    "example": "Livestock grazed peacefully across the expansive meadow.",
+    "vietnamese": "Cánh đồng / Đồng cỏ",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3",
+    "word": "Stream/Creek",
+    "definition": "A small, narrow body of freshwater flowing within a natural channel.",
+    "example": "Fresh mountain water flows downstream along the creek.",
+    "vietnamese": "Dòng suối / Sông nhỏ",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3",
+    "word": "Valley",
+    "definition": "A low area of land between hills or mountains, often containing a river.",
+    "example": "The agricultural valley benefits from rich alluvial soil.",
+    "vietnamese": "Thung lũng",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3",
+    "word": "Cottage",
+    "definition": "A small, modest dwelling house typically located in a rural setting.",
+    "example": "The traditional stone cottage overlooks the surrounding hills.",
+    "vietnamese": "Nhà ở nông thôn / Nhà nhỏ",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3",
+    "word": "Footpath / Trail",
+    "definition": "An unpaved path marked across countryside for pedestrian access.",
+    "example": "Hikers followed the steep trail leading to the mountain summit.",
+    "vietnamese": "Đường mòn / Đường dành cho người đi bộ",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3",
+    "word": "Woodland/Forest",
+    "definition": "A dense ecosystem dominated by trees and flora.",
+    "example": "Dense woodland covers a significant portion of the natural reserve.",
+    "vietnamese": "Khu rừng / Rừng rậm",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3",
+    "word": "Bustling",
+    "definition": "Full of lively activity, energy, and moving people.",
+    "example": "The commercial port remains bustling throughout the day.",
+    "vietnamese": "Nhộn nhịp / Sầm uất",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3",
+    "word": "Peaceful/Tranquil",
+    "definition": "Free from disturbance; serene and undisturbed.",
+    "example": "The coastal village provides a tranquil setting for rest.",
+    "vietnamese": "Thanh bình / Yên tĩnh",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3",
+    "word": "Crowded/Congested",
+    "definition": "Packed with an excessive number of people or vehicles.",
+    "example": "Central thoroughfares become heavily congested during peak hours.",
+    "vietnamese": "Đông đúc / Tắc nghẽn",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3",
+    "word": "Historic/Ancient",
+    "definition": "Having great importance, significance, or origin in history.",
+    "example": "Architectural conservation preserves the historic city center.",
+    "vietnamese": "Cổ kính / Có giá trị lịch sử",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3",
+    "word": "Modern/Contemporary",
+    "definition": "Relating to present style, technology, or modern design.",
+    "example": "Contemporary infrastructure has transformed the metropolis.",
+    "vietnamese": "Hiện đại / Tân tiến",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3",
+    "word": "Scenic / Picturesque",
+    "definition": "Providing attractive, visually charming natural or urban views.",
+    "example": "The coastal route offers picturesque views of the ocean.",
+    "vietnamese": "Danh lam thắng cảnh / Đẹp như tranh vẽ",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3",
+    "word": "Polluted",
+    "definition": "Contaminated with harmful industrial or automotive substances.",
+    "example": "Industrial emissions rendered the urban atmosphere polluted.",
+    "vietnamese": "Bị ô nhiễm",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3",
+    "word": "Lively / Vibrant",
+    "definition": "Full of life, energy, enthusiasm, and vivid atmosphere.",
+    "example": "The cultural district boasts a vibrant arts and music scene.",
+    "vietnamese": "Sôi động / Đầy sức sống",
     "grade": 4,
     "disabled": false
   }
