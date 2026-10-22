@@ -12,6 +12,8 @@ const validateBank = (filePath, isTF) => {
         let errors = 0;
         let difficulties = { easy: 0, medium: 0, hard: 0 };
         let skills = {};
+        const ids = new Set();
+        const prompts = new Set();
         
         data.forEach((item, index) => {
             // Check required base fields
@@ -22,6 +24,18 @@ const validateBank = (filePath, isTF) => {
                     errors++;
                 }
             });
+
+            const prompt = isTF ? item.statement : item.question;
+            if (ids.has(item.id) || prompts.has(prompt)) {
+                console.error(`[Error] Duplicate ID or prompt at index ${index}`);
+                errors++;
+            }
+            ids.add(item.id);
+            prompts.add(prompt);
+            if (!['easy', 'medium', 'hard'].includes(item.difficulty)) {
+                console.error(`[Error] Invalid difficulty at index ${index}`);
+                errors++;
+            }
 
             // Specific structure
             if (isTF) {
@@ -54,8 +68,10 @@ const validateBank = (filePath, isTF) => {
     }
 }
 
-console.log("Starting QA process for Unit 5 Science Knowledge Banks...");
-const r1 = validateBank('public/db/science_quiz_unit5.json', false);
-const r2 = validateBank('public/db/science_tf_unit5.json', true);
-
-if (!r1 || !r2) process.exit(1);
+const requestedFiles = process.argv.slice(2);
+const files = requestedFiles.length ? requestedFiles : [
+    'public/db/science_quiz_unit5.json',
+    'public/db/science_tf_unit5.json'
+];
+const results = files.map(file => validateBank(file, path.basename(file).startsWith('science_tf_')));
+if (results.some(result => !result)) process.exit(1);

@@ -1,0 +1,322 @@
+[
+  {
+    "id": "tf_3_001",
+    "unit": "3.1",
+    "topic": "Gases and particle model",
+    "difficulty": "easy",
+    "statement": "Air trapped in a syringe can be compressed because there are large gaps between its particles.",
+    "isTrue": true,
+    "explanation": "True! Pushing the plunger brings gas particles closer together; it does not make each particle smaller.",
+    "thinkingSkill": "reason"
+  },
+  {
+    "id": "tf_3_002",
+    "unit": "3.1",
+    "topic": "Gases and particle model",
+    "difficulty": "easy",
+    "statement": "A sealed balloon contains nothing because the air inside is invisible.",
+    "isTrue": false,
+    "explanation": "False! Air is matter: it has mass and occupies space even though we cannot see it.",
+    "thinkingSkill": "reason"
+  },
+  {
+    "id": "tf_3_003",
+    "unit": "3.1",
+    "topic": "Gases and particle model",
+    "difficulty": "medium",
+    "statement": "When air is compressed, each gas particle becomes smaller.",
+    "isTrue": false,
+    "explanation": "False! The spaces between particles decrease. The particles themselves do not shrink.",
+    "thinkingSkill": "reason"
+  },
+  {
+    "id": "tf_3_004",
+    "unit": "3.1",
+    "topic": "Gases and particle model",
+    "difficulty": "medium",
+    "statement": "Pouring water from a narrow cup into a wide bowl changes its shape, but not its volume if none is lost.",
+    "isTrue": true,
+    "explanation": "True! Liquid particles can slide past one another, so the liquid changes shape while keeping its volume.",
+    "thinkingSkill": "reason"
+  },
+  {
+    "id": "tf_3_005",
+    "unit": "3.1",
+    "topic": "Gases and particle model",
+    "difficulty": "medium",
+    "statement": "An ice cube keeps its shape because its particles do not move at all.",
+    "isTrue": false,
+    "explanation": "False! Particles in solid ice vibrate about fixed positions. A fixed shape does not mean no movement.",
+    "thinkingSkill": "reason"
+  },
+  {
+    "id": "tf_3_006",
+    "unit": "3.1",
+    "topic": "Gases and particle model",
+    "difficulty": "hard",
+    "statement": "Gas from a small container can spread throughout a larger empty container without adding more gas.",
+    "isTrue": true,
+    "explanation": "True! Gas particles move freely and spread out to fill the available volume. Their number need not increase.",
+    "thinkingSkill": "reason"
+  },
+  {
+    "id": "tf_3_007",
+    "unit": "3.1",
+    "topic": "Atmosphere and pollution",
+    "difficulty": "medium",
+    "statement": "Air near a busy road must be clean if no smoke is visible.",
+    "isTrue": false,
+    "explanation": "False! Some harmful gases and very small particles cannot be seen. Clear-looking air is not proof that it is clean.",
+    "thinkingSkill": "reason"
+  },
+  {
+    "id": "tf_3_008",
+    "unit": "3.1",
+    "topic": "Atmosphere and pollution",
+    "difficulty": "hard",
+    "statement": "To compare soot near a road and in a garden fairly, identical sticky traps should be left out for the same length of time.",
+    "isTrue": true,
+    "explanation": "True! Keeping trap size, coating and exposure time the same makes location the factor being compared.",
+    "thinkingSkill": "apply"
+  },
+  {
+    "id": "tf_3_009",
+    "unit": "3.2",
+    "topic": "Properties of water",
+    "difficulty": "easy",
+    "statement": "A full sealed bottle may crack in a freezer because water takes up more space when it freezes.",
+    "isTrue": true,
+    "explanation": "True! Water expands when it becomes ice, which can push against the bottle.",
+    "thinkingSkill": "reason"
+  },
+  {
+    "id": "tf_3_010",
+    "unit": "3.2",
+    "topic": "Properties of water",
+    "difficulty": "easy",
+    "statement": "Ice melting into water and salt dissolving in water are the same process.",
+    "isTrue": false,
+    "explanation": "False! Melting changes a solid into its liquid state. Dissolving mixes a substance into a solvent.",
+    "thinkingSkill": "reason"
+  },
+  {
+    "id": "tf_3_011",
+    "unit": "3.2",
+    "topic": "Properties of water",
+    "difficulty": "medium",
+    "statement": "Pure water must boil at 100°C everywhere, including on top of a high mountain.",
+    "isTrue": false,
+    "explanation": "False! Boiling point depends on pressure. Lower atmospheric pressure on a high mountain lets water boil below 100°C.",
+    "thinkingSkill": "reason"
+  },
+  {
+    "id": "tf_3_012",
+    "unit": "3.2",
+    "topic": "Properties of water",
+    "difficulty": "medium",
+    "statement": "While pure water boils at constant standard atmospheric pressure, adding heat can make more water change into gas without raising its temperature above its boiling point.",
+    "isTrue": true,
+    "explanation": "True! During boiling, the added energy supports the change of state rather than raising the temperature of the boiling water.",
+    "thinkingSkill": "reason"
+  },
+  {
+    "id": "tf_3_013",
+    "unit": "3.2",
+    "topic": "Properties of water",
+    "difficulty": "medium",
+    "statement": "Water particles disappear when liquid water becomes water vapour.",
+    "isTrue": false,
+    "explanation": "False! The water particles remain present in the gas state; they are farther apart and move freely.",
+    "thinkingSkill": "reason"
+  },
+  {
+    "id": "tf_3_014",
+    "unit": "3.2",
+    "topic": "Properties of water",
+    "difficulty": "hard",
+    "statement": "Water expands when it freezes because freezing makes its particles gain energy and move faster.",
+    "isTrue": false,
+    "explanation": "False! Water loses energy as it freezes. Its particles form an open arrangement that takes up more space; they do not gain energy.",
+    "thinkingSkill": "reason"
+  },
+  {
+    "id": "tf_3_015",
+    "unit": "3.3",
+    "topic": "Evaporation and condensation",
+    "difficulty": "easy",
+    "statement": "A puddle cannot dry on a 28°C day because water only changes into gas at 100°C.",
+    "isTrue": false,
+    "explanation": "False! Evaporation occurs at the surface below the boiling point, so the puddle can dry without boiling.",
+    "thinkingSkill": "reason"
+  },
+  {
+    "id": "tf_3_016",
+    "unit": "3.3",
+    "topic": "Evaporation and condensation",
+    "difficulty": "easy",
+    "statement": "Water drops can form outside a cold sealed bottle even if no liquid leaks out.",
+    "isTrue": true,
+    "explanation": "True! Water vapour in the surrounding air cools and condenses on the cold surface.",
+    "thinkingSkill": "reason"
+  },
+  {
+    "id": "tf_3_017",
+    "unit": "3.3",
+    "topic": "Evaporation and condensation",
+    "difficulty": "medium",
+    "statement": "The visible white cloud above a kettle proves that water vapour gas is white.",
+    "isTrue": false,
+    "explanation": "False! Water vapour gas is invisible. The visible cloud consists mainly of tiny liquid droplets formed by condensation.",
+    "thinkingSkill": "reason"
+  },
+  {
+    "id": "tf_3_018",
+    "unit": "3.3",
+    "topic": "Evaporation and condensation",
+    "difficulty": "medium",
+    "statement": "Equal volumes of water at the same temperature usually evaporate faster from a wide shallow tray than from a narrow cup under the same airflow.",
+    "isTrue": true,
+    "explanation": "True! The tray exposes more surface area, allowing more particles to escape per second.",
+    "thinkingSkill": "apply"
+  },
+  {
+    "id": "tf_3_019",
+    "unit": "3.3",
+    "topic": "Evaporation and condensation",
+    "difficulty": "medium",
+    "statement": "Condensation occurs because water vapour gains energy and its particles move farther apart.",
+    "isTrue": false,
+    "explanation": "False! During condensation, water vapour loses thermal energy and its particles come closer together to form liquid.",
+    "thinkingSkill": "reason"
+  },
+  {
+    "id": "tf_3_020",
+    "unit": "3.3",
+    "topic": "Water cycle",
+    "difficulty": "medium",
+    "statement": "Cloud formation and rain involve different processes: condensation forms droplets, while precipitation brings water down to Earth.",
+    "isTrue": true,
+    "explanation": "True! Condensation changes gas to liquid. Precipitation is water falling from clouds as rain, snow or hail.",
+    "thinkingSkill": "reason"
+  },
+  {
+    "id": "tf_3_021",
+    "unit": "3.3",
+    "topic": "Water cycle",
+    "difficulty": "hard",
+    "statement": "Once rain reaches the ocean, it cannot take part in the water cycle again.",
+    "isTrue": false,
+    "explanation": "False! Ocean water can evaporate, later condense into clouds and return as precipitation. The cycle continues.",
+    "thinkingSkill": "reason"
+  },
+  {
+    "id": "tf_3_022",
+    "unit": "3.3",
+    "topic": "Water cycle",
+    "difficulty": "hard",
+    "statement": "Rainwater that soaks into soil can still take part in the water cycle.",
+    "isTrue": true,
+    "explanation": "True! It may become groundwater, move towards rivers or be absorbed by plants and later released through transpiration.",
+    "thinkingSkill": "reason"
+  },
+  {
+    "id": "tf_3_023",
+    "unit": "3.4",
+    "topic": "Solutions and dissolving",
+    "difficulty": "easy",
+    "statement": "Salt has stopped existing when it can no longer be seen in a clear salt solution.",
+    "isTrue": false,
+    "explanation": "False! Salt particles are still present, spread throughout the water. Evaporating the water can recover the salt.",
+    "thinkingSkill": "reason"
+  },
+  {
+    "id": "tf_3_024",
+    "unit": "3.4",
+    "topic": "Solutions and dissolving",
+    "difficulty": "easy",
+    "statement": "In sugar water, sugar is the solute and water is the solvent.",
+    "isTrue": true,
+    "explanation": "True! Sugar is the substance dissolved, and water is the liquid that dissolves it.",
+    "thinkingSkill": "reason"
+  },
+  {
+    "id": "tf_3_025",
+    "unit": "3.4",
+    "topic": "Solutions and dissolving",
+    "difficulty": "medium",
+    "statement": "Ordinary filter paper can recover dissolved salt from salt water just as it separates sand from water.",
+    "isTrue": false,
+    "explanation": "False! Dissolved salt passes through ordinary filter paper with the water. Evaporation can recover the salt.",
+    "thinkingSkill": "reason"
+  },
+  {
+    "id": "tf_3_026",
+    "unit": "3.4",
+    "topic": "Solutions and dissolving",
+    "difficulty": "medium",
+    "statement": "A clear solution can contain a coloured dissolved substance.",
+    "isTrue": true,
+    "explanation": "True! Clear means transparent, not necessarily colourless. A coloured solution can still be uniform and transparent.",
+    "thinkingSkill": "reason"
+  },
+  {
+    "id": "tf_3_027",
+    "unit": "3.4",
+    "topic": "Solutions and dissolving",
+    "difficulty": "medium",
+    "statement": "Water being called the universal solvent means that sand and plastic must dissolve in it.",
+    "isTrue": false,
+    "explanation": "False! Water dissolves many substances, but not all. Sand and ordinary plastic do not dissolve in water.",
+    "thinkingSkill": "reason"
+  },
+  {
+    "id": "tf_3_028",
+    "unit": "3.4",
+    "topic": "Solutions and dissolving",
+    "difficulty": "hard",
+    "statement": "Evaporating all the water from a salt solution can recover solid salt, showing that this dissolving process is reversible.",
+    "isTrue": true,
+    "explanation": "True! The salt remains after the solvent leaves as water vapour. Reversibility means the starting substances can be recovered.",
+    "thinkingSkill": "reason"
+  },
+  {
+    "id": "tf_3_029",
+    "unit": "3.4",
+    "topic": "Scientific enquiry",
+    "difficulty": "medium",
+    "statement": "A student can fairly test the effect of water temperature on dissolving time by using more sugar in the hotter water.",
+    "isTrue": false,
+    "explanation": "False! Changing both temperature and sugar amount makes the result ambiguous. The sugar amount must stay the same.",
+    "thinkingSkill": "apply"
+  },
+  {
+    "id": "tf_3_030",
+    "unit": "3.4",
+    "topic": "Scientific enquiry",
+    "difficulty": "medium",
+    "statement": "When only stirring speed is changed, the time taken for salt to dissolve can be the dependent variable.",
+    "isTrue": true,
+    "explanation": "True! Stirring speed is deliberately changed; dissolving time is measured. Other relevant factors should stay the same.",
+    "thinkingSkill": "apply"
+  },
+  {
+    "id": "tf_3_031",
+    "unit": "3.4",
+    "topic": "Scientific enquiry",
+    "difficulty": "hard",
+    "statement": "If sugar dissolves faster in warm water, this result alone proves that a larger maximum amount can dissolve there.",
+    "isTrue": false,
+    "explanation": "False! Dissolving time measures speed, not the maximum amount that can dissolve. A separate investigation is needed.",
+    "thinkingSkill": "analyse"
+  },
+  {
+    "id": "tf_3_032",
+    "unit": "3.4",
+    "topic": "Solutions and pollution",
+    "difficulty": "hard",
+    "statement": "River water is safe for wildlife whenever dissolved factory waste cannot be seen.",
+    "isTrue": false,
+    "explanation": "False! Harmful substances can dissolve and remain invisible in a solution. Appearance alone cannot establish safety.",
+    "thinkingSkill": "reason"
+  }
+]

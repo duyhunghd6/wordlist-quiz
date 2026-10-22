@@ -397,46 +397,469 @@
   },
   {
     "unit": "3.1",
+    "word": "Atmosphere",
+    "definition": "The layer of gases surrounding the Earth.",
+    "example": "The Earth's _____ contains the air we breathe.",
+    "vietnamese": "Khí quyển: lớp khí bao quanh Trái Đất.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.1",
+    "word": "Compressed",
+    "definition": "Squeezed into a smaller space.",
+    "example": "Air inside a blocked syringe can be _____ when the plunger is pushed.",
+    "vietnamese": "Bị nén vào một không gian nhỏ hơn.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.1",
+    "word": "Invisible",
+    "definition": "Unable to be seen.",
+    "example": "Most gases in the air are _____ even though they take up space.",
+    "vietnamese": "Vô hình; không nhìn thấy được.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.1",
+    "word": "Pollute",
+    "definition": "To introduce harmful substances into air, water or soil.",
+    "example": "Factory waste can _____ a river and harm fish.",
+    "vietnamese": "Làm ô nhiễm không khí, nước hoặc đất.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.1",
+    "word": "Pollution",
+    "definition": "The presence of harmful substances in the environment.",
+    "example": "Smoke from heavy traffic causes air _____.",
+    "vietnamese": "Sự ô nhiễm: sự hiện diện của các chất có hại trong môi trường.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.1",
+    "word": "Properties",
+    "definition": "Features that describe what a material is like or how it behaves.",
+    "example": "Shape and ability to flow are _____ we can compare.",
+    "vietnamese": "Các tính chất mô tả đặc điểm hoặc cách một vật liệu hoạt động.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.1",
+    "word": "Structure",
+    "definition": "The way the parts of something are arranged.",
+    "example": "The particle _____ helps explain why a gas is easy to squeeze.",
+    "vietnamese": "Cấu trúc; cách các bộ phận hoặc hạt được sắp xếp.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.1",
     "word": "Solid",
-    "definition": "A state of substance having a definite, firm shape and fixed volume.",
-    "example": "Frozen ice is water in its hard _____ form.",
-    "vietnamese": "Thể rắn (hình dạng và thể tích cố định).",
+    "definition": "A state of matter with a fixed shape and a fixed volume.",
+    "example": "An ice cube keeps its shape because it is a _____.",
+    "vietnamese": "Chất rắn: có hình dạng và thể tích cố định.",
     "grade": 4,
     "disabled": false
   },
   {
     "unit": "3.1",
     "word": "Liquid",
-    "definition": "A fluid substance that maintains constant volume but takes the shape of its dish.",
-    "example": "Pouring fresh milk into a glass shows how a _____ flows easily.",
-    "vietnamese": "Thể lỏng (chảy được, có thể tích cố định nhưng đổi hình dạng).",
+    "definition": "A state of matter with a fixed volume that takes the shape of its container.",
+    "example": "Water poured into a cup is a _____.",
+    "vietnamese": "Chất lỏng: có thể tích cố định và hình dạng theo vật chứa.",
     "grade": 4,
     "disabled": false
   },
   {
     "unit": "3.1",
     "word": "Gas",
-    "definition": "An airy state of matter that expands without limit to fill any space.",
-    "example": "Invisible water vapour rising from the kettle is water as a _____.",
-    "vietnamese": "Thể khí / hơi (lan tỏa tự do lấp đầy không gian).",
+    "definition": "A state of matter with no fixed shape or volume that spreads to fill its container.",
+    "example": "Air in a balloon is a _____ that fills the available space.",
+    "vietnamese": "Chất khí: không có hình dạng hoặc thể tích cố định, chiếm đầy vật chứa.",
     "grade": 4,
     "disabled": false
   },
   {
     "unit": "3.1",
-    "word": "Evaporation",
-    "definition": "The gradual surface conversion of a fluid into vaporous airborne molecules.",
-    "example": "Puddles dry up quickly on sunny days through rapid _____.",
-    "vietnamese": "Sự bay hơi từ bề mặt chất lỏng.",
+    "word": "Particle",
+    "definition": "A tiny building block used to describe what matter is made of.",
+    "example": "Each tiny _____ is represented by a dot in the diagram.",
+    "vietnamese": "Hạt rất nhỏ cấu tạo nên vật chất.",
     "grade": 4,
     "disabled": false
   },
   {
     "unit": "3.1",
+    "word": "Particle model",
+    "definition": "A scientific representation that uses tiny building blocks to explain how matter behaves.",
+    "example": "We use the _____ to explain why air can be squeezed.",
+    "vietnamese": "Mô hình hạt: mô hình giải thích cấu tạo và tính chất của vật chất bằng các hạt nhỏ.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.1",
+    "word": "Nitrogen",
+    "definition": "The gas that makes up about four-fifths of the Earth's air.",
+    "example": "About 78 percent of dry air is _____.",
+    "vietnamese": "Khí ni-tơ: chiếm khoảng 78 phần trăm không khí khô.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.1",
+    "word": "Oxygen",
+    "definition": "A gas in the air that humans and many other organisms need for respiration.",
+    "example": "Our bodies use _____ from the air we breathe.",
+    "vietnamese": "Khí ô-xy: cần cho sự hô hấp của con người và nhiều sinh vật.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.1",
+    "word": "Carbon dioxide",
+    "definition": "A gas released during respiration and produced when many fuels burn.",
+    "example": "Plants use _____ from the air to make food in sunlight.",
+    "vietnamese": "Khí các-bon đi-ô-xít: được thải ra khi hô hấp và khi nhiều nhiên liệu cháy.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.1",
+    "word": "Water vapour",
+    "definition": "Water in its invisible gas state.",
+    "example": "An evaporating puddle releases _____ into the air.",
+    "vietnamese": "Hơi nước: nước ở thể khí, không nhìn thấy được.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.2",
+    "word": "Boil",
+    "definition": "To change from a liquid into a gas throughout the liquid, forming bubbles.",
+    "example": "At standard atmospheric pressure, pure water begins to _____ at 100°C.",
+    "vietnamese": "Sôi: chất lỏng chuyển thành khí trong toàn bộ chất lỏng, tạo bọt.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.2",
+    "word": "Boiling point",
+    "definition": "The temperature at which a liquid forms gas bubbles throughout, at a given pressure.",
+    "example": "The _____ of pure water is 100°C at standard atmospheric pressure.",
+    "vietnamese": "Điểm sôi: nhiệt độ chất lỏng sôi ở một áp suất xác định.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.2",
+    "word": "Contract",
+    "definition": "To become smaller and take up less space.",
+    "example": "Most liquids _____ as they cool, but water behaves differently when it freezes.",
+    "vietnamese": "Co lại: trở nên nhỏ hơn, chiếm ít không gian hơn.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.2",
+    "word": "Expand",
+    "definition": "To become larger and take up more space.",
+    "example": "Water will _____ when it freezes, so a full sealed bottle may crack.",
+    "vietnamese": "Nở ra: tăng kích thước hoặc thể tích.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.2",
+    "word": "Melt",
+    "definition": "To change from a solid into a liquid.",
+    "example": "Ice cubes _____ when they receive enough heat.",
+    "vietnamese": "Nóng chảy: chuyển từ thể rắn sang thể lỏng.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.2",
+    "word": "Melting point",
+    "definition": "The temperature at which a solid changes into a liquid at a given pressure.",
+    "example": "The _____ of pure ice is about 0°C at standard atmospheric pressure.",
+    "vietnamese": "Điểm nóng chảy: nhiệt độ chất rắn chuyển thành chất lỏng.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.2",
+    "word": "Steam",
+    "definition": "Hot water vapour produced when water boils.",
+    "example": "Hot _____ from a kettle can burn skin.",
+    "vietnamese": "Hơi nước nóng sinh ra khi nước sôi; bản thân hơi nước ở thể khí không nhìn thấy được.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.2",
+    "word": "Temperature",
+    "definition": "A measure of how hot or cold something is.",
+    "example": "We measure the water's _____ before adding sugar.",
+    "vietnamese": "Nhiệt độ: đại lượng cho biết mức độ nóng hoặc lạnh.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.2",
+    "word": "Thermometer",
+    "definition": "An instrument used to measure how hot or cold something is.",
+    "example": "Use a _____ to check whether the water is at 40°C.",
+    "vietnamese": "Nhiệt kế: dụng cụ đo nhiệt độ.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.2",
+    "word": "Freeze",
+    "definition": "To change from a liquid into a solid by losing thermal energy.",
+    "example": "Water can _____ into ice when it is cooled sufficiently.",
+    "vietnamese": "Đóng băng; đông đặc: chuyển từ thể lỏng sang thể rắn khi mất nhiệt.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.2",
+    "word": "Freezing point",
+    "definition": "The temperature at which a liquid changes into a solid at a given pressure.",
+    "example": "Pure water has a _____ of about 0°C at standard atmospheric pressure.",
+    "vietnamese": "Điểm đóng băng: nhiệt độ chất lỏng chuyển thành chất rắn.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.2",
+    "word": "Pure water",
+    "definition": "Water containing no other substances mixed into it.",
+    "example": "Dissolved salt means seawater is not _____.",
+    "vietnamese": "Nước tinh khiết: chỉ chứa nước, không lẫn chất khác.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.2",
+    "word": "Degrees Celsius",
+    "definition": "Units on a temperature scale where pure water freezes at about zero at standard atmospheric pressure.",
+    "example": "The classroom thermometer reads twenty-five _____.",
+    "vietnamese": "Độ C: đơn vị nhiệt độ; còn gọi là degrees centigrade.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.3",
     "word": "Condensation",
-    "definition": "The change of gaseous vapor back into tiny droplets upon encountering cool surfaces.",
-    "example": "Warm breath against cold window glass creates cloudy _____ droplets.",
-    "vietnamese": "Sự ngưng tụ từ thể khí thành giọt nước.",
+    "definition": "The change from a gas into a liquid as it loses thermal energy.",
+    "example": "Drops on the outside of a cold glass form by _____.",
+    "vietnamese": "Sự ngưng tụ: khí chuyển thành chất lỏng khi mất nhiệt; động từ: condense.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.3",
+    "word": "Evaporate",
+    "definition": "To change from a liquid into a gas at the surface, even below the boiling point.",
+    "example": "Water on a wet towel can _____ on a warm day.",
+    "vietnamese": "Bay hơi: chuyển từ lỏng thành khí ở bề mặt, kể cả dưới nhiệt độ sôi.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.3",
+    "word": "Evaporation",
+    "definition": "The process in which a liquid changes into a gas at its surface.",
+    "example": "A shallow tray can speed up _____ by exposing a larger area of water.",
+    "vietnamese": "Sự bay hơi: quá trình chất lỏng chuyển thành khí ở bề mặt.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.3",
+    "word": "Precipitation",
+    "definition": "Water falling from clouds as rain, snow, hail or other forms.",
+    "example": "Rain and snow are both types of _____.",
+    "vietnamese": "Giáng thủy: nước rơi từ mây dưới dạng mưa, tuyết, mưa đá hoặc dạng khác.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.3",
+    "word": "Water cycle",
+    "definition": "The continuous movement of water between the Earth's surface and the atmosphere.",
+    "example": "Evaporation, cloud formation and rain are parts of the _____.",
+    "vietnamese": "Vòng tuần hoàn nước: sự lưu chuyển liên tục của nước giữa bề mặt Trái Đất và khí quyển.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.4",
+    "word": "Dissolve",
+    "definition": "To mix into a solvent so that the substance's particles spread evenly through it.",
+    "example": "Salt crystals _____ in water but the salt is still present.",
+    "vietnamese": "Hòa tan: các hạt của chất phân bố đều trong dung môi.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.4",
+    "word": "Fertilisers",
+    "definition": "Substances added to soil or crops to supply nutrients for plant growth.",
+    "example": "Too much rain can wash _____ from fields into rivers.",
+    "vietnamese": "Phân bón: chất cung cấp dinh dưỡng cho cây; một số có thể hòa tan và gây ô nhiễm nước.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.4",
+    "word": "Insoluble",
+    "definition": "Unable to dissolve in a particular solvent.",
+    "example": "Sand is _____ in water, so grains remain visible.",
+    "vietnamese": "Không tan trong một dung môi xác định.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.4",
+    "word": "Pesticides",
+    "definition": "Substances used to control organisms that damage crops.",
+    "example": "Farmers use _____ to control insects that eat their crops.",
+    "vietnamese": "Thuốc bảo vệ thực vật; thuốc trừ sâu: dùng để kiểm soát sinh vật gây hại cây trồng.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.4",
+    "word": "Reversible",
+    "definition": "Able to be changed back to recover the starting materials.",
+    "example": "Dissolving salt in water is _____ because we can recover the salt.",
+    "vietnamese": "Thuận nghịch: có thể đảo ngược để thu hồi chất ban đầu.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.4",
+    "word": "Soluble",
+    "definition": "Able to dissolve in a particular solvent.",
+    "example": "Sugar is _____ in water, but sand is not.",
+    "vietnamese": "Có thể hòa tan trong một dung môi xác định.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.4",
+    "word": "Solute",
+    "definition": "The substance that dissolves in a solvent to make a solution.",
+    "example": "In salt water, the salt is the _____.",
+    "vietnamese": "Chất tan: chất hòa tan trong dung môi để tạo dung dịch.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.4",
+    "word": "Solution",
+    "definition": "A uniform mixture formed when a substance dissolves in a solvent.",
+    "example": "After all the sugar dissolves, the sugar water is a _____.",
+    "vietnamese": "Dung dịch: hỗn hợp đồng nhất tạo thành khi chất tan hòa tan trong dung môi.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.4",
+    "word": "Solvent",
+    "definition": "The substance, usually a liquid, that dissolves another substance.",
+    "example": "In sugar water, water is the _____.",
+    "vietnamese": "Dung môi: chất, thường là chất lỏng, hòa tan chất khác.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.4",
+    "word": "Uniform",
+    "definition": "The same throughout, with substances evenly distributed.",
+    "example": "A salt solution is _____ because the dissolved salt is spread evenly.",
+    "vietnamese": "Đồng nhất: có thành phần phân bố đều trong toàn bộ hỗn hợp.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.4",
+    "word": "Universal solvent",
+    "definition": "A common name for water because it dissolves many different substances.",
+    "example": "Water is called the _____, although it cannot dissolve everything.",
+    "vietnamese": "Dung môi vạn năng: tên thường gọi của nước vì hòa tan được nhiều chất, không phải mọi chất.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.4",
+    "word": "Mixture",
+    "definition": "Two or more substances together without being chemically joined.",
+    "example": "Sand and water make a _____ with visible grains.",
+    "vietnamese": "Hỗn hợp: gồm hai hay nhiều chất trộn với nhau mà không liên kết hóa học.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.4",
+    "word": "Separate",
+    "definition": "To divide the substances in a mixture or recover one of them.",
+    "example": "We can _____ salt from salt water by evaporating the water.",
+    "vietnamese": "Tách chất: chia các thành phần của hỗn hợp hoặc thu hồi một thành phần.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.4",
+    "word": "Crystal",
+    "definition": "A solid with a regular internal arrangement of its building blocks.",
+    "example": "After the salt water dries, a small salt _____ remains.",
+    "vietnamese": "Tinh thể: chất rắn có cấu trúc các hạt bên trong sắp xếp có trật tự.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.4",
+    "word": "Fair testing",
+    "definition": "Comparing results by changing one factor and keeping other relevant factors the same.",
+    "example": "Using equal amounts of water is important for _____ when comparing dissolving times.",
+    "vietnamese": "Thử nghiệm công bằng: chỉ đổi yếu tố khảo sát và giữ các yếu tố liên quan khác như nhau.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.4",
+    "word": "Independent variable",
+    "definition": "The factor deliberately changed in an investigation.",
+    "example": "When testing how warmth affects dissolving time, water temperature is the _____.",
+    "vietnamese": "Biến độc lập: yếu tố được chủ động thay đổi trong thí nghiệm.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.4",
+    "word": "Dependent variable",
+    "definition": "The factor measured or observed in an investigation.",
+    "example": "When testing how stirring affects dissolving, the time taken is the _____.",
+    "vietnamese": "Biến phụ thuộc: yếu tố được đo hoặc quan sát trong thí nghiệm.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.4",
+    "word": "Control variable",
+    "definition": "A factor kept the same to make an investigation fair.",
+    "example": "The amount of sugar is a _____ when only water temperature is changed.",
+    "vietnamese": "Biến kiểm soát: yếu tố được giữ không đổi để thí nghiệm công bằng.",
     "grade": 4,
     "disabled": false
   }
