@@ -279,25 +279,7 @@
     "disabled": false
   },
   {
-    "unit": "1",
-    "word": "Place value",
-    "definition": "The value of a digit depending on its position in a number.",
-    "example": "-",
-    "vietnamese": "Giá trị theo hàng (Giá trị của từng chữ số dựa vào vị trí của nó trong một số).",
-    "grade": 4,
-    "disabled": false
-  },
-  {
-    "unit": "1",
-    "word": "Digit",
-    "definition": "Any of the symbols 0, 1, 2, 3, 4, 5, 6, 7, 8, or 9 used to write numbers.",
-    "example": "-",
-    "vietnamese": "Chữ số (Các ký hiệu từ 0 đến 9 được dùng để viết nên các số).",
-    "grade": 4,
-    "disabled": false
-  },
-  {
-    "unit": "1",
+    "unit": "1.1",
     "word": "Hundred thousands",
     "definition": "The place value position worth 100,000.",
     "example": "-",
@@ -306,7 +288,7 @@
     "disabled": false
   },
   {
-    "unit": "1",
+    "unit": "1.1",
     "word": "Millions",
     "definition": "The place value position worth 1,000,000.",
     "example": "-",
@@ -315,7 +297,7 @@
     "disabled": false
   },
   {
-    "unit": "1",
+    "unit": "1.2",
     "word": "Rounding",
     "definition": "Changing a number to the nearest 10, 100, or 1000 to make it simpler.",
     "example": "-",
@@ -324,7 +306,7 @@
     "disabled": false
   },
   {
-    "unit": "1",
+    "unit": "5.1",
     "word": "Estimate",
     "definition": "To find a value that is close enough to the right answer.",
     "example": "-",
@@ -563,6 +545,186 @@
     "definition": "Counting forwards to add or backwards to subtract.",
     "example": "-",
     "vietnamese": "Đếm tiến / Đếm lùi (Đếm tiến lên để cộng hoặc đếm lùi lại để trừ).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1.1",
+    "word": "Decimal places",
+    "definition": "The positions of digits to the right of the decimal point.",
+    "example": "In 4.27, the 2 and 7 are in different _____.",
+    "vietnamese": "Các hàng chữ số ở bên phải dấu thập phân.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1.1",
+    "word": "Whole number",
+    "definition": "A number with no fractional or decimal part.",
+    "example": "The number 12 is a _____.",
+    "vietnamese": "Số nguyên không có phần phân số hay thập phân.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1.1",
+    "word": "Equivalent",
+    "definition": "Having the same value, even when written differently.",
+    "example": "0.5 and 0.50 are _____ decimal numbers.",
+    "vietnamese": "Tương đương, có cùng giá trị dù được viết khác nhau.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1.1",
+    "word": "Multiply",
+    "definition": "To find the total of equal groups.",
+    "example": "To change metres into centimetres, _____ by 100.",
+    "vietnamese": "Nhân, tìm tổng của các nhóm bằng nhau.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1.1",
+    "word": "Divide",
+    "definition": "To split a quantity into equal groups or parts.",
+    "example": "To change centimetres into metres, _____ by 100.",
+    "vietnamese": "Chia một lượng thành các nhóm hoặc phần bằng nhau.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1.1",
+    "word": "Expanded form",
+    "definition": "A way of writing a number as the sum of the value of each digit.",
+    "example": "The _____ of 34.2 is 30 + 4 + 0.2.",
+    "vietnamese": "Dạng khai triển, viết số thành tổng giá trị từng chữ số.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1.2",
+    "word": "Metre",
+    "definition": "A metric unit for measuring length, equal to 100 centimetres.",
+    "example": "The table is about one _____ long.",
+    "vietnamese": "Mét, đơn vị đo độ dài bằng 100 xăng-ti-mét.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1.2",
+    "word": "Centimetre",
+    "definition": "A metric unit of length equal to one hundredth of a metre.",
+    "example": "A small eraser may be 4 _____ long.",
+    "vietnamese": "Xăng-ti-mét, bằng một phần trăm mét.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1.2",
+    "word": "Gram",
+    "definition": "A metric unit for measuring mass; 1,000 grams make a kilogram.",
+    "example": "A paper clip has a mass of about one _____.",
+    "vietnamese": "Gam, đơn vị đo khối lượng.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1.2",
+    "word": "Kilogram",
+    "definition": "A metric unit of mass equal to 1,000 grams.",
+    "example": "A large bag of rice may have a mass of one _____.",
+    "vietnamese": "Ki-lô-gam, bằng 1.000 gam.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "5.1",
+    "word": "Operation",
+    "definition": "A mathematical process such as addition or subtraction.",
+    "example": "Choose the correct _____ to solve the number sentence.",
+    "vietnamese": "Phép toán, quá trình như cộng hoặc trừ.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "5.1",
+    "word": "Calculate",
+    "definition": "To work out an answer using numbers and operations.",
+    "example": "Use the column method to _____ the total.",
+    "vietnamese": "Tính toán, tìm đáp án bằng các phép toán.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "5.1",
+    "word": "Carry",
+    "definition": "To move a value into the next place when regrouping in addition.",
+    "example": "When the tenths total ten, _____ one whole to the next column.",
+    "vietnamese": "Nhớ và chuyển giá trị sang hàng kế tiếp khi cộng có đổi nhóm.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "5.1",
+    "word": "Integer",
+    "definition": "A whole number, its opposite, or zero.",
+    "example": "Negative three is an _____.",
+    "vietnamese": "Số nguyên, gồm số nguyên âm, số nguyên dương và số không.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "5.1",
+    "word": "Thousands",
+    "definition": "The place-value group representing groups of one thousand.",
+    "example": "The digit 4 in 4,200 is in the _____ place.",
+    "vietnamese": "Hàng nghìn, các nhóm có giá trị một nghìn.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "5.1",
+    "word": "Symbol",
+    "definition": "A mark or character used to represent a number or operation.",
+    "example": "In 8 + □ = 13, the square is a _____ for an unknown value.",
+    "vietnamese": "Ký hiệu, dấu dùng để biểu thị số hoặc phép toán.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "5.1",
+    "word": "Below",
+    "definition": "At a lower level or value than something else.",
+    "example": "The temperature fell _____ zero overnight.",
+    "vietnamese": "Ở dưới, thấp hơn một mức hoặc giá trị.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "5.1",
+    "word": "Higher",
+    "definition": "At a greater level or value than something else.",
+    "example": "The answer is _____ than 5.2.",
+    "vietnamese": "Cao hơn, lớn hơn về mức độ hoặc giá trị.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "5.1",
+    "word": "Positive",
+    "definition": "Greater than zero in value.",
+    "example": "The answer is _____, so it lies above zero on the number line.",
+    "vietnamese": "Dương, có giá trị lớn hơn không.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "5.1",
+    "word": "Negative",
+    "definition": "Less than zero in value.",
+    "example": "A temperature of −3 °C is _____.",
+    "vietnamese": "Âm, có giá trị nhỏ hơn không.",
     "grade": 4,
     "disabled": false
   }

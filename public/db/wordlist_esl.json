@@ -189,33 +189,6 @@
     "disabled": false
   },
   {
-    "unit": "3.1",
-    "word": "Crowded",
-    "definition": "Completely packed full of people or things, leaving little free space.",
-    "example": "The city metro station was very _____ during morning rush hour.",
-    "vietnamese": "Đông đúc, chật ních người.",
-    "grade": 4,
-    "disabled": false
-  },
-  {
-    "unit": "3.1",
-    "word": "Eco-friendly",
-    "definition": "Designed and operated in ways that do not harm nature or ecosystems.",
-    "example": "Using solar panels on houses is an _____ way to generate electricity.",
-    "vietnamese": "Thân thiện với môi trường.",
-    "grade": 4,
-    "disabled": false
-  },
-  {
-    "unit": "3.1",
-    "word": "Suburb",
-    "definition": "An outlying residential district situated on the outskirts of a city.",
-    "example": "They moved from the crowded center to a peaceful, green _____.",
-    "vietnamese": "Khu vực ngoại ô thành phố.",
-    "grade": 4,
-    "disabled": false
-  },
-  {
     "unit": "4.1",
     "word": "Celebrate",
     "definition": "To engage in enjoyable public or private activities for a special event.",
@@ -387,7 +360,7 @@
     "disabled": false
   },
   {
-    "unit": "1",
+    "unit": "1.1",
     "word": "Talkative",
     "definition": "Fond of speaking a great deal and having conversations with others.",
     "example": "She is a talkative girl who loves telling stories.",
@@ -396,7 +369,7 @@
     "disabled": false
   },
   {
-    "unit": "1",
+    "unit": "1.1",
     "word": "Generous",
     "definition": "Willing to give money, help, or kindness freely to other people.",
     "example": "He is generous and always shares his toys.",
@@ -405,7 +378,7 @@
     "disabled": false
   },
   {
-    "unit": "1",
+    "unit": "1.1",
     "word": "Hardworking",
     "definition": "Putting a large amount of effort, care, and energy into tasks.",
     "example": "The hardworking students got top marks.",
@@ -414,7 +387,7 @@
     "disabled": false
   },
   {
-    "unit": "1",
+    "unit": "1.1",
     "word": "Outgoing",
     "definition": "Friendly, energetic, and finding it easy to meet and talk to new people.",
     "example": "An outgoing person makes friends easily.",
@@ -423,7 +396,7 @@
     "disabled": false
   },
   {
-    "unit": "1",
+    "unit": "1.1",
     "word": "Shy",
     "definition": "Nervous and uncomfortable about meeting or speaking to others.",
     "example": "He felt shy when speaking in front of the class.",
@@ -432,7 +405,7 @@
     "disabled": false
   },
   {
-    "unit": "1",
+    "unit": "1.1",
     "word": "Bad-tempered",
     "definition": "Easily annoyed, grumpy, or becoming angry very quickly.",
     "example": "Don't be bad-tempered when things go wrong.",
@@ -441,7 +414,7 @@
     "disabled": false
   },
   {
-    "unit": "1",
+    "unit": "1.1",
     "word": "Selfish",
     "definition": "Caring only about oneself and not thinking about others' needs.",
     "example": "It is selfish to keep all the sweets for yourself.",
@@ -450,7 +423,7 @@
     "disabled": false
   },
   {
-    "unit": "1",
+    "unit": "1.1",
     "word": "Nervous",
     "definition": "Worried and anxious about something that is happening or will happen.",
     "example": "She was nervous before the big exam.",
@@ -459,7 +432,7 @@
     "disabled": false
   },
   {
-    "unit": "1",
+    "unit": "1.1",
     "word": "Cheerful",
     "definition": "Noticeably happy, optimistic, and showing good spirits.",
     "example": "His cheerful smile brightened everyone's day.",
@@ -468,7 +441,7 @@
     "disabled": false
   },
   {
-    "unit": "1",
+    "unit": "1.1",
     "word": "Lazy",
     "definition": "Unwilling to work, exercise, or put in any mental or physical effort.",
     "example": "He didn't do his homework because he was lazy.",
@@ -477,7 +450,7 @@
     "disabled": false
   },
   {
-    "unit": "1",
+    "unit": "1.1",
     "word": "Calm",
     "definition": "Peaceful, quiet, and free from anger, fear, or strong excitement.",
     "example": "Stay calm during the emergency test.",
@@ -486,7 +459,7 @@
     "disabled": false
   },
   {
-    "unit": "1",
+    "unit": "1.1",
     "word": "Quiet",
     "definition": "Making very little sound, or speaking rarely and softly.",
     "example": "She is quiet and likes reading books.",
@@ -495,7 +468,7 @@
     "disabled": false
   },
   {
-    "unit": "1",
+    "unit": "1.5",
     "word": "Impressive",
     "definition": "-",
     "example": "Her performance was really impressive.",
@@ -504,7 +477,7 @@
     "disabled": false
   },
   {
-    "unit": "1",
+    "unit": "1.5",
     "word": "Expert",
     "definition": "-",
     "example": "He is an expert in computer science.",
@@ -513,7 +486,7 @@
     "disabled": false
   },
   {
-    "unit": "1",
+    "unit": "1.5",
     "word": "Champion",
     "definition": "-",
     "example": "She became the chess champion of our school.",
@@ -522,7 +495,7 @@
     "disabled": false
   },
   {
-    "unit": "1",
+    "unit": "1.5",
     "word": "Enormous",
     "definition": "-",
     "example": "They saw an enormous elephant in the safari.",
@@ -531,7 +504,7 @@
     "disabled": false
   },
   {
-    "unit": "1",
+    "unit": "1.5",
     "word": "Juggle",
     "definition": "-",
     "example": "The performer can juggle four balls at once.",
@@ -540,7 +513,7 @@
     "disabled": false
   },
   {
-    "unit": "1",
+    "unit": "1.5",
     "word": "Carry",
     "definition": "-",
     "example": "Can you help me carry these heavy books?",
@@ -549,7 +522,7 @@
     "disabled": false
   },
   {
-    "unit": "1",
+    "unit": "1.5",
     "word": "Hoist",
     "definition": "-",
     "example": "They hoist the flag early in the morning.",
@@ -558,11 +531,11 @@
     "disabled": false
   },
   {
-    "unit": "1",
-    "word": "A dozen",
-    "definition": "-",
-    "example": "My mom bought a dozen eggs from the store.",
-    "vietnamese": "Một tá (12 cái)",
+    "unit": "1.5",
+    "word": "Dozen",
+    "definition": "A group or quantity of twelve items.",
+    "example": "There are twelve eggs in a _____. ",
+    "vietnamese": "Một tá, số lượng gồm mười hai món.",
     "grade": 4,
     "disabled": false
   },
@@ -801,227 +774,1793 @@
     "disabled": false
   },
   {
-    "unit": "3",
+    "unit": "1.2",
+    "word": "Active citizen",
+    "definition": "A person who takes part in improving the place where people live.",
+    "example": "An _____ helps keep the park clean.",
+    "vietnamese": "Công dân tích cực, chủ động góp phần cải thiện cộng đồng.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1.2",
+    "word": "Local environment",
+    "definition": "The natural and built places around a community.",
+    "example": "The class picked up litter to improve the _____.",
+    "vietnamese": "Môi trường địa phương, gồm cảnh quan tự nhiên và nơi con người sinh sống.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1.2",
+    "word": "Issue",
+    "definition": "A problem or subject that people need to think about.",
+    "example": "Litter in the playground is an _____ we can solve together.",
+    "vietnamese": "Vấn đề cần được quan tâm hoặc giải quyết.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1.2",
+    "word": "Solve",
+    "definition": "To find an answer to a problem.",
+    "example": "We can _____ the problem by adding more recycling bins.",
+    "vietnamese": "Giải quyết, tìm cách xử lý một vấn đề.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1.2",
+    "word": "Interested in",
+    "definition": "Giving attention to or wanting to learn about something.",
+    "example": "Maya is _____ science and asks many questions.",
+    "vietnamese": "Quan tâm đến, hứng thú với.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1.2",
+    "word": "Worried about",
+    "definition": "Feeling uneasy because something might go wrong.",
+    "example": "He is _____ the lost puppy.",
+    "vietnamese": "Lo lắng về.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1.2",
+    "word": "Ready to",
+    "definition": "Prepared and willing to do something.",
+    "example": "The volunteers are _____ help their neighbours.",
+    "vietnamese": "Sẵn sàng làm việc gì.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1.2",
+    "word": "Shocked by",
+    "definition": "Very surprised or upset because of something.",
+    "example": "We were _____ the amount of rubbish on the beach.",
+    "vietnamese": "Bị sốc, rất ngạc nhiên hoặc khó chịu bởi.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1.2",
+    "word": "Excited by",
+    "definition": "Feeling very happy and eager because of something.",
+    "example": "The children were _____ the idea of planting a garden.",
+    "vietnamese": "Hào hứng, phấn khích vì.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1.2",
+    "word": "Good at",
+    "definition": "Able to do something well.",
+    "example": "Lan is _____ drawing portraits.",
+    "vietnamese": "Giỏi về, làm tốt việc gì.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1.2",
+    "word": "Pleased with",
+    "definition": "Feeling happy or satisfied about something.",
+    "example": "The team was _____ its helpful project.",
+    "vietnamese": "Hài lòng với.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1.3",
+    "word": "Respond",
+    "definition": "To answer or react to a question or message.",
+    "example": "Please _____ to the interviewer’s question in a full sentence.",
+    "vietnamese": "Trả lời hoặc phản hồi câu hỏi hay thông điệp.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1.4",
+    "word": "Positive",
+    "definition": "Helpful, hopeful, or showing a good quality.",
+    "example": "A _____ role model encourages others.",
+    "vietnamese": "Tích cực, lạc quan hoặc có phẩm chất tốt.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1.4",
+    "word": "Challenge",
+    "definition": "A difficult task or situation that tests what someone can do.",
+    "example": "Learning a new skill can be a fun _____.",
+    "vietnamese": "Thử thách, việc khó cần nỗ lực vượt qua.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1.4",
+    "word": "Background",
+    "definition": "The experiences and circumstances that help explain a person’s life.",
+    "example": "In her _____, she describes where she grew up.",
+    "vietnamese": "Hoàn cảnh, trải nghiệm và thông tin về cuộc đời một người.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1.4",
+    "word": "Personality trait",
+    "definition": "A quality that describes how someone usually behaves.",
+    "example": "Kindness is a _____ that makes a person a good friend.",
+    "vietnamese": "Đặc điểm tính cách, phẩm chất thể hiện cách một người thường cư xử.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1.5",
+    "word": "Superlatively",
+    "definition": "In the highest or greatest possible degree.",
+    "example": "The poem describes the dancer _____ as the best in the world.",
+    "vietnamese": "Ở mức độ cao nhất, vượt trội nhất.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1.5",
+    "word": "Bulge",
+    "definition": "A rounded part that sticks out from a surface.",
+    "example": "A ball made the pocket _____ out.",
+    "vietnamese": "Chỗ phồng lên, phần lồi ra.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1.5",
+    "word": "Top to toe",
+    "definition": "From the highest part of the body down to the feet.",
+    "example": "The costume was covered in glitter from _____ .",
+    "vietnamese": "Từ đầu đến chân.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1.5",
+    "word": "Ripple to and fro",
+    "definition": "To move back and forth in small waves.",
+    "example": "The long ribbon began to _____ in the breeze.",
+    "vietnamese": "Gợn sóng, đung đưa qua lại.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1.5",
+    "word": "Mambo",
+    "definition": "A lively dance with a strong rhythm.",
+    "example": "The couple performed a lively _____ to the music.",
+    "vietnamese": "Điệu nhảy mambo sôi động.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1.5",
+    "word": "Tap",
+    "definition": "To strike lightly, often in time with music.",
+    "example": "She began to _____ her foot to the beat.",
+    "vietnamese": "Gõ hoặc chạm nhẹ, thường theo nhịp.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1.5",
+    "word": "Waltz",
+    "definition": "A graceful dance performed by two people to a regular three-beat rhythm.",
+    "example": "They learned to dance a slow _____.",
+    "vietnamese": "Điệu van, điệu nhảy đôi theo nhịp ba.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1.5",
+    "word": "Airborne somersault",
+    "definition": "A complete turn of the body while jumping through the air.",
+    "example": "The gymnast completed an _____ before landing safely.",
+    "vietnamese": "Động tác lộn vòng trên không.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1.5",
+    "word": "Chess",
+    "definition": "A board game in which two players move pieces to try to trap the other king.",
+    "example": "We played _____ after finishing our homework.",
+    "vietnamese": "Cờ vua.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1.5",
+    "word": "Skill",
+    "definition": "The ability to do something well, usually gained through practice.",
+    "example": "Playing the piano takes patience and _____.",
+    "vietnamese": "Kỹ năng, khả năng làm tốt một việc.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1.5",
+    "word": "Possess",
+    "definition": "To have or own something.",
+    "example": "The hero seems to _____ great courage.",
+    "vietnamese": "Sở hữu, có.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1.5",
+    "word": "Racing",
+    "definition": "Taking part in a contest to see who moves fastest.",
+    "example": "The children were _____ across the field.",
+    "vietnamese": "Đua, thi xem ai di chuyển nhanh hơn.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1.5",
+    "word": "Masterful",
+    "definition": "Showing great skill and control.",
+    "example": "The artist gave a _____ performance.",
+    "vietnamese": "Điêu luyện, rất thành thạo.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1.5",
+    "word": "Wrestle",
+    "definition": "To fight or compete by holding and throwing an opponent.",
+    "example": "The two athletes will _____ on the mat.",
+    "vietnamese": "Vật, thi đấu bằng cách ghì và quật đối thủ.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1.5",
+    "word": "Comb",
+    "definition": "A tool with narrow teeth used to tidy hair.",
+    "example": "He used a _____ to smooth his hair.",
+    "vietnamese": "Cái lược; chải bằng lược.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.1",
+    "word": "Office building",
+    "definition": "A large structure in a city where people work at desks and computers.",
+    "example": "My aunt works on the tenth floor of a tall _____ in the city centre.",
+    "vietnamese": "Tòa nhà văn phòng (nơi mọi người làm việc trong thành phố).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.1",
+    "word": "Pavement",
+    "definition": "A hard, raised path along the side of a street where pedestrians walk safely.",
+    "example": "Always walk on the _____ instead of stepping into the busy road.",
+    "vietnamese": "Vỉa hè (lối đi bộ dọc hai bên đường phố).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.1",
+    "word": "Traffic lights",
+    "definition": "Red, amber, and green signals that control vehicles on roads.",
+    "example": "All the cars stopped when the _____ turned red at the corner.",
+    "vietnamese": "Đèn giao thông (đèn đỏ, vàng, xanh điều khiển phương tiện).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.1",
+    "word": "Zebra crossing",
+    "definition": "Black and white stripes painted on a road where people can walk across safely.",
+    "example": "Wait for the cars to stop before walking across the _____.",
+    "vietnamese": "Vạch kẻ sang đường (các vạch trắng đen dành cho người đi bộ qua đường).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.1",
+    "word": "Hospital",
+    "definition": "A large medical building where doctors and nurses care for ill or injured people.",
+    "example": "The ambulance took the injured cyclist to the nearest _____.",
+    "vietnamese": "Bệnh viện (nơi khám và chữa bệnh khi bị ốm hoặc bị thương).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.1",
+    "word": "Suburb",
+    "definition": "An outer residential area of a town or city away from the busy centre.",
+    "example": "Our family lives in a quiet _____ with gardens and parks.",
+    "vietnamese": "Khu ngoại ô (khu dân cư ở rìa ngoài trung tâm thành phố).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.1",
     "word": "Skyscraper",
-    "definition": "A continuously habitable high-rise building of many storeys.",
-    "example": "The city skyline is dominated by modern skyscrapers.",
-    "vietnamese": "Tòa nhà cao tầng / Tòa nhà chọc trời",
+    "definition": "A very tall, modern city building with many storeys reaching high into the sky.",
+    "example": "From the top of the _____, you can see the whole city below.",
+    "vietnamese": "Tòa nhà chọc trời (tòa nhà hiện đại rất cao có nhiều tầng).",
     "grade": 4,
     "disabled": false
   },
   {
-    "unit": "3",
-    "word": "Pedestrian zone / Street",
-    "definition": "An area of a city reserved exclusively for pedestrian traffic.",
-    "example": "Motor vehicles are prohibited in the central pedestrian zone.",
-    "vietnamese": "Phố đi bộ / Khu vực dành cho người đi bộ",
+    "unit": "3.1",
+    "word": "Apartment",
+    "definition": "A set of rooms for living in, usually on one floor of a large building.",
+    "example": "They live in a bright _____ on the fifth floor of the building.",
+    "vietnamese": "Căn hộ chung cư (dãy phòng để ở trên một tầng của tòa nhà).",
     "grade": 4,
     "disabled": false
   },
   {
-    "unit": "3",
-    "word": "Suburbs/ Outskirts",
-    "definition": "Residential districts situated on the outer fringes of a city.",
-    "example": "Many commuters reside in the green residential suburbs.",
-    "vietnamese": "Vùng ngoại ô / Ngoại thành",
+    "unit": "3.1",
+    "word": "Flat",
+    "definition": "A British English word for a home made of a set of rooms on one floor of a building.",
+    "example": "Our _____ has a small balcony overlooking the city park.",
+    "vietnamese": "Căn hộ chung cư (từ tiếng Anh - Anh chỉ căn hộ trên một tầng nhà).",
     "grade": 4,
     "disabled": false
   },
   {
-    "unit": "3",
-    "word": "Harbour/Port",
-    "definition": "A sheltered body of water where vessels load or unload cargo.",
-    "example": "Commercial cargo vessels anchored safely inside the harbour.",
-    "vietnamese": "Bến cảng / Hải cảng",
+    "unit": "3.1",
+    "word": "Hometown",
+    "definition": "The town or city where you were born or grew up as a child.",
+    "example": "Every summer, we travel back to visit my grandparents in my _____.",
+    "vietnamese": "Quê hương (thị trấn hoặc thành phố nơi mình sinh ra và lớn lên).",
     "grade": 4,
     "disabled": false
   },
   {
-    "unit": "3",
-    "word": "Town square / Plaza",
-    "definition": "An open public space located at the junction of urban streets.",
-    "example": "Citizens gathered at the town square for the official ceremony.",
-    "vietnamese": "Quảng trường thành phố",
+    "unit": "3.1",
+    "word": "Mountain",
+    "definition": "A very high natural landform made of rock that rises far above the land around it.",
+    "example": "Snow covered the top of the highest _____ in winter.",
+    "vietnamese": "Ngọn núi (vùng đất đá tự nhiên rất cao).",
     "grade": 4,
     "disabled": false
   },
   {
-    "unit": "3",
-    "word": "Marketplace",
-    "definition": "A public square or structure where merchandise is bought and sold.",
-    "example": "Local vendors display traditional handicrafts at the marketplace.",
-    "vietnamese": "Chợ trung tâm / Khu thương mại",
+    "unit": "3.1",
+    "word": "Mountainous",
+    "definition": "Describing a region or landscape that has many high rocky peaks.",
+    "example": "Ha Giang is a _____ province in northern Vietnam with steep roads.",
+    "vietnamese": "Nhiều núi, thuộc vùng núi (khu vực có nhiều ngọn núi).",
     "grade": 4,
     "disabled": false
   },
   {
-    "unit": "3",
-    "word": "Pedestrian crossing / Zebra crossing",
-    "definition": "A designated section of road giving pedestrians right of way.",
-    "example": "Drivers must stop when pedestrians use the zebra crossing.",
-    "vietnamese": "Vạch sang đường cho người đi bộ",
+    "unit": "3.1",
+    "word": "Hill",
+    "definition": "A raised area of land with a rounded top that is lower than a mountain.",
+    "example": "We walked up the grassy _____ to watch the sunset over the village.",
+    "vietnamese": "Ngọn đồi (vùng đất nhô cao nhưng thấp hơn núi).",
     "grade": 4,
     "disabled": false
   },
   {
-    "unit": "3",
-    "word": "Traffic light/Signals",
-    "definition": "Signalling devices positioned at road intersections to control traffic flow.",
-    "example": "The traffic lights manage vehicular flow across the junction.",
-    "vietnamese": "Hệ thống đèn giao thông",
+    "unit": "3.1",
+    "word": "Path",
+    "definition": "A narrow track made for walking through the countryside, woods, or a park.",
+    "example": "The hikers followed a narrow dirt _____ through the trees.",
+    "vietnamese": "Đường mòn, lối đi nhỏ (ở vùng quê hoặc trong rừng).",
     "grade": 4,
     "disabled": false
   },
   {
-    "unit": "3",
-    "word": "Monument/Landmark",
-    "definition": "A structure erected to commemorate a person or historical event.",
-    "example": "The national monument commemorates historical independence.",
-    "vietnamese": "Đài tưởng niệm / Di tích lịch sử",
+    "unit": "3.1",
+    "word": "Forest",
+    "definition": "A large area of land where many trees grow closely together.",
+    "example": "Many wild birds and deer live deep inside the green _____.",
+    "vietnamese": "Khu rừng (vùng đất rộng có nhiều cây cối mọc tập trung).",
     "grade": 4,
     "disabled": false
   },
   {
-    "unit": "3",
-    "word": "Transport hub / Bus station",
-    "definition": "A designated terminal where public transport routes originate or terminate.",
-    "example": "Intercity coaches depart regularly from the main transport hub.",
-    "vietnamese": "Bến xe / Trạm trung chuyển giao thông",
+    "unit": "3.1",
+    "word": "Field",
+    "definition": "An open area of land in the countryside where crops grow or farm animals graze.",
+    "example": "The farmer is planting rice in the flooded green _____.",
+    "vietnamese": "Cánh đồng (đất trồng trọt hoặc chăn nuôi ở nông thôn).",
     "grade": 4,
     "disabled": false
   },
   {
-    "unit": "3",
-    "word": "Countryside / Rural area",
-    "definition": "Land outside towns and cities, characterized by agriculture or natural vegetation.",
-    "example": "Rural tourism supports the local economy of the countryside.",
-    "vietnamese": "Vùng nông thôn / Miền quê",
+    "unit": "3.1",
+    "word": "River",
+    "definition": "A large natural stream of fresh water flowing along a channel towards the sea.",
+    "example": "Boats sail under the bridge across the wide _____.",
+    "vietnamese": "Dòng sông (dòng nước tự nhiên lớn chảy ra biển).",
     "grade": 4,
     "disabled": false
   },
   {
-    "unit": "3",
-    "word": "Field/Meadow",
-    "definition": "An expanse of open land used for pasture or cultivation of crops.",
-    "example": "Livestock grazed peacefully across the expansive meadow.",
-    "vietnamese": "Cánh đồng / Đồng cỏ",
+    "unit": "3.1",
+    "word": "Lake",
+    "definition": "A large area of fresh water that is completely surrounded by land.",
+    "example": "We walked around Hoan Kiem _____ in the centre of Hanoi.",
+    "vietnamese": "Hồ nước (vùng nước rộng có đất bao quanh).",
     "grade": 4,
     "disabled": false
   },
   {
-    "unit": "3",
-    "word": "Stream/Creek",
-    "definition": "A small, narrow body of freshwater flowing within a natural channel.",
-    "example": "Fresh mountain water flows downstream along the creek.",
-    "vietnamese": "Dòng suối / Sông nhỏ",
+    "unit": "3.1",
+    "word": "Ocean",
+    "definition": "A vast body of salt water that covers most of the Earth's surface.",
+    "example": "Blue whales swim across the deep _____.",
+    "vietnamese": "Đại dương (biển lớn mênh mông).",
     "grade": 4,
     "disabled": false
   },
   {
-    "unit": "3",
+    "unit": "3.1",
+    "word": "Coast",
+    "definition": "The land next to or close to the sea.",
+    "example": "Da Nang is a beautiful city located on the central _____ of Vietnam.",
+    "vietnamese": "Bờ biển, vùng ven biển.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.1",
+    "word": "Landscape",
+    "definition": "All the visible natural features of an area of land, such as hills, rivers, and trees.",
+    "example": "The countryside has a beautiful _____ of green valleys and waterfalls.",
+    "vietnamese": "Phong cảnh, địa hình tự nhiên của một vùng đất.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.1",
+    "word": "Population",
+    "definition": "The total number of people living in a particular town, city, or country.",
+    "example": "Tokyo has a very large _____ of more than thirty-seven million people.",
+    "vietnamese": "Dân số (tổng số người sinh sống tại một thành phố hoặc quốc gia).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.1",
+    "word": "Populated",
+    "definition": "Having people living there; often used to describe a city with many residents.",
+    "example": "Tokyo is one of the most densely _____ cities in the world.",
+    "vietnamese": "Đông dân, có người sinh sống.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.1",
+    "word": "Landmark",
+    "definition": "A famous building or historical site in a city that is easy to recognise.",
+    "example": "One Direction Tower and the Golden Bridge are famous _____s for visitors.",
+    "vietnamese": "Địa danh nổi tiếng, công trình biểu tượng của thành phố.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.1",
+    "word": "Ancient",
+    "definition": "Very old and belonging to a period of history thousands of years ago.",
+    "example": "Tourists love visiting the _____ temples and stone walls of the old city.",
+    "vietnamese": "Cổ kính, cổ đại (rất lâu đời).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.1",
+    "word": "Modern",
+    "definition": "Built or designed using the most recent styles, materials, and technology.",
+    "example": "The city has a _____ airport with glass walls and fast trains.",
+    "vietnamese": "Hiện đại, tân tiến.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.1",
+    "word": "Crowded",
+    "definition": "Full of a lot of people in one place, leaving very little space to move.",
+    "example": "The market streets get very _____ before the festival.",
+    "vietnamese": "Đông đúc, chật kín người.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.1",
+    "word": "Peaceful",
+    "definition": "Very quiet and calm, without noise, traffic, or worry.",
+    "example": "Life in the countryside is much more _____ than in a big city.",
+    "vietnamese": "Yên bình, thanh tĩnh.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.1",
+    "word": "Noisy",
+    "definition": "Full of loud sounds, honking horns, and heavy traffic.",
+    "example": "The main road outside the station is very _____ during rush hour.",
+    "vietnamese": "Ồn ào, huyên náo.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.1",
+    "word": "Busy",
+    "definition": "Full of lively activity, moving cars, and shoppers all day long.",
+    "example": "London is a _____ city with buses, shops, and thousands of workers.",
+    "vietnamese": "Nhộn nhịp, sầm uất, bận rộn.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.1",
+    "word": "Narrow",
+    "definition": "Measuring a small distance from one side to the other, not wide.",
+    "example": "Frigiliana is famous for its _____ streets where cars cannot drive.",
+    "vietnamese": "Chật hẹp, nhỏ hẹp (khoảng cách hai bên nhỏ).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.1",
+    "word": "Colourful",
+    "definition": "Having many bright and varied shades that look cheerful and lively.",
+    "example": "Bright lanterns make the old town look _____ at night.",
+    "vietnamese": "Đầy màu sắc rực rỡ.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.1",
+    "word": "Spectacular",
+    "definition": "Very impressive, dramatic, and breathtaking to look at.",
+    "example": "From the balcony, we had a _____ view of the snow-capped peaks.",
+    "vietnamese": "Hùng vĩ, ngoạn mục, đẹp choáng ngợp.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.1",
+    "word": "Amazing",
+    "definition": "Causing great wonder, surprise, and admiration.",
+    "example": "Istanbul has _____ historical towers and beautiful palaces.",
+    "vietnamese": "Tuyệt vời, đáng kinh ngạc.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.1",
+    "word": "Eco-friendly",
+    "definition": "Not harmful to the environment; designed to protect nature.",
+    "example": "Riding bicycles and using solar panels are _____ choices for a city.",
+    "vietnamese": "Thân thiện với môi trường.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.1",
+    "word": "Humid",
+    "definition": "Describing hot weather with a lot of water vapour and moisture in the air.",
+    "example": "Summer days in tropical cities often feel hot and _____.",
+    "vietnamese": "Ẩm ướt (thời tiết nóng và có nhiều hơi nước trong không khí).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.2",
+    "word": "Street art",
+    "definition": "Visual artwork drawn or painted on public pavements and building walls.",
+    "example": "Passers-by stopped to take photos of the 3D _____ painted on the ground.",
+    "vietnamese": "Nghệ thuật đường phố (tranh vẽ trên đường phố, vỉa hè công cộng).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.2",
+    "word": "Street artist",
+    "definition": "A creative person who draws or paints public murals and 3D chalk pictures outdoors.",
+    "example": "The talented _____ used chalk and paint to create a 3D waterfall on the pavement.",
+    "vietnamese": "Nghệ sĩ đường phố.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.2",
+    "word": "Optical illusion",
+    "definition": "An image that uses light, patterns, and colours to deceive your eyes and brain.",
+    "example": "The 3D painting on the ground is an _____ that looks like a deep canyon.",
+    "vietnamese": "Ảo giác quang học (hình ảnh đánh lừa mắt và não bộ).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.2",
+    "word": "Melting glacier",
+    "definition": "A huge mass of ice slowly turning into water, drawn as a 3D hole on a street to warn about climate change.",
+    "example": "The 3D street painting of a _____ made people feel they were standing on thin ice.",
+    "vietnamese": "Sông băng đang tan (hình ảnh 3D trên đường phố).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.2",
+    "word": "Trick",
+    "definition": "To deceive your brain into seeing things that are not really there.",
+    "example": "Clever 3D drawings can _____ your brain into seeing a deep hole on a flat road.",
+    "vietnamese": "Đánh lừa (khiến não bộ nhìn thấy thứ không có thật).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.2",
+    "word": "Misleading",
+    "definition": "Giving the wrong message or impression from our eyes to our brain.",
+    "example": "The shadows in the picture are _____, making a flat page look three-dimensional.",
+    "vietnamese": "Gây đánh lừa thị giác, làm hiểu nhầm.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.2",
+    "word": "Pattern",
+    "definition": "A repeated arrangement of lines, shapes, or colours on a surface.",
+    "example": "The artist used a black-and-white geometric _____ to make the circle look like it was moving.",
+    "vietnamese": "Họa tiết, hoa văn lặp lại.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.2",
+    "word": "Sketch",
+    "definition": "To make a quick, simple drawing with a pencil before adding final details.",
+    "example": "Use a light pencil to _____ the basic outline of the oval first.",
+    "vietnamese": "Vẽ phác thảo, bản phác họa nhanh.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.2",
+    "word": "Curved",
+    "definition": "Having a smoothly bent and rounded shape rather than being straight.",
+    "example": "Draw _____ bands across the shape to make the surface look round.",
+    "vietnamese": "Cong, uốn cong.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.2",
+    "word": "Curved line",
+    "definition": "A bent, rounded mark drawn on paper that is not straight.",
+    "example": "Connect the two sides with a smooth _____ to create a 3D effect.",
+    "vietnamese": "Đường cong.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.2",
+    "word": "Shade",
+    "definition": "To darken parts of a drawing with a pencil so that it looks three-dimensional.",
+    "example": "Use your pencil to _____ the inside edges so the hole looks deep.",
+    "vietnamese": "Đánh bóng chì đậm nhạt (tạo chiều sâu 3D).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.2",
+    "word": "Shading",
+    "definition": "The technique of darkening areas of a drawing to create shadows and 3D depth.",
+    "example": "Careful pencil _____ makes the flat drawing pop out from the page.",
+    "vietnamese": "Kỹ thuật đánh bóng đậm nhạt trong hội họa.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.2",
+    "word": "Vertical line",
+    "definition": "A straight mark going directly up and down from top to bottom.",
+    "example": "Draw a straight _____ down the middle to connect the corners of the shape.",
+    "vietnamese": "Đường thẳng đứng.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.2",
+    "word": "Impossible oval",
+    "definition": "A 3D optical illusion shape drawn with an outer ring and inner lines that puzzle the eye.",
+    "example": "In art class, we learned step by step how to draw an _____ using a pencil and eraser.",
+    "vietnamese": "Hình bầu dục 3D bất khả thi (ảo giác quang học trong bài 3.2).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.2",
+    "word": "Infer",
+    "definition": "To work out an answer or make a smart guess about something using clues.",
+    "example": "From the warm coats in the painting, we can _____ that the weather is freezing.",
+    "vietnamese": "Suy luận, phỏng đoán dựa trên manh mối.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.2",
+    "word": "Inferring",
+    "definition": "The reading and thinking skill of making a prediction or guess using visual or text clues.",
+    "example": "Looking at clues in a picture to guess its meaning is called _____.",
+    "vietnamese": "Sự suy luận, kỹ năng phỏng đoán từ gợi ý.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.2",
+    "word": "Make out",
+    "definition": "To manage to see, recognise, or identify something that is not completely clear.",
+    "example": "If you look closely at the 3D chalk drawing, you can _____ a giant waterfall.",
+    "vietnamese": "Nhìn ra, nhận diện được.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.2",
+    "word": "Accurate",
+    "definition": "Exact and correct in every detail without mistakes.",
+    "example": "Keep your pencil measurements _____ so the optical illusion works properly.",
+    "vietnamese": "Chính xác, chuẩn xác từng chi tiết.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.2",
+    "word": "Realistic",
+    "definition": "Looking almost exactly like real three-dimensional life.",
+    "example": "The 3D shark painted on the pavement looked so _____ that people stepped around it.",
+    "vietnamese": "Chân thực, sống động như thật.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.3",
+    "word": "Horse and cart",
+    "definition": "A traditional wooden wheeled vehicle pulled by a farm animal in the past.",
+    "example": "Before cars were invented, people travelled to market by _____.",
+    "vietnamese": "Xe ngựa kéo (phương tiện truyền thống thời xưa).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.3",
+    "word": "Human-drawn carriage",
+    "definition": "A two-wheeled passenger vehicle pulled by a person walking or running in the past.",
+    "example": "In old photos of the city, wealthy passengers rode in a _____.",
+    "vietnamese": "Xe kéo tay (xe do người kéo thời xưa).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.3",
+    "word": "Buffalo-drawn cart",
+    "definition": "A traditional wooden wagon pulled by a strong horned farm animal in Hanoi in the past.",
+    "example": "Farmers in the past used a _____ to carry heavy goods over long distances.",
+    "vietnamese": "Xe trâu kéo.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.3",
+    "word": "Bullet train",
+    "definition": "A super-fast modern Japanese passenger railway vehicle reaching speeds of up to 320 km/h.",
+    "example": "We rode the Japanese _____ from Tokyo to Kyoto in just over two hours.",
+    "vietnamese": "Tàu cao tốc (tàu Shinkansen của Nhật Bản).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.3",
+    "word": "Metro",
+    "definition": "An underground electric railway system operating beneath a big city.",
+    "example": "Tokyo's first _____ line opened in 1927 and carries millions of passengers today.",
+    "vietnamese": "Tàu điện ngầm trong thành phố.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.3",
+    "word": "Train network",
+    "definition": "A connected system of railway lines and stations covering a city or country.",
+    "example": "A modern _____ connects the city centre with all the surrounding towns.",
+    "vietnamese": "Mạng lưới đường sắt, hệ thống tàu điện.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.3",
+    "word": "Wooden house",
+    "definition": "A traditional home built from timber with a large tiled roof in the past.",
+    "example": "A hundred years ago, many families in Tokyo lived in a traditional one-storey _____.",
+    "vietnamese": "Ngôi nhà bằng gỗ truyền thống.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.3",
+    "word": "High-rise building",
+    "definition": "A tall modern city structure with many floors made of steel and glass.",
+    "example": "Each new _____ in the business district has dozens of floors and fast lifts.",
+    "vietnamese": "Tòa nhà cao tầng hiện đại.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.3",
+    "word": "Micro-apartment",
+    "definition": "An extremely small modern flat where many young people in Tokyo live today.",
+    "example": "A _____ in Tokyo is tiny, but it has clever space-saving furniture.",
+    "vietnamese": "Căn hộ siêu nhỏ (phổ biến với giới trẻ ở Tokyo ngày nay).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.3",
+    "word": "Concrete",
+    "definition": "A hard, strong grey building material made by mixing cement, sand, small stones, and water.",
+    "example": "Modern bridges and tall city towers are built with strong steel and _____.",
+    "vietnamese": "Bê tông (vật liệu xây dựng kiên cố).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.3",
+    "word": "Bright neon lights",
+    "definition": "Colourful glowing electric signs that shine on modern city buildings at night.",
+    "example": "At night, the streets of Tokyo glow with colourful _____.",
+    "vietnamese": "Ánh đèn neon rực rỡ.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.3",
+    "word": "Hi-tech",
+    "definition": "Using the most advanced modern computers, electronics, and machines.",
+    "example": "Modern Tokyo is famous for its _____ robots and smart ticket gates.",
+    "vietnamese": "Công nghệ cao, hiện đại.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.3",
+    "word": "Appliances",
+    "definition": "Helpful machines used at home, such as a microwave, washing machine, or dishwasher.",
+    "example": "Modern kitchen _____ help families cook and clean much faster than in the past.",
+    "vietnamese": "Thiết bị gia dụng trong gia đình.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.3",
+    "word": "Landline",
+    "definition": "A telephone connected by a wire to a wall socket, used before mobile phones were invented.",
+    "example": "In the past, families had to stay at home to answer the _____ telephone.",
+    "vietnamese": "Điện thoại bàn cố định (có dây).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.3",
+    "word": "Monument",
+    "definition": "A historic structure or statue built to remind people of an important past event or place.",
+    "example": "The Tortoise Tower at Hoan Kiem Lake is a famous historic _____ in Hanoi.",
+    "vietnamese": "Di tích lịch sử, đài kỷ niệm.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.3",
+    "word": "Nowadays",
+    "definition": "At the present time, in contrast with how things used to be in the past.",
+    "example": "In the past people wrote letters by hand, but _____ we send instant messages.",
+    "vietnamese": "Ngày nay, thời nay.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.4",
+    "word": "Fictional",
+    "definition": "Imaginary and invented for a story, book, or film rather than existing in real life.",
+    "example": "Hogwarts and Neverland are famous _____ places from children's stories.",
+    "vietnamese": "Hư cấu, giả tưởng (chỉ có trong truyện hoặc phim).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.4",
+    "word": "Magical",
+    "definition": "Containing supernatural powers, spells, or wonderful fairy-tale charm.",
+    "example": "The unicorn lived in a _____ forest where the trees glowed with golden light.",
+    "vietnamese": "Kỳ diệu, có phép thuật.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.4",
+    "word": "Enchanting",
+    "definition": "Delightfully charming, attractive, and captivating like a fairy tale.",
+    "example": "The princess lived in an _____ castle surrounded by rose gardens.",
+    "vietnamese": "Mê hoặc, quyến rũ, đẹp như cổ tích.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.4",
+    "word": "Enchanted",
+    "definition": "Placed under a magic spell or filled with supernatural wonder.",
+    "example": "In the story, the explorers stepped into an _____ wood where animals could talk.",
+    "vietnamese": "Được phù phép, có phép màu.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.4",
+    "word": "Mysterious",
+    "definition": "Strange, unknown, and full of secrets that are difficult to explain.",
+    "example": "The children found a hidden map leading to a _____ cave on the island.",
+    "vietnamese": "Bí ẩn, huyền bí.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.4",
+    "word": "Exotic",
+    "definition": "Unusual, colourful, and exciting because it comes from a distant tropical land.",
+    "example": "The island was covered with _____ flowers and brightly coloured parrots.",
+    "vietnamese": "Kỳ lạ, độc đáo (mang vẻ đẹp vùng nhiệt đới xa xôi).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.4",
+    "word": "Incredible",
+    "definition": "Extremely good, wonderful, and almost too extraordinary to believe.",
+    "example": "Jurassic Park is an _____ theme park where visitors can see living dinosaurs.",
+    "vietnamese": "Đáng kinh ngạc, tuyệt diệu, khó tin.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.4",
+    "word": "Exciting",
+    "definition": "Causing great enthusiasm, thrill, and eagerness.",
+    "example": "Exploring the hidden treasure island was an _____ adventure for the crew.",
+    "vietnamese": "Thú vị, gay cấn, đầy hào hứng.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.4",
+    "word": "Scary-looking",
+    "definition": "Having a frightening or terrifying outward appearance.",
+    "example": "A _____ dark tower stood at the top of the rocky cliff.",
+    "vietnamese": "Có vẻ ngoài đáng sợ.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.4",
+    "word": "Huge",
+    "definition": "Extremely large in size, amount, or height.",
+    "example": "A _____ stone wall surrounded the ancient kingdom.",
+    "vietnamese": "Khổng lồ, to lớn.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.4",
+    "word": "Gigantic",
+    "definition": "Enormous and giant-sized, much bigger than normal.",
+    "example": "Flocks of _____, black crows circled above the dark castle.",
+    "vietnamese": "Khổng lồ, vô cùng to lớn.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.4",
+    "word": "Desolate",
+    "definition": "Bleak, empty, and lonely, with no trees, comfort, or welcoming life.",
+    "example": "King Londorf ruled over a cold, _____ wasteland of bare rock.",
+    "vietnamese": "Hoang vu, cô quạnh, tiêu điều.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.4",
+    "word": "Miserable",
+    "definition": "Very sad, dark, and gloomy, making anyone there feel unhappy and uncomfortable.",
+    "example": "Cold rain fell all day on the dark, _____ fortress.",
+    "vietnamese": "Ảm đạm, thê lương, buồn khổ.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.4",
+    "word": "Strange",
+    "definition": "Unusual, unfamiliar, or surprising in a way that is hard to understand.",
+    "example": "We saw _____, lizard-like creatures crawling across the purple rocks.",
+    "vietnamese": "Kỳ lạ, lạ lùng.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.4",
+    "word": "Peculiar",
+    "definition": "Odd and different from what is normal or expected.",
+    "example": "The wizard's house had a _____ shape with crooked chimneys and round doors.",
+    "vietnamese": "Khác thường, kỳ dị, nét riêng lạ.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.4",
+    "word": "Pale",
+    "definition": "Having a light, faint, or weak colour rather than a bright or strong one.",
+    "example": "Only the dim light of the _____ sun shone through the thick grey clouds.",
+    "vietnamese": "Nhạt màu, mờ nhạt.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.4",
+    "word": "Inhabitant",
+    "definition": "A person, animal, or creature that lives in a particular place.",
+    "example": "Every _____ of the magical village knew how to fly on a broomstick.",
+    "vietnamese": "Cư dân, sinh vật cư ngụ tại một nơi.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.4",
+    "word": "Carnivore",
+    "definition": "An animal or dinosaur that feeds on meat from other creatures.",
+    "example": "Tyrannosaurus rex was a giant _____ with sharp teeth.",
+    "vietnamese": "Động vật ăn thịt.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.4",
+    "word": "Spacious",
+    "definition": "Having plenty of room and a large amount of open space inside.",
+    "example": "The royal palace had a _____ hall where hundreds of guests could dance.",
+    "vietnamese": "Rộng rãi, có nhiều không gian.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.4",
+    "word": "Airy",
+    "definition": "Light, open, and having plenty of fresh air flowing through.",
+    "example": "Large windows made the treetop house feel bright and _____.",
+    "vietnamese": "Thoáng đãng, lộng gió.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.4",
+    "word": "Cramped",
+    "definition": "Uncomfortably small and crowded, with hardly any room to move.",
+    "example": "The secret passage under the castle was dark and _____.",
+    "vietnamese": "Chật chội, tù túng.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.4",
+    "word": "Pokey",
+    "definition": "Annoyingly small, narrow, and uncomfortable to live or work in.",
+    "example": "The goblin slept in a _____ little room beneath the stairs.",
+    "vietnamese": "Nhỏ hẹp, chật chội.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.4",
+    "word": "Imposing",
+    "definition": "Grand and large in appearance in a way that makes a strong impression.",
+    "example": "An _____ stone fortress stood high on the cliff above the sea.",
+    "vietnamese": "Đồ sộ, uy nghi, bề thế.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.4",
+    "word": "Elaborate",
+    "definition": "Made or decorated with many careful, detailed, and complicated parts.",
+    "example": "The golden gate was covered in _____ carvings of dragons and flowers.",
+    "vietnamese": "Tinh xảo, cầu kỳ, công phu.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.4",
+    "word": "Derelict",
+    "definition": "Abandoned, empty, and falling into ruin because nobody cares for it.",
+    "example": "Ivy grew over the broken walls of the _____ old mansion.",
+    "vietnamese": "Bỏ hoang, đổ nát.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.4",
+    "word": "Dilapidated",
+    "definition": "Old, broken-down, and in very poor condition through neglect.",
+    "example": "The _____ wooden bridge creaked loudly when the travellers stepped onto it.",
+    "vietnamese": "Xuống cấp, xập xệ, hư hại nặng.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.4",
+    "word": "Creepy",
+    "definition": "Causing an unpleasant feeling of fear and nervousness.",
+    "example": "Cobwebs hung from the ceiling of the _____ underground tunnel.",
+    "vietnamese": "Rùng rợn, gây sởn gai ốc.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.4",
+    "word": "Dreary",
+    "definition": "Dull, bleak, and lifeless in a way that makes you feel sad or bored.",
+    "example": "Grey fog covered the _____ swamp all winter long.",
+    "vietnamese": "Ảm đạm, buồn tẻ, u ám.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.4",
+    "word": "Eerie",
+    "definition": "Strange and frightening in a quiet, mysterious, and unsettling way.",
+    "example": "An _____ green glow came from the bottom of the ancient well.",
+    "vietnamese": "Kỳ quái, ma mị, gây lạnh sống lưng.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.4",
+    "word": "Ghostly",
+    "definition": "Pale, faint, and shadowy like an apparition or spirit.",
+    "example": "A _____ white mist floated silently between the crooked trees.",
+    "vietnamese": "Mờ ảo như bóng ma, ma quái.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.4",
+    "word": "Haunted",
+    "definition": "Visited or inhabited by ghosts and spirits in stories.",
+    "example": "Nobody dared to enter the _____ house on the hill after midnight.",
+    "vietnamese": "Bị ma ám.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.4",
+    "word": "Grim",
+    "definition": "Forbidding, harsh, and gloomy, offering no warmth or cheer.",
+    "example": "High black walls surrounded the _____ prison fortress.",
+    "vietnamese": "U ám, lạnh lẽo, khắc nghiệt.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.4",
+    "word": "Jagged",
+    "definition": "Having rough, sharp, uneven points along the edge.",
+    "example": "Lightning flashed above the _____ rocks of the dragon's mountain.",
+    "vietnamese": "Lởm chởm, sắc nhọn.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.4",
+    "word": "Rugged",
+    "definition": "Having a rough, uneven rocky surface that is difficult to cross.",
+    "example": "The explorers hiked across the _____ cliffs along the northern coast.",
+    "vietnamese": "Gồ ghề, hiểm trở.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.4",
+    "word": "Perilous",
+    "definition": "Full of grave danger and risk.",
+    "example": "The knights began a _____ journey across the volcanic wasteland.",
+    "vietnamese": "Nguy hiểm, đầy hiểm nguy.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.4",
+    "word": "Spotless",
+    "definition": "Completely clean and pure, without a single mark or speck of dirt.",
+    "example": "The white marble floors of the crystal palace were _____.",
+    "vietnamese": "Sạch bóng, không một vết bẩn.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.4",
+    "word": "Stifling",
+    "definition": "Uncomfortably hot and stuffy, making it hard to breathe easily.",
+    "example": "Inside the volcano cave, the air felt hot and _____.",
+    "vietnamese": "Ngột ngạt, bức bối, khó thở.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.4",
+    "word": "Vacant",
+    "definition": "Empty and unoccupied, with nobody living or working inside.",
+    "example": "All the cottages in the deserted village stood silent and _____.",
+    "vietnamese": "Bỏ trống, trống rỗng.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.4",
+    "word": "Vivid",
+    "definition": "Producing very bright, strong, and clear colours or mental images.",
+    "example": "The magical garden was painted in _____ shades of emerald and gold.",
+    "vietnamese": "Sống động, rực rỡ sắc màu.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.5",
+    "word": "Chirp",
+    "definition": "The short, high-pitched musical sound that crickets and small birds make.",
+    "example": "As night fell, we heard the crickets _____ in the tall grass.",
+    "vietnamese": "Kêu rả rích, hót líu lo (tiếng dế kêu hoặc chim hót).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.5",
+    "word": "Bamboo",
+    "definition": "A tall, hollow, leafy green plant that giant pandas love to eat.",
+    "example": "The two boys walked through a thick forest of green _____.",
+    "vietnamese": "Cây tre, cây trúc.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.5",
+    "word": "Ruby",
+    "definition": "A deep red precious stone used in jewellery and royal statues.",
+    "example": "At the city gate stood stone lions with sparkling red _____ eyes.",
+    "vietnamese": "Đá quý hồng ngọc (màu đỏ).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.5",
+    "word": "Roar",
+    "definition": "The deep, loud, powerful sound that a lion or tiger makes.",
+    "example": "A sudden tiger _____ echoed across the mountain peaks.",
+    "vietnamese": "Tiếng gầm (của hổ, sư tử); gầm vang.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.5",
+    "word": "Jade",
+    "definition": "A hard green precious stone often carved into jewellery and statues.",
+    "example": "The palace steps were decorated with carvings of green _____.",
+    "vietnamese": "Đá quý ngọc bích (màu xanh lục).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.5",
+    "word": "Gong",
+    "definition": "A large, flat circular metal instrument that makes a deep ringing sound when struck.",
+    "example": "When Ho-Shing struck the golden _____, a deep sound filled the courtyard.",
+    "vietnamese": "Cái chiêng, cái cồng.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.5",
+    "word": "Ivory",
+    "definition": "A hard, creamy-white precious material that forms the tusks of elephants.",
+    "example": "Inside the Lost City, the boys saw delicate carvings made of white _____.",
+    "vietnamese": "Ngà voi (chất liệu quý màu trắng ngà).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.5",
+    "word": "Gold",
+    "definition": "A precious yellow metal used to make coins, jewellery, and palace roofs.",
+    "example": "The temple roofs were covered in shining yellow _____.",
+    "vietnamese": "Vàng (kim loại quý màu vàng).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.5",
+    "word": "Silver",
+    "definition": "A shiny greyish-white precious metal used for coins, ornaments, and jewellery.",
+    "example": "Moonlight reflected off the bowls of polished _____.",
+    "vietnamese": "Bạc (kim loại quý màu trắng sáng).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.5",
+    "word": "Sparkle",
+    "definition": "To shine brightly with many small flashes of reflected light.",
+    "example": "The golden roofs of the Lost City began to _____ in the sunshine.",
+    "vietnamese": "Lấp lánh, chiếu sáng rực rỡ.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.5",
     "word": "Valley",
-    "definition": "A low area of land between hills or mountains, often containing a river.",
-    "example": "The agricultural valley benefits from rich alluvial soil.",
-    "vietnamese": "Thung lũng",
+    "definition": "An area of low land between hills or mountains, often with a river running through it.",
+    "example": "Yong-Hu and Ho-Shing walked for hours through the green mountain _____.",
+    "vietnamese": "Thung lũng (vùng đất thấp nằm giữa các ngọn đồi hoặc núi).",
     "grade": 4,
     "disabled": false
   },
   {
-    "unit": "3",
-    "word": "Cottage",
-    "definition": "A small, modest dwelling house typically located in a rural setting.",
-    "example": "The traditional stone cottage overlooks the surrounding hills.",
-    "vietnamese": "Nhà ở nông thôn / Nhà nhỏ",
+    "unit": "3.5",
+    "word": "Remote",
+    "definition": "Very far away from towns and places where most people live.",
+    "example": "The Lost City was hidden in a _____ mountain region far from any village.",
+    "vietnamese": "Xa xôi, hẻo lánh.",
     "grade": 4,
     "disabled": false
   },
   {
-    "unit": "3",
-    "word": "Footpath / Trail",
-    "definition": "An unpaved path marked across countryside for pedestrian access.",
-    "example": "Hikers followed the steep trail leading to the mountain summit.",
-    "vietnamese": "Đường mòn / Đường dành cho người đi bộ",
+    "unit": "3.5",
+    "word": "Trade route",
+    "definition": "A long-distance road or path used by merchants for carrying and selling goods.",
+    "example": "Long ago, travellers used this mountain pass as an important _____.",
+    "vietnamese": "Tuyến đường buôn bán, giao thương.",
     "grade": 4,
     "disabled": false
   },
   {
-    "unit": "3",
-    "word": "Woodland/Forest",
-    "definition": "A dense ecosystem dominated by trees and flora.",
-    "example": "Dense woodland covers a significant portion of the natural reserve.",
-    "vietnamese": "Khu rừng / Rừng rậm",
+    "unit": "3.5",
+    "word": "Steep",
+    "definition": "Rising or falling very sharply at a high angle, making it hard to climb.",
+    "example": "The boys climbed the very _____ stone steps that led to the top of the wall.",
+    "vietnamese": "Dốc đứng (bậc thang hoặc sườn núi dốc).",
     "grade": 4,
     "disabled": false
   },
   {
-    "unit": "3",
-    "word": "Bustling",
-    "definition": "Full of lively activity, energy, and moving people.",
-    "example": "The commercial port remains bustling throughout the day.",
-    "vietnamese": "Nhộn nhịp / Sầm uất",
+    "unit": "3.5",
+    "word": "Wondrous",
+    "definition": "Wonderful, marvellous, and inspiring a feeling of delight and awe.",
+    "example": "Behind the high wall, the travellers discovered a city full of _____ surprises.",
+    "vietnamese": "Kỳ diệu, phi thường.",
     "grade": 4,
     "disabled": false
   },
   {
-    "unit": "3",
-    "word": "Peaceful/Tranquil",
-    "definition": "Free from disturbance; serene and undisturbed.",
-    "example": "The coastal village provides a tranquil setting for rest.",
-    "vietnamese": "Thanh bình / Yên tĩnh",
+    "unit": "3.5",
+    "word": "Magnificent",
+    "definition": "Extremely grand, beautiful, and impressive in size and beauty.",
+    "example": "The Lost City was filled with _____ palaces and sparkling roofs.",
+    "vietnamese": "Nguy nga, tráng lệ, lộng lẫy.",
     "grade": 4,
     "disabled": false
   },
   {
-    "unit": "3",
-    "word": "Crowded/Congested",
-    "definition": "Packed with an excessive number of people or vehicles.",
-    "example": "Central thoroughfares become heavily congested during peak hours.",
-    "vietnamese": "Đông đúc / Tắc nghẽn",
+    "unit": "3.5",
+    "word": "Complain",
+    "definition": "To express unhappiness, tiredness, or annoyance about something.",
+    "example": "After walking for hours, Yong-Hu began to _____ that his feet hurt.",
+    "vietnamese": "Phàn nàn, kêu ca.",
     "grade": 4,
     "disabled": false
   },
   {
-    "unit": "3",
-    "word": "Historic/Ancient",
-    "definition": "Having great importance, significance, or origin in history.",
-    "example": "Architectural conservation preserves the historic city center.",
-    "vietnamese": "Cổ kính / Có giá trị lịch sử",
+    "unit": "3.5",
+    "word": "Starving",
+    "definition": "Informal way to say extremely hungry after going a long time without food.",
+    "example": "'I'm _____! Let's stop and eat our lunch,' said Yong-Hu.",
+    "vietnamese": "Đói lả, rất đói.",
     "grade": 4,
     "disabled": false
   },
   {
-    "unit": "3",
-    "word": "Modern/Contemporary",
-    "definition": "Relating to present style, technology, or modern design.",
-    "example": "Contemporary infrastructure has transformed the metropolis.",
-    "vietnamese": "Hiện đại / Tân tiến",
+    "unit": "3.5",
+    "word": "Growling",
+    "definition": "Making a low, rough, threatening sound in the throat like a fierce tiger.",
+    "example": "The boys froze when they heard a fierce _____ sound behind the bushes.",
+    "vietnamese": "Tiếng gầm gừ (của hổ hoặc thú dữ).",
     "grade": 4,
     "disabled": false
   },
   {
-    "unit": "3",
-    "word": "Scenic / Picturesque",
-    "definition": "Providing attractive, visually charming natural or urban views.",
-    "example": "The coastal route offers picturesque views of the ocean.",
-    "vietnamese": "Danh lam thắng cảnh / Đẹp như tranh vẽ",
+    "unit": "3.5",
+    "word": "Echoing",
+    "definition": "Repeating and bouncing back off tall mountains or stone walls.",
+    "example": "The tiger's loud roar was _____ off the high mountain cliffs.",
+    "vietnamese": "Vang vọng lại (âm thanh dội lại từ vách núi).",
     "grade": 4,
     "disabled": false
   },
   {
-    "unit": "3",
-    "word": "Polluted",
-    "definition": "Contaminated with harmful industrial or automotive substances.",
-    "example": "Industrial emissions rendered the urban atmosphere polluted.",
-    "vietnamese": "Bị ô nhiễm",
+    "unit": "3.5",
+    "word": "Whisper",
+    "definition": "To speak very softly using your breath so that nothing else can hear you.",
+    "example": "'Hide quickly!' Ho-Shing had to _____ so the tiger would not hear them.",
+    "vietnamese": "Thì thầm, nói khẽ.",
     "grade": 4,
     "disabled": false
   },
   {
-    "unit": "3",
-    "word": "Lively / Vibrant",
-    "definition": "Full of life, energy, enthusiasm, and vivid atmosphere.",
-    "example": "The cultural district boasts a vibrant arts and music scene.",
-    "vietnamese": "Sôi động / Đầy sức sống",
+    "unit": "3.5",
+    "word": "Mention",
+    "definition": "A brief reference to something or someone when speaking.",
+    "example": "At the _____ of pandas and food, the tired boy smiled happily.",
+    "vietnamese": "Sự nhắc tới, đề cập ngắn gọn.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.5",
+    "word": "Reward",
+    "definition": "Something good that you receive after completing a hard journey or good deed.",
+    "example": "Hearing the peaceful music of the crickets was a wonderful _____ for their long walk.",
+    "vietnamese": "Phần thưởng (nhận được sau hành trình vất vả).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.5",
+    "word": "Social responsibility",
+    "definition": "The duty of treating people, animals, and our natural environment with respect and care.",
+    "example": "Leaving the ancient city untouched showed great _____ and respect for heritage.",
+    "vietnamese": "Trách nhiệm xã hội (trân trọng và bảo vệ con người, động vật, môi trường).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.5",
+    "word": "Walked",
+    "definition": "The past simple form of 'walk', meaning moved forward on foot at a steady pace.",
+    "example": "Yong-Hu and Ho-Shing _____ through the bamboo valley for many hours.",
+    "vietnamese": "Đã đi bộ (quá khứ đơn của 'walk': walk → walked).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.5",
+    "word": "Heard",
+    "definition": "The past simple form of 'hear', meaning noticed a sound with your ears.",
+    "example": "Suddenly, the two boys _____ a frightening roar in the distance.",
+    "vietnamese": "Đã nghe thấy (quá khứ đơn bất quy tắc của 'hear': hear → heard).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.5",
+    "word": "Found",
+    "definition": "The past simple form of 'find', meaning discovered something after searching.",
+    "example": "At the end of the valley, they _____ the hidden gate of the Lost City.",
+    "vietnamese": "Đã tìm thấy, phát hiện (quá khứ đơn của 'find': find → found).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.5",
+    "word": "Smiled",
+    "definition": "The past simple form of 'smile', meaning curved the corners of the mouth upwards in happiness.",
+    "example": "Ho-Shing _____ warmly when his friend forgot about being tired.",
+    "vietnamese": "Đã mỉm cười (quá khứ đơn của 'smile': smile → smiled).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.5",
+    "word": "Forgot",
+    "definition": "The past simple form of 'forget', meaning stopped remembering or thinking about something.",
+    "example": "When Yong-Hu saw the golden roofs, he _____ how hungry he was.",
+    "vietnamese": "Đã quên (quá khứ đơn bất quy tắc của 'forget': forget → forgot).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.5",
+    "word": "Stood",
+    "definition": "The past simple form of 'stand', meaning was upright on your feet in one place.",
+    "example": "Two stone lions with ruby eyes _____ beside the entrance gate.",
+    "vietnamese": "Đã đứng (quá khứ đơn bất quy tắc của 'stand': stand → stood).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.5",
+    "word": "Ran",
+    "definition": "The past simple form of 'run', meaning moved very quickly on foot.",
+    "example": "The boys _____ up the steep stone steps as fast as they could.",
+    "vietnamese": "Đã chạy (quá khứ đơn bất quy tắc của 'run': run → ran).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.5",
+    "word": "Climbed",
+    "definition": "The past simple form of 'climb', meaning went up steps, a hill, or a wall.",
+    "example": "They _____ to the top of the high wall to look at the city.",
+    "vietnamese": "Đã leo, trèo lên (quá khứ đơn của 'climb': climb → climbed).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.5",
+    "word": "Took",
+    "definition": "The past simple form of 'take', meaning reached out and held something or needed a period of time.",
+    "example": "The difficult journey _____ many hours through the mountains.",
+    "vietnamese": "Đã lấy, đã mất thời gian (quá khứ đơn của 'take': take → took).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.5",
+    "word": "Reached",
+    "definition": "The past simple form of 'reach', meaning arrived at a destination after travelling.",
+    "example": "At last, the tired travellers _____ the entrance of the Lost City.",
+    "vietnamese": "Đã đến được, chạm tới (quá khứ đơn của 'reach': reach → reached).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.3",
+    "word": "Rode",
+    "definition": "The past simple form of 'ride', meaning sat on and travelled by bicycle, horse, or train.",
+    "example": "In the past, people _____ horses or carts along narrow dirt roads.",
+    "vietnamese": "Đã cưỡi, đã đi xe (quá khứ đơn của 'ride': ride → rode).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.3",
+    "word": "Went",
+    "definition": "The past simple form of 'go', meaning travelled or moved from one place to another.",
+    "example": "Last weekend, our class _____ to the city museum by metro.",
+    "vietnamese": "Đã đi (quá khứ đơn bất quy tắc của 'go': go → went).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.3",
+    "word": "Was",
+    "definition": "The singular past simple form of 'be', used with I, he, she, or it.",
+    "example": "A hundred years ago, Hanoi _____ much quieter and smaller than today.",
+    "vietnamese": "Đã từng là, đã ở (quá khứ đơn số ít của 'be': be → was).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.3",
+    "word": "Were",
+    "definition": "The plural past simple form of 'be', used with you, we, or they.",
+    "example": "In the past, there _____ no skyscrapers or traffic lights in the village.",
+    "vietnamese": "Đã từng là, đã ở (quá khứ đơn số nhiều của 'be': be → were).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.3",
+    "word": "Ate",
+    "definition": "The past simple form of 'eat', meaning chewed and swallowed food.",
+    "example": "The travellers sat by the river and _____ rice balls for lunch.",
+    "vietnamese": "Đã ăn (quá khứ đơn bất quy tắc của 'eat': eat → ate).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.3",
+    "word": "Had",
+    "definition": "The past simple form of 'have', meaning owned or possessed something in the past.",
+    "example": "In the past, only a few families _____ a landline telephone at home.",
+    "vietnamese": "Đã có (quá khứ đơn bất quy tắc của 'have': have → had).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.3",
+    "word": "Drove",
+    "definition": "The past simple form of 'drive', meaning controlled and steered a car or bus.",
+    "example": "My uncle _____ his electric car across the modern city bridge.",
+    "vietnamese": "Đã lái xe (quá khứ đơn bất quy tắc của 'drive': drive → drove).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.3",
+    "word": "Chose",
+    "definition": "The past simple form of 'choose', meaning picked one thing from several options.",
+    "example": "We _____ to take the bullet train because it was much faster.",
+    "vietnamese": "Đã chọn (quá khứ đơn bất quy tắc của 'choose': choose → chose).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.3",
+    "word": "Left",
+    "definition": "The past simple form of 'leave', meaning departed from a place.",
+    "example": "The express train _____ the central station at eight o'clock sharp.",
+    "vietnamese": "Đã rời đi (quá khứ đơn bất quy tắc của 'leave': leave → left).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.3",
+    "word": "Woke up",
+    "definition": "The past simple form of 'wake up', meaning stopped sleeping in the morning.",
+    "example": "The boys _____ early at dawn to begin their mountain hike.",
+    "vietnamese": "Đã thức dậy (quá khứ đơn của 'wake up': wake up → woke up).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.3",
+    "word": "Slept",
+    "definition": "The past simple form of 'sleep', meaning rested with eyes closed during the night.",
+    "example": "After the long journey, the tired explorers _____ soundly in their tent.",
+    "vietnamese": "Đã ngủ (quá khứ đơn bất quy tắc của 'sleep': sleep → slept).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.3",
+    "word": "Travelled",
+    "definition": "The past simple form of 'travel', meaning made a journey from one place to another.",
+    "example": "In the past, merchants _____ for weeks by horse and cart.",
+    "vietnamese": "Đã đi lại, du hành (quá khứ đơn của 'travel': travel → travelled).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.3",
+    "word": "Carried",
+    "definition": "The past simple form of 'carry', meaning held and moved something from one place to another.",
+    "example": "Buffalo-drawn carts _____ heavy sacks of rice to the market.",
+    "vietnamese": "Đã mang, chở (quá khứ đơn của 'carry': carry → carried).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.3",
+    "word": "Studied",
+    "definition": "The past simple form of 'study', meaning spent time learning about a subject.",
+    "example": "In history class, we _____ how Hanoi and Tokyo changed over time.",
+    "vietnamese": "Đã học, nghiên cứu (quá khứ đơn của 'study': study → studied).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.2",
+    "word": "First",
+    "definition": "A sequencing word used to introduce the opening step in instructions or a story.",
+    "example": "_____, use a pencil to lightly sketch an oval in the middle of the paper.",
+    "vietnamese": "Đầu tiên, trước hết (từ nối chỉ bước mở đầu).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.2",
+    "word": "Then",
+    "definition": "A sequencing word meaning next or after that step in a series of actions.",
+    "example": "Draw the outer shape first, and _____ add curved lines inside it.",
+    "vietnamese": "Sau đó, tiếp theo (từ nối trình tự).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.2",
+    "word": "Next",
+    "definition": "A sequencing word used to introduce the step that comes immediately after the previous one.",
+    "example": "_____, shade the dark areas carefully with your pencil to create 3D depth.",
+    "vietnamese": "Kế tiếp, tiếp theo (từ nối chỉ trình tự).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.2",
+    "word": "After that",
+    "definition": "A sequencing phrase used to show what happens following an earlier action.",
+    "example": "We visited the ancient temple in the morning; _____, we walked around the lake.",
+    "vietnamese": "Sau đó (cụm từ nối chỉ trình tự sự việc).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.2",
+    "word": "Finally",
+    "definition": "A sequencing word used to introduce the last step or ending event.",
+    "example": "_____, rub out any extra pencil marks to complete your 3D optical illusion.",
+    "vietnamese": "Cuối cùng (từ nối chỉ bước kết thúc).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.3",
+    "word": "Because",
+    "definition": "A connective word used to give the reason or cause for something.",
+    "example": "Many people prefer the countryside _____ the air is fresh and peaceful.",
+    "vietnamese": "Bởi vì (từ nối chỉ nguyên nhân, lý do).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.3",
+    "word": "But",
+    "definition": "A connective word used to join two contrasting or opposite ideas.",
+    "example": "The micro-apartment is very small, _____ it has modern hi-tech appliances.",
+    "vietnamese": "Nhưng (từ nối chỉ sự đối lập).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.3",
+    "word": "So",
+    "definition": "A connective word used to show the result or consequence of an action.",
+    "example": "It started raining heavily, _____ the tourists went inside the museum.",
+    "vietnamese": "Vì vậy, cho nên (từ nối chỉ kết quả).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.3",
+    "word": "Although",
+    "definition": "A connective word meaning even though, used to show a surprising contrast.",
+    "example": "_____ the mountain steps were very steep, the boys kept climbing.",
+    "vietnamese": "Mặc dù (từ nối chỉ sự nhượng bộ, tương phản).",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "3.5",
+    "word": "And then",
+    "definition": "A connective phrase used in stories to link one action to the next action that follows.",
+    "example": "Ho-Shing struck the golden gong, _____ the crickets began to chirp.",
+    "vietnamese": "Và rồi, rồi sau đó (cụm từ liên kết chuỗi hành động trong truyện).",
     "grade": 4,
     "disabled": false
   }

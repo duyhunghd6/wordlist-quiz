@@ -1,6 +1,6 @@
 [
   {
-    "unit": "1.1",
+    "unit": "1.2",
     "word": "Germination",
     "definition": "When a seed begins to grow and sprout roots and shoots.",
     "example": "After a few days in damp soil, the process of _____ started and a tiny shoot appeared.",
@@ -9,7 +9,7 @@
     "disabled": false
   },
   {
-    "unit": "1.1",
+    "unit": "1.2",
     "word": "Pollination",
     "definition": "The transfer of pollen from the anther to the stigma.",
     "example": "Bees help with _____ when they carry yellow dust from one flower to another.",
@@ -18,7 +18,7 @@
     "disabled": false
   },
   {
-    "unit": "1.1",
+    "unit": "1.2",
     "word": "Fertilisation",
     "definition": "When pollen joins with an egg (ovule) inside the ovary to form seeds.",
     "example": "After successful _____, the flower will start producing seeds inside its ovary.",
@@ -27,7 +27,7 @@
     "disabled": false
   },
   {
-    "unit": "1.1",
+    "unit": "1.3",
     "word": "Seed Dispersal",
     "definition": "The movement or spreading of seeds away from the parent plant.",
     "example": "Wind and animals play a big role in _____ by moving them far away.",
@@ -36,7 +36,7 @@
     "disabled": false
   },
   {
-    "unit": "1.1",
+    "unit": "1.2",
     "word": "Stamen",
     "definition": "The male reproductive part of a flower, made of anther and filament.",
     "example": "The tall _____ in the center of the blossom produces the pollen.",
@@ -45,7 +45,7 @@
     "disabled": false
   },
   {
-    "unit": "1.1",
+    "unit": "1.2",
     "word": "Carpel",
     "definition": "The female reproductive part of a flower, made of stigma, style, and ovary.",
     "example": "The _____ is located in the middle of the flower and contains the eggs.",
@@ -54,7 +54,7 @@
     "disabled": false
   },
   {
-    "unit": "1.1",
+    "unit": "1.2",
     "word": "Anther",
     "definition": "The part of the stamen that produces and holds yellow pollen powder.",
     "example": "The bee brushed against the powdery _____ and got covered in yellow dust.",
@@ -63,7 +63,7 @@
     "disabled": false
   },
   {
-    "unit": "1.1",
+    "unit": "1.2",
     "word": "Filament",
     "definition": "The thin, stalk-like structure that holds up the anther.",
     "example": "The slender _____ supports the pollen sac high enough for insects to reach.",
@@ -72,7 +72,7 @@
     "disabled": false
   },
   {
-    "unit": "1.1",
+    "unit": "1.2",
     "word": "Stigma",
     "definition": "The sticky top part of the carpel that catches pollen grains.",
     "example": "Windblown grains stuck tightly to the gooey surface of the blossom's _____.",
@@ -81,7 +81,7 @@
     "disabled": false
   },
   {
-    "unit": "1.1",
+    "unit": "1.2",
     "word": "Ovary",
     "definition": "The swollen base of the carpel that contains ovules (eggs).",
     "example": "After fertilisation, the swollen _____ develops into a fleshy fruit.",
@@ -90,7 +90,7 @@
     "disabled": false
   },
   {
-    "unit": "1.1",
+    "unit": "1.2",
     "word": "Petals",
     "definition": "Brightly coloured parts of the flower that attract insects and birds.",
     "example": "The bright red _____ helped attract hummingbirds to the garden.",
@@ -99,7 +99,7 @@
     "disabled": false
   },
   {
-    "unit": "1.1",
+    "unit": "1.2",
     "word": "Sepals",
     "definition": "Small green leaf-like structures that protect the flower bud before it opens.",
     "example": "Before the blossom opened, the green _____ kept the fragile bud safe.",
@@ -108,7 +108,7 @@
     "disabled": false
   },
   {
-    "unit": "1.1",
+    "unit": "1.2",
     "word": "Pollen",
     "definition": "Fine powder produced by flowers, containing male reproductive cells.",
     "example": "The honeybee was dusted all over in golden _____ from visiting blossoms.",
@@ -117,7 +117,7 @@
     "disabled": false
   },
   {
-    "unit": "1.1",
+    "unit": "1.2",
     "word": "Fruit",
     "definition": "The structure that develops from the ovary after fertilisation to protect seeds.",
     "example": "The sweet _____ protected the developing seeds inside.",
@@ -136,7 +136,7 @@
   },
   {
     "unit": "1.1",
-    "word": "Spores",
+    "word": "Spore",
     "definition": "Tiny reproductive cells used by non-flowering plants (like ferns and mosses).",
     "example": "Fern plants produce powdery brown _____ on the undersides of their leaves.",
     "vietnamese": "Bào tử (tế bào sinh sản nhỏ của các loài thực vật không có hoa như dương xỉ, rêu).",
@@ -248,15 +248,6 @@
     "definition": "The stages a plant goes through from a seed to an adult plant.",
     "example": "The plant's _____ progresses from a tiny seed to a full blooming flower.",
     "vietnamese": "Vòng đời (các giai đoạn phát triển của cây từ hạt giống đến cây trưởng thành).",
-    "grade": 4,
-    "disabled": false
-  },
-  {
-    "unit": "1.3",
-    "word": "Seed dispersal",
-    "definition": "The carrying or spreading of seeds away from the parent plant.",
-    "example": "Without _____, too many sprouts would grow right under the mother tree.",
-    "vietnamese": "Sự phát tán hạt (quá trình di chuyển hạt giống đi xa khỏi cây mẹ).",
     "grade": 4,
     "disabled": false
   },
@@ -392,6 +383,87 @@
     "definition": "The rate at which complete wave cycles oscillate within one second.",
     "example": "A high whistle creates thousands of wave cycles per second at high _____.",
     "vietnamese": "Tần số dao động sóng âm.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1.1",
+    "word": "Flowering plant",
+    "definition": "A plant that makes flowers as part of its life cycle.",
+    "example": "A rose is a _____.",
+    "vietnamese": "Thực vật có hoa, tạo ra hoa trong vòng đời.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1.1",
+    "word": "Non-flowering plant",
+    "definition": "A plant that does not make flowers.",
+    "example": "A fern is a _____.",
+    "vietnamese": "Thực vật không có hoa.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1.1",
+    "word": "Fern",
+    "definition": "A plant that reproduces using spores instead of flowers and seeds.",
+    "example": "A _____ grows new fronds from spores.",
+    "vietnamese": "Dương xỉ, sinh sản bằng bào tử.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1.1",
+    "word": "Moss",
+    "definition": "A small, soft plant that commonly grows in damp places and reproduces by spores.",
+    "example": "Green _____ grows on the shaded, wet stone.",
+    "vietnamese": "Rêu, loài cây nhỏ thường mọc nơi ẩm và sinh sản bằng bào tử.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1.1",
+    "word": "Cone",
+    "definition": "A scaly structure on some plants that holds seeds.",
+    "example": "A pine tree’s _____ contains its seeds.",
+    "vietnamese": "Quả nón, cấu trúc có vảy chứa hạt ở một số cây.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1.2",
+    "word": "Style",
+    "definition": "The slender part of a flower’s female structure that connects the stigma to the ovary.",
+    "example": "Pollen travels down the _____ towards the ovary.",
+    "vietnamese": "Vòi nhụy, phần nối đầu nhụy với bầu nhụy.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1.2",
+    "word": "Ovule",
+    "definition": "A structure inside the ovary that can develop into a seed after fertilisation.",
+    "example": "After fertilisation, an _____ can grow into a seed.",
+    "vietnamese": "Noãn, cấu trúc trong bầu nhụy có thể phát triển thành hạt sau thụ tinh.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1.3",
+    "word": "Disperse",
+    "definition": "To spread or move away over a wide area.",
+    "example": "Wind can _____ seeds far from the parent plant.",
+    "vietnamese": "Phát tán, làm lan ra hoặc di chuyển đến nhiều nơi.",
+    "grade": 4,
+    "disabled": false
+  },
+  {
+    "unit": "1.3",
+    "word": "Explosive seed pod",
+    "definition": "A seed case that splits suddenly and throws seeds away.",
+    "example": "The dry _____ scattered seeds when it opened.",
+    "vietnamese": "Quả chứa hạt bật tung, văng hạt ra khi nứt mở.",
     "grade": 4,
     "disabled": false
   },
