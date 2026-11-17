@@ -55,6 +55,21 @@ import {
 import { getAvatarById } from "./constants/gameConfig";
 import { normalizeEslReviewQuestions } from "./utils/eslReviewNormalizer";
 
+const dedupeWordsByText = (items) => {
+  const seen = new Set();
+  const ordered = [...items].sort(
+    (a, b) =>
+      (b?.unit?.includes("Revision") ? 1 : 0) -
+      (a?.unit?.includes("Revision") ? 1 : 0),
+  );
+  return ordered.filter((item) => {
+    const key = (item?.word || "").trim().toLowerCase();
+    if (!key || seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+};
+
 function App() {
   // Multi-profile hooks
   const {
@@ -231,6 +246,11 @@ function App() {
           ...new Set(activeData.map((item) => item.unit.split(".")[0])),
         ];
         uniqueUnits.sort((a, b) => {
+          const isRevA = a.toLowerCase().includes("revision");
+          const isRevB = b.toLowerCase().includes("revision");
+          if (isRevA && !isRevB) return -1;
+          if (!isRevA && isRevB) return 1;
+
           const numA = parseInt(a, 10);
           const numB = parseInt(b, 10);
           const isNumA = !isNaN(numA);
@@ -252,7 +272,7 @@ function App() {
         const savedUnits = currentPrefs[`lastUnits_${selected}`];
         if (savedUnits && Array.isArray(savedUnits) && savedUnits.length > 0) {
             const validUnits = savedUnits.filter(u => uniqueUnits.includes(u));
-            if (validUnits.length > 0 && validUnits.includes("1")) {
+            if (validUnits.length > 0) {
                 setSelectedUnits(validUnits);
             } else {
                 setSelectedUnits(uniqueUnits.includes("1") ? ["1"] : uniqueUnits);
@@ -310,8 +330,10 @@ function App() {
 
   const startQuiz = () => {
     const activeWords = wordlist ? wordlist.filter((w) => !w.disabled) : [];
-    const filteredWords = activeWords.filter((word) =>
-      selectedUnits.includes(word.unit.split(".")[0]),
+    const filteredWords = dedupeWordsByText(
+      activeWords.filter((word) =>
+        selectedUnits.includes(word.unit.split(".")[0]),
+      ),
     );
 
     const selectedWords = getWordsForReview(filteredWords, learningData, numQuestions);
@@ -343,9 +365,15 @@ function App() {
     
     // Pick words for the grammar game (we still use words array for scoring context)
     const activeWords = wordlist ? wordlist.filter((w) => !w.disabled) : [];
-    const filteredWords = activeWords.length > 0 ? activeWords.filter((word) =>
-      selectedUnits.length > 0 ? selectedUnits.includes(word.unit.split(".")[0]) : true
-    ) : [];
+    const filteredWords = dedupeWordsByText(
+      activeWords.length > 0
+        ? activeWords.filter((word) =>
+            selectedUnits.length > 0
+              ? selectedUnits.includes(word.unit.split(".")[0])
+              : true,
+          )
+        : [],
+    );
     
     const selectedWords = getWordsForReview(filteredWords.length > 0 ? filteredWords : [{word: 'example'}], learningData, numQuestions);
     const grammarQuestions = selectedWords.map(w => ({ ...w }));
@@ -525,6 +553,7 @@ function App() {
         filteredWords = activeWords.filter(w => selectedUnits.includes(w.unit.split(".")[0]));
       }
       if (filteredWords.length === 0) filteredWords = activeWords;
+      filteredWords = dedupeWordsByText(filteredWords);
       const count = numQuestions === 999 ? filteredWords.length : Math.min(numQuestions, filteredWords.length);
       const shuffled = shuffleArray(filteredWords).slice(0, count);
       setQuestions(shuffled);
